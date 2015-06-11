@@ -11,10 +11,9 @@ Arguably the most important of the component ontologies is the Drosophila Phenot
 ## Downloads:
 * flybase controlled vocabulary, full OWL version: [latest](http://purl.obolibrary.org/obo/fbcv/fbcv-non-classified.owl); [archive](http://purl.obolibrary.org/obo/fbcv/)
 * flybase controlled vocabulary, pre-reasoned 'simple' OBO version: [latest](http://purl.obolibrary.org/obo/fbcv/fbcv-simple.obo); [archive](http://obo.cvs.sourceforge.net/viewvc/obo/obo/ontology/vocabularies/flybase_controlled_vocabulary.obo?view=log)
-* flybase controlled vocabulary, pre-reasoned flybase 'simple' OBO version (strips all but part_of and conditionality relations): [latest](http://purl.obolibrary.org/obo/fbcv/fbcv-flybase.obo) 
+* flybase controlled vocabulary, pre-reasoned flybase 'simple' OBO version (strips all but part_of and conditionality relations): [latest](http://purl.obolibrary.org/obo/fbcv/fbcv-flybase.obo)
 
-
-* Drosophila phenotype ontology, full OWL version: [latest](http://purl.obolibrary.org/obo/fbcv/dpo-non-classified.owl); [archive](http://purl.obolibrary.org/obo/fbcv/dpo-non-classified) 
+* Drosophila phenotype ontology, full OWL version: [latest](http://purl.obolibrary.org/obo/fbcv/dpo-non-classified.owl); [archive](http://purl.obolibrary.org/obo/fbcv/dpo-non-classified)
 * Drosophila phenotype ontology, pre-reasoned 'simple' OBO version: [latest](http://purl.obolibrary.org/obo/fbcv/dpo-simple.obo); [archive](http://purl.obolibrary.org/obo/fbcv/)
 * Drosophila phenotype ontology, pre-reasoned 'simple' OWL version: [latest](http://purl.obolibrary.org/obo/fbcv/dpo-simple.owl); [archive](http://purl.obolibrary.org/obo/fbcv/)
 
