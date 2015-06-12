@@ -1,5 +1,5 @@
-# FlyBase miscellaneous ontologies - featuring the Drosophila Phenotype Ontology
-
+###Welcome to the home of the FlyBase miscellaneous ontologies - featuring the Drosophila Phenotype Ontology
+ 
 This repository is a home for the development and release of a number of controlled vocabularies and ontologies developed and used by FlyBase, including the Drosophila phenotype ontology.
 
 __To note:__ The code for these ontologies is for now still hosted in SourceForge [here](https://sourceforge.net/p/fbcv/code-0/HEAD/tree/). The SF trackers [here](https://sourceforge.net/p/fbcv/tickets/) are not in use anymore, though. Please submit new tickets [here](https://github.com/mmc46/flybase-controlled-vocabulary/issues).
