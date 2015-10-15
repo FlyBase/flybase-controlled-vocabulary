@@ -1,0 +1,5 @@
+# SOP for generating slice of FBdv for defining lethal phase terms.
+
+ i. Generate slice of terms needed: for `life stage` get EquivalentClass, Ancestors, Descendants.  Get descendants for `developmental stage' that part_of some 'immature adult stage'`. For now, this is generated using an [OBO-Edit filtered save](https://raw.github.com/dosumis/prototypes/master/imports/FBdv_life_stage_export_filter.xml), but this should be replaced by an OWL-API based pipeline script.
+ i. Generate reciprocals for `starts_at_end_of`: `po2hp.pl starts_at_end_of ends_at_start_of FBdv_life_stages.obo > FBdv_life_stages_with_reciprocal_timing_rel.obo` 
+ i. Convert to OWL. `obolib-obo2owl FBdv_life_stages_with_reciprocal_timing_rel.obo -o FBdv_life_stages_with_reciprocal_timing_rel.owl`

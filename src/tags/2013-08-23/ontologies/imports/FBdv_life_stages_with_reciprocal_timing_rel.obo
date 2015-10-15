@@ -1,0 +1,239 @@
+
+format-version: 1.2
+date: 10:01:2013 13:21
+saved-by: djs93
+auto-generated-by: OBO-Edit 2.2
+default-namespace: FlyBase development CV
+remark: Drosophila temporal ontology.
+ontology: FBdv
+
+[Term]
+id: BFO:0000003
+name: occurrent
+def: "An entity that has temporal parts and that happens, unfolds or develops through time. Sometimes also called perdurants." [BFOC:ANON]
+
+[Term]
+id: FBdv:00005259
+name: developmental stage
+alt_id: FBdv:00007010
+def: "A temporal subdivision of a developmental process." [FBC:DOS]
+is_a: FBdv:00007008 ! occurrent
+created_by: djs93
+creation_date: 2009-10-01T05:56:56Z
+
+[Term]
+id: FBdv:00005289
+name: embryonic stage
+def: "The stage of the Drosophila life-cycle from fertilisation to hatching." [FBC:DOS]
+comment: Temporal ordering number - 20.
+is_a: FBdv:00007012 ! life stage
+relationship: ends_at_start_of FBdv:00005336
+relationship: ends_at_start_of FBdv:00005337
+
+[Term]
+id: FBdv:00005336
+name: larval stage
+def: "The stage of the Drosophila life-cycle from hatching to the beginning of puparium formation." [FBC:DOS]
+comment: Temporal ordering number - 400.
+is_a: FBdv:00007012 ! life stage
+relationship: starts_at_end_of FBdv:00005289 ! embryonic stage
+relationship: ends_at_start_of FBdv:00005342
+relationship: ends_at_start_of FBdv:00007001
+
+[Term]
+id: FBdv:00005337
+name: first instar larval stage
+def: "The first larval instar begins at hatching and ends at the first larval molt. Anterior spiracles are not yet present; posterior spiracles have two openings each. Salivary glands are very small and all cells are uniform in size. Mouth hooks typically have one tooth. Duration at 25 degrees C: approximately 25 hours (24-49 hours after egg laying; 0-25 hours after hatching)." [FlyBase:FBrf0007733]
+comment: Temporal ordering number - 410.
+synonym: "first instar larva" EXACT []
+synonym: "L1" EXACT []
+is_a: FBdv:00007012 ! life stage
+relationship: part_of FBdv:00005336 ! larval stage
+relationship: starts_at_end_of FBdv:00005289 ! embryonic stage
+relationship: ends_at_start_of FBdv:00005338
+
+[Term]
+id: FBdv:00005338
+name: second instar larval stage
+def: "The second larval instar begins at the first larval molt and ends at the second larval molt. Larvae are actively feeding and crawling in the food. Distinct anterior spiracles are present as enlargements at the end of the tracheal trunk, but not open to the outside; posterior spiracles have three openings each, and four groups of small unbranched hairs. The salivary glands extend to the first abdominal segment, and have cells that are uniform in size. Mouth hooks typically have two or three teeth. Duration at 25 degrees C: approximately 23 hours (49-72 hours after egg laying; 25-48 hours after hatching)." [FlyBase:FBrf0007733]
+comment: Temporal ordering number - 420.
+synonym: "L2" EXACT []
+synonym: "second instar larva" EXACT []
+is_a: FBdv:00007012 ! life stage
+relationship: part_of FBdv:00005336 ! larval stage
+relationship: starts_at_end_of FBdv:00005337 ! first instar larval stage
+relationship: ends_at_start_of FBdv:00005339
+
+[Term]
+id: FBdv:00005339
+name: third instar larval stage
+def: "The third larval instar begins at the second larval molt and ends at puparium formation. Anterior spiracles are open to the outside; posterior spiracles have three openings each, and four groups of large branched hairs. The salivary glands extend to the second abdominal segment, with cells larger in the posterior than in the anterior of the gland. Mouth hooks typically have 9-12 teeth. About 24 hours before pupariation (at 25 degree C), larvae stop feeding and climb away from their food. Duration at 25 degrees C: approximately 48 hours (72-120 hours after egg laying; 48-96 hours after hatching)." [FlyBase:FBrf0007733]
+comment: Temporal ordering number - 430.
+synonym: "L3" EXACT []
+synonym: "third instar larva" RELATED []
+is_a: FBdv:00007012 ! life stage
+relationship: part_of FBdv:00005336 ! larval stage
+relationship: starts_at_end_of FBdv:00005338 ! second instar larval stage
+relationship: ends_at_start_of FBdv:00005342
+relationship: ends_at_start_of FBdv:00007001
+
+[Term]
+id: FBdv:00005342
+name: prepupal stage
+def: "The prepupal stage begins at puparium formation and ends when larval/pupal apolysis is complete, as indicated by the completion of imaginal head sac eversion and the expulsion of the oral armature of the larva. Duration at 25 degrees C: approximately 12 hours. (120-132.2 hours after egg laying; 0-12.2 hours after puparium formation)." [FlyBase:FBrf0036849, FlyBase:FBrf0048355]
+comment: Temporal ordering number - 500.
+is_a: FBdv:00007012 ! life stage
+relationship: part_of FBdv:00007001 ! P-stage
+relationship: starts_at_end_of FBdv:00005336 ! larval stage
+relationship: starts_at_end_of FBdv:00005339 ! third instar larval stage
+relationship: ends_at_start_of FBdv:00005349
+
+[Term]
+id: FBdv:00005349
+name: pupal stage
+def: "The pupal stage starts once larval/pupal apolysis is complete as indicated by the expulsion of the larval armature. Early in this stage, the legs and wings reach full extension along the abdomen. The stage ends when the pupal cuticle separates from the underlying epidermis (pupal/adult apolysis), and the eye cup becomes yellow at its periphery. Duration at 25 degrees C: approximately 32 hours. (132.2-164.3 hours after egg laying; 12.2-44.3 hours after puparium formation)." [FlyBase:FBrf0036849, FlyBase:FBrf0048355]
+comment: Temporal ordering number - 570. DISAMBIGUATION: In Drosophila lab vernacular, the term 'pupal stage' is often used to refer to the entire period from formation of the puparium to eclosion. However, this does not correspond to the standard usage of 'pupal stage' for Cyclorrhaphous flies (for discussion see: FBrf0087128). Briefly: formation of the puparium (hardening of the larval cuticle) marks the beginning of the pre-pupal stage. The pupal stage begins following pupal/larval apolysis - detachment of the larval epidermis from the puparium. In Drosophila, the outward sign of the completion of apolysis is the eversion of the head and expulsion of the larval mouthparts (FBrf0036849). We use P-stage to refer to the stage from pupariation to eclosion, and restrict pupal stage to its standard usage.
+synonym: "phanerocephalic pupa" EXACT [FlyBase:FBrf0036849]
+is_a: FBdv:00007012 ! life stage
+relationship: part_of FBdv:00007001 ! P-stage
+relationship: starts_at_end_of FBdv:00005342 ! prepupal stage
+relationship: ends_at_start_of FBdv:00006011
+
+[Term]
+id: FBdv:00005369
+name: adult stage
+def: "The stage of the Drosophila life-cycle from eclosion to death." [FBC:DOS]
+comment: Temporal ordering number - 770.
+is_a: FBdv:00007012 ! life stage
+relationship: starts_at_end_of FBdv:00006011 ! pharate adult stage
+relationship: starts_at_end_of FBdv:00007001 ! P-stage
+
+[Term]
+id: FBdv:00005370
+name: adult stage A1
+alt_id: FBdv:00005373
+def: "Newly eclosed adult stage. Animal free of pupal case. Runs rapidly to find site for wing expansion. Wings are folded back and black against a very pale abdomen." [FlyBase:FBrf0049147]
+comment: Temporal ordering number - 785.  The time at which eclosed flies settle down for wing expansion can vary greatly.  If they fail to find a suitable site then expansion can be delayed by several hours.
+synonym: "adult stage I" RELATED []
+is_a: FBdv:00005259 ! developmental stage
+relationship: part_of FBdv:00007025 ! immature adult stage
+relationship: starts_at_end_of FBdv:00006011 ! pharate adult stage
+relationship: starts_at_end_of FBdv:00007001 ! P-stage
+relationship: ends_at_start_of FBdv:00005371
+
+[Term]
+id: FBdv:00005371
+name: adult stage A2
+alt_id: FBdv:00005374
+def: "Stage, shortly after eclosion, during which the wings expand. During wing expansion, the abdomen pulsates and the hind legs stroke the wings vigorously for several minutes at a time. The stage ends when the wings are folded down over the abdomen, which has become broader and shorter, and the wing cuticle has lost its folds.  The stage lasts around 15 minutes at 25'C." [FlyBase:FBrf0049147]
+comment: Temporal ordering number - 790.
+synonym: "adult stage II" RELATED []
+is_a: FBdv:00005259 ! developmental stage
+relationship: part_of FBdv:00007025 ! immature adult stage
+relationship: starts_at_end_of FBdv:00005370 ! adult stage A1
+relationship: ends_at_start_of FBdv:00006012
+
+[Term]
+id: FBdv:00006011
+name: pharate adult stage
+def: "The developing adult after pupal-adult apolysis , i.e.- from stage P8 (when yellow eye color first becomes visible through the pupal case), to eclosion. Duration at 25 degrees C: approximately 55.7 hours (164.3-220 hours after egg laying; 44.3-100 hours after puparium formation)." [FlyBase:FBrf0036849, FlyBase:FBrf0048355, FlyBase:FBrf0049147]
+comment: Temporal ordering number - 625.
+is_a: FBdv:00007012 ! life stage
+relationship: part_of FBdv:00007001 ! P-stage
+relationship: starts_at_end_of FBdv:00005349 ! pupal stage
+relationship: ends_at_start_of FBdv:00005369
+relationship: ends_at_start_of FBdv:00005370
+relationship: ends_at_start_of FBdv:00007025
+
+[Term]
+id: FBdv:00006012
+name: adult stage A3
+alt_id: FBdv:00005375
+def: "Adult stage immediately after wing expansion, during which tanning of the cuticle is completed.  This stage lasts approximately 45 minutes at 25'C." [FlyBase:FBrf0049147]
+comment: Temporal ordering number - 800.
+synonym: "adult stage III" RELATED []
+is_a: FBdv:00005259 ! developmental stage
+relationship: part_of FBdv:00007025 ! immature adult stage
+relationship: starts_at_end_of FBdv:00005371 ! adult stage A2
+relationship: ends_at_start_of FBdv:00007026
+
+[Term]
+id: FBdv:00007001
+name: P-stage
+def: "The stage of the Drosophila life-cycle from the formation of the puparium (beginning of the prepupal stage) to eclosion." [FBC:DOS]
+comment: Temporal ordering number - 490. DISAMBIGUATION: In Drosophila lab vernacular, the term 'pupal stage' is often used to refer to the entire period from formation of the puparium to eclosion. However, this does not correspond to the standard usage of 'pupal stage' for Cyclorrhaphous flies (for discussion see: FBrf0087128). Briefly: formation of the puparium (hardening of the larval cuticle) marks the beginning of the pre-pupal stage. The pupal stage begins following pupal/larval apolysis - detachment of the larval epidermis from the puparium. In Drosophila, the outward sign of the completion of apolysis is the eversion of the head an expulsion of the larval mouthparts (FBrf0036849). We use P-stage to refer to the stage from pupariation to eclosion, and restrict pupal stage to its standard usage.
+synonym: "metamorphosis" BROAD []
+synonym: "pupal stage" RELATED []
+is_a: FBdv:00007012 ! life stage
+relationship: starts_at_end_of FBdv:00005336 ! larval stage
+relationship: starts_at_end_of FBdv:00005339 ! third instar larval stage
+created_by: david
+creation_date: 2008-06-05T04:51:40Z
+relationship: ends_at_start_of FBdv:00005369
+relationship: ends_at_start_of FBdv:00005370
+relationship: ends_at_start_of FBdv:00007025
+
+[Term]
+id: FBdv:00007008
+name: occurrent
+equivalent_to: BFO:0000003
+created_by: djs93
+creation_date: 2009-10-01T05:56:28Z
+
+[Term]
+id: FBdv:00007012
+name: life stage
+def: "A temporal subdivision of a Drosophila life, delimited by major transitions in the circumstances of the organism, such as: fertilisation; hatching; pupal ecdysis; eclosion." [FBC:DOS]
+synonym: "life cycle stage" RELATED []
+is_a: FBdv:00005259 ! developmental stage
+created_by: djs93
+creation_date: 2009-10-01T05:59:22Z
+
+[Term]
+id: FBdv:00007025
+name: immature adult stage
+def: "The developmental stage that lasts from eclosion of the adult from the pupal case until tanning is complete (the end of adult stage A3)." [FBC:DOS]
+comment: Temporal ordering number - 782.
+is_a: FBdv:00007012 ! life stage
+relationship: starts_at_end_of FBdv:00006011 ! pharate adult stage
+relationship: starts_at_end_of FBdv:00007001 ! P-stage
+created_by: djs93
+creation_date: 2013-01-08T20:06:59Z
+relationship: ends_at_start_of FBdv:00007026
+
+[Term]
+id: FBdv:00007026
+name: mature adult stage
+def: "Life stage from the end of adult stage A3, when tanning is complete, to death." [FBC:DOS]
+is_a: FBdv:00007012 ! life stage
+relationship: starts_at_end_of FBdv:00006012 ! adult stage A3
+relationship: starts_at_end_of FBdv:00007025 ! immature adult stage
+created_by: djs93
+creation_date: 2013-01-10T13:03:54Z
+
+[Typedef]
+id: ends_at_start_of
+xref: RO:0002090
+inverse_of: starts_at_end_of ! starts_at_end_of
+
+[Typedef]
+id: part_of
+name: part_of
+xref: BFO:0000050
+xref: OBO_REL:part_of
+is_transitive: true
+
+[Typedef]
+id: preceded_by
+name: preceded_by
+xref: BFO:0000062
+xref: OBO_REL:preceded_by
+is_transitive: true
+created_by: djs93
+creation_date: 2009-10-09T10:00:53Z
+
+[Typedef]
+id: starts_at_end_of
+name: starts_at_end_of
+xref: RO:0002087
+is_a: preceded_by ! preceded_by
