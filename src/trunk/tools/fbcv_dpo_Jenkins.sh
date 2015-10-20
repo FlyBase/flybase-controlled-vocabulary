@@ -41,14 +41,14 @@ echo '*** fbcv release ***'
 echo ''
 echo '*** merging full dpo with fbcv  ***'
 echo ''
-owltools src/trunk/ontologies/fbcv-edit.obo --merge dpo_imports_merged.owl  -o file://`pwd`/fbcv-merged.owl # Note - file order important for determining URI of merge 'winner'
+owltools ontologies/fbcv-edit.obo --merge dpo_imports_merged.owl  -o file://`pwd`/fbcv-merged.owl # Note - file order important for determining URI of merge 'winner'
 echo ''
 echo '*** fbcv OORT ***'
 echo ''
 ontology-release-runner --reasoner hermit fbcv-merged.owl --allow-equivalent-pairs --relaxed --asserted --allow-overwrite --no-subsets --outdir fbcv_oort_full
 echo '*** make version of fbcv with regular autodefs (for imported chebi terms)  + equivalent named classes stripped out ***'
 echo ''
-update_EC_defs.pl src/trunk/ontologies/fbcv-edit.obo | egrep -v "^equivalent_to: " > fbcv-ne.obo #  Strip out assertions of equivalence between named classes after using these to generate autodefs.  In future I hope that improvements to owltools will eliminate the need for this grep -v. 
+update_EC_defs.pl ontologies/fbcv-edit.obo | egrep -v "^equivalent_to: " > fbcv-ne.obo #  Strip out assertions of equivalence between named classes after using these to generate autodefs.  In future I hope that improvements to owltools will eliminate the need for this grep -v. 
 echo ''
 echo '*** Merging simplified dpo and fbcv versions containing autodefs ***'
 echo ''
