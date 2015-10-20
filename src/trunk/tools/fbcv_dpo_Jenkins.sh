@@ -20,7 +20,7 @@ echo '*** DPO release ***'
 echo ''
 echo '*** Merging import chain for dpo ***'
 echo ''
-cd src/trunk/ontologies  # Necessary for catalog to work (?)
+cd ontologies  # Necessary for catalog to work (?)
 owltools --catalog-xml catalog-v001.xml dpo-edit.owl --merge-import-closure -o file://`pwd`/../dpo_imports_merged.owl
 cd ..
 echo ''
