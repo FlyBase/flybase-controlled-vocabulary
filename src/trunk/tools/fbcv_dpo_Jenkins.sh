@@ -20,7 +20,7 @@ echo '*** DPO release ***'
 echo ''
 echo '*** Merging import chain for dpo ***'
 echo ''
-cd ontologies  # Necessary for catalog to work (?)
+cd src/trunk/ontologies  # Necessary for catalog to work (?)
 owltools --catalog-xml catalog-v001.xml dpo-edit.owl --merge-import-closure -o file://`pwd`/../dpo_imports_merged.owl
 cd ..
 echo ''
@@ -69,11 +69,11 @@ owltools fbcv_oort_ad/fbcv-simple.obo --make-subset-by-properties part_of condit
 obolib-owl2obo fbcv-flybase.owl -o oort/fbcv-flybase.obo
 
 
-cp dpo_oort_full/* oort/.
-cp fbcv_oort_full/* oort/.
+cp src/trunk/dpo_oort_full/* oort/.
+cp src/trunk/fbcv_oort_full/* oort/.
 
-cp dpo_oort_ad/dpo-simple.obo oort/.
-cp fbcv_oort_ad/fbcv-simple.obo oort/.
+cp src/trunk/dpo_oort_ad/dpo-simple.obo oort/.
+cp src/trunk/fbcv_oort_ad/fbcv-simple.obo oort/.
 
 rm -r dpo*
 rm -r fbcv*
