@@ -69,11 +69,11 @@ owltools fbcv_oort_ad/fbcv-simple.obo --make-subset-by-properties part_of condit
 obolib-owl2obo fbcv-flybase.owl -o oort/fbcv-flybase.obo
 
 
-cp src/trunk/dpo_oort_full/* oort/.
-cp src/trunk/fbcv_oort_full/* oort/.
+cp dpo_oort_full/* oort/.
+cp fbcv_oort_full/* oort/.
 
-cp src/trunk/dpo_oort_ad/dpo-simple.obo oort/.
-cp src/trunk/fbcv_oort_ad/fbcv-simple.obo oort/.
+cp dpo_oort_ad/dpo-simple.obo oort/.
+cp fbcv_oort_ad/fbcv-simple.obo oort/.
 
 rm -r dpo*
 rm -r fbcv*
