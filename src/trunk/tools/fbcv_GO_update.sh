@@ -10,7 +10,7 @@ ontology-release-runner --reasoner elk $FBCV_WS_PATH/fbcv-edit.obo --allow-equiv
 export OBO=http://purl.obolibrary.org/obo
 ## See https://code.google.com/p/owltools/wiki/OortExtractingModules for some clues about how this magic works:
 
-owltools $FBCV_BUILD_PATH/fbcv-non-classified.owl go-simple.owl --add-imports-from-supports --extract-module -c -s $OBO/go/go-basic.obo --set-ontology-id $OBO/fbcv_go_import.owl -o fbcv_go_import.owl  # Seems that source must be specified as URL.
+owltools $FBCV_BUILD_PATH/fbcv-non-classified.owl go-simple.owl --add-imports-from-supports --extract-module -c -s $OBO/go/go-simple.owl --set-ontology-id $OBO/fbcv_go_import.owl -o fbcv_go_import.owl  # Seems that source must be specified as URL.
 
 
 
