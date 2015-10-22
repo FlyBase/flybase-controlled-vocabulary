@@ -74,6 +74,7 @@ cp fbcv_oort_full/* oort/.
 
 cp dpo_oort_ad/dpo-simple.obo oort/.
 cp fbcv_oort_ad/fbcv-simple.obo oort/.
+cp fbcv_oort_ad/fbcv-simple.owl oort/.
 
 rm -r dpo*
 rm -r fbcv*
