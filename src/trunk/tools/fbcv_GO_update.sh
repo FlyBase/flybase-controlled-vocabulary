@@ -1,6 +1,6 @@
 # Warning, hardwired path to fbcv Jenkins build!  (surely better if this is passed by Jenkins?!)
-export FBCV_WS_PATH=$JENKINS_HOME/workspace/FBcv_SF/ontologies
-export FBCV_BUILD_PATH=$JENKINS_HOME/workspace/FBcv_SF/oort
+export FBCV_WS_PATH=$JENKINS_HOME/workspace/FBcv_GH/src/trunk/ontologies
+export FBCV_BUILD_PATH=$JENKINS_HOME/workspace/FBcv_GH/src/trunk/oort
 
 # Updating of imports from GO currently uses the default update mechanism in oort using the -simple pre-reasoned version. This assumes that all GO term usage will be in fbcv-edit.obo (!!).  This assumption is no longer safe.  But keeping step for ref for now.
 
