@@ -2,9 +2,11 @@
  
 This repository is a home for the development and release of a number of controlled vocabularies and ontologies developed and used by FlyBase, including the Drosophila phenotype ontology.
 
-These ontologies and CVs have historically been released as a single file (flybase_controlled_vocabulary.obo).  This file makes little sense as a single ontology,  so, while we will continue to release this combined file for legacy support purposes, this site aims to provide access to separate files for the various underlying ontologies.
+These ontologies and CVs have historically been released as a single file (flybase_controlled_vocabulary.obo). This file makes little sense as a single ontology, so, while we will continue to release this combined file for legacy support purposes, this site aims to provide access to separate files for the various underlying ontologies.
 
 Arguably the most important of the component ontologies is the Drosophila Phenotype Ontology (DPO) - which, as of April 2013 had been used to annotate over 160,000 phenotypes by FlyBase.  This site provides access to this as a separate ontology for the first time.
+
+These ontologies are freely available under a [CC-BY](http://creativecommons.org/licenses/by/3.0/) license.
 
 ## Downloads:
 * flybase controlled vocabulary, full OWL version: [latest](http://purl.obolibrary.org/obo/fbcv/fbcv-non-classified.owl); [archive](http://purl.obolibrary.org/obo/fbcv/)
