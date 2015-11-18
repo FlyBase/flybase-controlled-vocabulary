@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: 2015-11-18
-date: 18:11:2015 13:31
+date: 18:11:2015 15:29
 saved-by: mmc46
-auto-generated-by: OBO-Edit 2.3
+auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -3792,8 +3792,8 @@ is_a: FBcv:0000000 ! FlyBase CV
 [Term]
 id: FBcv:0000014
 name: structural qualifier
-def: "Qualifier used to describe the appearance of extra copies of an anatomical structure." [FBC:MMC]
 namespace: structural_qualifier
+def: "Qualifier used to describe the appearance of extra copies of an anatomical structure." [FBC:MMC]
 is_a: FBcv:0000809 ! phenotype qualifier
 
 [Term]
@@ -4071,8 +4071,8 @@ is_a: FBcv:0000038 ! relative spatial qualifier
 [Term]
 id: FBcv:0000051
 name: segment boundary
-def: "Present in the area that separates segments." [FBC:MMC] 
 namespace: spatial_qualifier
+def: "Present in the area that separates segments." [FBC:MMC]
 comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.
 subset: camcur
 is_a: FBcv:0000052 ! spatial qualifier
@@ -4080,8 +4080,8 @@ is_a: FBcv:0000052 ! spatial qualifier
 [Term]
 id: FBcv:0000052
 name: spatial qualifier
-def: "Qualifier that describes the spatial characteristics of a phenotype or expression pattern." [FBC:MMC]
 namespace: spatial_qualifier
+def: "Qualifier that describes the spatial characteristics of a phenotype or expression pattern." [FBC:MMC]
 comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.
 is_a: FBcv:0000005 ! qualifier
 
@@ -4732,22 +4732,22 @@ is_a: FBcv:0000233 ! unpublished
 [Term]
 id: FBcv:0000141
 name: gradient
-def: "Expression pattern which varies in intensity following a gradient in a specific axis." [FBC:MMC]
 namespace: spatial_qualifier
+def: "Expression pattern which varies in intensity following a gradient in a specific axis." [FBC:MMC]
 is_a: FBcv:0000052 ! spatial qualifier
 
 [Term]
 id: FBcv:0000142
 name: anterior posterior gradient
-def: "Expression pattern which varies in intensity following a gradient in the anterior-posterior axis." [FBC:MMC]
 namespace: spatial_qualifier
+def: "Expression pattern which varies in intensity following a gradient in the anterior-posterior axis." [FBC:MMC]
 is_a: FBcv:0000141 ! gradient
 
 [Term]
 id: FBcv:0000143
 name: dorsal ventral gradient
-def: "Expression pattern which varies in intensity following a gradient in the dorsal-ventral axis." [FBC:MMC]
 namespace: spatial_qualifier
+def: "Expression pattern which varies in intensity following a gradient in the dorsal-ventral axis." [FBC:MMC]
 is_a: FBcv:0000141 ! gradient
 
 [Term]
@@ -4841,7 +4841,7 @@ is_a: FBcv:0000797 ! cell autonomy qualifier
 [Term]
 id: FBcv:0000155
 name: single balancer
-def: "Chromosome that carries inversions and visible mutations, and which can be used to identify the genotype of an individual." [FlyBase:FBrf0202435, FlyBase:FBrf0089469]
+def: "Chromosome that carries inversions and visible mutations, and which can be used to identify the genotype of an individual." [FlyBase:FBrf0089469, FlyBase:FBrf0202435]
 is_a: FBcv:0000687 ! balancer descriptor
 
 [Term]
@@ -4916,23 +4916,23 @@ is_obsolete: true
 [Term]
 id: FBcv:0000166
 name: morphological qualifier
-def: "Qualifier that describes an observed expression pattern." [FBC:MMC]
 namespace: expression_qualifier
+def: "Qualifier that describes an observed expression pattern." [FBC:MMC]
 is_a: FBcv:0000005 ! qualifier
 
 [Term]
 id: FBcv:0000167
 name: faint
-def: "Weak expression." [FBC:MMC]
 namespace: expression_qualifier
+def: "Weak expression." [FBC:MMC]
 comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.
 is_a: FBcv:0000166 ! morphological qualifier
 
 [Term]
 id: FBcv:0000168
 name: granular
-def: "Expression pattern that resembles small grains or particles." [FBC:MMC]
 namespace: expression_qualifier
+def: "Expression pattern that resembles small grains or particles." [FBC:MMC]
 comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.
 xref: PATO:0001759
 is_a: FBcv:0000166 ! morphological qualifier
@@ -4940,8 +4940,8 @@ is_a: FBcv:0000166 ! morphological qualifier
 [Term]
 id: FBcv:0000169
 name: intense
-def: "Strong expression." [FBC:MMC]
 namespace: expression_qualifier
+def: "Strong expression." [FBC:MMC]
 comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.
 xref: PATO:0000049
 is_a: FBcv:0000166 ! morphological qualifier
@@ -4949,8 +4949,8 @@ is_a: FBcv:0000166 ! morphological qualifier
 [Term]
 id: FBcv:0000170
 name: punctate
-def: "Expression pattern that resembles small dots." [FBC:MMC]
 namespace: expression_qualifier
+def: "Expression pattern that resembles small dots." [FBC:MMC]
 comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.
 xref: PATO:0001512
 is_a: FBcv:0000166 ! morphological qualifier
@@ -4958,8 +4958,8 @@ is_a: FBcv:0000166 ! morphological qualifier
 [Term]
 id: FBcv:0000171
 name: uniform
-def: "Expression pattern that is constant throughout the assayed anatomical entity." [FBC:MMC]
 namespace: expression_qualifier
+def: "Expression pattern that is constant throughout the assayed anatomical entity." [FBC:MMC]
 comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.
 xref: PATO:0000438
 is_a: FBcv:0000166 ! morphological qualifier
@@ -4967,8 +4967,8 @@ is_a: FBcv:0000166 ! morphological qualifier
 [Term]
 id: FBcv:0000172
 name: variable
-def: "Expression pattern that changes throughout the assayed anatomical entity." [FBC:MMC]
 namespace: expression_qualifier
+def: "Expression pattern that changes throughout the assayed anatomical entity." [FBC:MMC]
 comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.
 xref: PATO:0001227
 is_a: FBcv:0000166 ! morphological qualifier
@@ -5485,40 +5485,40 @@ is_a: FBcv:0000189 ! publication class
 [Term]
 id: FBcv:0000234
 name: publication language
-def: "Qualifier that describes the language of the publication." [FBC:MMC]
 namespace: language
+def: "Qualifier that describes the language of the publication." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000188 ! publication descriptor
 
 [Term]
 id: FBcv:0000235
 name: Afrikaans
-def: "Publication in the Afrikaans language." [FBC:MMC]
 namespace: language
+def: "Publication in the Afrikaans language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000236
 name: Arabic
-def: "Publication in the Arabic language." [FBC:MMC]
 namespace: language
+def: "Publication in the Arabic language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000237
 name: Armenian
-def: "Publication in the Armenian language." [FBC:MMC]
 namespace: language
+def: "Publication in the Armenian language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000238
 name: Belarussian
-def: "Publication in the Belarussian language." [FBC:MMC]
 namespace: language
+def: "Publication in the Belarussian language." [FBC:MMC]
 subset: camcur
 synonym: "Belarusian" RELATED []
 is_a: FBcv:0000234 ! publication language
@@ -5526,353 +5526,352 @@ is_a: FBcv:0000234 ! publication language
 [Term]
 id: FBcv:0000239
 name: Bulgarian
-def: "Publication in the Bulgarian language." [FBC:MMC]
 namespace: language
+def: "Publication in the Bulgarian language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000240
 name: Catalan
+namespace: language
 def: "Publication in the Catalan language." [FBC:MMC]
-namespace: language
-namespace: language
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000241
 name: Chinese
-def: "Publication in the Chinese language." [FBC:MMC]
 namespace: language
+def: "Publication in the Chinese language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000242
 name: Cumbrian
-def: "Publication in the Cumbrian language." [FBC:MMC]
 namespace: language
+def: "Publication in the Cumbrian language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000243
 name: Czech
-def: "Publication in the Czech language." [FBC:MMC]
 namespace: language
+def: "Publication in the Czech language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000244
 name: Danish
-def: "Publication in the Danish language." [FBC:MMC]
 namespace: language
+def: "Publication in the Danish language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000245
 name: Dutch
-def: "Publication in the Dutch language." [FBC:MMC]
 namespace: language
+def: "Publication in the Dutch language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000246
 name: English
-def: "Publication in the English language." [FBC:MMC]
 namespace: language
+def: "Publication in the English language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000247
 name: Estonian
-def: "Publication in the Estonian language." [FBC:MMC]
 namespace: language
+def: "Publication in the Estonian language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000248
 name: Faroese
-def: "Publication in the Faroese language." [FBC:MMC]
 namespace: language
+def: "Publication in the Faroese language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000249
 name: Farsi
-def: "Publication in the Farsi language." [FBC:MMC]
 namespace: language
+def: "Publication in the Farsi language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000250
 name: Finnish
-def: "Publication in the Finnish language." [FBC:MMC]
 namespace: language
+def: "Publication in the Finnish language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000251
 name: Flemish
-def: "Publication in the Flemish language." [FBC:MMC]
 namespace: language
+def: "Publication in the Flemish language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000252
 name: French
-def: "Publication in the French language." [FBC:MMC]
 namespace: language
+def: "Publication in the French language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000253
 name: German
-def: "Publication in the German language." [FBC:MMC]
 namespace: language
+def: "Publication in the German language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000254
 name: Greek
-def: "Publication in the Greek language." [FBC:MMC]
 namespace: language
+def: "Publication in the Greek language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000255
 name: Hebrew
-def: "Publication in the Hebrew language." [FBC:MMC]
 namespace: language
+def: "Publication in the Hebrew language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000256
 name: Hungarian
-def: "Publication in the Hungarian language." [FBC:MMC]
 namespace: language
+def: "Publication in the Hungarian language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000257
 name: Icelandic
-def: "Publication in the Icelandic language." [FBC:MMC]
 namespace: language
+def: "Publication in the Icelandic language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000258
 name: Indonesian
-def: "Publication in the Indonesian language." [FBC:MMC]
 namespace: language
+def: "Publication in the Indonesian language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000259
 name: Italian
-def: "Publication in the Italian language." [FBC:MMC]
 namespace: language
+def: "Publication in the Italian language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000260
 name: Japanese
-def: "Publication in the Japanese language." [FBC:MMC]
 namespace: language
+def: "Publication in the Japanese language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000261
 name: Jugoslavian
-def: "Publication in the Jugoslavian language." [FBC:MMC]
 namespace: language
+def: "Publication in the Jugoslavian language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000262
 name: Korean
-def: "Publication in the Korean language." [FBC:MMC]
 namespace: language
+def: "Publication in the Korean language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000263
 name: Latin
-def: "Publication in the Latin language." [FBC:MMC]
 namespace: language
+def: "Publication in the Latin language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000264
 name: Latvian
-def: "Publication in the Latvian language." [FBC:MMC]
 namespace: language
+def: "Publication in the Latvian language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000265
 name: Lithuanian
-def: "Publication in the Lithuanian language." [FBC:MMC]
 namespace: language
+def: "Publication in the Lithuanian language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000266
 name: Malay
-def: "Publication in the Malay language." [FBC:MMC]
 namespace: language
+def: "Publication in the Malay language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000267
 name: Malayalam
-def: "Publication in the Malayalam language." [FBC:MMC]
 namespace: language
+def: "Publication in the Malayalam language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000268
 name: Norwegian
-def: "Publication in the Norwegian language." [FBC:MMC]
 namespace: language
+def: "Publication in the Norwegian language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000269
 name: Polish
-def: "Publication in the Polish language." [FBC:MMC]
 namespace: language
+def: "Publication in the Polish language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000270
 name: Portuguese
-def: "Publication in the Portuguese language." [FBC:MMC]
 namespace: language
+def: "Publication in the Portuguese language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000271
 name: Serbo-Croat(Roman)
-def: "Publication in the Serbo-Croat (Roman) language." [FBC:MMC]
 namespace: language
+def: "Publication in the Serbo-Croat (Roman) language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000274 ! Serbo-Croat
 
 [Term]
 id: FBcv:0000272
 name: Romanian
-def: "Publication in the Roman language." [FBC:MMC]
 namespace: language
+def: "Publication in the Roman language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000273
 name: Russian
-def: "Publication in the Russian language." [FBC:MMC]
 namespace: language
+def: "Publication in the Russian language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000274
 name: Serbo-Croat
-def: "Publication in the Serbo-Croat language." [FBC:MMC]
 namespace: language
+def: "Publication in the Serbo-Croat language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000275
 name: Slovak
-def: "Publication in the Slovak language." [FBC:MMC]
 namespace: language
+def: "Publication in the Slovak language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000276
 name: Slovenian
-def: "Publication in the Slovenian language." [FBC:MMC]
 namespace: language
+def: "Publication in the Slovenian language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000277
 name: Spanish
-def: "Publication in the Spanish language." [FBC:MMC]
 namespace: language
+def: "Publication in the Spanish language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000278
 name: Swedish
-def: "Publication in the Swedish language." [FBC:MMC]
 namespace: language
+def: "Publication in the Swedish language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000279
 name: Turkish
-def: "Publication in the Turkish language." [FBC:MMC]
 namespace: language
+def: "Publication in the Turkish language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000280
 name: Ukrainian
-def: "Publication in the Ukrainian language." [FBC:MMC]
 namespace: language
+def: "Publication in the Ukrainian language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000281
 name: Yiddish
-def: "Publication in the Yiddish language." [FBC:MMC]
 namespace: language
+def: "Publication in the Yiddish language." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000282
 name: mutant scorability rank
-def: "Rank that describes the usefulness of mutants according to their phenotype." [FBC:MMC]
 namespace: scorability
+def: "Rank that describes the usefulness of mutants according to their phenotype." [FBC:MMC]
 is_a: FBcv:0000807 ! allele descriptor
 
 [Term]
@@ -5902,8 +5901,8 @@ is_a: FBcv:0000282 ! mutant scorability rank
 [Term]
 id: FBcv:0000286
 name: allele class
-def: "Term that describes the type of allele." [FBC:MMC]
 namespace: allele_class
+def: "Term that describes the type of allele." [FBC:MMC]
 synonym: "allele morphy class" EXACT []
 is_a: FBcv:0000807 ! allele descriptor
 
@@ -5968,24 +5967,24 @@ is_a: FBcv:0000696 ! hypermorphic allele
 [Term]
 id: FBcv:0000294
 name: wild-type allele
-def: "Allele that corresponds to the wild-type one." [FBC:MMC]
 namespace: allele_class
+def: "Allele that corresponds to the wild-type one." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000286 ! allele class
 
 [Term]
 id: FBcv:0000295
 name: wild-type generic
-def: "Wild-type allele that can be distinguished from others." [FBC:MMC]
 namespace: allele_class
+def: "Wild-type allele that can be distinguished from others." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000294 ! wild-type allele
 
 [Term]
 id: FBcv:0000296
 name: isoallele
-def: "Wild-type allele that can only be distinguished from another one under special conditions." [FlyBase:FBrf0202435]
 namespace: allele_class
+def: "Wild-type allele that can only be distinguished from another one under special conditions." [FlyBase:FBrf0202435]
 subset: camcur
 is_a: FBcv:0000294 ! wild-type allele
 
@@ -6190,8 +6189,8 @@ is_a: FBcv:0000654 ! embryonic pattern qualifier
 [Term]
 id: FBcv:0000323
 name: segment polarity expression pattern
-def: "Qualifier that describes an expression pattern of a segment polarity gene. Expression is observed in a specific location in each segment." [FBC:MMC]
 namespace: embryonic_pattern_qualifier
+def: "Qualifier that describes an expression pattern of a segment polarity gene. Expression is observed in a specific location in each segment." [FBC:MMC]
 is_a: FBcv:0000654 ! embryonic pattern qualifier
 
 [Term]
@@ -6231,8 +6230,8 @@ is_a: FBcv:0000009 ! temporal stage qualifier
 [Term]
 id: FBcv:0000332
 name: sex
-def: "Qualifier that relates the expression of a phenotype to the sex of the individual." [FBC:MMC]
 namespace: sex_qualifier
+def: "Qualifier that relates the expression of a phenotype to the sex of the individual." [FBC:MMC]
 synonym: "sex qualifier" EXACT [FBC:DOS]
 is_a: FBcv:0000005 ! qualifier
 
@@ -6290,7 +6289,6 @@ subset: deprecated
 is_obsolete: true
 consider: FBcv:0000811
 
-
 [Term]
 id: FBcv:0000340
 name: partially
@@ -6303,8 +6301,8 @@ is_a: FBcv:0000811 ! qualitative qualifier
 [Term]
 id: FBcv:0000341
 name: good
-comment: This term has been obsoleted as it should be assumed a phenotype is good, unless it is said otherwise, by using other qualifiers. mc151118
 namespace: intensity_qualifier
+comment: This term has been obsoleted as it should be assumed a phenotype is good, unless it is said otherwise, by using other qualifiers. mc151118
 subset: deprecated
 is_obsolete: true
 consider: FBcv:0000811
@@ -6312,39 +6310,39 @@ consider: FBcv:0000811
 [Term]
 id: FBcv:0000342
 name: poor
-def: "Qualifier that describes a phenotype that has poor penetrance or expressivity." [FBC:MMC]
 namespace: intensity_qualifier
+def: "Qualifier that describes a phenotype that has poor penetrance or expressivity." [FBC:MMC]
 is_a: FBcv:0000811 ! qualitative qualifier
 
 [Term]
 id: FBcv:0000343
 name: reduced
-def: "Qualifier that describes a phenotype that has reduced penetrance or expressivity when compared to wild-type." [FBC:MMC]
 namespace: intensity_qualifier
+def: "Qualifier that describes a phenotype that has reduced penetrance or expressivity when compared to wild-type." [FBC:MMC]
 is_a: FBcv:0000811 ! qualitative qualifier
 
 [Term]
 id: FBcv:0000344
 name: slow
-def: "Qualifier that describes an electrophoretic migration of a gene product that is slower than the wild-type." [FBC:MMC]
 namespace: intensity_qualifier
+def: "Qualifier that describes an electrophoretic migration of a gene product that is slower than the wild-type." [FBC:MMC]
 xref: PATO:0000304
 is_a: FBcv:0000811 ! qualitative qualifier
 
 [Term]
 id: FBcv:0000345
 name: fast
-def: "Qualifier that describes an electrophoretic migration of a gene product that is intermediate in speed compared to the wild-type." [FBC:MMC]
 namespace: intensity_qualifier
+def: "Qualifier that describes an electrophoretic migration of a gene product that is intermediate in speed compared to the wild-type." [FBC:MMC]
 xref: PATO:0000303
 is_a: FBcv:0000811 ! qualitative qualifier
 
 [Term]
 id: FBcv:0000346
 name: intermediate
+namespace: intensity_qualifier
 def: "Qualifier that describes a phenotype that is intermediate in speed compared to the wild-type." [FBC:MMC]
 comment: This qualifier can be used to describe an electrophoretic migration of a gene product that is intermediate in speed compared to the wild-type.
-namespace: intensity_qualifier
 is_a: FBcv:0000811 ! qualitative qualifier
 
 [Term]
@@ -6356,8 +6354,8 @@ is_a: FBcv:0000807 ! allele descriptor
 [Term]
 id: FBcv:0000452
 name: origin of mutation
-def: "Describes the origin of the mutation that causes a phenotype." [FBC:MMC]
 namespace: origin_of_mutation
+def: "Describes the origin of the mutation that causes a phenotype." [FBC:MMC]
 is_a: FBcv:0000807 ! allele descriptor
 
 [Term]
@@ -6475,8 +6473,8 @@ consider: FBcv:0000455
 [Term]
 id: FBcv:0000465
 name: natural population
-def: "Mutation found in a natural population." [FBC:MMC]
 namespace: origin_of_mutation
+def: "Mutation found in a natural population." [FBC:MMC]
 subset: camcur
 is_a: FBcv:0000452 ! origin of mutation
 
@@ -6486,8 +6484,8 @@ name: temperature
 namespace: origin_of_mutation
 def: "Mutation caused by exposure to a temperature that is higher or lower than 25 degrees Celsius." [FBC:MMC]
 subset: camcur
-synonym: "mutation induced by temperature treatment" EXACT []
 synonym: "environmental treatment" RELATED []
+synonym: "mutation induced by temperature treatment" EXACT []
 is_a: FBcv:0000452 ! origin of mutation
 
 [Term]
@@ -6496,8 +6494,8 @@ name: cold
 namespace: origin_of_mutation
 def: "Mutation induced by exposure to temperature that is lower than 25 degrees Celsius." [FBC:MMC]
 subset: camcur
-synonym: "mutation induced by cold treatment" EXACT []
 synonym: "cold-treatment" RELATED []
+synonym: "mutation induced by cold treatment" EXACT []
 is_a: FBcv:0000466 ! temperature
 
 [Term]
@@ -6506,8 +6504,8 @@ name: heat
 namespace: origin_of_mutation
 def: "Mutation induced by exposure to a temperature that is higher than 25 degrees Celsius." [FBC:MMC]
 subset: camcur
-synonym: "mutation induced by heat treatment" EXACT []
 synonym: "heat-treatment" RELATED []
+synonym: "mutation induced by heat treatment" EXACT []
 is_a: FBcv:0000466 ! temperature
 
 [Term]
@@ -7391,8 +7389,8 @@ equivalent_to: CHEBI:28741
 [Term]
 id: FBcv:0000558
 name: epoxy hydrocarbon
-def: "Mutation induced by exposure to epoxy hydrocarbon." [FBC:MMC]
 namespace: origin_of_mutation
+def: "Mutation induced by exposure to epoxy hydrocarbon." [FBC:MMC]
 subset: camcur
 synonym: "mutation induced by epoxy hydrocarbon exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
@@ -7454,8 +7452,8 @@ equivalent_to: CHEBI:67107
 [Term]
 id: FBcv:0000564
 name: 1,4-dimethanesulfonoxybut-2-yne
-def: "Mutation induced by exposure to 1,4-dimethanesulfonoxybut-2-yne." [FBC:MMC]
 namespace: origin_of_mutation
+def: "Mutation induced by exposure to 1,4-dimethanesulfonoxybut-2-yne." [FBC:MMC]
 subset: camcur
 synonym: "CB2058" RELATED []
 synonym: "mutation induced by 1,4-dimethanesulfonoxybut-2-yne exposure" EXACT []
@@ -7471,8 +7469,8 @@ is_a: FBcv:0000005 ! qualifier
 [Term]
 id: FBcv:0000566
 name: 1,6-dimethylsulfonoxy D-mannitol
-def: "Mutation induced by exposure to 1,6-dimethylsulfonoxy D-mannitol." [FBC:MMC]
 namespace: origin_of_mutation
+def: "Mutation induced by exposure to 1,6-dimethylsulfonoxy D-mannitol." [FBC:MMC]
 subset: camcur
 synonym: "CB2511" RELATED []
 synonym: "mutation induced by 1,6-dimethylsulfonoxy D-mannitol exposure" EXACT []
@@ -7481,8 +7479,8 @@ is_a: FBcv:0000525 ! chemical
 [Term]
 id: FBcv:0000567
 name: 1,6-dimethylsulfonoxy L-mannitol
-def: "Mutation induced by exposure to 1,6-dimethylsulfonoxy L-mannitol." [FBC:MMC]
 namespace: origin_of_mutation
+def: "Mutation induced by exposure to 1,6-dimethylsulfonoxy L-mannitol." [FBC:MMC]
 subset: camcur
 synonym: "CB2628" RELATED []
 synonym: "mutation induced by 1,6-dimethylsulfonoxy L-mannitol exposure" EXACT []
@@ -7646,8 +7644,8 @@ namespace: origin_of_mutation
 def: "." [CHEBI:27561]
 subset: camcur
 synonym: "ethylene oxide" RELATED [CHEBI:27561]
-synonym: "oxirane" RELATED [CHEBI:27561]
 synonym: "mutation induced by ethylene oxide exposure" EXACT []
+synonym: "oxirane" RELATED [CHEBI:27561]
 is_a: FBcv:0000525 ! chemical
 equivalent_to: CHEBI:27561
 
@@ -7743,8 +7741,8 @@ equivalent_to: CHEBI:25234
 [Term]
 id: FBcv:0000591
 name: natural gas
-def: "Mutation induced by exposure to natural gas." [FBC:MMC]
 namespace: origin_of_mutation
+def: "Mutation induced by exposure to natural gas." [FBC:MMC]
 subset: camcur
 synonym: "mutation induced by natural gas exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
@@ -7906,9 +7904,9 @@ equivalent_to: CHEBI:27919
 [Term]
 id: FBcv:0000606
 name: allele assay method
+namespace: mode_of_assay
 def: "Assay method used to generate an allele." [FBC:MMC]
 comment: This term has been obsoleted because it is no longer used and relevant. mc151005
-namespace: mode_of_assay
 is_obsolete: true
 consider: FBcv:0000807
 
@@ -8017,8 +8015,8 @@ is_obsolete: true
 [Term]
 id: FBcv:0000620
 name: genetic interaction qualifier
-def: "Qualifier that describes the relation between two phenotypes that are due to genotypes g1 and g2." [FBC:MMC]
 namespace: genetic_interaction_type
+def: "Qualifier that describes the relation between two phenotypes that are due to genotypes g1 and g2." [FBC:MMC]
 is_a: FBcv:0000005 ! qualifier
 
 [Term]
@@ -8058,8 +8056,8 @@ is_a: FBcv:0000620 ! genetic interaction qualifier
 [Term]
 id: FBcv:0000625
 name: non-enhancer
-def: "Genotype g1 is a non-enhancer of genotype g2 if (and only if) the phenotype due to the genotype g1g2 is not more severe than the sum of phenotypes due to g1 and g2, where all comparisons are under identical environmental conditions." [FBC:MMC, FlyBase:FBrf0000957, ISBN:978-0-387-52054-4]
 namespace: genetic_interaction_type
+def: "Genotype g1 is a non-enhancer of genotype g2 if (and only if) the phenotype due to the genotype g1g2 is not more severe than the sum of phenotypes due to g1 and g2, where all comparisons are under identical environmental conditions." [FBC:MMC, FlyBase:FBrf0000957, ISBN:978-0-387-52054-4]
 comment: Not used directly in curation, but automatically inferred from its inverse (non-enhanceable).
 is_a: FBcv:0000620 ! genetic interaction qualifier
 
@@ -8075,8 +8073,8 @@ is_a: FBcv:0000620 ! genetic interaction qualifier
 [Term]
 id: FBcv:0000627
 name: non-suppressor
-def: "The genotype g1 is a non-suppressor of genotype g2 if (and only if) the phenotype due to g2 is not made less severe by g1." [FBC:MMC, FlyBase:FBrf0000957, ISBN:978-0-387-52054-4]
 namespace: genetic_interaction_type
+def: "The genotype g1 is a non-suppressor of genotype g2 if (and only if) the phenotype due to g2 is not made less severe by g1." [FBC:MMC, FlyBase:FBrf0000957, ISBN:978-0-387-52054-4]
 comment: Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA28b-q. Proforma field: GA29b-q.
 is_a: FBcv:0000620 ! genetic interaction qualifier
 
@@ -8238,8 +8236,8 @@ is_a: FBcv:0000052 ! spatial qualifier
 [Term]
 id: FBcv:0000654
 name: embryonic pattern qualifier
-def: "Qualifier that describes the expression pattern of an embryo." [FBC:MMC]
 namespace: embryonic_pattern_qualifier
+def: "Qualifier that describes the expression pattern of an embryo." [FBC:MMC]
 is_a: FBcv:0000052 ! spatial qualifier
 
 [Term]
@@ -9365,8 +9363,8 @@ is_a: FBcv:0000483 ! transposable element activity
 [Term]
 id: FBcv:0003000
 name: disease qualifier
-def: "Qualifier that describes aspects of genetic models of disease." [FBC:MMC]
 namespace: disease_qualifier
+def: "Qualifier that describes aspects of genetic models of disease." [FBC:MMC]
 is_a: FBcv:0000005 ! qualifier
 created_by: mmc46
 creation_date: 2014-03-27T11:07:29Z
@@ -9480,8 +9478,8 @@ creation_date: 2014-03-27T11:07:29Z
 [Term]
 id: FBcv:0003011
 name: group descriptor
-def: "Descriptor that relates aspects of the grouping of genes or gene products." [FBC:MMC]
 namespace: group_descriptor
+def: "Descriptor that relates aspects of the grouping of genes or gene products." [FBC:MMC]
 is_a: FBcv:0000013 ! descriptor
 created_by: mmc46
 creation_date: 2014-03-28T15:23:42Z
