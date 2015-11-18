@@ -9738,13 +9738,11 @@ def: "q1 different_in_magnitude_relative_to q2 if and only if magnitude(q1) NOT 
 [Typedef]
 id: ends_during
 name: ends_during
-namespace: gene_ontology
 xref: RO:0002093
 
 [Typedef]
 id: happens_during
 name: happens_during
-namespace: gene_ontology
 xref: RO:0002092
 is_transitive: true
 is_a: ends_during ! ends_during
@@ -9758,7 +9756,6 @@ comment: Example: a spherical object has the quality of being spherical, and the
 [Typedef]
 id: has_part
 name: has_part
-namespace: relationship
 xref: BFO:0000051
 xref: OBO_REL:has_part
 is_transitive: true
@@ -9783,14 +9780,12 @@ xref: RO:0000052
 [Typedef]
 id: occurs_in
 name: occurs in
-namespace: gene_ontology
 xref: BFO:0000066
 transitive_over: part_of ! part_of
 
 [Typedef]
 id: part_of
 name: part_of
-namespace: relationship
 xref: BFO:0000050
 xref: OBO_REL:part_of
 is_transitive: true
@@ -9809,7 +9804,6 @@ comment: There are frequently two ways to state the same thing: we can say 'sper
 [Typedef]
 id: regulates
 name: regulates
-namespace: gene_ontology
 xref: RO:0002211
 transitive_over: part_of ! part_of
 
@@ -9827,7 +9821,6 @@ synonym: "monadic_form_of" EXACT []
 [Typedef]
 id: starts_during
 name: starts_during
-namespace: gene_ontology
 xref: RO:0002091
 
 [Typedef]
