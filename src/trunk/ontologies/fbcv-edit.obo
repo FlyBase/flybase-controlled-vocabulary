@@ -3766,10 +3766,9 @@ is_a: FBcv:0000176 ! temporal  qualifier
 id: FBcv:0000010
 name: monophasic
 namespace: temporal_qualifier
-comment: This term has been obsoleted as there is no way to decide how to group anatomy terms combined with this qualifier with other terms in the anatomy ontology [FBC:MMC]. mc150909
+comment: Deprecated:  Use of this term is discouraged as there is no way to decide how to group anatomy terms combined with this qualifier with other terms in the anatomy ontology.  Subject to discussion and once its usage in old curation is removed, this term will be obsoleted.  DS
 xref: PATO:0001773
-is_obsolete: true
-consider: FBcv:0000176
+is_a: FBcv:0000009 ! temporal stage qualifier
 
 [Term]
 id: FBcv:0000011
@@ -3781,10 +3780,8 @@ is_a: FBcv:0000176 ! temporal  qualifier
 id: FBcv:0000012
 name: absolute temporal qualifier
 namespace: temporal_qualifier
-comment: This term has been obsoleted as both its children were obsoleted (n day and n hr), as there was no way to decide how to group anatomy terms combined with those qualifiers with other terms in the anatomy ontology [FBC:MMC]. mc150909
 xref: PATO:0000165
-is_obsolete: true
-consider: FBcv:0000176
+is_a: FBcv:0000176 ! temporal  qualifier
 
 [Term]
 id: FBcv:0000013
@@ -3987,10 +3984,9 @@ is_a: FBcv:0000038 ! relative spatial qualifier
 id: FBcv:0000040
 name: distal to
 namespace: spatial_qualifier
-comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.\n\nThis term has been obsoleted as there is no way to decide how to group anatomy terms combined with this qualifier with other terms in the anatomy ontology [FBC:MMC]. mc150909
+comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.\n\nDeprecated:  Use of this term is discouraged as there is no way to decide how to group anatomy terms combined with this qualifier with other terms in the anatomy ontology.  Once its usage in old curation is removed, this term will be obsoleted.  DS
 xref: PATO:0001234
-is_obsolete: true
-consider: FBcv:0000052
+is_a: FBcv:0000038 ! relative spatial qualifier
 
 [Term]
 id: FBcv:0000041
@@ -4129,9 +4125,8 @@ is_a: FBcv:0000052 ! spatial qualifier
 id: FBcv:0000057
 name: contralateral
 namespace: spatial_qualifier
-comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.\n\nThis term has been obsoleted as there is no way to correctly use this term for annotation [FBC:MMC]. mc150909
-is_obsolete: true
-consider: FBcv:0000052
+comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.\n\nDeprecated:  Contralateral means - on the opposite  side from ....  In curation usage: on the opposite side from what ?  Will be obsoleted once a replacement term agreed upon (if needed) and any old usage retrofitted. DS
+is_a: FBcv:0000052 ! spatial qualifier
 
 [Term]
 id: FBcv:0000058
@@ -5047,18 +5042,15 @@ is_a: FBcv:0000011 ! relative temporal qualifier
 id: FBcv:0000183
 name: n day
 namespace: temporal_qualifier
-comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.\n\nThis term has been obsoleted as there is no way to decide how to group anatomy terms combined with this qualifier with other terms in the anatomy ontology [FBC:MMC]. mc150909
-is_obsolete: true
-consider: FBcv:0000176
-
+comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.\n\nDeprecated:  Use of this term is discouraged as there is no way to decide how to group anatomy terms combined with this qualifier with other terms in the anatomy ontology.  Subject to discussion and once its usage in old curation is removed, this term will be obsoleted.  DS
+is_a: FBcv:0000012 ! absolute temporal qualifier
 
 [Term]
 id: FBcv:0000184
 name: n hr
 namespace: temporal_qualifier
-comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.\n\nThis term has been obsoleted as there is no way to decide how to group anatomy terms combined with this qualifier with other terms in the anatomy ontology [FBC:MMC]. mc150909
-is_obsolete: true
-consider: FBcv:0000176
+comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.\n\nDeprecated:  Use of this term is discouraged as there is no way to decide how to group anatomy terms combined with this qualifier with other terms in the anatomy ontology.  Subject to discussion and once its usage in old curation is removed, this term will be obsoleted.  DS
+is_a: FBcv:0000012 ! absolute temporal qualifier
 
 [Term]
 id: FBcv:0000185
@@ -6293,26 +6285,27 @@ is_obsolete: true
 id: FBcv:0000339
 name: fully
 namespace: extent
-comment: Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. \n\nDEPRECATION WARNING: This term is marked for obsoletion. Use of this term is discouraged as 'fully' assumed in the absence of use of 'partially'.
+comment: Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. \n\nDEPRECATION WARNING: This term has been obsoleted as 'fully' is assumed in the absence of use of 'partially'. mc151118
 subset: deprecated
-is_a: FBcv:0000811 ! qualitative qualifier
+is_obsolete: true
+
 
 [Term]
 id: FBcv:0000340
 name: partially
 namespace: extent
 def: "Incomplete penetrance or expressivity of a phenotype or incomplete suppression of a phenotype." [FBC:DOS]
-comment: Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Note on usage: This qualifier should not be used in combination with lethal, viable, sterile or fertile.  For these cases, terms of the form semi-X should be used instead.
+comment: Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Note on usage: This qualifier should not be used in combination with lethal, viable, sterile or fertile. For these cases, terms of the form semi-X should be used instead.
 subset: camcur
 is_a: FBcv:0000811 ! qualitative qualifier
 
 [Term]
 id: FBcv:0000341
 name: good
-comment: DEPRECATION WARNING: Use of this term is discouraged as it should be assumed a phenotype is good, unless it is said otherwise, by using other qualifiers. Subject to discussion, and once its usage in old curation is removed, this term will be obsoleted. mc150828
+comment: This term has been obsoleted as it should be assumed a phenotype is good, unless it is said otherwise, by using other qualifiers. mc151118
 namespace: intensity_qualifier
 subset: deprecated
-is_a: FBcv:0000811 ! qualitative qualifier
+is_obsolete: true
 
 [Term]
 id: FBcv:0000342
