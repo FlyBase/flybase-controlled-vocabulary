@@ -1122,15 +1122,15 @@
     </owl:Class>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FBC:DOS</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">dorsal-ventral polarity</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;FBcv_0000324"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FBC:DOS</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Phenotype that is a defect in dorsal/ventral axis specification (GO:0009950). &apos;dorsal/ventral axis specification&apos; is defined as: &apos;$sub_GO:0009950&apos;</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0000324"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FBC:DOS</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">dorsal-ventral polarity</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;FBcv_0000324"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     
 
@@ -1175,13 +1175,13 @@
         <rdfs:subClassOf rdf:resource="&obo;FBcv_0000347"/>
         <owl:disjointWith rdf:resource="&obo;FBcv_0001347"/>
         <oboInOwl:id rdf:datatype="&xsd;string">FBcv:0000348</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">The cannonical phenotype of a wild-type Drosophilid.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The canonical phenotype of a wild-type Drosophilid.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:inSubset rdf:resource="&obo;fbcv#camcur"/>
     </owl:Class>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FBC:DOS</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">The cannonical phenotype of a wild-type Drosophilid.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">The canonical phenotype of a wild-type Drosophilid.</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0000348"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -1281,10 +1281,10 @@
                                 <owl:onDatatype rdf:resource="&xsd;short"/>
                                 <owl:withRestrictions rdf:parseType="Collection">
                                     <rdf:Description>
-                                        <xsd:maxExclusive rdf:datatype="&xsd;integer">50</xsd:maxExclusive>
+                                        <xsd:minInclusive rdf:datatype="&xsd;integer">5</xsd:minInclusive>
                                     </rdf:Description>
                                     <rdf:Description>
-                                        <xsd:minInclusive rdf:datatype="&xsd;integer">5</xsd:minInclusive>
+                                        <xsd:maxExclusive rdf:datatype="&xsd;integer">50</xsd:maxExclusive>
                                     </rdf:Description>
                                 </owl:withRestrictions>
                             </rdfs:Datatype>
@@ -1393,9 +1393,9 @@
         <oboInOwl:inSubset rdf:resource="&obo;fbcv#camcur"/>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref>FBC:KM</oboInOwl:hasDbXref>
-        <owl:annotatedTarget>A phenotype of a population that is the death of all animals in that population at some stage or stages prior to becoming a mature adult, where mature is defined as after adult stage A3 (FBdv:00006012).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>A phenotype of a population that is the death of all animals in that population at some stage or stages prior to becoming a mature adult, where mature is defined as after adult stage A3 (FBdv:00006012).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FBC:KM</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0000351"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -1487,10 +1487,10 @@
         <oboInOwl:inSubset rdf:resource="&obo;fbcv#camcur"/>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref>FBC:KM</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FBC:NB</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
         <owl:annotatedTarget>A phenotype of a population that is the death a majority of animals in that population prior to becoming a mature adult, where mature is defined as after adult stage A3 (FBdv:00006012).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FBC:KM</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:NB</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0000352"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -2139,15 +2139,15 @@
     </owl:Class>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FBC:DOS</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Phenotype that is a reduction in the proportion of fertilized eggs produced to, but only to &gt; 50% of wild-type.</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;FBcv_0000375"/>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FBC:DOS</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">reduced fecundity</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0000375"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasBroadSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FBC:DOS</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Phenotype that is a reduction in the proportion of fertilized eggs produced to, but only to &gt; 50% of wild-type.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;FBcv_0000375"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
     
 
@@ -2230,13 +2230,13 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;FBcv_0001347"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A phenotype in which all offspring are sterile.  Typically, this is due to maternal effect sterility resulting from defects in pole cell development.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A phenotype in which all offspring are sterile. Typically, this is due to maternal effect sterility resulting from defects in pole cell development.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">FBcv:0000378</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:inSubset rdf:resource="&obo;fbcv#camcur"/>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">A phenotype in which all offspring are sterile.  Typically, this is due to maternal effect sterility resulting from defects in pole cell development.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A phenotype in which all offspring are sterile. Typically, this is due to maternal effect sterility resulting from defects in pole cell development.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISBN:978-0-87969-321-3</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0000378"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
@@ -2270,13 +2270,13 @@
         <rdfs:label rdf:datatype="&xsd;string">non-enhancer of variegation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FBcv_0001347"/>
         <oboInOwl:id rdf:datatype="&xsd;string">FBcv:0000380</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">Genotype g1 is a non-enhancer of variegation of the phenotype due to genotype g2 if, and only if,  g2 has a variegated phenotype and the degree of variegation caused by g1g2 is not greater than that caused by g2 alone.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Genotype g1 is a non-enhancer of variegation of the phenotype due to genotype g2 if, and only if, g2 has a variegated phenotype and the degree of variegation caused by g1g2 is not greater than that caused by g2 alone.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:inSubset rdf:resource="&obo;fbcv#camcur"/>
     </owl:Class>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FBC:DOS</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Genotype g1 is a non-enhancer of variegation of the phenotype due to genotype g2 if, and only if,  g2 has a variegated phenotype and the degree of variegation caused by g1g2 is not greater than that caused by g2 alone.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Genotype g1 is a non-enhancer of variegation of the phenotype due to genotype g2 if, and only if, g2 has a variegated phenotype and the degree of variegation caused by g1g2 is not greater than that caused by g2 alone.</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0000380"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -2309,13 +2309,13 @@
         <rdfs:label rdf:datatype="&xsd;string">non-suppressor of variegation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FBcv_0001347"/>
         <oboInOwl:id rdf:datatype="&xsd;string">FBcv:0000382</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">Genotype g1 is a non-suppressor of variegation of the phenotype due to genotype g2 if, and only if,  g2 has a variegated phenotype and the degree of variegation caused by g1g2 is not less than that caused by g2 alone.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Genotype g1 is a non-suppressor of variegation of the phenotype due to genotype g2 if, and only if, g2 has a variegated phenotype and the degree of variegation caused by g1g2 is not less than that caused by g2 alone.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:inSubset rdf:resource="&obo;fbcv#camcur"/>
     </owl:Class>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FBC:DOS</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Genotype g1 is a non-suppressor of variegation of the phenotype due to genotype g2 if, and only if,  g2 has a variegated phenotype and the degree of variegation caused by g1g2 is not less than that caused by g2 alone.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Genotype g1 is a non-suppressor of variegation of the phenotype due to genotype g2 if, and only if, g2 has a variegated phenotype and the degree of variegation caused by g1g2 is not less than that caused by g2 alone.</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0000382"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -3044,12 +3044,6 @@
     </owl:Class>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FBC:SM</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">singing defective</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;FBcv_0000402"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FBC:SM</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">song production defective</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0000402"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
@@ -3059,6 +3053,12 @@
         <owl:annotatedTarget rdf:datatype="&xsd;string">Phenotype that is a defect in male courtship behavior, veined wing generated song production (GO:0045433). This is defined as &apos;$sub_GO:0045433&apos;</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0000402"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FBC:SM</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">singing defective</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;FBcv_0000402"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -3772,7 +3772,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;FBcv_0001347"/>
         <oboInOwl:id rdf:datatype="&xsd;string">FBcv:0000424</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">Phenotype that is a change in the amount of cell death in a whole animal or in some specific organ tissue or clone of cells compared to wild-type.  This may be due to effects on the regulation of cell death (GO:0010941) or in cell death (GO:0008219) pathways themselves.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Phenotype that is a change in the amount of cell death in a whole animal or in some specific organ tissue or clone of cells compared to wild-type. This may be due to effects on the regulation of cell death (GO:0010941) or in cell death (GO:0008219) pathways themselves.</obo:IAO_0000115>
         <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">apoptosis defective</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">pcd defective</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">phenotypic_class</oboInOwl:hasOBONamespace>
@@ -3781,7 +3781,7 @@
     </owl:Class>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FBC:DOS</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Phenotype that is a change in the amount of cell death in a whole animal or in some specific organ tissue or clone of cells compared to wild-type.  This may be due to effects on the regulation of cell death (GO:0010941) or in cell death (GO:0008219) pathways themselves.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Phenotype that is a change in the amount of cell death in a whole animal or in some specific organ tissue or clone of cells compared to wild-type. This may be due to effects on the regulation of cell death (GO:0010941) or in cell death (GO:0008219) pathways themselves.</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0000424"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -4385,13 +4385,13 @@
         <rdfs:label rdf:datatype="&xsd;string">tumorigenic</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FBcv_0000723"/>
         <oboInOwl:id rdf:datatype="&xsd;string">FBcv:0000445</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">Phenotype that is characterised by the formation of abnormal masses of tissue (tumors) as the result of neoplasia.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Phenotype that is characterized by the formation of abnormal masses of tissue (tumors) as the result of neoplasia.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:inSubset rdf:resource="&obo;fbcv#camcur"/>
     </owl:Class>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FBC:DOS</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Phenotype that is characterised by the formation of abnormal masses of tissue (tumors) as the result of neoplasia.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Phenotype that is characterized by the formation of abnormal masses of tissue (tumors) as the result of neoplasia.</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0000445"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -4405,7 +4405,7 @@
         <rdfs:subClassOf rdf:resource="&obo;FBcv_0001347"/>
         <oboInOwl:id rdf:datatype="&xsd;string">FBcv:0000446</oboInOwl:id>
         <rdfs:comment rdf:datatype="&xsd;string">Melanotic capsules are formed around foreign bodies in wild-type animals as part of the immune response, for example as a protection against parasitoid wasps. Some, but not all melanotic mass phenotypes involve ectopic activation of this immmune response.  While melanotic masses are commonly referred to as melanotic tumors in the historical listerature, this is a misnomer as they are rarely neoplastic.</rdfs:comment>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">Phenotype characterised by the formation of lumps of melanotic tissue inside the body in the absence of foreign bodies.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Phenotype characterized by the formation of lumps of melanotic tissue inside the body in the absence of foreign bodies.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">melanotic &apos;tumor&apos;</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:inSubset rdf:resource="&obo;fbcv#camcur"/>
@@ -4413,7 +4413,7 @@
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FlyBase:FBrf0094387</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FlyBase:FBrf0194475</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Phenotype characterised by the formation of lumps of melanotic tissue inside the body in the absence of foreign bodies.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Phenotype characterized by the formation of lumps of melanotic tissue inside the body in the absence of foreign bodies.</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0000446"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -4426,13 +4426,13 @@
         <rdfs:label rdf:datatype="&xsd;string">melanotic necrosis</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FBcv_0001347"/>
         <oboInOwl:id rdf:datatype="&xsd;string">FBcv:0000447</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">Phenotype characterised by closely associated necrosis and melanisation.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Phenotype characterized by closely associated necrosis and melanization.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:inSubset rdf:resource="&obo;fbcv#camcur"/>
     </owl:Class>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FlyBase:FBrf0155704</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Phenotype characterised by closely associated necrosis and melanisation.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Phenotype characterized by closely associated necrosis and melanization.</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0000447"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -4550,13 +4550,13 @@
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="&xsd;string">A more complete formalisation would require a clause specifying stage.  It might be possible to do this in OWL using the same system as we are using for lethal phase.</rdfs:comment>
         <oboInOwl:id rdf:datatype="&xsd;string">FBcv:0000450</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">Phenotype that is a change in the rate of some developmental process (GO:0032502) taking place prior to mature adulthood (defined as adult stage A3), compared to wild-type.  Note, developmental processes include stages in development of the whole animal (e.g.- larval development) as well as specific sub-processes, such as dorsal closure.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Phenotype that is a change in the rate of some developmental process (GO:0032502) taking place prior to mature adulthood (defined as adult stage A3), compared to wild-type. Note, developmental processes include stages in development of the whole animal (e.g.- larval development) as well as specific sub-processes, such as dorsal closure.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:inSubset rdf:resource="&obo;fbcv#camcur"/>
     </owl:Class>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FBC:DOS</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Phenotype that is a change in the rate of some developmental process (GO:0032502) taking place prior to mature adulthood (defined as adult stage A3), compared to wild-type.  Note, developmental processes include stages in development of the whole animal (e.g.- larval development) as well as specific sub-processes, such as dorsal closure.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Phenotype that is a change in the rate of some developmental process (GO:0032502) taking place prior to mature adulthood (defined as adult stage A3), compared to wild-type. Note, developmental processes include stages in development of the whole animal (e.g.- larval development) as well as specific sub-processes, such as dorsal closure.</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0000450"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -6083,8 +6083,8 @@
         <oboInOwl:inSubset rdf:resource="&obo;FBcv#camcur"/>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget>A phenotype of a population that is the death of all animals in that population at some stage or stages before the end of the larval stage.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>A phenotype of a population that is the death of all animals in that population at some stage or stages before the end of the larval stage.</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0002002"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -6168,8 +6168,8 @@
         <oboInOwl:inSubset rdf:resource="&obo;FBcv#camcur"/>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget>A phenotype of a population that is the death of all animals in that population at some stage or stages before the end of the second instar larval stage.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>A phenotype of a population that is the death of all animals in that population at some stage or stages before the end of the second instar larval stage.</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0002003"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -6463,8 +6463,8 @@
         <oboInOwl:inSubset rdf:resource="&obo;FBcv#camcur"/>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget>A phenotype of a population that is the death of all animals in that population during the larval stage.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>A phenotype of a population that is the death of all animals in that population during the larval stage.</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0002007"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -6548,8 +6548,8 @@
         <oboInOwl:inSubset rdf:resource="&obo;FBcv#camcur"/>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget>A phenotype of a population that is the death of all animals in that population during the second instar larval stage.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>A phenotype of a population that is the death of all animals in that population during the second instar larval stage.</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0002008"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -6803,8 +6803,8 @@
         <oboInOwl:inSubset rdf:resource="&obo;FBcv#camcur"/>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
         <owl:annotatedTarget>A phenotype of a population that is the death of the majority of animals in that population during the first instar larval stage.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0002011"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -6888,8 +6888,8 @@
         <oboInOwl:inSubset rdf:resource="&obo;FBcv#camcur"/>
     </owl:Class>
     <owl:Axiom>
-        <rdfs:comment>FBC:DOS</rdfs:comment>
         <owl:annotatedTarget>A phenotype of a population that is the death of the majority of animals in that population during the larval stage.</owl:annotatedTarget>
+        <rdfs:comment>FBC:DOS</rdfs:comment>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0002012"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -6973,8 +6973,8 @@
         <oboInOwl:inSubset rdf:resource="&obo;FBcv#camcur"/>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget>A phenotype of a population that is the death of the majority of animals in that population during the second instar larval stage.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>A phenotype of a population that is the death of the majority of animals in that population during the second instar larval stage.</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0002013"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -7058,8 +7058,8 @@
         <oboInOwl:inSubset rdf:resource="&obo;FBcv#camcur"/>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget>A phenotype of a population that is the death of the majority of animals in that population during the third instar larval stage.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>A phenotype of a population that is the death of the majority of animals in that population during the third instar larval stage.</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0002014"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -7146,9 +7146,9 @@
         <oboInOwl:inSubset rdf:resource="&obo;FBcv#camcur"/>
     </owl:Class>
     <owl:Axiom>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
         <owl:annotatedTarget>A phenotype of a population that is the death of some significant proportion of animals in that population prior to becoming a mature adult, where mature is defined as after adult stage A3 (FBdv:00006012).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FBC:KM</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0002015"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -7231,8 +7231,8 @@
         <obo:IAO_0000115>A phenotype of a population that is the death a significant proportion of animals in that population prior to becoming a mature adult, where mature is defined as after adult stage A3 (FBdv:00006012).</obo:IAO_0000115>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget>A phenotype of a population that is the death a significant proportion of animals in that population prior to becoming a mature adult, where mature is defined as after adult stage A3 (FBdv:00006012).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>A phenotype of a population that is the death a significant proportion of animals in that population prior to becoming a mature adult, where mature is defined as after adult stage A3 (FBdv:00006012).</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0002019"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -7486,8 +7486,8 @@
         <oboInOwl:inSubset rdf:resource="&obo;FBcv#camcur"/>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
         <owl:annotatedTarget>A phenotype of a population that is the death a significant proportion of animals in that population during the second instar larval stage.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0002022"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -7571,8 +7571,8 @@
         <oboInOwl:inSubset rdf:resource="&obo;FBcv#camcur"/>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
         <owl:annotatedTarget>A phenotype of a population that is the death a significant proportion of animals in that population during the larval stage.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0002023"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -7911,8 +7911,8 @@
         <oboInOwl:inSubset rdf:resource="&obo;FBcv#camcur"/>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget>A phenotype of a population that is the death of all animals in that population at some stage or stages before the end of the pupal stage.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>A phenotype of a population that is the death of all animals in that population at some stage or stages before the end of the pupal stage.</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0002027"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -8166,8 +8166,8 @@
         <oboInOwl:inSubset rdf:resource="&obo;FBcv#camcur"/>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
         <owl:annotatedTarget>A phenotype of a population that is the death of all animals in that population at some stage or stages before the end of the embryonic stage.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0002032"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -8251,12 +8251,6 @@
         <oboInOwl:inSubset rdf:resource="&obo;FBcv#camcur"/>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget>A phenotype of a population that is the death of all animals in that population during the embryonic stage.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;FBcv_0002033"/>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <rdfs:comment>Need to add local reflexivity to part_of for this to work.  And really need to be using continuant part of.</rdfs:comment>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0002033"/>
         <owl:annotatedProperty rdf:resource="&owl;equivalentClass"/>
@@ -8327,6 +8321,12 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:annotatedTarget>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>A phenotype of a population that is the death of all animals in that population during the embryonic stage.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;FBcv_0002033"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
     
 
@@ -8408,8 +8408,8 @@
         <oboInOwl:inSubset rdf:resource="&obo;FBcv#camcur"/>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget>A phenotype of a population that is the death of the majority of animals in that population during the pupal stage.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>A phenotype of a population that is the death of the majority of animals in that population during the pupal stage.</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0002034"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -8493,8 +8493,8 @@
         <oboInOwl:inSubset rdf:resource="&obo;FBcv#camcur"/>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget>A phenotype of a population that is the death of the majority of animals in that population during the prepual stage.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>A phenotype of a population that is the death of the majority of animals in that population during the prepual stage.</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0002035"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -8578,8 +8578,8 @@
         <oboInOwl:inSubset rdf:resource="&obo;FBcv#camcur"/>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
         <owl:annotatedTarget>A phenotype of a population that is the death of the majority of animals in that population during the pharate adult stage.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0002036"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -8664,8 +8664,8 @@
         <oboInOwl:inSubset rdf:resource="&obo;FBcv#camcur"/>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget>A phenotype of a population that is the death of the majority of animals in that population during the embryonic stage.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>A phenotype of a population that is the death of the majority of animals in that population during the embryonic stage.</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0002037"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -8749,8 +8749,8 @@
         <oboInOwl:inSubset rdf:resource="&obo;FBcv#camcur"/>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
         <owl:annotatedTarget>A phenotype of a population that is the death a significant proportion of animals in that population during the pharate adult stage.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0002038"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -8834,8 +8834,8 @@
         <oboInOwl:inSubset rdf:resource="&obo;FBcv#camcur"/>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget>A phenotype of a population that is the death a significant proportion of animals in that population during the pupal stage.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>A phenotype of a population that is the death a significant proportion of animals in that population during the pupal stage.</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0002039"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -9259,8 +9259,8 @@
         <oboInOwl:inSubset rdf:resource="&obo;FBcv#camcur"/>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
         <owl:annotatedTarget>A phenotype of a population that is the death of some significant number of animals in that population as immature adults (after eclosion but before the end of adult stage A3 (FBdv:00006012)).</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FBC:DOS</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;FBcv_0002051"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
@@ -10893,16 +10893,16 @@
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PATOC:MAH</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">cellular polarity</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;PATO_0001769"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">A positional quality inhering in a bearer by virtue of the bearer&apos;s location of features or characteristics along an axis.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PATOC:MAH</oboInOwl:hasDbXref>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
         <owl:annotatedSource rdf:resource="&obo;PATO_0001769"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PATOC:MAH</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">cellular polarity</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;PATO_0001769"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     
 
