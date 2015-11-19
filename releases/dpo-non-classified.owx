@@ -6,34 +6,46 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      ontologyIRI="http://purl.obolibrary.org/obo/dpo/dpo-non-classified.owl"
-     versionIRI="http://purl.obolibrary.org/obo/dpo/2013-08-23/dpo-non-classified.owl">
+     versionIRI="http://purl.obolibrary.org/obo/dpo/2015-11-19/dpo-non-classified.owl">
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Imports terms from http://purl.obolibrary.org/obo/go/2014-09-20/go-simple.owl; http://purl.obolibrary.org/obo/fbdv/2014-07-29/fbdv.owl</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#date"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">23:09:2014 17:55</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#saved-by"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">mmc46</Literal>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#auto-generated-by"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">OBO-Edit 2.3-beta5</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#default-namespace"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FlyBase_miscellaneous_CV</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.2</Literal>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://www.semanticweb.org/ontologies/2010/5/Ontology1275387730635/timing_relations_for_occurrents.owl&gt;))) [Axioms: 115 Logical Axioms: 55]</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#auto-generated-by"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">OBO-Edit 2.3-beta5</Literal>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/FBdv.owl&gt;))) [Axioms: 249 Logical Axioms: 70]</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#saved-by"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">mmc46</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Imports terms from http://purl.obolibrary.org/obo/go/2014-09-20/go-simple.owl; http://purl.obolibrary.org/obo/fbdv/2014-07-29/fbdv.owl</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/fbcv_go_import.owl&gt;))) [Axioms: 2082 Logical Axioms: 299]</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#date"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">19:11:2015 13:48</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.2</Literal>
     </Annotation>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/BFO_0000035"/>
@@ -1561,9 +1573,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000062"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000066"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0000052"/>
@@ -6724,13 +6733,6 @@
         <Class IRI="http://purl.obolibrary.org/obo/GO_0016192"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0006897"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-            <Class IRI="http://purl.obolibrary.org/obo/GO_0010324"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0006928"/>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0044763"/>
     </SubClassOf>
@@ -6854,7 +6856,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0007610"/>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0050896"/>
+        <Class IRI="http://purl.obolibrary.org/obo/GO_0008150"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0007611"/>
@@ -6944,11 +6946,14 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0007635"/>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0042221"/>
+        <Class IRI="http://purl.obolibrary.org/obo/GO_0044708"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0007635"/>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0044708"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <Class IRI="http://purl.obolibrary.org/obo/GO_0042221"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0007637"/>
@@ -7139,6 +7144,10 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002211"/>
             <Class IRI="http://purl.obolibrary.org/obo/GO_0008219"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/GO_0016043"/>
+        <Class IRI="http://purl.obolibrary.org/obo/GO_0009987"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0016043"/>
@@ -7354,11 +7363,14 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0042330"/>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0009605"/>
+        <Class IRI="http://purl.obolibrary.org/obo/GO_0040011"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0042330"/>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0040011"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <Class IRI="http://purl.obolibrary.org/obo/GO_0009605"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0042331"/>
@@ -7522,10 +7534,6 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0044765"/>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0006810"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0044765"/>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0044699"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0044765"/>
@@ -7753,7 +7761,14 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0051780"/>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0007584"/>
+        <Class IRI="http://purl.obolibrary.org/obo/GO_0007610"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/GO_0051780"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <Class IRI="http://purl.obolibrary.org/obo/GO_0007584"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0055115"/>
@@ -8249,10 +8264,6 @@
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000348"/>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0001347"/>
     </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0007610"/>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0032502"/>
-    </DisjointClasses>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002092"/>
@@ -8318,10 +8329,6 @@
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002091"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002092"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002093"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002093"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
@@ -8333,10 +8340,6 @@
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002213"/>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002211"/>
     </SubObjectPropertyOf>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000051"/>
-    </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000060"/>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000062"/>
@@ -8488,17 +8491,10 @@
     </ObjectPropertyRange>
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000066"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002091"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000060"/>
         </ObjectPropertyChain>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000066"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectPropertyChain>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000066"/>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        </ObjectPropertyChain>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000066"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002089"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
@@ -8506,13 +8502,6 @@
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000062"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000062"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectPropertyChain>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002091"/>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000060"/>
-        </ObjectPropertyChain>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002089"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
@@ -8549,6 +8538,20 @@
         </ObjectPropertyChain>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002211"/>
     </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002212"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002212"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002213"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002213"/>
+    </SubObjectPropertyOf>
     <DataPropertyDomain>
         <DataProperty IRI="http://purl.obolibrary.org/obo/scratch_0008216"/>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0001347"/>
@@ -8557,11 +8560,11 @@
         <DataProperty IRI="http://purl.obolibrary.org/obo/scratch_0008216"/>
         <DatatypeRestriction>
             <Datatype abbreviatedIRI="xsd:short"/>
-            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
-            </FacetRestriction>
             <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
                 <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
             </FacetRestriction>
         </DatatypeRestriction>
     </DataPropertyRange>
@@ -8672,32 +8675,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <IRI>http://purl.obolibrary.org/obo/BFO_0000051</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">BFO:0000051</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000051</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">OBO_REL:has_part</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000051</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">external</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000051</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">has_part</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000051</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">has_part</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000051</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">has_part</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -8763,31 +8741,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/BFO_0000062</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">preceded_by</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000066</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">BFO:0000066</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000066</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">external</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000066</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">occurs_in</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000066</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">occurs_in</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/BFO_0000066</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">occurs in</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9458,7 +9411,7 @@
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000348</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The cannonical phenotype of a wild-type Drosophilid.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The canonical phenotype of a wild-type Drosophilid.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
@@ -9599,7 +9552,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000351</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Note on usage: lethal is appropriate in cases where escaper adults are very rare. The lethal phase prior to becoming a mature adult may be further specified multiple stage qualifiers.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Note on usage: lethal is appropriate in cases where escaper adults are very rare. The lethal phase prior to becoming a mature adult may be further specified using children terms which specify stage.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10493,7 +10446,7 @@
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000378</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A phenotype in which all offspring are sterile.  Typically, this is due to maternal effect sterility resulting from defects in pole cell development.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A phenotype in which all offspring are sterile. Typically, this is due to maternal effect sterility resulting from defects in pole cell development.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
@@ -10556,7 +10509,7 @@
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000380</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Genotype g1 is a non-enhancer of variegation of the phenotype due to genotype g2 if, and only if,  g2 has a variegated phenotype and the degree of variegation caused by g1g2 is not greater than that caused by g2 alone.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Genotype g1 is a non-enhancer of variegation of the phenotype due to genotype g2 if, and only if, g2 has a variegated phenotype and the degree of variegation caused by g1g2 is not greater than that caused by g2 alone.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
@@ -10619,7 +10572,7 @@
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000382</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Genotype g1 is a non-suppressor of variegation of the phenotype due to genotype g2 if, and only if,  g2 has a variegated phenotype and the degree of variegation caused by g1g2 is not less than that caused by g2 alone.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Genotype g1 is a non-suppressor of variegation of the phenotype due to genotype g2 if, and only if, g2 has a variegated phenotype and the degree of variegation caused by g1g2 is not less than that caused by g2 alone.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
@@ -11036,7 +10989,7 @@
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000395</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in locomotor rhythm (GO:0045475). &apos;locomotor rhythm&apos; is defined as: &apos;$sub_GO:0045475.&apos;</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in locomotor rhythm (GO:0045475). &apos;locomotor rhythm&apos; is defined as: &apos;$sub_GO:0045475&apos;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
@@ -11320,7 +11273,7 @@
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000404</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in sensory perception of smell (GO:0007608). &apos;sensory perception of smell&apos;q: &apos;$sub_GO:0007608&apos;</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in sensory perception of smell (GO:0007608). &apos;sensory perception of smell&apos; is defined as: &apos;$sub_GO:0007608&apos;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -11975,7 +11928,7 @@
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000424</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a change in the amount of cell death in a whole animal or in some specific organ tissue or clone of cells compared to wild-type.  This may be due to effects on the regulation of cell death (GO:0010941) or in cell death (GO:0008219) pathways themselves.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a change in the amount of cell death in a whole animal or in some specific organ tissue or clone of cells compared to wild-type. This may be due to effects on the regulation of cell death (GO:0010941) or in cell death (GO:0008219) pathways themselves.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
@@ -12644,7 +12597,7 @@
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000445</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is characterised by the formation of abnormal masses of tissue (tumors) as the result of neoplasia.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is characterized by the formation of abnormal masses of tissue (tumors) as the result of neoplasia.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
@@ -12677,7 +12630,7 @@
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000446</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype characterised by the formation of lumps of melanotic tissue inside the body in the absence of foreign bodies.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype characterized by the formation of lumps of melanotic tissue inside the body in the absence of foreign bodies.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -12716,7 +12669,7 @@
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000447</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype characterised by closely associated necrosis and melanisation.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype characterized by closely associated necrosis and melanization.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
@@ -12813,7 +12766,7 @@
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000450</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a change in the rate of some developmental process (GO:0032502) taking place prior to mature adulthood (defined as adult stage A3), compared to wild-type.  Note, developmental processes include stages in development of the whole animal (e.g.- larval development) as well as specific sub-processes, such as dorsal closure.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a change in the rate of some developmental process (GO:0032502) taking place prior to mature adulthood (defined as adult stage A3), compared to wild-type. Note, developmental processes include stages in development of the whole animal (e.g.- larval development) as well as specific sub-processes, such as dorsal closure.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
@@ -14315,9 +14268,13 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">lethal - all die before end of second instar larval stage</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">FBC:DOS</Literal>
+        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002004</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A phenotype that is an increase in the rate of death in a population at any any stage of life (during development or adulthood), over the rate seen in a wild type control population. </Literal>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A phenotype that is an increase in the rate of death in a population at any stage of life (during development or adulthood), over the rate seen in a wild type control population. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
@@ -15860,6 +15817,11 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0000003</IRI>
+        <IRI>http://purl.obolibrary.org/obo/go#goslim_chembl</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0000003</IRI>
         <IRI>http://purl.obolibrary.org/obo/go#goslim_generic</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -16097,7 +16059,7 @@
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0000910</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The division of the cytoplasm and the plasma membrane of a cell and its separation into two daughter cells.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The division of the cytoplasm and the plasma membrane of a cell and its partitioning into two daughter cells.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
@@ -16282,11 +16244,6 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0000910</IRI>
-        <IRI>http://purl.obolibrary.org/obo/go#goslim_pombe</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0000910</IRI>
         <IRI>http://purl.obolibrary.org/obo/go#goslim_yeast</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -16297,7 +16254,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0000910</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Note that when annotating eukaryotic species, mitotic or meiotic cytokinesis should always be specified for manual annotation and for prokaryotic species use &apos;cytokinesis by binary fission ; GO:0043093&apos;.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Note that when annotating eukaryotic species, mitotic or meiotic cytokinesis should always be specified for manual annotation and for prokaryotic species use &apos;FtsZ-dependent cytokinesis ; GO:0043093&apos; or Cdv-dependent cytokinesis ; GO:0061639.  Also, note that cytokinesis does not necessarily result in physical separation and detachment of the two daughter cells from each other.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -16442,6 +16399,11 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0002376</IRI>
+        <IRI>http://purl.obolibrary.org/obo/go#goslim_chembl</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0002376</IRI>
         <IRI>http://purl.obolibrary.org/obo/go#goslim_generic</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -16513,6 +16475,15 @@
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0003006</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A developmental process in which a progressive change in the state of some part of an organism specifically contributes to its ability to form offspring.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:dph</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0003006</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">puberty</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
@@ -16592,17 +16563,22 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0005575</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">NIF_Subcellular:sao-1337158144</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0005575</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">NIF_Subcellular:sao1337158144</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0005575</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">cellular component</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">cell or subcellular entity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0005575</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">cellular component unknown</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">cellular component</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
@@ -16632,6 +16608,11 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0005575</IRI>
         <IRI>http://purl.obolibrary.org/obo/go#goslim_candida</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0005575</IRI>
+        <IRI>http://purl.obolibrary.org/obo/go#goslim_chembl</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
@@ -16683,11 +16664,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The basic structural and functional unit of all organisms. Includes the plasma membrane and any external encapsulating structures such as the cell wall and cell envelope.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000589"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0005623</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">cell and encapsulating structures</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0005623</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">NIF_Subcellular:sao1813327414</Literal>
@@ -16706,6 +16682,11 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0005623</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GO:0005623</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0005623</IRI>
+        <IRI>http://purl.obolibrary.org/obo/go#goslim_chembl</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
@@ -16847,6 +16828,11 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0006259</IRI>
         <IRI>http://purl.obolibrary.org/obo/go#goslim_candida</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0006259</IRI>
+        <IRI>http://purl.obolibrary.org/obo/go#goslim_chembl</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
@@ -17488,6 +17474,11 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0006810</IRI>
+        <IRI>http://purl.obolibrary.org/obo/go#goslim_chembl</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0006810</IRI>
         <IRI>http://purl.obolibrary.org/obo/go#goslim_generic</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -17669,7 +17660,7 @@
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0006928</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The directed, self-propelled movement of a cellular component without the involvement of an external agent such as a transporter or a pore.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The directed, self-propelled movement of a cell or subcellular component without the involvement of an external agent such as a transporter or a pore.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -17683,6 +17674,11 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0006928</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">cellular component motion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0006928</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">cellular component movement</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
@@ -17702,6 +17698,16 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0006928</IRI>
+        <IRI>http://purl.obolibrary.org/obo/go#goantislim_grouping</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0006928</IRI>
+        <IRI>http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0006928</IRI>
         <IRI>http://purl.obolibrary.org/obo/go#goslim_pir</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -17717,7 +17723,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0006928</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">cellular component movement</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">movement of cell or subcellular component</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -17762,6 +17768,11 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0006950</IRI>
         <IRI>http://purl.obolibrary.org/obo/go#goslim_candida</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0006950</IRI>
+        <IRI>http://purl.obolibrary.org/obo/go#goslim_chembl</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
@@ -18022,6 +18033,11 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0007049</IRI>
+        <IRI>http://purl.obolibrary.org/obo/go#goslim_chembl</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0007049</IRI>
         <IRI>http://purl.obolibrary.org/obo/go#goslim_generic</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -18137,6 +18153,11 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0007155</IRI>
+        <IRI>http://purl.obolibrary.org/obo/go#goslim_chembl</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0007155</IRI>
         <IRI>http://purl.obolibrary.org/obo/go#goslim_generic</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -18213,6 +18234,11 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0007275</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GO:0007275</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0007275</IRI>
+        <IRI>http://purl.obolibrary.org/obo/go#goslim_chembl</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
@@ -18411,6 +18437,11 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0007568</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GO:0007568</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0007568</IRI>
+        <IRI>http://purl.obolibrary.org/obo/go#goslim_chembl</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
@@ -19421,11 +19452,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">physiological process</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0008150</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">biological process unknown</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0008150</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">biological_process</Literal>
@@ -19444,6 +19470,11 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0008150</IRI>
         <IRI>http://purl.obolibrary.org/obo/go#goslim_candida</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0008150</IRI>
+        <IRI>http://purl.obolibrary.org/obo/go#goslim_chembl</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
@@ -19536,6 +19567,16 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0008152</IRI>
+        <IRI>http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0008152</IRI>
+        <IRI>http://purl.obolibrary.org/obo/go#goslim_chembl</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0008152</IRI>
         <IRI>http://purl.obolibrary.org/obo/go#goslim_pir</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -19590,6 +19631,11 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0008219</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GO:0008219</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0008219</IRI>
+        <IRI>http://purl.obolibrary.org/obo/go#goslim_chembl</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
@@ -20530,7 +20576,7 @@
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0010467</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The process in which a gene&apos;s sequence is converted into a mature gene product or products (proteins or RNA). This includes the production of an RNA transcript as well as any processing to produce a mature RNA product or an mRNA (for protein-coding genes) and the translation of that mRNA into protein. Some protein processing events may be included when they are required to form an active form of a product from an inactive precursor form.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The process in which a gene&apos;s sequence is converted into a mature gene product or products (proteins or RNA). This includes the production of an RNA transcript as well as any processing to produce a mature RNA product or an mRNA (for protein-coding genes) and the translation of that mRNA into protein. Protein maturation is included when required to form an active form of a product from an inactive precursor form.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -20757,7 +20803,7 @@
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0010468</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Any process that modulates the frequency, rate or extent of gene expression. Gene expression is the process in which a gene&apos;s coding sequence is converted into a mature gene product or products (proteins or RNA). This includes the production of an RNA transcript as well as any processing to produce a mature RNA product or an mRNA (for protein-coding genes) and the translation of that mRNA into protein. Some protein processing events may be included when they are required to form an active form of a product from an inactive precursor form.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Any process that modulates the frequency, rate or extent of gene expression. Gene expression is the process in which a gene&apos;s coding sequence is converted into a mature gene product or products (proteins or RNA). This includes the production of an RNA transcript as well as any processing to produce a mature RNA product or an mRNA (for protein-coding genes) and the translation of that mRNA into protein. Protein maturation is included when required to form an active form of a product from an inactive precursor form.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -20796,6 +20842,11 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0010468</IRI>
         <IRI>http://purl.obolibrary.org/obo/go#gosubset_prok</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0010468</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">This class covers any process that regulates the rate of production of a mature gene product, and so includes processes that regulate that rate by regulating the level, stability or availability of intermediates in the process of gene expression.  For example, it covers any process that regulates the level, stability or availabiliy of mRNA for translation and thereby regulates the rate of production of the encoded protein via translation.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -21100,6 +21151,11 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0016192</IRI>
+        <IRI>http://purl.obolibrary.org/obo/go#goslim_chembl</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0016192</IRI>
         <IRI>http://purl.obolibrary.org/obo/go#goslim_generic</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -21129,6 +21185,10 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:mtg_apoptosis</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ISBN:0877797099</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -21153,6 +21213,11 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0016265</IRI>
+        <IRI>http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0016265</IRI>
         <IRI>http://purl.obolibrary.org/obo/go#goslim_plant</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -21163,7 +21228,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0016265</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">See also the biological process term &apos;apoptosis ; GO:0006915&apos;.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">This term should not be used for direct manual annotation. Instead, consider selecting a child term of GO:0008219 &apos;cell death&apos; or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -22117,6 +22182,11 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0034641</IRI>
+        <IRI>http://purl.obolibrary.org/obo/go#goslim_chembl</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0034641</IRI>
         <IRI>http://purl.obolibrary.org/obo/go#goslim_generic</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -22216,16 +22286,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The fluctuation in mating behavior that occurs over an approximately 24 hour cycle.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0035648</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">rfoulger</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0035648</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2011-01-25T10:20:05Z</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:bf</Literal>
@@ -22303,6 +22363,11 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0040007</IRI>
+        <IRI>http://purl.obolibrary.org/obo/go#goslim_chembl</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0040007</IRI>
         <IRI>http://purl.obolibrary.org/obo/go#goslim_generic</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -22348,6 +22413,11 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0040011</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GO:0040011</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0040011</IRI>
+        <IRI>http://purl.obolibrary.org/obo/go#goslim_chembl</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
@@ -23019,16 +23089,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A biological process that involves only one organism.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0044699</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">janelomax</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0044699</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2012-09-19T15:05:24Z</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0044699</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">single organism process</Literal>
@@ -23058,16 +23118,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A biological process that directly contributes to the process of producing new individuals, involving a single organism.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0044702</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">janelomax</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0044702</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2012-09-19T15:56:06Z</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0044702</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">biological_process</Literal>
@@ -23090,16 +23140,6 @@
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0044703</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A biological process that directly contributes to the process of producing new individuals, involving another organism.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0044703</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">janelomax</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0044703</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2012-09-19T15:56:30Z</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
@@ -23130,16 +23170,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The specific behavior of an organism that is associated with reproduction involving a single organism.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0044704</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">janelomax</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0044704</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2012-09-19T16:01:37Z</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0044704</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">biological_process</Literal>
@@ -23168,16 +23198,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The specific behavior of an organism that is associated with reproduction involving another organism of the same or different species.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0044705</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">janelomax</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0044705</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2012-09-19T16:02:12Z</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0044705</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">biological_process</Literal>
@@ -23202,16 +23222,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A multicellular organism process which involves another multicellular organism of the same or different species.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0044706</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">janelomax</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0044706</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2012-09-19T16:06:16Z</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0044706</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">biological_process</Literal>
@@ -23234,16 +23244,6 @@
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0044707</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A biological process occurring within a single, multicellular organism.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0044707</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">janelomax</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0044707</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2012-09-19T16:07:47Z</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
@@ -23274,16 +23274,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The specific behavior of a single organism in response to external or internal stimuli.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0044708</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">janelomax</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0044708</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2012-09-20T14:06:08Z</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0044708</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">biological_process</Literal>
@@ -23306,16 +23296,6 @@
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0044710</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A metabolic process - chemical reactions and pathways, including anabolism and catabolism, by which living organisms transform chemical substances - which involves a single organism.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0044710</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">janelomax</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0044710</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2012-10-17T15:46:40Z</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
@@ -23342,16 +23322,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Any process that is carried out at the cellular level, occurring within a single organism.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0044763</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">janelomax</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0044763</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2012-12-11T16:56:55Z</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0044763</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">biological_process</Literal>
@@ -23376,16 +23346,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The directed movement of substances (such as macromolecules, small molecules, ions) into, out of or within a cell, or between cells, or within a multicellular organism by means of some agent such as a transporter or pore, involving a single organism.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0044765</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">janelomax</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0044765</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2012-12-13T16:25:32Z</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0044765</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">biological_process</Literal>
@@ -23408,16 +23368,6 @@
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0044767</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A biological process whose specific outcome is the progression of an integrated living unit: an anatomical structure (which may be a subcellular structure, cell, tissue, or organ), or organism over time from an initial condition to a later condition, involving only one organism.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0044767</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">janelomax</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0044767</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2012-12-19T12:21:31Z</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
@@ -23875,6 +23825,11 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">OBSOLETE. A process, occurring at the cellular level, that is involved in the reproductive function of a multicellular or single-celled organism.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0048610</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">cellular process involved in reproduction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0048610</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">biological_process</Literal>
@@ -23910,7 +23865,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0048610</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">cellular process involved in reproduction</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">obsolete cellular process involved in reproduction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
@@ -23976,6 +23931,11 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0048856</IRI>
+        <IRI>http://purl.obolibrary.org/obo/go#goslim_chembl</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0048856</IRI>
         <IRI>http://purl.obolibrary.org/obo/go#goslim_generic</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -24033,6 +23993,11 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0048870</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GO:0048870</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0048870</IRI>
+        <IRI>http://purl.obolibrary.org/obo/go#goslim_chembl</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
@@ -24178,6 +24143,11 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0050877</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GO:0050877</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0050877</IRI>
+        <IRI>http://purl.obolibrary.org/obo/go#goslim_chembl</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
@@ -24577,11 +24547,19 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:di</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:go_curators</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:pr</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0051301</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The process resulting in the physical partitioning and separation of a cell into daughter cells.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The process resulting in division and partitioning of components of a cell to form more cells; may or may not be accompanied by the physical separation of a cell into distinct, individually membrane-bounded daughter cells.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -24597,6 +24575,11 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0051301</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GO:0051301</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0051301</IRI>
+        <IRI>http://purl.obolibrary.org/obo/go#goslim_chembl</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
@@ -24656,11 +24639,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0051321</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GO:0051321</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0051321</IRI>
-        <IRI>http://purl.obolibrary.org/obo/go#goslim_pombe</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
@@ -25298,16 +25276,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A process which results in the assembly, arrangement of constituent parts, or disassembly of a membrane. A membrane is a double layer of lipid molecules that encloses all cells, and, in eukaryotes, many organelles; may be a single or double lipid bilayer; also includes associated proteins.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0061024</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">dph</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0061024</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2010-02-08T02:43:11Z</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0061024</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GO:0016044</Literal>
@@ -25519,7 +25487,17 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0061024</IRI>
+        <IRI>http://purl.obolibrary.org/obo/go#goslim_chembl</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0061024</IRI>
         <IRI>http://purl.obolibrary.org/obo/go#goslim_generic</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0061024</IRI>
+        <IRI>http://purl.obolibrary.org/obo/go#goslim_pombe</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -25591,16 +25569,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The developmental process in which an organism emerges from a surrounding protective structure such as an egg or pupa case.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0071684</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">midori</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0071684</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2010-02-19T04:23:55Z</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0071684</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">biological_process</Literal>
@@ -25627,16 +25595,6 @@
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0071704</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The chemical reactions and pathways involving an organic substance, any molecular entity containing carbon.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0071704</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">midori</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0071704</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2010-03-08T03:32:18Z</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -25676,16 +25634,6 @@
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0071840</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A process that results in the biosynthesis of constituent macromolecules, assembly, arrangement of constituent parts, or disassembly of a cellular component.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0071840</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">midori</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0071840</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2010-09-10T01:39:16Z</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
@@ -25744,16 +25692,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Any cellular metabolic process involving nucleic acids.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0090304</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">tanyaberardini</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0090304</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2010-04-07T10:18:47Z</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0090304</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">biological_process</Literal>
@@ -25776,16 +25714,6 @@
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/GO_1901360</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The chemical reactions and pathways involving organic cyclic compound.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_1901360</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">bf</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_1901360</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2012-09-14T09:03:51Z</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -25827,16 +25755,6 @@
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/GO_1902578</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A localization which involves only one organism.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_1902578</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">jl</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_1902578</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2013-12-18T13:51:04Z</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -28241,54 +28159,9 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">immediately_precedes</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <IRI>http://purl.obolibrary.org/obo/RO_0002091</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">RO:0002091</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
-        <IRI>http://purl.obolibrary.org/obo/RO_0002091</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">external</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
-        <IRI>http://purl.obolibrary.org/obo/RO_0002091</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">starts_during</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
-        <IRI>http://purl.obolibrary.org/obo/RO_0002091</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">starts_during</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/RO_0002091</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">X starts_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (start(X) before_or_simultaneous_with end(Y))</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/RO_0002091</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">starts_during</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <IRI>http://purl.obolibrary.org/obo/RO_0002092</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">RO:0002092</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
-        <IRI>http://purl.obolibrary.org/obo/RO_0002092</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">external</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
-        <IRI>http://purl.obolibrary.org/obo/RO_0002092</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">happens_during</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
-        <IRI>http://purl.obolibrary.org/obo/RO_0002092</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">happens_during</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -28296,39 +28169,9 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">X happens_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (end(X) before_or_simultaneous_with end(Y))</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/RO_0002092</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">happens_during</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <IRI>http://purl.obolibrary.org/obo/RO_0002093</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">RO:0002093</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
-        <IRI>http://purl.obolibrary.org/obo/RO_0002093</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">external</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
-        <IRI>http://purl.obolibrary.org/obo/RO_0002093</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ends_during</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
-        <IRI>http://purl.obolibrary.org/obo/RO_0002093</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ends_during</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/RO_0002093</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">X ends_during Y iff: ((start(Y) before_or_simultaneous_with end(X)) AND end(X) before_or_simultaneous_with end(Y). </Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/RO_0002093</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ends_during</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -28785,5 +28628,5 @@
 
 
 
-<!-- Generated by the OWL API (version 0.2.1-SNAPSHOT) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 0.2.2-SNAPSHOT) http://owlapi.sourceforge.net -->
 
