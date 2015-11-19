@@ -4824,7 +4824,7 @@ is_obsolete: true
 id: FBcv:0000153
 name: cell autonomous
 namespace: genotype_to_phenotype_relation
-def: "A phenotypic effect which is expressed in and  limited to cells of the mutant genetic constitution under investigation is said to be cell autonomous." [FlyBase:FBrf0002379]
+def: "A phenotypic effect which is expressed in and limited to cells of the mutant genetic constitution under investigation is said to be cell autonomous." [FlyBase:FBrf0002379]
 comment: Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.
 subset: camcur
 is_a: FBcv:0000797 ! cell autonomy qualifier
@@ -5130,7 +5130,7 @@ is_a: FBcv:0000189 ! publication class
 id: FBcv:0000195
 name: book
 namespace: pub_type
-def: "A publication on a single subject or related subjects that is complete in itself, whether constructed of chapters, sections, or parts, and that is not issued on a regular, ongoing basis.   Every chapter is written by the same author or authors of the publication." [FBC:SM]
+def: "A publication on a single subject or related subjects that is complete in itself, whether constructed of chapters, sections, or parts, and that is not issued on a regular, ongoing basis. Every chapter is written by the same author or authors of the publication." [FBC:SM]
 comment: For books (in the common sense of the term) that have different authors for each chapter, please use 'edited book'.
 subset: camcur
 is_a: FBcv:0000189 ! publication class
@@ -5202,7 +5202,7 @@ is_a: FBcv:0000789 ! sequence record
 id: FBcv:0000203
 name: erratum
 namespace: pub_type
-def: "A work consisting of an acknowledgment of an error, issued by a publisher, editor, or author." [http://www.nlm.nih.gov/cgi/mesh/2011/MB_cgi?view=expanded&field=uid&term=D016425]
+def: "A work consisting of an acknowledgement of an error, issued by a publisher, editor, or author." [http://www.nlm.nih.gov/cgi/mesh/2011/MB_cgi?view=expanded&field=uid&term=D016425]
 subset: camcur
 synonym: "correction" EXACT []
 synonym: "Corrigendum" EXACT [MeSH:D016425]
@@ -5937,7 +5937,7 @@ id: FBcv:0000290
 name: gain of function allele
 namespace: allele_class
 def: "An allele that either makes a normally functioning gene product but at higher levels or in a different spatial or temporal pattern to wild-type, or a product with increased or novel activity compared to wild-type." [FlyBase:FBrf0049147]
-comment: Gain of function alleles are generally dominant.  But not all dominant alleles are gain of function alleles.\n
+comment: Gain of function alleles are generally dominant. But not all dominant alleles are gain of function alleles.\n
 subset: camcur
 is_a: FBcv:0000286 ! allele class
 
@@ -5953,7 +5953,7 @@ is_a: FBcv:0000697 ! neomorphic allele
 id: FBcv:0000292
 name: antimorphic allele - genetic evidence
 namespace: allele_class
-def: "An allele that is inferred to make a gene product that is antagonistic to the wild-type gene product from the observations that extra copies of the wild-type allele reduce the expressivity and/or penetrance of the phenotype. So, the phenotype over a deficiency is stronger than that over a wild-type allele, which in turn is stronger than that in the presence of a duplication of the wild-type locus. This test is similar to that used for hypomorphic alleles.  An antimorph can be distinguished from a dominant hypermorph as only the former can be reverted to wild-type by deletion of the mutant allele. " [FlyBase:FBrf0002371, FlyBase:FBrf0049147]
+def: "An allele that is inferred to make a gene product that is antagonistic to the wild-type gene product from the observations that extra copies of the wild-type allele reduce the expressivity and/or penetrance of the phenotype. So, the phenotype over a deficiency is stronger than that over a wild-type allele, which in turn is stronger than that in the presence of a duplication of the wild-type locus. This test is similar to that used for hypomorphic alleles. An antimorph can be distinguished from a dominant hypermorph as only the former can be reverted to wild-type by deletion of the mutant allele." [FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 subset: camcur
 is_a: FBcv:0000695 ! antimorphic allele
 
@@ -5961,7 +5961,7 @@ is_a: FBcv:0000695 ! antimorphic allele
 id: FBcv:0000293
 name: hypermorphic allele - genetic evidence
 namespace: allele_class
-def: "An allele inferred to make either increased amounts of a normal gene product or a gene product with normal function but increased activity compared to wild-type from the observation that extra copies in the genome increase the expressivity and/or penetrance of the phenotype.  Most commonly this evidence takes the form of experiments showing that homozygotes (2 copies) have a stronger phenotype than transheterozygotes to a deletion of the gene (1 copy)." [FlyBase:FBrf0002371, FlyBase:FBrf0049147]
+def: "An allele inferred to make either increased amounts of a normal gene product or a gene product with normal function but increased activity compared to wild-type from the observation that extra copies in the genome increase the expressivity and/or penetrance of the phenotype. Most commonly this evidence takes the form of experiments showing that homozygotes (2 copies) have a stronger phenotype than transheterozygotes to a deletion of the gene (1 copy)." [FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 subset: camcur
 is_a: FBcv:0000696 ! hypermorphic allele
 
@@ -6288,6 +6288,7 @@ namespace: extent
 comment: Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. \n\nDEPRECATION WARNING: This term has been obsoleted as 'fully' is assumed in the absence of use of 'partially'. mc151118
 subset: deprecated
 is_obsolete: true
+consider: FBcv:0000811
 
 
 [Term]
@@ -6306,6 +6307,7 @@ comment: This term has been obsoleted as it should be assumed a phenotype is goo
 namespace: intensity_qualifier
 subset: deprecated
 is_obsolete: true
+consider: FBcv:0000811
 
 [Term]
 id: FBcv:0000342
@@ -6603,7 +6605,7 @@ is_a: FBcv:0000470 ! recombination
 id: FBcv:0000479
 name: FLPase
 namespace: origin_of_mutation
-def: "Sequence change caused by a site specific recombination event catalyzed by the tyrosine recombinase FLPase, that recognises minimal FLP recombination target (FRT) sites of 34 base pairs. For site specific integration, the recombination site consists of 48 base pairs containing an additional isolated base pair and a third 13 base pair direct repeat." [FlyBase:FBrf0201927, UniProt:P03870]
+def: "Sequence change caused by a site specific recombination event catalyzed by the tyrosine recombinase FLPase, that recognizes minimal FLP recombination target (FRT) sites of 34 base pairs. For site specific integration, the recombination site consists of 48 base pairs containing an additional isolated base pair and a third 13 base pair direct repeat." [FlyBase:FBrf0201927, UniProt:P03870]
 subset: camcur
 synonym: "change induced by FLPase recombination" EXACT []
 is_a: FBcv:0000478 ! site specific recombination
@@ -6809,7 +6811,7 @@ is_a: FBcv:0000497 ! hobo activity
 id: FBcv:0000500
 name: mariner activity
 namespace: origin_of_mutation
-def: "Mutation induced by the transposable activity caused by mariner, a DNA transposable element. The mariner element is 1.3 kilobases in length with 28 base pairs inverted terminal repeats. It specifically targets TA dinucleotides and generates a flanking duplication of tehse two bases upon insertion. Mobilization is induced by the activity of the mariner transposase." [FlyBase:FBrf0202435]
+def: "Mutation induced by the transposable activity caused by mariner, a DNA transposable element. The mariner element is 1.3 kilobases in length with 28 base pairs inverted terminal repeats. It specifically targets TA dinucleotides and generates a flanking duplication of these two bases upon insertion. Mobilization is induced by the activity of the mariner transposase." [FlyBase:FBrf0202435]
 subset: camcur
 synonym: "mutation induced by mariner activity" EXACT []
 is_a: FBcv:0000483 ! transposable element activity
@@ -6827,7 +6829,7 @@ is_a: FBcv:0000483 ! transposable element activity
 id: FBcv:0000502
 name: piggyBac activity
 namespace: origin_of_mutation
-def: "Mutation induced by the transposable activity caused by piggyBac, a DNA transposable element.  The piggyBac is 2.5 kilobases in length with 13 base pairs inverted terminal repeats. It specifically targets TTAA dinucleotides and generates a flanking duplication of these 4 base pairs upon insertion. Mobilization is induced by the activity of the piggyBac transposase." [FlyBase:FBrf0202435]
+def: "Mutation induced by the transposable activity caused by piggyBac, a DNA transposable element. The piggyBac is 2.5 kilobases in length with 13 base pairs inverted terminal repeats. It specifically targets TTAA dinucleotides and generates a flanking duplication of these 4 base pairs upon insertion. Mobilization is induced by the activity of the piggyBac transposase." [FlyBase:FBrf0202435]
 subset: camcur
 synonym: "mutation induced by piggyBac activity" EXACT []
 is_a: FBcv:0000483 ! transposable element activity
@@ -7463,7 +7465,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000565
 name: dominance relationship qualifier
 namespace: dominance_qualifier
-def: "Dominance relationships describe the dependence of the expression of a phenotypic attribute of an allele on the genotype at the locus in question.  An allele might be recessive with respect to one phenotypic attribute, but dominant with respect to another." [FBC:rd]
+def: "Dominance relationships describe the dependence of the expression of a phenotypic attribute of an allele on the genotype at the locus in question. An allele might be recessive with respect to one phenotypic attribute, but dominant with respect to another." [FBC:rd]
 is_a: FBcv:0000005 ! qualifier
 
 [Term]
@@ -8645,7 +8647,7 @@ equivalent_to: CHEBI:34873
 id: FBcv:0000736
 name: heat sensitive amorphic allele
 namespace: allele_class
-def: "An allele that completely lacks function (i.e. whose gene productive is completely inactive) at high  temperatures, but that retains at least some function at lower temperatures." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
+def: "An allele that completely lacks function (i.e. whose gene productive is completely inactive) at high temperatures, but that retains at least some function at lower temperatures." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 subset: camcur
 intersection_of: FBcv:0000688 ! amorphic allele
 intersection_of: conditionality FBcv:0000311 ! heat sensitive
@@ -9051,7 +9053,7 @@ creation_date: 2012-03-22T03:58:31Z
 id: FBcv:0000774
 name: heat sensitive neomorphic allele - genetic evidence
 namespace: allele_class
-def: "An allele that, is inferred to make a gene product with a novel function or expression pattern compared to wild-type at some high termperatures (non-permissive temperatures) but not lower temperatures (permissive temperatures), based on the evidence that the phenotype at the non-permissive temperature is unaffected by extra or fewer doses of the wild-type gene." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
+def: "An allele that, is inferred to make a gene product with a novel function or expression pattern compared to wild-type at some high temperatures (non-permissive temperatures) but not lower temperatures (permissive temperatures), based on the evidence that the phenotype at the non-permissive temperature is unaffected by extra or fewer doses of the wild-type gene." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 subset: camcur
 intersection_of: FBcv:0000291 ! neomorphic allele - genetic evidence
 intersection_of: conditionality FBcv:0000311 ! heat sensitive
@@ -9336,7 +9338,7 @@ equivalent_to: CHEBI:28830
 [Term]
 id: FBcv:0001003
 name: cold sensitive amorphic allele
-def: "An allele that completely lacks function (i.e. whose gene productive is completely inactive) at low  temperatures, but that retains at least some function at higher temperatures." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
+def: "An allele that completely lacks function (i.e. whose gene productive is completely inactive) at low temperatures, but that retains at least some function at higher temperatures." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 subset: camcur
 intersection_of: FBcv:0000688 ! amorphic allele
 intersection_of: conditionality FBcv:0000312 ! cold sensitive
@@ -9383,7 +9385,7 @@ creation_date: 2014-03-27T11:07:29Z
 id: FBcv:0003002
 name: DOES NOT ameliorate
 namespace: disease_qualifier
-def: "Contrary to expectation,  does not make a condition better." [FBC:ST]
+def: "Contrary to expectation, does not make a condition better." [FBC:ST]
 comment: The 'DOES NOT ameliorate' term is used in FlyBase disease annotation when an allele is expected to remove or reduce the severity of the disease phenotype associated with a given disease model but fails to do so.
 is_a: FBcv:0003000 ! disease qualifier
 created_by: mmc46
@@ -9393,7 +9395,7 @@ creation_date: 2014-03-27T11:07:29Z
 id: FBcv:0003003
 name: DOES NOT exacerbate
 namespace: disease_qualifier
-def: "Contrary to expectation,  does not make a condition worse." [FBC:ST]
+def: "Contrary to expectation, does not make a condition worse." [FBC:ST]
 comment: The 'DOES NOT exacerbate' term is used in FlyBase disease annotation when an allele is expected to makes the disease phenotype associated with a given disease model more severe but fails to do so (FBC:ST).
 is_a: FBcv:0003000 ! disease qualifier
 created_by: mmc46
@@ -9834,3 +9836,4 @@ xref: RO:0002091
 id: towards
 name: towards
 comment: temporary placeholder - may be placed in OBO_REL; with relational qualities, the additional argument is the 'towards' argument; eg sensitivity towards chlorine. Relation binding a relational quality or disposition to the relevant type of entity.
+
