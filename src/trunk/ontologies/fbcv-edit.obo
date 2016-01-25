@@ -9,6 +9,8 @@ subsetdef: attribute_slim "Attribute slim"
 subsetdef: camcur "camcur"
 subsetdef: cell_quality "cell_quality"
 subsetdef: cur "cur"
+subsetdef: do_not_annotate "Term not to be used for direct annotation"
+subsetdef: do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: deprecated "warning of impending obsoletion"
 subsetdef: EmbDevSlim "EmbDevSlim"
 subsetdef: FlyTed "Testis slim"
@@ -3795,6 +3797,7 @@ consider: FBcv:0000176
 id: FBcv:0000013
 name: descriptor
 def: "Term that describes an allele, balancer, group or publication." [FBC:MMC]
+subset: do_not_annotate
 is_a: FBcv:0000000 ! FlyBase CV
 
 [Term]
@@ -3802,6 +3805,7 @@ id: FBcv:0000014
 name: structural qualifier
 def: "Qualifier used to describe the appearance of extra copies of an anatomical structure." [FBC:MMC]
 namespace: structural_qualifier
+subset: do_not_annotate
 is_a: FBcv:0000809 ! phenotype qualifier
 
 [Term]
@@ -3976,6 +3980,7 @@ id: FBcv:0000038
 name: relative spatial qualifier
 namespace: spatial_qualifier
 comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.
+subset: do_not_annotate
 xref: PATO:0001631
 is_a: FBcv:0000052 ! spatial qualifier
 
@@ -4083,6 +4088,7 @@ name: spatial qualifier
 def: "Qualifier that describes the spatial characteristics of a phenotype or expression pattern." [FBC:MMC]
 namespace: spatial_qualifier
 comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.
+subset: do_not_annotate
 is_a: FBcv:0000005 ! qualifier
 
 [Term]
@@ -4919,6 +4925,7 @@ id: FBcv:0000166
 name: morphological qualifier
 def: "Qualifier that describes an observed expression pattern." [FBC:MMC]
 namespace: expression_qualifier
+subset: do_not_annotate
 is_a: FBcv:0000005 ! qualifier
 
 [Term]
@@ -4996,6 +5003,7 @@ id: FBcv:0000176
 name: temporal  qualifier
 namespace: temporal_qualifier
 comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.
+subset: do_not_annotate
 is_a: FBcv:0000005 ! qualifier
 
 [Term]
@@ -5073,6 +5081,7 @@ is_obsolete: true
 id: FBcv:0000188
 name: publication descriptor
 def: "Qualifier that describes the type of publication." [FBC:MMC]
+subset: do_not_annotate
 is_a: FBcv:0000013 ! descriptor
 
 [Term]
@@ -5080,6 +5089,7 @@ id: FBcv:0000189
 name: publication class
 namespace: pub_type
 def: "A publicly available document. It includes individual articles, such as research papers and reviews, and collections of articles, such as scientific journals." [FBC:DOS, FBC:SM]
+subset: do_not_annotate
 is_a: FBcv:0000188 ! publication descriptor
 
 [Term]
@@ -5490,6 +5500,7 @@ name: publication language
 def: "Qualifier that describes the language of the publication." [FBC:MMC]
 namespace: language
 subset: camcur
+subset: do_not_annotate
 is_a: FBcv:0000188 ! publication descriptor
 
 [Term]
@@ -5875,6 +5886,7 @@ id: FBcv:0000282
 name: mutant scorability rank
 def: "Rank that describes the usefulness of mutants according to their phenotype." [FBC:MMC]
 namespace: scorability
+subset: do_not_annotate
 is_a: FBcv:0000807 ! allele descriptor
 
 [Term]
@@ -5907,6 +5919,7 @@ name: allele class
 def: "Term that describes the type of allele." [FBC:MMC]
 namespace: allele_class
 synonym: "allele morphy class" EXACT []
+subset: do_not_annotate
 is_a: FBcv:0000807 ! allele descriptor
 
 [Term]
@@ -6353,6 +6366,7 @@ is_a: FBcv:0000811 ! qualitative qualifier
 id: FBcv:0000347
 name: phenotypic class
 namespace: phenotypic_class
+subset: do_not_annotate
 is_a: FBcv:0000807 ! allele descriptor
 
 [Term]
@@ -6360,6 +6374,7 @@ id: FBcv:0000452
 name: origin of mutation
 def: "Describes the origin of the mutation that causes a phenotype." [FBC:MMC]
 namespace: origin_of_mutation
+subset: do_not_annotate
 is_a: FBcv:0000807 ! allele descriptor
 
 [Term]
@@ -8021,6 +8036,7 @@ id: FBcv:0000620
 name: genetic interaction qualifier
 def: "Qualifier that describes the relation between two phenotypes that are due to genotypes g1 and g2." [FBC:MMC]
 namespace: genetic_interaction_type
+subset: do_not_annotate
 is_a: FBcv:0000005 ! qualifier
 
 [Term]
@@ -8028,7 +8044,8 @@ id: FBcv:0000621
 name: suppressor
 namespace: genetic_interaction_type
 def: "The genotype g1 is a suppressor of genotype g2 if (and only if) the phenotype due to g2 is made less severe by g1." [FBC:DOS, FlyBase:FBrf0000957, ISBN:978-0-387-52054-4]
-comment: Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA28b-q. Proforma field: GA29b-q.
+comment: Not used directly in curation, but automatically inferred from its inverse (suppressible). Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA28b-q. Proforma field: GA29b-q.
+subset: do_not_manually_annotate
 is_a: FBcv:0000620 ! genetic interaction qualifier
 
 [Term]
@@ -8046,6 +8063,7 @@ name: enhancer
 namespace: genetic_interaction_type
 def: "Genotype g1 is enhancer of genotype g2 if (and only if) the phenotype due to the genotype g1g2 is more severe than the sum of phenotypes due to g1 and g2, where all comparisons are under identical environmental conditions." [FBC:DOS, FlyBase:FBrf0000957, ISBN:978-0-387-52054-4]
 comment: Not used directly in curation, but automatically inferred from its inverse (enhanceable).
+subset: do_not_manually_annotate
 is_a: FBcv:0000620 ! genetic interaction qualifier
 
 [Term]
@@ -8063,6 +8081,7 @@ name: non-enhancer
 def: "Genotype g1 is a non-enhancer of genotype g2 if (and only if) the phenotype due to the genotype g1g2 is not more severe than the sum of phenotypes due to g1 and g2, where all comparisons are under identical environmental conditions." [FBC:MMC, FlyBase:FBrf0000957, ISBN:978-0-387-52054-4]
 namespace: genetic_interaction_type
 comment: Not used directly in curation, but automatically inferred from its inverse (non-enhanceable).
+subset: do_not_manually_annotate
 is_a: FBcv:0000620 ! genetic interaction qualifier
 
 [Term]
@@ -8079,7 +8098,8 @@ id: FBcv:0000627
 name: non-suppressor
 def: "The genotype g1 is a non-suppressor of genotype g2 if (and only if) the phenotype due to g2 is not made less severe by g1." [FBC:MMC, FlyBase:FBrf0000957, ISBN:978-0-387-52054-4]
 namespace: genetic_interaction_type
-comment: Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA28b-q. Proforma field: GA29b-q.
+comment: Not used directly in curation, but automatically inferred from its inverse (non-suppressible). Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA28b-q. Proforma field: GA29b-q.
+subset: do_not_manually_annotate
 is_a: FBcv:0000620 ! genetic interaction qualifier
 
 [Term]
@@ -8242,6 +8262,7 @@ id: FBcv:0000654
 name: embryonic pattern qualifier
 def: "Qualifier that describes the expression pattern of an embryo." [FBC:MMC]
 namespace: embryonic_pattern_qualifier
+subset: do_not_annotate
 is_a: FBcv:0000052 ! spatial qualifier
 
 [Term]
@@ -8368,6 +8389,7 @@ is_a: FBcv:0000809 ! phenotype qualifier
 id: FBcv:0000687
 name: balancer descriptor
 def: "Descriptor that relates to aspects of a balancer." [FBC:MMC]
+subset: do_not_annotate
 is_a: FBcv:0000013 ! descriptor
 
 [Term]
@@ -9248,6 +9270,7 @@ id: FBcv:0000797
 name: cell autonomy qualifier
 namespace: genotype_to_phenotype_relation
 def: "Cell autonomy statements describe the cellular focus of mutant phenotype, generally revealed by genetic mosaic analysis, in terms of whether the mutant has its phenotypic effect limited to, or not limited to, cells of the mutant genotype." [FBC:rd]
+subset: do_not_annotate
 is_a: FBcv:0000809 ! phenotype qualifier
 
 [Term]
@@ -9275,18 +9298,21 @@ is_obsolete: true
 id: FBcv:0000807
 name: allele descriptor
 def: "Descriptor that relates to aspects of an allele." [FBC:MMC]
+subset: do_not_annotate
 is_a: FBcv:0000013 ! descriptor
 
 [Term]
 id: FBcv:0000809
 name: phenotype qualifier
 def: "Qualifier that describes an observable phenotype." [FBC:MMC]
+subset: do_not_annotate
 is_a: FBcv:0000005 ! qualifier
 
 [Term]
 id: FBcv:0000811
 name: qualitative qualifier
 def: "Qualifier that describes a particular quality of an observable phenotype." [FBC:MMC]
+subset: do_not_annotate
 is_a: FBcv:0000809 ! phenotype qualifier
 
 [Term]
@@ -9369,6 +9395,7 @@ id: FBcv:0003000
 name: disease qualifier
 def: "Qualifier that describes aspects of genetic models of disease." [FBC:MMC]
 namespace: disease_qualifier
+subset: do_not_annotate
 is_a: FBcv:0000005 ! qualifier
 created_by: mmc46
 creation_date: 2014-03-27T11:07:29Z
@@ -9484,6 +9511,7 @@ id: FBcv:0003011
 name: group descriptor
 def: "Descriptor that relates aspects of the grouping of genes or gene products." [FBC:MMC]
 namespace: group_descriptor
+subset: do_not_annotate
 is_a: FBcv:0000013 ! descriptor
 created_by: mmc46
 creation_date: 2014-03-28T15:23:42Z
@@ -9803,6 +9831,7 @@ is_transitive: true
 id: qualifier
 name: qualifier
 comment: temporary placeholder - this means that Obol could not infer the correct relation
+subset: do_not_annotate
 
 [Typedef]
 id: reciprocal_of
