@@ -97,7 +97,7 @@ sub chado_load_checks {
 	}
       }
       elsif ($idp eq 'FBcv') {
-	unless ($value->{namespace} =~ m/FlyBase miscellaneous CV$|^allele_class$|^biological_process$|^clone_qualifier$|^disease_qualifier$|^dominance_qualifier$|^embryonic_pattern_qualifier$|^environmental_qualifier$|^expression_qualifier$|^extent$|^fly_anatomy.ontology$|^genetic_interaction_type$|^genotype_to_phenotype_relation$|^group_descriptor$|^homeotic$|^intensity_qualifier$|^language$|^mode_of_assay$|^origin_of_mutation$|^phenotypic_class$|^pub_type$|^quality$|^scorability$|^sex_qualifier$|^spatial_qualifier$|^structural_qualifier$|^temporal_qualifier|^precursor_qualifier$|^progressive_qualifier$/) { 
+	unless ($value->{namespace} =~ m/FlyBase miscellaneous CV$|^allele_class$|^biological_process$|^clone_qualifier$|^disease_qualifier$|^dominance_qualifier$|^embryonic_pattern_qualifier$|^environmental_qualifier$|^expression_qualifier$|^extent$|^fly_anatomy.ontology$|^genetic_interaction_type$|^genotype_to_phenotype_relation$|^group_descriptor$|^homeotic$|^intensity_qualifier$|^language$|^mode_of_assay$|^origin_of_mutation$|^phenotypic_class$|^pub_type$|^quality$|^scorability$|^sex_qualifier$|^spatial_qualifier$|^structural_qualifier$|^temporal_qualifier|^precursor_qualifier$|^progressive_qualifier$|^assay_attribute$|^assay_type$|^biosample_attribute$|^biosample_type$|^dataset_entity_type$|^project_attribute$|^project_type$|^reagent_collection_type$|^result_attribute$|^result_type$/) { 
 	  $fail_stat = 1;
 	  print "$value->{namespace} is not a valid namespace for $key.\n"
 	}
