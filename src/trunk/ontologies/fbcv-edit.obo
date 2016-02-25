@@ -1,17 +1,17 @@
 format-version: 1.2
 data-version: 2015-11-19
-date: 19:11:2015 13:48
+date: 24:02:2016 19:43
 saved-by: mmc46
-auto-generated-by: OBO-Edit 2.3
+auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
-subsetdef: cell_quality "cell_quality"
 subsetdef: camcur "camcur"
+subsetdef: cell_quality "cell_quality"
 subsetdef: cur "cur"
+subsetdef: deprecated "warning of impending obsoletion"
 subsetdef: do_not_annotate "Term not to be used for direct annotation"
 subsetdef: do_not_manually_annotate "Term not to be used for direct manual annotation"
-subsetdef: deprecated "warning of impending obsoletion"
 subsetdef: EmbDevSlim "EmbDevSlim"
 subsetdef: FlyTed "Testis slim"
 subsetdef: FT_new "FlyTed temp subset for edit tracking purposes"
@@ -29,7 +29,7 @@ synonymtypedef: IUPAC_NAME "IUPAC NAME"
 synonymtypedef: SMILES "SMILES"
 synonymtypedef: systematic_synonym "Systematic synonym" EXACT
 default-namespace: FlyBase miscellaneous CV
-remark: Imports terms from CHEBI - datestamp = 02:12:2011 01:47
+remark: Imports terms from CHEBI - datestamp = 02:12:2011 01:47. And terms imported from http://purl.obolibrary.org/obo/go/releases/2015-11-18/go-simple.obo
 ontology: fbcv
 
 [Term]
@@ -3757,7 +3757,7 @@ is_a: FBcv:0000000 ! FlyBase CV
 [Term]
 id: FBcv:0000009
 name: temporal stage qualifier
-comment: This term has been obsoleted because both of its children terms have been obsoleted [FBC:MMC]. mc160113 
+comment: This term has been obsoleted because both of its children terms have been obsoleted [FBC:MMC]. mc160113
 xref: PATO:0000083
 is_obsolete: true
 consider: FBcv:0000176
@@ -3765,7 +3765,7 @@ consider: FBcv:0000176
 [Term]
 id: FBcv:0000010
 name: monophasic
-comment: This term has been obsoleted because there are new terms to replace it [FBC:MMC]. mc160113 
+comment: This term has been obsoleted because there are new terms to replace it [FBC:MMC]. mc160113
 xref: PATO:0001773
 is_obsolete: true
 consider: FBcv:0000176
@@ -3780,11 +3780,10 @@ consider: FBcv:0000176
 [Term]
 id: FBcv:0000012
 name: absolute temporal qualifier
-comment: This term has been obsoleted because both of its children terms have been obsoleted [FBC:MMC]. mc160113 
+comment: This term has been obsoleted because both of its children terms have been obsoleted [FBC:MMC]. mc160113
 xref: PATO:0000165
 is_obsolete: true
 consider: FBcv:0000176
-
 
 [Term]
 id: FBcv:0000013
@@ -3796,8 +3795,8 @@ is_a: FBcv:0000000 ! FlyBase CV
 [Term]
 id: FBcv:0000014
 name: structural qualifier
-def: "Qualifier used to describe the appearance of extra copies of an anatomical structure." [FBC:MMC]
 namespace: structural_qualifier
+def: "Qualifier used to describe the appearance of extra copies of an anatomical structure." [FBC:MMC]
 subset: do_not_annotate
 is_a: FBcv:0000809 ! phenotype qualifier
 
@@ -4061,16 +4060,16 @@ is_a: FBcv:0000038 ! relative spatial qualifier
 [Term]
 id: FBcv:0000051
 name: segment boundary
-def: "Present in the area that separates segments." [FBC:MMC] 
 namespace: spatial_qualifier
+def: "Present in the area that separates segments." [FBC:MMC]
 comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.
 is_a: FBcv:0000052 ! spatial qualifier
 
 [Term]
 id: FBcv:0000052
 name: spatial qualifier
-def: "Qualifier that describes the spatial characteristics of a phenotype or expression pattern." [FBC:MMC]
 namespace: spatial_qualifier
+def: "Qualifier that describes the spatial characteristics of a phenotype or expression pattern." [FBC:MMC]
 comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.
 subset: do_not_annotate
 is_a: FBcv:0000005 ! qualifier
@@ -4111,7 +4110,7 @@ is_a: FBcv:0000052 ! spatial qualifier
 id: FBcv:0000057
 name: contralateral
 namespace: spatial_qualifier
-comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.\n\nThis term has been obsoleted because there is no way to combine it with an anatomy term to produce a meaningful statement [FBC:MMC]. mc160113. 
+comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.\n\nThis term has been obsoleted because there is no way to combine it with an anatomy term to produce a meaningful statement [FBC:MMC]. mc160113.
 is_obsolete: true
 consider: FBcv:0000052
 
@@ -4151,7 +4150,7 @@ is_a: FBcv:0000014 ! structural qualifier
 id: FBcv:0000062
 name: ipsilateral
 namespace: spatial_qualifier
-comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.\n\nThis term has been obsoleted because there is no way to combine it with an anatomy term to produce a meaningful statement [FBC:MMC]. mc160113. 
+comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.\n\nThis term has been obsoleted because there is no way to combine it with an anatomy term to produce a meaningful statement [FBC:MMC]. mc160113.
 is_obsolete: true
 consider: FBcv:0000052
 
@@ -4705,22 +4704,22 @@ is_a: FBcv:0000233 ! unpublished
 [Term]
 id: FBcv:0000141
 name: gradient
-def: "Expression pattern which varies in intensity following a gradient in a specific axis." [FBC:MMC]
 namespace: spatial_qualifier
+def: "Expression pattern which varies in intensity following a gradient in a specific axis." [FBC:MMC]
 is_a: FBcv:0000052 ! spatial qualifier
 
 [Term]
 id: FBcv:0000142
 name: anterior posterior gradient
-def: "Expression pattern which varies in intensity following a gradient in the anterior-posterior axis." [FBC:MMC]
 namespace: spatial_qualifier
+def: "Expression pattern which varies in intensity following a gradient in the anterior-posterior axis." [FBC:MMC]
 is_a: FBcv:0000141 ! gradient
 
 [Term]
 id: FBcv:0000143
 name: dorsal ventral gradient
-def: "Expression pattern which varies in intensity following a gradient in the dorsal-ventral axis." [FBC:MMC]
 namespace: spatial_qualifier
+def: "Expression pattern which varies in intensity following a gradient in the dorsal-ventral axis." [FBC:MMC]
 is_a: FBcv:0000141 ! gradient
 
 [Term]
@@ -4807,7 +4806,7 @@ is_a: FBcv:0000797 ! cell autonomy qualifier
 [Term]
 id: FBcv:0000155
 name: single balancer
-def: "Chromosome that carries inversions and visible mutations, and which can be used to identify the genotype of an individual." [FlyBase:FBrf0202435, FlyBase:FBrf0089469]
+def: "Chromosome that carries inversions and visible mutations, and which can be used to identify the genotype of an individual." [FlyBase:FBrf0089469, FlyBase:FBrf0202435]
 is_a: FBcv:0000687 ! balancer descriptor
 
 [Term]
@@ -4878,24 +4877,24 @@ is_obsolete: true
 [Term]
 id: FBcv:0000166
 name: morphological qualifier
-def: "Qualifier that describes an observed expression pattern." [FBC:MMC]
 namespace: expression_qualifier
+def: "Qualifier that describes an observed expression pattern." [FBC:MMC]
 subset: do_not_annotate
 is_a: FBcv:0000005 ! qualifier
 
 [Term]
 id: FBcv:0000167
 name: faint
-def: "Weak expression." [FBC:MMC]
 namespace: expression_qualifier
+def: "Weak expression." [FBC:MMC]
 comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.
 is_a: FBcv:0000166 ! morphological qualifier
 
 [Term]
 id: FBcv:0000168
 name: granular
-def: "Expression pattern that resembles small grains or particles." [FBC:MMC]
 namespace: expression_qualifier
+def: "Expression pattern that resembles small grains or particles." [FBC:MMC]
 comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.
 xref: PATO:0001759
 is_a: FBcv:0000166 ! morphological qualifier
@@ -4903,8 +4902,8 @@ is_a: FBcv:0000166 ! morphological qualifier
 [Term]
 id: FBcv:0000169
 name: intense
-def: "Strong expression." [FBC:MMC]
 namespace: expression_qualifier
+def: "Strong expression." [FBC:MMC]
 comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.
 xref: PATO:0000049
 is_a: FBcv:0000166 ! morphological qualifier
@@ -4912,8 +4911,8 @@ is_a: FBcv:0000166 ! morphological qualifier
 [Term]
 id: FBcv:0000170
 name: punctate
-def: "Expression pattern that resembles small dots." [FBC:MMC]
 namespace: expression_qualifier
+def: "Expression pattern that resembles small dots." [FBC:MMC]
 comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.
 xref: PATO:0001512
 is_a: FBcv:0000166 ! morphological qualifier
@@ -4921,8 +4920,8 @@ is_a: FBcv:0000166 ! morphological qualifier
 [Term]
 id: FBcv:0000171
 name: uniform
-def: "Expression pattern that is constant throughout the assayed anatomical entity." [FBC:MMC]
 namespace: expression_qualifier
+def: "Expression pattern that is constant throughout the assayed anatomical entity." [FBC:MMC]
 comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.
 xref: PATO:0000438
 is_a: FBcv:0000166 ! morphological qualifier
@@ -4930,8 +4929,8 @@ is_a: FBcv:0000166 ! morphological qualifier
 [Term]
 id: FBcv:0000172
 name: variable
-def: "Expression pattern that changes throughout the assayed anatomical entity." [FBC:MMC]
 namespace: expression_qualifier
+def: "Expression pattern that changes throughout the assayed anatomical entity." [FBC:MMC]
 comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.
 xref: PATO:0001227
 is_a: FBcv:0000166 ! morphological qualifier
@@ -4969,7 +4968,7 @@ is_obsolete: true
 [Term]
 id: FBcv:0000178
 name: early
-comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.\n\nThis term has been obsoleted because there are new terms stage terms that can be used instead [FBC:MMC]. mc160113 
+comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.\n\nThis term has been obsoleted because there are new terms stage terms that can be used instead [FBC:MMC]. mc160113
 xref: PATO:0000694
 is_obsolete: true
 consider: FBcv:0000176
@@ -4987,28 +4986,28 @@ is_obsolete: true
 [Term]
 id: FBcv:0000181
 name: late
-comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.\n\nThis term has been obsoleted because there are new stage terms that can be used instead [FBC:MMC]. mc160113 
+comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.\n\nThis term has been obsoleted because there are new stage terms that can be used instead [FBC:MMC]. mc160113
 is_obsolete: true
 consider: FBcv:0000176
 
 [Term]
 id: FBcv:0000182
 name: mid
-comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.\n\nThis term has been obsoleted because there are new stage terms that can be used instead [FBC:MMC]. mc160113 
+comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.\n\nThis term has been obsoleted because there are new stage terms that can be used instead [FBC:MMC]. mc160113
 is_obsolete: true
 consider: FBcv:0000176
 
 [Term]
 id: FBcv:0000183
 name: n day
-comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.\n\n This term has been obsoleted because there are new stage terms that can be used instead [FBC:MMC]. mc160113 
+comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.\n\n This term has been obsoleted because there are new stage terms that can be used instead [FBC:MMC]. mc160113
 is_obsolete: true
 consider: FBcv:0000176
 
 [Term]
 id: FBcv:0000184
 name: n hr
-comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.\n\nThis term has been obsoleted because there are new stage terms that can be used instead [FBC:MMC]. mc160113 
+comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.\n\nThis term has been obsoleted because there are new stage terms that can be used instead [FBC:MMC]. mc160113
 is_obsolete: true
 consider: FBcv:0000176
 
@@ -5404,347 +5403,346 @@ is_a: FBcv:0000189 ! publication class
 [Term]
 id: FBcv:0000234
 name: publication language
-def: "Qualifier that describes the language of the publication." [FBC:MMC]
 namespace: language
+def: "Qualifier that describes the language of the publication." [FBC:MMC]
 subset: do_not_annotate
 is_a: FBcv:0000188 ! publication descriptor
 
 [Term]
 id: FBcv:0000235
 name: Afrikaans
-def: "Publication in the Afrikaans language." [FBC:MMC]
 namespace: language
+def: "Publication in the Afrikaans language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000236
 name: Arabic
-def: "Publication in the Arabic language." [FBC:MMC]
 namespace: language
+def: "Publication in the Arabic language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000237
 name: Armenian
-def: "Publication in the Armenian language." [FBC:MMC]
 namespace: language
+def: "Publication in the Armenian language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000238
 name: Belarussian
-def: "Publication in the Belarussian language." [FBC:MMC]
 namespace: language
+def: "Publication in the Belarussian language." [FBC:MMC]
 synonym: "Belarusian" RELATED []
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000239
 name: Bulgarian
-def: "Publication in the Bulgarian language." [FBC:MMC]
 namespace: language
+def: "Publication in the Bulgarian language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000240
 name: Catalan
+namespace: language
 def: "Publication in the Catalan language." [FBC:MMC]
-namespace: language
-namespace: language
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000241
 name: Chinese
-def: "Publication in the Chinese language." [FBC:MMC]
 namespace: language
+def: "Publication in the Chinese language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000242
 name: Cumbrian
-def: "Publication in the Cumbrian language." [FBC:MMC]
 namespace: language
+def: "Publication in the Cumbrian language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000243
 name: Czech
-def: "Publication in the Czech language." [FBC:MMC]
 namespace: language
+def: "Publication in the Czech language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000244
 name: Danish
-def: "Publication in the Danish language." [FBC:MMC]
 namespace: language
+def: "Publication in the Danish language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000245
 name: Dutch
-def: "Publication in the Dutch language." [FBC:MMC]
 namespace: language
+def: "Publication in the Dutch language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000246
 name: English
-def: "Publication in the English language." [FBC:MMC]
 namespace: language
+def: "Publication in the English language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000247
 name: Estonian
-def: "Publication in the Estonian language." [FBC:MMC]
 namespace: language
+def: "Publication in the Estonian language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000248
 name: Faroese
-def: "Publication in the Faroese language." [FBC:MMC]
 namespace: language
+def: "Publication in the Faroese language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000249
 name: Farsi
-def: "Publication in the Farsi language." [FBC:MMC]
 namespace: language
+def: "Publication in the Farsi language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000250
 name: Finnish
-def: "Publication in the Finnish language." [FBC:MMC]
 namespace: language
+def: "Publication in the Finnish language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000251
 name: Flemish
-def: "Publication in the Flemish language." [FBC:MMC]
 namespace: language
+def: "Publication in the Flemish language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000252
 name: French
-def: "Publication in the French language." [FBC:MMC]
 namespace: language
+def: "Publication in the French language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000253
 name: German
-def: "Publication in the German language." [FBC:MMC]
 namespace: language
+def: "Publication in the German language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000254
 name: Greek
-def: "Publication in the Greek language." [FBC:MMC]
 namespace: language
+def: "Publication in the Greek language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000255
 name: Hebrew
-def: "Publication in the Hebrew language." [FBC:MMC]
 namespace: language
+def: "Publication in the Hebrew language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000256
 name: Hungarian
-def: "Publication in the Hungarian language." [FBC:MMC]
 namespace: language
+def: "Publication in the Hungarian language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000257
 name: Icelandic
-def: "Publication in the Icelandic language." [FBC:MMC]
 namespace: language
+def: "Publication in the Icelandic language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000258
 name: Indonesian
-def: "Publication in the Indonesian language." [FBC:MMC]
 namespace: language
+def: "Publication in the Indonesian language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000259
 name: Italian
-def: "Publication in the Italian language." [FBC:MMC]
 namespace: language
+def: "Publication in the Italian language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000260
 name: Japanese
-def: "Publication in the Japanese language." [FBC:MMC]
 namespace: language
+def: "Publication in the Japanese language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000261
 name: Jugoslavian
-def: "Publication in the Jugoslavian language." [FBC:MMC]
 namespace: language
+def: "Publication in the Jugoslavian language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000262
 name: Korean
-def: "Publication in the Korean language." [FBC:MMC]
 namespace: language
+def: "Publication in the Korean language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000263
 name: Latin
-def: "Publication in the Latin language." [FBC:MMC]
 namespace: language
+def: "Publication in the Latin language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000264
 name: Latvian
-def: "Publication in the Latvian language." [FBC:MMC]
 namespace: language
+def: "Publication in the Latvian language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000265
 name: Lithuanian
-def: "Publication in the Lithuanian language." [FBC:MMC]
 namespace: language
+def: "Publication in the Lithuanian language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000266
 name: Malay
-def: "Publication in the Malay language." [FBC:MMC]
 namespace: language
+def: "Publication in the Malay language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000267
 name: Malayalam
-def: "Publication in the Malayalam language." [FBC:MMC]
 namespace: language
+def: "Publication in the Malayalam language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000268
 name: Norwegian
-def: "Publication in the Norwegian language." [FBC:MMC]
 namespace: language
+def: "Publication in the Norwegian language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000269
 name: Polish
-def: "Publication in the Polish language." [FBC:MMC]
 namespace: language
+def: "Publication in the Polish language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000270
 name: Portuguese
-def: "Publication in the Portuguese language." [FBC:MMC]
 namespace: language
+def: "Publication in the Portuguese language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000271
 name: Serbo-Croat(Roman)
-def: "Publication in the Serbo-Croat (Roman) language." [FBC:MMC]
 namespace: language
+def: "Publication in the Serbo-Croat (Roman) language." [FBC:MMC]
 is_a: FBcv:0000274 ! Serbo-Croat
 
 [Term]
 id: FBcv:0000272
 name: Romanian
-def: "Publication in the Roman language." [FBC:MMC]
 namespace: language
+def: "Publication in the Roman language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000273
 name: Russian
-def: "Publication in the Russian language." [FBC:MMC]
 namespace: language
+def: "Publication in the Russian language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000274
 name: Serbo-Croat
-def: "Publication in the Serbo-Croat language." [FBC:MMC]
 namespace: language
+def: "Publication in the Serbo-Croat language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000275
 name: Slovak
-def: "Publication in the Slovak language." [FBC:MMC]
 namespace: language
+def: "Publication in the Slovak language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000276
 name: Slovenian
-def: "Publication in the Slovenian language." [FBC:MMC]
 namespace: language
+def: "Publication in the Slovenian language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000277
 name: Spanish
-def: "Publication in the Spanish language." [FBC:MMC]
 namespace: language
+def: "Publication in the Spanish language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000278
 name: Swedish
-def: "Publication in the Swedish language." [FBC:MMC]
 namespace: language
+def: "Publication in the Swedish language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000279
 name: Turkish
-def: "Publication in the Turkish language." [FBC:MMC]
 namespace: language
+def: "Publication in the Turkish language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000280
 name: Ukrainian
-def: "Publication in the Ukrainian language." [FBC:MMC]
 namespace: language
+def: "Publication in the Ukrainian language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000281
 name: Yiddish
-def: "Publication in the Yiddish language." [FBC:MMC]
 namespace: language
+def: "Publication in the Yiddish language." [FBC:MMC]
 is_a: FBcv:0000234 ! publication language
 
 [Term]
 id: FBcv:0000282
 name: mutant scorability rank
-def: "Rank that describes the usefulness of mutants according to their phenotype." [FBC:MMC]
 namespace: scorability
+def: "Rank that describes the usefulness of mutants according to their phenotype." [FBC:MMC]
 subset: do_not_annotate
 is_a: FBcv:0000807 ! allele descriptor
 
@@ -5772,10 +5770,10 @@ is_a: FBcv:0000282 ! mutant scorability rank
 [Term]
 id: FBcv:0000286
 name: allele class
-def: "Term that describes the type of allele." [FBC:MMC]
 namespace: allele_class
-synonym: "allele morphy class" EXACT []
+def: "Term that describes the type of allele." [FBC:MMC]
 subset: do_not_annotate
+synonym: "allele morphy class" EXACT []
 is_a: FBcv:0000807 ! allele descriptor
 
 [Term]
@@ -5832,22 +5830,22 @@ is_a: FBcv:0000696 ! hypermorphic allele
 [Term]
 id: FBcv:0000294
 name: wild-type allele
-def: "Allele that corresponds to the wild-type one." [FBC:MMC]
 namespace: allele_class
+def: "Allele that corresponds to the wild-type one." [FBC:MMC]
 is_a: FBcv:0000286 ! allele class
 
 [Term]
 id: FBcv:0000295
 name: wild-type generic
-def: "Wild-type allele that can be distinguished from others." [FBC:MMC]
 namespace: allele_class
+def: "Wild-type allele that can be distinguished from others." [FBC:MMC]
 is_a: FBcv:0000294 ! wild-type allele
 
 [Term]
 id: FBcv:0000296
 name: isoallele
-def: "Wild-type allele that can only be distinguished from another one under special conditions." [FlyBase:FBrf0202435]
 namespace: allele_class
+def: "Wild-type allele that can only be distinguished from another one under special conditions." [FlyBase:FBrf0202435]
 is_a: FBcv:0000294 ! wild-type allele
 
 [Term]
@@ -6037,8 +6035,8 @@ is_a: FBcv:0000654 ! embryonic pattern qualifier
 [Term]
 id: FBcv:0000323
 name: segment polarity expression pattern
-def: "Qualifier that describes an expression pattern of a segment polarity gene. Expression is observed in a specific location in each segment." [FBC:MMC]
 namespace: embryonic_pattern_qualifier
+def: "Qualifier that describes an expression pattern of a segment polarity gene. Expression is observed in a specific location in each segment." [FBC:MMC]
 is_a: FBcv:0000654 ! embryonic pattern qualifier
 
 [Term]
@@ -6069,7 +6067,7 @@ is_obsolete: true
 [Term]
 id: FBcv:0000331
 name: polyphasic
-comment: Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q.\n\n: This term has been obsoleted because there are new terms to replace it [FBC:MMC]. mc160113 
+comment: Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q.\n\n: This term has been obsoleted because there are new terms to replace it [FBC:MMC]. mc160113
 subset: deprecated
 is_obsolete: true
 consider: FBcv:0000176
@@ -6077,8 +6075,8 @@ consider: FBcv:0000176
 [Term]
 id: FBcv:0000332
 name: sex
-def: "Qualifier that relates the expression of a phenotype to the sex of the individual." [FBC:MMC]
 namespace: sex_qualifier
+def: "Qualifier that relates the expression of a phenotype to the sex of the individual." [FBC:MMC]
 synonym: "sex qualifier" EXACT [FBC:DOS]
 is_a: FBcv:0000005 ! qualifier
 
@@ -6134,7 +6132,6 @@ subset: deprecated
 is_obsolete: true
 consider: FBcv:0000811
 
-
 [Term]
 id: FBcv:0000340
 name: partially
@@ -6146,8 +6143,8 @@ is_a: FBcv:0000811 ! qualitative qualifier
 [Term]
 id: FBcv:0000341
 name: good
-comment: This term has been obsoleted as it should be assumed a phenotype is good, unless it is said otherwise, by using other qualifiers. mc151118
 namespace: intensity_qualifier
+comment: This term has been obsoleted as it should be assumed a phenotype is good, unless it is said otherwise, by using other qualifiers. mc151118
 subset: deprecated
 is_obsolete: true
 consider: FBcv:0000811
@@ -6155,39 +6152,39 @@ consider: FBcv:0000811
 [Term]
 id: FBcv:0000342
 name: poor
-def: "Qualifier that describes a phenotype that has poor penetrance or expressivity." [FBC:MMC]
 namespace: intensity_qualifier
+def: "Qualifier that describes a phenotype that has poor penetrance or expressivity." [FBC:MMC]
 is_a: FBcv:0000811 ! qualitative qualifier
 
 [Term]
 id: FBcv:0000343
 name: reduced
-def: "Qualifier that describes a phenotype that has reduced penetrance or expressivity when compared to wild-type." [FBC:MMC]
 namespace: intensity_qualifier
+def: "Qualifier that describes a phenotype that has reduced penetrance or expressivity when compared to wild-type." [FBC:MMC]
 is_a: FBcv:0000811 ! qualitative qualifier
 
 [Term]
 id: FBcv:0000344
 name: slow
-def: "Qualifier that describes an electrophoretic migration of a gene product that is slower than the wild-type." [FBC:MMC]
 namespace: intensity_qualifier
+def: "Qualifier that describes an electrophoretic migration of a gene product that is slower than the wild-type." [FBC:MMC]
 xref: PATO:0000304
 is_a: FBcv:0000811 ! qualitative qualifier
 
 [Term]
 id: FBcv:0000345
 name: fast
-def: "Qualifier that describes an electrophoretic migration of a gene product that is intermediate in speed compared to the wild-type." [FBC:MMC]
 namespace: intensity_qualifier
+def: "Qualifier that describes an electrophoretic migration of a gene product that is intermediate in speed compared to the wild-type." [FBC:MMC]
 xref: PATO:0000303
 is_a: FBcv:0000811 ! qualitative qualifier
 
 [Term]
 id: FBcv:0000346
 name: intermediate
+namespace: intensity_qualifier
 def: "Qualifier that describes a phenotype that is intermediate in speed compared to the wild-type." [FBC:MMC]
 comment: This qualifier can be used to describe an electrophoretic migration of a gene product that is intermediate in speed compared to the wild-type.
-namespace: intensity_qualifier
 is_a: FBcv:0000811 ! qualitative qualifier
 
 [Term]
@@ -6200,8 +6197,8 @@ is_a: FBcv:0000807 ! allele descriptor
 [Term]
 id: FBcv:0000452
 name: origin of mutation
-def: "Describes the origin of the mutation that causes a phenotype." [FBC:MMC]
 namespace: origin_of_mutation
+def: "Describes the origin of the mutation that causes a phenotype." [FBC:MMC]
 subset: do_not_annotate
 is_a: FBcv:0000807 ! allele descriptor
 
@@ -6310,8 +6307,8 @@ consider: FBcv:0000455
 [Term]
 id: FBcv:0000465
 name: natural population
-def: "Mutation found in a natural population." [FBC:MMC]
 namespace: origin_of_mutation
+def: "Mutation found in a natural population." [FBC:MMC]
 is_a: FBcv:0000452 ! origin of mutation
 
 [Term]
@@ -6319,8 +6316,8 @@ id: FBcv:0000466
 name: temperature
 namespace: origin_of_mutation
 def: "Mutation caused by exposure to a temperature that is higher or lower than 25 degrees Celsius." [FBC:MMC]
-synonym: "mutation induced by temperature treatment" EXACT []
 synonym: "environmental treatment" RELATED []
+synonym: "mutation induced by temperature treatment" EXACT []
 is_a: FBcv:0000452 ! origin of mutation
 
 [Term]
@@ -6328,8 +6325,8 @@ id: FBcv:0000467
 name: cold
 namespace: origin_of_mutation
 def: "Mutation induced by exposure to temperature that is lower than 25 degrees Celsius." [FBC:MMC]
-synonym: "mutation induced by cold treatment" EXACT []
 synonym: "cold-treatment" RELATED []
+synonym: "mutation induced by cold treatment" EXACT []
 is_a: FBcv:0000466 ! temperature
 
 [Term]
@@ -6337,8 +6334,8 @@ id: FBcv:0000468
 name: heat
 namespace: origin_of_mutation
 def: "Mutation induced by exposure to a temperature that is higher than 25 degrees Celsius." [FBC:MMC]
-synonym: "mutation induced by heat treatment" EXACT []
 synonym: "heat-treatment" RELATED []
+synonym: "mutation induced by heat treatment" EXACT []
 is_a: FBcv:0000466 ! temperature
 
 [Term]
@@ -7135,8 +7132,8 @@ equivalent_to: CHEBI:28741
 [Term]
 id: FBcv:0000558
 name: epoxy hydrocarbon
-def: "Mutation induced by exposure to epoxy hydrocarbon." [FBC:MMC]
 namespace: origin_of_mutation
+def: "Mutation induced by exposure to epoxy hydrocarbon." [FBC:MMC]
 synonym: "mutation induced by epoxy hydrocarbon exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
 
@@ -7192,8 +7189,8 @@ equivalent_to: CHEBI:67107
 [Term]
 id: FBcv:0000564
 name: 1,4-dimethanesulfonoxybut-2-yne
-def: "Mutation induced by exposure to 1,4-dimethanesulfonoxybut-2-yne." [FBC:MMC]
 namespace: origin_of_mutation
+def: "Mutation induced by exposure to 1,4-dimethanesulfonoxybut-2-yne." [FBC:MMC]
 synonym: "CB2058" RELATED []
 synonym: "mutation induced by 1,4-dimethanesulfonoxybut-2-yne exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
@@ -7208,8 +7205,8 @@ is_a: FBcv:0000005 ! qualifier
 [Term]
 id: FBcv:0000566
 name: 1,6-dimethylsulfonoxy D-mannitol
-def: "Mutation induced by exposure to 1,6-dimethylsulfonoxy D-mannitol." [FBC:MMC]
 namespace: origin_of_mutation
+def: "Mutation induced by exposure to 1,6-dimethylsulfonoxy D-mannitol." [FBC:MMC]
 synonym: "CB2511" RELATED []
 synonym: "mutation induced by 1,6-dimethylsulfonoxy D-mannitol exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
@@ -7217,8 +7214,8 @@ is_a: FBcv:0000525 ! chemical
 [Term]
 id: FBcv:0000567
 name: 1,6-dimethylsulfonoxy L-mannitol
-def: "Mutation induced by exposure to 1,6-dimethylsulfonoxy L-mannitol." [FBC:MMC]
 namespace: origin_of_mutation
+def: "Mutation induced by exposure to 1,6-dimethylsulfonoxy L-mannitol." [FBC:MMC]
 synonym: "CB2628" RELATED []
 synonym: "mutation induced by 1,6-dimethylsulfonoxy L-mannitol exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
@@ -7366,8 +7363,8 @@ name: ethylene oxide
 namespace: origin_of_mutation
 def: "." [CHEBI:27561]
 synonym: "ethylene oxide" RELATED [CHEBI:27561]
-synonym: "oxirane" RELATED [CHEBI:27561]
 synonym: "mutation induced by ethylene oxide exposure" EXACT []
+synonym: "oxirane" RELATED [CHEBI:27561]
 is_a: FBcv:0000525 ! chemical
 equivalent_to: CHEBI:27561
 
@@ -7455,8 +7452,8 @@ equivalent_to: CHEBI:25234
 [Term]
 id: FBcv:0000591
 name: natural gas
-def: "Mutation induced by exposure to natural gas." [FBC:MMC]
 namespace: origin_of_mutation
+def: "Mutation induced by exposure to natural gas." [FBC:MMC]
 synonym: "mutation induced by natural gas exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
 
@@ -7604,9 +7601,9 @@ equivalent_to: CHEBI:27919
 [Term]
 id: FBcv:0000606
 name: allele assay method
+namespace: mode_of_assay
 def: "Assay method used to generate an allele." [FBC:MMC]
 comment: This term has been obsoleted because it is no longer used and relevant. mc151005
-namespace: mode_of_assay
 is_obsolete: true
 consider: FBcv:0000807
 
@@ -7708,8 +7705,8 @@ is_obsolete: true
 [Term]
 id: FBcv:0000620
 name: genetic interaction qualifier
-def: "Qualifier that describes the relation between two phenotypes that are due to genotypes g1 and g2." [FBC:MMC]
 namespace: genetic_interaction_type
+def: "Qualifier that describes the relation between two phenotypes that are due to genotypes g1 and g2." [FBC:MMC]
 subset: do_not_annotate
 is_a: FBcv:0000005 ! qualifier
 
@@ -7750,8 +7747,8 @@ is_a: FBcv:0000620 ! genetic interaction qualifier
 [Term]
 id: FBcv:0000625
 name: non-enhancer
-def: "Genotype g1 is a non-enhancer of genotype g2 if (and only if) the phenotype due to the genotype g1g2 is not more severe than the sum of phenotypes due to g1 and g2, where all comparisons are under identical environmental conditions." [FBC:MMC, FlyBase:FBrf0000957, ISBN:978-0-387-52054-4]
 namespace: genetic_interaction_type
+def: "Genotype g1 is a non-enhancer of genotype g2 if (and only if) the phenotype due to the genotype g1g2 is not more severe than the sum of phenotypes due to g1 and g2, where all comparisons are under identical environmental conditions." [FBC:MMC, FlyBase:FBrf0000957, ISBN:978-0-387-52054-4]
 comment: Not used directly in curation, but automatically inferred from its inverse (non-enhanceable).
 subset: do_not_manually_annotate
 is_a: FBcv:0000620 ! genetic interaction qualifier
@@ -7767,8 +7764,8 @@ is_a: FBcv:0000620 ! genetic interaction qualifier
 [Term]
 id: FBcv:0000627
 name: non-suppressor
-def: "The genotype g1 is a non-suppressor of genotype g2 if (and only if) the phenotype due to g2 is not made less severe by g1." [FBC:MMC, FlyBase:FBrf0000957, ISBN:978-0-387-52054-4]
 namespace: genetic_interaction_type
+def: "The genotype g1 is a non-suppressor of genotype g2 if (and only if) the phenotype due to g2 is not made less severe by g1." [FBC:MMC, FlyBase:FBrf0000957, ISBN:978-0-387-52054-4]
 comment: Not used directly in curation, but automatically inferred from its inverse (non-suppressible). Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA28b-q. Proforma field: GA29b-q.
 subset: do_not_manually_annotate
 is_a: FBcv:0000620 ! genetic interaction qualifier
@@ -7927,8 +7924,8 @@ is_a: FBcv:0000052 ! spatial qualifier
 [Term]
 id: FBcv:0000654
 name: embryonic pattern qualifier
-def: "Qualifier that describes the expression pattern of an embryo." [FBC:MMC]
 namespace: embryonic_pattern_qualifier
+def: "Qualifier that describes the expression pattern of an embryo." [FBC:MMC]
 subset: do_not_annotate
 is_a: FBcv:0000052 ! spatial qualifier
 
@@ -8981,8 +8978,8 @@ is_a: FBcv:0000483 ! transposable element activity
 [Term]
 id: FBcv:0003000
 name: disease qualifier
-def: "Qualifier that describes aspects of genetic models of disease." [FBC:MMC]
 namespace: disease_qualifier
+def: "Qualifier that describes aspects of genetic models of disease." [FBC:MMC]
 subset: do_not_annotate
 is_a: FBcv:0000005 ! qualifier
 created_by: mmc46
@@ -9093,8 +9090,8 @@ creation_date: 2014-03-27T11:07:29Z
 [Term]
 id: FBcv:0003011
 name: group descriptor
-def: "Descriptor that relates aspects of the grouping of genes or gene products." [FBC:MMC]
 namespace: group_descriptor
+def: "Descriptor that relates aspects of the grouping of genes or gene products." [FBC:MMC]
 subset: do_not_annotate
 is_a: FBcv:0000013 ! descriptor
 created_by: mmc46
@@ -9182,6 +9179,1755 @@ synonym: "mutation induced by Stalker element activity" EXACT []
 is_a: FBcv:0000483 ! transposable element activity
 created_by: mmc46
 creation_date: 2014-09-16T13:30:48Z
+
+[Term]
+id: FBcv:0003021
+name: dataset descriptor
+is_a: FBcv:0000013 ! descriptor
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003022
+name: dataset entity type
+namespace: dataset_entity_type
+is_a: FBcv:0003021 ! dataset descriptor
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003023
+name: project
+namespace: dataset_entity_type
+is_a: FBcv:0003022 ! dataset entity type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003024
+name: biosample
+namespace: dataset_entity_type
+is_a: FBcv:0003022 ! dataset entity type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003025
+name: assay
+namespace: dataset_entity_type
+is_a: FBcv:0003022 ! dataset entity type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003026
+name: result
+namespace: dataset_entity_type
+is_a: FBcv:0003022 ! dataset entity type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003027
+name: reagent collection
+namespace: dataset_entity_type
+is_a: FBcv:0003022 ! dataset entity type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003028
+name: dataset data type
+is_a: FBcv:0003021 ! dataset descriptor
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003029
+name: project type
+namespace: project_type
+is_a: FBcv:0003028 ! dataset data type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003030
+name: umbrella project
+namespace: project_type
+is_a: FBcv:0003029 ! project type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003031
+name: genome
+namespace: project_type
+is_a: FBcv:0003029 ! project type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003032
+name: genome variation
+namespace: project_type
+is_a: FBcv:0003029 ! project type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003033
+name: genome binding
+namespace: project_type
+is_a: FBcv:0003029 ! project type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003034
+name: transcriptome
+namespace: project_type
+is_a: FBcv:0003029 ! project type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003035
+name: proteome
+namespace: project_type
+is_a: FBcv:0003029 ! project type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003036
+name: interactome
+namespace: project_type
+is_a: FBcv:0003029 ! project type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003037
+name: metabolome
+namespace: project_type
+is_a: FBcv:0003029 ! project type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003038
+name: phenotypic screen
+namespace: project_type
+is_a: FBcv:0003029 ! project type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003039
+name: chemical screen
+namespace: project_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003040
+name: gene model annotation
+namespace: project_type
+is_a: FBcv:0003029 ! project type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003041
+name: phylogenetic analysis
+namespace: project_type
+is_a: FBcv:0003029 ! project type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003042
+name: reagent
+namespace: project_type
+is_a: FBcv:0003029 ! project type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003043
+name: other
+namespace: project_type
+is_a: FBcv:0003029 ! project type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003044
+name: biosample type
+namespace: biosample_type
+is_a: FBcv:0003028 ! dataset data type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003045
+name: whole organism
+namespace: biosample_type
+is_a: FBcv:0003044 ! biosample_type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003046
+name: tissue
+namespace: biosample_type
+is_a: FBcv:0003044 ! biosample_type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003047
+name: isolated cells
+namespace: biosample_type
+is_a: FBcv:0003044 ! biosample_type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003048
+name: primary cell line
+namespace: biosample_type
+is_a: FBcv:0003044 ! biosample_type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003049
+name: immortalized cell line
+namespace: biosample_type
+is_a: FBcv:0003044 ! biosample_type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003050
+name: assay type
+namespace: assay_type
+is_a: FBcv:0003028 ! dataset data type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003051
+name: CAGE-seq
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003052
+name: ChIP-chip
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003053
+name: ChIP-seq
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003054
+name: CLiP-seq
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003055
+name: DamID-chip
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003056
+name: DamID-seq
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003057
+name: DNAse-chip
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003058
+name: DNAse-seq
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003059
+name: FAIRE-seq
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003060
+name: GRO-seq
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003061
+name: MNase-chip
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003062
+name: MNase-seq
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003063
+name: RAMPAGE-seq
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003064
+name: Repli-seq
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003065
+name: Ribo-seq
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003066
+name: RIP-seq
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003067
+name: RNA expression microarray
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003068
+name: RNA-seq
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003069
+name: RNA tiling array
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003070
+name: short RNA-seq
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003071
+name: protein mass spectrometry
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003072
+name: lipid mass spectrometry
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003073
+name: carbohydrate mass spectrometry
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003074
+name: metabolite mass spectrometry
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003075
+name: affinity purification and mass spectrometry
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003076
+name: two hybrid screen
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003077
+name: RNAi screen
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003078
+name: deficiency screen
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003079
+name: genetic screen
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003080
+name: comparative genomic hybridization by array
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003081
+name: whole genome shotgun sequencing
+namespace: assay_type
+is_a: FBcv:0003050 ! assay type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003082
+name: result type
+namespace: result_type
+is_a: FBcv:0003028 ! dataset data type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003083
+name: genetic map
+namespace: result_type
+is_a: FBcv:0003082 ! result type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003084
+name: physical map
+namespace: result_type
+is_a: FBcv:0003082 ! result type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003085
+name: whole genome shotgun assembly
+namespace: result_type
+is_a: FBcv:0003082 ! result type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003086
+name: genome assembly
+namespace: result_type
+is_a: FBcv:0003082 ! result type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003087
+name: reference genome assembly
+namespace: result_type
+is_a: FBcv:0003082 ! result type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003088
+name: gene expression profile
+namespace: result_type
+is_a: FBcv:0003082 ! result type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003089
+name: RNA-seq profile
+namespace: result_type
+is_a: FBcv:0003082 ! result type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003090
+name: genome binding profile
+namespace: result_type
+is_a: FBcv:0003082 ! result type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003091
+name: mRNA translation profile
+namespace: result_type
+is_a: FBcv:0003082 ! result type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003092
+name: TSS identification
+namespace: result_type
+is_a: FBcv:0003082 ! result type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003093
+name: poly(A) site identification
+namespace: result_type
+is_a: FBcv:0003082 ! result type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003094
+name: exon junction identification
+namespace: result_type
+is_a: FBcv:0003082 ! result type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003095
+name: editing site identification
+namespace: result_type
+is_a: FBcv:0003082 ! result type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003096
+name: binding site identification
+namespace: result_type
+is_a: FBcv:0003082 ! result type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003097
+name: differential gene expression analysis
+namespace: result_type
+is_a: FBcv:0003082 ! result type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003098
+name: expression clustering
+namespace: result_type
+is_a: FBcv:0003082 ! result type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003099
+name: expression cluster
+namespace: result_type
+is_a: FBcv:0003082 ! result type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003100
+name: gene list
+namespace: result_type
+is_a: FBcv:0003082 ! result type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003101
+name: protein-protein interaction
+namespace: result_type
+is_a: FBcv:0003082 ! result type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003102
+name: RNA-protein interaction
+namespace: result_type
+is_a: FBcv:0003082 ! result type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003103
+name: RNA-RNA interaction
+namespace: result_type
+is_a: FBcv:0003082 ! result type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003104
+name: metabolite profile
+namespace: result_type
+is_a: FBcv:0003082 ! result type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003105
+name: phenotypic profile
+namespace: result_type
+is_a: FBcv:0003082 ! result type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003106
+name: genomic copy number profile
+namespace: result_type
+is_a: FBcv:0003082 ! result type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003107
+name: liftover file
+namespace: result_type
+is_a: FBcv:0003082 ! result type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003108
+name: analysis
+namespace: result_type
+is_a: FBcv:0003082 ! result type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003109
+name: reagent collection type
+namespace: reagent_collection_type
+is_a: FBcv:0003028 ! dataset data type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003110
+name: aberration stock collection
+namespace: reagent_collection_type
+is_a: FBcv:0003109 ! reagent collection type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003111
+name: allele collection
+namespace: reagent_collection_type
+is_a: FBcv:0003109 ! reagent collection type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003112
+name: cDNA library
+namespace: reagent_collection_type
+is_a: FBcv:0003109 ! reagent collection type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003113
+name: construct collection
+namespace: reagent_collection_type
+is_a: FBcv:0003109 ! reagent collection type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003114
+name: dsRNA amplicon collection
+namespace: reagent_collection_type
+is_a: FBcv:0003109 ! reagent collection type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003115
+name: RNAi construct collection
+namespace: reagent_collection_type
+is_a: FBcv:0003109 ! reagent collection type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003116
+name: genomic clone collection
+namespace: reagent_collection_type
+is_a: FBcv:0003109 ! reagent collection type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003117
+name: fly strain collection
+namespace: reagent_collection_type
+is_a: FBcv:0003109 ! reagent collection type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003118
+name: transgenic insertion collection
+namespace: reagent_collection_type
+is_a: FBcv:0003109 ! reagent collection type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003119
+name: TE insertion stock collection
+namespace: reagent_collection_type
+is_a: FBcv:0003109 ! reagent collection type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003120
+name: microarray library
+namespace: reagent_collection_type
+is_a: FBcv:0003109 ! reagent collection type
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003121
+name: dataset attribute
+is_a: FBcv:0003021 ! dataset descriptor
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003122
+name: project attribute
+namespace: project_attribute
+is_a: FBcv:0003121 ! dataset attribute
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003123
+name: study design
+namespace: project_attribute
+is_a: FBcv:0003122 ! project attribute
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003124
+name: species study
+namespace: project_attribute
+is_a: FBcv:0003123 ! study design
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003125
+name: strain study
+namespace: project_attribute
+is_a: FBcv:0003123 ! study design
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003126
+name: sex study
+namespace: project_attribute
+is_a: FBcv:0003123 ! study design
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003127
+name: developmental stage study
+namespace: project_attribute
+is_a: FBcv:0003123 ! study design
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003128
+name: circadian rhythm study
+namespace: project_attribute
+is_a: FBcv:0003123 ! study design
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003129
+name: cell cycle study
+namespace: project_attribute
+is_a: FBcv:0003123 ! study design
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003130
+name: tissue type study
+namespace: project_attribute
+is_a: FBcv:0003123 ! study design
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003131
+name: cell type study
+namespace: project_attribute
+is_a: FBcv:0003123 ! study design
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003132
+name: subcellular component study
+namespace: project_attribute
+is_a: FBcv:0003123 ! study design
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003133
+name: gene study
+namespace: project_attribute
+is_a: FBcv:0003123 ! study design
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003134
+name: biotic stimulus study
+namespace: project_attribute
+is_a: FBcv:0003123 ! study design
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003135
+name: chemical stimulus study
+namespace: project_attribute
+is_a: FBcv:0003123 ! study design
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003136
+name: physical stimulus study
+namespace: project_attribute
+is_a: FBcv:0003123 ! study design
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003137
+name: biosample attribute
+namespace: biosample_attribute
+is_a: FBcv:0003121 ! dataset attribute
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003138
+name: biosample scope
+namespace: biosample_attribute
+is_a: FBcv:0003137 ! biosample attribute
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003139
+name: single cell sample
+namespace: biosample_attribute
+is_a: FBcv:0003138 ! biosample scope
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003140
+name: single individual sample
+namespace: biosample_attribute
+is_a: FBcv:0003138 ! biosample scope
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003141
+name: multi-individual sample
+namespace: biosample_attribute
+is_a: FBcv:0003138 ! biosample scope
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003142
+name: multispecies sample
+namespace: biosample_attribute
+is_a: FBcv:0003138 ! biosample scope
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003143
+name: environmental
+namespace: biosample_attribute
+is_a: FBcv:0003138 ! biosample scope
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003144
+name: artificial
+namespace: biosample_attribute
+is_a: FBcv:0003138 ! biosample scope
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003145
+name: wild caught
+namespace: biosample_attribute
+is_a: FBcv:0003146 ! growth condition
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003146
+name: growth condition
+namespace: biosample_attribute
+is_a: FBcv:0003137 ! biosample attribute
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003147
+name: trait selection
+namespace: biosample_attribute
+is_a: FBcv:0003146 ! growth condition
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003148
+name: interspecific hybrid
+namespace: biosample_attribute
+is_a: FBcv:0003146 ! growth condition
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003149
+name: mated
+namespace: biosample_attribute
+is_a: FBcv:0003146 ! growth condition
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003150
+name: virgin
+namespace: biosample_attribute
+is_a: FBcv:0003146 ! growth condition
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003151
+name: constant dark
+namespace: biosample_attribute
+is_a: FBcv:0003146 ! growth condition
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003152
+name: constant light
+namespace: biosample_attribute
+is_a: FBcv:0003146 ! growth condition
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003153
+name: light-dark cycle
+namespace: biosample_attribute
+is_a: FBcv:0003146 ! growth condition
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003154
+name: primary cell culture
+namespace: biosample_attribute
+is_a: FBcv:0003146 ! growth condition
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003155
+name: cell culture property
+namespace: biosample_attribute
+is_a: FBcv:0003137 ! biosample attribute
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003156
+name: transiently transfected cell line
+namespace: biosample_attribute
+is_a: FBcv:0003155 ! cell culture property
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003157
+name: stably transfected cell line
+namespace: biosample_attribute
+is_a: FBcv:0003155 ! cell culture property
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003158
+name: log phase cells
+namespace: biosample_attribute
+is_a: FBcv:0003155 ! cell culture property
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003159
+name: stationary phase cells
+namespace: biosample_attribute
+is_a: FBcv:0003155 ! cell culture property
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003160
+name: cell cycle synchronized cells
+namespace: biosample_attribute
+is_a: FBcv:0003155 ! cell culture property
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003161
+name: suspension culture
+namespace: biosample_attribute
+is_a: FBcv:0003155 ! cell culture property
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003162
+name: adherent culture
+namespace: biosample_attribute
+is_a: FBcv:0003155 ! cell culture property
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003163
+name: culture supernatant
+namespace: biosample_attribute
+is_a: FBcv:0003155 ! cell culture property
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003164
+name: biosample method
+namespace: biosample_attribute
+is_a: FBcv:0003137 ! biosample attribute
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003165
+name: gene perturbation
+namespace: biosample_attribute
+is_a: FBcv:0003164 ! biosample methods
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003166
+name: biotic treatment
+namespace: biosample_attribute
+is_a: FBcv:0003164 ! biosample methods
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003167
+name: chemical treatment
+namespace: biosample_attribute
+is_a: FBcv:0003164 ! biosample methods
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003168
+name: physical treatment
+namespace: biosample_attribute
+is_a: FBcv:0003164 ! biosample methods
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003169
+name: tissue dissection
+namespace: biosample_attribute
+is_a: FBcv:0003164 ! biosample methods
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003170
+name: cell isolation
+namespace: biosample_attribute
+is_a: FBcv:0003164 ! biosample methods
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003171
+name: subcellular fractionation
+namespace: biosample_attribute
+is_a: FBcv:0003164 ! biosample methods
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003172
+name: cell ablation
+namespace: biosample_attribute
+is_a: FBcv:0003164 ! biosample methods
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003173
+name: targeted cell labeling
+namespace: biosample_attribute
+is_a: FBcv:0003164 ! biosample methods
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003174
+name: neuronal activity perturbation
+namespace: biosample_attribute
+is_a: FBcv:0003164 ! biosample methods
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003175
+name: assay attribute
+namespace: assay_attribute
+is_a: FBcv:0003121 ! dataset attribute
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003176
+name: assay material
+namespace: assay_attribute
+is_a: FBcv:0003175 ! assay attribute
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003177
+name: genomic DNA isolation
+namespace: assay_attribute
+is_a: FBcv:0003176 ! assay material
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003178
+name: total RNA isolation
+namespace: assay_attribute
+is_a: FBcv:0003176 ! assay material
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003179
+name: poly(A) RNA isolation
+namespace: assay_attribute
+is_a: FBcv:0003176 ! assay material
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003180
+name: short RNA isolation
+namespace: assay_attribute
+is_a: FBcv:0003176 ! assay material
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003181
+name: translated mRNA isolation
+namespace: assay_attribute
+is_a: FBcv:0003176 ! assay material
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003182
+name: protein isolation
+namespace: assay_attribute
+is_a: FBcv:0003176 ! assay material
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003183
+name: chromatin isolation
+namespace: assay_attribute
+is_a: FBcv:0003176 ! assay material
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003184
+name: RNA-protein isolation
+namespace: assay_attribute
+is_a: FBcv:0003176 ! assay material
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003185
+name: metabolite isolation
+namespace: assay_attribute
+is_a: FBcv:0003176 ! assay material
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003186
+name: assay material depletion
+namespace: assay_attribute
+is_a: FBcv:0003175 ! assay attribute
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003187
+name: rRNA depletion
+namespace: assay_attribute
+is_a: FBcv:0003186 ! assay material depletion
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003188
+name: ssRNA depletion
+namespace: assay_attribute
+is_a: FBcv:0003186 ! assay material depletion
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003189
+name: dsRNA depletion
+namespace: assay_attribute
+is_a: FBcv:0003186 ! assay material depletion
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003190
+name: unbound RNA depletion
+namespace: assay_attribute
+is_a: FBcv:0003186 ! assay material depletion
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003191
+name: assay material selection
+namespace: assay_attribute
+is_a: FBcv:0003175 ! assay attribute
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003192
+name: ChIP
+namespace: assay_attribute
+is_a: FBcv:0003191 ! assay material selection
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003193
+name: DamID
+namespace: assay_attribute
+is_a: FBcv:0003191 ! assay material selection
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003194
+name: FAIRE
+namespace: assay_attribute
+is_a: FBcv:0003191 ! assay material selection
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003195
+name: CAGE
+namespace: assay_attribute
+is_a: FBcv:0003191 ! assay material selection
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003196
+name: MNase
+namespace: assay_attribute
+is_a: FBcv:0003191 ! assay material selection
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003197
+name: DNase
+namespace: assay_attribute
+is_a: FBcv:0003191 ! assay material selection
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003198
+name: low salt chromatin extraction
+namespace: assay_attribute
+is_a: FBcv:0003191 ! assay material selection
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003199
+name: high salt chromatin extraction
+namespace: assay_attribute
+is_a: FBcv:0003191 ! assay material selection
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003200
+name: mononucleosomal DNA isolation
+namespace: assay_attribute
+is_a: FBcv:0003191 ! assay material selection
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003201
+name: affinity purification
+namespace: assay_attribute
+is_a: FBcv:0003191 ! assay material selection
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003202
+name: size fractionation
+namespace: assay_attribute
+is_a: FBcv:0003191 ! assay material selection
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003203
+name: oligo-dT selection
+namespace: assay_attribute
+is_a: FBcv:0003191 ! assay material selection
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003204
+name: oligo-dT priming
+namespace: assay_attribute
+is_a: FBcv:0003191 ! assay material selection
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003205
+name: random priming
+namespace: assay_attribute
+is_a: FBcv:0003191 ! assay material selection
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003206
+name: density sedimentation
+namespace: assay_attribute
+is_a: FBcv:0003191 ! assay material selection
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003207
+name: nuclear run-on
+namespace: assay_attribute
+is_a: FBcv:0003191 ! assay material selection
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003208
+name: assay method
+namespace: assay_attribute
+is_a: FBcv:0003175 ! assay attribute
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003209
+name: Sanger sequencing
+namespace: assay_attribute
+is_a: FBcv:0003208 ! assay method
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003210
+name: single molecule real time sequencing
+namespace: assay_attribute
+is_a: FBcv:0003208 ! assay method
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003211
+name: high-throughput sequencing
+namespace: assay_attribute
+is_a: FBcv:0003208 ! assay method
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003212
+name: 454 sequencing
+namespace: assay_attribute
+is_a: FBcv:0003211 ! high-throughput sequencing
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003213
+name: Illumina sequencing
+namespace: assay_attribute
+is_a: FBcv:0003211 ! high-throughput sequencing
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003214
+name: expression array
+namespace: assay_attribute
+is_a: FBcv:0003208 ! assay method
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003214
+name: Affymetrix Gene Expression Array 1
+namespace: assay_attribute
+is_a: FBcv:0003214 ! expression array
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003215
+name: Affymetrix Gene Expression Array 2
+namespace: assay_attribute
+is_a: FBcv:0003214 ! expression array
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003216
+name: genomic tiling array
+namespace: assay_attribute
+is_a: FBcv:0003208 ! assay method
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003217
+name: peptide array
+namespace: assay_attribute
+is_a: FBcv:0003208 ! assay method
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003218
+name: mass spectrometry
+namespace: assay_attribute
+is_a: FBcv:0003208 ! assay method
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003219
+name: two channel scanning
+namespace: assay_attribute
+is_a: FBcv:0003208 ! assay method
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003220
+name: single-end layout
+namespace: assay_attribute
+is_a: FBcv:0003208 ! assay method
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003221
+name: paired-end layout
+namespace: assay_attribute
+is_a: FBcv:0003208 ! assay method
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003222
+name: result attribute
+namespace: result_attribute
+is_a: FBcv:0003121 ! dataset attribute
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003223
+name: stranded profile
+namespace: result_attribute
+is_a: FBcv:0003222 ! result attribute
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003224
+name: unstranded profile
+namespace: result_attribute
+is_a: FBcv:0003222 ! result attribute
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003225
+name: uniquely mapping read alignment
+namespace: result_attribute
+is_a: FBcv:0003222 ! result attribute
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003226
+name: multiply mapping read alignment
+namespace: result_attribute
+is_a: FBcv:0003222 ! result attribute
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003227
+name: RPKM calculation
+namespace: result_attribute
+is_a: FBcv:0003222 ! result attribute
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003228
+name: RPMM calculation
+namespace: result_attribute
+is_a: FBcv:0003222 ! result attribute
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003229
+name: RPM calculation
+namespace: result_attribute
+is_a: FBcv:0003222 ! result attribute
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003230
+name: clone-based finishing
+namespace: result_attribute
+is_a: FBcv:0003222 ! result attribute
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003231
+name: restriction fingerprinting
+namespace: result_attribute
+is_a: FBcv:0003222 ! result attribute
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003232
+name: sequence tagged site mapping
+namespace: result_attribute
+is_a: FBcv:0003222 ! result attribute
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003233
+name: tiling path
+namespace: result_attribute
+is_a: FBcv:0003222 ! result attribute
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003234
+name: cytogenetic mapping
+namespace: result_attribute
+is_a: FBcv:0003222 ! result attribute
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003235
+name: assembly level - chromosome
+namespace: result_attribute
+is_a: FBcv:0003222 ! result attribute
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003236
+name: assembly level - scaffold
+namespace: result_attribute
+is_a: FBcv:0003222 ! result attribute
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003237
+name: genome representation - full
+namespace: result_attribute
+is_a: FBcv:0003222 ! result attribute
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
+
+[Term]
+id: FBcv:0003238
+name: genome representation - partial
+namespace: result_attribute
+is_a: FBcv:0003222 ! result attribute
+created_by: mmc46
+creation_date: 2016-02-24T19:19:21Z
 
 [Term]
 id: FBcv:0010000
