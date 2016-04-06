@@ -3757,10 +3757,9 @@ is_a: FBcv:0000000 ! FlyBase CV
 [Term]
 id: FBcv:0000009
 name: temporal stage qualifier
-comment: This term has been obsoleted because both of its children terms have been obsoleted [FBC:MMC]. mc160113
+namespace: temporal_qualifier
 xref: PATO:0000083
-is_obsolete: true
-consider: FBcv:0000176
+is_a: FBcv:0000176 ! temporal  qualifier
 
 [Term]
 id: FBcv:0000010
@@ -3773,9 +3772,8 @@ consider: FBcv:0000176
 [Term]
 id: FBcv:0000011
 name: relative temporal qualifier
-comment: This term has been obsoleted because all of its children terms have been obsoleted [FBC:MMC]. mc160113
-is_obsolete: true
-consider: FBcv:0000176
+namespace: temporal_qualifier
+is_a: FBcv:0000176 ! temporal  qualifier
 
 [Term]
 id: FBcv:0000012
@@ -4150,9 +4148,9 @@ is_a: FBcv:0000014 ! structural qualifier
 id: FBcv:0000062
 name: ipsilateral
 namespace: spatial_qualifier
-comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.\n\nThis term has been obsoleted because there is no way to combine it with an anatomy term to produce a meaningful statement [FBC:MMC]. mc160113.
-is_obsolete: true
-consider: FBcv:0000052
+comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.\n\nDEPRECATION WARNING: This term is marked for obsoletion.  As far as I can tell, ipsilateral means - on the same side as ....  In curation usage: on the same side as what ?  Will be obsoleted once a replacement term agreed upon (if needed) and any old usage retrofitted. DS
+subset: deprecated
+is_a: FBcv:0000052 ! spatial qualifier
 
 [Term]
 id: FBcv:0000063
@@ -4968,10 +4966,11 @@ is_obsolete: true
 [Term]
 id: FBcv:0000178
 name: early
-comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.\n\nThis term has been obsoleted because there are new terms stage terms that can be used instead [FBC:MMC]. mc160113
+namespace: temporal_qualifier
+comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.\n\nDEPRECATION WARNING: This term is marked for obsoletion. Use of this term is discouraged as there is no way to decide how to group anatomy terms combined with this qualifier with other terms in the anatomy ontology.  Subject to discussion and once its usage in old curation is removed, this term will be obsoleted.  DS
+subset: deprecated
 xref: PATO:0000694
-is_obsolete: true
-consider: FBcv:0000176
+is_a: FBcv:0000011 ! relative temporal qualifier
 
 [Term]
 id: FBcv:0000179
@@ -4986,16 +4985,19 @@ is_obsolete: true
 [Term]
 id: FBcv:0000181
 name: late
-comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.\n\nThis term has been obsoleted because there are new stage terms that can be used instead [FBC:MMC]. mc160113
-is_obsolete: true
-consider: FBcv:0000176
+namespace: temporal_qualifier
+comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.\n\nDEPRECATION WARNING: This term is marked for obsoletion. Use of this term is discouraged as there is no way to decide how to group anatomy terms combined with this qualifier with other terms in the anatomy ontology. Subject to discussion and once its usage in old curation is removed, this term will be obsoleted.  DS
+subset: deprecated
+xref: PATO:0000502
+is_a: FBcv:0000011 ! relative temporal qualifier
 
 [Term]
 id: FBcv:0000182
 name: mid
-comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.\n\nThis term has been obsoleted because there are new stage terms that can be used instead [FBC:MMC]. mc160113
-is_obsolete: true
-consider: FBcv:0000176
+namespace: temporal_qualifier
+comment: Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.\n\nDEPRECATION WARNING: This term is marked for obsoletion. Use of this term is discouraged as there is no way to decide how to group anatomy terms combined with this qualifier with other terms in the anatomy ontology.  Subject to discussion and once its usage in old curation is removed, this term will be obsoleted.  DS
+subset: deprecated
+is_a: FBcv:0000011 ! relative temporal qualifier
 
 [Term]
 id: FBcv:0000183
@@ -6067,10 +6069,11 @@ is_obsolete: true
 [Term]
 id: FBcv:0000331
 name: polyphasic
-comment: Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q.\n\n: This term has been obsoleted because there are new terms to replace it [FBC:MMC]. mc160113
+namespace: temporal_qualifier
+comment: Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q.\n\nDEPRECATION WARNING: This term is marked for obsoletion. Use of this term is discouraged as there is no way to decide how to group anatomy terms combined with this qualifier with other terms in the anatomy ontology.  Subject to discussion and once its usage in old curation is removed, this term will be obsoleted.  DS
 subset: deprecated
-is_obsolete: true
-consider: FBcv:0000176
+xref: PATO:0001774
+is_a: FBcv:0000009 ! temporal stage qualifier
 
 [Term]
 id: FBcv:0000332
@@ -6128,7 +6131,6 @@ id: FBcv:0000339
 name: fully
 namespace: extent
 comment: Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. \n\nDEPRECATION WARNING: This term has been obsoleted as 'fully' is assumed in the absence of use of 'partially'. mc151118
-subset: deprecated
 is_obsolete: true
 consider: FBcv:0000811
 
@@ -6145,7 +6147,6 @@ id: FBcv:0000341
 name: good
 namespace: intensity_qualifier
 comment: This term has been obsoleted as it should be assumed a phenotype is good, unless it is said otherwise, by using other qualifiers. mc151118
-subset: deprecated
 is_obsolete: true
 consider: FBcv:0000811
 
