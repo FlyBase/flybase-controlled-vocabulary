@@ -16,12 +16,12 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FlyBase_miscellaneous_CV</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#auto-generated-by"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">OBO-Edit 2.3-beta5</Literal>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#date"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2016-04-08a</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Imports terms from http://purl.obolibrary.org/obo/go/2015-11-18/go-simple.owl; http://purl.obolibrary.org/obo/fbdv/2014-07-29/fbdv.owl</Literal>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#auto-generated-by"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">OBO-Edit 2.3-beta5</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -37,15 +37,15 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/fbcv_go_import.owl&gt;))) [Axioms: 2082 Logical Axioms: 299]</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Imports terms from http://purl.obolibrary.org/obo/go/2016-04-07/go-simple.owl; http://purl.obolibrary.org/obo/fbdv/2014-07-29/fbdv.owl</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.2</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#date"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">08:04:2016 13:46</Literal>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/fbcv_go_import.owl&gt;))) [Axioms: 2081 Logical Axioms: 300]</Literal>
     </Annotation>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/BFO_0000035"/>
@@ -1065,9 +1065,6 @@
         <Class IRI="http://purl.obolibrary.org/obo/GO_0032940"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0033057"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0033554"/>
     </Declaration>
     <Declaration>
@@ -1735,6 +1732,9 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#auto-generated-by"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#consider"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
@@ -4105,11 +4105,11 @@
                 <DataProperty IRI="http://purl.obolibrary.org/obo/scratch_0008216"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:short"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">98</Literal>
-                    </FacetRestriction>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
                         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+                    </FacetRestriction>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxExclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">98</Literal>
                     </FacetRestriction>
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
@@ -6657,8 +6657,15 @@
         <Class IRI="http://purl.obolibrary.org/obo/GO_0032502"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/GO_0003006"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <Class IRI="http://purl.obolibrary.org/obo/GO_0000003"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0003008"/>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0044707"/>
+        <Class IRI="http://purl.obolibrary.org/obo/GO_0032501"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0005623"/>
@@ -6793,6 +6800,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/GO_0044767"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/GO_0007275"/>
+        <Class IRI="http://purl.obolibrary.org/obo/GO_0048856"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0007389"/>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0044707"/>
     </SubClassOf>
@@ -6857,6 +6868,10 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0007610"/>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0008150"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/GO_0007611"/>
+        <Class IRI="http://purl.obolibrary.org/obo/GO_0044707"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0007611"/>
@@ -6996,10 +7011,6 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0008152"/>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0008150"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0008219"/>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0016265"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0008219"/>
@@ -7166,10 +7177,6 @@
         <Class IRI="http://purl.obolibrary.org/obo/GO_0006810"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0016265"/>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0044699"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0016477"/>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0048870"/>
     </SubClassOf>
@@ -7183,7 +7190,14 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0019098"/>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0022414"/>
+        <Class IRI="http://purl.obolibrary.org/obo/GO_0048609"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/GO_0019098"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <Class IRI="http://purl.obolibrary.org/obo/GO_0000003"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0019222"/>
@@ -7218,6 +7232,13 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0022414"/>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0008150"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/GO_0022414"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <Class IRI="http://purl.obolibrary.org/obo/GO_0000003"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0022610"/>
@@ -7266,22 +7287,6 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0032940"/>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0046903"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0032940"/>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0051649"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0033057"/>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0044705"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0033057"/>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0044706"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0033057"/>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0048609"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0033554"/>
@@ -7715,6 +7720,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0051321"/>
+        <Class IRI="http://purl.obolibrary.org/obo/GO_0044702"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/GO_0051321"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
             <Class IRI="http://purl.obolibrary.org/obo/GO_0000003"/>
@@ -7788,14 +7797,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0060179"/>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0033057"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/GO_0060179"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
-            <Class IRI="http://purl.obolibrary.org/obo/GO_0007617"/>
-        </ObjectSomeValuesFrom>
+        <Class IRI="http://purl.obolibrary.org/obo/GO_0007617"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/GO_0060255"/>
@@ -8393,6 +8395,9 @@
     <TransitiveObjectProperty>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002092"/>
     </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002211"/>
+    </TransitiveObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000060"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000003"/>
@@ -8547,6 +8552,13 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002212"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002212"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002213"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002213"/>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
         </ObjectPropertyChain>
@@ -8560,11 +8572,11 @@
         <DataProperty IRI="http://purl.obolibrary.org/obo/scratch_0008216"/>
         <DatatypeRestriction>
             <Datatype abbreviatedIRI="xsd:short"/>
-            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
-            </FacetRestriction>
             <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
                 <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
             </FacetRestriction>
         </DatatypeRestriction>
     </DataPropertyRange>
@@ -16567,7 +16579,7 @@
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0006887</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A process of secretion by a cell that results in the release of intracellular molecules (e.g. hormones, matrix proteins) contained within a membrane-bounded vesicle by fusion of the vesicle with the plasma membrane of a cell. This is the process in which most molecules are secreted from eukaryotic cells.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A process of secretion by a cell that results in the release of intracellular molecules (e.g. hormones, matrix proteins) contained within a membrane-bounded vesicle by fusion of the vesicle with the plasma membrane of a cell. Steps that prepare vesicles for fusion with the membrane (e.g. docking and priming) are included in this process. This is the process in which most molecules are secreted from eukaryotic cells.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
@@ -17303,7 +17315,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0007275</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">multicellular organismal development</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">multicellular organism development</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -17461,7 +17473,7 @@
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0007568</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A developmental process that is a deterioration and loss of function over time. Aging includes loss of functions such as resistance to disease, homeostasis, and fertility, as well as wear and tear. Aging includes cellular senescence, but is more inclusive. May precede death (GO:0016265) and may succeed developmental maturation (GO:0021700).</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A developmental process that is a deterioration and loss of function over time. Aging includes loss of functions such as resistance to disease, homeostasis, and fertility, as well as wear and tear. Aging includes cellular senescence, but is more inclusive. May precede death and may succeed developmental maturation (GO:0021700).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
@@ -18658,9 +18670,13 @@
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:mtg_apoptosis</Literal>
         </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PMID:25236395</Literal>
+        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0008219</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Any biological process that results in permanent cessation of all vital functions of a cell. A cell should be considered dead when any one of the following molecular or morphological criteria is met: (1) the cell has lost the integrity of its plasma membrane; (2) the cell, including its nucleus, has undergone complete fragmentation into discrete bodies (frequently referred to as &quot;apoptotic bodies&quot;); and/or (3) its corpse (or its fragments) have been engulfed by an adjacent cell in vivo.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Any biological process that results in permanent cessation of all vital functions of a cell. A cell should be considered dead when any one of the following molecular or morphological criteria is met: (1) the cell has lost the integrity of its plasma membrane; (2) the cell, including its nucleus, has undergone complete fragmentation into discrete bodies (frequently referred to as apoptotic bodies). The cell corpse (or its fragments) may be engulfed by an adjacent cell in vivo, but engulfment of whole cells should not be considered a strict criteria to define cell death as, under some circumstances, live engulfed cells can be released from phagosomes (see PMID:18045538).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
@@ -19896,7 +19912,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0010468</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">This class covers any process that regulates the rate of production of a mature gene product, and so includes processes that regulate that rate by regulating the level, stability or availability of intermediates in the process of gene expression.  For example, it covers any process that regulates the level, stability or availabiliy of mRNA for translation and thereby regulates the rate of production of the encoded protein via translation.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">This class covers any process that regulates the rate of production of a mature gene product, and so includes processes that regulate that rate by regulating the level, stability or availability of intermediates in the process of gene expression.  For example, it covers any process that regulates the level, stability or availability of mRNA for translation and thereby regulates the rate of production of the encoded protein via translation.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -20243,7 +20259,17 @@
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0016265</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A permanent cessation of all vital functions: the end of life; can be applied to a whole organism or to a part of an organism.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">OBSOLETE. A permanent cessation of all vital functions: the end of life; can be applied to a whole organism or to a part of an organism.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#consider"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0016265</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GO:0008219</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#consider"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0016265</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GO:0012501</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -20261,29 +20287,19 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GO:0016265</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0016265</IRI>
-        <IRI>http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0016265</IRI>
-        <IRI>http://purl.obolibrary.org/obo/go#goslim_plant</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0016265</IRI>
-        <IRI>http://purl.obolibrary.org/obo/go#gosubset_prok</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0016265</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">This term should not be used for direct manual annotation. Instead, consider selecting a child term of GO:0008219 &apos;cell death&apos; or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">This term was made obsolete because it refers to a phenotype. When death of a cell or tissue is a result of a true biological process, this should be captured using &apos;programmed cell death&apos; or one of its descendants.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0016265</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">death</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">obsolete death</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0016265</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -20387,9 +20403,28 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The specific behavior of an organism that is associated with reproduction.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0019098</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GO:0033057</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:curators</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0019098</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">reproductive behavior in a multicellular organism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0019098</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">reproductive behaviour</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <IRI>http://purl.obolibrary.org/obo/GO_0019098</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">multicellular organism reproductive behavior</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
@@ -20560,7 +20595,7 @@
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0022610</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The attachment of a cell or organism to a substrate or other organism.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The attachment of a cell or organism to a substrate, another cell, or other organism. Biological adhesion includes intracellular attachment between membrane regions.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
@@ -20920,43 +20955,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/GO_0032940</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">secretion by cell</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:mtg_MIT_16mar07</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:pr</Literal>
-        </Annotation>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0033057</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The specific behavior of an organism that is associated with reproduction in a multicellular organism.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:curators</Literal>
-        </Annotation>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0033057</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">reproductive behavior in a multicellular organism</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0033057</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">biological_process</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0033057</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GO:0033057</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/GO_0033057</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">multicellular organismal reproductive behavior</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>

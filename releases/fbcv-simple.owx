@@ -6,7 +6,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      ontologyIRI="http://purl.obolibrary.org/obo/fbcv/fbcv-simple.owl"
-     versionIRI="http://purl.obolibrary.org/obo/fbcv/2016-04-08/fbcv-simple.owl">
+     versionIRI="http://purl.obolibrary.org/obo/fbcv/2016-04-08a/fbcv-simple.owl">
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
@@ -20,24 +20,24 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">OBO-Edit 2.3.1</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#default-namespace"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FlyBase miscellaneous CV</Literal>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Imports terms from CHEBI - datestamp = 02:12:2011 01:47. And terms imported from http://purl.obolibrary.org/obo/go/releases/2016-04-07/go-simple.obo</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Imports terms from CHEBI - datestamp = 02:12:2011 01:47. And terms imported from http://purl.obolibrary.org/obo/go/releases/2015-11-18/go-simple.obo</Literal>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#default-namespace"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FlyBase miscellaneous CV</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.2</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#date"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">08:04:2016 13:46</Literal>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/dpo.owl&gt;) VersionIRI(&lt;http://purl.obolibrary.org/obo/dpo/fbcv/2015-11-19/dpo.owl&gt;))) [Axioms: 1608 Logical Axioms: 313]</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/dpo.owl&gt;) VersionIRI(&lt;http://purl.obolibrary.org/obo/dpo/fbcv/2015-11-19/dpo.owl&gt;))) [Axioms: 1607 Logical Axioms: 311]</Literal>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#date"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">08:04:2016 13:46</Literal>
     </Annotation>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000000"/>
@@ -8875,6 +8875,9 @@
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002092"/>
     </TransitiveObjectProperty>
     <TransitiveObjectProperty>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002211"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/fbcv#decreased_in_magnitude_relative_to"/>
     </TransitiveObjectProperty>
     <TransitiveObjectProperty>
@@ -8945,6 +8948,13 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002212"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002212"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002213"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002213"/>
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000050"/>
         </ObjectPropertyChain>
@@ -8958,11 +8968,11 @@
         <DataProperty IRI="http://purl.obolibrary.org/obo/scratch_0008216"/>
         <DatatypeRestriction>
             <Datatype abbreviatedIRI="xsd:short"/>
-            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
-            </FacetRestriction>
             <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
                 <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
             </FacetRestriction>
         </DatatypeRestriction>
     </DataPropertyRange>
@@ -9195,14 +9205,6 @@
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:cab1</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">WB_REF:cgc467</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000002</IRI>
@@ -17819,18 +17821,6 @@ This term has been obsoleted because there are new stage terms that can be used 
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:dph</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:go_curators</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:tb</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000324</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in dorsal/ventral axis specification (GO:0009950). &apos;dorsal/ventral axis specification&apos; is defined as: &apos;The establishment, maintenance and elaboration of the dorsal/ventral axis. The dorsal/ventral axis is defined by a line that runs orthogonal to both the anterior/posterior and left/right axes. The dorsal end is defined by the upper or back side of an organism. The ventral end is defined by the lower or front side of an organism.&apos;</Literal>
@@ -19486,7 +19476,7 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000384</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in aging (GO:0007568). &apos;aging&apos; is defined as: &apos;A developmental process that is a deterioration and loss of function over time. Aging includes loss of functions such as resistance to disease, homeostasis, and fertility, as well as wear and tear. Aging includes cellular senescence, but is more inclusive. May precede death (GO:0016265) and may succeed developmental maturation (GO:0021700).&apos;</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in aging (GO:0007568). &apos;aging&apos; is defined as: &apos;A developmental process that is a deterioration and loss of function over time. Aging includes loss of functions such as resistance to disease, homeostasis, and fertility, as well as wear and tear. Aging includes cellular senescence, but is more inclusive. May precede death and may succeed developmental maturation (GO:0021700).&apos;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
@@ -19730,26 +19720,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:jid</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PMID:10203867</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PMID:12723742</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PMID:12843304</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Pain</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000393</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in response to pain (GO:0048265). &apos;response to pain&apos; is defined as: &apos;Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a pain stimulus. Pain stimuli cause activation of nociceptors, peripheral receptors for pain, include receptors which are sensitive to painful mechanical stimuli, extreme heat or cold, and chemical stimuli.&apos;</Literal>
@@ -19773,14 +19743,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:bf</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:go_curators</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000394</IRI>
@@ -19806,10 +19768,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:go_curators</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000395</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in locomotor rhythm (GO:0045475). &apos;locomotor rhythm&apos; is defined as: &apos;The rhythm of the locomotor activity of an organism during its 24 hour activity cycle.&apos;</Literal>
@@ -19833,10 +19791,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PMID:11715043</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000396</IRI>
@@ -19862,14 +19816,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ISBN:0582227089</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ISBN:0721662544</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000397</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in learning (GO:0007612). &apos;learning&apos; is defined as: &apos;Any process in an organism in which a relatively long-lasting adaptive behavioral change occurs as the result of experience.&apos;</Literal>
@@ -19893,18 +19839,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:curators</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ISBN:0582227089</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">http://www.onelook.com/</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000398</IRI>
@@ -19930,14 +19864,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:ai</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:dph</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000399</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in courtship behavior (GO:0007619). &apos;courtship behavior&apos; is defined as: &apos;The behavioral interactions between organisms for the purpose of attracting sexual partners.&apos;</Literal>
@@ -19961,14 +19887,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:jl</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ISBN:0387520546</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000400</IRI>
@@ -19994,22 +19912,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:bf</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:dos</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PMID:11470898</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PMID:17276917</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000401</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in circadian mating behavior (GO:0035648). &apos;circadian mating behavior&apos; is defined as: &apos;The fluctuation in mating behavior that occurs over an approximately 24 hour cycle.&apos;</Literal>
@@ -20033,14 +19935,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:mtg_sensu</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PMID:11092827</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000402</IRI>
@@ -20084,10 +19978,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:go_curators</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000403</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in chemosensory behavior (GO:0007635). &apos;chemosensory behavior&apos; is defined as: &apos;Behavior that is dependent upon the sensation of chemicals.&apos;.&apos;</Literal>
@@ -20117,14 +20007,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:ai</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">http://www.onelook.com/</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000404</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in sensory perception of smell (GO:0007608). &apos;sensory perception of smell&apos; is defined as: &apos;The series of events required for an organism to receive an olfactory stimulus, convert it to a molecular signal, and recognize and characterize the signal. Olfaction involves the detection of chemical composition of an organism&apos;s ambient medium by chemoreceptors. This is a neurological process.&apos;</Literal>
@@ -20153,14 +20035,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:ai</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">http://www.onelook.com/</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000405</IRI>
@@ -20220,10 +20094,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:ai</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000407</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in sensory perception of sound (GO:0007605). &apos;sensory perception of sound&apos; is defined as: &apos;The series of events required for an organism to receive an auditory stimulus, convert it to a molecular signal, and recognize and characterize the signal. Sonic stimuli are detected in the form of vibrations and are processed to form a sound.&apos;</Literal>
@@ -20252,10 +20122,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:mah</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000408</IRI>
@@ -20286,10 +20152,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:jl</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000409</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in response to osmotic stress (GO:0006970). &apos;response to osmotic stress&apos; is defined as: &apos;Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus indicating an increase or decrease in the concentration of solutes outside the organism or cell.&apos;</Literal>
@@ -20314,10 +20176,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:lr</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000410</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in response to heat (GO:0009408). &apos;response to heat&apos; is defined as: &apos;Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a heat stimulus, a temperature stimulus above the optimal temperature for that organism.&apos;</Literal>
@@ -20341,14 +20199,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:jid</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:pr</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000411</IRI>
@@ -20408,14 +20258,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:jl</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ISBN:0192800981</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000413</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in phototaxis (GO:0042331). &apos;phototaxis&apos; is defined as: &apos;The directed movement of a motile cell or organism in response to light.&apos;</Literal>
@@ -20444,10 +20286,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:dph</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000414</IRI>
@@ -20526,10 +20364,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:dph</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000417</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in flight (GO:0060361). &apos;flight&apos; is defined as: &apos;Self-propelled movement of an organism from one location to another through the air, usually by means of active wing movement.&apos;</Literal>
@@ -20564,10 +20398,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:dph</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000418</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is the absence of flight (GO:0060361). &apos;flight&apos; is defined as: &apos;Self-propelled movement of an organism from one location to another through the air, usually by means of active wing movement.&apos;</Literal>
@@ -20597,10 +20427,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:mah</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000419</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in feeding behavior (GO:0007631). &apos;feeding behavior&apos; is defined as: &apos;Behavior associated with the intake of food.&apos;</Literal>
@@ -20629,14 +20455,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:jl</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:pr</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000420</IRI>
@@ -20701,10 +20519,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:jl</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000422</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in entrainment of circadian clock by photoperiod (GO:0043153), which is defined as: &apos;The synchronization of a circadian rhythm to photoperiod, the intermittent cycle of light (day) and dark (night).&apos;</Literal>
@@ -20728,10 +20542,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PMID:11563486</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000423</IRI>
@@ -20864,10 +20674,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:ai</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000427</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in cell growth (GO:0016049). &apos;cell growth&apos; is defined as: &apos;The process in which a cell irreversibly increases in size over time by accretion and biosynthetic production of matter similar to that already present.&apos;</Literal>
@@ -20969,10 +20775,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:ai</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000431</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in meiotic cell cycle (GO:0051321). &apos;meiotic cell cycle&apos; is defined as: &apos;Progression through the phases of the meiotic cell cycle, in which canonically a cell replicates to produce four offspring with half the chromosomal content of the progenitor cell via two nuclear divisions.&apos;</Literal>
@@ -21002,18 +20804,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:mah</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ISBN:0815316194</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Reactome:69278</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000432</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in mitotic cell cycle (GO:0000278). &apos;mitotic cell cycle&apos; is defined as: &apos;Progression through the phases of the mitotic cell cycle, the most common eukaryotic cell cycle, which canonically comprises four successive phases called G1, S, G2, and M and includes replication of the genome and the subsequent segregation of chromosomes into daughter cells. In some variant cell cycles nuclear replication or nuclear division may not be followed by cell division, or G1 and G2 phases may be absent.&apos;</Literal>
@@ -21042,10 +20832,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:mtg_cell_cycle</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000433</IRI>
@@ -21095,10 +20881,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ISBN:978-3-11-014898-5</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000435</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in nervous system (FBbt:00005093). &apos;nervous system&apos; is defined as: &apos;All the nerve centers and nerve fibers in the central, visceral and peripheral nervous systems.&apos;</Literal>
@@ -21123,10 +20905,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ISBN:0198506732</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000436</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in sex determination (GO:0007530). &apos;sex determination&apos; is defined as: &apos;Any process that establishes and transmits the specification of sexual status of an individual organism.&apos;</Literal>
@@ -21150,18 +20928,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:ems</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ISBN:0140512888</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PMID:11498577</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000437</IRI>
@@ -21450,18 +21216,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:add</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:mtg_15nov05</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GO_REF:0000022</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000448</IRI>
@@ -24181,9 +23935,13 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:24624</Literal>
         </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
+        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000532</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to a methanesulfonate salt resulting from the reaction of equimolar amounts of hycanthone and methanesulfonic acid. It was formerly used as a schistosomicide for individual or mass treatement of infection with Schistosoma haematobium and S. mansoni, but due to its toxicity and concern about possible carcinogenicity, it has been replaced by other drugs such as praziquantel. (Definition imported and edited from &apos;hycanthone mesylate ; CHEBI:24624&apos;, which is related to this term.).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -24667,9 +24425,13 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:28534</Literal>
         </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
+        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000545</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to a bromoalkane that has formula C2H4Br2. (Definition imported and edited from &apos;1,2-dibromoethane ; CHEBI:28534&apos;, which is related to this term.).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -24777,13 +24539,9 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:67142</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000548</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to a molecule that can substitute for a normal nucleobase in nucleic acids. (Definition imported and edited from &apos;nucleobase analogue ; CHEBI:67142&apos;, which is related to this term.).</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
@@ -24814,9 +24572,13 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:20552</Literal>
         </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
+        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000549</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to a pyrimidine having keto groups at the 2- and 4-positions and a bromo group at the 5-position. (Definition imported and edited from &apos;5-bromouracil ; CHEBI:20552&apos;, which is related to this term.).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -24876,9 +24638,13 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:23924</Literal>
         </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
+        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000551</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Any chemical (FBcv:0000525) that has role some enzyme inhibitor (CHEBI:23924).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -24905,13 +24671,9 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:22526</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000552</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to a dicarboxylic acid that has formula C19H20N8O5. (Definition imported and edited from &apos;4-aminofolic acid ; CHEBI:22526&apos;, which is related to this term.).</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -24980,13 +24742,9 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:23414</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000554</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to a metal sulfate compound having copper(2+) as the counterion. (Definition imported and edited from &apos;copper(2+) sulfate ; CHEBI:23414&apos;, which is related to this term.).</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -25252,13 +25010,9 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:35299</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000562</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to an ortho-fused polycyclic arene that has formula C22H14. (Definition imported and edited from &apos;dibenz[a,h]anthracene ; CHEBI:35299&apos;, which is related to this term.).</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -25463,13 +25217,9 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:19024</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000568</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to an aminonaphthalene that has formula C10H9NO4S. (Definition imported and edited from &apos;4-amino-3-hydroxynaphthalene-1-sulfonic acid ; CHEBI:19024&apos;, which is related to this term.).</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -25623,13 +25373,9 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:20787</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000572</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to a member of the class of tetraphenes that is tetraphene in which the hydrogens at positions 7 and 12 are replaced by bromomethyl and methyl groups, respectively. (Definition imported and edited from &apos;7-bromomethyl-12-methyltetraphene ; CHEBI:20787&apos;, which is related to this term.).</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -25675,9 +25421,13 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:27666</Literal>
         </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
+        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000573</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to an actinomycin that has formula C62H86N12O16. (Definition imported and edited from &apos;actinomycin D ; CHEBI:27666&apos;, which is related to this term.).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -25704,13 +25454,9 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:29865</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000574</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to an ortho- and peri-fused polycyclic arene consisting of five fused benzene rings. (Definition imported and edited from &apos;benzo[a]pyrene ; CHEBI:29865&apos;, which is related to this term.).</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -26039,13 +25785,9 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:28954</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000583</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to a benzophenanthridine alkaloid that has formula C21H20NO4. (Definition imported and edited from &apos;fagaronine ; CHEBI:28954&apos;, which is related to this term.).</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -26105,9 +25847,13 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:28775</Literal>
         </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
+        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000585</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to a disaccharide derivative that consists of hesperetin substituted by a 6-O-(alpha-L-rhamnopyranosyl)-beta-D-glucopyranosyl moiety at position 7 via a glycosidic linkage. (Definition imported and edited from &apos;hesperidin ; CHEBI:28775&apos;, which is related to this term.).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -26143,13 +25889,9 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:24564</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000586</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to a triamino-1,3,5-triazine that has formula C9H18N6. (Definition imported and edited from &apos;hexamethylmelamine ; CHEBI:24564&apos;, which is related to this term.).</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -26377,13 +26119,9 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:50102</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000592</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to an urea that has formula C2H5N3O2. (Definition imported and edited from &apos;N-methyl-N-nitrosurea ; CHEBI:50102&apos;, which is related to this term.).</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -26429,9 +26167,13 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:35807</Literal>
         </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
+        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000593</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to a nitrosamine that has formula C2H6N2O. (Definition imported and edited from &apos;N-nitrosodimethylamine ; CHEBI:35807&apos;, which is related to this term.).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -26647,13 +26389,9 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:25818</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000599</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to an organochlorine compound that has formula C12H18Cl2N2. (Definition imported and edited from &apos;4-(2-aminoethyl)-N,N-bis(2-chloroethyl)aniline ; CHEBI:25818&apos;, which is related to this term.).</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -28590,14 +28328,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:hb</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:pf</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000668</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in cell adhesion (GO:0007155). &apos;cell adhesion&apos; is defined as: &apos;The attachment of a cell, either to another cell or to an underlying substrate such as the extracellular matrix, via cell adhesion molecules.&apos;</Literal>
@@ -28621,14 +28351,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:pr</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PMID:10436051</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000669</IRI>
@@ -28659,22 +28381,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:dgh</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:dos</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:mah</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ISBN:0198600461</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000670</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in eclosion (GO:0007562). &apos;eclosion&apos; is defined as: &apos;The emergence of an adult insect from a pupa case.&apos;</Literal>
@@ -28699,14 +28405,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:go_curators</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:mtg_cell_cycle</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000671</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in cell cycle (GO:0007049). &apos;cell cycle&apos; is defined as: &apos;The progression of biochemical and morphological phases and events that occur in a cell during successive cell replication or nuclear replication events. Canonically, the cell cycle comprises the replication and segregation of genetic material followed by the division of the cell, but in endocycles or syncytial cells nuclear replication or nuclear division may not be followed by cell division.&apos;</Literal>
@@ -28730,18 +28428,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:curators</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:dos</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:expert_vm</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000672</IRI>
@@ -28930,18 +28616,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:bf</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:go_curators</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:pr</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000679</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in circadian behavior (GO:0048512). &apos;circadian behavior&apos; is defined as: &apos;The specific behavior of an organism that recurs with a regularity of approximately 24 hours.&apos;</Literal>
@@ -28974,15 +28648,7 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FB:FBrf0044924</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:jid</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000680</IRI>
@@ -29007,14 +28673,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:ai</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:dph</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000681</IRI>
@@ -29050,10 +28708,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:ai</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000682</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in sensory perception of touch (GO:0050975). &apos;sensory perception of touch&apos; is defined as: &apos;The series of events required for an organism to receive a touch stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process. The perception of touch in animals is mediated by mechanoreceptors in the skin and mucous membranes and is the sense by which contact with objects gives evidence as to certain of their qualities. Different types of touch can be perceived (for example, light, coarse, pressure and tickling) and the stimulus may be external or internal (e.g. the feeling of a full stomach).&apos;</Literal>
@@ -29082,10 +28736,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:hb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000683</IRI>
@@ -29120,10 +28770,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:lr</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000684</IRI>
@@ -29182,18 +28828,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:dph</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:go_curators</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:isa_complete</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000686</IRI>
@@ -29874,10 +29508,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ISBN:0192800981</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000705</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in sleep (GO:0030431). &apos;sleep&apos; is defined as: &apos;Any process in which an organism enters and maintains a periodic, readily reversible state of reduced awareness and metabolic activity. Usually accompanied by physical relaxation, the onset of sleep in humans and other mammals is marked by a change in the electrical activity of the brain.&apos;</Literal>
@@ -29911,18 +29541,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:ds</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:jid</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:mah</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000706</IRI>
@@ -29958,18 +29576,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:ds</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:jid</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:mah</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000707</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in entry into reproductive diapause (GO:0055116). &apos;entry into reproductive diapause&apos; is defined as: &apos;The dormancy process that results in entry into reproductive diapause. Reproductive diapause is a form of diapause where the organism itself will remain fully active, including feeding and other routine activities, but the reproductive organs experience a tissue-specific reduction in metabolism, with characteristic triggering and releasing stimuli.&apos;</Literal>
@@ -30003,10 +29609,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:go_curators</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000708</IRI>
@@ -30280,26 +29882,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:cjm</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:dph</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:ems</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:pf</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Cell_migration</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000716</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in cell migration (GO:0016477). &apos;cell migration&apos; is defined as: &apos;The controlled self-propelled movement of a cell from one site to a destination guided by molecular cues. Cell migration is a central process in the development and maintenance of multicellular organisms.&apos;</Literal>
@@ -30444,14 +30026,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
         </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:ai</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:dph</Literal>
-        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000721</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in mating behavior (GO:0007617). &apos;mating behavior&apos; is defined as: &apos;The behavioral interactions between organisms for the purpose of mating, or sexual reproduction resulting in the formation of zygotes.&apos;</Literal>
@@ -30567,14 +30141,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:jl</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PMID:12115731</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000725</IRI>
@@ -33479,9 +33045,13 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:37598</Literal>
         </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
+        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000813</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to compounds having two beta-haloalkyl groups bound to a nitrogen atom, as in (X-C2H2-C2H2)2NR. (Definition imported and edited from &apos;nitrogen mustard ; CHEBI:37598&apos;, which is related to this term.).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -33697,18 +33267,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">GOC:mah</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ISBN:0198506732</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ISBN:0716731363</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0001324</IRI>
@@ -34077,6 +33635,10 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">lethal - all die during third instar larval stage</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
+        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002010</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A phenotype of a population that is the death of the majority of animals in that population during the P-stage.</Literal>
@@ -34121,6 +33683,10 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">majority die during first instar larval stage</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
+        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002012</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A phenotype of a population that is the death of the majority of animals in that population during the larval stage.</Literal>
