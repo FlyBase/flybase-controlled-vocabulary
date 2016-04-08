@@ -12,12 +12,16 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Annotation>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#default-namespace"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FlyBase_miscellaneous_CV</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#auto-generated-by"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">OBO-Edit 2.3-beta5</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#default-namespace"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FlyBase_miscellaneous_CV</Literal>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Imports terms from http://purl.obolibrary.org/obo/go/2015-11-18/go-simple.owl; http://purl.obolibrary.org/obo/fbdv/2014-07-29/fbdv.owl</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -33,19 +37,15 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Imports terms from http://purl.obolibrary.org/obo/go/2014-09-20/go-simple.owl; http://purl.obolibrary.org/obo/fbdv/2014-07-29/fbdv.owl</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/fbcv_go_import.owl&gt;))) [Axioms: 2082 Logical Axioms: 299]</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#date"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">19:11:2015 13:48</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.2</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#date"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">08:04:2016 13:46</Literal>
     </Annotation>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/BFO_0000035"/>
@@ -4105,11 +4105,11 @@
                 <DataProperty IRI="http://purl.obolibrary.org/obo/scratch_0008216"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:short"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
-                    </FacetRestriction>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxExclusive">
                         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">98</Literal>
+                    </FacetRestriction>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
                     </FacetRestriction>
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
@@ -8560,11 +8560,11 @@
         <DataProperty IRI="http://purl.obolibrary.org/obo/scratch_0008216"/>
         <DatatypeRestriction>
             <Datatype abbreviatedIRI="xsd:short"/>
-            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
-            </FacetRestriction>
             <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
                 <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
             </FacetRestriction>
         </DatatypeRestriction>
     </DataPropertyRange>
@@ -9191,11 +9191,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000002</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000002</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000002</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">thermotaxis behavior defective</Literal>
@@ -9211,11 +9206,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000006</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000006</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000006</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">male semi-fertile</Literal>
@@ -9229,11 +9219,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000007</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000007</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000007</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9269,11 +9254,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000008</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000008</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000008</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">modifier of variegation</Literal>
@@ -9296,11 +9276,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000316</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000316</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000316</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9336,11 +9311,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000324</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000324</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000324</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">dorsal/ventral axis specification defective</Literal>
@@ -9373,11 +9343,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000325</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000325</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000325</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -9424,11 +9389,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000348</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000348</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000348</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">wild-type</Literal>
@@ -9453,14 +9413,9 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000349</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000349</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000349</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: MA8. Note, this term should not be used with the qualifier &apos;partially&apos;.  Use semi-viable or semi-lethal instead.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: MA8. Note, this term should not be used with the qualifier &apos;partially&apos;. Use semi-viable or semi-lethal instead.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9497,16 +9452,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000350</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000350</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000350</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000350</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">partially lethal - majority live</Literal>
@@ -9538,16 +9483,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000351</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000351</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000351</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000351</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -9597,16 +9532,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000352</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000352</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000352</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000352</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Stages during which there is significant death prior to mature adulthood can be indicated using one or more stage qualifiers.</Literal>
@@ -9634,11 +9559,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000353</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000353</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000353</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -9670,11 +9590,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000354</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000354</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000354</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">visible</Literal>
@@ -9702,11 +9617,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000355</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000355</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000355</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9738,11 +9648,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000356</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000356</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000356</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">body color defective</Literal>
@@ -9767,11 +9672,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000357</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000357</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000357</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">size defective</Literal>
@@ -9794,11 +9694,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000358</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000358</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000358</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9830,11 +9725,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000359</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000359</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000359</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">decreased cell number</Literal>
@@ -9862,11 +9752,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000360</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000360</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000360</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -9898,11 +9783,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000361</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000361</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000361</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">large body</Literal>
@@ -9927,14 +9807,9 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000362</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000362</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000362</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">This phenotype is not necessarily accompanied by overgrowth of a tissue - there may be more cells in an otherwise normal volume of tissue.  It is not necessarily due to an increase in cell growth -it may be the result of an increase in the division rate at normal growth rates.  It may not even be due to an increase in the cell division rate - a reduced rate of cell death while the division rate is normal could also achieve it.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">This phenotype is not necessarily accompanied by overgrowth of a tissue - there may be more cells in an otherwise normal volume of tissue. It is not necessarily due to an increase in cell growth -it may be the result of an increase in the division rate at normal growth rates.  It may not even be due to an increase in the cell division rate - a reduced rate of cell death while the division rate is normal could also achieve it.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9959,11 +9834,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000363</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000363</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000363</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -9995,14 +9865,9 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000364</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000364</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000364</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The cause of sterility may be physical or behavioral. Note, this term should not be used with the qualifier &apos;partially&apos;.  Use semi-sterile or semi-fertile instead.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The cause of sterility may be physical or behavioral. Note, this term should not be used with the qualifier &apos;partially&apos;. Use semi-sterile or semi-fertile instead.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10038,11 +9903,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000365</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000365</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000365</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">semi-sterile</Literal>
@@ -10065,11 +9925,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000366</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000366</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000366</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -10101,11 +9956,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000367</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000367</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000367</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">female semi-sterile</Literal>
@@ -10135,11 +9985,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000368</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000368</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000368</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">female sterile germline-dependent</Literal>
@@ -10164,11 +10009,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000369</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000369</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000369</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">female sterile soma-dependent</Literal>
@@ -10191,11 +10031,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000370</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000370</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000370</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -10227,11 +10062,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000371</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000371</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000371</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">male semi-sterile</Literal>
@@ -10261,11 +10091,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000372</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000372</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000372</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">male sterile germline-dependent</Literal>
@@ -10290,11 +10115,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000373</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000373</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000373</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">male sterile soma-dependent</Literal>
@@ -10317,11 +10137,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000374</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000374</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000374</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -10362,11 +10177,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000375</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000375</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000375</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">semi-fertile</Literal>
@@ -10389,11 +10199,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000376</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000376</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000376</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -10425,11 +10230,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000377</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000377</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000377</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Note - this term should not be used with the qualifier &apos;partially&apos; - use female semi-sterile or female semi-fertile instead.</Literal>
@@ -10459,11 +10259,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000378</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000378</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000378</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">grandchildless</Literal>
@@ -10486,11 +10281,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000379</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000379</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000379</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -10522,11 +10312,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000380</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000380</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000380</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">non-enhancer of variegation</Literal>
@@ -10549,11 +10334,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000381</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000381</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000381</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -10585,11 +10365,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000382</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000382</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000382</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">non-suppressor of variegation</Literal>
@@ -10614,11 +10389,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000383</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000383</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000383</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">auxotroph</Literal>
@@ -10641,11 +10411,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000384</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000384</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000384</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10682,16 +10447,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000385</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000385</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000385</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000385</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">short lived</Literal>
@@ -10714,11 +10469,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000386</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000386</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000386</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10749,11 +10499,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000387</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000387</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000387</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10790,11 +10535,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000388</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000388</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000388</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">gravitaxis defective</Literal>
@@ -10819,11 +10559,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000389</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000389</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000389</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">paralytic</Literal>
@@ -10846,11 +10581,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000390</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000390</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000390</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10886,11 +10616,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000391</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000391</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000391</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">bang sensitive</Literal>
@@ -10913,11 +10638,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000392</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000392</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000392</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10944,11 +10664,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000393</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000393</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000393</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">pain response defective</Literal>
@@ -10971,11 +10686,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000394</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000394</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000394</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11002,11 +10712,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000395</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000395</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000395</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">locomotor rhythm defective</Literal>
@@ -11029,11 +10734,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000396</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000396</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000396</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11060,11 +10760,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000397</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000397</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000397</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">learning defective</Literal>
@@ -11087,11 +10782,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000398</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000398</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000398</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11118,11 +10808,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000399</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000399</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000399</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">courtship behavior defective</Literal>
@@ -11147,11 +10832,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000400</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000400</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000400</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">mating defective</Literal>
@@ -11174,11 +10854,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000401</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000401</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000401</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11223,11 +10898,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000402</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000402</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000402</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">song defective</Literal>
@@ -11257,11 +10927,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000403</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000403</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000403</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">chemosensitive behavior defective</Literal>
@@ -11289,11 +10954,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000404</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000404</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000404</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11330,11 +10990,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000405</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000405</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000405</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">taste perception defective</Literal>
@@ -11357,11 +11012,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000406</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000406</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000406</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11393,11 +11043,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000407</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000407</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000407</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">auditory perception defective</Literal>
@@ -11427,11 +11072,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000408</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000408</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000408</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">stress response defective</Literal>
@@ -11456,11 +11096,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000409</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000409</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000409</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">osmotic stress response defective</Literal>
@@ -11483,11 +11118,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000410</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000410</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000410</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11519,11 +11149,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000411</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000411</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000411</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">visual behavior defective</Literal>
@@ -11551,11 +11176,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000412</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000412</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000412</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11587,11 +11207,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000413</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000413</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000413</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">phototaxis defective</Literal>
@@ -11621,11 +11236,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000414</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000414</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000414</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">locomotor behavior defective</Literal>
@@ -11650,11 +11260,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000415</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000415</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000415</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">jumping defective</Literal>
@@ -11677,11 +11282,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000416</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000416</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000416</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11713,14 +11313,9 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000417</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000417</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000417</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">This term is agnostic as to the causes of defects in flight.  An animal&apos;s flight may be defective for mechanical, behavioral or sensory reasons.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">This term is agnostic as to the causes of defects in flight. An animal&apos;s flight may be defective for mechanical, behavioral or sensory reasons.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11747,14 +11342,9 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000418</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000418</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000418</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">This term is agnostic as to the causes of flightlessness.  An animal may be flightless for mechanical or behavioral reasons.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">This term is agnostic as to the causes of flightlessness. An animal may be flightless for mechanical or behavioral reasons.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11786,11 +11376,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000419</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000419</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000419</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">feeding behavior defective</Literal>
@@ -11820,11 +11405,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000420</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000420</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000420</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">grooming behavior defective</Literal>
@@ -11836,7 +11416,12 @@
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000421</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is reduction in or loss of a stereotypical locomotory response to touch.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is reduction in or loss of a stereotypical behavioral response to touch.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000421</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">touch sensitivity defective</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
@@ -11849,19 +11434,14 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000421</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000421</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000421</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">This phenotype is commonly assayed by scoring larval avoidance responses following stroking of the thoracic segments (see Kernan et al., 1994).  On its own, this is not sufficient evidence for a defect in sensory perception of touch, as motor defects can also cause this phenotype. Internal note -</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">This phenotype is commonly assayed by scoring larval avoidance responses following stroking of the thoracic segments (see Kernan et al., 1994).  On its own, this is not sufficient evidence for a defect in sensory perception of touch, as motor defects can also cause this phenotype.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000421</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">touch sensitivity defective</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">touch response defective</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -11881,11 +11461,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000422</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000422</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000422</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11910,11 +11485,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000423</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000423</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000423</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11956,11 +11526,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000424</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000424</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000424</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">cell death defective</Literal>
@@ -11993,11 +11558,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000425</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000425</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000425</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12034,11 +11594,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000426</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000426</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000426</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">decreased cell death</Literal>
@@ -12061,11 +11616,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000427</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000427</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000427</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -12097,11 +11647,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000428</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000428</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000428</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">cell size defective</Literal>
@@ -12126,11 +11671,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000429</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000429</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000429</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">cell shape defective</Literal>
@@ -12153,11 +11693,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000430</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000430</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000430</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12189,11 +11724,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000431</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000431</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000431</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">meiotic cell cycle defective</Literal>
@@ -12223,11 +11753,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000432</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000432</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000432</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">mitotic cell cycle defective</Literal>
@@ -12250,11 +11775,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000433</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000433</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000433</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12281,11 +11801,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000434</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000434</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000434</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">neurophysiology defective</Literal>
@@ -12308,11 +11823,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000435</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000435</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000435</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12339,11 +11849,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000436</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000436</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000436</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">sex-determination defective</Literal>
@@ -12366,11 +11871,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000437</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000437</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000437</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12397,11 +11897,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000438</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000438</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000438</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">electrophoretic variant</Literal>
@@ -12424,11 +11919,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000439</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000439</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000439</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12455,11 +11945,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000440</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000440</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000440</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">chemical sensitive</Literal>
@@ -12482,11 +11967,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000441</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000441</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000441</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12513,11 +11993,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000442</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000442</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000442</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">radiation sensitive</Literal>
@@ -12542,14 +12017,9 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000443</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000443</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000443</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The phenotype may be a general result of mutations in essential components of the protein synthesis pathyway, as a number of Minutes encode ribosomal proteins. In an animal that is heterozygous for a Minute mutation, cells with two wild-type alleles of the affected gene have a growth advantage.  Many developmental studies take advantage of this fact to give somatic clones a growth advantage.  The term &apos;Minute&apos; should not be used to annotate the resulting phenotypes.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The phenotype may be a general result of mutations in essential components of the protein synthesis pathway, as a number of Minutes encode ribosomal proteins. In an animal that is heterozygous for a Minute mutation, cells with two wild-type alleles of the affected gene have a growth advantage. Many developmental studies take advantage of this fact to give somatic clones a growth advantage. The term &apos;Minute&apos; should not be used to annotate the resulting phenotypes.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12581,11 +12051,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000444</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000444</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000444</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">hyperplasia</Literal>
@@ -12608,11 +12073,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000445</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000445</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000445</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12648,14 +12108,9 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000446</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000446</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000446</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Melanotic capsules are formed around foreign bodies in wild-type animals as part of the immune response, for example as a protection against parasitoid wasps. Some, but not all melanotic mass phenotypes involve ectopic activation of this immmune response.  While melanotic masses are commonly referred to as melanotic tumors in the historical listerature, this is a misnomer as they are rarely neoplastic.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Melanotic capsules are formed around foreign bodies in wild-type animals as part of the immune response, for example as a protection against parasitoid wasps. Some, but not all melanotic mass phenotypes involve ectopic activation of this immune response. While melanotic masses are commonly referred to as melanotic tumors in the historical literature, this is a misnomer as they are rarely neoplastic.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12682,11 +12137,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000447</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000447</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000447</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">melanotic necrosis</Literal>
@@ -12709,11 +12159,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000448</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000448</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000448</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12745,11 +12190,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000449</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000449</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000449</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">For apical-basal polarity phenotypes of epithelia, the appropriate term is &apos;cell polarity defective&apos;.</Literal>
@@ -12779,14 +12219,9 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000450</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000450</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000450</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A more complete formalisation would require a clause specifying stage.  It might be possible to do this in OWL using the same system as we are using for lethal phase.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A more complete formalization would require a clause specifying stage. It might be possible to do this in OWL using the same system as we are using for lethal phase.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12817,11 +12252,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000451</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000451</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000451</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">wound healing defective</Literal>
@@ -12846,11 +12276,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000665</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000665</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000665</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">body size defective</Literal>
@@ -12873,11 +12298,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000668</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000668</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000668</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12909,11 +12329,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000669</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000669</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000669</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">hatching behavior defective</Literal>
@@ -12938,11 +12353,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000670</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000670</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000670</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">eclosion defective</Literal>
@@ -12965,11 +12375,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000671</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000671</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000671</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12999,11 +12404,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000672</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000672</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000672</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13040,11 +12440,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000679</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000679</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000679</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">circadian behavior defective</Literal>
@@ -13067,11 +12462,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000680</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000680</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000680</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13108,11 +12498,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000681</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000681</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000681</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">sensory perception defective</Literal>
@@ -13140,11 +12525,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000682</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000682</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000682</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13181,11 +12561,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000683</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000683</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000683</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">temperature response defective</Literal>
@@ -13220,11 +12595,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000684</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000684</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000684</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">cold stress response defective</Literal>
@@ -13247,11 +12617,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000686</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000686</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000686</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -13283,14 +12648,9 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000698</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000698</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000698</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Commonly assayed on the basis of phenotypic effects on  segmentally repeated cuticular patterns.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Commonly assayed on the basis of phenotypic effects on segmentally repeated cuticular patterns.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13315,11 +12675,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000699</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000699</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000699</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -13351,14 +12706,9 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000700</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000700</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000700</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Commonly assayed on the basis of phenotypic effects on  segmentally repeated cuticular patterns.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Commonly assayed on the basis of phenotypic effects on segmentally repeated cuticular patterns.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13385,14 +12735,9 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000701</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000701</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000701</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Commonly assayed on the basis of phenotypic effects on  segmentally repeated cuticular patterns.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Commonly assayed on the basis of phenotypic effects on segmentally repeated cuticular patterns.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13419,14 +12764,9 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000702</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000702</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000702</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Commonly assayed on the basis of phenotypic effects on  segmentally repeated cuticular patterns.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Commonly assayed on the basis of phenotypic effects on segmentally repeated cuticular patterns.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13453,14 +12793,9 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000703</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000703</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000703</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Commonly assayed on the basis of phenotypic effects on  segmentally repeated cuticular patterns.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Commonly assayed on the basis of phenotypic effects on segmentally repeated cuticular patterns.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13497,11 +12832,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000705</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000705</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000705</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">sleep defective</Literal>
@@ -13534,11 +12864,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000706</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000706</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000706</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13575,11 +12900,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000707</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000707</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000707</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">reproductive diapause defective</Literal>
@@ -13604,11 +12924,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000708</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000708</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000708</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">starvation stress response defective</Literal>
@@ -13631,11 +12946,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000709</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000709</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000709</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13672,11 +12982,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000713</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000713</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000713</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">jumpless</Literal>
@@ -13699,11 +13004,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000716</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000716</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000716</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13730,11 +13030,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000717</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000717</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000717</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">increased cell growth</Literal>
@@ -13757,11 +13052,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000718</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000718</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000718</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13796,11 +13086,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000719</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000719</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000719</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13841,11 +13126,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000720</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000720</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000720</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">jump response defective</Literal>
@@ -13868,11 +13148,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000721</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000721</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000721</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13899,11 +13174,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000723</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000723</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000723</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">neoplasia</Literal>
@@ -13926,11 +13196,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000724</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000724</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000724</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -13960,11 +13225,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000725</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000725</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000725</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -14001,11 +13261,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000734</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000734</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000734</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">terminal phenotype</Literal>
@@ -14028,11 +13283,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000791</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000791</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000791</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -14059,11 +13309,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000792</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000792</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000792</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">premature aging</Literal>
@@ -14088,11 +13333,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0001324</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0001324</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0001324</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">endocytosis defective</Literal>
@@ -14106,11 +13346,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0001325</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0001325</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0001325</IRI>
-        <IRI>http://purl.obolibrary.org/obo/fbcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -14142,6 +13377,11 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0001347</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0001347</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">do_not_annotate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0001347</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The subclasses of this term classify Drosophila phenotypes into different common categories. They have been chosen by FlyBase to reflect phenotype terms most often reported by Drosophila researchers in the published literature.</Literal>
@@ -14171,11 +13411,6 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002000</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002000</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">As the P-Stage and the &apos;pharate adult stage&apos; have the same end,  there is no need for a seprate term for &apos;lethal - all die before end of pharate adult stage.</Literal>
@@ -14198,11 +13433,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002001</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002001</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -14229,11 +13459,6 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002002</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002002</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">As the larval stage and third instar larval stage have the same end,  there is no need for a separate term for &apos;lethal - all die before end of third instar larval stage&apos;.</Literal>
@@ -14256,11 +13481,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002003</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002003</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -14301,11 +13521,6 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002005</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002005</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">lethal - all die during P-stage</Literal>
@@ -14323,11 +13538,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002006</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002006</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -14349,11 +13559,6 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002007</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002007</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">lethal - all die during larval stage</Literal>
@@ -14371,11 +13576,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002008</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002008</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -14397,11 +13597,6 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002009</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002009</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">lethal - all die during third instar larval stage</Literal>
@@ -14419,11 +13614,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002010</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002010</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -14445,11 +13635,6 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002011</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002011</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">majority die during first instar larval stage</Literal>
@@ -14467,11 +13652,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002012</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002012</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -14493,11 +13673,6 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002013</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002013</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">majority die during second instar larval stage</Literal>
@@ -14515,11 +13690,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002014</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002014</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -14543,11 +13713,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002015</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002015</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -14588,11 +13753,6 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002020</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002020</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">some die during P-stage</Literal>
@@ -14610,11 +13770,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002021</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002021</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -14636,11 +13791,6 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002022</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002022</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">some die during second instar larval stage</Literal>
@@ -14658,11 +13808,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002023</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002023</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -14684,11 +13829,6 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002024</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002024</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">some die during third instar larval stage</Literal>
@@ -14706,11 +13846,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002025</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002025</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -14732,11 +13867,6 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002026</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002026</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">lethal - all die before end of prepupal stage</Literal>
@@ -14754,11 +13884,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002027</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002027</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -14780,11 +13905,6 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002030</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002030</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">lethal - all die during pupal stage</Literal>
@@ -14802,11 +13922,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002031</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002031</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -14828,11 +13943,6 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002032</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002032</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">lethal - all die before end of embryonic stage</Literal>
@@ -14850,11 +13960,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002033</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002033</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -14876,11 +13981,6 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002034</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002034</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">majority die during pupal stage</Literal>
@@ -14898,11 +13998,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002035</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002035</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -14924,11 +14019,6 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002036</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002036</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">majority die during pharate adult stage</Literal>
@@ -14946,11 +14036,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002037</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002037</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -14977,11 +14062,6 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002038</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002038</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">some die during pharate adult stage</Literal>
@@ -14999,11 +14079,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002039</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002039</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -15025,11 +14100,6 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002040</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002040</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">some die during prepupal stage</Literal>
@@ -15047,11 +14117,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002041</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002041</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -15073,11 +14138,6 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002042</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002042</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">lethal - all die during immature adult stage</Literal>
@@ -15097,11 +14157,6 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002050</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002050</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">majority die during immature adult stage</Literal>
@@ -15119,11 +14174,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002051</IRI>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">phenotypic_class</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0002051</IRI>
-        <IRI>http://purl.obolibrary.org/obo/FBcv#camcur</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -28161,17 +27211,17 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/RO_0002091</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">X starts_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (start(X) before_or_simultaneous_with end(Y))</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">X starts_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (start(X) before_or_simultaneous_with end(Y)). This relations will be used after 2013-05-21.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/RO_0002092</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">X happens_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (end(X) before_or_simultaneous_with end(Y))</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">X happens_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (end(X) before_or_simultaneous_with end(Y)). This relation will be used after 2013-05-21.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/RO_0002093</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">X ends_during Y iff: ((start(Y) before_or_simultaneous_with end(X)) AND end(X) before_or_simultaneous_with end(Y). </Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">X ends_during Y iff: ((start(Y) before_or_simultaneous_with end(X)) AND end(X) before_or_simultaneous_with end(Y). This relation will be used after 2013-05-21.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
