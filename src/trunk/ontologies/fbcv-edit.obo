@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: 2016-04-08
-date: 08:04:2016 13:46
+date: 17:05:2016 15:36
 saved-by: mmc46
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -29,7 +29,7 @@ synonymtypedef: IUPAC_NAME "IUPAC NAME"
 synonymtypedef: SMILES "SMILES"
 synonymtypedef: systematic_synonym "Systematic synonym" EXACT
 default-namespace: FlyBase miscellaneous CV
-remark: Imports terms from CHEBI - datestamp = 02:12:2011 01:47. And terms imported from http://purl.obolibrary.org/obo/go/releases/2016-04-07/go-simple.obo.
+remark: Imports terms from CHEBI - datestamp = 02:12:2011 01:47. And terms imported from http://purl.obolibrary.org/obo/go/releases/2015-11-18/go-simple.obo
 ontology: fbcv
 
 [Term]
@@ -10920,8 +10920,7 @@ id: FBcv:0003214
 name: Affymetrix Gene Expression Array 1
 namespace: assay_attribute
 def: "A method that uses an Affymetrix Gene Expression Array, version 1, for this assay." [FBC:CT, FBC:GD]
-is_a: FBcv:0003208 ! assay method
-is_a: FBcv:0003214 ! Affymetrix Gene Expression Array 1
+is_a: FBcv:0003240 ! expression array
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -10930,7 +10929,7 @@ id: FBcv:0003215
 name: Affymetrix Gene Expression Array 2
 namespace: assay_attribute
 def: "A method that uses an Affymetrix Gene Expression Array, version 2, for this assay." [FBC:CT]
-is_a: FBcv:0003214 ! Affymetrix Gene Expression Array 1
+is_a: FBcv:0003240 ! expression array
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -11145,13 +11144,21 @@ creation_date: 2016-02-24T19:19:21Z
 id: FBcv:0003239
 name: ZFN
 namespace: origin_of_mutation
-def: "Sequence change caused by the cleavage of specific DNA sequences by zinc finger nucleases (ZFNs). ZFN proteins comprise a DNA binding domain linked to the DNA cleavage domain of FokI endonuclease. The DNA binding domain is composed of three Cys2His2 zinc fingers, with each zinc finger contacting three consecutive base pairs of DNA. The specificity of the binding is determined by the sequence of the three-zinc finger DNA binding domain, which recognizes a 9 base pair sequence. Cleavage requires dimerization of FokI. The endonuclease is directed to a target region by a pair of ZFNs which bind to sequences in close proximity, allowing dimerization and promoting cleavage." [PMID:8577732, PMID:10954606, PMID:12730594]
+def: "Sequence change caused by the cleavage of specific DNA sequences by zinc finger nucleases (ZFNs). ZFN proteins comprise a DNA binding domain linked to the DNA cleavage domain of FokI endonuclease. The DNA binding domain is composed of three Cys2His2 zinc fingers, with each zinc finger contacting three consecutive base pairs of DNA. The specificity of the binding is determined by the sequence of the three-zinc finger DNA binding domain, which recognizes a 9 base pair sequence. Cleavage requires dimerization of FokI. The endonuclease is directed to a target region by a pair of ZFNs which bind to sequences in close proximity, allowing dimerization and promoting cleavage." [PMID:10954606, PMID:12730594, PMID:8577732]
 subset: camcur
 synonym: "change induced by zinc finger nuclease-mediated cleavage" EXACT []
 synonym: "zinc finger nuclease" RELATED []
 is_a: FBcv:0003007 ! site specific cleavage
 created_by: mmc46
 creation_date: 2016-04-06T10:22:52Z
+
+[Term]
+id: FBcv:0003240
+name: expression array
+namespace: assay_attribute
+is_a: FBcv:0003208 ! assay method
+created_by: mmc46
+creation_date: 2016-05-17T15:35:41Z
 
 [Term]
 id: FBcv:0010000
