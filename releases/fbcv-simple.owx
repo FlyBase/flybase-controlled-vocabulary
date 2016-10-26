@@ -6,11 +6,23 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      ontologyIRI="http://purl.obolibrary.org/obo/fbcv/fbcv-simple.owl"
-     versionIRI="http://purl.obolibrary.org/obo/fbcv/2016-04-08a/fbcv-simple.owl">
+     versionIRI="http://purl.obolibrary.org/obo/fbcv/2016-10-26/fbcv-simple.owl">
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Imports terms from CHEBI - datestamp = 02:12:2011 01:47. And terms imported from http://purl.obolibrary.org/obo/go/releases/2016-10-25/go-simple.obo</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/dpo.owl&gt;) VersionIRI(&lt;http://purl.obolibrary.org/obo/dpo/fbcv/2015-11-19/dpo.owl&gt;))) [Axioms: 1673 Logical Axioms: 313]</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#date"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">26:10:2016 11:53</Literal>
+    </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#saved-by"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">mmc46</Literal>
@@ -20,24 +32,12 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">OBO-Edit 2.3.1</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Imports terms from CHEBI - datestamp = 02:12:2011 01:47. And terms imported from http://purl.obolibrary.org/obo/go/releases/2016-04-07/go-simple.obo</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#default-namespace"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FlyBase miscellaneous CV</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.2</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Includes Ontology(OntologyID(OntologyIRI(&lt;http://purl.obolibrary.org/obo/dpo.owl&gt;) VersionIRI(&lt;http://purl.obolibrary.org/obo/dpo/fbcv/2015-11-19/dpo.owl&gt;))) [Axioms: 1608 Logical Axioms: 313]</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#date"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">08:04:2016 13:46</Literal>
     </Annotation>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000000"/>
@@ -3310,6 +3310,12 @@
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0003239"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0003240"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0004000"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0010000"/>
     </Declaration>
     <Declaration>
@@ -3562,6 +3568,9 @@
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/dpo#deprecated"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/dpo#larval_OF"/>
     </Declaration>
     <Declaration>
@@ -3635,6 +3644,9 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/fbcv#do_not_manually_annotate"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/fbcv#larval_OF"/>
@@ -5247,10 +5259,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000436"/>
-        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0001347"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000437"/>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0001347"/>
     </SubClassOf>
     <SubClassOf>
@@ -8651,15 +8659,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0003214"/>
-        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0003208"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0003214"/>
-        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0003214"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0003240"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0003215"/>
-        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0003214"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0003240"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0003216"/>
@@ -8756,6 +8760,14 @@
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0003239"/>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0003007"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0003240"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0003208"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0004000"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000681"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000348"/>
@@ -8968,11 +8980,11 @@
         <DataProperty IRI="http://purl.obolibrary.org/obo/scratch_0008216"/>
         <DatatypeRestriction>
             <Datatype abbreviatedIRI="xsd:short"/>
-            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
-            </FacetRestriction>
             <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
                 <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
             </FacetRestriction>
         </DatatypeRestriction>
     </DataPropertyRange>
@@ -9381,6 +9393,11 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000008</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000008</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000008</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10003,7 +10020,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000031</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. DEPRECATION WARNING: This term is marked for obsoletion. If possible, please use &apos;developmental compartment&apos; (FBbt:00007110) or one of its subclasses instead.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">DEPRECATION WARNING: This term is marked for obsoletion. If possible, please use &apos;developmental compartment&apos; (FBbt:00007110) or one of its subclasses instead.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10037,7 +10054,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000032</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q. DEPRECATION WARNING: This term is marked for obsoletion. Will soon be replaced by a set of more specific anatomy terms.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">DEPRECATION WARNING: This term is marked for obsoletion. Will soon be replaced by a set of more specific anatomy terms.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10071,7 +10088,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000033</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q. DEPRECATION WARNING: This term is marked for obsoletion. Will soon be replaced by a set of more specific anatomy terms.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">DEPRECATION WARNING: This term is marked for obsoletion. Will soon be replaced by a set of more specific anatomy terms.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10096,7 +10113,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000034</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q. DEPRECATION WARNING: This term is marked for obsoletion. Will soon be replaced by a set of more specific anatomy terms.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">DEPRECATION WARNING: This term is marked for obsoletion. Will soon be replaced by a set of more specific anatomy terms.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10130,7 +10147,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000035</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. DEPRECATION WARNING: This term is marked for obsoletion. If possible, please use &apos;developmental compartment&apos; (FBbt:00007110) or one of its subclasses instead.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">DEPRECATION WARNING: This term is marked for obsoletion. If possible, please use &apos;developmental compartment&apos; (FBbt:00007110) or one of its subclasses instead.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10164,7 +10181,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000036</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. DEPRECATION WARNING: This term is marked for obsoletion. If possible, please use &apos;developmental compartment&apos; (FBbt:00007110) or one of its subclasses instead.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">DEPRECATION WARNING: This term is marked for obsoletion. If possible, please use &apos;developmental compartment&apos; (FBbt:00007110) or one of its subclasses instead.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10198,7 +10215,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000037</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. DEPRECATION WARNING: This term is marked for obsoletion. If possible, please use &apos;developmental compartment&apos; (FBbt:00007110) or one of its subclasses instead.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">DEPRECATION WARNING: This term is marked for obsoletion. If possible, please use &apos;developmental compartment&apos; (FBbt:00007110) or one of its subclasses instead.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10226,11 +10243,6 @@
         <IRI>http://purl.obolibrary.org/obo/fbcv#do_not_annotate</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000038</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000038</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">relative spatial qualifier</Literal>
@@ -10249,11 +10261,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000039</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000039</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000039</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10276,11 +10283,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000040</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000040</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000040</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">distal to</Literal>
@@ -10299,11 +10301,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000041</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000041</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000041</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10401,11 +10398,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000045</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000045</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000045</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">posterior to</Literal>
@@ -10419,11 +10411,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000046</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000046</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000046</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10446,11 +10433,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000047</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000047</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000047</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">proximal to</Literal>
@@ -10469,11 +10451,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000048</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000048</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000048</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10496,11 +10473,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000049</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000049</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000049</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ventral to</Literal>
@@ -10519,11 +10491,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000050</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000050</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000050</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10548,11 +10515,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000051</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000051</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000051</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10584,11 +10546,6 @@
         <IRI>http://purl.obolibrary.org/obo/fbcv#do_not_annotate</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000052</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000052</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">spatial qualifier</Literal>
@@ -10611,11 +10568,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000053</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000053</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000053</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10642,11 +10594,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000054</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000054</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAP6-q. Proforma field: GAT23-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000054</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">apical</Literal>
@@ -10669,11 +10616,6 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000055</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000055</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000055</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAP6-q. Proforma field: GAT23-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10700,11 +10642,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000056</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000056</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000056</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">central</Literal>
@@ -10727,9 +10664,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000057</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.
-
-This term has been obsoleted because there is no way to combine it with an anatomy term to produce a meaningful statement [FBC:MMC]. mc160113.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">This term has been obsoleted because there is no way to combine it with an anatomy term to produce a meaningful statement [FBC:MMC]. mc160113.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10761,11 +10696,6 @@ This term has been obsoleted because there is no way to combine it with an anato
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000058</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000058</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000058</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">distal</Literal>
@@ -10790,11 +10720,6 @@ This term has been obsoleted because there is no way to combine it with an anato
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000059</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000059</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000059</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">dorsal</Literal>
@@ -10817,11 +10742,6 @@ This term has been obsoleted because there is no way to combine it with an anato
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000060</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000060</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000060</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10850,7 +10770,7 @@ This term has been obsoleted because there is no way to combine it with an anato
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000061</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q. An extra copy of an anatomical structure that is present in the same location as in wild-type is supernumerary, rather than ectopic.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An extra copy of an anatomical structure that is present in the same location as in wild-type is supernumerary, rather than ectopic.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10875,9 +10795,7 @@ This term has been obsoleted because there is no way to combine it with an anato
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000062</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.
-
-DEPRECATION WARNING: This term is marked for obsoletion. As far as I can tell, ipsilateral means - on the same side as ....  In curation usage: on the same side as what? Will be obsoleted once a replacement term agreed upon (if needed) and any old usage retrofitted. DS</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">DEPRECATION WARNING: This term is marked for obsoletion. As far as I can tell, ipsilateral means - on the same side as ....  In curation usage: on the same side as what? Will be obsoleted once a replacement term agreed upon (if needed) and any old usage retrofitted. DS</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10904,11 +10822,6 @@ DEPRECATION WARNING: This term is marked for obsoletion. As far as I can tell, i
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000063</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000063</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAP6-q. Proforma field: GAT23-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000063</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">lateral</Literal>
@@ -10931,11 +10844,6 @@ DEPRECATION WARNING: This term is marked for obsoletion. As far as I can tell, i
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000064</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000064</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000064</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10962,11 +10870,6 @@ DEPRECATION WARNING: This term is marked for obsoletion. As far as I can tell, i
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000065</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000065</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000065</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">posterior</Literal>
@@ -10989,11 +10892,6 @@ DEPRECATION WARNING: This term is marked for obsoletion. As far as I can tell, i
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000066</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000066</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000066</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11020,11 +10918,6 @@ DEPRECATION WARNING: This term is marked for obsoletion. As far as I can tell, i
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000067</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000067</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000067</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">restricted</Literal>
@@ -11047,11 +10940,6 @@ DEPRECATION WARNING: This term is marked for obsoletion. As far as I can tell, i
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000068</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000068</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000068</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11078,11 +10966,6 @@ DEPRECATION WARNING: This term is marked for obsoletion. As far as I can tell, i
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000069</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000069</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000069</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ubiquitous</Literal>
@@ -11107,11 +10990,6 @@ DEPRECATION WARNING: This term is marked for obsoletion. As far as I can tell, i
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000070</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000070</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000070</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ventral</Literal>
@@ -11134,11 +11012,6 @@ DEPRECATION WARNING: This term is marked for obsoletion. As far as I can tell, i
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000071</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000071</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000071</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11174,11 +11047,6 @@ DEPRECATION WARNING: This term is marked for obsoletion. As far as I can tell, i
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000073</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000073</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000073</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12867,11 +12735,6 @@ DEPRECATION WARNING: This term is marked for obsoletion. As far as I can tell, i
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000144</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000144</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000144</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">maternal pattern</Literal>
@@ -12899,11 +12762,6 @@ DEPRECATION WARNING: This term is marked for obsoletion. As far as I can tell, i
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000145</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000145</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000145</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13031,11 +12889,6 @@ DEPRECATION WARNING: This term is marked for obsoletion. As far as I can tell, i
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000150</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000150</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000150</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">segmentally repeated</Literal>
@@ -13119,11 +12972,6 @@ DEPRECATION WARNING: This term is marked for obsoletion. As far as I can tell, i
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000153</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000153</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000153</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">cell autonomous</Literal>
@@ -13146,11 +12994,6 @@ DEPRECATION WARNING: This term is marked for obsoletion. As far as I can tell, i
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000154</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000154</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000154</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13320,11 +13163,6 @@ DEPRECATION WARNING: This term is marked for obsoletion. As far as I can tell, i
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000161</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000161</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000161</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">maternal effect</Literal>
@@ -13347,11 +13185,6 @@ DEPRECATION WARNING: This term is marked for obsoletion. As far as I can tell, i
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000162</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000162</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000162</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13378,11 +13211,6 @@ DEPRECATION WARNING: This term is marked for obsoletion. As far as I can tell, i
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000163</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000163</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000163</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">rescuable maternal effect</Literal>
@@ -13405,11 +13233,6 @@ DEPRECATION WARNING: This term is marked for obsoletion. As far as I can tell, i
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000164</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000164</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000164</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13485,11 +13308,6 @@ DEPRECATION WARNING: This term is marked for obsoletion. As far as I can tell, i
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000167</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000167</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000167</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">faint</Literal>
@@ -13517,11 +13335,6 @@ DEPRECATION WARNING: This term is marked for obsoletion. As far as I can tell, i
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000168</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000168</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000168</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13553,11 +13366,6 @@ DEPRECATION WARNING: This term is marked for obsoletion. As far as I can tell, i
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000169</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000169</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000169</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">intense</Literal>
@@ -13585,11 +13393,6 @@ DEPRECATION WARNING: This term is marked for obsoletion. As far as I can tell, i
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000170</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000170</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000170</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13621,11 +13424,6 @@ DEPRECATION WARNING: This term is marked for obsoletion. As far as I can tell, i
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000171</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000171</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000171</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">uniform</Literal>
@@ -13653,11 +13451,6 @@ DEPRECATION WARNING: This term is marked for obsoletion. As far as I can tell, i
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000172</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000172</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000172</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13750,11 +13543,6 @@ DEPRECATION WARNING: This term is marked for obsoletion. As far as I can tell, i
         <IRI>http://purl.obolibrary.org/obo/fbcv#do_not_annotate</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000176</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000176</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">temporal  qualifier</Literal>
@@ -13802,9 +13590,7 @@ DEPRECATION WARNING: This term is marked for obsoletion. As far as I can tell, i
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000178</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.
-
-DEPRECATION WARNING: This term is marked for obsoletion. Use of this term is discouraged as there is no way to decide how to group anatomy terms combined with this qualifier with other terms in the anatomy ontology. Subject to discussion and once its usage in old curation is removed, this term will be obsoleted.  DS</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">DEPRECATION WARNING: This term is marked for obsoletion. Use of this term is discouraged as there is no way to decide how to group anatomy terms combined with this qualifier with other terms in the anatomy ontology. Subject to discussion and once its usage in old curation is removed, this term will be obsoleted.  DS</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13874,9 +13660,7 @@ DEPRECATION WARNING: This term is marked for obsoletion. Use of this term is dis
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000181</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.
-
-DEPRECATION WARNING: This term is marked for obsoletion. Use of this term is discouraged as there is no way to decide how to group anatomy terms combined with this qualifier with other terms in the anatomy ontology. Subject to discussion and once its usage in old curation is removed, this term will be obsoleted.  DS</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">DEPRECATION WARNING: This term is marked for obsoletion. Use of this term is discouraged as there is no way to decide how to group anatomy terms combined with this qualifier with other terms in the anatomy ontology. Subject to discussion and once its usage in old curation is removed, this term will be obsoleted.  DS</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13901,9 +13685,7 @@ DEPRECATION WARNING: This term is marked for obsoletion. Use of this term is dis
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000182</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.
-
-DEPRECATION WARNING: This term is marked for obsoletion. Use of this term is discouraged as there is no way to decide how to group anatomy terms combined with this qualifier with other terms in the anatomy ontology.  Subject to discussion and once its usage in old curation is removed, this term will be obsoleted.  DS</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">DEPRECATION WARNING: This term is marked for obsoletion. Use of this term is discouraged as there is no way to decide how to group anatomy terms combined with this qualifier with other terms in the anatomy ontology.  Subject to discussion and once its usage in old curation is removed, this term will be obsoleted.  DS</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13928,9 +13710,7 @@ DEPRECATION WARNING: This term is marked for obsoletion. Use of this term is dis
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000183</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.
-
- This term has been obsoleted because there are new stage terms that can be used instead [FBC:MMC]. mc160113</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">This term has been obsoleted because there are new stage terms that can be used instead [FBC:MMC]. mc160113</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13960,9 +13740,7 @@ DEPRECATION WARNING: This term is marked for obsoletion. Use of this term is dis
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000184</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.
-
-This term has been obsoleted because there are new stage terms that can be used instead [FBC:MMC]. mc160113</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">This term has been obsoleted because there are new stage terms that can be used instead [FBC:MMC]. mc160113</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -15391,7 +15169,7 @@ This term has been obsoleted because there are new stage terms that can be used 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000230</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">This term was obsoleted becuase it was hardly ever used.  Please use FBcv:0000229 instead.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">This term was obsoleted becuase it was hardly ever used. Please use FBcv:0000229 instead.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -17115,11 +16893,6 @@ This term has been obsoleted because there are new stage terms that can be used 
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000298</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000298</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000298</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">recessive</Literal>
@@ -17142,11 +16915,6 @@ This term has been obsoleted because there are new stage terms that can be used 
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000299</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000299</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000299</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -17173,11 +16941,6 @@ This term has been obsoleted because there are new stage terms that can be used 
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000300</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000300</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000300</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">codominant</Literal>
@@ -17200,11 +16963,6 @@ This term has been obsoleted because there are new stage terms that can be used 
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000301</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000301</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000301</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -17313,7 +17071,7 @@ This term has been obsoleted because there are new stage terms that can be used 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000306</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. May be used to qualify expression of phenotypes or of genes, transgenes etc.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">May be used to qualify expression of phenotypes or of genes, transgenes etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -17342,7 +17100,7 @@ This term has been obsoleted because there are new stage terms that can be used 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000307</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. May be used to qualify expression of phenotypes or of genes, transgenes etc.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">May be used to qualify expression of phenotypes or of genes, transgenes etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -17371,7 +17129,7 @@ This term has been obsoleted because there are new stage terms that can be used 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000308</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. May be used to qualify expression of phenotypes or of genes, transgenes etc.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">May be used to qualify expression of phenotypes or of genes, transgenes etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -17403,11 +17161,6 @@ This term has been obsoleted because there are new stage terms that can be used 
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000309</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000309</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000309</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">conditional</Literal>
@@ -17430,11 +17183,6 @@ This term has been obsoleted because there are new stage terms that can be used 
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000310</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000310</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000310</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -17476,11 +17224,6 @@ This term has been obsoleted because there are new stage terms that can be used 
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000311</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000311</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000311</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">heat sensitive</Literal>
@@ -17520,11 +17263,6 @@ This term has been obsoleted because there are new stage terms that can be used 
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000312</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000312</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000312</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">cold sensitive</Literal>
@@ -17547,11 +17285,6 @@ This term has been obsoleted because there are new stage terms that can be used 
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000313</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000313</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000313</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -17588,11 +17321,6 @@ This term has been obsoleted because there are new stage terms that can be used 
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000314</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000314</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000314</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">RU486 conditional</Literal>
@@ -17622,11 +17350,6 @@ This term has been obsoleted because there are new stage terms that can be used 
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000315</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000315</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.q</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000315</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">tetracycline conditional</Literal>
@@ -17649,6 +17372,11 @@ This term has been obsoleted because there are new stage terms that can be used 
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000316</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000316</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000316</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -17879,6 +17607,11 @@ This term has been obsoleted because there are new stage terms that can be used 
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000325</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000325</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000325</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Typically this is caused by and expansion of the population of neuroblasts at the expense of prospective epidermis, both of which originate in the ventral ectoderm.</Literal>
@@ -18011,9 +17744,7 @@ This term has been obsoleted because there are new stage terms that can be used 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000331</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q.
-
-DEPRECATION WARNING: This term is marked for obsoletion. Use of this term is discouraged as there is no way to decide how to group anatomy terms combined with this qualifier with other terms in the anatomy ontology.  Subject to discussion and once its usage in old curation is removed, this term will be obsoleted.  DS</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">DEPRECATION WARNING: This term is marked for obsoletion. Use of this term is discouraged as there is no way to decide how to group anatomy terms combined with this qualifier with other terms in the anatomy ontology.  Subject to discussion and once its usage in old curation is removed, this term will be obsoleted.  DS</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -18136,11 +17867,6 @@ DEPRECATION WARNING: This term is marked for obsoletion. Use of this term is dis
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000335</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000335</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000335</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">germline clone</Literal>
@@ -18163,11 +17889,6 @@ DEPRECATION WARNING: This term is marked for obsoletion. Use of this term is dis
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000336</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000336</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000336</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -18232,9 +17953,7 @@ DEPRECATION WARNING: This term is marked for obsoletion. Use of this term is dis
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000339</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. 
-
-DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assumed in the absence of use of &apos;partially&apos;. mc151118</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assumed in the absence of use of &apos;partially&apos;. mc151118</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -18268,7 +17987,7 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000340</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Note on usage: This qualifier should not be used in combination with lethal, viable, sterile or fertile. For these cases, terms of the form semi-X should be used instead.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Note on usage: This qualifier should not be used in combination with lethal, viable, sterile or fertile. For these cases, terms of the form semi-X should be used instead.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -18504,9 +18223,14 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000349</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000349</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000349</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: MA8. Note, this term should not be used with the qualifier &apos;partially&apos;. Use semi-viable or semi-lethal instead.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Note, this term should not be used with the qualifier &apos;partially&apos;. Use semi-viable or semi-lethal instead.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -18637,6 +18361,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000353</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000353</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000353</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Typically, this phenotype is assayed in clones of cells.</Literal>
@@ -18664,6 +18393,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000354</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000354</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000354</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -18746,6 +18480,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000357</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000357</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000357</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -18941,6 +18680,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000364</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000364</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000364</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The cause of sterility may be physical or behavioral. Note, this term should not be used with the qualifier &apos;partially&apos;. Use semi-sterile or semi-fertile instead.</Literal>
@@ -18977,6 +18721,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000365</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000365</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000365</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -19215,6 +18964,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000374</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000374</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000374</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Note, this term should not be used with the qualifier &apos;partially&apos;. Use semi-sterile or semi-fertile instead.</Literal>
@@ -19251,6 +19005,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000375</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000375</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000375</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -19333,6 +19092,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000378</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000378</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000378</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -19489,6 +19253,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000384</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000384</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000384</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">aging defective</Literal>
@@ -19542,6 +19311,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000386</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000386</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000386</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">long lived</Literal>
@@ -19570,6 +19344,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000387</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000387</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000387</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -19606,6 +19385,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000388</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000388</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000388</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">gravitaxis defective</Literal>
@@ -19630,6 +19414,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000389</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000389</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000389</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">paralytic</Literal>
@@ -19652,6 +19441,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000390</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000390</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000390</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -19711,6 +19505,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000392</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000392</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000392</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">hyperactive</Literal>
@@ -19757,6 +19556,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000394</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000394</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000394</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -19901,6 +19705,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000400</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000400</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000400</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -20143,6 +19952,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000408</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000408</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000408</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">stress response defective</Literal>
@@ -20278,6 +20092,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000413</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000413</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000413</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">phototaxis defective</Literal>
@@ -20331,6 +20150,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000415</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000415</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000415</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">jumping defective</Literal>
@@ -20382,6 +20206,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000417</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000417</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000417</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -20597,6 +20426,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000424</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000424</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000424</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">cell death defective</Literal>
@@ -20642,7 +20476,7 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000426</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is an increase in the amount of cell death in a whole animal or in some specific organ tissue or clone of cells compared to wild-type.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a decrease in the amount of cell death in a whole animal or in some specific organ tissue or clone of cells compared to wild-type.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
@@ -20689,6 +20523,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000427</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000427</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000427</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Note that defects in cell size are not necessarily the result of defects in cell growth. A change in the rate of cell division in the absence of any change in cell growth rate can result in smaller or larger cells.</Literal>
@@ -20718,6 +20557,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000428</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000428</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000428</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">cell size defective</Literal>
@@ -20742,6 +20586,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000429</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000429</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000429</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">cell shape defective</Literal>
@@ -20764,6 +20613,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000430</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000430</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000430</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -20872,6 +20726,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000434</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000434</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000434</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">neurophysiology defective</Literal>
@@ -20894,6 +20753,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000435</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000435</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000435</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -20920,18 +20784,19 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000436</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000436</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000436</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">sex-determination defective</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <Annotation>
-            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</Literal>
-        </Annotation>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#consider"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000437</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in dosage compensation (GO:0007549). &apos;dosage compensation&apos; is defined as: &apos;Compensating for the two-fold variation in X:autosome chromosome ratios between sexes by a global activation or inactivation of all, or most of, genes on one or both of the X chromosomes.&apos;</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000436</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
@@ -20944,9 +20809,19 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000437</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000437</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">This term was obsoleted because it was felt that the evidence provided in papers is not enough to annotate with this term. mc161014</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000437</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">dosage compensation defective</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000437</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -20992,6 +20867,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000439</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000439</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000439</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">chemical resistant</Literal>
@@ -21014,6 +20894,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000440</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000440</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000440</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -21040,6 +20925,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000441</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000441</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000441</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">radiation resistant</Literal>
@@ -21062,6 +20952,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000442</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000442</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000442</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -21232,6 +21127,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000448</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000448</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000448</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">immune response defective</Literal>
@@ -21261,6 +21161,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000449</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000449</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000449</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">For apical-basal polarity phenotypes of epithelia, the appropriate term is &apos;cell polarity defective&apos;.</Literal>
@@ -21288,6 +21193,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000450</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000450</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000450</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -23987,9 +23897,13 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:25255</Literal>
         </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
+        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000533</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to a methanesulfonate ester that has formula C2H6O3S. (Definition imported and edited from &apos;methyl methanesulfonate ; CHEBI:25255&apos;, which is related to this term.).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -24031,9 +23945,13 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:25434</Literal>
         </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
+        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000534</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to an ethyl sulfide that has formula C4H8Cl2S. (Definition imported and edited from &apos;bis(2-chloroethyl) sulfide ; CHEBI:25434&apos;, which is related to this term.).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
@@ -24539,9 +24457,13 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:67142</Literal>
         </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
+        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000548</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to a molecule that can substitute for a normal nucleobase in nucleic acids. (Definition imported and edited from &apos;nucleobase analogue ; CHEBI:67142&apos;, which is related to this term.).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
@@ -24671,9 +24593,13 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:22526</Literal>
         </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
+        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000552</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to a dicarboxylic acid that has formula C19H20N8O5. (Definition imported and edited from &apos;4-aminofolic acid ; CHEBI:22526&apos;, which is related to this term.).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -24742,9 +24668,13 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:23414</Literal>
         </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
+        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000554</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to a metal sulfate compound having copper(2+) as the counterion. (Definition imported and edited from &apos;copper(2+) sulfate ; CHEBI:23414&apos;, which is related to this term.).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -24846,9 +24776,13 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:28741</Literal>
         </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
+        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000557</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to a metal fluoride salt with a Na(+) counterion. (Definition imported and edited from &apos;sodium fluoride ; CHEBI:28741&apos;, which is related to this term.).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -25010,9 +24944,13 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:35299</Literal>
         </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
+        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000562</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to an ortho-fused polycyclic arene that has formula C22H14. (Definition imported and edited from &apos;dibenz[a,h]anthracene ; CHEBI:35299&apos;, which is related to this term.).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -25217,9 +25155,13 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:19024</Literal>
         </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
+        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000568</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to an aminonaphthalene that has formula C10H9NO4S. (Definition imported and edited from &apos;4-amino-3-hydroxynaphthalene-1-sulfonic acid ; CHEBI:19024&apos;, which is related to this term.).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -25373,9 +25315,13 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:20787</Literal>
         </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
+        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000572</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to a member of the class of tetraphenes that is tetraphene in which the hydrogens at positions 7 and 12 are replaced by bromomethyl and methyl groups, respectively. (Definition imported and edited from &apos;7-bromomethyl-12-methyltetraphene ; CHEBI:20787&apos;, which is related to this term.).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -25454,9 +25400,13 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:29865</Literal>
         </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
+        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000574</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to an ortho- and peri-fused polycyclic arene consisting of five fused benzene rings. (Definition imported and edited from &apos;benzo[a]pyrene ; CHEBI:29865&apos;, which is related to this term.).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -25785,9 +25735,13 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:28954</Literal>
         </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
+        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000583</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to a benzophenanthridine alkaloid that has formula C21H20NO4. (Definition imported and edited from &apos;fagaronine ; CHEBI:28954&apos;, which is related to this term.).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -25889,9 +25843,13 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:24564</Literal>
         </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
+        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000586</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to a triamino-1,3,5-triazine that has formula C9H18N6. (Definition imported and edited from &apos;hexamethylmelamine ; CHEBI:24564&apos;, which is related to this term.).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -25976,9 +25934,13 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:24859</Literal>
         </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
+        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000588</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to chemical element with atomic number 53. (Definition imported and edited from &apos;iodine atom ; CHEBI:24859&apos;, which is related to this term.).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -26119,9 +26081,13 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:50102</Literal>
         </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
+        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000592</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to an urea that has formula C2H5N3O2. (Definition imported and edited from &apos;N-methyl-N-nitrosurea ; CHEBI:50102&apos;, which is related to this term.).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -26389,9 +26355,13 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CHEBI:25818</Literal>
         </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:auto_generated_definition</Literal>
+        </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000599</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mutation induced by exposure to an organochlorine compound that has formula C12H18Cl2N2. (Definition imported and edited from &apos;4-(2-aminoethyl)-N,N-bis(2-chloroethyl)aniline ; CHEBI:25818&apos;, which is related to this term.).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -27112,7 +27082,7 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000621</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Not used directly in curation, but automatically inferred from its inverse (suppressible). Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA28b-q. Proforma field: GA29b-q.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Not used directly in curation, but automatically inferred from its inverse (suppressible).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -27145,11 +27115,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000622</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000622</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000622</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA28b-q. Proforma field: GA29b-q.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -27226,11 +27191,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000624</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000624</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA28b-q. Proforma field: GA29b-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000624</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">enhanceable</Literal>
@@ -27305,11 +27265,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000626</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000626</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA28b-q. Proforma field: GA29b-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000626</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">non-enhanceable</Literal>
@@ -27349,7 +27304,7 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000627</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Not used directly in curation, but automatically inferred from its inverse (non-suppressible). Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA28b-q. Proforma field: GA29b-q.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Not used directly in curation, but automatically inferred from its inverse (non-suppressible).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -27382,11 +27337,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000628</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000628</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000628</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA28b-q. Proforma field: GA29b-q.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -28343,6 +28293,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000668</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000668</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000668</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">cell adhesion defective</Literal>
@@ -28396,6 +28351,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000670</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000670</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000670</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">eclosion defective</Literal>
@@ -28418,6 +28378,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000671</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000671</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000671</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -28699,6 +28664,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000681</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000681</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000681</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">sensory perception defective</Literal>
@@ -28760,6 +28730,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000683</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000683</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000683</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -28842,6 +28817,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000686</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000686</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000686</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -29310,6 +29290,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000698</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000698</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000698</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Commonly assayed on the basis of phenotypic effects on segmentally repeated cuticular patterns.</Literal>
@@ -29494,11 +29479,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000704</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000704</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000704</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">chemical conditional</Literal>
@@ -29531,6 +29511,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000705</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000705</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000705</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -29647,6 +29632,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000709</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000709</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000709</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -29829,11 +29819,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000714</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000714</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000714</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">nutrition conditional</Literal>
@@ -29868,11 +29853,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000715</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000715</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000715</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">calorie restriction conditional</Literal>
@@ -29895,6 +29875,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000716</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000716</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0000716</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -30075,11 +30060,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000722</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000722</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000722</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">somatic clone - Minute background</Literal>
@@ -30193,7 +30173,7 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000726</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. May be used as a qualifier for gene  or transgene expression or phenotype.  Note - its use does not imply expression (of gene or phenotype) exclusively in virgin females.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">May be used as a qualifier for gene  or transgene expression or phenotype.  Note - its use does not imply expression (of gene or phenotype) exclusively in virgin females.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -30271,7 +30251,7 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000728</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. May be used as a qualifier for gene  or transgene expression or phenotype.  Note - its use does not imply expression  (of gene or phenotype) exclusively in virgin males.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">May be used as a qualifier for gene  or transgene expression or phenotype.  Note - its use does not imply expression  (of gene or phenotype) exclusively in virgin males.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -30310,7 +30290,7 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000729</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. May be used as a qualifier for gene  or transgene expression or phenotype.  Note - its use does not imply expression  (of gene or phenotype) exclusively in mated females.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">May be used as a qualifier for gene  or transgene expression or phenotype.  Note - its use does not imply expression  (of gene or phenotype) exclusively in mated females.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -30349,7 +30329,7 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000730</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. May be used to qualify expression of phenotypes or of genes, transgenes etc.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">May be used to qualify expression of phenotypes or of genes, transgenes etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -30388,7 +30368,7 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000731</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. May be used to qualify expression of phenotypes or of genes, transgenes etc.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">May be used to qualify expression of phenotypes or of genes, transgenes etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -30427,7 +30407,7 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000732</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. May be used to qualify expression of phenotypes or of genes, transgenes etc.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">May be used to qualify expression of phenotypes or of genes, transgenes etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -30466,7 +30446,7 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000733</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. May be used to qualify expression of phenotypes or of genes, transgenes etc.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">May be used to qualify expression of phenotypes or of genes, transgenes etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -32801,11 +32781,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0000793</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0000793</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0000793</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">progressive</Literal>
@@ -33254,11 +33229,6 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0001315</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/FBcv_0001315</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Proforma field: GA56-q. Proforma field: GA28a-q. Proforma field: GA29a-q. Proforma field: GA17-q. Proforma field: GA28b-q. Proforma field: GA29b-q. Proforma field: GAT6-q. Proforma field: GAP5-q.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0001315</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">beta-estradiol conditional</Literal>
@@ -33283,6 +33253,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0001324</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0001324</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0001324</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">endocytosis defective</Literal>
@@ -33296,6 +33271,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0001325</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0001325</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0001325</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -33508,6 +33488,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002004</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0002004</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0002004</IRI>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -34125,7 +34110,7 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002035</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A phenotype of a population that is the death of the majority of animals in that population during the prepual stage.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A phenotype of a population that is the death of the majority of animals in that population during the prepupal stage.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
@@ -34250,7 +34235,7 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0002040</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A phenotype of a population that is the death a significant proportion of animals in that population during the prepual stage.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A phenotype of a population that is the death a significant proportion of animals in that population during the prepupal stage.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
@@ -36492,7 +36477,7 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0003059</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An assay that characterizes transcriptional regulatory elements using  formaldehyde-assisted isolation of regulatory elements (FAIRE) and high-throughput sequencing.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An assay that characterizes transcriptional regulatory elements using formaldehyde-assisted isolation of regulatory elements (FAIRE) and high-throughput sequencing.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
@@ -42667,6 +42652,55 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">ZFN</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0003240</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">mmc46</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0003240</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2016-05-17T15:35:41Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0003240</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">assay_attribute</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0003240</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0003240</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0003240</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">expression array</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:MMC</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0004000</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in sensory perception of light stimulus (GO:0050953). &apos;sensory perception of light stimulus&apos; is defined as: &apos;The series of events required for an organism to receive a sensory light stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process.&apos;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0004000</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">phenotypic_class</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0004000</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0004000</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0004000</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">visual perception defective</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0010000</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FlyBase miscellaneous CV</Literal>
@@ -43887,6 +43921,11 @@ DEPRECATION WARNING: This term has been obsoleted as &apos;fully&apos; is assume
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">warning of impending obsoletion</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/dpo#has_role</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FlyBase_miscellaneous_CV</Literal>
@@ -44139,6 +44178,11 @@ This relation is used to determine the &apos;directionality&apos; of relative qu
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://purl.obolibrary.org/obo/fbcv#do_not_manually_annotate</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Term not to be used for direct manual annotation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">MGI ribbon terms</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -44517,6 +44561,10 @@ PATO divides qualities between normal (monadic, singly-occurring) qualities and 
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </SubAnnotationPropertyOf>
     <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/dpo#fbcvsubset_mgiribbons"/>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/dpo#larval_OF"/>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </SubAnnotationPropertyOf>
@@ -44614,6 +44662,10 @@ PATO divides qualities between normal (monadic, singly-occurring) qualities and 
     </SubAnnotationPropertyOf>
     <SubAnnotationPropertyOf>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/fbcv#do_not_manually_annotate"/>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons"/>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </SubAnnotationPropertyOf>
     <SubAnnotationPropertyOf>
