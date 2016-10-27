@@ -38,7 +38,7 @@ owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://w
 id: FBcv:0000002
 name: thermotaxis behavior defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in thermotaxis (GO:0043052). 'thermotaxis' is defined as: 'The directed movement of a motile cell or organism in response to a temperature gradient. Movement may be towards either a higher or lower temperature.'" [FBC:DOS]
+def: "Phenotype that is a defect in thermotaxis (GO:0043052). 'thermotaxis' is defined as: 'The directed movement of a motile cell or organism in response to a temperature gradient. Movement may be towards either a higher or lower temperature.'" [FBC:DOS, GOC:cab1, WB_REF:cgc467]
 synonym: "thermotaxis behaviour defective" EXACT []
 is_a: FBcv:0000683 ! temperature response defective
 
@@ -77,7 +77,7 @@ is_a: FBcv:0001347 ! phenotype
 id: FBcv:0000324
 name: dorsal/ventral axis specification defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in dorsal/ventral axis specification (GO:0009950). 'dorsal/ventral axis specification' is defined as: 'The establishment, maintenance and elaboration of the dorsal/ventral axis. The dorsal/ventral axis is defined by a line that runs orthogonal to both the anterior/posterior and left/right axes. The dorsal end is defined by the upper or back side of an organism. The ventral end is defined by the lower or front side of an organism.'" [FBC:DOS]
+def: "Phenotype that is a defect in dorsal/ventral axis specification (GO:0009950). 'dorsal/ventral axis specification' is defined as: 'The establishment, maintenance and elaboration of the dorsal/ventral axis. The dorsal/ventral axis is defined by a line that runs orthogonal to both the anterior/posterior and left/right axes. The dorsal end is defined by the upper or back side of an organism. The ventral end is defined by the lower or front side of an organism.'" [FBC:DOS, GOC:dph, GOC:go_curators, GOC:tb]
 synonym: "dorsal-ventral polarity" RELATED [FBC:DOS]
 is_a: FBcv:0000686 ! axis specification defective
 
@@ -466,14 +466,14 @@ is_a: FBcv:0001347 ! phenotype
 id: FBcv:0000393
 name: pain response defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in response to pain (GO:0048265). 'response to pain' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a pain stimulus. Pain stimuli cause activation of nociceptors, peripheral receptors for pain, include receptors which are sensitive to painful mechanical stimuli, extreme heat or cold, and chemical stimuli.'" [FBC:DOS]
+def: "Phenotype that is a defect in response to pain (GO:0048265). 'response to pain' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a pain stimulus. Pain stimuli cause activation of nociceptors, peripheral receptors for pain, include receptors which are sensitive to painful mechanical stimuli, extreme heat or cold, and chemical stimuli.'" [FBC:DOS, GOC:jid, PMID:10203867, PMID:12723742, PMID:12843304, Wikipedia:Pain]
 is_a: FBcv:0000408 ! stress response defective
 
 [Term]
 id: FBcv:0000394
 name: circadian rhythm defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in circadian rhythm (GO:0007623). 'circadian rhythm' is defined as: 'Any biological process in an organism that recurs with a regularity of approximately 24 hours.'" [FBC:DOS]
+def: "Phenotype that is a defect in circadian rhythm (GO:0007623). 'circadian rhythm' is defined as: 'Any biological process in an organism that recurs with a regularity of approximately 24 hours.'" [FBC:DOS, GOC:bf, GOC:go_curators]
 subset: fbcvsubset_mgiribbons
 is_a: FBcv:0001347 ! phenotype
 
@@ -481,7 +481,7 @@ is_a: FBcv:0001347 ! phenotype
 id: FBcv:0000395
 name: locomotor rhythm defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in locomotor rhythm (GO:0045475). 'locomotor rhythm' is defined as: 'The rhythm of the locomotor activity of an organism during its 24 hour activity cycle.'" [FBC:DOS]
+def: "Phenotype that is a defect in locomotor rhythm (GO:0045475). 'locomotor rhythm' is defined as: 'The rhythm of the locomotor activity of an organism during its 24 hour activity cycle.'" [FBC:DOS, GOC:go_curators]
 is_a: FBcv:0000414 ! locomotor behavior defective
 is_a: FBcv:0000679 ! circadian behavior defective
 
@@ -489,7 +489,7 @@ is_a: FBcv:0000679 ! circadian behavior defective
 id: FBcv:0000396
 name: eclosion rhythm defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in eclosion rhythm (GO:0008062). 'eclosion rhythm' is defined as: 'The timing of the emergence of the adult fly from its pupal case, which usually occurs at dawn.'" [FBC:DOS]
+def: "Phenotype that is a defect in eclosion rhythm (GO:0008062). 'eclosion rhythm' is defined as: 'The timing of the emergence of the adult fly from its pupal case, which usually occurs at dawn.'" [FBC:DOS, PMID:11715043]
 is_a: FBcv:0000670 ! eclosion defective
 is_a: FBcv:0000679 ! circadian behavior defective
 
@@ -497,28 +497,28 @@ is_a: FBcv:0000679 ! circadian behavior defective
 id: FBcv:0000397
 name: learning defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in learning (GO:0007612). 'learning' is defined as: 'Any process in an organism in which a relatively long-lasting adaptive behavioral change occurs as the result of experience.'" [FBC:DOS]
+def: "Phenotype that is a defect in learning (GO:0007612). 'learning' is defined as: 'Any process in an organism in which a relatively long-lasting adaptive behavioral change occurs as the result of experience.'" [FBC:DOS, ISBN:0582227089, ISBN:0721662544]
 is_a: FBcv:0000387 ! behavior defective
 
 [Term]
 id: FBcv:0000398
 name: memory defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in memory (GO:0007613). 'memory' is defined as: 'The activities involved in the mental information processing system that receives (registers), modifies, stores, and retrieves informational stimuli. The main stages involved in the formation and retrieval of memory are encoding (processing of received information by acquisition), storage (building a permanent record of received information as a result of consolidation) and retrieval (calling back the stored information and use it in a suitable way to execute a given task).'" [FBC:DOS]
+def: "Phenotype that is a defect in memory (GO:0007613). 'memory' is defined as: 'The activities involved in the mental information processing system that receives (registers), modifies, stores, and retrieves informational stimuli. The main stages involved in the formation and retrieval of memory are encoding (processing of received information by acquisition), storage (building a permanent record of received information as a result of consolidation) and retrieval (calling back the stored information and use it in a suitable way to execute a given task).'" [FBC:DOS, GOC:curators, http://www.onelook.com/, ISBN:0582227089]
 is_a: FBcv:0000387 ! behavior defective
 
 [Term]
 id: FBcv:0000399
 name: courtship behavior defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in courtship behavior (GO:0007619). 'courtship behavior' is defined as: 'The behavioral interactions between organisms for the purpose of attracting sexual partners.'" [FBC:DOS]
+def: "Phenotype that is a defect in courtship behavior (GO:0007619). 'courtship behavior' is defined as: 'The behavioral interactions between organisms for the purpose of attracting sexual partners.'" [FBC:DOS, GOC:ai, GOC:dph]
 is_a: FBcv:0000721 ! mating behavior defective
 
 [Term]
 id: FBcv:0000400
 name: mating defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in mating (GO:0007618). 'mating' is defined as: 'The pairwise union of individuals for the purpose of sexual reproduction, ultimately resulting in the formation of zygotes.'" [FBC:DOS]
+def: "Phenotype that is a defect in mating (GO:0007618). 'mating' is defined as: 'The pairwise union of individuals for the purpose of sexual reproduction, ultimately resulting in the formation of zygotes.'" [FBC:DOS, GOC:jl, ISBN:0387520546]
 subset: fbcvsubset_mgiribbons
 is_a: FBcv:0001347 ! phenotype
 
@@ -526,7 +526,7 @@ is_a: FBcv:0001347 ! phenotype
 id: FBcv:0000401
 name: mating rhythm defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in circadian mating behavior (GO:0035648). 'circadian mating behavior' is defined as: 'The fluctuation in mating behavior that occurs over an approximately 24 hour cycle.'" [FBC:DOS]
+def: "Phenotype that is a defect in circadian mating behavior (GO:0035648). 'circadian mating behavior' is defined as: 'The fluctuation in mating behavior that occurs over an approximately 24 hour cycle.'" [FBC:DOS, GOC:bf, GOC:dos, PMID:11470898, PMID:17276917]
 is_a: FBcv:0000679 ! circadian behavior defective
 is_a: FBcv:0000721 ! mating behavior defective
 
@@ -534,7 +534,7 @@ is_a: FBcv:0000721 ! mating behavior defective
 id: FBcv:0000402
 name: song defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in male courtship behavior, veined wing generated song production (GO:0045433). This is defined as 'The process during wing vibration where the male insect produces a species-specific acoustic signal called a love song.'" [FBC:DOS]
+def: "Phenotype that is a defect in male courtship behavior, veined wing generated song production (GO:0045433). This is defined as 'The process during wing vibration where the male insect produces a species-specific acoustic signal called a love song.'" [FBC:DOS, GOC:mtg_sensu, PMID:11092827]
 synonym: "singing defective" EXACT [FBC:SM]
 synonym: "song production defective" EXACT [FBC:SM]
 is_a: FBcv:0000399 ! courtship behavior defective
@@ -543,7 +543,7 @@ is_a: FBcv:0000399 ! courtship behavior defective
 id: FBcv:0000403
 name: chemosensitive behavior defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in chemosensory behavior (GO:0007635). 'chemosensory behavior' is defined as: 'Behavior that is dependent upon the sensation of chemicals.'.'" [FBC:DOS]
+def: "Phenotype that is a defect in chemosensory behavior (GO:0007635). 'chemosensory behavior' is defined as: 'Behavior that is dependent upon the sensation of chemicals.'.'" [FBC:DOS, GOC:go_curators]
 synonym: "chemosensitive behaviour defective" EXACT []
 is_a: FBcv:0000387 ! behavior defective
 
@@ -551,7 +551,7 @@ is_a: FBcv:0000387 ! behavior defective
 id: FBcv:0000404
 name: smell perception defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in sensory perception of smell (GO:0007608). 'sensory perception of smell' is defined as: 'The series of events required for an organism to receive an olfactory stimulus, convert it to a molecular signal, and recognize and characterize the signal. Olfaction involves the detection of chemical composition of an organism's ambient medium by chemoreceptors. This is a neurological process.'" [FBC:DOS]
+def: "Phenotype that is a defect in sensory perception of smell (GO:0007608). 'sensory perception of smell' is defined as: 'The series of events required for an organism to receive an olfactory stimulus, convert it to a molecular signal, and recognize and characterize the signal. Olfaction involves the detection of chemical composition of an organism's ambient medium by chemoreceptors. This is a neurological process.'" [FBC:DOS, GOC:ai, http://www.onelook.com/]
 synonym: "olfaction defective" EXACT []
 is_a: FBcv:0000681 ! sensory perception defective
 
@@ -559,7 +559,7 @@ is_a: FBcv:0000681 ! sensory perception defective
 id: FBcv:0000405
 name: taste perception defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in sensory perception of taste (GO:0050909). 'sensory perception of taste' is defined as: 'The series of events required for an organism to receive a gustatory stimulus, convert it to a molecular signal, and recognize and characterize the signal. Gustation involves the direct detection of chemical composition, usually through contact with chemoreceptor cells. This is a neurological process.'" [FBC:DOS]
+def: "Phenotype that is a defect in sensory perception of taste (GO:0050909). 'sensory perception of taste' is defined as: 'The series of events required for an organism to receive a gustatory stimulus, convert it to a molecular signal, and recognize and characterize the signal. Gustation involves the direct detection of chemical composition, usually through contact with chemoreceptor cells. This is a neurological process.'" [FBC:DOS, GOC:ai, http://www.onelook.com/]
 synonym: "gustation defective" EXACT []
 synonym: "taste defective" EXACT []
 is_a: FBcv:0000681 ! sensory perception defective
@@ -575,7 +575,7 @@ is_a: FBcv:0000680 ! proboscis extension reflex defective
 id: FBcv:0000407
 name: auditory perception defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in sensory perception of sound (GO:0007605). 'sensory perception of sound' is defined as: 'The series of events required for an organism to receive an auditory stimulus, convert it to a molecular signal, and recognize and characterize the signal. Sonic stimuli are detected in the form of vibrations and are processed to form a sound.'" [FBC:DOS]
+def: "Phenotype that is a defect in sensory perception of sound (GO:0007605). 'sensory perception of sound' is defined as: 'The series of events required for an organism to receive an auditory stimulus, convert it to a molecular signal, and recognize and characterize the signal. Sonic stimuli are detected in the form of vibrations and are processed to form a sound.'" [FBC:DOS, GOC:ai]
 synonym: "auditory system defective" RELATED []
 is_a: FBcv:0000681 ! sensory perception defective
 
@@ -583,7 +583,7 @@ is_a: FBcv:0000681 ! sensory perception defective
 id: FBcv:0000408
 name: stress response defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in response to stress (GO:0006950). 'response to stress' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a disturbance in organismal or cellular homeostasis, usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation).'" [FBC:DOS]
+def: "Phenotype that is a defect in response to stress (GO:0006950). 'response to stress' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a disturbance in organismal or cellular homeostasis, usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation).'" [FBC:DOS, GOC:mah]
 subset: fbcvsubset_mgiribbons
 synonym: "environmental stress response defective" NARROW []
 is_a: FBcv:0001347 ! phenotype
@@ -592,14 +592,14 @@ is_a: FBcv:0001347 ! phenotype
 id: FBcv:0000409
 name: osmotic stress response defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in response to osmotic stress (GO:0006970). 'response to osmotic stress' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus indicating an increase or decrease in the concentration of solutes outside the organism or cell.'" [FBC:DOS]
+def: "Phenotype that is a defect in response to osmotic stress (GO:0006970). 'response to osmotic stress' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus indicating an increase or decrease in the concentration of solutes outside the organism or cell.'" [FBC:DOS, GOC:jl]
 is_a: FBcv:0000408 ! stress response defective
 
 [Term]
 id: FBcv:0000410
 name: heat stress response defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in response to heat (GO:0009408). 'response to heat' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a heat stimulus, a temperature stimulus above the optimal temperature for that organism.'" [FBC:DOS]
+def: "Phenotype that is a defect in response to heat (GO:0009408). 'response to heat' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a heat stimulus, a temperature stimulus above the optimal temperature for that organism.'" [FBC:DOS, GOC:lr]
 is_a: FBcv:0000408 ! stress response defective
 is_a: FBcv:0000683 ! temperature response defective
 
@@ -607,7 +607,7 @@ is_a: FBcv:0000683 ! temperature response defective
 id: FBcv:0000411
 name: visual behavior defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in visual behavior (GO:0007632). 'visual behavior' is defined as: 'The behavior of an organism in response to a visual stimulus.'" [FBC:DOS]
+def: "Phenotype that is a defect in visual behavior (GO:0007632). 'visual behavior' is defined as: 'The behavior of an organism in response to a visual stimulus.'" [FBC:DOS, GOC:jid, GOC:pr]
 synonym: "visual behaviour defective" EXACT []
 is_a: FBcv:0000387 ! behavior defective
 
@@ -623,7 +623,7 @@ is_a: FBcv:0000411 ! visual behavior defective
 id: FBcv:0000413
 name: phototaxis defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in phototaxis (GO:0042331). 'phototaxis' is defined as: 'The directed movement of a motile cell or organism in response to light.'" [FBC:DOS]
+def: "Phenotype that is a defect in phototaxis (GO:0042331). 'phototaxis' is defined as: 'The directed movement of a motile cell or organism in response to light.'" [FBC:DOS, GOC:jl, ISBN:0192800981]
 subset: fbcvsubset_mgiribbons
 synonym: "phototaxis behaviour defective" RELATED []
 is_a: FBcv:0001347 ! phenotype
@@ -632,7 +632,7 @@ is_a: FBcv:0001347 ! phenotype
 id: FBcv:0000414
 name: locomotor behavior defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in locomotory behavior (GO:0007626). 'locomotory behavior' is defined as: 'The specific movement from place to place of an organism in response to external or internal stimuli. Locomotion of a whole organism in a manner dependent upon some combination of that organism's internal state and external conditions.'" [FBC:DOS]
+def: "Phenotype that is a defect in locomotory behavior (GO:0007626). 'locomotory behavior' is defined as: 'The specific movement from place to place of an organism in response to external or internal stimuli. Locomotion of a whole organism in a manner dependent upon some combination of that organism's internal state and external conditions.'" [FBC:DOS, GOC:dph]
 synonym: "locomotor behaviour defective" EXACT []
 is_a: FBcv:0000387 ! behavior defective
 
@@ -655,7 +655,7 @@ is_a: FBcv:0000414 ! locomotor behavior defective
 id: FBcv:0000417
 name: flight defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in flight (GO:0060361). 'flight' is defined as: 'Self-propelled movement of an organism from one location to another through the air, usually by means of active wing movement.'" [FBC:DOS]
+def: "Phenotype that is a defect in flight (GO:0060361). 'flight' is defined as: 'Self-propelled movement of an organism from one location to another through the air, usually by means of active wing movement.'" [FBC:DOS, GOC:dph]
 comment: This term is agnostic as to the causes of defects in flight. An animal's flight may be defective for mechanical, behavioral or sensory reasons.
 subset: fbcvsubset_mgiribbons
 synonym: "flight behaviour defective" NARROW []
@@ -665,7 +665,7 @@ is_a: FBcv:0001347 ! phenotype
 id: FBcv:0000418
 name: flightless
 namespace: phenotypic_class
-def: "Phenotype that is the absence of flight (GO:0060361). 'flight' is defined as: 'Self-propelled movement of an organism from one location to another through the air, usually by means of active wing movement.'" [FBC:DOS]
+def: "Phenotype that is the absence of flight (GO:0060361). 'flight' is defined as: 'Self-propelled movement of an organism from one location to another through the air, usually by means of active wing movement.'" [FBC:DOS, GOC:dph]
 comment: This term is agnostic as to the causes of flightlessness. An animal may be flightless for mechanical or behavioral reasons.
 is_a: FBcv:0000417 ! flight defective
 
@@ -673,7 +673,7 @@ is_a: FBcv:0000417 ! flight defective
 id: FBcv:0000419
 name: feeding behavior defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in feeding behavior (GO:0007631). 'feeding behavior' is defined as: 'Behavior associated with the intake of food.'" [FBC:DOS]
+def: "Phenotype that is a defect in feeding behavior (GO:0007631). 'feeding behavior' is defined as: 'Behavior associated with the intake of food.'" [FBC:DOS, GOC:mah]
 synonym: "feeding behaviour defective" EXACT []
 is_a: FBcv:0000387 ! behavior defective
 
@@ -681,7 +681,7 @@ is_a: FBcv:0000387 ! behavior defective
 id: FBcv:0000420
 name: grooming behavior defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in grooming behavior (GO:0007625). 'grooming behavior' is defined as: 'The specific behavior of an organism relating to grooming, cleaning and brushing to remove dirt and parasites.'" [FBC:DOS]
+def: "Phenotype that is a defect in grooming behavior (GO:0007625). 'grooming behavior' is defined as: 'The specific behavior of an organism relating to grooming, cleaning and brushing to remove dirt and parasites.'" [FBC:DOS, GOC:jl, GOC:pr]
 synonym: "grooming behaviour defective" EXACT []
 is_a: FBcv:0000387 ! behavior defective
 
@@ -698,14 +698,14 @@ is_a: FBcv:0000387 ! behavior defective
 id: FBcv:0000422
 name: photoperiod response variant
 namespace: phenotypic_class
-def: "Phenotype that is a defect in entrainment of circadian clock by photoperiod (GO:0043153), which is defined as: 'The synchronization of a circadian rhythm to photoperiod, the intermittent cycle of light (day) and dark (night).'" [FBC:DOS]
+def: "Phenotype that is a defect in entrainment of circadian clock by photoperiod (GO:0043153), which is defined as: 'The synchronization of a circadian rhythm to photoperiod, the intermittent cycle of light (day) and dark (night).'" [FBC:DOS, GOC:jl]
 is_a: FBcv:0000387 ! behavior defective
 
 [Term]
 id: FBcv:0000423
 name: DNA repair defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in DNA repair (GO:0006281). 'DNA repair' is defined as: 'The process of restoring DNA after damage. Genomes are subject to damage by chemical and physical agents in the environment (e.g. UV and ionizing radiations, chemical mutagens, fungal and bacterial toxins, etc.) and by free radicals or alkylating agents endogenously generated in metabolism. DNA is also damaged because of errors during its replication. A variety of different DNA repair pathways have been reported that include direct reversal, base excision repair, nucleotide excision repair, photoreactivation, bypass, double-strand break repair pathway, and mismatch repair pathway.'" [FBC:DOS]
+def: "Phenotype that is a defect in DNA repair (GO:0006281). 'DNA repair' is defined as: 'The process of restoring DNA after damage. Genomes are subject to damage by chemical and physical agents in the environment (e.g. UV and ionizing radiations, chemical mutagens, fungal and bacterial toxins, etc.) and by free radicals or alkylating agents endogenously generated in metabolism. DNA is also damaged because of errors during its replication. A variety of different DNA repair pathways have been reported that include direct reversal, base excision repair, nucleotide excision repair, photoreactivation, bypass, double-strand break repair pathway, and mismatch repair pathway.'" [FBC:DOS, PMID:11563486]
 is_a: FBcv:0000408 ! stress response defective
 
 [Term]
@@ -741,7 +741,7 @@ is_a: FBcv:0000424 ! cell death defective
 id: FBcv:0000427
 name: cell growth defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in cell growth (GO:0016049). 'cell growth' is defined as: 'The process in which a cell irreversibly increases in size over time by accretion and biosynthetic production of matter similar to that already present.'" [FBC:DOS]
+def: "Phenotype that is a defect in cell growth (GO:0016049). 'cell growth' is defined as: 'The process in which a cell irreversibly increases in size over time by accretion and biosynthetic production of matter similar to that already present.'" [FBC:DOS, GOC:ai]
 comment: Note that defects in cell size are not necessarily the result of defects in cell growth. A change in the rate of cell division in the absence of any change in cell growth rate can result in smaller or larger cells.
 subset: fbcvsubset_mgiribbons
 is_a: FBcv:0001347 ! phenotype
@@ -774,7 +774,7 @@ is_a: FBcv:0001347 ! phenotype
 id: FBcv:0000431
 name: meiotic cell cycle defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in meiotic cell cycle (GO:0051321). 'meiotic cell cycle' is defined as: 'Progression through the phases of the meiotic cell cycle, in which canonically a cell replicates to produce four offspring with half the chromosomal content of the progenitor cell via two nuclear divisions.'" [FBC:DOS]
+def: "Phenotype that is a defect in meiotic cell cycle (GO:0051321). 'meiotic cell cycle' is defined as: 'Progression through the phases of the meiotic cell cycle, in which canonically a cell replicates to produce four offspring with half the chromosomal content of the progenitor cell via two nuclear divisions.'" [FBC:DOS, GOC:ai]
 synonym: "meiotic" RELATED []
 is_a: FBcv:0000671 ! cell cycle defective
 
@@ -782,7 +782,7 @@ is_a: FBcv:0000671 ! cell cycle defective
 id: FBcv:0000432
 name: mitotic cell cycle defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in mitotic cell cycle (GO:0000278). 'mitotic cell cycle' is defined as: 'Progression through the phases of the mitotic cell cycle, the most common eukaryotic cell cycle, which canonically comprises four successive phases called G1, S, G2, and M and includes replication of the genome and the subsequent segregation of chromosomes into daughter cells. In some variant cell cycles nuclear replication or nuclear division may not be followed by cell division, or G1 and G2 phases may be absent.'" [FBC:DOS]
+def: "Phenotype that is a defect in mitotic cell cycle (GO:0000278). 'mitotic cell cycle' is defined as: 'Progression through the phases of the mitotic cell cycle, the most common eukaryotic cell cycle, which canonically comprises four successive phases called G1, S, G2, and M and includes replication of the genome and the subsequent segregation of chromosomes into daughter cells. In some variant cell cycles nuclear replication or nuclear division may not be followed by cell division, or G1 and G2 phases may be absent.'" [FBC:DOS, GOC:mah, ISBN:0815316194, Reactome:69278]
 synonym: "mitotic" RELATED []
 is_a: FBcv:0000671 ! cell cycle defective
 
@@ -790,7 +790,7 @@ is_a: FBcv:0000671 ! cell cycle defective
 id: FBcv:0000433
 name: cytokinesis defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in cytokinesis (GO:0000910). 'cytokinesis' is defined as: 'The division of the cytoplasm and the plasma membrane of a cell and its partitioning into two daughter cells.'" [FBC:DOS]
+def: "Phenotype that is a defect in cytokinesis (GO:0000910). 'cytokinesis' is defined as: 'The division of the cytoplasm and the plasma membrane of a cell and its partitioning into two daughter cells.'" [FBC:DOS, GOC:mtg_cell_cycle]
 is_a: FBcv:0000671 ! cell cycle defective
 
 [Term]
@@ -805,7 +805,7 @@ is_a: FBcv:0001347 ! phenotype
 id: FBcv:0000435
 name: neuroanatomy defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in nervous system (FBbt:00005093). 'nervous system' is defined as: 'All the nerve centers and nerve fibers in the central, visceral and peripheral nervous systems.'" [FBC:DOS]
+def: "Phenotype that is a defect in nervous system (FBbt:00005093). 'nervous system' is defined as: 'All the nerve centers and nerve fibers in the central, visceral and peripheral nervous systems.'" [FBC:DOS, ISBN:978-3-11-014898-5]
 subset: fbcvsubset_mgiribbons
 is_a: FBcv:0001347 ! phenotype
 
@@ -813,7 +813,7 @@ is_a: FBcv:0001347 ! phenotype
 id: FBcv:0000436
 name: sex-determination defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in sex determination (GO:0007530). 'sex determination' is defined as: 'Any process that establishes and transmits the specification of sexual status of an individual organism.'" [FBC:DOS]
+def: "Phenotype that is a defect in sex determination (GO:0007530). 'sex determination' is defined as: 'Any process that establishes and transmits the specification of sexual status of an individual organism.'" [FBC:DOS, ISBN:0198506732]
 subset: fbcvsubset_mgiribbons
 is_a: FBcv:0001347 ! phenotype
 
@@ -908,7 +908,7 @@ is_a: FBcv:0001347 ! phenotype
 id: FBcv:0000448
 name: immune response defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in immune response (GO:0006955). 'immune response' is defined as: 'Any immune system process that functions in the calibrated response of an organism to a potential internal or invasive threat.'" [FBC:DOS]
+def: "Phenotype that is a defect in immune response (GO:0006955). 'immune response' is defined as: 'Any immune system process that functions in the calibrated response of an organism to a potential internal or invasive threat.'" [FBC:DOS, GO_REF:0000022, GOC:add, GOC:mtg_15nov05]
 subset: fbcvsubset_mgiribbons
 is_a: FBcv:0001347 ! phenotype
 
@@ -950,7 +950,7 @@ is_a: FBcv:0000357 ! size defective
 id: FBcv:0000668
 name: cell adhesion defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in cell adhesion (GO:0007155). 'cell adhesion' is defined as: 'The attachment of a cell, either to another cell or to an underlying substrate such as the extracellular matrix, via cell adhesion molecules.'" [FBC:DOS]
+def: "Phenotype that is a defect in cell adhesion (GO:0007155). 'cell adhesion' is defined as: 'The attachment of a cell, either to another cell or to an underlying substrate such as the extracellular matrix, via cell adhesion molecules.'" [FBC:DOS, GOC:hb, GOC:pf]
 subset: fbcvsubset_mgiribbons
 is_a: FBcv:0001347 ! phenotype
 
@@ -958,7 +958,7 @@ is_a: FBcv:0001347 ! phenotype
 id: FBcv:0000669
 name: hatching behavior defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in hatching behavior (GO:0035187). 'hatching behavior' is defined as: 'The specific behavior of an organism during the emergence from an egg shell. In Drosophila for example, the larva swings its head reiteratively through a semicircular arc, using its mouth hooks to tear apart the chorion in front of it and thus free itself from within the egg shell.'" [FBC:DOS]
+def: "Phenotype that is a defect in hatching behavior (GO:0035187). 'hatching behavior' is defined as: 'The specific behavior of an organism during the emergence from an egg shell. In Drosophila for example, the larva swings its head reiteratively through a semicircular arc, using its mouth hooks to tear apart the chorion in front of it and thus free itself from within the egg shell.'" [FBC:DOS, GOC:pr, PMID:10436051]
 synonym: "hatching behaviour defective" EXACT []
 is_a: FBcv:0000387 ! behavior defective
 
@@ -966,7 +966,7 @@ is_a: FBcv:0000387 ! behavior defective
 id: FBcv:0000670
 name: eclosion defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in eclosion (GO:0007562). 'eclosion' is defined as: 'The emergence of an adult insect from a pupa case.'" [FBC:DOS]
+def: "Phenotype that is a defect in eclosion (GO:0007562). 'eclosion' is defined as: 'The emergence of an adult insect from a pupa case.'" [FBC:DOS, GOC:dgh, GOC:dos, GOC:mah, ISBN:0198600461]
 subset: fbcvsubset_mgiribbons
 is_a: FBcv:0001347 ! phenotype
 
@@ -974,7 +974,7 @@ is_a: FBcv:0001347 ! phenotype
 id: FBcv:0000671
 name: cell cycle defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in cell cycle (GO:0007049). 'cell cycle' is defined as: 'The progression of biochemical and morphological phases and events that occur in a cell during successive cell replication or nuclear replication events. Canonically, the cell cycle comprises the replication and segregation of genetic material followed by the division of the cell, but in endocycles or syncytial cells nuclear replication or nuclear division may not be followed by cell division.'" [FBC:DOS]
+def: "Phenotype that is a defect in cell cycle (GO:0007049). 'cell cycle' is defined as: 'The progression of biochemical and morphological phases and events that occur in a cell during successive cell replication or nuclear replication events. Canonically, the cell cycle comprises the replication and segregation of genetic material followed by the division of the cell, but in endocycles or syncytial cells nuclear replication or nuclear division may not be followed by cell division.'" [FBC:DOS, GOC:go_curators, GOC:mtg_cell_cycle]
 subset: fbcvsubset_mgiribbons
 is_a: FBcv:0001347 ! phenotype
 
@@ -982,7 +982,7 @@ is_a: FBcv:0001347 ! phenotype
 id: FBcv:0000672
 name: endomitotic cell cycle defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in endomitotic cell cycle (GO:0007113). 'endomitotic cell cycle' is defined as: 'A mitotic cell cycle in which chromosomes are replicated and sister chromatids separate, but spindle formation, nuclear membrane breakdown and nuclear division do not occur, resulting in an increased number of chromosomes in the cell.'" [FBC:DOS]
+def: "Phenotype that is a defect in endomitotic cell cycle (GO:0007113). 'endomitotic cell cycle' is defined as: 'A mitotic cell cycle in which chromosomes are replicated and sister chromatids separate, but spindle formation, nuclear membrane breakdown and nuclear division do not occur, resulting in an increased number of chromosomes in the cell.'" [FBC:DOS, GOC:curators, GOC:dos, GOC:expert_vm]
 synonym: "endocycle defective" EXACT []
 is_a: FBcv:0000432 ! mitotic cell cycle defective
 
@@ -990,7 +990,7 @@ is_a: FBcv:0000432 ! mitotic cell cycle defective
 id: FBcv:0000679
 name: circadian behavior defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in circadian behavior (GO:0048512). 'circadian behavior' is defined as: 'The specific behavior of an organism that recurs with a regularity of approximately 24 hours.'" [FBC:DOS]
+def: "Phenotype that is a defect in circadian behavior (GO:0048512). 'circadian behavior' is defined as: 'The specific behavior of an organism that recurs with a regularity of approximately 24 hours.'" [FBC:DOS, GOC:bf, GOC:go_curators, GOC:pr]
 is_a: FBcv:0000387 ! behavior defective
 is_a: FBcv:0000394 ! circadian rhythm defective
 created_by: djs93
@@ -1000,14 +1000,14 @@ creation_date: 2009-11-30T11:06:35Z
 id: FBcv:0000680
 name: proboscis extension reflex defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in proboscis extension reflex (GO:0007637). 'proboscis extension reflex' is defined as: 'The extension, through direct muscle actions, of the proboscis (the trunk-like extension of the mouthparts on the adult external head) in response to a sugar stimulus.'" [FBC:DOS]
+def: "Phenotype that is a defect in proboscis extension reflex (GO:0007637). 'proboscis extension reflex' is defined as: 'The extension, through direct muscle actions, of the proboscis (the trunk-like extension of the mouthparts on the adult external head) in response to a sugar stimulus.'" [FB:FBrf0044924, FBC:DOS, GOC:jid]
 is_a: FBcv:0000403 ! chemosensitive behavior defective
 
 [Term]
 id: FBcv:0000681
 name: sensory perception defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in sensory perception (GO:0007600). 'sensory perception' is defined as: 'The series of events required for an organism to receive a sensory stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process.'" [FBC:DOS]
+def: "Phenotype that is a defect in sensory perception (GO:0007600). 'sensory perception' is defined as: 'The series of events required for an organism to receive a sensory stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process.'" [FBC:DOS, GOC:ai, GOC:dph]
 subset: fbcvsubset_mgiribbons
 is_a: FBcv:0001347 ! phenotype
 created_by: djs93
@@ -1017,7 +1017,7 @@ creation_date: 2010-02-23T12:28:26Z
 id: FBcv:0000682
 name: touch perception defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in sensory perception of touch (GO:0050975). 'sensory perception of touch' is defined as: 'The series of events required for an organism to receive a touch stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process. The perception of touch in animals is mediated by mechanoreceptors in the skin and mucous membranes and is the sense by which contact with objects gives evidence as to certain of their qualities. Different types of touch can be perceived (for example, light, coarse, pressure and tickling) and the stimulus may be external or internal (e.g. the feeling of a full stomach).'" [FBC:DOS]
+def: "Phenotype that is a defect in sensory perception of touch (GO:0050975). 'sensory perception of touch' is defined as: 'The series of events required for an organism to receive a touch stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process. The perception of touch in animals is mediated by mechanoreceptors in the skin and mucous membranes and is the sense by which contact with objects gives evidence as to certain of their qualities. Different types of touch can be perceived (for example, light, coarse, pressure and tickling) and the stimulus may be external or internal (e.g. the feeling of a full stomach).'" [FBC:DOS, GOC:ai]
 synonym: "touch perception defective" RELATED []
 is_a: FBcv:0000681 ! sensory perception defective
 
@@ -1025,7 +1025,7 @@ is_a: FBcv:0000681 ! sensory perception defective
 id: FBcv:0000683
 name: temperature response defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in response to temperature stimulus (GO:0009266). 'response to temperature stimulus' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a temperature stimulus.'" [FBC:DOS]
+def: "Phenotype that is a defect in response to temperature stimulus (GO:0009266). 'response to temperature stimulus' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a temperature stimulus.'" [FBC:DOS, GOC:hb]
 subset: fbcvsubset_mgiribbons
 is_a: FBcv:0001347 ! phenotype
 created_by: djs93
@@ -1035,7 +1035,7 @@ creation_date: 2010-02-23T12:51:02Z
 id: FBcv:0000684
 name: cold stress response defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in response to cold (GO:0009409). 'response to cold' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a cold stimulus, a temperature stimulus below the optimal temperature for that organism.'" [FBC:DOS]
+def: "Phenotype that is a defect in response to cold (GO:0009409). 'response to cold' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a cold stimulus, a temperature stimulus below the optimal temperature for that organism.'" [FBC:DOS, GOC:lr]
 is_a: FBcv:0000408 ! stress response defective
 is_a: FBcv:0000683 ! temperature response defective
 created_by: djs93
@@ -1045,7 +1045,7 @@ creation_date: 2010-02-23T02:11:27Z
 id: FBcv:0000686
 name: axis specification defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in axis specification (GO:0009798). 'axis specification' is defined as: 'The establishment, maintenance and elaboration of a pattern along a line or around a point.'" [FBC:DOS]
+def: "Phenotype that is a defect in axis specification (GO:0009798). 'axis specification' is defined as: 'The establishment, maintenance and elaboration of a pattern along a line or around a point.'" [FBC:DOS, GOC:dph, GOC:go_curators, GOC:isa_complete]
 comment: This phenotypic class does not encompass planar polarity.
 subset: fbcvsubset_mgiribbons
 is_a: FBcv:0001347 ! phenotype
@@ -1103,7 +1103,7 @@ is_a: FBcv:0000698 ! embryonic/larval segmentation phenotype
 id: FBcv:0000705
 name: sleep defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in sleep (GO:0030431). 'sleep' is defined as: 'Any process in which an organism enters and maintains a periodic, readily reversible state of reduced awareness and metabolic activity. Usually accompanied by physical relaxation, the onset of sleep in humans and other mammals is marked by a change in the electrical activity of the brain.'" [FBC:DOS]
+def: "Phenotype that is a defect in sleep (GO:0030431). 'sleep' is defined as: 'Any process in which an organism enters and maintains a periodic, readily reversible state of reduced awareness and metabolic activity. Usually accompanied by physical relaxation, the onset of sleep in humans and other mammals is marked by a change in the electrical activity of the brain.'" [FBC:DOS, ISBN:0192800981]
 subset: fbcvsubset_mgiribbons
 is_a: FBcv:0001347 ! phenotype
 created_by: djs93
@@ -1113,7 +1113,7 @@ creation_date: 2010-09-20T12:06:13Z
 id: FBcv:0000706
 name: diapause defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in entry into diapause (GO:0055115). 'entry into diapause' is defined as: 'The dormancy process that results in entry into diapause. Diapause is a neurohormonally mediated, dynamic state of low metabolic activity. Associated characteristics of this form of dormancy include reduced morphogenesis, increased resistance to environmental extremes, and altered or reduced behavioral activity. Full expression develops in a species-specific manner, usually in response to a number of environmental stimuli that precede unfavorable conditions. Once diapause has begun, metabolic activity is suppressed even if conditions favorable for development prevail. Once initiated, only certain stimuli are capable of releasing the organism from this state, and this characteristic is essential in distinguishing diapause from hibernation.'" [FBC:DOS]
+def: "Phenotype that is a defect in entry into diapause (GO:0055115). 'entry into diapause' is defined as: 'The dormancy process that results in entry into diapause. Diapause is a neurohormonally mediated, dynamic state of low metabolic activity. Associated characteristics of this form of dormancy include reduced morphogenesis, increased resistance to environmental extremes, and altered or reduced behavioral activity. Full expression develops in a species-specific manner, usually in response to a number of environmental stimuli that precede unfavorable conditions. Once diapause has begun, metabolic activity is suppressed even if conditions favorable for development prevail. Once initiated, only certain stimuli are capable of releasing the organism from this state, and this characteristic is essential in distinguishing diapause from hibernation.'" [FBC:DOS, GOC:ds, GOC:jid, GOC:mah]
 is_a: FBcv:0001347 ! phenotype
 created_by: djs93
 creation_date: 2010-09-20T12:06:28Z
@@ -1122,7 +1122,7 @@ creation_date: 2010-09-20T12:06:28Z
 id: FBcv:0000707
 name: reproductive diapause defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in entry into reproductive diapause (GO:0055116). 'entry into reproductive diapause' is defined as: 'The dormancy process that results in entry into reproductive diapause. Reproductive diapause is a form of diapause where the organism itself will remain fully active, including feeding and other routine activities, but the reproductive organs experience a tissue-specific reduction in metabolism, with characteristic triggering and releasing stimuli.'" [FBC:DOS]
+def: "Phenotype that is a defect in entry into reproductive diapause (GO:0055116). 'entry into reproductive diapause' is defined as: 'The dormancy process that results in entry into reproductive diapause. Reproductive diapause is a form of diapause where the organism itself will remain fully active, including feeding and other routine activities, but the reproductive organs experience a tissue-specific reduction in metabolism, with characteristic triggering and releasing stimuli.'" [FBC:DOS, GOC:ds, GOC:jid, GOC:mah]
 is_a: FBcv:0000706 ! diapause defective
 created_by: djs93
 creation_date: 2010-09-20T12:21:29Z
@@ -1131,7 +1131,7 @@ creation_date: 2010-09-20T12:21:29Z
 id: FBcv:0000708
 name: starvation stress response defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in response to starvation (GO:0042594). 'response to starvation' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a starvation stimulus, deprivation of nourishment.'" [FBC:DOS]
+def: "Phenotype that is a defect in response to starvation (GO:0042594). 'response to starvation' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a starvation stimulus, deprivation of nourishment.'" [FBC:DOS, GOC:go_curators]
 is_a: FBcv:0000408 ! stress response defective
 
 [Term]
@@ -1155,7 +1155,7 @@ creation_date: 2011-03-10T04:57:06Z
 id: FBcv:0000716
 name: cell migration defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in cell migration (GO:0016477). 'cell migration' is defined as: 'The controlled self-propelled movement of a cell from one site to a destination guided by molecular cues. Cell migration is a central process in the development and maintenance of multicellular organisms.'" [FBC:DOS]
+def: "Phenotype that is a defect in cell migration (GO:0016477). 'cell migration' is defined as: 'The controlled self-propelled movement of a cell from one site to a destination guided by molecular cues. Cell migration is a central process in the development and maintenance of multicellular organisms.'" [FBC:DOS, GOC:cjm, GOC:dph, GOC:ems, GOC:pf, http://en.wikipedia.org/wiki/Cell_migration]
 subset: fbcvsubset_mgiribbons
 is_a: FBcv:0001347 ! phenotype
 
@@ -1196,7 +1196,7 @@ creation_date: 2011-03-11T08:03:28Z
 id: FBcv:0000721
 name: mating behavior defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in mating behavior (GO:0007617). 'mating behavior' is defined as: 'The behavioral interactions between organisms for the purpose of mating, or sexual reproduction resulting in the formation of zygotes.'" [FBC:DOS]
+def: "Phenotype that is a defect in mating behavior (GO:0007617). 'mating behavior' is defined as: 'The behavioral interactions between organisms for the purpose of mating, or sexual reproduction resulting in the formation of zygotes.'" [FBC:DOS, GOC:ai, GOC:dph]
 is_a: FBcv:0000387 ! behavior defective
 is_a: FBcv:0000400 ! mating defective
 
@@ -1221,7 +1221,7 @@ is_a: FBcv:0000359 ! decreased cell number
 id: FBcv:0000725
 name: oxidative stress response defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in response to oxidative stress (GO:0006979). 'response to oxidative stress' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of oxidative stress, a state often resulting from exposure to high levels of reactive oxygen species, e.g. superoxide anions, hydrogen peroxide (H2O2), and hydroxyl radicals.'" [FBC:DOS]
+def: "Phenotype that is a defect in response to oxidative stress (GO:0006979). 'response to oxidative stress' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of oxidative stress, a state often resulting from exposure to high levels of reactive oxygen species, e.g. superoxide anions, hydrogen peroxide (H2O2), and hydroxyl radicals.'" [FBC:DOS, GOC:jl, PMID:12115731]
 is_a: FBcv:0000408 ! stress response defective
 
 [Term]
@@ -1251,7 +1251,7 @@ is_a: FBcv:0000384 ! aging defective
 id: FBcv:0001324
 name: endocytosis defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in endocytosis (GO:0006897). 'endocytosis' is defined as: 'A vesicle-mediated transport process in which cells take up external materials or membrane constituents by the invagination of a small region of the plasma membrane to form a new membrane-bounded vesicle.'" [FBC:DOS]
+def: "Phenotype that is a defect in endocytosis (GO:0006897). 'endocytosis' is defined as: 'A vesicle-mediated transport process in which cells take up external materials or membrane constituents by the invagination of a small region of the plasma membrane to form a new membrane-bounded vesicle.'" [FBC:DOS, GOC:mah, ISBN:0198506732, ISBN:0716731363]
 subset: fbcvsubset_mgiribbons
 is_a: FBcv:0001347 ! phenotype
 
@@ -1358,7 +1358,7 @@ is_a: FBcv:0002014 ! majority die during third instar larval stage
 id: FBcv:0002010
 name: majority die during P-stage
 namespace: phenotypic_class
-def: "A phenotype of a population that is the death of the majority of animals in that population during the P-stage." [] {comment="FBC:DOS"}
+def: "A phenotype of a population that is the death of the majority of animals in that population during the P-stage." []
 is_a: FBcv:0002020 ! some die during P-stage
 
 [Term]
@@ -1373,7 +1373,7 @@ is_a: FBcv:0002021 ! some die during first instar larval stage
 id: FBcv:0002012
 name: majority die during larval stage
 namespace: phenotypic_class
-def: "A phenotype of a population that is the death of the majority of animals in that population during the larval stage." [] {comment="FBC:DOS"}
+def: "A phenotype of a population that is the death of the majority of animals in that population during the larval stage." []
 is_a: FBcv:0002023 ! some die during larval stage
 
 [Term]
@@ -1582,7 +1582,7 @@ is_a: FBcv:0002019 ! increased mortality during development
 id: FBcv:0004000
 name: visual perception defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in sensory perception of light stimulus (GO:0050953). 'sensory perception of light stimulus' is defined as: 'The series of events required for an organism to receive a sensory light stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process.'" [FBC:MMC]
+def: "Phenotype that is a defect in sensory perception of light stimulus (GO:0050953). 'sensory perception of light stimulus' is defined as: 'The series of events required for an organism to receive a sensory light stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process.'" [FBC:MMC, GOC:ai]
 is_a: FBcv:0000681 ! sensory perception defective
 
 [Typedef]

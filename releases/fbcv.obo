@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: 2016-10-26
-date: 26:10:2016 11:53
+data-version: 2016-10-27
+date: 27:10:2016 11:35
 saved-by: mmc46
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -4089,8 +4089,10 @@ is_a: FBcv:0001347 ! phenotype
 id: FBcv:0000009
 name: temporal stage qualifier
 namespace: temporal_qualifier
+comment: This term has been obsoleted because all of its children terms have been obsoleted [FBC:MMC]. mc161027
 xref: PATO:0000083
-is_a: FBcv:0000176 ! temporal  qualifier
+is_obsolete: true
+consider: FBcv:0000176
 
 [Term]
 id: FBcv:0000010
@@ -4104,7 +4106,9 @@ consider: FBcv:0000176
 id: FBcv:0000011
 name: relative temporal qualifier
 namespace: temporal_qualifier
-is_a: FBcv:0000176 ! temporal  qualifier
+comment: This term has been obsoleted because all of its children terms have been obsoleted [FBC:MMC]. mc161027
+is_obsolete: true
+consider: FBcv:0000176
 
 [Term]
 id: FBcv:0000012
@@ -4222,71 +4226,65 @@ is_obsolete: true
 id: FBcv:0000030
 name: compartment
 namespace: spatial_qualifier
-comment: DEPRECATION WARNING: This term is marked for obsoletion. If possible, please use 'developmental compartment' (FBbt:00007110) or one of its subclasses instead.
-subset: deprecated
-is_a: FBcv:0000052 ! spatial qualifier
+comment: This term was obsoleted because a term from the anatom ontology (FBbt) should be used instead. If possible, please use 'developmental compartment' (FBbt:00007110) or one of its subclasses [FBC:MMC]. mc161027
+is_obsolete: true
+consider: FBcv:0000052
 
 [Term]
 id: FBcv:0000031
 name: anterior compartment
 namespace: spatial_qualifier
-def: "Restricted to the anterior compartment of some specified type." [FBC:DS]
-comment: DEPRECATION WARNING: This term is marked for obsoletion. If possible, please use 'developmental compartment' (FBbt:00007110) or one of its subclasses instead.
-subset: deprecated
-is_a: FBcv:0000030 ! compartment
+comment: This term was obsoleted because a term from the anatom ontology (FBbt) should be used instead. If possible, please use 'developmental compartment' (FBbt:00007110) or one of its subclasses [FBC:MMC]. mc161027
+is_obsolete: true
+consider: FBcv:0000052
 
 [Term]
 id: FBcv:0000032
 name: compartment boundary
 namespace: spatial_qualifier
-def: "Restricted to some compartment boundary within a specified type." [FBC:DS]
-comment: DEPRECATION WARNING: This term is marked for obsoletion. Will soon be replaced by a set of more specific anatomy terms.
-subset: deprecated
-is_a: FBcv:0000052 ! spatial qualifier
+comment: This term was obsoleted because a term from the anatom ontology (FBbt) should be used instead. If possible, please use 'developmental compartment' (FBbt:00007110) or one of its subclasses [FBC:MMC]. mc161027
+is_obsolete: true
+consider: FBcv:0000052
 
 [Term]
 id: FBcv:0000033
 name: anterior/posterior compartment boundary
 namespace: spatial_qualifier
-def: "Restricted to an anterior/posterior compartment boundary within a specified type." [FBC:DS]
-comment: DEPRECATION WARNING: This term is marked for obsoletion. Will soon be replaced by a set of more specific anatomy terms.
-subset: deprecated
-is_a: FBcv:0000032 ! compartment boundary
+comment: This term was obsoleted because a term from the anatom ontology (FBbt) should be used instead. If possible, please use 'developmental compartment' (FBbt:00007110) or one of its subclasses [FBC:MMC]. mc161027
+is_obsolete: true
+consider: FBcv:0000052
 
 [Term]
 id: FBcv:0000034
 name: dorsal/ventral compartment boundary
 namespace: spatial_qualifier
-comment: DEPRECATION WARNING: This term is marked for obsoletion. Will soon be replaced by a set of more specific anatomy terms.
-subset: deprecated
-is_a: FBcv:0000032 ! compartment boundary
+comment: This term was obsoleted because a term from the anatom ontology (FBbt) should be used instead. If possible, please use 'developmental compartment' (FBbt:00007110) or one of its subclasses [FBC:MMC]. mc161027
+is_obsolete: true
+consider: FBcv:0000052
 
 [Term]
 id: FBcv:0000035
 name: dorsal compartment
 namespace: spatial_qualifier
-def: "Restricted to the dorsal compartment of some specified type." [FBC:DS]
-comment: DEPRECATION WARNING: This term is marked for obsoletion. If possible, please use 'developmental compartment' (FBbt:00007110) or one of its subclasses instead.
-subset: deprecated
-is_a: FBcv:0000030 ! compartment
+comment: This term was obsoleted because a term from the anatom ontology (FBbt) should be used instead. If possible, please use 'developmental compartment' (FBbt:00007110) or one of its subclasses [FBC:MMC]. mc161027
+is_obsolete: true
+consider: FBcv:0000052
 
 [Term]
 id: FBcv:0000036
 name: posterior compartment
 namespace: spatial_qualifier
-def: "Restricted to the posterior compartment of some specified type." [FBC:DS]
-comment: DEPRECATION WARNING: This term is marked for obsoletion. If possible, please use 'developmental compartment' (FBbt:00007110) or one of its subclasses instead.
-subset: deprecated
-is_a: FBcv:0000030 ! compartment
+comment: This term was obsoleted because a term from the anatom ontology (FBbt) should be used instead. If possible, please use 'developmental compartment' (FBbt:00007110) or one of its subclasses [FBC:MMC]. mc161027
+is_obsolete: true
+consider: FBcv:0000052
 
 [Term]
 id: FBcv:0000037
 name: ventral compartment
 namespace: spatial_qualifier
-def: "Restricted to the ventral compartment of some specified type." [FBC:DS]
-comment: DEPRECATION WARNING: This term is marked for obsoletion. If possible, please use 'developmental compartment' (FBbt:00007110) or one of its subclasses instead.
-subset: deprecated
-is_a: FBcv:0000030 ! compartment
+comment: This term was obsoleted because a term from the anatom ontology (FBbt) should be used instead. If possible, please use 'developmental compartment' (FBbt:00007110) or one of its subclasses [FBC:MMC]. mc161027
+is_obsolete: true
+consider: FBcv:0000052
 
 [Term]
 id: FBcv:0000038
@@ -4460,9 +4458,9 @@ is_a: FBcv:0000014 ! structural qualifier
 id: FBcv:0000062
 name: ipsilateral
 namespace: spatial_qualifier
-comment: DEPRECATION WARNING: This term is marked for obsoletion. As far as I can tell, ipsilateral means - on the same side as ....  In curation usage: on the same side as what? Will be obsoleted once a replacement term agreed upon (if needed) and any old usage retrofitted. DS
-subset: deprecated
-is_a: FBcv:0000052 ! spatial qualifier
+comment: This term has been obsoleted because there is no way to combine it with an anatomy term to produce a meaningful statement [FBC:MMC]. mc161027
+is_obsolete: true
+consider: FBcv:0000052
 
 [Term]
 id: FBcv:0000063
@@ -5253,10 +5251,10 @@ is_obsolete: true
 id: FBcv:0000178
 name: early
 namespace: temporal_qualifier
-comment: DEPRECATION WARNING: This term is marked for obsoletion. Use of this term is discouraged as there is no way to decide how to group anatomy terms combined with this qualifier with other terms in the anatomy ontology. Subject to discussion and once its usage in old curation is removed, this term will be obsoleted.  DS
-subset: deprecated
+comment: This term was obsoleted because a term from the developmental ontology (FBdv) should be used instead [FBC:MMC]. mc161027
 xref: PATO:0000694
-is_a: FBcv:0000011 ! relative temporal qualifier
+is_obsolete: true
+consider: FBcv:0000176
 
 [Term]
 id: FBcv:0000179
@@ -5272,18 +5270,18 @@ is_obsolete: true
 id: FBcv:0000181
 name: late
 namespace: temporal_qualifier
-comment: DEPRECATION WARNING: This term is marked for obsoletion. Use of this term is discouraged as there is no way to decide how to group anatomy terms combined with this qualifier with other terms in the anatomy ontology. Subject to discussion and once its usage in old curation is removed, this term will be obsoleted.  DS
-subset: deprecated
+comment: This term was obsoleted because a term from the developmental ontology (FBdv) should be used instead [FBC:MMC]. mc161027
 xref: PATO:0000502
-is_a: FBcv:0000011 ! relative temporal qualifier
+is_obsolete: true
+consider: FBcv:0000176
 
 [Term]
 id: FBcv:0000182
 name: mid
 namespace: temporal_qualifier
-comment: DEPRECATION WARNING: This term is marked for obsoletion. Use of this term is discouraged as there is no way to decide how to group anatomy terms combined with this qualifier with other terms in the anatomy ontology.  Subject to discussion and once its usage in old curation is removed, this term will be obsoleted.  DS
-subset: deprecated
-is_a: FBcv:0000011 ! relative temporal qualifier
+comment: This term was obsoleted because a term from the developmental ontology (FBdv) should be used instead [FBC:MMC]. mc161027
+is_obsolete: true
+consider: FBcv:0000176
 
 [Term]
 id: FBcv:0000183
@@ -5660,7 +5658,7 @@ is_a: FBcv:0000189 ! publication class
 id: FBcv:0000230
 name: automatic genome annotation
 namespace: pub_type
-comment: This term was obsoleted becuase it was hardly ever used. Please use FBcv:0000229 instead.
+comment: This term was obsoleted because it was hardly ever used. Please use FBcv:0000229 instead.
 is_obsolete: true
 replaced_by: FBcv:0000229
 
@@ -6377,10 +6375,10 @@ is_obsolete: true
 id: FBcv:0000331
 name: polyphasic
 namespace: temporal_qualifier
-comment: DEPRECATION WARNING: This term is marked for obsoletion. Use of this term is discouraged as there is no way to decide how to group anatomy terms combined with this qualifier with other terms in the anatomy ontology.  Subject to discussion and once its usage in old curation is removed, this term will be obsoleted.  DS
-subset: deprecated
+comment: This term has been obsoleted because there are new terms to replace it [FBC:MMC]. mc161027
 xref: PATO:0001774
-is_a: FBcv:0000009 ! temporal stage qualifier
+is_obsolete: true
+consider: FBcv:0000176
 
 [Term]
 id: FBcv:0000332
