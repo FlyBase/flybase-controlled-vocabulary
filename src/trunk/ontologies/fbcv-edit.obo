@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: 2016-10-27
-date: 27:10:2016 11:35
-saved-by: mmc46
+date: 12:06:2017 10:59
+saved-by: temj2
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -13,13 +13,13 @@ subsetdef: deprecated "warning of impending obsoletion"
 subsetdef: do_not_annotate "Term not to be used for direct annotation"
 subsetdef: do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: EmbDevSlim "EmbDevSlim"
+subsetdef: fbcvsubset_mgiribbons "MGI ribbon terms"
 subsetdef: FlyTed "Testis slim"
 subsetdef: FT_new "FlyTed temp subset for edit tracking purposes"
 subsetdef: larval_OF "larval olfactory system"
 subsetdef: RD "terms for rd test ontology"
 subsetdef: relational_slim "Relational slim: types of quality that require an additional entity in order to exist"
 subsetdef: value_slim "Value slim"
-subsetdef: fbcvsubset_mgiribbons "MGI ribbon terms"
 synonymtypedef: BRAIN_NAME_ABV "BrainName official abbreviation"
 synonymtypedef: BRAND_NAME "BRAND NAME"
 synonymtypedef: FORMULA "FORMULA"
@@ -11092,6 +11092,16 @@ namespace: assay_attribute
 is_a: FBcv:0003208 ! assay method
 created_by: mmc46
 creation_date: 2016-05-17T15:35:41Z
+
+[Term]
+id: FBcv:0005000
+name: Bxb1 integrase
+namespace: origin_of_mutation
+def: "Sequence change caused by a site specific recombination catalyzed by the serine recombinase Bxb1 integrase that recognizes a minimal high-efficiency attPX recognition site of 48 base pairs and a minimal high-efficiency attBX recognition site of 38 base pairs. The attPX and attBX sites share an 8bp common core flanked by imperfect inverted repeats (19bp in attPX and 8bp in attBX). A non-palindromic central dinucleotide (5'-GT) determines the directionality of integration." [PMID:14636570]
+synonym: "change induced by Bxb1 integrase recombination" EXACT []
+is_a: FBcv:0000478 ! site specific recombination
+created_by: temj2
+creation_date: 2017-06-12T10:56:07Z
 
 [Term]
 id: FBcv:0010000
