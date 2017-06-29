@@ -66,7 +66,9 @@ echo ''
 echo '*** Making FlyBase version - stripping all but essential relations'
 echo ''
 owltools fbcv_oort_ad/fbcv-simple.obo --make-subset-by-properties part_of conditionality -o fbcv-flybase.owl
-obolib-owl2obo fbcv-flybase.owl -o oort/fbcv-flybase.obo
+echo ''
+echo ''
+obolib-owl2obo fbcv_oort_ad/fbcv-flybase.owl -o oort/fbcv-flybase.obo
 
 
 cp dpo_oort_full/* oort/.
