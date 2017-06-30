@@ -83,8 +83,8 @@ cp fbcv_oort_ad/fbcv-simple.obo oort/.
 cp fbcv_oort_ad/fbcv-simple.owl oort/.
 cp fbcv_oort_ad/fbcv-simple.owx oort/.
 
-rm -r dpo*
-rm -r fbcv*
+#rm -r dpo*
+#rm -r fbcv*
 
 
 
