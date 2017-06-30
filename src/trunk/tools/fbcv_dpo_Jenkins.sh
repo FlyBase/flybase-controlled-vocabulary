@@ -65,14 +65,18 @@ fi
 echo '' 
 echo '*** Making FlyBase version - stripping all but essential relations'
 echo ''
-owltools fbcv_oort_ad/fbcv-simple.obo --make-subset-by-properties part_of conditionality -o fbcv-flybase.owl
+owltools fbcv_oort_ad/fbcv-simple.obo --make-subset-by-properties part_of conditionality // -o file://`pwd`/fbcv-flybase.owl
 echo ''
 echo ''
-obolib-owl2obo fbcv_oort_ad/fbcv-flybase.owl -o oort/fbcv-flybase.obo
+obolib-owl2obo fbcv-flybase.owl -o oort/fbcv-flybase.obo
 
 
 cp dpo_oort_full/* oort/.
 cp fbcv_oort_full/* oort/.
+
+# troubleshooting generation of fbcv-flybase.owl 20170630
+cp fbcv_oort_ad/fbcv-flybase.owl
+# end troubleshooting
 
 cp dpo_oort_ad/dpo-simple.obo oort/.
 cp fbcv_oort_ad/fbcv-simple.obo oort/.
