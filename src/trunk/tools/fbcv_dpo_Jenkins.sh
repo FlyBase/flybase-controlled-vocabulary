@@ -68,7 +68,7 @@ echo ''
 owltools fbcv_oort_ad/fbcv-simple.obo --make-subset-by-properties part_of conditionality // -o file://`pwd`/fbcv-flybase.owl
 echo ''
 echo ''
-obolib-owl2obo fbcv-flybase.owl -o oort/fbcv-flybase.obo
+obolib-owl2obo fbcv-flybase.owl -o oort/fbcv-flybase.obo -Jvm=/usr/lib/jvm/java-8-openjdk-amd64/
 
 
 cp dpo_oort_full/* oort/.
