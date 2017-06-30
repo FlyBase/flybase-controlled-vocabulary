@@ -75,7 +75,7 @@ cp dpo_oort_full/* oort/.
 cp fbcv_oort_full/* oort/.
 
 # troubleshooting generation of fbcv-flybase.owl 20170630
-cp fbcv_oort_ad/fbcv-flybase.owl
+cp fbcv_oort_ad/fbcv-flybase.owl oort/.
 # end troubleshooting
 
 cp dpo_oort_ad/dpo-simple.obo oort/.
