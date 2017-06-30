@@ -68,23 +68,23 @@ echo ''
 owltools fbcv_oort_ad/fbcv-simple.obo --make-subset-by-properties part_of conditionality // -o file://`pwd`/fbcv-flybase.owl
 echo ''
 echo ''
-obolib-owl2obo fbcv-flybase.owl -o oort/fbcv-flybase.obo
+# obolib-owl2obo fbcv-flybase.owl -o oort/fbcv-flybase.obo
+# TEMJ commented above line 20170630 because Java kept throwing "NullPointerException" errors after moving from clara to flybase-vm machine. This is true for all builds although did not notice until now. Unsure why this is now a problem, but whilst troubleshooting found out that it looks like obolib is no longer really being independently maintained and has been integrated into the OWLAPI. owltools has a fine converter of owl to obo, and as of testing today it looks to have exactly the same output as robot (which is now the recommended tool for conversion). It's not identical to the obolib generated version but it opens just fine in OBOEdit so I'm hoping for the best. I'd rather stick with owltools (rather than ROBOT) for now since it's already installed, so I'm using the owltools command - may want to update in the future to ROBOT or whatever tool becomes standard. 20170630.
+owltools fbcv-flybase.owl -o -f obo oort/fbcv-flybase.obo
 
 
 cp dpo_oort_full/* oort/.
 cp fbcv_oort_full/* oort/.
 
-# troubleshooting generation of fbcv-flybase.owl 20170630
-cp fbcv_oort_ad/fbcv-flybase.owl oort/.
-# end troubleshooting
 
+cp fbcv-flybase.owl oort/.
 cp dpo_oort_ad/dpo-simple.obo oort/.
 cp fbcv_oort_ad/fbcv-simple.obo oort/.
 cp fbcv_oort_ad/fbcv-simple.owl oort/.
 cp fbcv_oort_ad/fbcv-simple.owx oort/.
 
-#rm -r dpo*
-#rm -r fbcv*
+rm -r dpo*
+rm -r fbcv*
 
 
 
