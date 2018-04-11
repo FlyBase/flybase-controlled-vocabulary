@@ -17,12 +17,12 @@
         <owl:imports rdf:resource="http://www.semanticweb.org/ontologies/2010/5/Ontology1275387730635/timing_relations_for_occurrents.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/fbcv_go_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/FBdv.owl"/>
-        <oboInOwl:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase_miscellaneous_CV</oboInOwl:default-namespace>
         <oboInOwl:saved-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">temj2</oboInOwl:saved-by>
-        <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBO-Edit 2.3.1</oboInOwl:auto-generated-by>
-        <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
         <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-07-05</oboInOwl:date>
+        <oboInOwl:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase_miscellaneous_CV</oboInOwl:default-namespace>
+        <oboInOwl:auto-generated-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBO-Edit 2.3.1</oboInOwl:auto-generated-by>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Imports terms from http://purl.obolibrary.org/obo/go/2017-06-29/go-simple.owl; http://purl.obolibrary.org/obo/fbdv/2014-07-29/fbdv.owl</rdfs:comment>
+        <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
     </owl:Ontology>
     
 
@@ -9161,7 +9161,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="ttp://purl.obolibrary.org/obo/PATO_0001695"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001695"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FBbt_00000001"/>
@@ -10884,6 +10884,24 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PATO_0001695 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001695">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000273"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fecundity which is relatively high</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001695</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">increased fecundity</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001695"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fecundity which is relatively high</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0001696 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001696">
@@ -11428,24 +11446,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
         <rdfs:label xml:lang="en">population of cells</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- ttp://purl.obolibrary.org/obo/PATO_0001695 -->
-
-    <owl:Class rdf:about="ttp://purl.obolibrary.org/obo/PATO_0001695">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000273"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fecundity which is relatively high</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0001695</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">increased fecundity</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="ttp://purl.obolibrary.org/obo/PATO_0001695"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fecundity which is relatively high</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATOC:GVG</oboInOwl:hasDbXref>
-    </owl:Axiom>
 </rdf:RDF>
 
 
