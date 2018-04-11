@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://purl.obolibrary.org/obo/fbcv/fbcv-simple.owl"
-     versionIRI="http://purl.obolibrary.org/obo/fbcv/2017-07-05/fbcv-simple.owl">
+     versionIRI="http://purl.obolibrary.org/obo/fbcv/2018-01-03/fbcv-simple.owl">
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -17,10 +17,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">temj2</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Imports terms from CHEBI - datestamp = 02:12:2011 01:47. And terms imported from http://purl.obolibrary.org/obo/go/releases/2017-06-29/go-simple.obo</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#default-namespace"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FlyBase miscellaneous CV</Literal>
     </Annotation>
@@ -29,12 +25,16 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">OBO-Edit 2.3.1</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#date"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">05:07:2017 12:00</Literal>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Imports terms from CHEBI - datestamp = 02:12:2011 01:47. And terms imported from http://purl.obolibrary.org/obo/go/releases/2018-01-03/go-simple.obo</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.2</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#date"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">03:01:2018 20:37</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -191,13 +191,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000761"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000676"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000785"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000325"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000676"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000434"/>
@@ -584,6 +584,9 @@
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005009"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/fbcv#common_tool_use"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000238"/>
     </Declaration>
     <Declaration>
@@ -641,10 +644,10 @@
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/dpo#FORMULA"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0001347"/>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/fbcv#relational_slim"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/fbcv#relational_slim"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0001347"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0003190"/>
@@ -665,10 +668,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000780"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000695"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000235"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000235"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000695"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000320"/>
@@ -884,13 +887,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000231"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/dpo#InChI"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000122"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000013"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/dpo#InChI"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000388"/>
@@ -1067,6 +1070,9 @@
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0010016"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005082"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0002004"/>
     </Declaration>
     <Declaration>
@@ -1131,6 +1137,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0010015"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005083"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0002005"/>
@@ -1376,6 +1385,9 @@
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000729"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005064"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000060"/>
     </Declaration>
     <Declaration>
@@ -1448,6 +1460,9 @@
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0003111"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005065"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005041"/>
     </Declaration>
     <Declaration>
@@ -1503,6 +1518,9 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005066"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005042"/>
@@ -1568,6 +1586,9 @@
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/fbcv#larval_OF"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005067"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0003000"/>
     </Declaration>
     <Declaration>
@@ -1620,6 +1641,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000507"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005068"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005044"/>
@@ -1680,6 +1704,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000419"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005069"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005045"/>
@@ -2846,10 +2873,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000243"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000001"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000134"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000134"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000001"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000570"/>
@@ -2906,6 +2933,9 @@
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0003229"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005080"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0002006"/>
     </Declaration>
     <Declaration>
@@ -2955,6 +2985,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0001003"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005081"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/dpo#INN"/>
@@ -3008,6 +3041,9 @@
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/fbcv#SMILES"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005070"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000805"/>
     </Declaration>
     <Declaration>
@@ -3057,6 +3093,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0010003"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005071"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000296"/>
@@ -3110,6 +3149,9 @@
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0010002"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005072"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0002014"/>
     </Declaration>
     <Declaration>
@@ -3135,6 +3177,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000188"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005073"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000079"/>
@@ -3191,6 +3236,9 @@
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000076"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005074"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000270"/>
     </Declaration>
     <Declaration>
@@ -3240,6 +3288,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000716"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005075"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000077"/>
@@ -3308,6 +3359,9 @@
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0002351"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005076"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000098"/>
     </Declaration>
     <Declaration>
@@ -3366,6 +3420,9 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005077"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005053"/>
@@ -3437,6 +3494,9 @@
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/dpo#BRAIN_NAME_ABV"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005078"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0003122"/>
     </Declaration>
     <Declaration>
@@ -3494,6 +3554,9 @@
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000518"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005079"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005055"/>
     </Declaration>
     <Declaration>
@@ -3518,10 +3581,10 @@
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000182"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000097"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0003145"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0003145"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000097"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0003036"/>
@@ -3860,13 +3923,13 @@
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000318"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000209"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000778"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000669"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000209"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0000427"/>
@@ -9174,16 +9237,100 @@
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005058"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005060"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005082"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005061"/>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005058"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005062"/>
-        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005001"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005075"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005063"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005075"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005064"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005059"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005065"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005064"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005066"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005061"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005067"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005066"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005068"/>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005001"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005069"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005068"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005070"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005068"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005071"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005068"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005072"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005068"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005073"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005068"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005074"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005068"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005075"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005001"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005076"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005075"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005077"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005075"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005078"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005077"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005079"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005075"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005080"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005075"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005081"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005001"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005082"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005081"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005083"/>
+        <Class IRI="http://purl.obolibrary.org/obo/FBcv_0005042"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://purl.obolibrary.org/obo/FBcv_0006000"/>
@@ -43735,6 +43882,15 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">experimental_tool_descriptor</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:GM</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005002</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">gene product detection tag</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0005002</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0005002</Literal>
@@ -43742,7 +43898,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0005002</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">gene product detection tag</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">gene product detection tool</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -43769,6 +43925,15 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">experimental_tool_descriptor</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:TJ</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005003</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">RNA detection tag</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0005003</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0005003</Literal>
@@ -43776,7 +43941,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0005003</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">RNA detection tag</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">RNA detection tool</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -43803,6 +43968,15 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">experimental_tool_descriptor</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:TJ</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005004</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">protein detection tag</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0005004</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0005004</Literal>
@@ -43810,7 +43984,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0005004</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">protein detection tag</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">protein detection tool</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -43845,6 +44019,11 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0005005</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0005005</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005005</IRI>
+        <IRI>http://purl.obolibrary.org/obo/fbcv#common_tool_use</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -43884,6 +44063,11 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0005006</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0005006</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005006</IRI>
+        <IRI>http://purl.obolibrary.org/obo/fbcv#common_tool_use</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -45504,7 +45688,7 @@
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0005050</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that shows a change in a particular property in response to a change in the mechanical force the gene product is subjected to. A gene product tagged with such a sequence can thus be used to detect/respond to this change.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that is used to provide a readout of changes in the mechanical force the gene product is subjected to.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
@@ -45717,6 +45901,11 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0005055</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005055</IRI>
+        <IRI>http://purl.obolibrary.org/obo/fbcv#common_tool_use</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0005055</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">split driver - transcription activation fragment</Literal>
@@ -45865,6 +46054,11 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0005059</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005059</IRI>
+        <IRI>http://purl.obolibrary.org/obo/fbcv#common_tool_use</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0005059</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">binary expression system - driver</Literal>
@@ -45946,6 +46140,11 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0005061</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005061</IRI>
+        <IRI>http://purl.obolibrary.org/obo/fbcv#common_tool_use</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0005061</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">binary expression system - repressor</Literal>
@@ -45953,11 +46152,11 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:GM</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0231034</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0005062</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Sequence that forms all or part of the protein product encoded by a transgenic locus or modified endogenous locus and that has the property of &apos;site-specific recombinase activity&apos;. &apos;site-specific recombinase activity&apos; (GO:0009009) is defined as &apos;Catalysis of the formation of new phosphodiester bonds between a pair of short, unique DNA target sequences.&apos;</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An enzyme that mediates a recombination exchange reaction between two DNA templates, each containing a specific recognition site. The recognition site for a particular site-specific recombinase is defined by the enzyme itself. The recognition site contains perfect inverted repeats flanking an asymmetric spacer. Under normal conditions, the two recognition sites are identical and are reformed during the recombination event, and thus the reaction is bidirectional: recombination can occur in both &apos;forward&apos; and &apos;reverse&apos; directions. However, recognition sites can be mutated to drive the directionality of the reaction: different classes of site may be combined so that recombination can occur in one direction, but produces reformed sites that are no longer compatible. In addition, mutually exclusive sites have been engineered for some recombinases. Recombinases can be used to generate many different types of genetic modification, with the outcome being influenced by the relative orientation (direct or inverted), relative location and composition of the two recognition sites. The types of possible modification include deletion of DNA, generation of chromosomal rearrangements, integration of DNA into the genome, and replacement of genetic material with that from a donor plasmid using recombinase-mediated cassette exchange (RMCE).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
@@ -45968,6 +46167,11 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0005062</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2017-06-28T11:41:27Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005062</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">site-specific recombinase</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
@@ -45980,18 +46184,23 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0005062</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005062</IRI>
+        <IRI>http://purl.obolibrary.org/obo/fbcv#common_tool_use</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0005062</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">site-specific recombinase</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">recombinase</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:GM</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0231034</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0005063</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Sequence that is a target for a site-specific recombinase. Forms all or part of the protein product encoded by a transgenic locus or modified endogenous locus and that has the property of &apos;site-specific recombinase activity&apos;. &apos;site-specific recombinase activity&apos; (GO:0009009) is defined as &apos;Catalysis of the formation of new phosphodiester bonds between a pair of short, unique DNA target sequences.&apos;.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The recognition site for a particular site-specific recombinase, an enzyme that mediates a recombination exchange reaction between two DNA templates, each containing a copy of the recognition site. The recognition site contains perfect inverted repeats flanking an asymmetric spacer. Under normal conditions, the two recognition sites are identical and are reformed during the recombination event, and thus the reaction is bidirectional: recombination can occur in both &apos;forward&apos; and &apos;reverse&apos; directions. However, recognition sites can be mutated to drive the directionality of the reaction: different classes of site may be combined so that recombination can occur in one direction, but produces reformed sites that are no longer compatible. In addition, mutually exclusive sites have been engineered for some recombinases. Recombinases can be used to generate many different types of genetic modification, with the outcome being influenced by the relative orientation (direct or inverted), relative location and composition of the two recognition sites. The types of possible modification include deletion of DNA, generation of chromosomal rearrangements, integration of DNA into the genome, and replacement of genetic material with that from a donor plasmid using recombinase-mediated cassette exchange (RMCE).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
@@ -46002,6 +46211,11 @@
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0005063</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2017-06-28T11:41:27Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005063</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">site-specific recombination target region</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
@@ -46016,7 +46230,798 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://purl.obolibrary.org/obo/FBcv_0005063</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">site-specific recombination target region</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">recombinase target site</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:GM</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005064</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Transactivator (&apos;driver&apos;) that forms part of a binary expression system and whose activity is regulated in response to a particular stimulus. A binary expression system requires a transactivator (&apos;driver&apos;) that binds to a specific DNA sequence (&apos;regulatory region&apos; or &apos;effector&apos;). A driver encoded by one transgenic locus or modified endogenous locus is used to drive expression of a downstream &apos;responder&apos; or &apos;reporter&apos; encoded by another transgenic locus or modified endogenous locus, by fusing the regulatory region sequence to which the driver binds upstream of the responder sequence. The temporal and spatial expression pattern of the responder thus depends on the regulatory elements used to drive expression of the driver. Use of a conditional driver permits further refinement of this expression pattern.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005064</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">temj2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005064</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2017-12-13T13:17:30Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005064</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">experimental_tool_descriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005064</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0005064</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005064</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">binary expression system - conditional driver</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:GM</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005065</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Transactivator (&apos;driver&apos;) that forms part of a binary expression system and whose activity is regulated by binding to a small molecule, such as an ion or ligand. A binary expression system requires a transactivator (&apos;driver&apos;) that binds to a specific DNA sequence (&apos;regulatory region&apos; or &apos;effector&apos;). A driver encoded by one transgenic locus or modified endogenous locus is used to drive expression of a downstream &apos;responder&apos; or &apos;reporter&apos; encoded by another transgenic locus or modified endogenous locus, by fusing the regulatory region sequence to which the driver binds upstream of the responder sequence. The temporal and spatial expression pattern of the responder thus depends on the regulatory elements used to drive expression of the driver. Use of a small molecule-regulated driver driver permits further refinement of this expression pattern.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005065</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">temj2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005065</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2017-12-13T13:17:30Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005065</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">experimental_tool_descriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005065</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0005065</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005065</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">binary expression system - small molecule-regulated driver</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:GM</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005066</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Repressor that can be used to regulate expression in a binary expression system and whose activity is regulated in response to a particular stimulus. A binary expression system requires a transactivator (&apos;driver&apos;) that binds to a specific DNA sequence (&apos;regulatory region&apos; or &apos;effector&apos;). A driver encoded by one transgenic locus or modified endogenous locus is used to drive expression of a downstream &apos;responder&apos; or &apos;reporter&apos; encoded by another transgenic locus or modified endogenous locus, by fusing the regulatory region sequence to which the driver binds upstream of the responder sequence. The temporal and spatial expression pattern of the responder thus depends on the regulatory elements used to drive expression of the driver. In addition, a specific repressor protein may be available which prevents the transactivator from driving expression, allowing further refinement of the expression pattern of the responder. Use of a conditional repressor permits further refinement of this expression pattern.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005066</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">temj2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005066</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2017-12-13T13:17:30Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005066</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">experimental_tool_descriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005066</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0005066</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005066</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">binary expression system - conditional repressor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:GM</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005067</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Repressor that can be used to regulate expression in a binary expression system and whose activity is regulated by temperature. A binary expression system requires a transactivator (&apos;driver&apos;) that binds to a specific DNA sequence (&apos;regulatory region&apos; or &apos;effector&apos;). A driver encoded by one transgenic locus or modified endogenous locus is used to drive expression of a downstream &apos;responder&apos; or &apos;reporter&apos; encoded by another transgenic locus or modified endogenous locus, by fusing the regulatory region sequence to which the driver binds upstream of the responder sequence. The temporal and spatial expression pattern of the responder thus depends on the regulatory elements used to drive expression of the driver. In addition, a specific repressor protein may be available which prevents the transactivator from driving expression, allowing further refinement of the expression pattern of the responder. Use of a temperature conditional repressor permits further refinement of this expression pattern.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005067</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">temj2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005067</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2017-12-13T13:17:30Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005067</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">experimental_tool_descriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005067</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0005067</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005067</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">binary expression system - temperature conditional repressor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:GM</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:LC</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005068</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Sequence that forms all or part of a transgenic locus or modified endogenous locus and which is designed to impact or assess any proximate gene(s) when integrated into the genome.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005068</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">temj2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005068</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2017-12-13T13:17:30Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005068</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">experimental_tool_descriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005068</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0005068</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005068</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">insertional mutagenesis tool</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:GM</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0128252</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0216478</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PMID:10899970</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005069</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An enhancer trap cassette is designed to report or utilize the expression of endogenous enhancer elements upon integration of the cassette into the genome. The basic components of an enhancer trap cassette are a minimal promoter element fused upstream of a gene. Upon integration into the genome, a neighboring genomic enhancer may activate expression of the gene encoded by the enhancer trap cassette. Depending on the nature of this gene, the insertion may directly report the expression pattern of the &apos;trapped&apos; enhancer (e.g. if the gene encodes a reporter enzyme or fluorescent protein), or it may be used to drive expression of any gene of interest (e.g. if the gene encodes a driver that forms part of a binary expression system). An enhancer trap cassette may be inserted into a genome as part of a transgenic contruct via transposable-element-mediated transgenesis, or may be inserted directly into a modified endogenous locus via a genome engineering method such as homologous recombination or CRISPR. An enhancer trap insertion can be mutgenic, disrupting the function of an endogenous locus, depending on the particular insertion site.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005069</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">temj2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005069</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2017-12-13T13:17:30Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005069</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SO:0001479</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005069</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">experimental_tool_descriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:GM</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005069</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">enhancer detection tool</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005069</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0005069</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005069</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">enhancer trap</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:GM</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0216478</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0236840</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005070</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A protein trap cassette is designed to tag protein(s) encoded by an endogenous locus upon integration of the cassette into the genome. The basic structure of a protein trap cassette is an artificial exon composed of a splice acceptor site, an open reading frame without initiation and stop codons, and a splice donor site. No promoter sequences are present. Upon integration into a coding intron of an endogenous locus, the open reading frame (ORF) encoded by the artificial exon can be incorporated into (&apos;tag&apos;) the protein encoded by the locus. This only occurs if the insertion is in the correct orientation and when the frame of the artificial exon corresponds to that of the preceeding exon. Thus, only one out of six insertions in a coding intron will function as a protein trap. To account for each reading frame, three versions of a given protein trap element, differing only in the splice phase, are typically produced for use in an insertional mutagenesis screen. Depending on the nature of the ORF encoded by the artificial exon, the tag may be used to detect the expression pattern and/or subcellular localization of the protein (e.g. if the tag is an epitope tag or fluorescent protein), to drive expression of a gene of interest (e.g. if the tag is a driver that forms part of a binary expression system), or may modify the properties of the endogenous protein (e.g. if the tag affects protein localization or stability). A protein trap cassette may be inserted into a genome as part of a transgenic construct via transposable-element-mediated transgenesis, or may be inserted directly into a modified endogenous locus via a genome engineering method such as homologous recombination or CRISPR. The presence of the splice acceptor and donor sites mean that a protein trap cassette is not inherently mutagenic, since it is designed to insert in frame into a protein. However, an insertion into an intron that splits a critical functional or localization domain may alter the activity of the encoded protein, and the protein trap tag sequence itself may be designed to alter function (for example targeting the protein to a new location within the cell or altering its stability).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005070</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">temj2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005070</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2017-12-13T13:17:30Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005070</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">experimental_tool_descriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005070</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0005070</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005070</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">protein trap</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:GM</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PMID:10899970</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">http://www.genetrap.org/tutorials/overview.html#vector</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005071</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A gene trap cassette is designed to interrupt transcription of an endogenous locus upon integration of the cassette into the genome. The basic components of a gene trap cassette are a promoterless gene with an upstream splice acceptor site. Upon integration into an intron, splicing from the genomic splice donor site to the splice acceptor site in the cassette results in a transcriptional fusion containing the endogenous exon(s) upstream of the insertion fused to the gene sequence encoded by the cassette. Any open reading frame (ORF) encoded by the trap cassette gene may be translated from this transcriptional fusion either as a translational fusion with any ORF sequence encoded by the upstream exons, or if an internal ribosome entry site (IRES) or viral 2A-like peptide sequence (which promotes ribosome skipping) is present upstream of the gene trap ORF, it may be produced as a separate protein expressed under the control of the regulatory sequences of the endogenous locus. Gene trap insertions are usually mutagenic, disrupting the locus into which they have inserted, since termination sequences are usually present at the 3&apos; end of the cassette, truncating the endogenous transcript. Depending on the nature of the gene encoded by the gene trap cassette, a gene trap insertion may directly report the expression pattern of the disrupted locus (e.g. if it encodes a reporter enzyme or fluorescent protein), or it may be used to drive expression of any gene of interest in the pattern of the trapped locus (e.g. if it is a driver that forms part of a binary expression system). A gene trap cassette may be inserted into a genome as part of a transgenic contruct via transposable-element-mediated transgenesis, or may be inserted directly into a modified endogenous locus via a genome engineering method such as homologous recombination or CRISPR.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005071</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">temj2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005071</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2017-12-13T13:17:30Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005071</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">SO:0001477</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005071</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">experimental_tool_descriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005071</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0005071</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005071</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">gene trap</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:GM</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0132344</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0206814</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PMID:9560157</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">http://www.genetrap.org/tutorials/overview.html#vector</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005072</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The basic components of a polyA trap cassette are a promoter fused to a gene sequence that lacks a polyadenylation (polyA) sequence but is followed by a splice donor sequence. If the cassette is integrated into the genome outside a gene, the mRNA produced by the polyA trap is not polyadenylated and is expected to be rapidly degraded. However, if the cassette is integrated into an intron, the promoter in the polyA trap will drive expression of a transcriptional fusion containing the polyA gene trap fused to any downstream exons. The downstream terminal exon can provide a polyA signal, allowing stable expression of the gene encoded by the polyA trap. polyA trap cassettes can be used to report the expression of genes that are not normally expressed, or are expressed at very low levels, or may be used as a marker of successful integration of an insertion into a transcription unit. A polyA trap cassette may be inserted into a genome as part of a transgenic contruct via transposable-element-mediated transgenesis, or may be inserted directly into a modified endogenous locus via a genome engineering method such as homologous recombination or CRISPR.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005072</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">temj2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005072</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2017-12-13T13:17:30Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005072</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">experimental_tool_descriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005072</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0005072</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005072</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">polyA trap</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:GM</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PMID:10899970</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005073</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The basic component of a promoter trap cassette is a promoterless gene. This gene is not flanked by splice acceptor or donor sites, and thus the gene within a promoter trap can only be expressed if the cassette integrates into the genome within an exon, resulting in a transcriptional fusion. If the promoter trap gene encodes an open reading frame and the insertion is in the correct frame, a translational fusion is produced. Depending on the nature of the gene encoded by the promoter trap cassette, the insertion may directly report the expression pattern of the &apos;trapped&apos; locus (e.g. if the gene encoded by the cassette is a reporter enzyme or fluorescent protein), or it may be used to drive expression of any gene of interest (e.g. if the gene encoded by the cassette is a driver that form part of a binary expression system). A promoter trap cassette may be inserted into a genome as part of a transgenic construct via transposable-element-mediated transgenesis, or may be inserted directly into a modified endogenous locus via a genome engineering method such as homologous recombination or CRISPR. Promoter trap insertions are usually mutagenic, disrupting the locus into which they have inserted, since termination sequences are usually present at the 3&apos; end of the cassette, truncating the endogenous transcript.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005073</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">temj2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005073</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2017-12-13T13:17:30Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005073</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">experimental_tool_descriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005073</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0005073</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005073</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">promoter trap</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:GM</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0090768</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005074</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The basic components of a misexpression element are an enhancer sequence plus a minimal promoter. Upon integration into the genome, this element can activate expression of nearby endogenous loci. Typically, constructs containing misexpression elements are designed to insert at or near the 5&apos; end of a gene, such that expression from the promoter within the misexpression element drives overexpression of the endogenous locus and causes a gain-of-function phenotype. However, if the insertion is within a locus, a truncated product may be produced, while an insertion in the opposite orientation to that of the direction of transcription of the endogenous locus can result in the production of an antisense transcript. If the enhancer present in the misexpression element forms part of a binary expression system, the misexpression pattern of the endogenous gene is controlled by combining the misexpression element insertion with a driver expressed in the desired temporal and spatial pattern.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005074</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">temj2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005074</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2017-12-13T13:17:30Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005074</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">experimental_tool_descriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005074</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0005074</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005074</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">misexpression element</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0231034</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005075</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Sequence that forms all or part of a transgenic locus or modified endogenous locus and which can be used to an modify an organism&apos;s genetic material in a defined manner. Genome engineering can occur on many levels, ranging from targeting of an individual gene with a small modification through to the engineering of chromosomal rearrangements. In addition to the manipulation of endogenous loci, genome engineering can also be used to introduce exogenous material into the genome, and to manipulate such exogenous material already introduced the genome.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005075</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">temj2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005075</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2017-12-13T13:17:30Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005075</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">experimental_tool_descriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005075</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0005075</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005075</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">genome engineering tool</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0231034</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005076</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An enzyme that mediates an exchange reaction between two DNA templates, resulting in integration of DNA from one of the templates into the other. An integrase binds a pair of compatible recognition sites (typically called attP and attB) which each contain a short integration core flanked by imperfect inverted repeats that are not identical. Exchange between the attP/attB pair results in the formation of hybrid sites (typically called attL and attR) that are no longer a substrate of the integrase. Thus the exchange reaction driven by an integrase is undirectional. Mutually exclusive pairs of recognition site have been engineered for some integrases. Integrases can be used to generate many different types of genetic modification, with the outcome being influenced by the relative orientation (direct or inverted), relative location and composition of the two recognition sites. The types of possible modification include deletion of DNA, generation of chromosomal rearrangements, integration of DNA into the genome, and replacement of genetic material with that from a donor plasmid using integrase-mediated cassette exchange (IMCE).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005076</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">temj2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005076</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2017-12-13T13:17:30Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005076</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">experimental_tool_descriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005076</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0005076</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005076</IRI>
+        <IRI>http://purl.obolibrary.org/obo/fbcv#common_tool_use</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005076</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">integrase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:GM</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0231034</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005077</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An enzyme that catalyzes hydrolysis of DNA in a site-specific manner. The DNA cutting stimulates cellular repair mechanisms, which can be exploited to produce genome modifications. For example, repair by homologous recombination in the presence of an exogenous template can be used to introduce targeted changes into the genome.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005077</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">temj2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005077</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2017-12-13T13:17:30Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005077</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">experimental_tool_descriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:GM</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005077</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">site-specific DNA nuclease</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005077</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0005077</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005077</IRI>
+        <IRI>http://purl.obolibrary.org/obo/fbcv#common_tool_use</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005077</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">nuclease</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:GM</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0231034</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005078</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An enzyme that catalyzes hydrolysis of DNA in a site-specific manner, and in which the specificity is determined by a guide RNA that contains sequence complementary to the DNA sequence of interest, rather than being an inherent property of the nuclease itself.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005078</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">temj2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005078</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2017-12-13T13:17:30Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005078</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">experimental_tool_descriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005078</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0005078</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005078</IRI>
+        <IRI>http://purl.obolibrary.org/obo/fbcv#common_tool_use</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005078</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">RNA-guided nuclease</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0231034</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005079</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A recognition site for an integrase, an enzyme that mediates an exchange reaction between two DNA templates, resulting in integration of DNA from one of the templates into the other. An integrase binds a pair of compatible recognition sites (typically called attP and attB) which each contain a short integration core flanked by imperfect inverted repeats that are not identical. Exchange between the attP/attB pair results in the formation of hybrid sites (typically called attL and attR) that are no longer a substrate of the integrase. Thus the exchange reaction driven by an integrase is undirectional. Mutually exclusive pairs of recognition site have been engineered for some integrases. Integrases can be used to generate many different types of genetic modification, with the outcome being influenced by the relative orientation (direct or inverted), relative location and composition of the two recognition sites. The types of possible modification include deletion of DNA, generation of chromosomal rearrangements, integration of DNA into the genome, and replacement of genetic material with that from a donor plasmid using integrase-mediated cassette exchange (IMCE).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005079</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">temj2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005079</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2017-12-13T13:17:30Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005079</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">experimental_tool_descriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005079</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0005079</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005079</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">integrase target site</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:GM</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0231034</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005080</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A recognition site for a site-specific DNA nuclease, an enzyme that catalyzes hydrolysis of DNA in a site-specific manner. The DNA cutting stimulates cellular repair mechanisms, which can be exploited to produce genome modifications. For example, repair by homologous recombination in the presence of an exogenous template can be used to introduce targeted changes into the genome.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005080</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">temj2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005080</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2017-12-13T13:17:30Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005080</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">experimental_tool_descriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005080</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0005080</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005080</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">nuclease target site</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:GM</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005081</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Engineered sequence that forms all or part of a transgenic locus or modified endogenous locus and that has the property of a &apos;regulatory_region&apos; (SO:0005836). &apos;regulatory_region&apos; is defined as &apos;A region of sequence that is involved in the control of a biological process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005081</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">temj2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005081</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2017-12-13T13:17:30Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005081</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">experimental_tool_descriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005081</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0005081</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005081</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">engineered regulatory region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:GM</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005082</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Engineered sequence that forms all or part of a transgenic locus or modified endogenous locus and that has the property of a &apos;transcription_regulatory_region&apos; (SO:0001679). &apos;transcription_regulatory_region&apos; is defined as &apos;A regulatory region that is involved in the control of the process of transcription.&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005082</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">temj2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005082</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2017-12-13T13:17:30Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005082</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">experimental_tool_descriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005082</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0005082</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005082</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">engineered transcription regulatory region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBC:GM</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005083</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which results in the tagged gene product being targeted for degradation by a specific process that is regulated by a small molecule.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005083</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">temj2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005083</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2017-12-22T13:09:10Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005083</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">experimental_tool_descriptor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005083</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FBcv:0005083</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/FBcv_0005083</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">small molecule-dependent gene product degradation tag</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <Annotation>
@@ -47600,6 +48605,11 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">cell_quality</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.obolibrary.org/obo/fbcv#common_tool_use</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Terms to summarize typical use of a gene from one organism that is introduced into another organism primarily for use an experimental tool, rather than to study the function of the gene</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
         <IRI>http://purl.obolibrary.org/obo/fbcv#conditionality</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">FlyBase miscellaneous CV</Literal>
@@ -48155,6 +49165,10 @@ PATO divides qualities between normal (monadic, singly-occurring) qualities and 
     </SubAnnotationPropertyOf>
     <SubAnnotationPropertyOf>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/fbcv#cell_quality"/>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </SubAnnotationPropertyOf>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/fbcv#common_tool_use"/>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </SubAnnotationPropertyOf>
     <SubAnnotationPropertyOf>
