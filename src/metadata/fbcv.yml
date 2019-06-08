@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/fbcv
+
+idspace: FBCV
+base_url: /obo/fbcv
+
+products:
+- fbcv.owl: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/fbcv.owl
+- fbcv.obo: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/fbcv.obo
+
+term_browser: ontobee
+example_terms:
+- fbcv_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/v
+
+- prefix: /tracker/
+  replacement: https://github.com/FlyBase/flybase-controlled-vocabulary/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/FBCV?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/
