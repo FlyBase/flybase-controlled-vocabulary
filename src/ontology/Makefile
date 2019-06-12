@@ -12,9 +12,10 @@
 URIBASE=                    http://purl.obolibrary.org/obo
 ONT=                        fbcv
 ONTBASE=                    $(URIBASE)/$(ONT)
-EDIT_FORMAT=                owl
+EDIT_FORMAT=                obo
 SRC =                       $(ONT)-edit.$(EDIT_FORMAT)
-ROBOT=                      robot
+CATALOG=                    catalog-v001.xml
+ROBOT=                      robot --catalog $(CATALOG)
 RELEASEDIR=                 ../..
 PATTERNDIR=                 ../patterns
 REPORTDIR=                 reports
@@ -58,6 +59,8 @@ all_main: $(MAIN_FILES)
 IMPORTS =  ro chebi
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
+MIRROR_LOGICAL = $(patsubst %, tmp/%_logical.owl, $(IMPORTS))
+TERM_LIST_FILES = $(patsubst %, imports/%_terms.txt, $(IMPORTS))
 IMPORT_FILES = $(foreach n,$(IMPORT_ROOTS), $(foreach f,$(FORMATS), $(n).$(f)))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
 
@@ -179,7 +182,7 @@ ANNOTATE_VERSION_IRI = annotate -V $(ONTBASE)/releases/`date +%Y-%m-%d`/$@.owl
 # after that we annotate the ontology with the release versionInfo
 
 
-$(ONTOLOGYTERMS): $(SRC) all_imports
+$(ONTOLOGYTERMS): $(SRC) $(OTHER_SRC)
 	$(ROBOT) query --use-graphs true -f csv -i $< --query ../sparql/fbcv_terms.sparql $@
 
  
@@ -211,6 +214,7 @@ $(ONT)-non-classified.owl: $(SRC) $(OTHER_SRC)
 		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@
 # foo-simple: (edit->reason,relax,reduce,drop imports, drop every axiom which contains an entity outside the "namespaces of interest")
 # drop every axiom: filter --term-file keep_terms.txt --trim true
+#		remove --select imports --trim false \
 
 simple_seed.txt: $(SRC) $(ONTOLOGYTERMS)
 	$(ROBOT) query --use-graphs false -f csv -i $< --query ../sparql/simple-seed.sparql $@.tmp &&\
@@ -234,12 +238,33 @@ $(ONT)-simple.owl: $(SRC) simple_seed.txt $(OTHER_SRC) $(ONTOLOGYTERMS)
 # Most ontologies are modularly constructed using portions of other ontologies
 # These live in the imports/ folder
 
-# seed.txt contains all referenced entities
+tmp/%_logical.owl: mirror/%.owl
+	@if [ $(IMP) = true ]; then $(ROBOT) remove -i $< --term rdfs:label --select complement --select annotation-properties -o $@ --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+.PRECIOUS: tmp/%_logical.owl
+
+tmp/logical_dependencies_merged.owl: $(MIRROR_LOGICAL)
+	$(ROBOT) merge $(addprefix -i , $(MIRROR_LOGICAL)) \
+	annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@
+
+tmp/log_mod_seed.txt: tmp/src_seed.txt $(TERM_LIST_FILES)
+	cat $^ | sort | uniq >  $@
+
+tmp/logical_dependencies_merged_module.owl: tmp/logical_dependencies_merged.owl tmp/log_mod_seed.txt
+	@if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T tmp/log_mod_seed.txt --force true --method BOT \
+		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+tmp/log_seed.txt: tmp/logical_dependencies_merged_module.owl
+	@if [ $(IMP) = true ]; then $(ROBOT) query --use-graphs false -f csv -i $< --query ../sparql/terms.sparql $@.tmp &&\
+	cat $@.tmp | sort | uniq >  $@; fi
+
+# The seed of the source file. 
+
+tmp/src_seed.txt: $(SRC)
+	@if [ $(IMP) = true ]; then $(ROBOT) query --use-graphs false -f csv -i $< --query ../sparql/terms.sparql $@; fi
 
 
-seed.txt: $(SRC)
-	@if [ $(IMP) = true ]; then $(ROBOT) query --use-graphs true -f csv -i $< --query ../sparql/terms.sparql $@; fi
-
+seed.txt: tmp/src_seed.txt tmp/log_seed.txt
+	cat $^ | sort | uniq >  $@
 
 # Generate terms.txt for each import.  (Assume OBO-style Possibly hacky step?)
 # Should be able to drop this if robot can just take a big messy list of terms as input.
@@ -251,7 +276,7 @@ imports/%_terms_combined.txt: seed.txt imports/%_terms.txt
 #
 # This pattern uses ROBOT to generate an import module
 imports/%_import.owl: mirror/%.owl imports/%_terms_combined.txt
-	@if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/$*_terms_combined.txt --method BOT \
+	@if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/$*_terms_combined.txt --force true --method BOT \
 		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 .PRECIOUS: imports/%_import.owl
 
