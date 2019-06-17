@@ -1,0 +1,2107 @@
+format-version: 1.2
+data-version: dpo/releases/2019-06-10/dpo-simple.owl
+default-namespace: FlyBase_miscellaneous_CV
+ontology: dpo/dpo-simple
+
+[Term]
+id: BFO:0000027
+name: object aggregate
+property_value: BFO:0000179 "object-aggregate" xsd:string
+property_value: BFO:0000180 "ObjectAggregate" xsd:string
+property_value: IAO:0000112 "a collection of cells in a blood biobank." xsd:string
+property_value: IAO:0000112 "a swarm of bees is an aggregate of members who are linked together through natural bonds" xsd:string
+property_value: IAO:0000112 "a symphony orchestra" xsd:string
+property_value: IAO:0000112 "an organization is an aggregate whose member parts have roles of specific types (for example in a jazz band, a chess club, a football team)" xsd:string
+property_value: IAO:0000112 "defined by fiat: the aggregate of members of an organization" xsd:string
+property_value: IAO:0000112 "defined through physical attachment: the aggregate of atoms in a lump of granite" xsd:string
+property_value: IAO:0000112 "defined through physical containment: the aggregate of molecules of carbon dioxide in a sealed container" xsd:string
+property_value: IAO:0000112 "defined via attributive delimitations such as: the patients in this hospital" xsd:string
+property_value: IAO:0000112 "the aggregate of bearings in a constant velocity axle joint" xsd:string
+property_value: IAO:0000112 "the aggregate of blood cells in your body" xsd:string
+property_value: IAO:0000112 "the nitrogen atoms in the atmosphere" xsd:string
+property_value: IAO:0000112 "the restaurants in Palo Alto" xsd:string
+property_value: IAO:0000112 "your collection of Meissen ceramic plates." xsd:string
+property_value: IAO:0000116 "An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000301"}
+property_value: IAO:0000116 "An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000011"}
+property_value: IAO:0000116 "BFO 2 Reference: object aggregates may gain and lose parts while remaining numerically identical (one and the same individual) over time. This holds both for aggregates whose membership is determined naturally (the aggregate of cells in your body) and aggregates determined by fiat (a baseball team, a congressional committee)." xsd:string
+property_value: IAO:0000119 "ISBN:978-3-938793-98-5pp124-158#Thomas Bittner and Barry Smith, 'A Theory of Granular Partitions', in K. Munn and B. Smith (eds.), Applied Ontology: An Introduction, Frankfurt/Lancaster: ontos, 2008, 125-158." xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000300"}
+property_value: IAO:0000600 "b is an object aggregate means: b is a material entity consisting exactly of a plurality of objects as member_parts at all times at which b exists. (axiom label in BFO2 Reference: [025-004])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/025-004"}
+property_value: IAO:0000602 "(forall (x) (if (ObjectAggregate x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y z) (and (Object y) (Object z) (memberPartOfAt y x t) (memberPartOfAt z x t) (not (= y z)))))) (not (exists (w t_1) (and (memberPartOfAt w x t_1) (not (Object w)))))))) // axiom label in BFO2 CLIF: [025-004] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/025-004"}
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+
+[Term]
+id: FBcv:0000002
+name: thermotaxis behavior defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in thermotaxis (GO:0043052). 'thermotaxis' is defined as: '$sub_GO:0043052'" [FBC:DOS]
+synonym: "thermotaxis behaviour defective" EXACT []
+is_a: FBcv:0000683 ! temperature response defective
+
+[Term]
+id: FBcv:0000006
+name: male semi-fertile
+namespace: phenotypic_class
+is_a: FBcv:0000375 ! semi-fertile
+is_a: FBcv:0000376 ! male fertile
+is_a: PATO:0001761 ! male semi-fertile
+
+[Term]
+id: FBcv:0000007
+name: female semi-fertile
+namespace: phenotypic_class
+is_a: FBcv:0000375 ! semi-fertile
+is_a: FBcv:0000377 ! female fertile
+is_a: PATO:0001760 ! female semi-fertile
+
+[Term]
+id: FBcv:0000008
+name: modifier of variegation
+namespace: phenotypic_class
+def: "Genotype g1 is a modifier of variegation if, and only if, some genotype g2 has a variegated phenotype and the degree of variegation caused by g1g2 is significantly different from that caused by g2 alone." [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+synonym: "variegation" RELATED [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000316
+name: homeotic
+namespace: phenotypic_class
+def: "Phenotype that is the partial or full transformation of one or more segments (FBbt:00000003) or segmental appendages from one identity to another. For example, in antennapedia an antenna is partially or fully transformed into a leg." [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000324
+name: dorsal/ventral axis specification defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in dorsal/ventral axis specification (GO:0009950). 'dorsal/ventral axis specification' is defined as: '$sub_GO:0009950'" [FBC:DOS]
+synonym: "dorsal-ventral polarity" RELATED [FBC:DOS]
+is_a: FBcv:0000686 ! axis specification defective
+
+[Term]
+id: FBcv:0000325
+name: neurogenic phenotype
+namespace: phenotypic_class
+def: "A phenotype that is an expansion of the developing embryonic nervous system at the expense of developing ventral epidermis." [FlyBase:FBrf0040185]
+comment: Typically this is caused by and expansion of the population of neuroblasts at the expense of prospective epidermis, both of which originate in the ventral ectoderm.
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+created_by: djs93
+creation_date: 2011-09-13T02:42:10Z
+
+[Term]
+id: FBcv:0000347
+name: phenotypic class
+namespace: phenotypic_class
+is_a: PATO:0000001 ! quality
+
+[Term]
+id: FBcv:0000348
+name: wild-type
+namespace: phenotypic_class
+def: "The canonical phenotype of a wild-type Drosophilid." [FBC:DOS]
+is_a: FBcv:0000347 ! phenotypic class
+disjoint_from: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000349
+name: viable
+namespace: phenotypic_class
+def: "A phenotype that is survival to mature adulthood, where mature is defined as after adult stage A3 (FBdv:00006012)." [FBC:DOS]
+comment: Note, this term should not be used with the qualifier 'partially'. Use semi-viable or semi-lethal instead.
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0000347 ! phenotypic class
+is_a: PATO:0000719 ! viable
+
+[Term]
+id: FBcv:0000350
+name: partially lethal - majority live
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of some significant proportion of animals in that population, but less that half, prior to becoming a mature adult, where mature is defined as after adult stage A3 (FBdv:00006012)." [FBC:DOS]
+synonym: "semi-viable" EXACT []
+is_a: FBcv:0000349 ! viable
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000351
+name: lethal
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of all animals in that population at some stage or stages prior to becoming a mature adult, where mature is defined as after adult stage A3 (FBdv:00006012)." [FBC:DOS, FBC:KM]
+comment: Note on usage: lethal is appropriate in cases where escaper adults are very rare. The lethal phase prior to becoming a mature adult may be further specified using children terms which specify stage.
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000352
+name: partially lethal - majority die
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of a majority of animals in that population prior to becoming a mature adult, where mature is defined as after adult stage A3 (FBdv:00006012)." [FBC:DOS, FBC:KM, FBC:NB]
+comment: Stages during which there is significant death prior to mature adulthood can be indicated using one or more stage qualifiers.
+synonym: "semi-lethal" EXACT []
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000353
+name: cell lethal
+namespace: phenotypic_class
+def: "A phenotype that is a failure of mutant cells to survive." [FBC:DOS]
+comment: Typically, this phenotype is assayed in clones of cells.
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+is_a: PATO:0000718 ! lethal (sensu genetics)
+
+[Term]
+id: FBcv:0000354
+name: visible
+namespace: phenotypic_class
+def: "A post-embryonic, macroscopic, anatomical phenotype." [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000355
+name: eye color defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in eye color compared to wild-type." [FBC:DOS]
+synonym: "eye colour defective" EXACT []
+is_a: FBcv:0000354 ! visible
+is_a: PATO:0000014 ! color
+
+[Term]
+id: FBcv:0000356
+name: body color defective
+namespace: phenotypic_class
+def: "A phenotype that is a defect in body color compared to wild-type." [FBC:DOS]
+synonym: "body colour defective" EXACT []
+is_a: FBcv:0000354 ! visible
+is_a: PATO:0000014 ! color
+
+[Term]
+id: FBcv:0000357
+name: size defective
+namespace: phenotypic_class
+def: "A phenotype that is a defect in the size of the whole body or some body part compared to wild-type." [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+is_a: PATO:0000117 ! size
+
+[Term]
+id: FBcv:0000358
+name: small body
+namespace: phenotypic_class
+def: "Phenotype that is a decrease in body size compared to identically raised wild-type controls." [FBC:DOS]
+is_a: FBcv:0000665 ! body size defective
+is_a: PATO:0000587 ! decreased size
+
+[Term]
+id: FBcv:0000359
+name: decreased cell number
+namespace: phenotypic_class
+def: "Phenotype that is a decrease in the number of cells in a whole animal or in some specific organ, tissue or clone of cells compared to wild-type. This phenotype is not necessarily accompanied by decreased growth - there may be fewer cells in an otherwise normal volume of tissue." [FBC:DOS]
+synonym: "reduced cell number" EXACT []
+is_a: FBcv:0000709 ! cell number defective
+is_a: PATO:0002001 ! has fewer parts of type
+
+[Term]
+id: FBcv:0000360
+name: decreased cell size
+namespace: phenotypic_class
+def: "Phenotype that is a decrease in the size of cells in a whole animal or in some specific organ, tissue or clone of cells compared to wild-type. This phenotype is not necessarily accompanied by decreased growth of a tissue - there may be more cells in an otherwise normal volume of tissue." [FBC:DOS]
+comment: Note that defects in cell size are not necessarily the result of defects in cell growth. A change in the rate of cell division in the absence of any change in cell growth rate can result in smaller or larger cells.
+synonym: "reduced cell size" EXACT []
+is_a: FBcv:0000428 ! cell size defective
+is_a: PATO:0000587 ! decreased size
+
+[Term]
+id: FBcv:0000361
+name: large body
+namespace: phenotypic_class
+def: "Phenotype that is an increase in body size compared to identically raised wild-type controls." [FBC:DOS]
+is_a: FBcv:0000665 ! body size defective
+is_a: PATO:0000586 ! increased size
+
+[Term]
+id: FBcv:0000362
+name: increased cell number
+namespace: phenotypic_class
+def: "Phenotype that is an increase in the number of cells in a whole animal or in some specific organ, tissue or clone of cells compared to wild-type." [FBC:DOS]
+comment: This phenotype is not necessarily accompanied by overgrowth of a tissue - there may be more cells in an otherwise normal volume of tissue. It is not necessarily due to an increase in cell growth -it may be the result of an increase in the division rate at normal growth rates.  It may not even be due to an increase in the cell division rate - a reduced rate of cell death while the division rate is normal could also achieve it.
+is_a: FBcv:0000709 ! cell number defective
+is_a: PATO:0002002 ! has extra parts of type
+
+[Term]
+id: FBcv:0000363
+name: increased cell size
+namespace: phenotypic_class
+def: "Phenotype that is an increase in the size of cells compared to wild-type." [FBC:DOS]
+comment: May be due to an increase in the cell growth rate or to a reduced rate of cell division along with a normal rate of cell growth.
+is_a: FBcv:0000428 ! cell size defective
+is_a: PATO:0000586 ! increased size
+
+[Term]
+id: FBcv:0000364
+name: sterile
+namespace: phenotypic_class
+def: "A phenotype that is the inability to produce a zygote." [FBC:DOS]
+comment: The cause of sterility may be physical or behavioral. Note, this term should not be used with the qualifier 'partially'. Use semi-sterile or semi-fertile instead.
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+is_a: PATO:0000956 ! sterile
+
+[Term]
+id: FBcv:0000365
+name: semi-sterile
+namespace: phenotypic_class
+def: "A phenotype that is a reduction in the proportion of fertilized eggs produced to below 50% of wild-type." [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000366
+name: female sterile
+namespace: phenotypic_class
+def: "A phenotype that is the inability of females to mate and produce fertilized offspring." [FBC:DOS]
+comment: The cause of sterility may be physical or behavioral. Note: this term should not be used with the qualifier 'partially' - use semi-sterile or semi-fertile instead.
+is_a: FBcv:0000364 ! sterile
+is_a: PATO:0000892 ! female sterile
+
+[Term]
+id: FBcv:0000367
+name: female semi-sterile
+namespace: phenotypic_class
+def: "A phenotype that is a reduction in the proportion of fertilized eggs produced by females to below 50% of wild-type." [FBC:DOS]
+is_a: FBcv:0000365 ! semi-sterile
+is_a: PATO:0001763 ! female semi-sterile
+
+[Term]
+id: FBcv:0000368
+name: female sterile germline-dependent
+namespace: phenotypic_class
+def: "A phenotype of female sterility due to defects in the female germline." [FBC:DOS]
+synonym: "female sterile germ-line-dependent" EXACT []
+is_a: FBcv:0000366 ! female sterile
+
+[Term]
+id: FBcv:0000369
+name: female sterile soma-dependent
+namespace: phenotypic_class
+def: "A phenotype of female sterility due to defects in somatic cells of the ovary (FBbt:00006030), or of the products of these cells (such as eggshell)." [FBC:DOS]
+is_a: FBcv:0000366 ! female sterile
+
+[Term]
+id: FBcv:0000370
+name: male sterile
+namespace: phenotypic_class
+def: "A phenotype that is the inability of males to mate and produce fertilized offspring." [FBC:DOS]
+comment: The cause of sterility may be physical or behavioral. Note - this term should not be used with the qualifier 'partially' - use semi-sterile or semi-fertile instead.
+is_a: FBcv:0000364 ! sterile
+
+[Term]
+id: FBcv:0000371
+name: male semi-sterile
+namespace: phenotypic_class
+def: "A phenotype that is a reduction in the proportion of fertilized eggs produced by males to below 50% of wild-type." [FBC:DOS]
+is_a: FBcv:0000365 ! semi-sterile
+is_a: PATO:0001762 ! male semi-sterile
+
+[Term]
+id: FBcv:0000372
+name: male sterile germline-dependent
+namespace: phenotypic_class
+def: "A phenotype of male sterility due to defects in the male germline." [FBC:DOS]
+synonym: "male sterile germ-line-dependent" EXACT []
+is_a: FBcv:0000370 ! male sterile
+
+[Term]
+id: FBcv:0000373
+name: male sterile soma-dependent
+namespace: phenotypic_class
+def: "A phenotype of male sterility due to defects in somatic cells of the testis (FBbt:00006031) or of the products of these cells." [FBC:DOS]
+is_a: FBcv:0000370 ! male sterile
+
+[Term]
+id: FBcv:0000374
+name: fertile
+namespace: phenotypic_class
+def: "A phenotype that is the ability to mate and as a result produce fertilized eggs." [FBC:DOS]
+comment: Note, this term should not be used with the qualifier 'partially'. Use semi-sterile or semi-fertile instead.
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0000347 ! phenotypic class
+is_a: PATO:0000955 ! fertile
+
+[Term]
+id: FBcv:0000375
+name: semi-fertile
+namespace: phenotypic_class
+def: "Phenotype that is a reduction in the proportion of fertilized eggs produced to, but only to > 50% of wild-type." [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0000374 ! fertile
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000376
+name: male fertile
+namespace: phenotypic_class
+def: "A phenotype that is the ability of males to mate and as a result produce fertilized eggs." [FBC:DOS]
+comment: Note - this term should not be used with the qualifier 'partially' - use male semi-sterile or male semi-fertile instead.
+is_a: FBcv:0000374 ! fertile
+is_a: PATO:0000891 ! male fertile
+
+[Term]
+id: FBcv:0000377
+name: female fertile
+namespace: phenotypic_class
+def: "A phenotype that is the ability of females to mate and as a result produce fertilized eggs." [FBC:DOS]
+comment: Note - this term should not be used with the qualifier 'partially' - use female semi-sterile or female semi-fertile instead.
+is_a: FBcv:0000374 ! fertile
+is_a: PATO:0000888 ! female fertile
+
+[Term]
+id: FBcv:0000378
+name: grandchildless
+namespace: phenotypic_class
+def: "A phenotype in which all offspring are sterile. Typically, this is due to maternal effect sterility resulting from defects in pole cell development." [ISBN:978-0-87969-321-3]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+is_a: PATO:0001862 ! lack of fertility in offspring
+
+[Term]
+id: FBcv:0000379
+name: enhancer of variegation
+namespace: phenotypic_class
+def: "Genotype g1 is an enhancer of variegation if, and only if, some genotype g2 has a variegated phenotype and the degree of variegation caused by g1g2 is greater than that caused by g2 alone." [FBC:DOS]
+comment: Typically, g2 is a chromosomal aberration or an insertion.
+is_a: FBcv:0000008 ! modifier of variegation
+
+[Term]
+id: FBcv:0000380
+name: non-enhancer of variegation
+namespace: phenotypic_class
+def: "Genotype g1 is a non-enhancer of variegation of the phenotype due to genotype g2 if, and only if, g2 has a variegated phenotype and the degree of variegation caused by g1g2 is not greater than that caused by g2 alone." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000381
+name: suppressor of variegation
+namespace: phenotypic_class
+def: "Genotype g1 is a suppressor of variegation if, and only if, some genotype g2 has a variegated phenotype and the degree of variegation caused by g1g2 is less than that caused by to g2 alone." [FBC:DOS]
+comment: Typically, g2 is a chromosomal aberration or an insertion.
+is_a: FBcv:0000008 ! modifier of variegation
+
+[Term]
+id: FBcv:0000382
+name: non-suppressor of variegation
+namespace: phenotypic_class
+def: "Genotype g1 is a non-suppressor of variegation of the phenotype due to genotype g2 if, and only if, g2 has a variegated phenotype and the degree of variegation caused by g1g2 is not less than that caused by g2 alone." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000383
+name: auxotroph
+namespace: phenotypic_class
+def: "A phenotype that is the inability to synthesize some organic compound that can be synthesized by wild-type animals, and that is required for normal growth and/or development." [http://en.wikipedia.org/wiki/Auxotrophic]
+is_a: FBcv:0001347 ! phenotype
+is_a: PATO:0000422 ! auxotrophic
+
+[Term]
+id: FBcv:0000384
+name: aging defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in aging (GO:0007568). 'aging' is defined as: '$sub_GO:0007568'" [GOC:PO_curators]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000385
+name: short lived
+namespace: phenotypic_class
+def: "Phenotype that is a shorter adult life-span than wild-type." [FBC:DOS]
+synonym: "increased adult mortality" EXACT []
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000386
+name: long lived
+namespace: phenotypic_class
+def: "Phenotype that is a longer adult life-span than wild-type." [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000387
+name: behavior defective
+namespace: phenotypic_class
+subset: fbcvsubset_mgiribbons
+synonym: "behavioral" RELATED []
+synonym: "behaviour defective" EXACT []
+synonym: "behavioural" EXACT []
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000388
+name: gravitaxis defective
+namespace: phenotypic_class
+def: "Phenotype that is a change in the strong tendency, seen in wild-type Drosophila melanogaster, to climb - a behavior otherwise known as negative gravitaxis (GO:0048060 ; movement away from the source of gravity)." [FBC:DOS]
+comment: Note, this term should not be used when flies have climbing defects purely as a consequence of locomotion defects, use 'locomotor behavior defective' instead.
+subset: fbcvsubset_mgiribbons
+synonym: "geotaxis behaviour defective" RELATED []
+synonym: "gravitaxis behavior defective" RELATED []
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000389
+name: paralytic
+namespace: phenotypic_class
+def: "Phenotype that is a disposition to paralysis under conditions that do not cause paralysis in a wild-type animal.  Paralysis is defined as an inability to exhibit `multicellular organismal movement` (GO:0050879)" [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+is_a: PATO:0001558 ! lacking processual parts
+
+[Term]
+id: FBcv:0000390
+name: hypoactive
+namespace: phenotypic_class
+def: "A phenotype consisting of decreased frequency of `multicellular organismal movement` (GO:0050879) compared to wild-type." [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+is_a: PATO:0000381 ! decreased frequency
+
+[Term]
+id: FBcv:0000391
+name: bang sensitive
+namespace: phenotypic_class
+def: "A phenotype exhibited following mechanical shock and consisting of a brief period of intense, uncoordinated motor activity (legs and wings flailing, abdomen coiling) followed by a prolonged period of paralysis." [FlyBase:FBrf0022877]
+synonym: "easily shocked" RELATED [FlyBase:FBrf0022877]
+is_a: FBcv:0000389 ! paralytic
+
+[Term]
+id: FBcv:0000392
+name: hyperactive
+namespace: phenotypic_class
+def: "A phenotype consisting of increased frequency of `multicellular organismal movement` (GO:0050879) compared to wild-type." [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+is_a: PATO:0000380 ! increased frequency
+
+[Term]
+id: FBcv:0000393
+name: pain response defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in response to pain (GO:0048265). 'response to pain' is defined as: '$sub_GO:0048265'" [FBC:DOS]
+is_a: FBcv:0000408 ! stress response defective
+
+[Term]
+id: FBcv:0000394
+name: circadian rhythm defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in circadian rhythm (GO:0007623). 'circadian rhythm' is defined as: '$sub_GO:0007623'" [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000395
+name: locomotor rhythm defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in locomotor rhythm (GO:0045475). 'locomotor rhythm' is defined as: '$sub_GO:0045475'" [FBC:DOS]
+is_a: FBcv:0000414 ! locomotor behavior defective
+is_a: FBcv:0000679 ! circadian behavior defective
+
+[Term]
+id: FBcv:0000396
+name: eclosion rhythm defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in eclosion rhythm (GO:0008062). 'eclosion rhythm' is defined as: '$sub_GO:0008062'" [FBC:DOS]
+is_a: FBcv:0000670 ! eclosion defective
+is_a: FBcv:0000679 ! circadian behavior defective
+
+[Term]
+id: FBcv:0000397
+name: learning defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in learning (GO:0007612). 'learning' is defined as: '$sub_GO:0007612'" [FBC:DOS]
+is_a: FBcv:0000387 ! behavior defective
+
+[Term]
+id: FBcv:0000398
+name: memory defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in memory (GO:0007613). 'memory' is defined as: '$sub_GO:0007613'" [FBC:DOS]
+is_a: FBcv:0000387 ! behavior defective
+
+[Term]
+id: FBcv:0000399
+name: courtship behavior defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in courtship behavior (GO:0007619). 'courtship behavior' is defined as: '$sub_GO:0007619'" [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000400
+name: mating defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in mating (GO:0007618). 'mating' is defined as: '$sub_GO:0007618'" [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000401
+name: mating rhythm defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in circadian mating behavior (GO:0035648). 'circadian mating behavior' is defined as: '$sub_GO:0035648'" [FBC:DOS]
+is_a: FBcv:0000400 ! mating defective
+is_a: FBcv:0000679 ! circadian behavior defective
+is_a: FBcv:0000721 ! mating behavior defective
+
+[Term]
+id: FBcv:0000402
+name: song defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in male courtship behavior, veined wing generated song production (GO:0045433). This is defined as '$sub_GO:0045433'" [FBC:DOS]
+synonym: "singing defective" EXACT [FBC:SM]
+synonym: "song production defective" EXACT [FBC:SM]
+is_a: FBcv:0000387 ! behavior defective
+is_a: FBcv:0000399 ! courtship behavior defective
+is_a: FBcv:0000400 ! mating defective
+is_a: FBcv:0000721 ! mating behavior defective
+
+[Term]
+id: FBcv:0000403
+name: chemosensitive behavior defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in chemosensory behavior (GO:0007635). 'chemosensory behavior' is defined as: '$sub_GO:0007635'.'" [FBC:DOS]
+synonym: "chemosensitive behaviour defective" EXACT []
+is_a: FBcv:0000387 ! behavior defective
+
+[Term]
+id: FBcv:0000404
+name: smell perception defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in sensory perception of smell (GO:0007608). 'sensory perception of smell' is defined as: '$sub_GO:0007608'" [FBC:DOS]
+synonym: "olfaction defective" EXACT []
+is_a: FBcv:0000681 ! sensory perception defective
+
+[Term]
+id: FBcv:0000405
+name: taste perception defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in sensory perception of taste (GO:0050909). 'sensory perception of taste' is defined as: '$sub_GO:0050909'" [FBC:DOS]
+synonym: "gustation defective" EXACT []
+synonym: "taste defective" EXACT []
+is_a: FBcv:0000681 ! sensory perception defective
+
+[Term]
+id: FBcv:0000406
+name: tarsal response defective
+namespace: phenotypic_class
+def: "Phenotype that is a failure to exhibit proboscis extension reflex in response to a sugar stimulus via taste sensilla on the tarsus." [FBC:DOS]
+is_a: FBcv:0000680 ! proboscis extension reflex defective
+
+[Term]
+id: FBcv:0000407
+name: auditory perception defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in sensory perception of sound (GO:0007605). 'sensory perception of sound' is defined as: '$sub_GO:0007605'" [FBC:DOS]
+synonym: "auditory system defective" RELATED []
+is_a: FBcv:0000681 ! sensory perception defective
+
+[Term]
+id: FBcv:0000408
+name: stress response defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in response to stress (GO:0006950). 'response to stress' is defined as: '$sub_GO:0006950'" [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+synonym: "environmental stress response defective" NARROW []
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000409
+name: osmotic stress response defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in response to osmotic stress (GO:0006970). 'response to osmotic stress' is defined as: '$sub_GO:0006970'" [FBC:DOS]
+is_a: FBcv:0000408 ! stress response defective
+
+[Term]
+id: FBcv:0000410
+name: heat stress response defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in response to heat (GO:0009408). 'response to heat' is defined as: '$sub_GO:0009408'" [FBC:DOS]
+is_a: FBcv:0000408 ! stress response defective
+is_a: FBcv:0000683 ! temperature response defective
+
+[Term]
+id: FBcv:0000411
+name: visual behavior defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in visual behavior (GO:0007632). 'visual behavior' is defined as: '$sub_GO:0007632'" [FBC:DOS]
+synonym: "visual behaviour defective" EXACT []
+is_a: FBcv:0000387 ! behavior defective
+
+[Term]
+id: FBcv:0000412
+name: optomotor response defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in optomotor response: a motor response during flight or walking that serves to stabilize both image formation on the retina and locomotor course." [FBC:DOS]
+synonym: "optomotor behaviour defective" EXACT []
+is_a: FBcv:0000411 ! visual behavior defective
+
+[Term]
+id: FBcv:0000413
+name: phototaxis defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in phototaxis (GO:0042331). 'phototaxis' is defined as: '$sub_GO:0042331'" [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+synonym: "phototaxis behaviour defective" RELATED []
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000414
+name: locomotor behavior defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in locomotory behavior (GO:0007626). 'locomotory behavior' is defined as: '$sub_GO:0007626'" [FBC:DOS]
+synonym: "locomotor behaviour defective" EXACT []
+is_a: FBcv:0000387 ! behavior defective
+
+[Term]
+id: FBcv:0000415
+name: jumping defective
+namespace: phenotypic_class
+def: "Phenotype that is a reduced ability to jump or a reduced jump response. This may be due to neurological or muscular defects." [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000416
+name: uncoordinated
+namespace: phenotypic_class
+def: "Phenotype that is a lack of normal co-ordination in locomotor activity." [FBC:DOS]
+is_a: FBcv:0000414 ! locomotor behavior defective
+is_a: PATO:0000770 ! uncoordinated
+
+[Term]
+id: FBcv:0000417
+name: flight defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in flight (GO:0060361). 'flight' is defined as: '$sub_GO:0060361'" [FBC:DOS]
+comment: This term is agnostic as to the causes of defects in flight. An animal's flight may be defective for mechanical, behavioral or sensory reasons.
+subset: fbcvsubset_mgiribbons
+synonym: "flight behaviour defective" NARROW []
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000418
+name: flightless
+namespace: phenotypic_class
+def: "Phenotype that is the absence of flight (GO:0060361). 'flight' is defined as: '$sub_GO:0060361'" [FBC:DOS]
+comment: This term is agnostic as to the causes of flightlessness. An animal may be flightless for mechanical or behavioral reasons.
+is_a: FBcv:0000417 ! flight defective
+
+[Term]
+id: FBcv:0000419
+name: feeding behavior defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in feeding behavior (GO:0007631). 'feeding behavior' is defined as: '$sub_GO:0007631'" [FBC:DOS]
+synonym: "feeding behaviour defective" EXACT []
+is_a: FBcv:0000387 ! behavior defective
+
+[Term]
+id: FBcv:0000420
+name: grooming behavior defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in grooming behavior (GO:0007625). 'grooming behavior' is defined as: '$sub_GO:0007625'" [FBC:DOS]
+synonym: "grooming behaviour defective" EXACT []
+is_a: FBcv:0000387 ! behavior defective
+
+[Term]
+id: FBcv:0000421
+name: touch response defective
+namespace: phenotypic_class
+def: "Phenotype that is reduction in or loss of a stereotypical behavioral response to touch." [FlyBase:FBrf0073546]
+comment: This phenotype is commonly assayed by scoring larval avoidance responses following stroking of the thoracic segments (see Kernan et al., 1994).  On its own, this is not sufficient evidence for a defect in sensory perception of touch, as motor defects can also cause this phenotype.
+synonym: "touch sensitivity defective" EXACT []
+is_a: FBcv:0000387 ! behavior defective
+
+[Term]
+id: FBcv:0000422
+name: photoperiod response variant
+namespace: phenotypic_class
+def: "Phenotype that is a defect in entrainment of circadian clock by photoperiod (GO:0043153), which is defined as: '$sub_GO:0043153'" [FBC:DOS]
+is_a: FBcv:0000387 ! behavior defective
+
+[Term]
+id: FBcv:0000423
+name: DNA repair defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in DNA repair (GO:0006281). 'DNA repair' is defined as: '$sub_GO:0006281'" [FBC:DOS]
+is_a: FBcv:0000408 ! stress response defective
+
+[Term]
+id: FBcv:0000424
+name: cell death defective
+namespace: phenotypic_class
+def: "Phenotype that is a change in the amount of cell death in a whole animal or in some specific organ tissue or clone of cells compared to wild-type. This may be due to effects on the regulation of cell death (GO:0010941) or in cell death (GO:0008219) pathways themselves." [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+synonym: "apoptosis defective" NARROW []
+synonym: "pcd defective" NARROW []
+synonym: "programmed cell death defective" NARROW []
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000425
+name: increased cell death
+namespace: phenotypic_class
+def: "Phenotype that is an increase in the amount of cell death in a whole animal or in some specific organ tissue or clone of cells compared to wild-type." [FBC:DOS]
+synonym: "pcd increase" NARROW []
+synonym: "programmed cell death increase" NARROW []
+is_a: FBcv:0000424 ! cell death defective
+
+[Term]
+id: FBcv:0000426
+name: decreased cell death
+namespace: phenotypic_class
+def: "Phenotype that is a decrease in the amount of cell death in a whole animal or in some specific organ tissue or clone of cells compared to wild-type." [FBC:DOS]
+synonym: "pcd decrease" NARROW []
+synonym: "programmed cell death decrease" NARROW []
+is_a: FBcv:0000424 ! cell death defective
+
+[Term]
+id: FBcv:0000427
+name: cell growth defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in cell growth (GO:0016049). 'cell growth' is defined as: '$sub_GO:0016049'" [FBC:DOS]
+comment: Note that defects in cell size are not necessarily the result of defects in cell growth. A change in the rate of cell division in the absence of any change in cell growth rate can result in smaller or larger cells.
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000428
+name: cell size defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in the size of cells in a whole animal or in some specific organ, tissue or clone of cells compared to wild-type." [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+is_a: PATO:0000117 ! size
+
+[Term]
+id: FBcv:0000429
+name: cell shape defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in the shape (PATO:0000052) of some cell compared to wild-type." [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+is_a: PATO:0000052 ! shape
+
+[Term]
+id: FBcv:0000430
+name: cell polarity defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in the asymmetric distribution of components within a cell. For example an epithelial cell is 'cell polarity defective' if it lacks the normal asymmetric distribution of proteins or cell components such as junctions or villi along its apical-basal axis." [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+is_a: PATO:0001769 ! positional polarity
+
+[Term]
+id: FBcv:0000431
+name: meiotic cell cycle defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in meiotic cell cycle (GO:0051321). 'meiotic cell cycle' is defined as: '$sub_GO:0051321'" [FBC:DOS]
+synonym: "meiotic" RELATED []
+is_a: FBcv:0000671 ! cell cycle defective
+
+[Term]
+id: FBcv:0000432
+name: mitotic cell cycle defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in mitotic cell cycle (GO:0000278). 'mitotic cell cycle' is defined as: '$sub_GO:0000278'" [FBC:DOS]
+synonym: "mitotic" RELATED []
+is_a: FBcv:0000671 ! cell cycle defective
+
+[Term]
+id: FBcv:0000433
+name: cytokinesis defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in cytokinesis (GO:0000910). 'cytokinesis' is defined as: '$sub_GO:0000910'" [FBC:DOS]
+is_a: FBcv:0000671 ! cell cycle defective
+
+[Term]
+id: FBcv:0000434
+name: neurophysiology defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in the electrophysiological properties of some class of neurons, muscles or anatomical structure of the nervous system. Examples of these phenotypes at the neuron class level include defects in spontaneous or evoked excitatory junction potential. Examples at a more gross anatomical level include abnormal retinal electrophysiology (e.g.- measured by an electroretinogram)." [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000435
+name: neuroanatomy defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in nervous system (FBbt:00005093). 'nervous system' is defined as: '$sub_FBbt:00005093'" [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000436
+name: sex-determination defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in sex determination (GO:0007530). 'sex determination' is defined as: '$sub_GO:0007530'" [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000437
+name: dosage compensation defective
+namespace: phenotypic_class
+comment: This term was obsoleted because it was felt that the evidence provided in papers is not enough to annotate with this term. mc161014
+is_obsolete: true
+consider: FBcv:0000436
+
+[Term]
+id: FBcv:0000438
+name: electrophoretic variant
+namespace: phenotypic_class
+def: "Phenotype that is a difference in electrophoretic migration of a gene product compared to wild-type." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000439
+name: chemical resistant
+namespace: phenotypic_class
+def: "Phenotype that is a decreased sensitivity (compared to wild-type) to the toxic effects of some specified chemical. The phrase 'toxic effects' here refers to reversible effects such as inebriation and sedation as well as sustained damage, developmental defects and death." [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+is_a: PATO:0001552 ! decreased sensitivity of a process
+
+[Term]
+id: FBcv:0000440
+name: chemical sensitive
+namespace: phenotypic_class
+def: "Phenotype that is an increased sensitivity (compared to wild-type) to the toxic effects of some specified chemical. The phrase 'toxic effects' here refers to reversible effects such as inebriation and sedation as well as sustained damage, developmental defects and death." [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+is_a: PATO:0001551 ! increased sensitivity of a process
+
+[Term]
+id: FBcv:0000441
+name: radiation resistant
+namespace: phenotypic_class
+def: "Phenotype that is a decreased tendency for radiation exposure to cause toxic effects." [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+is_a: PATO:0001552 ! decreased sensitivity of a process
+
+[Term]
+id: FBcv:0000442
+name: radiation sensitive
+namespace: phenotypic_class
+def: "Phenotype that is an increased tendency for radiation exposure to cause toxic effects." [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+is_a: PATO:0001551 ! increased sensitivity of a process
+
+[Term]
+id: FBcv:0000443
+name: Minute
+namespace: phenotypic_class
+def: "Dominant phenotype consisting of short slender bristles and delayed development. Homozygotes are cell lethal." [FlyBase:FBrf0066905]
+comment: The phenotype may be a general result of mutations in essential components of the protein synthesis pathway, as a number of Minutes encode ribosomal proteins. In an animal that is heterozygous for a Minute mutation, cells with two wild-type alleles of the affected gene have a growth advantage. Many developmental studies take advantage of this fact to give somatic clones a growth advantage. The term 'Minute' should not be used to annotate the resulting phenotypes.
+is_a: FBcv:0000450 ! developmental rate defective
+
+[Term]
+id: FBcv:0000444
+name: hyperplasia
+namespace: phenotypic_class
+def: "Phenotype that is an increase in size of a tissue or organ due to increased numbers of cells, where the affected tissue or organ maintains its normal form." [ISBN:9780198506737]
+synonym: "hyperplastic" EXACT []
+is_a: FBcv:0000357 ! size defective
+is_a: FBcv:0000362 ! increased cell number
+is_a: PATO:0000644 ! hyperplastic
+
+[Term]
+id: FBcv:0000445
+name: tumorigenic
+namespace: phenotypic_class
+def: "Phenotype that is characterized by the formation of abnormal masses of tissue (tumors) as the result of neoplasia." [FBC:DOS]
+is_a: FBcv:0000723 ! neoplasia
+
+[Term]
+id: FBcv:0000446
+name: melanotic mass phenotype
+namespace: phenotypic_class
+def: "Phenotype characterized by the formation of lumps of melanotic tissue inside the body in the absence of foreign bodies." [FlyBase:FBrf0094387, FlyBase:FBrf0194475]
+comment: Melanotic capsules are formed around foreign bodies in wild-type animals as part of the immune response, for example as a protection against parasitoid wasps. Some, but not all melanotic mass phenotypes involve ectopic activation of this immune response. While melanotic masses are commonly referred to as melanotic tumors in the historical literature, this is a misnomer as they are rarely neoplastic.
+synonym: "melanotic 'tumor'" EXACT []
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000447
+name: melanotic necrosis
+namespace: phenotypic_class
+def: "Phenotype characterized by closely associated necrosis and melanization." [FlyBase:FBrf0155704]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000448
+name: immune response defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in immune response (GO:0006955). 'immune response' is defined as: '$sub_GO:0006955'" [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000449
+name: planar polarity defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in establishment of planar polarity (GO:0001736). 'establishment of planar polarity' is defined as: '$sub_GO:0001736'" [GOC:dph]
+comment: For apical-basal polarity phenotypes of epithelia, the appropriate term is 'cell polarity defective'.
+subset: fbcvsubset_mgiribbons
+synonym: "tissue polarity defective" BROAD []
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000450
+name: developmental rate defective
+namespace: phenotypic_class
+def: "Phenotype that is a change in the rate of some developmental process (GO:0032502) taking place prior to mature adulthood (defined as adult stage A3), compared to wild-type. Note, developmental processes include stages in development of the whole animal (e.g.- larval development) as well as specific sub-processes, such as dorsal closure." [FBC:DOS]
+comment: A more complete formalization would require a clause specifying stage. It might be possible to do this in OWL using the same system as we are using for lethal phase.
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+is_a: PATO:0000161 ! rate
+
+[Term]
+id: FBcv:0000451
+name: wound healing defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in wound healing (GO:0042060). 'wound healing' is defined as: '$sub_GO:0042060'" [GOC:bf, PMID:15269788]
+is_a: FBcv:0000408 ! stress response defective
+
+[Term]
+id: FBcv:0000665
+name: body size defective
+namespace: phenotypic_class
+def: "Phenotype that is an abnormality in body size compared to wild-type animals raised under the same conditions as the animals exhibiting the phenotype." [FBC:DOS]
+is_a: FBcv:0000354 ! visible
+is_a: FBcv:0000357 ! size defective
+
+[Term]
+id: FBcv:0000668
+name: cell adhesion defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in cell adhesion (GO:0007155). 'cell adhesion' is defined as: '$sub_GO:0007155'" [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000669
+name: hatching behavior defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in hatching behavior (GO:0035187). 'hatching behavior' is defined as: '$sub_GO:0035187'" [FBC:DOS]
+synonym: "hatching behaviour defective" EXACT []
+is_a: FBcv:0000387 ! behavior defective
+
+[Term]
+id: FBcv:0000670
+name: eclosion defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in eclosion (GO:0007562). 'eclosion' is defined as: '$sub_GO:0007562'" [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000671
+name: cell cycle defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in cell cycle (GO:0007049). 'cell cycle' is defined as: '$sub_GO:0007049'" [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000672
+name: endomitotic cell cycle defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in endomitotic cell cycle (GO:0007113). 'endomitotic cell cycle' is defined as: '$sub_GO:0007113'" [FBC:DOS]
+synonym: "endocycle defective" EXACT []
+is_a: FBcv:0000432 ! mitotic cell cycle defective
+
+[Term]
+id: FBcv:0000679
+name: circadian behavior defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in circadian behavior (GO:0048512). 'circadian behavior' is defined as: '$sub_GO:0048512'" [FBC:DOS]
+is_a: FBcv:0000387 ! behavior defective
+is_a: FBcv:0000394 ! circadian rhythm defective
+created_by: djs93
+creation_date: 2009-11-30T11:06:35Z
+
+[Term]
+id: FBcv:0000680
+name: proboscis extension reflex defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in proboscis extension reflex (GO:0007637). 'proboscis extension reflex' is defined as: '$sub_GO:0007637'" [FBC:DOS]
+is_a: FBcv:0000403 ! chemosensitive behavior defective
+
+[Term]
+id: FBcv:0000681
+name: sensory perception defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in sensory perception (GO:0007600). 'sensory perception' is defined as: '$sub_GO:0007600'" [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+created_by: djs93
+creation_date: 2010-02-23T12:28:26Z
+
+[Term]
+id: FBcv:0000682
+name: touch perception defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in sensory perception of touch (GO:0050975). 'sensory perception of touch' is defined as: '$sub_GO:0050975'" [FBC:DOS]
+synonym: "touch perception defective" RELATED []
+is_a: FBcv:0000681 ! sensory perception defective
+
+[Term]
+id: FBcv:0000683
+name: temperature response defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in response to temperature stimulus (GO:0009266). 'response to temperature stimulus' is defined as: '$sub_GO:0009266'" [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+created_by: djs93
+creation_date: 2010-02-23T12:51:02Z
+
+[Term]
+id: FBcv:0000684
+name: cold stress response defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in response to cold (GO:0009409). 'response to cold' is defined as: '$sub_GO:0009409'" [FBC:DOS]
+is_a: FBcv:0000408 ! stress response defective
+is_a: FBcv:0000683 ! temperature response defective
+created_by: djs93
+creation_date: 2010-02-23T02:11:27Z
+
+[Term]
+id: FBcv:0000686
+name: axis specification defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in axis specification (GO:0009798). 'axis specification' is defined as: '$sub_GO:0009798'" [FBC:DOS]
+comment: This phenotypic class does not encompass planar polarity.
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000698
+name: embryonic/larval segmentation phenotype
+namespace: phenotypic_class
+def: "A phenotype that is a disruption in the wild-type pattern of segments or parasegments of the embryo or larva." [FlyBase:FBrf0035438]
+comment: Commonly assayed on the basis of phenotypic effects on segmentally repeated cuticular patterns.
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000699
+name: pair rule phenotype
+namespace: phenotypic_class
+def: "Embryonic/larval segmentation phenotype that is the complete or partial loss of alternate segments or parasegments." [FlyBase:FBrf0035438]
+comment: Commonly assayed on the basis of phenotypic effects on segmentally repeated cuticular patterns.
+is_a: FBcv:0000698 ! embryonic/larval segmentation phenotype
+
+[Term]
+id: FBcv:0000700
+name: even pair-rule phenotype
+namespace: phenotypic_class
+def: "Embryonic/larval segmentation phenotype that is the complete or partial loss of even segments." [FlyBase:FBrf0035438]
+comment: Commonly assayed on the basis of phenotypic effects on segmentally repeated cuticular patterns.
+is_a: FBcv:0000699 ! pair rule phenotype
+
+[Term]
+id: FBcv:0000701
+name: odd pair-rule phenotype
+namespace: phenotypic_class
+def: "Embryonic/larval segmentation phenotype that is the complete or partial loss of odd segments." [FlyBase:FBrf0035438]
+comment: Commonly assayed on the basis of phenotypic effects on segmentally repeated cuticular patterns.
+is_a: FBcv:0000699 ! pair rule phenotype
+
+[Term]
+id: FBcv:0000702
+name: segment polarity phenotype
+namespace: phenotypic_class
+def: "Embryonic/larval segmentation phenotype in which some fraction of each segment (along the anterior-posterior axis) is deleted and replaced by a mirror image duplication of the remaining part of the segment." [FlyBase:FBrf0035438]
+comment: Commonly assayed on the basis of phenotypic effects on segmentally repeated cuticular patterns.
+is_a: FBcv:0000698 ! embryonic/larval segmentation phenotype
+
+[Term]
+id: FBcv:0000703
+name: gap phenotype
+namespace: phenotypic_class
+def: "Embryonic/larval segmentation phenotype that is the complete loss of a contiguous stretch of 2 or more segments." [FlyBase:FBrf0035438]
+comment: Commonly assayed on the basis of phenotypic effects on segmentally repeated cuticular patterns.
+is_a: FBcv:0000698 ! embryonic/larval segmentation phenotype
+
+[Term]
+id: FBcv:0000705
+name: sleep defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in sleep (GO:0030431). 'sleep' is defined as: '$sub_GO:0030431'" [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+created_by: djs93
+creation_date: 2010-09-20T12:06:13Z
+
+[Term]
+id: FBcv:0000706
+name: diapause defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in entry into diapause (GO:0055115). 'entry into diapause' is defined as: '$sub_GO:0055115'" [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+created_by: djs93
+creation_date: 2010-09-20T12:06:28Z
+
+[Term]
+id: FBcv:0000707
+name: reproductive diapause defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in entry into reproductive diapause (GO:0055116). 'entry into reproductive diapause' is defined as: '$sub_GO:0055116'" [FBC:DOS]
+is_a: FBcv:0000706 ! diapause defective
+created_by: djs93
+creation_date: 2010-09-20T12:21:29Z
+
+[Term]
+id: FBcv:0000708
+name: starvation stress response defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in response to starvation (GO:0042594). 'response to starvation' is defined as: '$sub_GO:0042594'" [FBC:DOS]
+is_a: FBcv:0000408 ! stress response defective
+
+[Term]
+id: FBcv:0000709
+name: cell number defective
+namespace: phenotypic_class
+def: "Phenotype that is an increase or decrease in the number of cells in a whole animal or in some specific organ, tissue or clone of cells compared to wild-type. This phenotype is not necessarily accompanied by defects in cell growth - there may be a greater or lesser number of cells in an otherwise normal volume of tissue." [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+is_a: PATO:0002083 ! altered number of
+
+[Term]
+id: FBcv:0000713
+name: jumpless
+namespace: phenotypic_class
+def: "Phenotype that is a inability to jump. This may be due to neurological or muscular defects." [FBC:DOS]
+is_a: FBcv:0000415 ! jumping defective
+created_by: djs93
+creation_date: 2011-03-10T04:57:06Z
+
+[Term]
+id: FBcv:0000716
+name: cell migration defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in cell migration (GO:0016477). 'cell migration' is defined as: '$sub_GO:0016477'" [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000717
+name: increased cell growth
+namespace: phenotypic_class
+def: "Phenotype that is an increase in the rate of cell growth (GO:0016049) in a whole animal or in some specific organ tissue or clone of cells compared to wild-type." [FBC:DOS]
+is_a: FBcv:0000427 ! cell growth defective
+is_a: PATO:0000912 ! increased rate
+
+[Term]
+id: FBcv:0000718
+name: decreased cell growth
+namespace: phenotypic_class
+def: "Phenotype that is an decrease in the rate of cell growth (GO:0016049) in a whole animal or in some specific organ tissue or clone of cells compared to wild-type." [FBC:DOS]
+is_a: FBcv:0000427 ! cell growth defective
+is_a: PATO:0000911 ! decreased rate
+
+[Term]
+id: FBcv:0000719
+name: atrophy
+namespace: phenotypic_class
+def: "Phenotype that is a decrease in size of an initially normally sized organ or tissue due to wasting away of cells." [FBC:DOS]
+is_a: FBcv:0000357 ! size defective
+is_a: PATO:0001623 ! atrophied
+created_by: djs93
+creation_date: 2011-03-10T05:59:04Z
+
+[Term]
+id: FBcv:0000720
+name: jump response defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect or in or absence of a jump response (GO:0007630). The jump response in Drosophila is a reflex escape response that can be triggered by a number of signals including odor and light. Standard assays are commonly used to test odor and light induced jump response." [FlyBase:FBrf0187887, FlyBase:FBrf0191819]
+is_a: FBcv:0000414 ! locomotor behavior defective
+is_a: FBcv:0000415 ! jumping defective
+created_by: djs93
+creation_date: 2011-03-11T08:03:28Z
+
+[Term]
+id: FBcv:0000721
+name: mating behavior defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in mating behavior (GO:0007617). 'mating behavior' is defined as: '$sub_GO:0007617'" [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0000723
+name: neoplasia
+namespace: phenotypic_class
+def: "Phenotype that consists of abnormal growth of a tissue or organ due to increased numbers of cells, but in which the affected tissue or organ does not maintain its normal form." [FBC:DOS]
+is_a: FBcv:0000357 ! size defective
+is_a: FBcv:0000362 ! increased cell number
+is_a: PATO:0000586 ! increased size
+is_a: PATO:0002011 ! neoplastic
+
+[Term]
+id: FBcv:0000724
+name: hypoplasia
+namespace: phenotypic_class
+def: "Phenotype that is a reduction in size of an organ or tissue compared to wild-type due to reduced numbers of cells being produced during its development or growth." [FBC:DOS]
+comment: This term should not be used where an organ or tissue is reduced in size due to the wasting away of existing cells.
+is_a: FBcv:0000357 ! size defective
+is_a: FBcv:0000359 ! decreased cell number
+is_a: PATO:0000645 ! hypoplastic
+
+[Term]
+id: FBcv:0000725
+name: oxidative stress response defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in response to oxidative stress (GO:0006979). 'response to oxidative stress' is defined as: '$sub_GO:0006979'" [FBC:DOS]
+is_a: FBcv:0000408 ! stress response defective
+
+[Term]
+id: FBcv:0000734
+name: terminal phenotype
+namespace: phenotypic_class
+def: "Embryonic/larval segmentation phenotype that is the complete or partial loss of terminal regions of the embryo/larva: the acron, telson and immediately adjacent segments." [FBC:DOS]
+is_a: FBcv:0000698 ! embryonic/larval segmentation phenotype
+created_by: djs93
+creation_date: 2011-09-13T02:31:53Z
+
+[Term]
+id: FBcv:0000791
+name: delayed aging
+namespace: phenotypic_class
+def: "A phenotype in which the aging process (GO:0007568) is slower than in wild-type." [FBC:DOC]
+is_a: FBcv:0000384 ! aging defective
+is_a: PATO:0000911 ! decreased rate
+
+[Term]
+id: FBcv:0000792
+name: premature aging
+namespace: phenotypic_class
+def: "A phenotype in which the aging process (GO:0007568) is accelerated compared to wild-type." [FBC:DOC]
+is_a: FBcv:0000384 ! aging defective
+is_a: PATO:0000912 ! increased rate
+
+[Term]
+id: FBcv:0001324
+name: endocytosis defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in endocytosis (GO:0006897). 'endocytosis' is defined as: '$sub_GO:0006897'" [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0001325
+name: exocytosis defective
+namespace: phenotypic_class
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0001347
+name: phenotype
+namespace: phenotypic_class
+def: "A defect in or loss of some anatomical structure or biological process compared to wild-type." [FBC:DOS]
+comment: The subclasses of this term classify Drosophila phenotypes into different common categories. They have been chosen by FlyBase to reflect phenotype terms most often reported by Drosophila researchers in the published literature.
+subset: do_not_annotate
+synonym: "phenotypic class" EXACT []
+is_a: FBcv:0000347 ! phenotypic class
+
+[Term]
+id: FBcv:0002000
+name: lethal - all die before end of P-stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of all animals in that population at some stage or stages prior to eclosion from the pupal case (the end of the P-stage)." [FBC:DOS]
+comment: As the P-Stage and the 'pharate adult stage' have the same end,  there is no need for a seprate term for 'lethal - all die before end of pharate adult stage.
+synonym: "lethal - all die before end of pharate adult stage" EXACT []
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002001
+name: lethal - all die before end of first instar larval stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of all animals in that population at some stage or stages before the end of the first instar larval stage." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002002
+name: lethal - all die before end of larval stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of all animals in that population at some stage or stages before the end of the larval stage." [FBC:DOS]
+comment: As the larval stage and third instar larval stage have the same end,  there is no need for a separate term for 'lethal - all die before end of third instar larval stage'.
+synonym: "lethal - all die before end of third instar larval stage" EXACT []
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002003
+name: lethal - all die before end of second instar larval stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of all animals in that population at some stage or stages before the end of the second instar larval stage." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002004
+name: increased mortality
+namespace: phenotypic_class
+def: "A phenotype that is an increase in the rate of death in a population at any stage of life (during development or adulthood), over the rate seen in a wild type control population. " [FBC:DOS]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002005
+name: lethal - all die during P-stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of all animals in that population during the P-stage." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002006
+name: lethal - all die during first instar larval stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of all animals in that population during the first instar larval stage." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002007
+name: lethal - all die during larval stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of all animals in that population during the larval stage." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002008
+name: lethal - all die during second instar larval stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of all animals in that population during the second instar larval stage." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002009
+name: lethal - all die during third instar larval stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of all animals in that population during the third instar larval stage." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002010
+name: majority die during P-stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of the majority of animals in that population during the P-stage." [] {comment="FBC:DOS"}
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002011
+name: majority die during first instar larval stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of the majority of animals in that population during the first instar larval stage." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002012
+name: majority die during larval stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of the majority of animals in that population during the larval stage." [] {comment="FBC:DOS"}
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002013
+name: majority die during second instar larval stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of the majority of animals in that population during the second instar larval stage." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002014
+name: majority die during third instar larval stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of the majority of animals in that population during the third instar larval stage." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002015
+name: partially lethal
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of some significant proportion of animals in that population prior to becoming a mature adult, where mature is defined as after adult stage A3 (FBdv:00006012)." [FBC:DOS, FBC:KM]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002019
+name: increased mortality during development
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of a significant proportion of animals in that population prior to becoming a mature adult, where mature is defined as after adult stage A3 (FBdv:00006012)." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002020
+name: some die during P-stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of a significant proportion of animals in that population during the P-stage." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002021
+name: some die during first instar larval stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of a significant proportion of animals in that population during the first instar larval stage." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002022
+name: some die during second instar larval stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of a significant proportion of animals in that population during the second instar larval stage." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002023
+name: some die during larval stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of a significant proportion of animals in that population during the larval stage." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002024
+name: some die during third instar larval stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of a significant proportion of animals in that population during the third instar larval stage." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002025
+name: lethal - all die during pharate adult stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of all animals in that population during the pharate adult stage." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002026
+name: lethal - all die before end of prepupal stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of all animals in that population at some stage or stages before the end of the prepupal stage." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002027
+name: lethal - all die before end of pupal stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of all animals in that population at some stage or stages before the end of the pupal stage." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002030
+name: lethal - all die during pupal stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of all animals in that population during the pupal stage." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002031
+name: lethal - all die during prepupal stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of all animals in that population during the prepupal stage." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002032
+name: lethal - all die before end of embryonic stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of all animals in that population at some stage or stages before the end of the embryonic stage." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002033
+name: lethal - all die during embryonic stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of all animals in that population during the embryonic stage." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002034
+name: majority die during pupal stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of the majority of animals in that population during the pupal stage." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002035
+name: majority die during prepupal stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of the majority of animals in that population during the prepupal stage." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002036
+name: majority die during pharate adult stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of the majority of animals in that population during the pharate adult stage." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002037
+name: majority die during embryonic stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of the majority of animals in that population during the embryonic stage." [FBC:DOS]
+comment: This term is agnostic about whether any survive to adulthood.
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002038
+name: some die during pharate adult stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of a significant proportion of animals in that population during the pharate adult stage." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002039
+name: some die during pupal stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of a significant proportion of animals in that population during the pupal stage." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002040
+name: some die during prepupal stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of a significant proportion of animals in that population during the prepupal stage." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002041
+name: some die during embryonic stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of a significant proportion of animals in that population during the embryonic stage." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002042
+name: lethal - all die during immature adult stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of all animals in that population as immature adults (after eclosion but before the end of adult stage A3 (FBdv:00006012))." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002050
+name: majority die during immature adult stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of the majority of animals in that population as immature adults (after eclosion but before the end of adult stage A3 (FBdv:00006012))." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0002051
+name: some die during immature adult stage
+namespace: phenotypic_class
+def: "A phenotype of a population that is the death of some significant number of animals in that population as immature adults (after eclosion but before the end of adult stage A3 (FBdv:00006012))." [FBC:DOS]
+is_a: FBcv:0001347 ! phenotype
+
+[Term]
+id: FBcv:0004000
+name: visual perception defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in sensory perception of light stimulus (GO:0050953). 'sensory perception of light stimulus' is defined as: '$sub_GO:0050953'" [FBC:MMC]
+is_a: FBcv:0000681 ! sensory perception defective
+
+[Term]
+id: FBcv:0006000
+name: copulation defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in copulation (GO:0007620). 'copulation' is defined as: '$sub_GO:0007620'" [FBC:TEMJ]
+is_a: FBcv:0000400 ! mating defective
+
+[Term]
+id: FBcv:0006001
+name: increased fecundity
+namespace: phenotypic_class
+def: "Phenotype that is an increase in the number of gametes produced." [FBC:TEMJ]
+is_a: FBcv:0001347 ! phenotype
+is_a: PATO:0001695 ! increased fecundity
+
+[Term]
+id: FBcv:0006002
+name: decreased fecundity
+namespace: phenotypic_class
+def: "Phenotype that is a decrease in the number of gametes produced." [FBC:TEMJ]
+is_a: FBcv:0001347 ! phenotype
+is_a: PATO:0001696 ! decreased fecundity
+
+[Term]
+id: FBcv:0006003
+name: population of Drosophila
+is_a: PCO:0000001 ! population of organisms
+
+[Term]
+id: FBcv:0006004
+name: oviposition defective
+namespace: phenotypic_class
+def: "Phenotype that is a defect in oviposition (GO:0007620). 'oviposition' is defined as: '$sub_GO:0018991'." [FBC:TEMJ]
+comment: This term should only be used to report defects specifically in oviposition, as opposed to an overall loss of fertility. If a difference in "oviposition rate" is measured by authors as a proxy for sterility/fertility, it would be better to use the terms "sterile", "semi-sterile", or "semi-fertile", as appropriate.
+is_a: FBcv:0000387 ! behavior defective
+
+[Term]
+id: FBcv:0006005
+name: increased occurrence of cell division
+namespace: phenotypic_class
+def: "A phenotype that is an increased occurrence of cell division (GO:0051301). 'cell division' is defined as '$sub_GO:0051301'." [FBC:TEMJ]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+is_a: PATO:0002051 ! increased occurrence
+
+[Term]
+id: FBcv:0006006
+name: decreased occurrence of cell division
+namespace: phenotypic_class
+def: "A phenotype that is a decreased occurrence of cell division (GO:0051301). 'cell division' is defined as '$sub_GO:0051301'." [FBC:TEMJ]
+subset: fbcvsubset_mgiribbons
+is_a: FBcv:0001347 ! phenotype
+is_a: PATO:0002052 ! decreased occurrence
+
+[Term]
+id: FBcv:0006007
+name: population of cells
+is_a: BFO:0000027 ! object aggregate
+
+[Term]
+id: PATO:0000001
+name: quality
+namespace: fly_anatomy.ontology
+namespace: quality
+alt_id: PATO:0000072
+def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities" [PATOC:GVG]
+def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities." [PATOC:GVG]
+synonym: "trait" EXACT []
+property_value: IAO:0000589 "quality (PATO)" xsd:string
+
+[Term]
+id: PATO:0000014
+name: color
+namespace: quality
+alt_id: PATO:0000020
+def: "A composite chromatic quality composed of hue, saturation and intensity parts." [PATOC:GVG]
+subset: attribute_slim
+synonym: "colour" EXACT []
+synonym: "relative color" EXACT []
+
+[Term]
+id: PATO:0000052
+name: shape
+namespace: quality
+alt_id: PATO:0001647
+def: "A morphological quality inhering in a bearer by virtue of the bearer's ratios of distances between its features (points, edges, surfaces and also holes etc)." [PATOC:GVG]
+comment: Shapes are invariant on size transformations. Shapes can be subdivided into 2D and 3D shapes, We can also make a distinction between shapes of complete self-connected objects, and shapes of parts of objects.
+subset: attribute_slim
+synonym: "relational shape quality" EXACT []
+
+[Term]
+id: PATO:0000117
+name: size
+namespace: quality
+def: "A morphology quality inhering in a bearer by virtue of the bearer's physical magnitude." [WordNet:WordNet]
+subset: attribute_slim
+subset: scalar_slim
+
+[Term]
+id: PATO:0000161
+name: rate
+namespace: quality
+def: "A quality of a single process inhering in a bearer by virtue of the bearer's occurrence per unit time." [PATOC:melissa]
+subset: attribute_slim
+subset: scalar_slim
+
+[Term]
+id: PATO:0000380
+name: increased frequency
+namespace: quality
+def: "A frequency which is relatively high." [PATOC:GVG]
+subset: mpath_slim
+subset: value_slim
+synonym: "frequent" RELATED []
+synonym: "high frequency" EXACT []
+is_a: PATO:0000912 ! increased rate
+property_value: RO:0002604 PATO:0000381
+
+[Term]
+id: PATO:0000381
+name: decreased frequency
+namespace: quality
+def: "A frequency which is relatively low." [PATOC:GVG]
+subset: mpath_slim
+subset: value_slim
+synonym: "infrequent" RELATED []
+synonym: "low frequency" EXACT []
+is_a: PATO:0000911 ! decreased rate
+property_value: RO:0002604 PATO:0000380
+
+[Term]
+id: PATO:0000422
+name: auxotrophic
+namespace: quality
+def: "A nutritional quality inhering in a bearer by virtue of the bearer's inability to synthesize a particular organic compound required for its growth." [Wikipedia:http\://en.wikipedia.org/wiki/Auxotrophic]
+subset: disposition_slim
+subset: value_slim
+property_value: RO:0002604 PATO:0000423
+
+[Term]
+id: PATO:0000586
+name: increased size
+namespace: quality
+alt_id: PATO:0001202
+def: "A size quality which is relatively high." [PATOC:GVG]
+subset: value_slim
+synonym: "big" RELATED []
+synonym: "enlarged" RELATED []
+synonym: "expanded" RELATED []
+synonym: "great" RELATED []
+synonym: "large" RELATED []
+is_a: PATO:0000117 ! size
+property_value: RO:0002604 PATO:0000587
+
+[Term]
+id: PATO:0000587
+name: decreased size
+namespace: quality
+def: "A size quality which is relatively low." [PATOC:GVG]
+subset: value_slim
+synonym: "hypoplasia" NARROW []
+synonym: "reduced" RELATED []
+synonym: "small" RELATED []
+synonym: "tiny" RELATED []
+synonym: "underdeveloped" NARROW []
+is_a: PATO:0000117 ! size
+property_value: RO:0002604 PATO:0000586
+
+[Term]
+id: PATO:0000644
+name: hyperplastic
+namespace: quality
+alt_id: PATO:0000943
+def: "A increased size quality inhering in an organ or tissue by virtue of the bearer's exhibiting increased number of cells." [Wikipedia:http\://en.wikipedia.org/wiki/Hyperplastic]
+subset: mpath_slim
+subset: value_slim
+synonym: "hyperplasia" EXACT []
+synonym: "overdeveloped" RELATED []
+is_a: PATO:0000586 ! increased size
+property_value: RO:0002604 PATO:0000645
+
+[Term]
+id: PATO:0000645
+name: hypoplastic
+namespace: quality
+alt_id: PATO:0000942
+def: "A decreased size quality inhering in a bearer by virtue of the bearer's exhibiting reduced number of cells within an organ or tissue." [PATOC:GVG]
+subset: mpath_slim
+subset: value_slim
+synonym: "hypoplasia" EXACT []
+synonym: "underdeveloped" RELATED []
+is_a: PATO:0000587 ! decreased size
+property_value: RO:0002604 PATO:0000644
+
+[Term]
+id: PATO:0000718
+name: lethal (sensu genetics)
+namespace: quality
+def: "A viability quality inhering in a population by virtue of the bearer's long term survival inability." [PATOC:GVG]
+subset: disposition_slim
+subset: value_slim
+
+[Term]
+id: PATO:0000719
+name: viable
+namespace: quality
+def: "A viability quality inhering in a bearer or a population by virtue of the bearer's ability to survive or the long term survival ability of a given population." [PATOC:GVG]
+subset: disposition_slim
+subset: value_slim
+
+[Term]
+id: PATO:0000770
+name: uncoordinated
+namespace: quality
+def: "A coordination quality of inhering in a bearer by virtue of the bearer's lacking skillful and effective interaction of movement." [PATOC:GVG]
+subset: disposition_slim
+subset: value_slim
+property_value: RO:0002604 PATO:0000769
+
+[Term]
+id: PATO:0000888
+name: female fertile
+namespace: quality
+def: "A female fertility quality inhering in a female by virtue of the bearer's disposition to initiate, sustain, or support reproduction." [PATOC:GVG]
+subset: disposition_slim
+subset: value_slim
+disjoint_from: PATO:0000892 ! female sterile
+property_value: RO:0002604 PATO:0000892
+
+[Term]
+id: PATO:0000891
+name: male fertile
+namespace: quality
+def: "A male fertility quality inhering in a male by virtue of the bearer's being capable of initiating, sustaining, or supporting reproduction." [PATOC:GVG]
+subset: disposition_slim
+subset: value_slim
+property_value: RO:0002604 PATO:0000890
+
+[Term]
+id: PATO:0000892
+name: female sterile
+namespace: quality
+def: "A female fertility quality inhering in a female by virtue of the bearer's being incapable of initiating, sustaining, or supporting reproduction." [PATOC:GVG]
+subset: disposition_slim
+subset: value_slim
+synonym: "female infertile" RELATED []
+is_a: PATO:0000956 ! sterile
+property_value: RO:0002604 PATO:0000888
+
+[Term]
+id: PATO:0000911
+name: decreased rate
+namespace: quality
+def: "A rate which is relatively low." [PATO:GVG]
+subset: mpath_slim
+subset: value_slim
+synonym: "slow rate" EXACT []
+is_a: PATO:0000161 ! rate
+property_value: RO:0002604 PATO:0000912
+
+[Term]
+id: PATO:0000912
+name: increased rate
+namespace: quality
+def: "A rate which is relatively high." [PATO:GVG]
+subset: mpath_slim
+subset: value_slim
+synonym: "fast rate" EXACT []
+synonym: "high rate" EXACT []
+is_a: PATO:0000161 ! rate
+property_value: RO:0002604 PATO:0000911
+
+[Term]
+id: PATO:0000955
+name: fertile
+namespace: quality
+def: "A fertility quality inhering in a bearer by virtue of the bearer's being capable of initiating, sustaining, or supporting reproduction." [PATOC:GVG]
+subset: disposition_slim
+subset: value_slim
+disjoint_from: PATO:0000956 ! sterile
+property_value: RO:0002604 PATO:0000956
+
+[Term]
+id: PATO:0000956
+name: sterile
+namespace: quality
+def: "A fertility quality inhering in a bearer by virtue of the bearer's being incapable of initiating, sustaining, or supporting reproduction." [PATOC:GVG]
+subset: disposition_slim
+subset: value_slim
+property_value: RO:0002604 PATO:0000955
+
+[Term]
+id: PATO:0001551
+name: increased sensitivity of a process
+namespace: quality
+def: "A sensitivity of a process which is higher than normal or average." [PATO:GVG]
+subset: relational_slim
+subset: value_slim
+synonym: "high sensitivity of occurrent" EXACT []
+synonym: "increased sensitivity of occurrent" EXACT []
+property_value: RO:0002604 PATO:0001552
+
+[Term]
+id: PATO:0001552
+name: decreased sensitivity of a process
+namespace: quality
+def: "A sensitivity of a process which is lower than normal or average." [PATO:GVG]
+subset: relational_slim
+subset: value_slim
+synonym: "decreased sensitivity of occurrent" EXACT []
+synonym: "low sensitivity of occurrent" EXACT []
+property_value: RO:0002604 PATO:0001551
+
+[Term]
+id: PATO:0001558
+name: lacking processual parts
+namespace: quality
+def: "A quality of a process inhering in a bearer by virtue of the bearer's lacking a processual part as specified by the additional entity." [PATOC:GVG]
+subset: relational_slim
+subset: value_slim
+
+[Term]
+id: PATO:0001623
+name: atrophied
+namespace: quality
+def: "A size quality inhering in a bearer by virtue of a part or parts of the bearer's being decreased in size due to reduction in tissue mass through wasting." [Wiikipedia:Wasting, Wikipedia:Atrophy]
+subset: mpath_slim
+subset: value_slim
+synonym: "atrophic" EXACT []
+is_a: PATO:0000587 ! decreased size
+
+[Term]
+id: PATO:0001695
+name: increased fecundity
+namespace: quality
+def: "A fecundity which is relatively high." [PATOC:GVG]
+subset: disposition_slim
+subset: value_slim
+synonym: "high fecundity" EXACT []
+property_value: RO:0002604 PATO:0001696
+
+[Term]
+id: PATO:0001696
+name: decreased fecundity
+namespace: quality
+def: "A fecundity which is relatively low." [PATOC:GVG]
+subset: disposition_slim
+subset: value_slim
+synonym: "low fecundity" EXACT []
+property_value: RO:0002604 PATO:0001695
+
+[Term]
+id: PATO:0001760
+name: female semi-fertile
+namespace: quality
+subset: disposition_slim
+subset: value_slim
+property_value: RO:0002604 PATO:0001763
+
+[Term]
+id: PATO:0001761
+name: male semi-fertile
+namespace: quality
+subset: disposition_slim
+subset: value_slim
+property_value: RO:0002604 PATO:0001762
+
+[Term]
+id: PATO:0001762
+name: male semi-sterile
+namespace: quality
+subset: disposition_slim
+subset: value_slim
+property_value: RO:0002604 PATO:0001761
+
+[Term]
+id: PATO:0001763
+name: female semi-sterile
+namespace: quality
+subset: disposition_slim
+subset: value_slim
+property_value: RO:0002604 PATO:0001760
+
+[Term]
+id: PATO:0001769
+name: positional polarity
+namespace: quality
+def: "A positional quality inhering in a bearer by virtue of the bearer's location of features or characteristics along an axis." [PATOC:MAH]
+subset: attribute_slim
+synonym: "cellular polarity" RELATED [PATOC:MAH]
+
+[Term]
+id: PATO:0001862
+name: lack of fertility in offspring
+namespace: quality
+def: "A fertility quality inhering in a bearer by virtue of the bearer's disposition to make its offspring sterile." [PATOC:GVG]
+subset: disposition_slim
+subset: value_slim
+synonym: "grandchildless" RELATED []
+
+[Term]
+id: PATO:0002001
+name: has fewer parts of type
+namespace: quality
+alt_id: PATO:0001569
+def: "The bearer of this quality has_part < n AND has_part > 0 of the indicated entity type, where n is the normal amount for a comparable organism. Note that the bearer of the quality is the whole, not the part. Formally: If a bearer entity e has fewer parts of type X at time t, then the number of instances x of X at t such that x part_of e is < n, where n is either the normal number for comparable entities, or n is stated explicitly." [PATOC:CJM]
+comment: Example: [E=hand Q=has_fewer_parts_of_type E2=digit] - applies to an organism that has no less fingers than is normal for organisms of that type.
+subset: relational_slim
+synonym: "decreased number of" EXACT []
+synonym: "has decreased number of" EXACT []
+synonym: "has fewer physical parts of type" EXACT []
+property_value: RO:0002604 PATO:0002002
+
+[Term]
+id: PATO:0002002
+name: has extra parts of type
+namespace: quality
+alt_id: PATO:0001560
+def: "The bearer of this quality has_part > n of the indicated entity type, where n is the normal amount for a comparable organism. Note that the bearer of the quality is the whole, not the part." [PATOC:CJM]
+comment: In polydactyly, the bearer of the quality is the hand, and the entity type being counted is 'finger'. In EQ syntax, E=hand, Q=<this> E2=finger.
+subset: relational_slim
+synonym: "has extra parts of" EXACT []
+synonym: "has increased number of" EXACT []
+synonym: "having extra physical parts" EXACT []
+synonym: "having supernumerary physical parts" EXACT []
+synonym: "increased number of" EXACT []
+is_a: PATO:0002083 ! altered number of
+property_value: RO:0002604 PATO:0002001
+
+[Term]
+id: PATO:0002011
+name: neoplastic
+namespace: quality
+def: "A structural quality which is held by a bearer when the latter's disposition the presence of abnormally proliferating masses of cells." [PATOC:MAH]
+subset: disposition_slim
+subset: mpath_slim
+subset: value_slim
+synonym: "tumorous" EXACT []
+
+[Term]
+id: PATO:0002051
+name: increased occurrence
+namespace: quality
+def: "An occurrence which is relatively high." [PATOC:GVG]
+synonym: "increased incidence" EXACT []
+property_value: RO:0002604 PATO:0002052
+created_by: George Gkoutos
+creation_date: 2009-03-26T11:10:11Z
+
+[Term]
+id: PATO:0002052
+name: decreased occurrence
+namespace: quality
+def: "An occurrence which is relatively low." [PATOC:GVG]
+synonym: "decreased incidence" EXACT []
+property_value: RO:0002604 PATO:0002051
+created_by: George Gkoutos
+creation_date: 2009-03-26T11:12:35Z
+
+[Term]
+id: PATO:0002083
+name: altered number of
+namespace: quality
+def: "Having extra or fewer parts." [PATOC:GVG]
+subset: attribute_slim
+subset: relational_slim
+created_by: George Gkoutos
+creation_date: 2009-09-21T10:41:58Z
+
+[Term]
+id: PCO:0000001
+name: population of organisms
+def: "A collection of organisms, all of the same species, that live in the same place." []
+comment: It is sometimes difficult to define the physical boundaries of a population. In the case of sexually reproducing organisms, the individuals within a population have the potential to reproduce with one another during the course of their lifetimes. 'Community', as often used to describe a group of humans, is a type of population. \n\nClasses for population already  exist in IDO ('organism population', IDO_0000509) and OBI ('population', OBI_0000181). The definitions should be standardized across OBO Foundry ontologies and only one term used.
+property_value: IAO:0000112 "" xsd:string
+property_value: IAO:0000112 "This a general term that can include every organism of a species living in an area or any subset of them.  Subclasses can be more specific as needed." xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000119 ISBN:0878932739 xsd:string
+
+[Typedef]
+id: FBcv:0008000
+name: has_age
+is_functional: true
+
+[Typedef]
+id: has_role
+name: has role
+
+[Typedef]
+id: qualifier
+name: qualifier
+comment: temporary placeholder - this means that Obol could not infer the correct relation
+
+[Typedef]
+id: towards
+name: towards
+comment: temporary placeholder - may be placed in OBO_REL; with relational qualities, the additional argument is the 'towards' argument; eg sensitivity towards chlorine. Relation binding a relational quality or disposition to the relevant type of entity.
+
