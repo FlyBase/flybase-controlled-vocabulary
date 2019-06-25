@@ -11953,6 +11953,54 @@ created_by: http://orcid.org/0000-0002-1373-1705
 creation_date: 2019-06-25T10:20:00Z
 
 [Term]
+id: FBcv:0007008
+name: neuron activation tool
+namespace: experimental_tool_descriptor
+def: "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property that can be used to stimulate the activity of a neuron. This is often achieved by inducing membrane depolarization (GO:0051899)." [FBC:GM]
+synonym: "electrically signalling cell activation tool" EXACT []
+is_a: FBcv:0007002 ! neuron activity regulation tool
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2019-06-25T10:25:57Z
+
+[Term]
+id: FBcv:0007009
+name: conditional neuron activation tool
+namespace: experimental_tool_descriptor
+def: "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property that can be used to stimulate the activity of a neuron, where this property can be regulated in response to a particular stimulus." [FBC:GM]
+is_a: FBcv:0007008 ! neuron activation tool
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2019-06-25T10:26:57Z
+
+[Term]
+id: FBcv:0007010
+name: temperature-regulated neuron activation tool
+namespace: experimental_tool_descriptor
+def: "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property that can be used to stimulate the activity of a neuron, where this property can be regulated by temperature." [FBC:GM]
+synonym: "thermogenetic neuron activation tool" EXACT []
+is_a: FBcv:0007009 ! conditional neuron activation tool
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2019-06-25T10:28:57Z
+
+[Term]
+id: FBcv:0007011
+name: light-regulated neuron activation tool
+namespace: experimental_tool_descriptor
+def: "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property that can be used to stimulate the activity of a neuron, where this property can be regulated by irradiation with a pulse of light." [FBC:GM]
+synonym: "optogenetic neuron activation tool" EXACT []
+is_a: FBcv:0007009 ! conditional neuron activation tool
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2019-06-25T10:31:02Z
+
+[Term]
+id: FBcv:0007012
+name: small molecule-regulated neuron activation tool
+namespace: experimental_tool_descriptor
+def: "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property that can be used to stimulate the activity of a neuron, where this property can be regulated by binding to a small molecule, such as an ion or ligand." [FBC:GM]
+is_a: FBcv:0007009 ! conditional neuron activation tool
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2019-06-25T10:34:48Z
+
+[Term]
 id: FBcv:0010000
 name: living stock
 comment: Consider - FBsv:0000002.
