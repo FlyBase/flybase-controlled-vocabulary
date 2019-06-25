@@ -43,8 +43,8 @@ name: carbamate
 namespace: chebi_ontology
 def: "An amino-acid anion that has formula CH2NO2." [ANON:ANON]
 synonym: "Carbamat" RELATED [ChEBI:]
-synonym: "carbamate" EXACT [UniProt:]
 synonym: "carbamate" EXACT IUPAC_NAME [IUPAC:]
+synonym: "carbamate" EXACT [UniProt:]
 synonym: "carbamate ion" RELATED [ChemIDplus:]
 synonym: "carbamic acid, ion(1-)" RELATED [ChemIDplus:]
 synonym: "CH2NO2" RELATED FORMULA [ChEBI:]
@@ -1051,8 +1051,8 @@ name: ion
 namespace: chebi_ontology
 def: "A molecular entity having a net electric charge." [ANON:ANON]
 synonym: "Ion" EXACT [ChEBI:]
-synonym: "ion" EXACT [ChEBI:]
 synonym: "ion" EXACT IUPAC_NAME [IUPAC:]
+synonym: "ion" EXACT [ChEBI:]
 synonym: "Ionen" RELATED [ChEBI:]
 synonym: "iones" RELATED [ChEBI:]
 synonym: "ions" RELATED [ChEBI:]
@@ -11999,6 +11999,51 @@ def: "Sequence that forms all or part of the gene product encoded by a transgeni
 is_a: FBcv:0007009 ! conditional neuron activation tool
 created_by: http://orcid.org/0000-0002-1373-1705
 creation_date: 2019-06-25T10:34:48Z
+
+[Term]
+id: FBcv:0007013
+name: cell ablation tool
+namespace: experimental_tool_descriptor
+def: "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property used to ablate a specific cell or anatomical structure." [FBC:GM]
+is_a: FBcv:0005001 ! experimental tool descriptor
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2019-06-25T10:53:21Z
+
+[Term]
+id: FBcv:0007014
+name: conditional cell ablation tool
+namespace: experimental_tool_descriptor
+def: "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property used to ablate a specific cell or anatomical structure, where this property can be regulated in response to a particular stimulus." [FBC:GM]
+is_a: FBcv:0007013 ! cell ablation tool
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2019-06-25T10:54:32Z
+
+[Term]
+id: FBcv:0007015
+name: temperature-regulated cell ablation tool
+namespace: experimental_tool_descriptor
+def: "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property used to ablate a specific cell or anatomical structure, where this property can be regulated by temperature." [FBC:GM]
+is_a: FBcv:0007014 ! conditional cell ablation tool
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2019-06-25T10:55:40Z
+
+[Term]
+id: FBcv:0007016
+name: light-regulated cell ablation tool
+namespace: experimental_tool_descriptor
+def: "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property used to ablate a specific cell or anatomical structure, where this property can be regulated by irradiation with a pulse of light." [FBC:GM]
+is_a: FBcv:0007014 ! conditional cell ablation tool
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2019-06-25T10:56:47Z
+
+[Term]
+id: FBcv:0007017
+name: smal molecule-regulated cell ablation tool
+namespace: experimental_tool_descriptor
+def: "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property used to ablate a specific cell or anatomical structure, where this property can be regulated by binding to a small molecule, such as an ion or ligand." [FBC:GM]
+is_a: FBcv:0007014 ! conditional cell ablation tool
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2019-06-25T10:57:45Z
 
 [Term]
 id: FBcv:0010000
