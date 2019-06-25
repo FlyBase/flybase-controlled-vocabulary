@@ -3,9 +3,6 @@ data-version: 2018-01-03
 date: 03:01:2018 20:37
 saved-by: temj2
 auto-generated-by: OBO-Edit 2.3.1
-import: http://purl.obolibrary.org/obo/fbcv/components/dpo-simple.obo
-import: http://purl.obolibrary.org/obo/fbcv/imports/ro_import.owl
-import: http://purl.obolibrary.org/obo/fbcv/imports/chebi_import.owl
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -35,6 +32,9 @@ synonymtypedef: SMILES "SMILES"
 synonymtypedef: systematic_synonym "Systematic synonym" EXACT
 default-namespace: FlyBase miscellaneous CV
 remark: Imports terms from CHEBI - datestamp = 02:12:2011 01:47. And terms imported from http://purl.obolibrary.org/obo/go/releases/2018-01-03/go-simple.obo
+import: http://purl.obolibrary.org/obo/fbcv/components/dpo-simple.obo
+import: http://purl.obolibrary.org/obo/fbcv/imports/chebi_import.owl
+import: http://purl.obolibrary.org/obo/fbcv/imports/ro_import.owl
 ontology: fbcv
 
 [Term]
@@ -53,14 +53,15 @@ synonym: "InChIKey=KXDHJXZQYSOELW-UHFFFAOYSA-M" RELATED InChIKey [ChEBI:]
 synonym: "Karbamat" RELATED [ChEBI:]
 synonym: "NC([O-])=O" RELATED SMILES [ChEBI:]
 is_a: CHEBI:37022 ! amino-acid anion
+equivalent_to: FBcv:0000538 ! carbamate
 
 [Term]
 id: CHEBI:15369
 name: actinomycin
 namespace: chebi_ontology
 def: "A large group of antibiotics isolated from various species of Streptomyces and characterised by having a substituted phenoxazine ring linked to two cyclic heterodetic peptides." [ANON:ANON]
-synonym: "actinomycin" EXACT [UniProt:]
 synonym: "Actinomycin" EXACT [KEGG COMPOUND:]
+synonym: "actinomycin" EXACT [UniProt:]
 synonym: "actinomycins" RELATED [ChEBI:]
 is_a: CHEBI:23239 ! chromopeptide
 
@@ -113,9 +114,9 @@ def: "The simplest aldehyde." [ANON:ANON]
 synonym: "[H]C([H])=O" RELATED SMILES [ChEBI:]
 synonym: "CH2O" RELATED FORMULA [KEGG COMPOUND:]
 synonym: "Formaldehyd" RELATED [NIST Chemistry WebBook:]
-synonym: "formaldehyde" EXACT IUPAC_NAME [IUPAC:]
 synonym: "FORMALDEHYDE" EXACT [PDBeChem:]
 synonym: "Formaldehyde" EXACT [KEGG COMPOUND:]
+synonym: "formaldehyde" EXACT IUPAC_NAME [IUPAC:]
 synonym: "FORMALIN" RELATED [ChEMBL:]
 synonym: "Formalin" RELATED [KEGG COMPOUND:]
 synonym: "InChI=1S/CH2O/c1-2/h1H2" RELATED InChI [ChEBI:]
@@ -126,6 +127,7 @@ synonym: "Oxomethane" RELATED [KEGG COMPOUND:]
 synonym: "Oxomethylene" RELATED [KEGG COMPOUND:]
 is_a: CHEBI:17478 ! aldehyde
 is_a: CHEBI:64708 ! one-carbon compound
+equivalent_to: FBcv:0000584 ! formaldehyde
 
 [Term]
 id: CHEBI:16991
@@ -136,18 +138,19 @@ synonym: "(Deoxyribonucleotide)m" RELATED [KEGG COMPOUND:]
 synonym: "(Deoxyribonucleotide)n" RELATED [KEGG COMPOUND:]
 synonym: "(Deoxyribonucleotide)n+m" RELATED [KEGG COMPOUND:]
 synonym: "Deoxyribonucleic acid" EXACT [KEGG COMPOUND:]
-synonym: "deoxyribonucleic acids" RELATED [ChEBI:]
 synonym: "deoxyribonucleic acids" EXACT IUPAC_NAME [IUPAC:]
+synonym: "deoxyribonucleic acids" RELATED [ChEBI:]
 synonym: "Desoxyribonukleinsaeure" RELATED [ChEBI:]
 synonym: "desoxyribose nucleic acid" RELATED [ChemIDplus:]
-synonym: "DNA" RELATED [IUPAC:]
 synonym: "DNA" RELATED [KEGG COMPOUND:]
 synonym: "DNA" RELATED [UniProt:]
+synonym: "DNA" RELATED [IUPAC:]
 synonym: "DNAn" RELATED [KEGG COMPOUND:]
 synonym: "DNAn+1" RELATED [KEGG COMPOUND:]
 synonym: "DNS" RELATED [ChEBI:]
 synonym: "thymus nucleic acid" RELATED [ChEBI:]
 is_a: CHEBI:33696 ! nucleic acid
+equivalent_to: FBcv:0000579 ! DNA
 
 [Term]
 id: CHEBI:17087
@@ -183,11 +186,11 @@ synonym: "[H]C([*])=O" RELATED SMILES [ChEBI:]
 synonym: "aldehido" RELATED [ChEBI:]
 synonym: "aldehidos" RELATED [ChEBI:]
 synonym: "Aldehyd" RELATED [ChEBI:]
-synonym: "aldehyde" EXACT [ChEBI:]
 synonym: "Aldehyde" EXACT [KEGG COMPOUND:]
+synonym: "aldehyde" EXACT [ChEBI:]
 synonym: "aldehyde" EXACT IUPAC_NAME [IUPAC:]
-synonym: "aldehydes" RELATED [ChEBI:]
 synonym: "aldehydes" EXACT IUPAC_NAME [IUPAC:]
+synonym: "aldehydes" RELATED [ChEBI:]
 synonym: "aldehydum" RELATED [ChEBI:]
 synonym: "CHOR" RELATED FORMULA [ChEBI:]
 synonym: "RC(=O)H" RELATED [IUPAC:]
@@ -201,12 +204,13 @@ def: "A carbamate ester that has formula C3H7NO2." [ANON:ANON]
 synonym: "C3H7NO2" RELATED FORMULA [KEGG COMPOUND:]
 synonym: "carbamic acid ethyl ester" RELATED [ChEBI:]
 synonym: "CCOC(N)=O" RELATED SMILES [ChEBI:]
-synonym: "ethyl carbamate" EXACT IUPAC_NAME [IUPAC:]
 synonym: "Ethyl carbamate" RELATED [KEGG COMPOUND:]
+synonym: "ethyl carbamate" EXACT IUPAC_NAME [IUPAC:]
 synonym: "InChI=1S/C3H7NO2/c1-2-6-3(4)5/h2H2,1H3,(H2,4,5)" RELATED InChI [ChEBI:]
 synonym: "InChIKey=JOYRKODLDBILNP-UHFFFAOYSA-N" RELATED InChIKey [ChEBI:]
 synonym: "Urethane" EXACT [KEGG COMPOUND:]
 is_a: CHEBI:23003 ! carbamate ester
+equivalent_to: FBcv:0000539 ! urethane
 
 [Term]
 id: CHEBI:18254
@@ -233,6 +237,7 @@ synonym: "InChIKey=RXCMFQDTWCCLBL-UHFFFAOYSA-N" RELATED InChIKey [ChEBI:]
 synonym: "Nc1c(O)cc(c2ccccc12)S(O)(=O)=O" RELATED SMILES [ChEBI:]
 is_a: CHEBI:36336 ! naphthalenesulfonic acid
 is_a: CHEBI:38034 ! aminonaphthalene
+equivalent_to: FBcv:0000568 ! 1-amino-2-naphthol-4-sulfonic acid
 
 [Term]
 id: CHEBI:19032
@@ -253,6 +258,7 @@ synonym: "InChI=1S/C2H4BrCl/c3-1-2-4/h1-2H2" RELATED InChI [ChEBI:]
 synonym: "InChIKey=IBYHHJPAARCAIE-UHFFFAOYSA-N" RELATED InChIKey [ChEBI:]
 is_a: CHEBI:22929 ! bromoalkane
 is_a: CHEBI:23128 ! chloroalkane
+equivalent_to: FBcv:0000547 ! 1-bromo-2-chloroethane
 
 [Term]
 id: CHEBI:19363
@@ -283,6 +289,7 @@ synonym: "O=C1C=C(N2CC2)C(=O)C=C1N1CC1" RELATED SMILES [ChEBI:]
 synonym: "TW 13" RELATED [ChemIDplus:]
 is_a: CHEBI:22729 ! benzoquinones
 is_a: CHEBI:36820 ! ring assembly
+equivalent_to: FBcv:0000571 ! 2,5-bis(ethyleneimino)-1,4-benzoquinone
 
 [Term]
 id: CHEBI:19508
@@ -290,6 +297,7 @@ name: 2-chloroethyl methanesulfonate
 namespace: chebi_ontology
 is_a: CHEBI:25223 ! methanesulfonate ester
 is_a: CHEBI:36683 ! organochlorine compound
+equivalent_to: FBcv:0000528 ! 2-chloroethyl methanesulfonate
 
 [Term]
 id: CHEBI:19579
@@ -297,6 +305,7 @@ name: 2-fluoroethyl methanesulfonate
 namespace: chebi_ontology
 is_a: CHEBI:25223 ! methanesulfonate ester
 is_a: CHEBI:37143 ! organofluorine compound
+equivalent_to: FBcv:0000529 ! 2-fluoroethyl methanesulfonate
 
 [Term]
 id: CHEBI:20552
@@ -313,6 +322,7 @@ synonym: "InChI=1S/C4H3BrN2O2/c5-2-1-6-4(9)7-3(2)8/h1H,(H2,6,7,8,9)" RELATED InC
 synonym: "InChIKey=LQLQRFGHAALLLE-UHFFFAOYSA-N" RELATED InChIKey [ChEBI:]
 is_a: CHEBI:39447 ! pyrimidines
 is_a: CHEBI:67142 ! nucleobase analogue
+equivalent_to: FBcv:0000549 ! 5-bromouracil
 
 [Term]
 id: CHEBI:20553
@@ -329,6 +339,7 @@ synonym: "InChI=1S/C9H11BrN2O6/c10-3-1-12(9(17)11-7(3)16)8-6(15)5(14)4(2-13)18-8
 synonym: "InChIKey=AGFIRQJZCNVMCW-UAKXSSHOSA-N" RELATED InChIKey [ChEBI:]
 synonym: "OC[C@H]1O[C@H]([C@H](O)[C@@H]1O)n1cc(Br)c(=O)[nH]c1=O" RELATED SMILES [ChEBI:]
 is_a: CHEBI:27242 ! uridines
+equivalent_to: FBcv:0000550 ! 5-bromouridine
 
 [Term]
 id: CHEBI:20787
@@ -345,6 +356,7 @@ synonym: "InChI=1S/C20H15Br/c1-13-15-7-4-5-9-17(15)19(12-21)18-11-10-14-6-2-3-8-
 synonym: "InChIKey=IBWBDNBSIFGSLW-UHFFFAOYSA-N" RELATED InChIKey [ChEBI:]
 is_a: CHEBI:37141 ! organobromine compound
 is_a: CHEBI:51067 ! tetraphenes
+equivalent_to: FBcv:0000572 ! 7-bromomethyl-12-methylbenz[a]anthracene
 
 [Term]
 id: CHEBI:21183
@@ -360,6 +372,7 @@ synonym: "InChIKey=PWGOWIIEVDAYTC-UHFFFAOYSA-N" RELATED InChIKey [ChEBI:]
 synonym: "N-(2-chloroethyl)-N'-(6-chloro-2-methoxy-9-acridinyl)-N-ethyl-1,3-propanediamine dihydrochloride" RELATED [ChemIDplus:]
 synonym: "N-(2-chloroethyl)-N'-(6-chloro-2-methoxyacridin-9-yl)-N-ethylpropane-1,3-diamine dihydrochloride" EXACT IUPAC_NAME [IUPAC:]
 is_a: CHEBI:22213 ! acridines
+equivalent_to: FBcv:0000544 ! ICR 170
 
 [Term]
 id: CHEBI:21184
@@ -376,6 +389,7 @@ synonym: "InChIKey=XXACTDWGHQXLGW-UHFFFAOYSA-M" RELATED InChIKey [ChEBI:]
 synonym: "Janus Green B" RELATED [ChemIDplus:]
 synonym: "Janus Green V" RELATED [ChemIDplus:]
 is_a: CHEBI:36094 ! organic chloride salt
+equivalent_to: FBcv:0000589 ! Janus green B
 
 [Term]
 id: CHEBI:21731
@@ -410,11 +424,12 @@ synonym: "MNNG" RELATED [ChemIDplus:]
 synonym: "N'-Nitro-N-nitroso-N-methylguanidine" RELATED [ChemIDplus:]
 synonym: "N-Methyl-N',2-dioxohydrazinecarboximidohydrazide 2-oxide" RELATED [NIST Chemistry WebBook:]
 synonym: "N-Methyl-N'-nitro-N-nitrosoguanidine" EXACT [KEGG COMPOUND:]
-synonym: "N-Methyl-N-nitroso-N'-nitroguanidine" RELATED [ChEBI:]
 synonym: "N-Methyl-N-nitroso-N'-nitroguanidine" RELATED [ChemIDplus:]
+synonym: "N-Methyl-N-nitroso-N'-nitroguanidine" RELATED [ChEBI:]
 synonym: "N-Methyl-N-nitrosonitroguanidin" RELATED [ChEBI:]
 synonym: "N-Nitroso-N-methyl-N'-nitroguanidine" RELATED [ChemIDplus:]
 is_a: CHEBI:35800 ! nitroso compound
+equivalent_to: FBcv:0000535 ! N-methyl-N'-nitro-N-nitrosoguanidine
 
 [Term]
 id: CHEBI:22025
@@ -422,6 +437,7 @@ name: S-2-chloroethylcysteine
 namespace: chebi_ontology
 is_a: CHEBI:23509 ! cysteine derivative
 is_a: CHEBI:36683 ! organochlorine compound
+equivalent_to: FBcv:0000602 ! S-2-chloroethylcysteine
 
 [Term]
 id: CHEBI:22213
@@ -470,15 +486,16 @@ synonym: "N-(4-(((2,4-diamino-6-pteridinyl)methyl)amino)benzoyl)-L-glutamic acid
 synonym: "N-(4-{[(2,4-diaminopteridin-6-yl)methyl]amino}benzoyl)-L-glutamic acid" EXACT IUPAC_NAME [IUPAC:]
 synonym: "Nc1nc(N)c2nc(CNc3ccc(cc3)C(=O)N[C@@H](CCC(O)=O)C(O)=O)cnc2n1" RELATED SMILES [ChEBI:]
 is_a: CHEBI:35692 ! dicarboxylic acid
+equivalent_to: FBcv:0000552 ! aminopterin
 
 [Term]
 id: CHEBI:22563
 name: anion
 namespace: chebi_ontology
 def: "A monoatomic or polyatomic species having one or more elementary charges of the electron." [ANON:ANON]
-synonym: "anion" EXACT [ChEBI:]
-synonym: "anion" EXACT IUPAC_NAME [IUPAC:]
 synonym: "Anion" EXACT [ChEBI:]
+synonym: "anion" EXACT IUPAC_NAME [IUPAC:]
+synonym: "anion" EXACT [ChEBI:]
 synonym: "Anionen" RELATED [ChEBI:]
 synonym: "aniones" RELATED [ChEBI:]
 synonym: "anions" RELATED [IUPAC:]
@@ -606,6 +623,7 @@ synonym: "InChI=1S/C22H25NO6/c1-12(24)23-16-8-6-13-10-19(27-3)21(28-4)22(29-5)20
 synonym: "InChIKey=IAKHMKGGTNLKSZ-UHFFFAOYSA-N" RELATED InChIKey [ChEBI:]
 synonym: "N-(1,2,3,10-tetramethoxy-9-oxo-5,6,7,9-tetrahydrobenzo[a]heptalen-7-yl)acetamide" EXACT IUPAC_NAME [IUPAC:]
 is_a: CHEBI:38032 ! carbotricyclic compound
+equivalent_to: FBcv:0000577 ! colchicine
 
 [Term]
 id: CHEBI:23367
@@ -636,6 +654,7 @@ synonym: "CuSO4" RELATED [IUPAC:]
 synonym: "InChI=1S/Cu.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2" RELATED InChI [ChEBI:]
 synonym: "InChIKey=ARUVKPQLZAKDPS-UHFFFAOYSA-L" RELATED InChIKey [ChEBI:]
 is_a: CHEBI:51336 ! metal sulfate
+equivalent_to: FBcv:0000554 ! cupric sulfate
 
 [Term]
 id: CHEBI:23509
@@ -668,6 +687,11 @@ synonym: "dioxybutadiene" RELATED [ChemIDplus:]
 synonym: "InChI=1S/C4H6O2/c1-3(5-1)4-2-6-4/h3-4H,1-2H2" RELATED InChI [ChEBI:]
 synonym: "InChIKey=ZFIVKAOQEXOYFY-UHFFFAOYSA-N" RELATED InChIKey [ChEBI:]
 is_a: CHEBI:32955 ! epoxide
+equivalent_to: FBcv:0000559 ! diepoxybutane
+
+[Term]
+id: CHEBI:23705 ! 1,2:7,8-diepoxyoctane
+equivalent_to: FBcv:0000560 ! diepoxyoctane
 
 [Term]
 id: CHEBI:23924
@@ -688,6 +712,7 @@ id: CHEBI:23994
 name: ethyl methanesulfonate
 namespace: chebi_ontology
 is_a: CHEBI:25223 ! methanesulfonate ester
+equivalent_to: FBcv:0000530 ! ethyl methanesulfonate
 
 [Term]
 id: CHEBI:23995
@@ -695,8 +720,8 @@ name: N-ethyl-N-nitrosourea
 namespace: chebi_ontology
 def: "A urea compound having ethyl and nitroso substituents in the 1-position." [ANON:ANON]
 synonym: "1-(Aminocarbonyl)-1-ethyl-2-oxohydrazine" RELATED [NIST Chemistry WebBook:]
-synonym: "1-ethyl-1-nitrosourea" EXACT IUPAC_NAME [IUPAC:]
 synonym: "1-Ethyl-1-nitrosourea" RELATED [ChemIDplus:]
+synonym: "1-ethyl-1-nitrosourea" EXACT IUPAC_NAME [IUPAC:]
 synonym: "Aethylnitroso-harnstoff" RELATED [ChemIDplus:]
 synonym: "C3H7N3O2" RELATED FORMULA [ChEBI:]
 synonym: "CCN(N=O)C(N)=O" RELATED SMILES [ChEBI:]
@@ -710,6 +735,7 @@ synonym: "N-Ethylnitrosourea" RELATED [ChemIDplus:]
 synonym: "NEU" RELATED [NIST Chemistry WebBook:]
 is_a: CHEBI:35800 ! nitroso compound
 is_a: CHEBI:47857 ! ureas
+equivalent_to: FBcv:0000531 ! ethyl nitrosourea
 
 [Term]
 id: CHEBI:23996
@@ -751,6 +777,7 @@ id: CHEBI:24431
 name: chemical entity
 namespace: chebi_ontology
 def: "A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances." [ANON:ANON]
+equivalent_to: FBcv:0000525 ! chemical
 
 [Term]
 id: CHEBI:24432
@@ -795,8 +822,8 @@ namespace: chebi_ontology
 synonym: "group 17 elements" RELATED [ChEBI:]
 synonym: "group VII elements" RELATED [ChEBI:]
 synonym: "halogen" EXACT IUPAC_NAME [IUPAC:]
-synonym: "halogene" RELATED [ChEBI:]
 synonym: "Halogene" RELATED [ChEBI:]
+synonym: "halogene" RELATED [ChEBI:]
 synonym: "halogenes" RELATED [ChEBI:]
 synonym: "halogeno" RELATED [ChEBI:]
 synonym: "halogenos" RELATED [ChEBI:]
@@ -834,6 +861,7 @@ synonym: "InChI=1S/C9H18N6/c1-13(2)7-10-8(14(3)4)12-9(11-7)15(5)6/h1-6H3" RELATE
 synonym: "InChIKey=UUVWYPNAQBNQJQ-UHFFFAOYSA-N" RELATED InChIKey [ChEBI:]
 synonym: "N,N,N',N',N'',N''-hexamethyl-1,3,5-triazine-2,4,6-triamine" EXACT IUPAC_NAME [IUPAC:]
 is_a: CHEBI:38175 ! triamino-1,3,5-triazine
+equivalent_to: FBcv:0000586 ! hexamethylmelamine
 
 [Term]
 id: CHEBI:24565
@@ -859,6 +887,7 @@ synonym: "phosphoric acid hexamethyltriamide" RELATED [NIST Chemistry WebBook:]
 synonym: "phosphoric hexamethyltriamide" RELATED [NIST Chemistry WebBook:]
 synonym: "phosphoric tris(dimethylamide)" RELATED [NIST Chemistry WebBook:]
 is_a: CHEBI:17102 ! phosphoramide
+equivalent_to: FBcv:0000587 ! hexamethylphosphoramide
 
 [Term]
 id: CHEBI:24624
@@ -879,6 +908,7 @@ synonym: "InChIKey=LOEQGPPJCCUXEJ-UHFFFAOYSA-N" RELATED InChIKey [ChEBI:]
 synonym: "N,N-diethyl-2-{[4-(hydroxymethyl)-10-oxo-10H-dibenzo[b,e]thiopyran-1-yl]amino}ethanaminium methanesulfonate" RELATED [IUPAC:]
 synonym: "N-[2-(diethylamino)ethyl]-4-methoxy-9-oxoxanthene-1-amine monomethanesulfonate" RELATED [ChEBI:]
 is_a: CHEBI:38037 ! methanesulfonate salt
+equivalent_to: FBcv:0000532 ! hycanthon methanesulfonate
 
 [Term]
 id: CHEBI:24632
@@ -936,6 +966,7 @@ synonym: "inorganic entity" RELATED [ChEBI:]
 synonym: "inorganic molecular entities" RELATED [ChEBI:]
 synonym: "inorganics" RELATED [ChEBI:]
 is_a: CHEBI:23367 ! molecular entity
+equivalent_to: FBcv:0000553 ! inorganic compound
 
 [Term]
 id: CHEBI:24839
@@ -987,6 +1018,7 @@ synonym: "J" RELATED [ChEBI:]
 synonym: "Jod" RELATED [ChEBI:]
 synonym: "yodo" RELATED [ChEBI:]
 is_a: CHEBI:24473 ! halogen
+equivalent_to: FBcv:0000588 ! iodine
 
 [Term]
 id: CHEBI:24866
@@ -1018,8 +1050,8 @@ id: CHEBI:24870
 name: ion
 namespace: chebi_ontology
 def: "A molecular entity having a net electric charge." [ANON:ANON]
-synonym: "ion" EXACT IUPAC_NAME [IUPAC:]
 synonym: "Ion" EXACT [ChEBI:]
+synonym: "ion" EXACT IUPAC_NAME [IUPAC:]
 synonym: "ion" EXACT [ChEBI:]
 synonym: "Ionen" RELATED [ChEBI:]
 synonym: "iones" RELATED [ChEBI:]
@@ -1039,6 +1071,10 @@ id: CHEBI:25223
 name: methanesulfonate ester
 namespace: chebi_ontology
 is_a: CHEBI:48544 ! methanesulfonates
+
+[Term]
+id: CHEBI:25234 ! 1-methoxy-N-nitrosodiethylamine
+equivalent_to: FBcv:0000590 ! methoxy diethylnitrosamine
 
 [Term]
 id: CHEBI:25240
@@ -1064,6 +1100,7 @@ synonym: "methyl methanesulfonate" EXACT [ChEBI:]
 synonym: "methyl methanesulfonate" EXACT IUPAC_NAME [IUPAC:]
 synonym: "MMS" RELATED [ChEBI:]
 is_a: CHEBI:25223 ! methanesulfonate ester
+equivalent_to: FBcv:0000533 ! methyl methanesulfonate
 
 [Term]
 id: CHEBI:25348
@@ -1109,6 +1146,7 @@ synonym: "sulfur mustard" RELATED [ChemIDplus:]
 synonym: "Yperite" RELATED [NIST Chemistry WebBook:]
 is_a: CHEBI:23996 ! ethyl sulfide
 is_a: CHEBI:36683 ! organochlorine compound
+equivalent_to: FBcv:0000534 ! bis(2-chloroethyl) sulfide
 
 [Term]
 id: CHEBI:25435
@@ -1141,8 +1179,8 @@ synonym: "no metal" RELATED [ChEBI:]
 synonym: "no metales" RELATED [ChEBI:]
 synonym: "non-metal" RELATED [ChEBI:]
 synonym: "non-metaux" RELATED [ChEBI:]
-synonym: "nonmetal" RELATED [ChEBI:]
 synonym: "nonmetal" EXACT IUPAC_NAME [IUPAC:]
+synonym: "nonmetal" RELATED [ChEBI:]
 synonym: "nonmetals" RELATED [ChEBI:]
 is_a: CHEBI:33250 ! atom
 
@@ -1216,6 +1254,7 @@ name: p-N,N-bis(2-chloroethyl)aminophenylvaleric acid
 namespace: chebi_ontology
 is_a: CHEBI:33856 ! aromatic amino acid
 is_a: CHEBI:36683 ! organochlorine compound
+equivalent_to: FBcv:0000594 ! p-N,N-di(2-chloroethyl)aminophenylvaleric acid
 
 [Term]
 id: CHEBI:25814
@@ -1223,6 +1262,7 @@ name: p-N,N-bis(2-chloroethyl)amino-D-phenylalanine
 namespace: chebi_ontology
 is_a: CHEBI:25985 ! phenylalanine derivative
 is_a: CHEBI:36683 ! organochlorine compound
+equivalent_to: FBcv:0000595 ! p-N,N-di-(2-chloroethyl)amino-D-phenylalanine
 
 [Term]
 id: CHEBI:25816
@@ -1230,6 +1270,7 @@ name: p-N,N-bis(2-chloroethyl)amino-L-phenylalanine
 namespace: chebi_ontology
 is_a: CHEBI:25985 ! phenylalanine derivative
 is_a: CHEBI:36683 ! organochlorine compound
+equivalent_to: FBcv:0000597 ! p-N,N-di-(2-chloroethyl)amino-L-phenylalanine
 
 [Term]
 id: CHEBI:25818
@@ -1246,12 +1287,14 @@ synonym: "NCCc1ccc(cc1)N(CCCl)CCCl" RELATED SMILES [ChEBI:]
 synonym: "p-(bis(2-chloroethyl)amino)phenethylamine" RELATED [ChemIDplus:]
 synonym: "p-N,N-di-(2-chloroethyl)aminophenylethylamine" RELATED [ChemIDplus:]
 is_a: CHEBI:36683 ! organochlorine compound
+equivalent_to: FBcv:0000599 ! p-N,N-di-(2-chloroethyl)aminophenylethylamine
 
 [Term]
 id: CHEBI:25829
 name: p-p'-N,N-di(2-chloroethyl)aminophenoxyphenylalanine
 namespace: chebi_ontology
 is_a: CHEBI:36683 ! organochlorine compound
+equivalent_to: FBcv:0000600 ! p-p'-N,N-di(2-chloroethyl)aminophenoxyphenylalanine
 
 [Term]
 id: CHEBI:25903
@@ -1311,6 +1354,7 @@ synonym: "Oc1ccc(O)cc1.O=C1C=CC(=O)C=C1" RELATED SMILES [ChEBI:]
 synonym: "p-benzoquinhydrone" RELATED [ChemIDplus:]
 synonym: "p-benzoquinone--hydroquinone compound (1:1)" RELATED [NIST Chemistry WebBook:]
 is_a: CHEBI:35504 ! addition compound
+equivalent_to: FBcv:0000601 ! quinhydrone
 
 [Term]
 id: CHEBI:26513
@@ -1365,6 +1409,7 @@ synonym: "sodium hydrogen sulfite" RELATED [ChemIDplus:]
 synonym: "sodium hydrogensulfite" EXACT IUPAC_NAME [IUPAC:]
 is_a: CHEBI:38702 ! inorganic sodium salt
 is_a: CHEBI:48857 ! sulfite salt
+equivalent_to: FBcv:0000556 ! sodium bisulphite
 
 [Term]
 id: CHEBI:26712
@@ -1390,6 +1435,7 @@ id: CHEBI:26800
 name: styrylquinoline
 namespace: chebi_ontology
 is_a: CHEBI:26513 ! quinolines
+equivalent_to: FBcv:0000603 ! styryl quinoline
 
 [Term]
 id: CHEBI:26819
@@ -1460,6 +1506,7 @@ id: CHEBI:27090
 name: triaziquone
 namespace: chebi_ontology
 is_a: CHEBI:25435 ! mutagen
+equivalent_to: FBcv:0000604 ! triaziquone
 
 [Term]
 id: CHEBI:27134
@@ -1496,6 +1543,7 @@ synonym: "InChIKey=LVLANIHJQRZTPY-UHFFFAOYSA-N" RELATED InChIKey [ChEBI:]
 synonym: "NC(=O)OC=C" RELATED SMILES [ChEBI:]
 synonym: "vinyl carbamate" EXACT IUPAC_NAME [IUPAC:]
 is_a: CHEBI:23003 ! carbamate ester
+equivalent_to: FBcv:0000540 ! vinyl carbamate
 
 [Term]
 id: CHEBI:27504
@@ -1515,6 +1563,11 @@ synonym: "Mitomycin C" EXACT [KEGG COMPOUND:]
 synonym: "MMC" RELATED [ChemIDplus:]
 synonym: "Mutamycin" RELATED [ChemIDplus:]
 is_a: CHEBI:25357 ! mitomycin
+equivalent_to: FBcv:0000542 ! mitomycin C
+
+[Term]
+id: CHEBI:27561 ! oxirane
+equivalent_to: FBcv:0000582 ! ethylene oxide
 
 [Term]
 id: CHEBI:27666
@@ -1533,6 +1586,7 @@ synonym: "Dactinomycin" RELATED [KEGG COMPOUND:]
 synonym: "InChI=1S/C62H86N12O16/c1-27(2)42-59(84)73-23-17-19-36(73)57(82)69(13)25-38(75)71(15)48(29(5)6)61(86)88-33(11)44(55(80)65-42)67-53(78)35-22-21-31(9)51-46(35)64-47-40(41(63)50(77)32(10)52(47)90-51)54(79)68-45-34(12)89-62(87)49(30(7)8)72(16)39(76)26-70(14)58(83)37-20-18-24-74(37)60(85)43(28(3)4)66-56(45)81/h21-22,27-30,33-34,36-37,42-45,48-49H,17-20,23-26,63H2,1-16H3,(H,65,80)(H,66,81)(H,67,78)(H,68,79)/t33-,34-,36+,37+,42-,43-,44+,45+,48+,49+/m1/s1" RELATED InChI [ChEBI:]
 synonym: "InChIKey=RJURFGZVJUQBHK-IIXSONLDSA-N" RELATED InChIKey [ChEBI:]
 is_a: CHEBI:15369 ! actinomycin
+equivalent_to: FBcv:0000573 ! actinomycin D
 
 [Term]
 id: CHEBI:27732
@@ -1550,8 +1604,8 @@ synonym: "anhydrous caffeine" RELATED [KEGG DRUG:]
 synonym: "C8H10N4O2" RELATED FORMULA [KEGG COMPOUND:]
 synonym: "cafeina" RELATED [ChemIDplus:]
 synonym: "cafeine" RELATED [ChEBI:]
-synonym: "Caffeine" EXACT [KEGG COMPOUND:]
 synonym: "CAFFEINE" EXACT [PDBeChem:]
+synonym: "Caffeine" EXACT [KEGG COMPOUND:]
 synonym: "Cn1cnc2n(C)c(=O)n(C)c(=O)c12" RELATED SMILES [ChEBI:]
 synonym: "Coffein" RELATED [ChemIDplus:]
 synonym: "guaranine" RELATED [IUPHAR:]
@@ -1564,6 +1618,7 @@ synonym: "teina" RELATED [ChEBI:]
 synonym: "Thein" RELATED [ChemIDplus:]
 synonym: "theine" RELATED [NIST Chemistry WebBook:]
 is_a: CHEBI:27134 ! trimethylxanthine
+equivalent_to: FBcv:0000575 ! caffeine
 
 [Term]
 id: CHEBI:27789
@@ -1572,9 +1627,9 @@ namespace: chebi_ontology
 def: "A chloroethane that has formula C2H4Cl2." [ANON:ANON]
 synonym: "1,2-DCE" RELATED [NIST Chemistry WebBook:]
 synonym: "1,2-Dichloraethan" RELATED [ChEBI:]
-synonym: "1,2-dichloroethane" EXACT IUPAC_NAME [IUPAC:]
-synonym: "1,2-Dichloroethane" EXACT [KEGG COMPOUND:]
 synonym: "1,2-DICHLOROETHANE" EXACT [PDBeChem:]
+synonym: "1,2-Dichloroethane" EXACT [KEGG COMPOUND:]
+synonym: "1,2-dichloroethane" EXACT IUPAC_NAME [IUPAC:]
 synonym: "Aethylenchlorid" RELATED [ChEBI:]
 synonym: "Aethylendichlorid" RELATED [ChEBI:]
 synonym: "alpha,beta-dichloroethane" RELATED [NIST Chemistry WebBook:]
@@ -1590,6 +1645,7 @@ synonym: "Glycol dichloride" RELATED [KEGG COMPOUND:]
 synonym: "InChI=1S/C2H4Cl2/c3-1-2-4/h1-2H2" RELATED InChI [ChEBI:]
 synonym: "InChIKey=WSLDOOZREJYCGB-UHFFFAOYSA-N" RELATED InChIKey [ChEBI:]
 is_a: CHEBI:36016 ! chloroethanes
+equivalent_to: FBcv:0000546 ! 1,2-dichloroethane
 
 [Term]
 id: CHEBI:27899
@@ -1609,8 +1665,8 @@ synonym: "cis-diammineplatinum(II) dichloride" RELATED [ChemIDplus:]
 synonym: "cis-dichlorodiammineplatinum(II)" RELATED [ChemIDplus:]
 synonym: "cis-platin" RELATED [ChEBI:]
 synonym: "Cismaplat" RELATED BRAND_NAME [DrugBank:]
-synonym: "cisplatin" RELATED INN [ChemIDplus:]
 synonym: "Cisplatin" EXACT [KEGG COMPOUND:]
+synonym: "cisplatin" RELATED INN [ChemIDplus:]
 synonym: "cisplatine" RELATED INN [ChemIDplus:]
 synonym: "cisplatino" RELATED INN [ChemIDplus:]
 synonym: "cisplatinum" RELATED INN [ChemIDplus:]
@@ -1627,6 +1683,7 @@ synonym: "Platinex" RELATED BRAND_NAME [DrugBank:]
 synonym: "Platinol" RELATED BRAND_NAME [KEGG DRUG:]
 synonym: "Randa" RELATED BRAND_NAME [DrugBank:]
 is_a: CHEBI:51214 ! diamminedichloroplatinum
+equivalent_to: FBcv:0000576 ! cisplatin
 
 [Term]
 id: CHEBI:27919
@@ -1647,6 +1704,7 @@ synonym: "tretamine" EXACT [ChemIDplus:]
 synonym: "Triethylenemelamine" RELATED [KEGG COMPOUND:]
 synonym: "Trisaziridinyltriazine" RELATED [KEGG COMPOUND:]
 is_a: CHEBI:26588 ! 1,3,5-triazines
+equivalent_to: FBcv:0000605 ! triethylenemelamine
 
 [Term]
 id: CHEBI:28262
@@ -1657,33 +1715,34 @@ synonym: "(CH3)2SO" RELATED [NIST Chemistry WebBook:]
 synonym: "(methanesulfinyl)methane" EXACT IUPAC_NAME [IUPAC:]
 synonym: "C2H6OS" RELATED FORMULA [KEGG COMPOUND:]
 synonym: "CS(C)=O" RELATED SMILES [ChEBI:]
-synonym: "dimethyl sulfoxide" EXACT [UniProt:]
-synonym: "dimethyl sulfoxide" EXACT IUPAC_NAME [IUPAC:]
-synonym: "dimethyl sulfoxide" RELATED INN [ChemIDplus:]
-synonym: "Dimethyl sulfoxide" EXACT [KEGG COMPOUND:]
 synonym: "DIMETHYL SULFOXIDE" EXACT [PDBeChem:]
+synonym: "Dimethyl sulfoxide" EXACT [KEGG COMPOUND:]
+synonym: "dimethyl sulfoxide" EXACT IUPAC_NAME [IUPAC:]
+synonym: "dimethyl sulfoxide" EXACT [UniProt:]
+synonym: "dimethyl sulfoxide" RELATED INN [ChemIDplus:]
 synonym: "dimethyl sulfur oxide" RELATED [NIST Chemistry WebBook:]
 synonym: "dimethyl sulphoxide" RELATED [ChemIDplus:]
 synonym: "dimethyli sulfoxidum" RELATED INN [ChemIDplus:]
 synonym: "Dimethylsulfoxid" RELATED [ChEBI:]
 synonym: "dimethylsulfoxyde" RELATED INN [ChemIDplus:]
 synonym: "dimetil sulfoxido" RELATED INN [ChemIDplus:]
-synonym: "dmso" RELATED [IUPAC:]
 synonym: "DMSO" RELATED [KEGG COMPOUND:]
+synonym: "dmso" RELATED [IUPAC:]
 synonym: "InChI=1S/C2H6OS/c1-4(2)3/h1-2H3" RELATED InChI [ChEBI:]
 synonym: "InChIKey=IAZDPXIOMUYVGZ-UHFFFAOYSA-N" RELATED InChIKey [ChEBI:]
 synonym: "methylsulfinylmethane" RELATED [ChemIDplus:]
 synonym: "S(O)Me2" RELATED [ChEBI:]
 synonym: "sulfinylbis(methane)" RELATED [ChemIDplus:]
 is_a: CHEBI:35813 ! sulfoxide
+equivalent_to: FBcv:0000578 ! dimethyl sulfoxide
 
 [Term]
 id: CHEBI:28534
 name: 1,2-dibromoethane
 namespace: chebi_ontology
 def: "A bromoalkane that has formula C2H4Br2." [ANON:ANON]
-synonym: "1,2-dibromoethane" EXACT IUPAC_NAME [IUPAC:]
 synonym: "1,2-Dibromoethane" EXACT [KEGG COMPOUND:]
+synonym: "1,2-dibromoethane" EXACT IUPAC_NAME [IUPAC:]
 synonym: "alpha,beta-dibromoethane" RELATED [NIST Chemistry WebBook:]
 synonym: "alpha,omega-dibromoethane" RELATED [ChemIDplus:]
 synonym: "BrCCBr" RELATED SMILES [ChEBI:]
@@ -1696,6 +1755,7 @@ synonym: "InChI=1S/C2H4Br2/c3-1-2-4/h1-2H2" RELATED InChI [ChEBI:]
 synonym: "InChIKey=PAAZPARNPHGIKF-UHFFFAOYSA-N" RELATED InChIKey [ChEBI:]
 synonym: "sym-Dibromoethane" RELATED [ChemIDplus:]
 is_a: CHEBI:22929 ! bromoalkane
+equivalent_to: FBcv:0000545 ! 1,2-dibromoethane
 
 [Term]
 id: CHEBI:28741
@@ -1708,9 +1768,10 @@ synonym: "InChI=1S/FH.Na/h1H;/q;+1/p-1" RELATED InChI [ChEBI:]
 synonym: "InChIKey=PUZPDOWCWNUUKD-UHFFFAOYSA-M" RELATED InChIKey [ChEBI:]
 synonym: "Na.F" RELATED FORMULA [KEGG COMPOUND:]
 synonym: "NaF" RELATED [IUPAC:]
-synonym: "sodium fluoride" EXACT IUPAC_NAME [IUPAC:]
 synonym: "Sodium fluoride" EXACT [KEGG COMPOUND:]
+synonym: "sodium fluoride" EXACT IUPAC_NAME [IUPAC:]
 is_a: CHEBI:24060 ! fluoride salt
+equivalent_to: FBcv:0000557 ! sodium fluoride
 
 [Term]
 id: CHEBI:28775
@@ -1724,8 +1785,8 @@ synonym: "Cirantin" RELATED [ChemIDplus:]
 synonym: "Ciratin" RELATED [KEGG COMPOUND:]
 synonym: "COc1ccc(cc1O)[C@@H]1CC(=O)c2c(O)cc(O[C@@H]3O[C@H](CO[C@@H]4O[C@@H](C)[C@H](O)[C@@H](O)[C@H]4O)[C@@H](O)[C@H](O)[C@H]3O)cc2O1" RELATED SMILES [ChEBI:]
 synonym: "Hesperetin 7-O-rutinoside" RELATED [KEGG COMPOUND:]
-synonym: "hesperidin" EXACT [UniProt:]
 synonym: "Hesperidin" EXACT [KEGG COMPOUND:]
+synonym: "hesperidin" EXACT [UniProt:]
 synonym: "Hesperidoside" RELATED [ChemIDplus:]
 synonym: "InChI=1S/C28H34O15/c1-10-21(32)23(34)25(36)27(40-10)39-9-19-22(33)24(35)26(37)28(43-19)41-12-6-14(30)20-15(31)8-17(42-18(20)7-12)11-3-4-16(38-2)13(29)5-11/h3-7,10,17,19,21-30,32-37H,8-9H2,1-2H3/t10-,17-,19+,21-,22+,23+,24-,25+,26+,27+,28+/m0/s1" RELATED InChI [ChEBI:]
 synonym: "InChIKey=QUQPHWDTPGMPEX-QJBIFVCTSA-N" RELATED InChIKey [ChEBI:]
@@ -1734,6 +1795,7 @@ is_a: CHEBI:38738 ! monomethoxyflavanone
 is_a: CHEBI:38749 ! dihydroxyflavanone
 is_a: CHEBI:48024 ! 3'-hydroxyflavanones
 is_a: CHEBI:63353 ! disaccharide derivative
+equivalent_to: FBcv:0000585 ! hesperidine
 
 [Term]
 id: CHEBI:28830
@@ -1745,8 +1807,8 @@ synonym: "4-[p-[bis(2-chloroethyl)amino]phenyl]butyric acid" RELATED [NIST Chemi
 synonym: "4-{4-[bis(2-chloroethyl)amino]phenyl}butanoic acid" EXACT IUPAC_NAME [IUPAC:]
 synonym: "Ambochlorin" RELATED [NIST Chemistry WebBook:]
 synonym: "C14H19Cl2NO2" RELATED FORMULA [KEGG DRUG:]
-synonym: "Chlorambucil" EXACT [KEGG DRUG:]
 synonym: "CHLORAMBUCIL" EXACT [PDBeChem:]
+synonym: "Chlorambucil" EXACT [KEGG DRUG:]
 synonym: "chloraminophen" RELATED [ChemIDplus:]
 synonym: "gamma-[p-di(2-chloroethyl)aminophenyl]butyric acid" RELATED [NIST Chemistry WebBook:]
 synonym: "InChI=1S/C14H19Cl2NO2/c15-8-10-17(11-9-16)13-6-4-12(5-7-13)2-1-3-14(18)19/h4-7H,1-3,8-11H2,(H,18,19)" RELATED InChI [ChEBI:]
@@ -1757,6 +1819,7 @@ synonym: "OC(=O)CCCc1ccc(cc1)N(CCCl)CCCl" RELATED SMILES [ChEBI:]
 synonym: "phenylbutyric acid nitrogen mustard" RELATED [ChemIDplus:]
 is_a: CHEBI:36683 ! organochlorine compound
 is_a: CHEBI:37598 ! nitrogen mustard
+equivalent_to: FBcv:0000815 ! p-N,N-di-(2-chloroethyl)aminophenylbutyric acid
 
 [Term]
 id: CHEBI:28863
@@ -1798,6 +1861,7 @@ synonym: "Phenylalanine nitrogen mustard" RELATED [ChemIDplus:]
 is_a: CHEBI:25985 ! phenylalanine derivative
 is_a: CHEBI:36683 ! organochlorine compound
 is_a: CHEBI:37598 ! nitrogen mustard
+equivalent_to: FBcv:0000596 ! p-N,N-di-(2-chloroethyl)amino-DL-phenylalanine
 
 [Term]
 id: CHEBI:28901
@@ -1827,6 +1891,7 @@ synonym: "Myeloleukon" RELATED BRAND_NAME [ChEBI:]
 synonym: "Myleran" RELATED BRAND_NAME [KEGG DRUG:]
 synonym: "Tetramethylene bis(methanesulfonate)" RELATED [ChemIDplus:]
 is_a: CHEBI:25223 ! methanesulfonate ester
+equivalent_to: FBcv:0000814 ! 1,4-dimethanesulfonoxybutane
 
 [Term]
 id: CHEBI:28954
@@ -1840,6 +1905,7 @@ synonym: "Fagaronine" EXACT [KEGG COMPOUND:]
 synonym: "InChI=1S/C21H19NO4/c1-22-11-13-8-19(25-3)20(26-4)9-15(13)14-6-5-12-7-17(23)18(24-2)10-16(12)21(14)22/h5-11H,1-4H3/p+1" RELATED InChI [ChEBI:]
 synonym: "InChIKey=OOKZVPUCASIEBL-UHFFFAOYSA-O" RELATED InChIKey [ChEBI:]
 is_a: CHEBI:38517 ! benzophenanthridine alkaloid
+equivalent_to: FBcv:0000583 ! fagaronine
 
 [Term]
 id: CHEBI:29067
@@ -1883,6 +1949,7 @@ synonym: "C20H12" RELATED FORMULA [KEGG COMPOUND:]
 synonym: "InChI=1S/C20H12/c1-2-7-17-15(4-1)12-16-9-8-13-5-3-6-14-10-11-18(17)20(16)19(13)14/h1-12H" RELATED InChI [ChEBI:]
 synonym: "InChIKey=FMMWHPNWAFZXNH-UHFFFAOYSA-N" RELATED InChIKey [ChEBI:]
 is_a: CHEBI:35300 ! ortho- and peri-fused polycyclic arene
+equivalent_to: FBcv:0000574 ! benzo(alpha)pyrene
 
 [Term]
 id: CHEBI:30879
@@ -1901,8 +1968,8 @@ name: aziridine
 namespace: chebi_ontology
 def: "A member of the aziridines that has formula C2H5N." [ANON:ANON]
 synonym: "azacyclopropane" RELATED [NIST Chemistry WebBook:]
-synonym: "aziridine" EXACT IUPAC_NAME [IUPAC:]
 synonym: "Aziridine" EXACT [KEGG COMPOUND:]
+synonym: "aziridine" EXACT IUPAC_NAME [IUPAC:]
 synonym: "C1CN1" RELATED SMILES [ChEBI:]
 synonym: "C2H5N" RELATED FORMULA [KEGG COMPOUND:]
 synonym: "dimethyleneimine" RELATED [NIST Chemistry WebBook:]
@@ -1914,6 +1981,7 @@ synonym: "InChIKey=NOWKCMXCCJGMRR-UHFFFAOYSA-N" RELATED InChIKey [ChEBI:]
 is_a: CHEBI:22681 ! aziridines
 is_a: CHEBI:36389 ! saturated organic heteromonocyclic parent
 is_a: CHEBI:37949 ! azacycloalkane
+equivalent_to: FBcv:0000581 ! ethylenimine
 
 [Term]
 id: CHEBI:32955
@@ -1947,8 +2015,8 @@ synonym: "[B(OH)3]" RELATED [MolBase:]
 synonym: "[H]OB(O[H])O[H]" RELATED SMILES [ChEBI:]
 synonym: "B(OH)3" RELATED [NIST Chemistry WebBook:]
 synonym: "BH3O3" RELATED FORMULA [KEGG COMPOUND:]
-synonym: "Boric acid" EXACT [KEGG COMPOUND:]
 synonym: "BORIC ACID" EXACT [PDBeChem:]
+synonym: "Boric acid" EXACT [KEGG COMPOUND:]
 synonym: "boric acid" EXACT [IUPAC:]
 synonym: "boron trihydroxide" RELATED [NIST Chemistry WebBook:]
 synonym: "H3BO3" RELATED [IUPAC:]
@@ -1957,6 +2025,7 @@ synonym: "InChIKey=KGBXLFKZBHKPEV-UHFFFAOYSA-N" RELATED InChIKey [ChEBI:]
 synonym: "orthoboric acid" RELATED [NIST Chemistry WebBook:]
 synonym: "trihydroxidoboron" EXACT IUPAC_NAME [IUPAC:]
 is_a: CHEBI:59765 ! boric acids
+equivalent_to: FBcv:0000555 ! H3BO3
 
 [Term]
 id: CHEBI:33145
@@ -2518,8 +2587,8 @@ name: nucleoside
 namespace: chebi_ontology
 def: "An N-glycosyl compound that has both a nucleobase, normally adenine, guanine, xanthine, thymine, cytosine or uracil, and either a ribose or deoxyribose as functional parents." [ANON:ANON]
 synonym: "C5H9O4R" RELATED FORMULA [KEGG COMPOUND:]
-synonym: "nucleoside" EXACT [UniProt:]
 synonym: "Nucleoside" EXACT [KEGG COMPOUND:]
+synonym: "nucleoside" EXACT [UniProt:]
 synonym: "nucleosides" EXACT IUPAC_NAME [IUPAC:]
 synonym: "nucleosides" RELATED [ChEBI:]
 is_a: CHEBI:21731 ! N-glycosyl compound
@@ -2595,6 +2664,7 @@ id: CHEBI:34699
 name: diethyl sulfate
 namespace: chebi_ontology
 is_a: CHEBI:29281 ! alkyl sulfate
+equivalent_to: FBcv:0000527 ! diethyl sulfate
 
 [Term]
 id: CHEBI:34873
@@ -2616,6 +2686,7 @@ synonym: "N-ethyl-N-nitrosoethanamine" EXACT IUPAC_NAME [IUPAC:]
 synonym: "N-Nitrosodiethylamine" EXACT [KEGG COMPOUND:]
 synonym: "NDEA" RELATED [KEGG COMPOUND:]
 is_a: CHEBI:35803 ! nitrosamine
+equivalent_to: FBcv:0000735 ! N-nitrosodiethylamine
 
 [Term]
 id: CHEBI:35175
@@ -2687,6 +2758,7 @@ synonym: "Dibenz[a,h]anthracene" EXACT [KEGG COMPOUND:]
 synonym: "InChI=1S/C22H14/c1-3-7-19-15(5-1)9-11-17-14-22-18(13-21(17)19)12-10-16-6-2-4-8-20(16)22/h1-14H" RELATED InChI [ChEBI:]
 synonym: "InChIKey=LHRCREOYAASXPZ-UHFFFAOYSA-N" RELATED InChIKey [ChEBI:]
 is_a: CHEBI:35296 ! ortho-fused polycyclic arene
+equivalent_to: FBcv:0000562 ! 1,2:5,6-dibenzanthracene
 
 [Term]
 id: CHEBI:35300
@@ -2804,6 +2876,7 @@ synonym: "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3" RELATED InChI [ChEBI:]
 synonym: "InChIKey=RTZKZFJDLAIYFH-UHFFFAOYSA-N" RELATED InChIKey [ChEBI:]
 synonym: "Pronarcol" RELATED [NIST Chemistry WebBook:]
 is_a: CHEBI:25698 ! ether
+equivalent_to: FBcv:0000580 ! ethyl ether
 
 [Term]
 id: CHEBI:35800
@@ -2837,9 +2910,10 @@ synonym: "InChI=1S/C2H6N2O/c1-4(2)3-5/h1-2H3" RELATED InChI [ChEBI:]
 synonym: "InChIKey=UMFJAHHVKNCGLG-UHFFFAOYSA-N" RELATED InChIKey [ChEBI:]
 synonym: "N,N-Dimethylnitrosamine" RELATED [ChemIDplus:]
 synonym: "N-methyl-N-nitrosomethanamine" EXACT IUPAC_NAME [IUPAC:]
-synonym: "N-Nitrosodimethylamine" EXACT [ChemIDplus:]
 synonym: "N-Nitrosodimethylamine" EXACT [KEGG COMPOUND:]
+synonym: "N-Nitrosodimethylamine" EXACT [ChemIDplus:]
 is_a: CHEBI:35803 ! nitrosamine
+equivalent_to: FBcv:0000593 ! N-nitrosodimethylamine
 
 [Term]
 id: CHEBI:35813
@@ -2881,8 +2955,8 @@ def: "Compounds having a fully conjugated cyclic dione structure, such as that o
 synonym: "a quinone" RELATED [UniProt:]
 synonym: "Chinon" RELATED [ChEBI:]
 synonym: "quinone" EXACT [IUPAC:]
-synonym: "quinones" RELATED [ChEBI:]
 synonym: "quinones" EXACT IUPAC_NAME [IUPAC:]
+synonym: "quinones" RELATED [ChEBI:]
 is_a: CHEBI:3992 ! cyclic ketone
 is_a: CHEBI:50860 ! organic molecular entity
 
@@ -3065,8 +3139,8 @@ def: "Any ether in which the oxygen atom forms part of a ring." [ANON:ANON]
 synonym: "cyclic ether" EXACT [IUPAC:]
 synonym: "cyclic ethers" EXACT IUPAC_NAME [IUPAC:]
 synonym: "cyclic ethers" RELATED [ChEBI:]
-synonym: "epoxy compounds" RELATED [ChEBI:]
 synonym: "epoxy compounds" EXACT IUPAC_NAME [IUPAC:]
+synonym: "epoxy compounds" RELATED [ChEBI:]
 is_a: CHEBI:25698 ! ether
 is_a: CHEBI:38104 ! oxacycle
 
@@ -3099,15 +3173,17 @@ synonym: "N(1),N(1)-bis(2-chloroethyl)-N(4)-(6-chloro-2-methoxyacridin-9-yl)pent
 synonym: "quinacrine mustard" EXACT [ChemIDplus:]
 is_a: CHEBI:37598 ! nitrogen mustard
 is_a: CHEBI:51803 ! aminoacridine
+equivalent_to: FBcv:0000543 ! quinacrine mustard
 
 [Term]
 id: CHEBI:37598
 name: nitrogen mustard
 namespace: chebi_ontology
 def: "Compounds having two beta-haloalkyl groups bound to a nitrogen atom, as in (X-C2H2-C2H2)2NR." [ANON:ANON]
-synonym: "nitrogen mustards" RELATED [ChEBI:]
 synonym: "nitrogen mustards" EXACT IUPAC_NAME [IUPAC:]
+synonym: "nitrogen mustards" RELATED [ChEBI:]
 is_a: CHEBI:35352 ! organonitrogen compound
+equivalent_to: FBcv:0000813 ! nitrogen mustard
 
 [Term]
 id: CHEBI:37622
@@ -3115,8 +3191,8 @@ name: carboxamide
 namespace: chebi_ontology
 def: "An amide of a carboxylic acid, having the structure RC(=O)NR2. The term is used as a suffix in systematic name formation to denote the -C(=O)NH2 group including its carbon atom." [ANON:ANON]
 synonym: "[*]C(=O)N([*])[*]" RELATED SMILES [ChEBI:]
-synonym: "carboxamides" RELATED [ChEBI:]
 synonym: "carboxamides" EXACT IUPAC_NAME [IUPAC:]
+synonym: "carboxamides" RELATED [ChEBI:]
 synonym: "CNOR3" RELATED FORMULA [ChEBI:]
 synonym: "primary carboxamide" RELATED [ChEBI:]
 is_a: CHEBI:33256 ! primary amide
@@ -3330,8 +3406,8 @@ def: "A hydroxyether that has formula C3H8O2." [ANON:ANON]
 synonym: "1-hydroxy-2-methoxyethane" RELATED [ChemIDplus:]
 synonym: "2-hydroxyethyl methyl ether" RELATED [NIST Chemistry WebBook:]
 synonym: "2-methoxy-1-ethanol" RELATED [ChemIDplus:]
-synonym: "2-methoxyethanol" EXACT IUPAC_NAME [IUPAC:]
 synonym: "2-METHOXYETHANOL" EXACT [PDBeChem:]
+synonym: "2-methoxyethanol" EXACT IUPAC_NAME [IUPAC:]
 synonym: "3-oxa-1-butanol" RELATED [ChemIDplus:]
 synonym: "beta-methoxyethanol" RELATED [NIST Chemistry WebBook:]
 synonym: "C3H8O2" RELATED FORMULA [ChEBI:]
@@ -3343,6 +3419,7 @@ synonym: "Methyl cellosolve" RELATED [ChemIDplus:]
 synonym: "methyl oxitol" RELATED [ChemIDplus:]
 synonym: "monomethyl ethylene glycol ether" RELATED [ChemIDplus:]
 is_a: CHEBI:46789 ! hydroxyether
+equivalent_to: FBcv:0000570 ! 2-methoxyethanol
 
 [Term]
 id: CHEBI:47017
@@ -3459,6 +3536,7 @@ synonym: "nitrosomethylurea" RELATED [NIST Chemistry WebBook:]
 synonym: "NMH" RELATED [ChemIDplus:]
 synonym: "NMU" RELATED [ChemIDplus:]
 is_a: CHEBI:47857 ! ureas
+equivalent_to: FBcv:0000592 ! nitrosomethyl urea
 
 [Term]
 id: CHEBI:50860
@@ -3500,17 +3578,18 @@ synonym: "1-((2-(diethylamino)ethyl)amino)-4-methylthioxanthen-9-one" RELATED [C
 synonym: "1-diethylaminoethylethylamino-4-methyl-thioxanthenone" RELATED [ChEBI:]
 synonym: "1-{[2-(diethylamino)ethyl]amino}-4-methyl-9H-thioxanthen-9-one" EXACT IUPAC_NAME [IUPAC:]
 synonym: "1-{[2-(diethylamino)ethyl]amino}-4-methylthioxanthen-9-one" RELATED [ChEBI:]
-synonym: "C20H24N2OS" RELATED FORMULA [ChEBI:]
 synonym: "C20H24N2OS" RELATED FORMULA [KEGG COMPOUND:]
+synonym: "C20H24N2OS" RELATED FORMULA [ChEBI:]
 synonym: "CCN(CC)CCNc1ccc(C)c2sc3ccccc3c(=O)c12" RELATED SMILES [ChEBI:]
 synonym: "InChI=1S/C20H24N2OS/c1-4-22(5-2)13-12-21-16-11-10-14(3)20-18(16)19(23)15-8-6-7-9-17(15)24-20/h6-11,21H,4-5,12-13H2,1-3H3" RELATED InChI [ChEBI:]
 synonym: "InChIKey=FBQPGGIHOFZRGH-UHFFFAOYSA-N" RELATED InChIKey [ChEBI:]
-synonym: "lucanthone" RELATED INN [WHO MedNet:]
-synonym: "lucanthone" RELATED INN [ChemIDplus:]
 synonym: "Lucanthone" EXACT [KEGG COMPOUND:]
+synonym: "lucanthone" RELATED INN [ChemIDplus:]
+synonym: "lucanthone" RELATED INN [WHO MedNet:]
 synonym: "lucanthonum" RELATED INN [ChemIDplus:]
 synonym: "lucantona" RELATED INN [ChemIDplus:]
 is_a: CHEBI:50930 ! thioxanthenes
+equivalent_to: FBcv:0000569 ! lucanthone
 
 [Term]
 id: CHEBI:51067
@@ -3700,6 +3779,7 @@ synonym: "hexane-2,5-diyl dimethanesulfonate" EXACT IUPAC_NAME [IUPAC:]
 synonym: "InChI=1S/C8H18O6S2/c1-7(13-15(3,9)10)5-6-8(2)14-16(4,11)12/h7-8H,5-6H2,1-4H3" RELATED InChI [ChEBI:]
 synonym: "InChIKey=JDZNTUQRMDAIRO-UHFFFAOYSA-N" RELATED InChIKey [ChEBI:]
 is_a: CHEBI:25223 ! methanesulfonate ester
+equivalent_to: FBcv:0000563 ! 1,4-dimethanesulfonoxy-1,4-dimethylbutane
 
 [Term]
 id: CHEBI:67142
@@ -3714,6 +3794,7 @@ synonym: "nucleobase analog" RELATED [ChEBI:]
 synonym: "nucleobase analogs" RELATED [ChEBI:]
 synonym: "nucleobase analogues" RELATED [ChEBI:]
 is_a: CHEBI:33832 ! organic cyclic compound
+equivalent_to: FBcv:0000548 ! base analog
 
 [Term]
 id: CHEBI:72544
@@ -5742,7 +5823,7 @@ id: FBcv:0000287
 name: loss of function allele
 namespace: allele_class
 def: "An allele that either makes no functional gene product, makes reduced levels of a normally functioning gene product or makes a gene product with reduced activity compared to wild-type." [FlyBase:FBrf0049147]
-comment: Loss of function alleles are generally, but not exclusively, recessive. At haplo-insufficient loci (loci that require two copies for normal function), loss of function alleles can be dominant.\n
+comment: Loss of function alleles are generally, but not exclusively, recessive. At haplo-insufficient loci (loci that require two copies for normal function), loss of function alleles can be dominant.
 is_a: FBcv:0000286 ! allele class
 
 [Term]
@@ -5764,7 +5845,7 @@ id: FBcv:0000290
 name: gain of function allele
 namespace: allele_class
 def: "An allele that either makes a normally functioning gene product but at higher levels or in a different spatial or temporal pattern to wild-type, or a product with increased or novel activity compared to wild-type." [FlyBase:FBrf0049147]
-comment: Gain of function alleles are generally dominant. But not all dominant alleles are gain of function alleles.\n
+comment: Gain of function alleles are generally dominant. But not all dominant alleles are gain of function alleles.
 is_a: FBcv:0000286 ! allele class
 
 [Term]
@@ -6767,7 +6848,6 @@ namespace: origin_of_mutation
 def: "." [CHEBI:24431]
 synonym: "mutation induced by chemical exposure" EXACT []
 is_a: FBcv:0000452 ! origin of mutation
-equivalent_to: CHEBI:24431
 
 [Term]
 id: FBcv:0000526
@@ -6786,7 +6866,6 @@ def: "." [CHEBI:34699]
 synonym: "DES" RELATED []
 synonym: "mutation induced by diethyl sulfate exposure" EXACT []
 is_a: FBcv:0000526 ! alkylating agent
-equivalent_to: CHEBI:34699
 
 [Term]
 id: FBcv:0000528
@@ -6796,7 +6875,6 @@ def: "." [CHEBI:19508]
 synonym: "CB1506" RELATED []
 synonym: "mutation induced by 2-chloroethyl methanesulfonate exposure" EXACT []
 is_a: FBcv:0000526 ! alkylating agent
-equivalent_to: CHEBI:19508
 
 [Term]
 id: FBcv:0000529
@@ -6806,7 +6884,6 @@ def: "." [CHEBI:19579]
 synonym: "CB1522" RELATED []
 synonym: "mutation induced by 2-fluoroethyl methanesulfonate exposure" EXACT []
 is_a: FBcv:0000526 ! alkylating agent
-equivalent_to: CHEBI:19579
 
 [Term]
 id: FBcv:0000530
@@ -6818,7 +6895,6 @@ synonym: "EMS" RELATED []
 synonym: "mutation induced by EMS exposure" EXACT []
 synonym: "mutation induced by ethyl methanesulfonate exposure" EXACT []
 is_a: FBcv:0000526 ! alkylating agent
-equivalent_to: CHEBI:23994
 
 [Term]
 id: FBcv:0000531
@@ -6830,7 +6906,6 @@ synonym: "mutation induced by ENU exposure" EXACT []
 synonym: "mutation induced by ethyl nitrosourea exposure" EXACT []
 synonym: "N-ethyl-N-nitrosourea" RELATED [CHEBI:23995]
 is_a: FBcv:0000526 ! alkylating agent
-equivalent_to: CHEBI:23995
 
 [Term]
 id: FBcv:0000532
@@ -6842,7 +6917,6 @@ synonym: "hycanthone mesylate" RELATED [CHEBI:24624]
 synonym: "mutation induced by HMS exposure" EXACT []
 synonym: "mutation induced by hycanthon methanesulfonate exposure" EXACT []
 is_a: FBcv:0000526 ! alkylating agent
-equivalent_to: CHEBI:24624
 
 [Term]
 id: FBcv:0000533
@@ -6854,7 +6928,6 @@ synonym: "MMS" RELATED []
 synonym: "mutation induced by methyl methanesulfonate exposure" EXACT []
 synonym: "mutation induced by MMS exposure" EXACT []
 is_a: FBcv:0000526 ! alkylating agent
-equivalent_to: CHEBI:25255
 
 [Term]
 id: FBcv:0000534
@@ -6870,7 +6943,6 @@ synonym: "mutation induced by mustard gas exposure" EXACT []
 synonym: "mutation induced by sulfur gas exposure" EXACT []
 synonym: "sulfur mustard" RELATED [CHEBI:25434]
 is_a: FBcv:0000526 ! alkylating agent
-equivalent_to: CHEBI:25434
 
 [Term]
 id: FBcv:0000535
@@ -6881,7 +6953,6 @@ synonym: "MNNG" RELATED []
 synonym: "mutation induced by N-methyl-N'-nitro-N-nitrosoguanidine exposure" EXACT []
 synonym: "NNG" RELATED []
 is_a: FBcv:0000526 ! alkylating agent
-equivalent_to: CHEBI:21759
 
 [Term]
 id: FBcv:0000537
@@ -6895,7 +6966,6 @@ namespace: origin_of_mutation
 def: "." [CHEBI:13941]
 synonym: "mutation induced by carbamate exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:13941
 
 [Term]
 id: FBcv:0000539
@@ -6904,7 +6974,6 @@ namespace: origin_of_mutation
 def: "." [CHEBI:17967]
 synonym: "mutation induced by urethane exposure" EXACT []
 is_a: FBcv:0000538 ! carbamate
-equivalent_to: CHEBI:17967
 
 [Term]
 id: FBcv:0000540
@@ -6913,7 +6982,6 @@ namespace: origin_of_mutation
 def: "." [CHEBI:27292]
 synonym: "mutation induced by vinyl carbamate exposure" EXACT []
 is_a: FBcv:0000538 ! carbamate
-equivalent_to: CHEBI:27292
 
 [Term]
 id: FBcv:0000541
@@ -6931,7 +6999,6 @@ namespace: origin_of_mutation
 def: "." [CHEBI:27504]
 synonym: "mutation induced by mitomycin C exposure" EXACT []
 is_a: FBcv:0000541 ! intercalating agent
-equivalent_to: CHEBI:27504
 
 [Term]
 id: FBcv:0000543
@@ -6943,7 +7010,6 @@ synonym: "2-methoxy-6-[3-(ethyl-2-chloroethyl)aminopropylamino]acridine" RELATED
 synonym: "ICR 100" RELATED [CHEBI:37595]
 synonym: "mutation induced by quinacrine mustard exposure" EXACT []
 is_a: FBcv:0000541 ! intercalating agent
-equivalent_to: CHEBI:37595
 
 [Term]
 id: FBcv:0000544
@@ -6953,7 +7019,6 @@ def: "." [CHEBI:21183]
 synonym: "2-methoxy-6-dichloro-9-(3-ethyl-2-chloroethyl-aminopropylamino)acridine-dihydrochloride" RELATED []
 synonym: "mutation induced by ICR 170 exposure" EXACT []
 is_a: FBcv:0000541 ! intercalating agent
-equivalent_to: CHEBI:21183
 
 [Term]
 id: FBcv:0000545
@@ -6963,7 +7028,6 @@ def: "." [CHEBI:28534]
 synonym: "DBE" RELATED []
 synonym: "mutation induced by 1,2-dibromoethane exposure" EXACT []
 is_a: FBcv:0000541 ! intercalating agent
-equivalent_to: CHEBI:28534
 
 [Term]
 id: FBcv:0000546
@@ -6973,7 +7037,6 @@ def: "." [CHEBI:27789]
 synonym: "DCE" RELATED []
 synonym: "mutation induced by 1,2-dichloroethane exposure" EXACT []
 is_a: FBcv:0000541 ! intercalating agent
-equivalent_to: CHEBI:27789
 
 [Term]
 id: FBcv:0000547
@@ -6983,7 +7046,6 @@ def: "." [CHEBI:19032]
 synonym: "BCE" RELATED []
 synonym: "mutation induced by 1-bromo-2-chloroethane exposure" EXACT []
 is_a: FBcv:0000541 ! intercalating agent
-equivalent_to: CHEBI:19032
 
 [Term]
 id: FBcv:0000548
@@ -6992,7 +7054,6 @@ namespace: origin_of_mutation
 def: "." [CHEBI:67142]
 synonym: "nucleobase analogue" RELATED [CHEBI:67142]
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:67142
 
 [Term]
 id: FBcv:0000549
@@ -7001,7 +7062,6 @@ namespace: origin_of_mutation
 def: "." [CHEBI:20552]
 synonym: "mutation induced by 5-bromouracil exposure" EXACT []
 is_a: FBcv:0000548 ! base analog
-equivalent_to: CHEBI:20552
 
 [Term]
 id: FBcv:0000550
@@ -7010,7 +7070,6 @@ namespace: origin_of_mutation
 def: "." [CHEBI:20553]
 synonym: "mutation induced by 5-bromouridine exposure" EXACT []
 is_a: FBcv:0000548 ! base analog
-equivalent_to: CHEBI:20553
 
 [Term]
 id: FBcv:0000551
@@ -7028,7 +7087,6 @@ namespace: origin_of_mutation
 def: "." [CHEBI:22526]
 synonym: "mutation induced by aminopterin exposure" EXACT []
 is_a: FBcv:0000551 ! enzyme inhibitor
-equivalent_to: CHEBI:22526
 
 [Term]
 id: FBcv:0000553
@@ -7038,7 +7096,6 @@ def: "." [CHEBI:24835]
 synonym: "inorganic molecular entity" EXACT [CHEBI:24835]
 synonym: "mutation induced by inorganic compound exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:24835
 
 [Term]
 id: FBcv:0000554
@@ -7048,7 +7105,6 @@ def: "." [CHEBI:23414]
 synonym: "copper(2+) sulfate" RELATED [CHEBI:23414]
 synonym: "mutation induced by cupric sulfate" EXACT []
 is_a: FBcv:0000553 ! inorganic compound
-equivalent_to: CHEBI:23414
 
 [Term]
 id: FBcv:0000555
@@ -7057,7 +7113,6 @@ namespace: origin_of_mutation
 def: "." [CHEBI:33118]
 synonym: "mutation induced by H3BO3 exposure" EXACT []
 is_a: FBcv:0000553 ! inorganic compound
-equivalent_to: CHEBI:33118
 
 [Term]
 id: FBcv:0000556
@@ -7066,7 +7121,6 @@ namespace: origin_of_mutation
 def: "." [CHEBI:26709]
 synonym: "mutation induced by sodium bisulphite exposure" EXACT []
 is_a: FBcv:0000553 ! inorganic compound
-equivalent_to: CHEBI:26709
 
 [Term]
 id: FBcv:0000557
@@ -7075,7 +7129,6 @@ namespace: origin_of_mutation
 def: "." [CHEBI:28741]
 synonym: "mutation induced by sodium fluoride exposure" EXACT []
 is_a: FBcv:0000553 ! inorganic compound
-equivalent_to: CHEBI:28741
 
 [Term]
 id: FBcv:0000558
@@ -7094,7 +7147,6 @@ synonym: "DEB" RELATED []
 synonym: "erythritol anhydride" RELATED []
 synonym: "mutation induced by diepoxybutane exposure" EXACT []
 is_a: FBcv:0000558 ! epoxy hydrocarbon
-equivalent_to: CHEBI:23704
 
 [Term]
 id: FBcv:0000560
@@ -7104,7 +7156,6 @@ def: "." [CHEBI:23705]
 synonym: "1,2:7,8-diepoxyoctane" RELATED [CHEBI:23705]
 synonym: "mutation induced by diepoxyoctane exposure" EXACT []
 is_a: FBcv:0000558 ! epoxy hydrocarbon
-equivalent_to: CHEBI:23705
 
 [Term]
 id: FBcv:0000561
@@ -7120,7 +7171,6 @@ namespace: origin_of_mutation
 def: "." [CHEBI:35299]
 synonym: "mutation induced by 1,2:5,6-dibenzanthracene exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:35299
 
 [Term]
 id: FBcv:0000563
@@ -7132,7 +7182,6 @@ synonym: "CB2348" RELATED []
 synonym: "dimethylmyleran" RELATED [CHEBI:67107]
 synonym: "mutation induced by 1,4-dimethanesulfonoxy-1,4-dimethylbutane exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:67107
 
 [Term]
 id: FBcv:0000564
@@ -7175,7 +7224,6 @@ namespace: origin_of_mutation
 def: "." [CHEBI:19024]
 synonym: "mutation induced by 1-amino-2-naphthol-4-sulfonic acid exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:19024
 
 [Term]
 id: FBcv:0000569
@@ -7187,7 +7235,6 @@ synonym: "1-{[2-(diethylamino)ethyl]amino}-4-methyl-9H-thioxanthen-9-one" RELATE
 synonym: "lucanthone" RELATED [CHEBI:51052]
 synonym: "mutation induced by lucanthone exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:51052
 
 [Term]
 id: FBcv:0000570
@@ -7196,7 +7243,6 @@ namespace: origin_of_mutation
 def: "." [CHEBI:46790]
 synonym: "mutation induced by 2-methoxyethanol exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:46790
 
 [Term]
 id: FBcv:0000571
@@ -7206,7 +7252,6 @@ def: "." [CHEBI:19363]
 synonym: "2,5,-bisethylene-imine-1,4-benzoquinone" RELATED []
 synonym: "mutation induced by 2,5-bis(ethyleneimino)-1,4-benzoquinone exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:19363
 
 [Term]
 id: FBcv:0000572
@@ -7218,7 +7263,6 @@ synonym: "7-bromomethyl 12 methyl benzalpha anthracine" RELATED []
 synonym: "7-bromomethyl-12-methyltetraphene" RELATED [CHEBI:20787]
 synonym: "mutation induced by 7-bromomethyl-12-methylbenz[a]anthracene exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:20787
 
 [Term]
 id: FBcv:0000573
@@ -7227,7 +7271,6 @@ namespace: origin_of_mutation
 def: "." [CHEBI:27666]
 synonym: "mutation induced by actinomycin D exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:27666
 
 [Term]
 id: FBcv:0000574
@@ -7238,7 +7281,6 @@ synonym: "benzo(&agr;)pyrene" RELATED []
 synonym: "benzo[a]pyrene" RELATED [CHEBI:29865]
 synonym: "mutation induced by benzo(alpha)pyrene exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:29865
 
 [Term]
 id: FBcv:0000575
@@ -7247,7 +7289,6 @@ namespace: origin_of_mutation
 def: "." [CHEBI:27732]
 synonym: "mutation induced by caffeine exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:27732
 
 [Term]
 id: FBcv:0000576
@@ -7257,7 +7298,6 @@ def: "." [CHEBI:27899]
 synonym: "cis-dichlorodiammineplatinum(II)" RELATED []
 synonym: "mutation induced by cisplatin exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:27899
 
 [Term]
 id: FBcv:0000577
@@ -7266,7 +7306,6 @@ namespace: origin_of_mutation
 def: "." [CHEBI:23359]
 synonym: "mutation induced by colchicine exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:23359
 
 [Term]
 id: FBcv:0000578
@@ -7275,7 +7314,6 @@ namespace: origin_of_mutation
 def: "." [CHEBI:28262]
 synonym: "mutation induced by dimethyl sulfoxide exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:28262
 
 [Term]
 id: FBcv:0000579
@@ -7284,7 +7322,6 @@ namespace: origin_of_mutation
 def: "." [CHEBI:16991]
 synonym: "mutation induced by DNA treatment" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:16991
 
 [Term]
 id: FBcv:0000580
@@ -7293,7 +7330,6 @@ namespace: origin_of_mutation
 def: "." [CHEBI:35702]
 synonym: "mutation induced by ethyl ether exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:35702
 
 [Term]
 id: FBcv:0000581
@@ -7303,7 +7339,6 @@ def: "." [CHEBI:30969]
 synonym: "EI" RELATED []
 synonym: "mutation induced by ethylenimine exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:30969
 
 [Term]
 id: FBcv:0000582
@@ -7314,7 +7349,6 @@ synonym: "ethylene oxide" RELATED [CHEBI:27561]
 synonym: "mutation induced by ethylene oxide exposure" EXACT []
 synonym: "oxirane" RELATED [CHEBI:27561]
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:27561
 
 [Term]
 id: FBcv:0000583
@@ -7323,7 +7357,6 @@ namespace: origin_of_mutation
 def: "." [CHEBI:28954]
 synonym: "mutation induced by fagaronine exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:28954
 
 [Term]
 id: FBcv:0000584
@@ -7332,7 +7365,6 @@ namespace: origin_of_mutation
 def: "." [CHEBI:16842]
 synonym: "mutation induced by formaldehyde exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:16842
 
 [Term]
 id: FBcv:0000585
@@ -7342,7 +7374,6 @@ def: "." [CHEBI:28775]
 synonym: "hesperidin" RELATED [CHEBI:28775]
 synonym: "mutation induced by hesperidine exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:28775
 
 [Term]
 id: FBcv:0000586
@@ -7354,7 +7385,6 @@ synonym: "HMM" RELATED []
 synonym: "mutation induced by hexamethylmelamine exposure" EXACT []
 synonym: "mutation induced by HMM exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:24564
 
 [Term]
 id: FBcv:0000587
@@ -7365,7 +7395,6 @@ synonym: "HMPA" RELATED []
 synonym: "mutation induced by hexamethylphosphoramide exposure" EXACT []
 synonym: "mutation induced by HMPA exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:24565
 
 [Term]
 id: FBcv:0000588
@@ -7374,7 +7403,6 @@ namespace: origin_of_mutation
 def: "." [CHEBI:24859]
 synonym: "mutation induced by iodine exposure" EXACT []
 is_a: FBcv:0000553 ! inorganic compound
-equivalent_to: CHEBI:24859
 
 [Term]
 id: FBcv:0000589
@@ -7384,7 +7412,6 @@ def: "." [CHEBI:21184]
 synonym: "Janus green B chloride" RELATED [CHEBI:21184]
 synonym: "mutation induced by Janus green B exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:21184
 
 [Term]
 id: FBcv:0000590
@@ -7395,7 +7422,6 @@ comment: Mapped to CHEBI:25234 (1-methoxy-N-nitrosodiethylamine) based on synony
 synonym: "1-methoxy-N-nitrosodiethylamine" RELATED [CHEBI:25234]
 synonym: "mutation induced by methoxy diethylnitrosamine exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:25234
 
 [Term]
 id: FBcv:0000591
@@ -7415,7 +7441,6 @@ synonym: "mutation induced by MNU exposure" EXACT []
 synonym: "mutation induced by nitrosomethyl urea exposure" EXACT []
 synonym: "N-methyl-N-nitrosourea" RELATED [CHEBI:50102]
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:50102
 
 [Term]
 id: FBcv:0000593
@@ -7426,7 +7451,6 @@ synonym: "DMN" RELATED []
 synonym: "mutation induced by DMN exposure" EXACT []
 synonym: "mutation induced by N-nitrosodimethylamine exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:35807
 
 [Term]
 id: FBcv:0000594
@@ -7436,7 +7460,6 @@ def: "." [CHEBI:25813]
 synonym: "CB1356" RELATED []
 synonym: "mutation induced by p-N,N-di(2-chloroethyl)aminophenylvaleric acid exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:25813
 
 [Term]
 id: FBcv:0000595
@@ -7446,7 +7469,6 @@ def: "." [CHEBI:25814]
 synonym: "CB3026" RELATED []
 synonym: "mutation induced by p-N,N-di-(2-chloroethyl)amino-D-phenylalanine exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:25814
 
 [Term]
 id: FBcv:0000596
@@ -7458,7 +7480,6 @@ synonym: "melphalan" RELATED [CHEBI:28876]
 synonym: "mutation induced by melphalan exposure" EXACT []
 synonym: "mutation induced by p-N,N-di-(2-chloroethyl)amino-DL-phenylalanine exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:28876
 
 [Term]
 id: FBcv:0000597
@@ -7468,7 +7489,6 @@ def: "." [CHEBI:25816]
 synonym: "CB3025" RELATED []
 synonym: "mutation induced by p-N,N-di-(2-chloroethyl)amino-L-phenylalanine exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:25816
 
 [Term]
 id: FBcv:0000598
@@ -7484,7 +7504,6 @@ def: "." [CHEBI:25818]
 synonym: "CB3034" RELATED []
 synonym: "mutation induced by p-N,N-di-(2-chloroethyl)aminophenylethylamine exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:25818
 
 [Term]
 id: FBcv:0000600
@@ -7494,7 +7513,6 @@ def: "." [CHEBI:25829]
 synonym: "CB305" RELATED []
 synonym: "mutation induced by p-p'-N,N-di(2-chloroethyl)aminophenoxyphenylalanine exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:25829
 
 [Term]
 id: FBcv:0000601
@@ -7503,7 +7521,6 @@ namespace: origin_of_mutation
 def: "." [CHEBI:26491]
 synonym: "mutation induced by quinhydrone exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:26491
 
 [Term]
 id: FBcv:0000602
@@ -7513,7 +7530,6 @@ def: "." [CHEBI:22025]
 synonym: "CB1592" RELATED []
 synonym: "mutation induced by S-2-chloroethylcysteine exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:22025
 
 [Term]
 id: FBcv:0000603
@@ -7523,7 +7539,6 @@ def: "." [CHEBI:26800]
 synonym: "CB3086" RELATED []
 synonym: "mutation induced by styryl quinoline exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:26800
 
 [Term]
 id: FBcv:0000604
@@ -7532,7 +7547,6 @@ namespace: origin_of_mutation
 def: "." [CHEBI:27090]
 synonym: "mutation induced by triaziquone exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:27090
 
 [Term]
 id: FBcv:0000605
@@ -7544,7 +7558,6 @@ synonym: "mutation induced by triethylenemelamine exposure" EXACT []
 synonym: "TEM" RELATED []
 synonym: "tretamine" RELATED [CHEBI:27919]
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:27919
 
 [Term]
 id: FBcv:0000606
@@ -8247,7 +8260,6 @@ def: "." [CHEBI:34873]
 synonym: "mutation induced by N-nitrosodiethylamine exposure" EXACT []
 synonym: "NDEA" RELATED [FlyBase:FBrf0139766]
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:34873
 
 [Term]
 id: FBcv:0000736
@@ -8864,7 +8876,6 @@ synonym: "HN2" RELATED []
 synonym: "mechlorethamine" RELATED []
 synonym: "mutation induced by nitrogen mustard exposure" EXACT []
 is_a: FBcv:0000526 ! alkylating agent
-equivalent_to: CHEBI:37598
 
 [Term]
 id: FBcv:0000814
@@ -8876,7 +8887,6 @@ synonym: "CB2041" RELATED []
 synonym: "mutation induced by 1,4-dimethanesulfonoxybutane exposure" EXACT []
 synonym: "mutation induced by busulfan exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:28901
 
 [Term]
 id: FBcv:0000815
@@ -8888,7 +8898,6 @@ synonym: "chlorambucil" EXACT [CHEBI:28830]
 synonym: "mutation induced by chlorambucil exposure" EXACT []
 synonym: "mutation induced by p-N,N-di-(2-chloroethyl)aminophenylbutyric acid exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
-equivalent_to: CHEBI:28830
 
 [Term]
 id: FBcv:0001003
@@ -11151,9 +11160,9 @@ id: FBcv:0005005
 name: reporter enzyme
 namespace: experimental_tool_descriptor
 def: "Sequence that forms all or part of the protein product encoded by a transgenic locus or modified endogenous locus and that encodes an enzyme whose activity can be used to detect the presence of that protein product." [FBC:GM]
-xref: MI:0365
-is_a: FBcv:0005004 ! protein detection tag
 subset: common_tool_use
+xref: MI:0365
+is_a: FBcv:0005004 ! protein detection tool
 created_by: temj2
 creation_date: 2017-06-28T11:41:27Z
 
@@ -11162,9 +11171,9 @@ id: FBcv:0005006
 name: fluorescent protein
 namespace: experimental_tool_descriptor
 def: "Sequence that forms all or part of the protein product encoded by a transgenic locus or modified endogenous locus and that exhibits the property of fluorescence, that can be used to detect the presence of that protein product. A fluorescent protein emits light following the absorption of radiation, with the wavelength of the emitted light being longer than the excitation wavelength of the absorbed radiation." [FBC:GM]
-xref: MI:0687
-is_a: FBcv:0005004 ! protein detection tag
 subset: common_tool_use
+xref: MI:0687
+is_a: FBcv:0005004 ! protein detection tool
 created_by: temj2
 creation_date: 2017-06-28T11:41:27Z
 
@@ -11302,7 +11311,7 @@ id: FBcv:0005021
 name: epitope tag
 namespace: experimental_tool_descriptor
 def: "Sequence that forms part of the protein product encoded by a transgenic locus or modified endogenous locus and that encodes an epitope that can be used to detect the presence of the tagged protein product. An epitope (SO:0001018) is defined as 'A binding site that, in the molecule, interacts selectively and non-covalently with antibodies, B cells or T cells.'" [FBC:GM]
-is_a: FBcv:0005004 ! protein detection tag
+is_a: FBcv:0005004 ! protein detection tool
 created_by: temj2
 creation_date: 2017-06-28T11:41:27Z
 
@@ -11614,8 +11623,8 @@ id: FBcv:0005055
 name: split driver - transcription activation fragment
 namespace: experimental_tool_descriptor
 def: "Sequence encoding a transcription activation domain fused to a heterodimerization domain. A functional transcription driver can be reconstituted if this split system component is brought together in vivo with a split system component that encodes a DNA-binding domain fused to the complementary heterodimerization domain." [FBC:GM, FlyBase:FBrf0193617]
-is_a: FBcv:0005051 ! split system component
 subset: common_tool_use
+is_a: FBcv:0005051 ! split system component
 created_by: temj2
 creation_date: 2017-06-28T11:41:27Z
 
@@ -11651,8 +11660,8 @@ id: FBcv:0005059
 name: binary expression system - driver
 namespace: experimental_tool_descriptor
 def: "Transactivator ('driver') that is encoded by a transgenic locus or modified endogenous locus and which forms part of a binary expression system. This system requires a transactivator ('driver') that binds to a specific DNA sequence ('regulatory region' or 'effector'). A driver encoded by one transgenic locus or modified endogenous locus is used to drive expression of a downstream 'responder' or 'reporter' encoded by another transgenic locus or modified endogenous locus, by fusing the regulatory region sequence to which the driver binds upstream of the responder sequence. The temporal and spatial expression pattern of the responder thus depends on the regulatory elements used to drive expression of the driver. In addition, a specific repressor protein may be available which prevents the transactivator from driving expression, allowing further refinement of the expression pattern of the responder." [FBC:GM, FlyBase:FBrf0216478]
-is_a: FBcv:0005058 ! binary expression system component
 subset: common_tool_use
+is_a: FBcv:0005058 ! binary expression system component
 created_by: temj2
 creation_date: 2017-06-28T11:41:27Z
 
@@ -11672,8 +11681,8 @@ id: FBcv:0005061
 name: binary expression system - repressor
 namespace: experimental_tool_descriptor
 def: "Repressor that can be used to regulate expression in a binary expression system. This system requires a transactivator ('driver') that binds to a specific DNA sequence ('regulatory region' or 'effector'). A driver encoded by one transgenic locus or modified endogenous locus is used to drive expression of a downstream 'responder' or 'reporter' encoded by another transgenic locus or modified endogenous locus, by fusing the regulatory region sequence to which the driver binds upstream of the responder sequence. The temporal and spatial expression pattern of the responder thus depends on the regulatory elements used to drive expression of the driver. In addition, a specific repressor protein may be available which prevents the transactivator from driving expression, allowing further refinement of the expression pattern of the responder." [FBC:GM, FlyBase:FBrf0216478]
-is_a: FBcv:0005058 ! binary expression system component
 subset: common_tool_use
+is_a: FBcv:0005058 ! binary expression system component
 created_by: temj2
 creation_date: 2017-06-28T11:41:27Z
 
@@ -11884,6 +11893,16 @@ def: "Sequence that forms part of the gene product encoded by a transgenic locus
 is_a: FBcv:0005042 ! gene product degradation tag
 created_by: temj2
 creation_date: 2017-12-22T13:09:10Z
+
+[Term]
+id: FBcv:0007002
+name: neuron activity regulation tool
+namespace: experimental_tool_descriptor
+def: "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property that can be used to regulate the activity of a neuron. This is often achieved by manipulation of membrane potential or synaptic transmission dynamics." [FBC:GM]
+synonym: "electrically signalling cell activity regulation tool" EXACT []
+is_a: FBcv:0005001 ! experimental tool descriptor
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2019-06-25T09:54:56Z
 
 [Term]
 id: FBcv:0010000
