@@ -43,8 +43,8 @@ name: carbamate
 namespace: chebi_ontology
 def: "An amino-acid anion that has formula CH2NO2." [ANON:ANON]
 synonym: "Carbamat" RELATED [ChEBI:]
-synonym: "carbamate" EXACT [UniProt:]
 synonym: "carbamate" EXACT IUPAC_NAME [IUPAC:]
+synonym: "carbamate" EXACT [UniProt:]
 synonym: "carbamate ion" RELATED [ChemIDplus:]
 synonym: "carbamic acid, ion(1-)" RELATED [ChemIDplus:]
 synonym: "CH2NO2" RELATED FORMULA [ChEBI:]
@@ -12131,6 +12131,15 @@ def: "Sequence that forms all or part of the gene product encoded by a transgeni
 is_a: FBcv:0007025 ! cell labeling tool
 created_by: http://orcid.org/0000-0002-1373-1705
 creation_date: 2019-06-25T14:42:41Z
+
+[Term]
+id: FBcv:0007027
+name: small molecule-regulated protein cleavage tag
+namespace: experimental_tool_descriptor
+def: "Sequence that forms part of the protein product encoded by a transgenic locus or modified endogenous locus and which allows the tagged protein product to be cleaved (broken into smaller molecules by the rupture of a covalent bond) by a specific process that can be regulated by binding to a small molecule, such as an ion or ligand." [FBC:GM]
+is_a: FBcv:0005057 ! protein cleavage tag
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2019-06-25T14:58:18Z
 
 [Term]
 id: FBcv:0010000
