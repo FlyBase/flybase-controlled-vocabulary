@@ -43,8 +43,8 @@ name: carbamate
 namespace: chebi_ontology
 def: "An amino-acid anion that has formula CH2NO2." [ANON:ANON]
 synonym: "Carbamat" RELATED [ChEBI:]
-synonym: "carbamate" EXACT [UniProt:]
 synonym: "carbamate" EXACT IUPAC_NAME [IUPAC:]
+synonym: "carbamate" EXACT [UniProt:]
 synonym: "carbamate ion" RELATED [ChemIDplus:]
 synonym: "carbamic acid, ion(1-)" RELATED [ChemIDplus:]
 synonym: "CH2NO2" RELATED FORMULA [ChEBI:]
@@ -11834,7 +11834,7 @@ creation_date: 2017-12-13T13:17:30Z
 id: FBcv:0005077
 name: nuclease
 namespace: experimental_tool_descriptor
-def: "An enzyme that catalyzes hydrolysis of DNA in a site-specific manner. The DNA cutting stimulates cellular repair mechanisms, which can be exploited to produce genome modifications. For example, repair by homologous recombination in the presence of an exogenous template can be used to introduce targeted changes into the genome." [FBC:GM, FlyBase:FBrf0231034]
+def: "An enzyme that catalyzes hydrolysis of DNA in a site-specific manner. When used in vivo, the DNA cutting stimulates cellular repair mechanisms, which can be exploited to produce genome modifications. For example, repair by homologous recombination in the presence of an exogenous template can be used to introduce targeted changes into the genome." [FBC:GM, FlyBase:FBrf0231034]
 subset: common_tool_use
 synonym: "site-specific DNA nuclease" RELATED [FBC:GM]
 is_a: FBcv:0005075 ! genome engineering tool
@@ -12149,6 +12149,15 @@ def: "Catalytically inactive fragment of a recombinase. A functional recombinase
 is_a: FBcv:0005051 ! split system component
 created_by: http://orcid.org/0000-0002-1373-1705
 creation_date: 2019-06-26T07:55:34Z
+
+[Term]
+id: FBcv:0007035
+name: meganuclease
+namespace: experimental_tool_descriptor
+def: "An enzyme that catalyzes hydrolysis of DNA in a site-specific manner, having a cognate recognition site of 20-30bp. When used in vivo, the DNA cutting stimulates cellular repair mechanisms, which can be exploited to produce genome modifications. For example, repair by homologous recombination in the presence of an exogenous template can be used to introduce targeted changes into the genome." [FBC:GM, FlyBase:FBrf0231034]
+is_a: FBcv:0005077 ! nuclease
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2019-06-26T09:17:20Z
 
 [Term]
 id: FBcv:0010000
