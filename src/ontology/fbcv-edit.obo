@@ -43,8 +43,8 @@ name: carbamate
 namespace: chebi_ontology
 def: "An amino-acid anion that has formula CH2NO2." [ANON:ANON]
 synonym: "Carbamat" RELATED [ChEBI:]
-synonym: "carbamate" EXACT IUPAC_NAME [IUPAC:]
 synonym: "carbamate" EXACT [UniProt:]
+synonym: "carbamate" EXACT IUPAC_NAME [IUPAC:]
 synonym: "carbamate ion" RELATED [ChemIDplus:]
 synonym: "carbamic acid, ion(1-)" RELATED [ChemIDplus:]
 synonym: "CH2NO2" RELATED FORMULA [ChEBI:]
@@ -11606,7 +11606,7 @@ creation_date: 2017-06-28T11:41:27Z
 id: FBcv:0005053
 name: split reporter enzyme
 namespace: experimental_tool_descriptor
-def: "Catalytically inactive fragment of an enzyme. A functional enzyme can be reconstituted when complementary split enzyme fragments are brought together in vivo by fusing the fragments to peptides that physically interact, permitting the study of protein-protein interactions." [FBC:GM, PMID:9237989]
+def: "Sequence that forms all or part of the protein product encoded by a transgenic locus or modified endogenous locus and that encodes a catalytically inactive fragment of an enzyme whose activity can be used to detect the presence of that protein product when complementary split reporter enzyme fragments are brought together in vivo. Fragments may be brought together when fused to peptides that physically interact, permitting the study of protein-protein interactions." [FBC:GM, http://orcid.org/0000-0002-1373-1705, PMID:9237989]
 is_a: FBcv:0005051 ! split system component
 created_by: temj2
 creation_date: 2017-06-28T11:41:27Z
@@ -12140,6 +12140,15 @@ def: "Sequence that forms part of the protein product encoded by a transgenic lo
 is_a: FBcv:0005057 ! protein cleavage tag
 created_by: http://orcid.org/0000-0002-1373-1705
 creation_date: 2019-06-25T14:58:18Z
+
+[Term]
+id: FBcv:0007028
+name: split recombinase
+namespace: experimental_tool_descriptor
+def: "Catalytically inactive fragment of a recombinase. A functional recombinase can be reconstituted when complementary split recombinase fragments are brought together in vivo by fusing the fragments to peptides that physically interact." [FBC:GM]
+is_a: FBcv:0005051 ! split system component
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2019-06-26T07:55:34Z
 
 [Term]
 id: FBcv:0010000
