@@ -11835,7 +11835,7 @@ creation_date: 2017-12-13T13:17:30Z
 id: FBcv:0005077
 name: nuclease
 namespace: experimental_tool_descriptor
-def: "An enzyme that catalyzes hydrolysis of DNA in a site-specific manner. The DNA cutting stimulates cellular repair mechanisms, which can be exploited to produce genome modifications. For example, repair by homologous recombination in the presence of an exogenous template can be used to introduce targeted changes into the genome." [FBC:GM, FlyBase:FBrf0231034]
+def: "An enzyme that catalyzes hydrolysis of DNA in a site-specific manner. When used in vivo, the DNA cutting stimulates cellular repair mechanisms, which can be exploited to produce genome modifications. For example, repair by homologous recombination in the presence of an exogenous template can be used to introduce targeted changes into the genome." [FBC:GM, FlyBase:FBrf0231034]
 subset: common_tool_use
 synonym: "site-specific DNA nuclease" RELATED [FBC:GM]
 is_a: FBcv:0005075 ! genome engineering tool
@@ -12195,6 +12195,15 @@ def: "Sequence that has a property that allows specific binding to another macro
 is_a: FBcv:0007030 ! conditional specific binding tool
 created_by: http://orcid.org/0000-0002-1373-1705
 creation_date: 2019-06-26T08:14:35Z
+
+[Term]
+id: FBcv:0007035
+name: meganuclease
+namespace: experimental_tool_descriptor
+def: "An enzyme that catalyzes hydrolysis of DNA in a site-specific manner, having a cognate recognition site of 20-30bp. When used in vivo, the DNA cutting stimulates cellular repair mechanisms, which can be exploited to produce genome modifications. For example, repair by homologous recombination in the presence of an exogenous template can be used to introduce targeted changes into the genome." [FBC:GM, FlyBase:FBrf0231034]
+is_a: FBcv:0005077 ! nuclease
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2019-06-26T09:17:20Z
 
 [Term]
 id: FBcv:0010000
