@@ -1051,8 +1051,8 @@ name: ion
 namespace: chebi_ontology
 def: "A molecular entity having a net electric charge." [ANON:ANON]
 synonym: "Ion" EXACT [ChEBI:]
-synonym: "ion" EXACT [ChEBI:]
 synonym: "ion" EXACT IUPAC_NAME [IUPAC:]
+synonym: "ion" EXACT [ChEBI:]
 synonym: "Ionen" RELATED [ChEBI:]
 synonym: "iones" RELATED [ChEBI:]
 synonym: "ions" RELATED [ChEBI:]
@@ -11312,6 +11312,7 @@ name: epitope tag
 namespace: experimental_tool_descriptor
 def: "Sequence that forms part of the protein product encoded by a transgenic locus or modified endogenous locus and that encodes an epitope that can be used to detect the presence of the tagged protein product. An epitope (SO:0001018) is defined as 'A binding site that, in the molecule, interacts selectively and non-covalently with antibodies, B cells or T cells.'" [FBC:GM]
 is_a: FBcv:0005004 ! protein detection tool
+is_a: FBcv:0007029 ! specific binding tool
 created_by: temj2
 creation_date: 2017-06-28T11:41:27Z
 
@@ -12149,6 +12150,51 @@ def: "Catalytically inactive fragment of a recombinase. A functional recombinase
 is_a: FBcv:0005051 ! split system component
 created_by: http://orcid.org/0000-0002-1373-1705
 creation_date: 2019-06-26T07:55:34Z
+
+[Term]
+id: FBcv:0007029
+name: specific binding tool
+namespace: experimental_tool_descriptor
+def: "Sequence that has a property that allows specific binding to another macromolecule." [FBC:GM]
+is_a: FBcv:0005001 ! experimental tool descriptor
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2019-06-26T08:11:17Z
+
+[Term]
+id: FBcv:0007030
+name: conditional specific binding tool
+namespace: experimental_tool_descriptor
+def: "Sequence that has a property that allows specific binding to another macromolecule, where this property can be regulated in response to a particular stimulus." [FBC:GM]
+is_a: FBcv:0007029 ! specific binding tool
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2019-06-26T08:12:05Z
+
+[Term]
+id: FBcv:0007031
+name: light-regulated specific binding tool
+namespace: experimental_tool_descriptor
+def: "Sequence that has a property that allows specific binding to another macromolecule, where this property can be regulated by irradiation with a pulse of light." [FBC:GM]
+is_a: FBcv:0007030 ! conditional specific binding tool
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2019-06-26T08:13:06Z
+
+[Term]
+id: FBcv:0007032
+name: temperature-regulated specific binding tool
+namespace: experimental_tool_descriptor
+def: "Sequence that has a property that allows specific binding to another macromolecule, where this property can be regulated by temperature." [FBC:GM]
+is_a: FBcv:0007030 ! conditional specific binding tool
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2019-06-26T08:13:56Z
+
+[Term]
+id: FBcv:0007033
+name: small molecule-regulated specific binding tool
+namespace: experimental_tool_descriptor
+def: "Sequence that has a property that allows specific binding to another macromolecule, where this property can be regulated by binding to a small molecule, such as an ion or ligand." [FBC:GM]
+is_a: FBcv:0007030 ! conditional specific binding tool
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2019-06-26T08:14:35Z
 
 [Term]
 id: FBcv:0007035
