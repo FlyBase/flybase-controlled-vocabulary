@@ -3655,9 +3655,6 @@
           "val" : "a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence",
           "xrefs" : [ ]
         },
-        "xrefs" : [ {
-          "val" : "RO:0000052"
-        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "inheres_in"
@@ -3674,9 +3671,6 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
           "val" : "inheres in"
         }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "inheres_in"
-        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "this red color inheres in this apple"
         }, {
@@ -3685,7 +3679,7 @@
         } ]
       },
       "type" : "PROPERTY",
-      "lbl" : "inheres_in"
+      "lbl" : "inheres in"
     }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0002233",
       "meta" : {
@@ -3710,6 +3704,30 @@
       },
       "type" : "PROPERTY",
       "lbl" : "has input"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002234",
+      "meta" : {
+        "definition" : {
+          "val" : "p has output c iff c is a participant in p, c is present at the end of p, and c is not present at the beginning of p.",
+          "xrefs" : [ ]
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "produces"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Chris Mungall"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "FlyBase miscellaneous CV"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "has output"
     }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0000056",
       "meta" : {
@@ -5117,9 +5135,6 @@
           "val" : "process(P1) regulates process(P2) iff: P1 results in the initiation or termination of P2 OR affects the frequency of its initiation or termination OR affects the magnitude or rate of output of P2.",
           "xrefs" : [ ]
         },
-        "xrefs" : [ {
-          "val" : "RO:0002211"
-        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
           "val" : "Regulation precludes parthood; the regulatory process may not be within the regulated process."
@@ -5130,20 +5145,17 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
           "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
         }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "regulates"
-        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "http://purl.obolibrary.org/obo/ro/docs/causal-relations"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "gene_ontology"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000600",
           "val" : "false"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Tanya Berardini"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "FlyBase miscellaneous CV"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000589",
           "val" : "regulates (processual)"
@@ -5570,7 +5582,7 @@
       "meta" : {
         "definition" : {
           "val" : "A phenotype of a population that is the death of the majority of animals in that population during the P-stage.",
-          "xrefs" : [ ]
+          "xrefs" : [ "FBC:DOS" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#lethal_phase" ],
         "basicPropertyValues" : [ {
@@ -5608,21 +5620,6 @@
       "type" : "CLASS",
       "lbl" : "egg length"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/FBcv_0002012",
-      "meta" : {
-        "definition" : {
-          "val" : "A phenotype of a population that is the death of the majority of animals in that population during the larval stage.",
-          "xrefs" : [ ]
-        },
-        "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#lethal_phase" ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "phenotypic_class"
-        } ]
-      },
-      "type" : "CLASS",
-      "lbl" : "majority die during larval stage"
-    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0003101",
       "meta" : {
         "definition" : {
@@ -5656,6 +5653,21 @@
       },
       "type" : "CLASS",
       "lbl" : "0% egg length"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0002012",
+      "meta" : {
+        "definition" : {
+          "val" : "A phenotype of a population that is the death of the majority of animals in that population during the larval stage.",
+          "xrefs" : [ "FBC:DOS" ]
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#lethal_phase" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "phenotypic_class"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "majority die during larval stage"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0002011",
       "meta" : {
@@ -6732,32 +6744,6 @@
       "type" : "PROPERTY",
       "lbl" : "immediately causally upstream of"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/RO_0002414",
-      "meta" : {
-        "definition" : {
-          "val" : "transitive form of directly_provides_input_for",
-          "xrefs" : [ ]
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Chris Mungall"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000428"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "FlyBase miscellaneous CV"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
-          "val" : "This is a grouping relation that should probably not be used in annotation. Consider instead the child relation 'directly provides input for' (which may later be relabeled simply to 'provides input for')"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000589",
-          "val" : "transitively provides input for (process to process)"
-        } ]
-      },
-      "type" : "PROPERTY",
-      "lbl" : "transitively provides input for"
-    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000055",
       "meta" : {
         "definition" : {
@@ -6978,20 +6964,6 @@
       },
       "type" : "CLASS",
       "lbl" : "lethal - all die during immature adult stage"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/fbcv#qualifier",
-      "meta" : {
-        "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#do_not_annotate" ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
-          "val" : "temporary placeholder - this means that Obol could not infer the correct relation"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "FlyBase miscellaneous CV"
-        } ]
-      },
-      "type" : "PROPERTY",
-      "lbl" : "qualifier"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0003134",
       "meta" : {
@@ -8601,23 +8573,6 @@
       "type" : "CLASS",
       "lbl" : "DamID-Seq"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/fbcv#decreased_in_magnitude_relative_to",
-      "meta" : {
-        "definition" : {
-          "val" : "q1 decreased_in_magnitude_relative_to q2 if and only if magnitude(q1) < magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale.",
-          "xrefs" : [ "PATOC:CJM" ]
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "FlyBase miscellaneous CV"
-        }, {
-          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
-          "val" : "This relation is used to determine the 'directionality' of relative qualities such as 'decreased strength', relative to the parent type, 'strength'.\nThis relation is used to determine the 'directionality' of relative qualities such as 'decreased strength', relative to the parent type, 'strength'."
-        } ]
-      },
-      "type" : "PROPERTY",
-      "lbl" : "decreased_in_magnitude_relative_to"
-    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0003059",
       "meta" : {
         "definition" : {
@@ -9889,20 +9844,6 @@
       "type" : "CLASS",
       "lbl" : "TSS identification"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/fbcv#similar_in_magnitude_relative_to",
-      "meta" : {
-        "definition" : {
-          "val" : "q1 similar_in_magnitude_relative_to q2 if and only if magnitude(q1) =~ magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale.",
-          "xrefs" : [ "PATOC:CJM" ]
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "FlyBase miscellaneous CV"
-        } ]
-      },
-      "type" : "PROPERTY",
-      "lbl" : "similar_in_magnitude_relative_to"
-    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0005038",
       "meta" : {
         "definition" : {
@@ -9929,6 +9870,11 @@
           "val" : "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which results in the activity of the tagged gene product being regulated in response to irradiation with a pulse of light.",
           "xrefs" : [ "FBC:GM" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "light-dependent activity regulation tag",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "temj2"
@@ -9941,7 +9887,7 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "light-dependent activity regulation tag"
+      "lbl" : "light-regulated activity regulation tag"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0005043",
       "meta" : {
@@ -10114,6 +10060,11 @@
           "val" : "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which results in the tagged gene product being regulated by binding to a small molecule, such as an ion or ligand.",
           "xrefs" : [ "FBC:GM" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "small molecule-dependent activity regulation tag",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "temj2"
@@ -10126,7 +10077,7 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "small molecule-dependent activity regulation tag"
+      "lbl" : "small molecule-regulated activity regulation tag"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0005049",
       "meta" : {
@@ -11193,10 +11144,30 @@
       "type" : "PROPERTY",
       "lbl" : "has_scope"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007013",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property used to ablate a specific cell or anatomical structure.",
+          "xrefs" : [ "FBC:GM" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-25T10:53:21Z"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "cell ablation tool"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0005076",
       "meta" : {
         "definition" : {
-          "val" : "An enzyme that mediates an exchange reaction between two DNA templates, resulting in integration of DNA from one of the templates into the other. An integrase binds a pair of compatible recognition sites (typically called attP and attB) which each contain a short integration core flanked by imperfect inverted repeats that are not identical. Exchange between the attP/attB pair results in the formation of hybrid sites (typically called attL and attR) that are no longer a substrate of the integrase. Thus the exchange reaction driven by an integrase is undirectional. Mutually exclusive pairs of recognition site have been engineered for some integrases. Integrases can be used to generate many different types of genetic modification, with the outcome being influenced by the relative orientation (direct or inverted), relative location and composition of the two recognition sites. The types of possible modification include deletion of DNA, generation of chromosomal rearrangements, integration of DNA into the genome, and replacement of genetic material with that from a donor plasmid using integrase-mediated cassette exchange (IMCE).",
+          "val" : "An enzyme that mediates an exchange reaction between two DNA templates, resulting in integration of DNA from one of the templates into the other. An integrase binds a pair of compatible recognition sites (typically called attP and attB) which each contain a short integration core flanked by imperfect inverted repeats that are not identical. Exchange between the attP/attB pair results in the formation of hybrid sites (typically called attL and attR) that are no longer a substrate of the integrase. Thus the exchange reaction driven by an integrase is undirectional. Mutually exclusive pairs of recognition site have been engineered for some integrases. Integrases can be used to generate many different types of genetic modification, with the outcome being influenced by the relative orientation (direct or inverted), relative location and composition of the two recognition sites. The types of possible modification include deletion of DNA, generation of chromosomal rearrangements, integration of DNA into the genome, and replacement of genetic material with that from a donor plasmid using recombination-mediated cassette exchange (RMCE).",
           "xrefs" : [ "FlyBase:FBrf0231034" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#common_tool_use" ],
@@ -11217,7 +11188,7 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0005077",
       "meta" : {
         "definition" : {
-          "val" : "An enzyme that catalyzes hydrolysis of DNA in a site-specific manner. The DNA cutting stimulates cellular repair mechanisms, which can be exploited to produce genome modifications. For example, repair by homologous recombination in the presence of an exogenous template can be used to introduce targeted changes into the genome.",
+          "val" : "An enzyme that catalyzes hydrolysis of DNA in a site-specific manner. When used in vivo, the DNA cutting stimulates cellular repair mechanisms, which can be exploited to produce genome modifications. For example, repair by homologous recombination in the presence of an exogenous template can be used to introduce targeted changes into the genome.",
           "xrefs" : [ "FBC:GM", "FlyBase:FBrf0231034" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#common_tool_use" ],
@@ -11239,6 +11210,51 @@
       },
       "type" : "CLASS",
       "lbl" : "nuclease"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007012",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property that can be used to stimulate the activity of a neuron, where this property can be regulated by binding to a small molecule, such as an ion or ligand.",
+          "xrefs" : [ "FBC:GM" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-25T10:34:48Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "small molecule-regulated neuron activation tool"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007011",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property that can be used to stimulate the activity of a neuron, where this property can be regulated by irradiation with a pulse of light.",
+          "xrefs" : [ "FBC:GM" ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "optogenetic neuron activation tool",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-25T10:31:02Z"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "light-regulated neuron activation tool"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0005074",
       "meta" : {
@@ -11280,6 +11296,71 @@
       "type" : "CLASS",
       "lbl" : "genome engineering tool"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007010",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property that can be used to stimulate the activity of a neuron, where this property can be regulated by temperature.",
+          "xrefs" : [ "FBC:GM" ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "thermogenetic neuron activation tool",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-25T10:28:57Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "temperature-regulated neuron activation tool"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007017",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property used to ablate a specific cell or anatomical structure, where this property can be regulated by binding to a small molecule, such as an ion or ligand.",
+          "xrefs" : [ "FBC:GM" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-25T10:57:45Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "smal molecule-regulated cell ablation tool"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007016",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property used to ablate a specific cell or anatomical structure, where this property can be regulated by irradiation with a pulse of light.",
+          "xrefs" : [ "FBC:GM" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-25T10:56:47Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "light-regulated cell ablation tool"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0005078",
       "meta" : {
         "definition" : {
@@ -11301,10 +11382,50 @@
       "type" : "CLASS",
       "lbl" : "RNA-guided nuclease"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007015",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property used to ablate a specific cell or anatomical structure, where this property can be regulated by temperature.",
+          "xrefs" : [ "FBC:GM" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-25T10:55:40Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "temperature-regulated cell ablation tool"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007014",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property used to ablate a specific cell or anatomical structure, where this property can be regulated in response to a particular stimulus.",
+          "xrefs" : [ "FBC:GM" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-25T10:54:32Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "conditional cell ablation tool"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0005079",
       "meta" : {
         "definition" : {
-          "val" : "A recognition site for an integrase, an enzyme that mediates an exchange reaction between two DNA templates, resulting in integration of DNA from one of the templates into the other. An integrase binds a pair of compatible recognition sites (typically called attP and attB) which each contain a short integration core flanked by imperfect inverted repeats that are not identical. Exchange between the attP/attB pair results in the formation of hybrid sites (typically called attL and attR) that are no longer a substrate of the integrase. Thus the exchange reaction driven by an integrase is undirectional. Mutually exclusive pairs of recognition site have been engineered for some integrases. Integrases can be used to generate many different types of genetic modification, with the outcome being influenced by the relative orientation (direct or inverted), relative location and composition of the two recognition sites. The types of possible modification include deletion of DNA, generation of chromosomal rearrangements, integration of DNA into the genome, and replacement of genetic material with that from a donor plasmid using integrase-mediated cassette exchange (IMCE).",
+          "val" : "A recognition site for an integrase, an enzyme that mediates an exchange reaction between two DNA templates, resulting in integration of DNA from one of the templates into the other. An integrase binds a pair of compatible recognition sites (typically called attP and attB) which each contain a short integration core flanked by imperfect inverted repeats that are not identical. Exchange between the attP/attB pair results in the formation of hybrid sites (typically called attL and attR) that are no longer a substrate of the integrase. Thus the exchange reaction driven by an integrase is undirectional. Mutually exclusive pairs of recognition site have been engineered for some integrases. Integrases can be used to generate many different types of genetic modification, with the outcome being influenced by the relative orientation (direct or inverted), relative location and composition of the two recognition sites. The types of possible modification include deletion of DNA, generation of chromosomal rearrangements, integration of DNA into the genome, and replacement of genetic material with that from a donor plasmid using recombination-mediated cassette exchange (RMCE).",
           "xrefs" : [ "FlyBase:FBrf0231034" ]
         },
         "basicPropertyValues" : [ {
@@ -11344,7 +11465,7 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0005073",
       "meta" : {
         "definition" : {
-          "val" : "The basic component of a promoter trap cassette is a promoterless gene. This gene is not flanked by splice acceptor or donor sites, and thus the gene within a promoter trap can only be expressed if the cassette integrates into the genome within an exon, resulting in a transcriptional fusion. If the promoter trap gene encodes an open reading frame and the insertion is in the correct frame, a translational fusion is produced. Depending on the nature of the gene encoded by the promoter trap cassette, the insertion may directly report the expression pattern of the 'trapped' locus (e.g. if the gene encoded by the cassette is a reporter enzyme or fluorescent protein), or it may be used to drive expression of any gene of interest (e.g. if the gene encoded by the cassette is a driver that form part of a binary expression system). A promoter trap cassette may be inserted into a genome as part of a transgenic construct via transposable-element-mediated transgenesis, or may be inserted directly into a modified endogenous locus via a genome engineering method such as homologous recombination or CRISPR. Promoter trap insertions are usually mutagenic, disrupting the locus into which they have inserted, since termination sequences are usually present at the 3' end of the cassette, truncating the endogenous transcript.",
+          "val" : "The basic component of a promoter trap cassette is a promoterless gene. This gene is not flanked by splice acceptor or donor sites, and thus the gene within a promoter trap can only be expressed if the cassette integrates into the genome within an exon, resulting in a transcriptional fusion. If the promoter trap gene encodes an open reading frame (ORF) and the insertion is in the correct frame, the trap ORF may be translated from this transcriptional fusion either as a translational fusion with ORF sequence of the disrupted endogenous locus, or if an internal ribosome entry site (IRES) or viral 2A-like peptide sequence (which promotes ribosome skipping) is present upstream of the promoter trap ORF, it may be produced as a separate protein expressed under the control of the regulatory sequences of the endogenous locus. Depending on the nature of the gene encoded by the promoter trap cassette, the insertion may directly report the expression pattern of the 'trapped' locus (e.g. if the gene encoded by the cassette is a reporter enzyme or fluorescent protein), or it may be used to drive expression of any gene of interest (e.g. if the gene encoded by the cassette is a driver that form part of a binary expression system). A promoter trap cassette may be inserted into a genome as part of a transgenic construct via transposable-element-mediated transgenesis, or may be inserted directly into a modified endogenous locus via a genome engineering method such as homologous recombination or CRISPR. Promoter trap insertions are usually mutagenic, disrupting the locus into which they have inserted, since termination sequences are usually present at the 3' end of the cassette, truncating the endogenous transcript.",
           "xrefs" : [ "FBC:GM", "PMID:10899970" ]
         },
         "basicPropertyValues" : [ {
@@ -11495,22 +11616,55 @@
       "type" : "CLASS",
       "lbl" : "dominant temperature-sensitive lethal balancer for chromosome 2"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/fbcv#has_cross_section",
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007019",
       "meta" : {
         "definition" : {
-          "val" : "s3 has_cross_section s3 if and only if : there exists some 2d plane that intersects the bearer of s3, and the impression of s3 upon that plane has shape quality s2.",
-          "xrefs" : [ "PATOC:CJM" ]
+          "val" : "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that is used to provide a readout of the activity of a specific signal transduction pathway.",
+          "xrefs" : [ "FBC:GM" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "reporter of signal transduction pathway activity",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "FlyBase miscellaneous CV"
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-25T11:41:19Z"
         }, {
-          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
-          "val" : "Example: a spherical object has the quality of being spherical, and the spherical quality has_cross_section round.\nExample: a spherical object has the quality of being spherical, and the spherical quality has_cross_section round."
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
         } ]
       },
-      "type" : "PROPERTY",
-      "lbl" : "has_cross_section"
+      "type" : "CLASS",
+      "lbl" : "signal transduction pathway activity sensor"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007018",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that is used to provide a readout of the activity of a specific biological process.",
+          "xrefs" : [ "FBC:GM" ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "reporter of biological process pathway activity",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-25T11:38:48Z"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "biological process activity sensor"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000620",
       "meta" : {
@@ -11577,6 +11731,166 @@
       "type" : "CLASS",
       "lbl" : "enhancer"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007024",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that encodes an enzyme which covalently tags neighboring DNA, facilitating the subsequent purification or detection of the tagged DNA by an experimental method.",
+          "xrefs" : [ "FBC:GM", "PMID:30774936" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-25T14:24:50Z"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "proximity labeling tool (DNA)"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007023",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that encodes an enzyme which covalently tags neighboring RNA, facilitating the subsequent purification or detection of the tagged RNA by an experimental method.",
+          "xrefs" : [ "FBC:GM", "PMID:30774936" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-25T14:18:36Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "proximity labeling tool (RNA)"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007022",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that encodes an enzyme which covalently tags neighboring proteins, facilitating the subsequent purification or detection of the tagged proteins by an experimental method.",
+          "xrefs" : [ "FBC:GM", "PMID:29125959", "PMID:30774936" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-25T14:08:26Z"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "proximity labeling tool (protein)"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007021",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that encodes an enzyme which covalently tags neighboring macromolecules, facilitating the subsequent purification or detection of the tagged macromolecules by an experimental method.",
+          "xrefs" : [ "FBC:GM", "PMID:30774936" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-25T14:01:14Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "proximity labeling tool"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007028",
+      "meta" : {
+        "definition" : {
+          "val" : "Catalytically inactive fragment of a recombinase. A functional recombinase can be reconstituted when complementary split recombinase fragments are brought together in vivo by fusing the fragments to peptides that physically interact.",
+          "xrefs" : [ "FBC:GM" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-26T07:55:34Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "split recombinase"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007027",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that forms part of the protein product encoded by a transgenic locus or modified endogenous locus and which allows the tagged protein product to be cleaved (broken into smaller molecules by the rupture of a covalent bond) by a specific process that can be regulated by binding to a small molecule, such as an ion or ligand.",
+          "xrefs" : [ "FBC:GM" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-25T14:58:18Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "small molecule-regulated protein cleavage tag"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007026",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and confers a specific property that can be used to stochastically label cells in the same sample with different colors of fluorescent protein. This property can be exploited to study cell morphology and to track lineages of clonally related cells.",
+          "xrefs" : [ "FBC:GM", "PMID:25491327" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-25T14:42:41Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "multicolor cell labeling tool"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007025",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property that can be used to facilitate the detection of a specific cell population by an experimental method.",
+          "xrefs" : [ "FBC:GM" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-25T14:41:38Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "cell labeling tool"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0005080",
       "meta" : {
         "definition" : {
@@ -11603,6 +11917,11 @@
           "val" : "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which results in the tagged gene product being targeted for degradation by a specific process that is regulated by a small molecule.",
           "xrefs" : [ "FBC:GM" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "small molecule-dependent gene product degradation tag",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "temj2"
@@ -11615,7 +11934,32 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "small molecule-dependent gene product degradation tag"
+      "lbl" : "small molecule-regulated gene product degradation tag"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007020",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that is used to provide a readout of the activation state of a specific gene product.",
+          "xrefs" : [ "FBC:GM" ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "gene product activation state detection tool",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-25T11:43:24Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "gene product activity sensor"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0005081",
       "meta" : {
@@ -11747,6 +12091,26 @@
       "type" : "CLASS",
       "lbl" : "dominant temperature-sensitive lethal balancer for chromosome 3"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007029",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that has a property that allows specific binding to another macromolecule.",
+          "xrefs" : [ "FBC:GM" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-26T08:11:17Z"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "specific binding tool"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000631",
       "meta" : {
         "basicPropertyValues" : [ {
@@ -11870,8 +12234,8 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0005053",
       "meta" : {
         "definition" : {
-          "val" : "Catalytically inactive fragment of an enzyme. A functional enzyme can be reconstituted when complementary split enzyme fragments are brought together in vivo by fusing the fragments to peptides that physically interact, permitting the study of protein-protein interactions.",
-          "xrefs" : [ "FBC:GM", "PMID:9237989" ]
+          "val" : "Sequence that forms all or part of the protein product encoded by a transgenic locus or modified endogenous locus and that encodes a catalytically inactive fragment of an enzyme whose activity can be used to detect the presence of that protein product when complementary split reporter enzyme fragments are brought together in vivo. Fragments may be brought together when fused to peptides that physically interact, permitting the study of protein-protein interactions.",
+          "xrefs" : [ "FBC:GM", "PMID:9237989", "http://orcid.org/0000-0002-1373-1705" ]
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -12253,6 +12617,31 @@
       "type" : "CLASS",
       "lbl" : "binary expression system - small molecule-regulated driver"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007002",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property that can be used to regulate the activity of a neuron. This is often achieved by manipulation of membrane potential or synaptic transmission dynamics.",
+          "xrefs" : [ "FBC:GM" ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "electrically signalling cell activity regulation tool",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-25T09:54:56Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "neuron activity regulation tool"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0005066",
       "meta" : {
         "definition" : {
@@ -12316,7 +12705,7 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0005063",
       "meta" : {
         "definition" : {
-          "val" : "The recognition site for a particular site-specific recombinase, an enzyme that mediates a recombination exchange reaction between two DNA templates, each containing a copy of the recognition site. The recognition site contains perfect inverted repeats flanking an asymmetric spacer. Under normal conditions, the two recognition sites are identical and are reformed during the recombination event, and thus the reaction is bidirectional: recombination can occur in both 'forward' and 'reverse' directions. However, recognition sites can be mutated to drive the directionality of the reaction: different classes of site may be combined so that recombination can occur in one direction, but produces reformed sites that are no longer compatible. In addition, mutually exclusive sites have been engineered for some recombinases. Recombinases can be used to generate many different types of genetic modification, with the outcome being influenced by the relative orientation (direct or inverted), relative location and composition of the two recognition sites. The types of possible modification include deletion of DNA, generation of chromosomal rearrangements, integration of DNA into the genome, and replacement of genetic material with that from a donor plasmid using recombinase-mediated cassette exchange (RMCE).",
+          "val" : "The recognition site for a particular site-specific recombinase, an enzyme that mediates a recombination exchange reaction between two DNA templates, each containing a copy of the recognition site. The recognition site contains perfect inverted repeats flanking an asymmetric spacer. Under normal conditions, the two recognition sites are identical and are reformed during the recombination event, and thus the reaction is bidirectional: recombination can occur in both 'forward' and 'reverse' directions. However, recognition sites can be mutated to drive the directionality of the reaction: different classes of site may be combined so that recombination can occur in one direction, but produces reformed sites that are no longer compatible. In addition, mutually exclusive sites have been engineered for some recombinases. Recombinases can be used to generate many different types of genetic modification, with the outcome being influenced by the relative orientation (direct or inverted), relative location and composition of the two recognition sites. The types of possible modification include deletion of DNA, generation of chromosomal rearrangements, integration of DNA into the genome, and replacement of genetic material with that from a donor plasmid using recombination-mediated cassette exchange (RMCE).",
           "xrefs" : [ "FlyBase:FBrf0231034" ]
         },
         "synonyms" : [ {
@@ -12358,10 +12747,30 @@
       "type" : "CLASS",
       "lbl" : "binary expression system - conditional driver"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007006",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property that can be used to inhibit the activity of a neuron, where this property can be regulated by binding to a small molecule, such as an ion or ligand.",
+          "xrefs" : [ "FBC:GM" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-25T10:18:34Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "small molecule-regulated neuron inhibition tool"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0005069",
       "meta" : {
         "definition" : {
-          "val" : "An enhancer trap cassette is designed to report or utilize the expression of endogenous enhancer elements upon integration of the cassette into the genome. The basic components of an enhancer trap cassette are a minimal promoter element fused upstream of a gene. Upon integration into the genome, a neighboring genomic enhancer may activate expression of the gene encoded by the enhancer trap cassette. Depending on the nature of this gene, the insertion may directly report the expression pattern of the 'trapped' enhancer (e.g. if the gene encodes a reporter enzyme or fluorescent protein), or it may be used to drive expression of any gene of interest (e.g. if the gene encodes a driver that forms part of a binary expression system). An enhancer trap cassette may be inserted into a genome as part of a transgenic contruct via transposable-element-mediated transgenesis, or may be inserted directly into a modified endogenous locus via a genome engineering method such as homologous recombination or CRISPR. An enhancer trap insertion can be mutgenic, disrupting the function of an endogenous locus, depending on the particular insertion site.",
+          "val" : "An enhancer trap cassette is designed to report or utilize the expression of endogenous enhancer elements upon integration of the cassette into the genome. The basic components of an enhancer trap cassette are a minimal promoter element fused upstream of a gene. Upon integration into the genome, a neighboring genomic enhancer may activate expression of the gene encoded by the enhancer trap cassette. Depending on the nature of this gene, the insertion may directly report the expression pattern of the 'trapped' enhancer (e.g. if the gene encodes a reporter enzyme or fluorescent protein), or it may be used to drive expression of any gene of interest (e.g. if the gene encodes a driver that forms part of a binary expression system). An enhancer trap cassette may be inserted into a genome as part of a transgenic contruct via transposable-element-mediated transgenesis, or may be inserted directly into a modified endogenous locus via a genome engineering method such as homologous recombination or CRISPR. An enhancer trap insertion can be mutagenic, disrupting the function of an endogenous locus, depending on the particular insertion site.",
           "xrefs" : [ "FBC:GM", "FlyBase:FBrf0128252", "FlyBase:FBrf0216478", "PMID:10899970" ]
         },
         "xrefs" : [ {
@@ -12386,6 +12795,31 @@
       "type" : "CLASS",
       "lbl" : "enhancer trap"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007005",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property that can be used to inhibit the activity of a neuron, where this property can be regulated by irradiation with a pulse of light.",
+          "xrefs" : [ "FBC:GM" ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "optogenetic neuron inhibition tool",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-25T10:17:16Z"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "light-regulated neuron inhibition tool"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0005067",
       "meta" : {
         "definition" : {
@@ -12405,6 +12839,51 @@
       },
       "type" : "CLASS",
       "lbl" : "binary expression system - temperature conditional repressor"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007004",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property that can be used to inhibit the activity of a neuron, where this property can be regulated in response to a particular stimulus.",
+          "xrefs" : [ "FBC:GM" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-25T10:15:49Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "conditional neuron inhibition tool"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007003",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property that can be used to inhibit the activity of a neuron. This is often achieved by inducing membrane hyperpolarization (GO:0060081).",
+          "xrefs" : [ "FBC:GM" ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "electrically signalling cell inhibition tool",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-25T10:13:24Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "neuron inhibition tool"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0005068",
       "meta" : {
@@ -12488,7 +12967,7 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0005062",
       "meta" : {
         "definition" : {
-          "val" : "An enzyme that mediates a recombination exchange reaction between two DNA templates, each containing a specific recognition site. The recognition site for a particular site-specific recombinase is defined by the enzyme itself. The recognition site contains perfect inverted repeats flanking an asymmetric spacer. Under normal conditions, the two recognition sites are identical and are reformed during the recombination event, and thus the reaction is bidirectional: recombination can occur in both 'forward' and 'reverse' directions. However, recognition sites can be mutated to drive the directionality of the reaction: different classes of site may be combined so that recombination can occur in one direction, but produces reformed sites that are no longer compatible. In addition, mutually exclusive sites have been engineered for some recombinases. Recombinases can be used to generate many different types of genetic modification, with the outcome being influenced by the relative orientation (direct or inverted), relative location and composition of the two recognition sites. The types of possible modification include deletion of DNA, generation of chromosomal rearrangements, integration of DNA into the genome, and replacement of genetic material with that from a donor plasmid using recombinase-mediated cassette exchange (RMCE).",
+          "val" : "An enzyme that mediates a recombination exchange reaction between two DNA templates, each containing a specific recognition site. The recognition site for a particular site-specific recombinase is defined by the enzyme itself. The recognition site contains perfect inverted repeats flanking an asymmetric spacer. Under normal conditions, the two recognition sites are identical and are reformed during the recombination event, and thus the reaction is bidirectional: recombination can occur in both 'forward' and 'reverse' directions. However, recognition sites can be mutated to drive the directionality of the reaction: different classes of site may be combined so that recombination can occur in one direction, but produces reformed sites that are no longer compatible. In addition, mutually exclusive sites have been engineered for some recombinases. Recombinases can be used to generate many different types of genetic modification, with the outcome being influenced by the relative orientation (direct or inverted), relative location and composition of the two recognition sites. The types of possible modification include deletion of DNA, generation of chromosomal rearrangements, integration of DNA into the genome, and replacement of genetic material with that from a donor plasmid using recombination-mediated cassette exchange (RMCE).",
           "xrefs" : [ "FlyBase:FBrf0231034" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#common_tool_use" ],
@@ -12657,6 +13136,76 @@
       "type" : "CLASS",
       "lbl" : "isogenic stock"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007009",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property that can be used to stimulate the activity of a neuron, where this property can be regulated in response to a particular stimulus.",
+          "xrefs" : [ "FBC:GM" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-25T10:26:57Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "conditional neuron activation tool"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007008",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property that can be used to stimulate the activity of a neuron. This is often achieved by inducing membrane depolarization (GO:0051899).",
+          "xrefs" : [ "FBC:GM" ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "electrically signalling cell activation tool",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-25T10:25:57Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "neuron activation tool"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007007",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property that can be used to inhibit the activity of a neuron, where this property can be regulated by temperature.",
+          "xrefs" : [ "FBC:GM" ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "thermogenetic neuron inhibition tool",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-25T10:20:00Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "temperature-regulated neuron inhibition tool"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000610",
       "meta" : {
         "xrefs" : [ {
@@ -12722,90 +13271,6 @@
       },
       "type" : "CLASS",
       "lbl" : "In transgenic Drosophila (allele of foreign species in genome of drosophilid)"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/RO_0002091",
-      "meta" : {
-        "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#ro-eco" ],
-        "xrefs" : [ {
-          "val" : "RO:0002091"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
-          "val" : "X starts_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (start(X) before_or_simultaneous_with end(Y))"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "io"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "starts_during"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "gene_ontology"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "David Osumi-Sutherland"
-        } ]
-      },
-      "type" : "PROPERTY",
-      "lbl" : "starts_during"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/RO_0002092",
-      "meta" : {
-        "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#ro-eco" ],
-        "xrefs" : [ {
-          "val" : "RO:0002092"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "happens_during"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "gene_ontology"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "David Osumi-Sutherland"
-        }, {
-          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
-          "val" : "X happens_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (end(X) before_or_simultaneous_with end(Y))"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "during"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "d"
-        } ]
-      },
-      "type" : "PROPERTY",
-      "lbl" : "happens_during"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/RO_0002093",
-      "meta" : {
-        "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#ro-eco" ],
-        "xrefs" : [ {
-          "val" : "RO:0002093"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "gene_ontology"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "o"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "David Osumi-Sutherland"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "ends_during"
-        }, {
-          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
-          "val" : "X ends_during Y iff: ((start(Y) before_or_simultaneous_with end(X)) AND end(X) before_or_simultaneous_with end(Y)."
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "overlaps"
-        } ]
-      },
-      "type" : "PROPERTY",
-      "lbl" : "ends_during"
     }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0002090",
       "meta" : {
@@ -13296,41 +13761,6 @@
       "type" : "CLASS",
       "lbl" : "increased cell death"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/fbcv#singly_occurring_form_of",
-      "meta" : {
-        "synonyms" : [ {
-          "pred" : "hasExactSynonym",
-          "val" : "monadic_form_of",
-          "xrefs" : [ ]
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
-          "val" : "PATO divides qualities between normal (monadic, singly-occurring) qualities and relational qualities. Relational qualities stand in the 'towards' relation with respect to some additional entity. For example, The sensitivity of an eye towards red light. In some cases we want to represent a quality such as 'protruding' in both monadic and relational branches. We use this relation to link them.\nPATO divides qualities between normal (monadic, singly-occurring) qualities and relational qualities. Relational qualities stand in the 'towards' relation with respect to some additional entity. For example, The sensitivity of an eye towards red light. In some cases we want to represent a quality such as 'protruding' in both monadic and relational branches. We use this relation to link them."
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "FlyBase miscellaneous CV"
-        } ]
-      },
-      "type" : "PROPERTY",
-      "lbl" : "singly_occurring_form_of"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/fbcv#reciprocal_of",
-      "meta" : {
-        "definition" : {
-          "val" : "q1 reciprocal_of q2 if and only if : q1 and q2 are relational qualities and a phenotype e q1 e2 mutually implies a phenotype e2 q2 e.",
-          "xrefs" : [ "PATOC:CJM" ]
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
-          "val" : "There are frequently two ways to state the same thing: we can say 'spermatocyte lacks asters' or 'asters absent from spermatocyte'. In this case the quality is 'lacking all parts of type' - it is a (relational) quality of the spermatocyte, and it is with respect to instances of 'aster'. One of the popular requirements of PATO is that it continue to support 'absent', so we need to relate statements which use this quality to the 'lacking all parts of type' quality.\nThere are frequently two ways to state the same thing: we can say 'spermatocyte lacks asters' or 'asters absent from spermatocyte'. In this case the quality is 'lacking all parts of type' - it is a (relational) quality of the spermatocyte, and it is with respect to instances of 'aster'. One of the popular requirements of PATO is that it continue to support 'absent', so we need to relate statements which use this quality to the 'lacking all parts of type' quality."
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "FlyBase miscellaneous CV"
-        } ]
-      },
-      "type" : "PROPERTY",
-      "lbl" : "reciprocal_of"
-    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000670",
       "meta" : {
         "definition" : {
@@ -13345,59 +13775,6 @@
       },
       "type" : "CLASS",
       "lbl" : "eclosion defective"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/RO_0002088",
-      "meta" : {
-        "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#ro-eco" ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
-          "val" : "Previously had ID  http://purl.obolibrary.org/obo/RO_0002123 in test files in sandpit - but this seems to have been dropped from ro-edit.owl at some point.  No re-use under this ID AFAIK, but leaving note here in case we run in to clashes down the line.  Official ID now chosen from DOS ID range."
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "David Osumi-Sutherland"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "FlyBase miscellaneous CV"
-        } ]
-      },
-      "type" : "PROPERTY",
-      "lbl" : "during which starts"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/RO_0002084",
-      "meta" : {
-        "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#ro-eco" ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "David Osumi-Sutherland"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "FlyBase miscellaneous CV"
-        }, {
-          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
-          "val" : "Previously had ID  http://purl.obolibrary.org/obo/RO_0002122 in test files in sandpit - but this seems to have been dropped from ro-edit.owl at some point.  No re-use under this ID AFAIK, but leaving note here in case we run in to clashes down the line.  Official ID now chosen from DOS ID range."
-        } ]
-      },
-      "type" : "PROPERTY",
-      "lbl" : "during which ends"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/RO_0002085",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
-          "val" : "Previously had ID  http://purl.obolibrary.org/obo/RO_0002124 in test files in sandpit - but this seems to have been dropped from ro-edit.owl at some point.  No re-use under this ID AFAIK, but leaving note here in case we run in to clashes down the line.  Official ID now chosen from DOS ID range."
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "FlyBase miscellaneous CV"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "David Osumi-Sutherland"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "di"
-        } ]
-      },
-      "type" : "PROPERTY",
-      "lbl" : "encompasses"
     }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0002086",
       "meta" : {
@@ -13751,6 +14128,106 @@
       "type" : "CLASS",
       "lbl" : "sex-determination defective"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007035",
+      "meta" : {
+        "definition" : {
+          "val" : "An enzyme that catalyzes hydrolysis of DNA in a site-specific manner, having a cognate recognition site of 20-30bp. When used in vivo, the DNA cutting stimulates cellular repair mechanisms, which can be exploited to produce genome modifications. For example, repair by homologous recombination in the presence of an exogenous template can be used to introduce targeted changes into the genome.",
+          "xrefs" : [ "FBC:GM", "FlyBase:FBrf0231034" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-26T09:17:20Z"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "meganuclease"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007033",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that has a property that allows specific binding to another macromolecule, where this property can be regulated by binding to a small molecule, such as an ion or ligand.",
+          "xrefs" : [ "FBC:GM" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-26T08:14:35Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "small molecule-regulated specific binding tool"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007032",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that has a property that allows specific binding to another macromolecule, where this property can be regulated by temperature.",
+          "xrefs" : [ "FBC:GM" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-26T08:13:56Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "temperature-regulated specific binding tool"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007031",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that has a property that allows specific binding to another macromolecule, where this property can be regulated by irradiation with a pulse of light.",
+          "xrefs" : [ "FBC:GM" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-26T08:13:06Z"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "light-regulated specific binding tool"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007030",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that has a property that allows specific binding to another macromolecule, where this property can be regulated in response to a particular stimulus.",
+          "xrefs" : [ "FBC:GM" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2019-06-26T08:12:05Z"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "conditional specific binding tool"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000404",
       "meta" : {
         "definition" : {
@@ -13897,6 +14374,26 @@
       },
       "type" : "CLASS",
       "lbl" : "stress response defective"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0004007",
+      "meta" : {
+        "definition" : {
+          "val" : "p 'has primary input ot output' c iff either (a) p 'has primary input' c or (b) p 'has primary output' c.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "cjm"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2018-12-13T11:26:17Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "FlyBase miscellaneous CV"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "has primary input or output"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000409",
       "meta" : {
@@ -14443,6 +14940,32 @@
       "type" : "CLASS",
       "lbl" : "locomotor behavior defective"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002170",
+      "meta" : {
+        "definition" : {
+          "val" : "a is connected to b if and only if a and b are discrete structure, and there exists some connecting structure c, such that c connects a and b",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://xmlns.com/foaf/0.1/page",
+          "val" : "https://github.com/obophenotype/uberon/wiki/Connectivity-Design-Pattern"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "a 'toe distal phalanx bone' that is connected to a 'toe medial phalanx bone' (an interphalangeal joint *connects* these two bones)."
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "FlyBase miscellaneous CV"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "http://www.ncbi.nlm.nih.gov/pubmed/22293552"
+        }, {
+          "pred" : "http://xmlns.com/foaf/0.1/page",
+          "val" : "https://github.com/obophenotype/uberon/wiki/Modeling-articulations-Design-Pattern"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "connected to"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000580",
       "meta" : {
         "definition" : {
@@ -14528,6 +15051,23 @@
       },
       "type" : "CLASS",
       "lbl" : "partially"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002177",
+      "meta" : {
+        "definition" : {
+          "val" : "a is attached to part of b if a is attached to b, or a is attached to some p, where p is part of b.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "FlyBase miscellaneous CV"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000589",
+          "val" : "attached to part of (anatomical structure to anatomical structure)"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "attached to part of"
     }, {
       "id" : "http://purl.obolibrary.org/obo/fbcv#relational_slim",
       "meta" : {
@@ -15569,6 +16109,51 @@
       "type" : "CLASS",
       "lbl" : "diepoxyoctane"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0003001",
+      "meta" : {
+        "definition" : {
+          "val" : "a produced_by b iff some process that occurs_in b has_output a.",
+          "xrefs" : [ ]
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Melissa Haendel"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "FlyBase miscellaneous CV"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "produced by"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0003000",
+      "meta" : {
+        "definition" : {
+          "val" : "a produces b if some process that occurs_in a has_output b, where a and b are material entities. Examples: hybridoma cell line produces monoclonal antibody reagent; chondroblast produces avascular GAG-rich matrix.",
+          "xrefs" : [ ]
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Melissa Haendel"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "Note that this definition doesn't quite distinguish the output of a transformation process from a production process, which is related to the identity/granularity issue."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "FlyBase miscellaneous CV"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "produces"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000569",
       "meta" : {
         "definition" : {
@@ -15997,26 +16582,6 @@
       },
       "type" : "PROPERTY",
       "lbl" : "has potential to developmentally contribute to"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/RO_0002386",
-      "meta" : {
-        "definition" : {
-          "val" : "x has potential to developmentally induce y iff x developmentally induces y or x is capable of developmentally inducing y",
-          "xrefs" : [ ]
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Chris Mungall"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "FlyBase miscellaneous CV"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000428"
-        } ]
-      },
-      "type" : "PROPERTY",
-      "lbl" : "has potential to developmentally induce"
     }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0002387",
       "meta" : {
@@ -16544,6 +17109,59 @@
       },
       "type" : "CLASS",
       "lbl" : "aging defective"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002375",
+      "meta" : {
+        "definition" : {
+          "val" : "A relationship that holds between two material entities in a system of connected structures, where the branching relationship holds based on properties of the connecting network.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "FlyBase miscellaneous CV"
+        }, {
+          "pred" : "http://xmlns.com/foaf/0.1/page",
+          "val" : "https://github.com/obophenotype/uberon/issues/170"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/fbcv#seeAlso",
+          "val" : "http://purl.obolibrary.org/obo/ro/docs/branching_part_of.png"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000428"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
+          "val" : "This relation can be used for geographic features (e.g. rivers) as well as anatomical structures (plant branches and roots, leaf veins, animal veins, arteries, nerves)"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
+          "val" : "Do not use this relation directly. It is ended as a grouping for a diverse set of relations, all involving branching relationships"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Chris Mungall"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "in branching relationship with"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002371",
+      "meta" : {
+        "definition" : {
+          "val" : "a is attached to b if and only if a and b are discrete objects or object parts, and there are physical connections between a and b such that a force pulling a will move b, or a force pulling b will move a",
+          "xrefs" : [ ]
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "FlyBase miscellaneous CV"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000589",
+          "val" : "attached to (anatomical structure to anatomical structure)"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Chris Mungall"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "attached to"
     }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0002131",
       "meta" : {
@@ -17212,6 +17830,24 @@
       "type" : "PROPERTY",
       "lbl" : "causal relation between material entity and a process"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002353",
+      "meta" : {
+        "definition" : {
+          "val" : "inverse of has output",
+          "xrefs" : [ ]
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/RO_0002259", "http://purl.obolibrary.org/obo/fbcv#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Chris Mungall"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "FlyBase miscellaneous CV"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "output of"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0002596",
       "meta" : {
         "definition" : {
@@ -17248,6 +17884,20 @@
       },
       "type" : "PROPERTY",
       "lbl" : "capable of negatively regulating"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002592",
+      "meta" : {
+        "definition" : {
+          "val" : "p results in organization of c iff p results in the assembly, arrangement of constituent parts, or disassembly of c",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "FlyBase miscellaneous CV"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "results in organization of"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000129",
       "meta" : {
@@ -17621,20 +18271,6 @@
       "type" : "PROPERTY",
       "lbl" : "has part structure that is capable of"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/fbcv#different_in_magnitude_relative_to",
-      "meta" : {
-        "definition" : {
-          "val" : "q1 different_in_magnitude_relative_to q2 if and only if magnitude(q1) NOT =~ magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale.",
-          "xrefs" : [ "PATOC:CJM" ]
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "FlyBase miscellaneous CV"
-        } ]
-      },
-      "type" : "PROPERTY",
-      "lbl" : "different_in_magnitude_relative_to"
-    }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0002334",
       "meta" : {
         "definition" : {
@@ -17717,6 +18353,26 @@
       },
       "type" : "PROPERTY",
       "lbl" : "directly regulates"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002337",
+      "meta" : {
+        "definition" : {
+          "val" : "A relationship that holds via some process of localization",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
+          "val" : "Do not use this relation directly. It is a grouping relation."
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "FlyBase miscellaneous CV"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Chris Mungall"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "related via localization to"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000374",
       "meta" : {
@@ -18282,6 +18938,26 @@
       "type" : "PROPERTY",
       "lbl" : "causally influences"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002567",
+      "meta" : {
+        "definition" : {
+          "val" : "A relation that holds between elements of a musculoskeletal system or its analogs.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "FlyBase miscellaneous CV"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Chris Mungall"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
+          "val" : "Do not use this relation directly. It is ended as a grouping for a diverse set of relations, all involving the biomechanical processes."
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "biomechanically related to"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0003214",
       "meta" : {
         "definition" : {
@@ -18693,6 +19369,49 @@
       },
       "type" : "CLASS",
       "lbl" : "book review"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0040035",
+      "meta" : {
+        "definition" : {
+          "val" : "This relation groups  relations between diseases and any other kind of entity.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
+          "val" : "Do not use this relation directly. It is intended as a grouping for a diverse set of relations, in which the subject or object is a disease."
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "FlyBase miscellaneous CV"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2018-09-26T00:00:32Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "cjm"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "disease relationship"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0040036",
+      "meta" : {
+        "definition" : {
+          "val" : "p has anatomical participant c iff p has participant c, and c is an anatomical entity",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "cjm"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2018-09-26T01:08:58Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "FlyBase miscellaneous CV"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "has anatomical participant"
     }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0002563",
       "meta" : {
@@ -19765,23 +20484,6 @@
       },
       "type" : "CLASS",
       "lbl" : "functional group"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/fbcv#increased_in_magnitude_relative_to",
-      "meta" : {
-        "definition" : {
-          "val" : "q1 increased_in_magnitude_relative_to q2 if and only if magnitude(q1) > magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale.",
-          "xrefs" : [ "PATOC:CJM" ]
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "FlyBase miscellaneous CV"
-        }, {
-          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
-          "val" : "This relation is used to determine the 'directionality' of relative qualities such as 'increased strength', relative to the parent type, 'strength'.\nThis relation is used to determine the 'directionality' of relative qualities such as 'increased strength', relative to the parent type, 'strength'."
-        } ]
-      },
-      "type" : "PROPERTY",
-      "lbl" : "increased_in_magnitude_relative_to"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0003017",
       "meta" : {
@@ -21926,6 +22628,32 @@
       "type" : "CLASS",
       "lbl" : "increased cell growth"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/fbcv#results_in_developmental_progression_of",
+      "meta" : {
+        "definition" : {
+          "val" : "p results in the developmental progression of s iff p is a developmental process and s is an anatomical structure and p causes s to undergo a change in state at some point along its natural developmental cycle (this cycle starts with its formation, through the mature structure, and ends with its loss).",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "This property and its subproperties are being used primarily for the definition of GO developmental processes. The property hierarchy mirrors the core GO hierarchy. In future we may be able to make do with a more minimal set of properties, but due to the way GO is currently structured we require highly specific relations to avoid incorrect entailments. To avoid this, the corresponding genus terms in GO should be declared mutually disjoint."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/fbcv#seeAlso",
+          "val" : "http://purl.obolibrary.org/obo/Ontology_extensions"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "FlyBase miscellaneous CV"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Chris Mungall"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "results in developmental progression of"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000718",
       "meta" : {
         "definition" : {
@@ -22201,19 +22929,6 @@
       "type" : "CLASS",
       "lbl" : "unbound RNA depletion"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/fbcv#towards",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "FlyBase miscellaneous CV"
-        }, {
-          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
-          "val" : "temporary placeholder - may be placed in OBO_REL; with relational qualities, the additional argument is the 'towards' argument; eg sensitivity towards chlorine. Relation binding a relational quality or disposition to the relevant type of entity."
-        } ]
-      },
-      "type" : "PROPERTY",
-      "lbl" : "towards"
-    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000745",
       "meta" : {
         "definition" : {
@@ -22335,11 +23050,6 @@
           "val" : "a core relation that holds between a part and its whole",
           "xrefs" : [ ]
         },
-        "xrefs" : [ {
-          "val" : "OBO_REL:part_of"
-        }, {
-          "val" : "BFO:0000050"
-        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
           "val" : "Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)\n\nA continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'."
@@ -22353,17 +23063,11 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
           "val" : "Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other."
         }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "relationship"
-        }, {
           "pred" : "http://purl.obolibrary.org/obo/RO_0040042",
           "val" : "http://purl.obolibrary.org/obo/BFO_0000031"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/fbcv#seeAlso",
           "val" : "http://www.obofoundry.org/ro/#OBO_REL:part_of"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "part_of"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)"
@@ -22389,6 +23093,9 @@
           "pred" : "http://purl.obolibrary.org/obo/RO_0040042",
           "val" : "http://purl.obolibrary.org/obo/BFO_0000019"
         }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "FlyBase miscellaneous CV"
+        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "this day is part of this year (occurrent parthood)"
         }, {
@@ -22406,7 +23113,7 @@
         } ]
       },
       "type" : "PROPERTY",
-      "lbl" : "part_of"
+      "lbl" : "part of"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000506",
       "meta" : {
@@ -22571,8 +23278,6 @@
           "xrefs" : [ ]
         },
         "xrefs" : [ {
-          "val" : "OBO_REL:has_part"
-        }, {
           "val" : "BFO:0000051"
         } ],
         "basicPropertyValues" : [ {
@@ -22584,9 +23289,6 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
           "val" : "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "relationship"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "chebi_ontology"
@@ -22617,7 +23319,7 @@
         } ]
       },
       "type" : "PROPERTY",
-      "lbl" : "has_part"
+      "lbl" : "has part"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000741",
       "meta" : {
@@ -23484,9 +24186,6 @@
           "val" : "b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t",
           "xrefs" : [ ]
         },
-        "xrefs" : [ {
-          "val" : "BFO:0000066"
-        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "occurs_in"
@@ -23497,20 +24196,17 @@
           "pred" : "http://purl.obolibrary.org/obo/fbcv#isDefinedBy",
           "val" : "http://purl.obolibrary.org/obo/bfo.owl"
         }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "occurs_in"
-        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "unfolds in"
         }, {
           "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
           "val" : "Paraphrase of definition: a relation between a process and an independent continuant, in which the process takes place entirely within the independent continuant"
         }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "gene_ontology"
-        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "unfolds_in"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "FlyBase miscellaneous CV"
         } ]
       },
       "type" : "PROPERTY",
@@ -25744,6 +26440,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000357"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000721",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000387"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000717",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000427"
@@ -25763,6 +26463,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000726",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000334"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007014",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007013"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000703",
       "pred" : "is_a",
@@ -25819,6 +26523,10 @@
       "sub" : "http://purl.obolibrary.org/obo/RO_0002405",
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0002087"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007026",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007025"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000107",
       "pred" : "is_a",
@@ -25976,13 +26684,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000503"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000758",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000753"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000751",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000690"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000758",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000753"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003094",
       "pred" : "is_a",
@@ -26144,13 +26852,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000681"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000074",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000052"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0002524",
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000074",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000052"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000578",
       "pred" : "is_a",
@@ -26224,6 +26932,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000470"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0005021",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007029"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0005077",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0005075"
@@ -26248,10 +26960,6 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0005001"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/RO_0002093",
-      "pred" : "subPropertyOf",
-      "obj" : "http://purl.obolibrary.org/obo/RO_0002222"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000488",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000486"
@@ -26264,13 +26972,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000074"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000452",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000807"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000367",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000365"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000452",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000807"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000517",
       "pred" : "is_a",
@@ -26300,13 +27008,13 @@
       "pred" : "inverseOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0002629"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000505",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000504"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000747",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000745"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000505",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000504"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000434",
       "pred" : "is_a",
@@ -26384,13 +27092,17 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000290"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0004033",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002264"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0006002",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/RO_0004033",
-      "pred" : "subPropertyOf",
-      "obj" : "http://purl.obolibrary.org/obo/RO_0002264"
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007013",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0005001"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000306",
       "pred" : "is_a",
@@ -26440,10 +27152,6 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000313"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/RO_0002085",
-      "pred" : "subPropertyOf",
-      "obj" : "http://purl.obolibrary.org/obo/RO_0002088"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003148",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003146"
@@ -26460,13 +27168,13 @@
       "pred" : "inverseOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0000057"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/RO_0002331",
-      "pred" : "subPropertyOf",
-      "obj" : "http://purl.obolibrary.org/obo/RO_0002217"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0002630",
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0002212"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002331",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002217"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0002509",
       "pred" : "subPropertyOf",
@@ -26512,6 +27220,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003000"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007016",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007014"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000351",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0002019"
@@ -26523,6 +27235,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000118",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000074"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007004",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007003"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000671",
       "pred" : "is_a",
@@ -26732,6 +27448,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000558"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007025",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0005001"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0002004",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
@@ -26748,13 +27468,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003021"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000396",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000670"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0004032",
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0002264"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000396",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000670"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003181",
       "pred" : "is_a",
@@ -26816,6 +27536,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003014"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007003",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007002"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003235",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003222"
@@ -26851,6 +27575,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000323",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000654"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007015",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007014"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0002032",
       "pred" : "is_a",
@@ -26976,6 +27704,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000538"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002592",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0040036"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000418",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000417"
@@ -27024,6 +27756,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0005015"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007020",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0005044"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000280",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
@@ -27059,6 +27795,10 @@
       "sub" : "http://purl.obolibrary.org/obo/RO_0002509",
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0002506"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007002",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0005001"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003020",
       "pred" : "is_a",
@@ -27171,6 +27911,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000129",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000074"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007006",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007004"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000743",
       "pred" : "is_a",
@@ -27428,10 +28172,6 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000074"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/fbcv#increased_in_magnitude_relative_to",
-      "pred" : "subPropertyOf",
-      "obj" : "http://purl.obolibrary.org/obo/fbcv#different_in_magnitude_relative_to"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000752",
       "pred" : "http://purl.obolibrary.org/obo/fbcv#conditionality",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000311"
@@ -27496,6 +28236,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000551"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007005",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007004"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003127",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003123"
@@ -27531,6 +28275,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0002006",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0002011"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007017",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007014"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0005057",
       "pred" : "is_a",
@@ -27644,37 +28392,37 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003109"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003076",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003050"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0002336",
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0002334"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003076",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003050"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0002522",
       "pred" : "inverseOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0002523"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000792",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000384"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000755",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000754"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000792",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000384"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0006000",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000400"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003086",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003082"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0005034",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0005023"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003086",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003082"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003172",
       "pred" : "is_a",
@@ -27687,10 +28435,6 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000416",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000414"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/RO_0002084",
-      "pred" : "subPropertyOf",
-      "obj" : "http://purl.obolibrary.org/obo/RO_0002222"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000767",
       "pred" : "is_a",
@@ -27755,6 +28499,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000382",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/fbcv#results_in_developmental_progression_of",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002324"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000240",
       "pred" : "is_a",
@@ -27840,13 +28588,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000737"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000279",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0002447",
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0002436"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000279",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000440",
       "pred" : "is_a",
@@ -27887,6 +28635,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000372",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000370"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0040036",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0000057"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000523",
       "pred" : "is_a",
@@ -28008,6 +28760,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000693"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007008",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007002"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0005013",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0005006"
@@ -28076,13 +28832,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0002001"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003173",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003164"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0002218",
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0000057"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003173",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003164"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000543",
       "pred" : "is_a",
@@ -28111,6 +28867,10 @@
       "sub" : "http://purl.obolibrary.org/obo/RO_0002212",
       "pred" : "inverseOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0002335"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007035",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0005077"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000102",
       "pred" : "is_a",
@@ -28152,17 +28912,21 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007029",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0005001"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0002448",
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0002436"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003197",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003191"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0002013",
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0002334"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003197",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003191"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000047",
       "pred" : "is_a",
@@ -28200,13 +28964,13 @@
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0002211"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000241",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003226",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003222"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000241",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000398",
       "pred" : "is_a",
@@ -28248,6 +29012,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007019",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007018"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000512",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000504"
@@ -28255,6 +29023,10 @@
       "sub" : "http://purl.obolibrary.org/obo/RO_0002432",
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0002328"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007007",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007004"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003186",
       "pred" : "is_a",
@@ -28287,6 +29059,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0005023",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0005022"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002170",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002323"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000777",
       "pred" : "is_a",
@@ -28452,6 +29228,10 @@
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0002211"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002375",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002323"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003198",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003191"
@@ -28467,6 +29247,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003079",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003050"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007027",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0005057"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000780",
       "pred" : "http://purl.obolibrary.org/obo/fbcv#conditionality",
@@ -28484,6 +29268,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000745"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0004007",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0000057"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000148",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000322"
@@ -28492,13 +29280,13 @@
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0002411"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000775",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000769"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000533",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000526"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000775",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000769"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000264",
       "pred" : "is_a",
@@ -28511,6 +29299,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003009",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003007"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002567",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002328"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0002014",
       "pred" : "subPropertyOf",
@@ -28628,13 +29420,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003050"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000357",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000733",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000307"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000357",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000314",
       "pred" : "is_a",
@@ -28680,6 +29472,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000074"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007030",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007029"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003151",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003146"
@@ -28691,6 +29487,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000815",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000813"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002375",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000050"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000569",
       "pred" : "is_a",
@@ -28728,10 +29528,6 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000074"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/RO_0002088",
-      "pred" : "subPropertyOf",
-      "obj" : "http://purl.obolibrary.org/obo/RO_0002222"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000252",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
@@ -28756,6 +29552,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000074"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002449",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002448"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003030",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003029"
@@ -28763,10 +29563,6 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000653",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000052"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/RO_0002449",
-      "pred" : "subPropertyOf",
-      "obj" : "http://purl.obolibrary.org/obo/RO_0002448"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000417",
       "pred" : "is_a",
@@ -28859,6 +29655,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000069",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000052"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007009",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007008"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000763",
       "pred" : "is_a",
@@ -28980,10 +29780,6 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003208"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/fbcv#decreased_in_magnitude_relative_to",
-      "pred" : "subPropertyOf",
-      "obj" : "http://purl.obolibrary.org/obo/fbcv#different_in_magnitude_relative_to"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000262",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
@@ -29012,13 +29808,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003222"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000275",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000271",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000274"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000275",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003214",
       "pred" : "is_a",
@@ -29055,10 +29851,6 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000503",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000452"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/RO_0002414",
-      "pred" : "subPropertyOf",
-      "obj" : "http://purl.obolibrary.org/obo/RO_0002411"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000403",
       "pred" : "is_a",
@@ -29100,6 +29892,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000052"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007032",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007030"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0005028",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0005023"
@@ -29136,13 +29932,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000282"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000737",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000288"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0002037",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0002041"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000737",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000288"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0005016",
       "pred" : "is_a",
@@ -29244,13 +30040,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0002013",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0002022"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0002014",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0002012"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0002013",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0002022"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000135",
       "pred" : "is_a",
@@ -29336,6 +30132,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000005"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007031",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007030"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000520",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000519"
@@ -29352,13 +30152,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000074"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003215",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003240"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0005051",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0005001"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003215",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003240"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0002012",
       "pred" : "is_a",
@@ -29420,6 +30220,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000052"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002234",
+      "pred" : "inverseOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002353"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000296",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000294"
@@ -29432,13 +30236,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0005023"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0001003",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000747"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0002352",
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0000056"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0001003",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000747"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000781",
       "pred" : "http://purl.obolibrary.org/obo/fbcv#conditionality",
@@ -29492,13 +30296,17 @@
       "pred" : "http://purl.obolibrary.org/obo/fbcv#conditionality",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000311"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000761",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000760"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000762",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000750"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000761",
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007028",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000760"
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0005051"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0002023",
       "pred" : "subPropertyOf",
@@ -29507,10 +30315,6 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000558",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000525"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/RO_0002386",
-      "pred" : "subPropertyOf",
-      "obj" : "http://purl.obolibrary.org/obo/RO_0002384"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000785",
       "pred" : "is_a",
@@ -29660,13 +30464,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000739"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0005050",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0005044"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000176",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000005"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0005050",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0005044"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0001325",
       "pred" : "is_a",
@@ -29679,6 +30483,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000769",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000697"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002177",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002567"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000784",
       "pred" : "http://purl.obolibrary.org/obo/fbcv#conditionality",
@@ -29707,6 +30515,10 @@
       "sub" : "http://purl.obolibrary.org/obo/RO_0002411",
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000063"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002353",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002328"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0002036",
       "pred" : "is_a",
@@ -29760,9 +30572,9 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000394"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/RO_0002088",
-      "pred" : "inverseOf",
-      "obj" : "http://purl.obolibrary.org/obo/RO_0002091"
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007022",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007021"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0002525",
       "pred" : "subPropertyOf",
@@ -29783,14 +30595,6 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000207",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000189"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/RO_0002085",
-      "pred" : "inverseOf",
-      "obj" : "http://purl.obolibrary.org/obo/RO_0002092"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/RO_0002084",
-      "pred" : "inverseOf",
-      "obj" : "http://purl.obolibrary.org/obo/RO_0002093"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0002087",
       "pred" : "inverseOf",
@@ -29832,6 +30636,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002353",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0000056"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000812",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000809"
@@ -29847,6 +30655,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000782",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000780"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002234",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0000057"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000782",
       "pred" : "is_a",
@@ -29928,6 +30740,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0005001"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007010",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007009"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000807",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000013"
@@ -29960,13 +30776,13 @@
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0002500"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003143",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003138"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0000081",
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0000052"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003143",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003138"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000424",
       "pred" : "is_a",
@@ -29996,21 +30812,17 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0005068"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000402",
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000274",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000387"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000485",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003020"
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003011",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000013"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000274",
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000485",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003020"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000439",
       "pred" : "is_a",
@@ -30084,9 +30896,9 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003109"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/RO_0002092",
-      "pred" : "subPropertyOf",
-      "obj" : "http://purl.obolibrary.org/obo/RO_0002093"
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007033",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007030"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0005029",
       "pred" : "is_a",
@@ -30183,6 +30995,10 @@
       "sub" : "http://purl.obolibrary.org/obo/RO_0002388",
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0002387"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007018",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0005044"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0002255",
       "pred" : "subPropertyOf",
@@ -30348,13 +31164,17 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0002023"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000786",
+      "pred" : "http://purl.obolibrary.org/obo/fbcv#conditionality",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000311"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000781",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000778"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000786",
-      "pred" : "http://purl.obolibrary.org/obo/fbcv#conditionality",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000311"
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002177",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002323"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003081",
       "pred" : "is_a",
@@ -30420,6 +31240,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0005006"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007024",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007021"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000566",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000525"
@@ -30455,6 +31279,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000248",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002371",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002170"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003036",
       "pred" : "is_a",
@@ -30536,6 +31364,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0002010"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007021",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0005001"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000712",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000710"
@@ -30579,6 +31411,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000005",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000000"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007012",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007009"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000519",
       "pred" : "is_a",
@@ -30636,13 +31472,13 @@
       "pred" : "http://purl.obolibrary.org/obo/fbcv#conditionality",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000312"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000272",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0002033",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0002032"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000272",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000310",
       "pred" : "is_a",
@@ -30655,6 +31491,14 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0002035",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0002010"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0003000",
+      "pred" : "inverseOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0003001"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007023",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007021"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003048",
       "pred" : "is_a",
@@ -30687,6 +31531,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000379",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000008"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002371",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002177"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000567",
       "pred" : "is_a",
@@ -30755,10 +31603,6 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000378",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/RO_0002091",
-      "pred" : "subPropertyOf",
-      "obj" : "http://purl.obolibrary.org/obo/RO_0002222"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000684",
       "pred" : "is_a",
@@ -30891,6 +31735,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000436",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007011",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007009"
     } ],
     "id" : "http://purl.obolibrary.org/obo/fbcv/fbcv-simple.json",
     "meta" : {
@@ -30987,9 +31835,6 @@
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0002526",
       "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002524", "http://purl.obolibrary.org/obo/RO_0002525" ]
     }, {
-      "predicateId" : "http://purl.obolibrary.org/obo/BFO_0000062",
-      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002091", "http://purl.obolibrary.org/obo/BFO_0000062" ]
-    }, {
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0002428",
       "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002331", "http://purl.obolibrary.org/obo/RO_0002211" ]
     }, {
@@ -30999,26 +31844,20 @@
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0002430",
       "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002331", "http://purl.obolibrary.org/obo/RO_0002212" ]
     }, {
-      "predicateId" : "http://purl.obolibrary.org/obo/BFO_0000063",
-      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002092", "http://purl.obolibrary.org/obo/BFO_0000063" ]
-    }, {
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0002429",
       "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002331", "http://purl.obolibrary.org/obo/RO_0002213" ]
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0002213",
       "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002212", "http://purl.obolibrary.org/obo/RO_0002212" ]
     }, {
-      "predicateId" : "http://purl.obolibrary.org/obo/RO_0002211",
-      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002211", "http://purl.obolibrary.org/obo/BFO_0000050" ]
-    }, {
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0002331",
       "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002331", "http://purl.obolibrary.org/obo/BFO_0000050" ]
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/BFO_0000062",
-      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002092", "http://purl.obolibrary.org/obo/BFO_0000062" ]
-    }, {
-      "predicateId" : "http://purl.obolibrary.org/obo/BFO_0000062",
       "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/BFO_0000050", "http://purl.obolibrary.org/obo/BFO_0000062" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/RO_0002177",
+      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002371", "http://purl.obolibrary.org/obo/BFO_0000050" ]
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/BFO_0000063",
       "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/BFO_0000050", "http://purl.obolibrary.org/obo/BFO_0000063" ]
@@ -31040,9 +31879,6 @@
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0002327",
       "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002327", "http://purl.obolibrary.org/obo/RO_0002017" ]
-    }, {
-      "predicateId" : "http://purl.obolibrary.org/obo/RO_0002086",
-      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002093", "http://purl.obolibrary.org/obo/BFO_0000062" ]
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0002597",
       "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002215", "http://purl.obolibrary.org/obo/RO_0002212" ]

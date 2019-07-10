@@ -20,6 +20,10 @@ components/dpo-simple.owl:
 
 tmp/source-merged.obo: $(SRC)
 	$(ROBOT) merge --input $< \
+		reason --reasoner ELK \
+		relax \
+		remove --axioms equivalent \
+		relax \
 		convert --check false -f obo $(OBO_FORMAT_OPTIONS) -o tmp/source-merged.owl.obo &&\
 		grep -v ^owl-axioms tmp/source-merged.owl.obo > tmp/source-stripped.obo &&\
 		cat tmp/source-stripped.obo | perl -0777 -e '$$_ = <>; s/name[:].*\nname[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/def[:].*\nname[:]/def:/g; print' > $@ &&\
@@ -41,15 +45,13 @@ $(ONT)-simple.obo: oort
 $(ONT)-flybase.owl:
 	owltools fbcv-simple.obo --make-subset-by-properties part_of conditionality -o $@
 
-$(ONT)-simple-x.owl:
-	$(ROBOT) merge --input tmp/source-merged.obo $(patsubst %, -i %, $(OTHER_SRC)) \
-		reason --reasoner ELK \
-		relax \
-		remove --axioms equivalent \
-		relax \
-		filter --term-file simple_seed.txt --select "annotations ontology anonymous object-properties self" --trim true --signature true \
-		reduce -r ELK \
-		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@
+#$(ONT)-simple-x.owl:
+#	$(ROBOT) merge --input tmp/source-merged.obo $(patsubst %, -i %, $(OTHER_SRC)) \
+#		reason --reasoner ELK \
+##		remove --axioms equivalent \
+#		relax \
+#		reduce -r ELK \
+#		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@
 
 
 ######################################################
@@ -91,6 +93,7 @@ reports/chado_load_check_simple.txt: $(ONT)-simple.obo install_flybase_scripts
 	../scripts/chado_load_checks.pl $(ONT)-simple.obo > $@
 
 all_reports: all_reports_onestep $(REPORT_FILES)
+ASSETS := $(ASSETS) components/dpo-simple.owl
 
 prepare_release: $(ASSETS) $(PATTERN_RELEASE_FILES)
 	rsync -R $(ASSETS) $(RELEASEDIR) &&\
@@ -122,7 +125,7 @@ auto_generated_definitions_dot.owl: tmp/merged-source-pre.owl auto_generated_def
 auto_generated_definitions_sub.owl: tmp/merged-source-pre.owl auto_generated_definitions_seed_sub.txt
 	java -jar ../scripts/eq-writer.jar $< auto_generated_definitions_seed_sub.txt sub_external $@ NA
 
-pre_release: $(ONT)-edit.obo auto_generated_definitions_dot.owl auto_generated_definitions_sub.owl
+pre_release: $(ONT)-edit.obo auto_generated_definitions_dot.owl auto_generated_definitions_sub.owl components/dpo-simple.owl
 	cp $(ONT)-edit.obo tmp/$(ONT)-edit-release.obo
 	sed -i '/def[:] \"[.]\"/d' tmp/$(ONT)-edit-release.obo
 	sed -i '/sub_/d' tmp/$(ONT)-edit-release.obo
