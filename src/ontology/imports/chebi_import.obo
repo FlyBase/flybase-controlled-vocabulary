@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: fbcv/releases/2019-06-17/imports/chebi_import.owl
+data-version: fbcv/releases/2019-07-10/imports/chebi_import.owl
 ontology: fbcv/imports/chebi_import
 
 [Term]
@@ -279,12 +279,19 @@ name: xanthine
 namespace: chebi_ontology
 def: "A purine nucleobase found in humans and other organisms." []
 subset: 3_STAR
+synonym: "2,6-dioxopurine" RELATED [ChEBI]
+synonym: "2,6-dioxopurines" RELATED [ChEBI]
+synonym: "xanthine" EXACT [ChEBI]
+synonym: "xanthines" RELATED [ChEBI]
 xref: ECMDB:ECMDB00292
 xref: KNApSAcK:C00019660
+xref: PMID:1557408 "Europe PMC"
 xref: PMID:24629268 "Europe PMC"
+xref: PMID:9007687 "Europe PMC"
 xref: YMDB:YMDB00263
 is_a: CHEBI:25810 ! oxopurine
 is_a: CHEBI:26386 ! purine nucleobase
+relationship: has_functional_parent CHEBI:16235 ! guanine
 relationship: has_role CHEBI:78675 ! fundamental metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C5H4N4O2" xsd:string
@@ -844,6 +851,55 @@ property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "60.03236"
 property_value: http://purl.obolibrary.org/obo/chebi/smiles "NC(N)=O" xsd:string
 
 [Term]
+id: CHEBI:16235
+name: guanine
+namespace: chebi_ontology
+alt_id: CHEBI:14371
+alt_id: CHEBI:14372
+alt_id: CHEBI:24443
+alt_id: CHEBI:42948
+alt_id: CHEBI:5563
+def: "A 2-aminopurine carrying a 6-oxo substituent." []
+subset: 3_STAR
+synonym: "2-amino-1,9-dihydro-6H-purin-6-one" EXACT IUPAC_NAME [IUPAC]
+synonym: "2-Amino-6-hydroxypurine" RELATED [KEGG_COMPOUND]
+synonym: "2-amino-6-oxopurine" RELATED [ChEBI]
+synonym: "G" RELATED [ChEBI]
+synonym: "Gua" RELATED [CBN]
+synonym: "GUANINE" EXACT [PDBeChem]
+synonym: "Guanine" EXACT [KEGG_COMPOUND]
+synonym: "guanine" EXACT [UniProt]
+xref: Beilstein:147911 "Beilstein"
+xref: CAS:73-40-5 "KEGG COMPOUND"
+xref: DrugBank:DB02377
+xref: Gmelin:431879 "Gmelin"
+xref: HMDB:HMDB0000132
+xref: KEGG:C00242
+xref: KNApSAcK:C00001501
+xref: MetaCyc:GUANINE
+xref: PDBeChem:GUN
+xref: PMID:22770225 "Europe PMC"
+xref: PMID:8070089 "Europe PMC"
+xref: Reaxys:147911 "Reaxys"
+xref: Wikipedia:Guanine
+is_a: CHEBI:20702 ! 2-aminopurines
+is_a: CHEBI:25810 ! oxopurine
+is_a: CHEBI:26386 ! purine nucleobase
+relationship: has_parent_hydride CHEBI:35589 ! 9H-purine
+relationship: has_role CHEBI:75771 ! mouse metabolite
+relationship: has_role CHEBI:75772 ! Saccharomyces cerevisiae metabolite
+relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
+relationship: has_role CHEBI:77746 ! human metabolite
+relationship: has_role CHEBI:84735 ! algal metabolite
+property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/formula "C5H5N5O" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C5H5N5O/c6-5-9-3-2(4(11)10-5)7-1-8-3/h1H,(H4,6,7,8,9,10,11)" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchikey "UYTPUPDQBNUYGX-UHFFFAOYSA-N" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/mass "151.126" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "151.04941" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/smiles "C12=C(N=C(NC1=O)N)NC=N2" xsd:string
+
+[Term]
 id: CHEBI:16385
 name: organic sulfide
 namespace: chebi_ontology
@@ -1378,6 +1434,34 @@ property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "80.96519"
 property_value: http://purl.obolibrary.org/obo/chebi/smiles "OS([O-])=O" xsd:string
 
 [Term]
+id: CHEBI:17258
+name: 7H-purine
+namespace: chebi_ontology
+alt_id: CHEBI:14968
+alt_id: CHEBI:8639
+def: "The 7H-tautomer of purine." []
+subset: 3_STAR
+synonym: "7H-purine" EXACT IUPAC_NAME [IUPAC]
+synonym: "Purine" RELATED [KEGG_COMPOUND]
+synonym: "Purine base" RELATED [KEGG_COMPOUND]
+xref: Beilstein:3200 "Beilstein"
+xref: Gmelin:601779 "Gmelin"
+xref: HMDB:HMDB0001366
+xref: KEGG:C15587
+xref: Reaxys:3200 "Reaxys"
+is_a: CHEBI:35584 ! purine
+relationship: is_tautomer_of CHEBI:35586 ! 1H-purine
+relationship: is_tautomer_of CHEBI:35588 ! 3H-purine
+relationship: is_tautomer_of CHEBI:35589 ! 9H-purine
+property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/formula "C5H4N4" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C5H4N4/c1-4-5(8-2-6-1)9-3-7-4/h1-3H,(H,6,7,8,9)" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchikey "KDCGOANMDULRCW-UHFFFAOYSA-N" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/mass "120.11222" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "120.04360" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/smiles "c1ncc2[nH]cnc2n1" xsd:string
+
+[Term]
 id: CHEBI:17295
 name: L-phenylalanine
 namespace: chebi_ontology
@@ -1525,10 +1609,12 @@ xref: HMDB:HMDB0000892
 xref: KEGG:C00803
 xref: KNApSAcK:C00001208
 xref: LIPID_MAPS_instance:LMFA01010005 "LIPID MAPS"
+xref: PDBeChem:LEA
 xref: PDBeChem:PEI
 xref: PMID:20507156 "Europe PMC"
 xref: PPDB:3130
 xref: Reaxys:969454 "Reaxys"
+xref: Wikipedia:Valeric_acid
 is_a: CHEBI:26666 ! short-chain fatty acid
 is_a: CHEBI:39418 ! straight-chain saturated fatty acid
 relationship: has_role CHEBI:76924 ! plant metabolite
@@ -2410,6 +2496,15 @@ property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "321.98005
 property_value: http://purl.obolibrary.org/obo/chebi/smiles "OC[C@H]1O[C@H]([C@H](O)[C@@H]1O)n1cc(Br)c(=O)[nH]c1=O" xsd:string
 
 [Term]
+id: CHEBI:20702
+name: 2-aminopurines
+namespace: chebi_ontology
+def: "Any aminopurine having the amino substituent at the 2-position." []
+subset: 3_STAR
+synonym: "2-aminopurines" EXACT [ChEBI]
+is_a: CHEBI:22527 ! aminopurine
+
+[Term]
 id: CHEBI:20787
 name: 7-bromomethyl-12-methyltetraphene
 namespace: chebi_ontology
@@ -2688,6 +2783,15 @@ property_value: http://purl.obolibrary.org/obo/chebi/inchikey "TVZGACDUOSZQKY-LB
 property_value: http://purl.obolibrary.org/obo/chebi/mass "440.41302" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "440.15567" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/smiles "Nc1nc(N)c2nc(CNc3ccc(cc3)C(=O)N[C@@H](CCC(O)=O)C(O)=O)cnc2n1" xsd:string
+
+[Term]
+id: CHEBI:22527
+name: aminopurine
+namespace: chebi_ontology
+def: "Any purine having at least one amino substituent." []
+subset: 3_STAR
+synonym: "aminopurines" RELATED [ChEBI]
+is_a: CHEBI:26401 ! purines
 
 [Term]
 id: CHEBI:22563
@@ -2983,17 +3087,6 @@ synonym: "chlorides" RELATED [ChEBI]
 is_a: CHEBI:23117 ! chlorine molecular entity
 is_a: CHEBI:33958 ! halide salt
 relationship: has_part CHEBI:17996 ! chloride
-
-[Term]
-id: CHEBI:23115
-name: chlorohydrocarbon
-namespace: chebi_ontology
-def: "A compound derived from a hydrocarbon by replacing at least one hydrogen atom with a chlorine atom." []
-subset: 3_STAR
-synonym: "chlorinated hydrocarbons" RELATED [ChEBI]
-synonym: "chlorohydrocarbons" RELATED [ChEBI]
-is_a: CHEBI:24472 ! halohydrocarbon
-is_a: CHEBI:36683 ! organochlorine compound
 
 [Term]
 id: CHEBI:23116
@@ -6559,7 +6652,6 @@ synonym: "carboxylic anions" RELATED [ChEBI]
 is_a: CHEBI:25696 ! organic anion
 is_a: CHEBI:35406 ! oxoanion
 relationship: is_conjugate_base_of CHEBI:33575 ! carboxylic acid
-property_value: http://purl.obolibrary.org/obo/chebi/charge "-1" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "CO2R" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/mass "44.00950" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "43.98983" xsd:string
@@ -9595,6 +9687,16 @@ synonym: "mancunide-ring systems" RELATED [IUPAC]
 is_a: CHEBI:23367 ! molecular entity
 
 [Term]
+id: CHEBI:35570
+name: mancude organic heterobicyclic parent
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "mancude organic heterobicyclic parents" RELATED [ChEBI]
+synonym: "mancude-ring organic heterobicyclic parents" RELATED [ChEBI]
+is_a: CHEBI:27171 ! organic heterobicyclic compound
+is_a: CHEBI:35571 ! mancude organic heterocyclic parent
+
+[Term]
 id: CHEBI:35571
 name: mancude organic heterocyclic parent
 namespace: chebi_ontology
@@ -9613,6 +9715,93 @@ synonym: "organic mancude parents" RELATED [ChEBI]
 synonym: "organic mancude-ring parents" RELATED [ChEBI]
 is_a: CHEBI:33245 ! organic fundamental parent
 is_a: CHEBI:35568 ! mancude ring
+
+[Term]
+id: CHEBI:35584
+name: purine
+namespace: chebi_ontology
+def: "A heterobicyclic aromatic organic compound comprising a pyrimidine ring fused to an imidazole ring; the parent compound of the purines." []
+subset: 3_STAR
+synonym: "purine" EXACT IUPAC_NAME [IUPAC]
+xref: HMDB:HMDB0001366
+xref: KEGG:C15587
+xref: MetaCyc:PURINE
+xref: PMID:12865945 "Europe PMC"
+xref: PMID:24088627 "Europe PMC"
+is_a: CHEBI:26401 ! purines
+is_a: CHEBI:35570 ! mancude organic heterobicyclic parent
+relationship: has_role CHEBI:78675 ! fundamental metabolite
+property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/formula "C5H4N4" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/mass "120.112" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "120.04360" xsd:string
+
+[Term]
+id: CHEBI:35586
+name: 1H-purine
+namespace: chebi_ontology
+def: "The 1H-tautomer of purine." []
+subset: 3_STAR
+synonym: "1H-purine" EXACT [ChEBI]
+xref: Gmelin:2379911 "Gmelin"
+is_a: CHEBI:35584 ! purine
+relationship: is_tautomer_of CHEBI:17258 ! 7H-purine
+relationship: is_tautomer_of CHEBI:35588 ! 3H-purine
+relationship: is_tautomer_of CHEBI:35589 ! 9H-purine
+property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/formula "C5H4N4" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C5H4N4/c1-4-5(8-2-6-1)9-3-7-4/h1-3H,(H,6,7,8,9)" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchikey "KDCGOANMDULRCW-UHFFFAOYSA-N" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/mass "120.11210" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "120.04360" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/smiles "c1nc2c[nH]cnc2n1" xsd:string
+
+[Term]
+id: CHEBI:35588
+name: 3H-purine
+namespace: chebi_ontology
+def: "The 3H-tautomer of purine." []
+subset: 3_STAR
+synonym: "3H-purine" EXACT IUPAC_NAME [IUPAC]
+xref: PMID:6149478 "Europe PMC"
+xref: PMID:7178185 "Europe PMC"
+xref: PMID:7296170 "Europe PMC"
+xref: Reaxys:1210196 "Reaxys"
+is_a: CHEBI:35584 ! purine
+relationship: is_tautomer_of CHEBI:17258 ! 7H-purine
+relationship: is_tautomer_of CHEBI:35586 ! 1H-purine
+relationship: is_tautomer_of CHEBI:35589 ! 9H-purine
+property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/formula "C5H4N4" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C5H4N4/c1-4-5(8-2-6-1)9-3-7-4/h1-3H,(H,6,7,8,9)" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchikey "KDCGOANMDULRCW-UHFFFAOYSA-N" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/mass "120.11222" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "120.04360" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/smiles "c1nc2cnc[nH]c2n1" xsd:string
+
+[Term]
+id: CHEBI:35589
+name: 9H-purine
+namespace: chebi_ontology
+def: "The 9H-tautomer of purine." []
+subset: 3_STAR
+synonym: "9H-purine" EXACT IUPAC_NAME [IUPAC]
+synonym: "9H-purine" EXACT [UniProt]
+xref: Beilstein:606899 "Beilstein"
+xref: CAS:120-73-0 "NIST Chemistry WebBook"
+xref: Gmelin:3120 "Gmelin"
+xref: Wikipedia:Purine
+is_a: CHEBI:35584 ! purine
+relationship: is_tautomer_of CHEBI:17258 ! 7H-purine
+relationship: is_tautomer_of CHEBI:35586 ! 1H-purine
+relationship: is_tautomer_of CHEBI:35588 ! 3H-purine
+property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/formula "C5H4N4" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C5H4N4/c1-4-5(8-2-6-1)9-3-7-4/h1-3H,(H,6,7,8,9)" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/inchikey "KDCGOANMDULRCW-UHFFFAOYSA-N" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/mass "120.11222" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "120.04360" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/smiles "c1ncc2nc[nH]c2n1" xsd:string
 
 [Term]
 id: CHEBI:35604
@@ -10252,16 +10441,6 @@ subset: 3_STAR
 synonym: "carbobicyclic compounds" RELATED [ChEBI]
 is_a: CHEBI:33636 ! bicyclic compound
 is_a: CHEBI:35294 ! carbopolycyclic compound
-
-[Term]
-id: CHEBI:36820
-name: ring assembly
-namespace: chebi_ontology
-def: "Two or more cyclic systems (single rings or fused systems) which are directly joined to each other by double or single bonds are named ring assemblies when the number of such direct ring junctions is one less than the number of cyclic systems involved." []
-subset: 3_STAR
-synonym: "ring assemblies" EXACT IUPAC_NAME [IUPAC]
-synonym: "ring assembly" EXACT IUPAC_NAME [IUPAC]
-is_a: CHEBI:33595 ! cyclic compound
 
 [Term]
 id: CHEBI:36830
@@ -13306,7 +13485,7 @@ name: N-acyl-D-alpha-amino acid anion
 namespace: chebi_ontology
 def: "The conjugate base of an N-acyl-D-alpha-amino acid arising from deprotonation of the C-1 carboxy group." []
 subset: 3_STAR
-synonym: "a N-acyl-D-amino acid" RELATED [UniProt]
+synonym: "an N-acyl-D-amino acid" RELATED [UniProt]
 synonym: "N-acyl-D-alpha-amino acid(1-)" RELATED [ChEBI]
 is_a: CHEBI:29067 ! carboxylic acid anion
 relationship: is_conjugate_base_of CHEBI:15778 ! N-acyl-D-amino acid

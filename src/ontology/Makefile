@@ -100,7 +100,7 @@ all_patterns: $(PATTERN_FILES)
 ## -- dosdp pattern targets --
 ##
 
-OBO_REPORT = $(ONT)-edit-obo-report
+OBO_REPORT = $(SRC)-obo-report
 REPORTS = $(OBO_REPORT)
 REPORT_FILES = $(patsubst %, $(REPORTDIR)/%.tsv, $(REPORTS))
 
@@ -239,7 +239,7 @@ $(ONT)-simple.owl: $(SRC) simple_seed.txt $(OTHER_SRC)
 # These live in the imports/ folder
 
 tmp/%_logical.owl: mirror/%.owl
-	@if [ $(IMP) = true ]; then $(ROBOT) remove -i $< --term rdfs:label --select complement --select annotation-properties -o $@ --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+	@if [ $(IMP) = true ]; then $(ROBOT) remove -i $< --term rdfs:label --select complement --select annotation-properties --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 .PRECIOUS: tmp/%_logical.owl
 
 tmp/logical_dependencies_merged.owl: $(MIRROR_LOGICAL)
@@ -350,7 +350,7 @@ sparql_test: $(SRC)
 # ----------------------------------------
 # ROBOT report
 # ----------------------------------------
-reports/%-obo-report.tsv: %.owl
+reports/%-obo-report.tsv: %
 	$(ROBOT) report -i $< --fail-on $(REPORT_FAIL_ON) -o $@
 
 # ----------------------------------------
