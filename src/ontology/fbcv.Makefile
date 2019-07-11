@@ -18,12 +18,23 @@ components/dpo-simple.owl:
 ### Run ontology-release-runner instead of ROBOT as long as ROBOT is broken.      ###
 #####################################################################################
 
-tmp/source-merged.obo: $(SRC)
+# The reason command (and the reduce command) removed some of the very crucial asserted axioms at this point.
+# That is why we first need to extract all logical axioms (i.e. subsumptions) and merge them back in after 
+# The reasoning step is completed. This will be a big problem when we switch to ROBOT completely..
+
+tmp/fbcv_terms.txt: $(SRC)
+	$(ROBOT) query --use-graphs true -f csv -i $< --query ../sparql/fbcv_terms.sparql $@
+
+tmp/asserted-subclass-of-axioms.obo: $(SRC) tmp/fbcv_terms.txt
+	$(ROBOT) merge --input $< \
+		filter --term-file tmp/fbcv_terms.txt --select "self object-properties anonymous parents" --axioms "logical" --preserve-structure false \
+		convert --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@
+
+tmp/source-merged.obo: $(SRC) tmp/asserted-subclass-of-axioms.obo
 	$(ROBOT) merge --input $< \
 		reason --reasoner ELK \
-		relax \
 		remove --axioms equivalent \
-		relax \
+		merge -i tmp/asserted-subclass-of-axioms.obo \
 		convert --check false -f obo $(OBO_FORMAT_OPTIONS) -o tmp/source-merged.owl.obo &&\
 		grep -v ^owl-axioms tmp/source-merged.owl.obo > tmp/source-stripped.obo &&\
 		cat tmp/source-stripped.obo | perl -0777 -e '$$_ = <>; s/name[:].*\nname[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/def[:].*\nname[:]/def:/g; print' > $@ &&\
@@ -32,16 +43,27 @@ tmp/source-merged.obo: $(SRC)
 oort: tmp/source-merged.obo
 	ontology-release-runner --reasoner elk $< --no-subsets --skip-ontology-checks --allow-equivalent-pairs --simple --relaxed --asserted --allow-overwrite --outdir oort
 
-test_oort:
-	ontology-release-runner --reasoner elk tmp/source-merged-minimal.obo --no-subsets --skip-ontology-checks --allow-equivalent-pairs --simple --relaxed --asserted --allow-overwrite --outdir oort_test
-
+#test_oort:
+#	ontology-release-runner --reasoner elk tmp/source-merged-minimal.obo --no-subsets --skip-ontology-checks --allow-equivalent-pairs --simple --allow-overwrite --outdir oort_test
 
 $(ONT)-simple.owl: oort
-	cp oort/$@ $@
+	$(ROBOT) merge --input oort/$(ONT)-simple.obo \
+		merge -i tmp/asserted-subclass-of-axioms.obo \
+		reduce \
+		convert -o $@
 
 $(ONT)-simple.obo: oort
-	cp oort/$@ $@
+	$(ROBOT) merge --input oort/$(ONT)-simple.obo \
+		merge -i tmp/asserted-subclass-of-axioms.obo \
+		reduce \
+		convert --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@
 	
+s:
+	$(ROBOT) merge --input oort/$(ONT)-simple.obo \
+		merge -i tmp/asserted-subclass-of-axioms.obo \
+		reduce \
+		convert --check false -f obo $(OBO_FORMAT_OPTIONS) -o ../../$(ONT)-simple.obo
+
 $(ONT)-flybase.owl:
 	owltools fbcv-simple.obo --make-subset-by-properties part_of conditionality -o $@
 
