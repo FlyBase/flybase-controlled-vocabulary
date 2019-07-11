@@ -3,10 +3,15 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
+# These date variables can be overwritten by the script calling this makefile, for example
+# sh run.sh make DATE="2019-01-01" somegoal
+
+DATE   ?= $(shell date +%Y-%m-%d)
+DATETIME ?= $(shell date +"%d:%m:%Y %H:%M")
+
 ######################################################
 ### Download and integrate the DPO component       ###
 ######################################################
-
 
 DPO=https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/dpo-simple.obo
 components/dpo-simple.owl:
@@ -27,12 +32,13 @@ tmp/fbcv_terms.txt: $(SRC)
 
 tmp/asserted-subclass-of-axioms.obo: $(SRC) tmp/fbcv_terms.txt
 	$(ROBOT) merge --input $< \
-		filter --term-file tmp/fbcv_terms.txt --select "self object-properties anonymous parents" --axioms "logical" --preserve-structure false \
+		filter --term-file tmp/fbcv_terms.txt --axioms "logical" --preserve-structure false \
 		convert --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@
 
 tmp/source-merged.obo: $(SRC) tmp/asserted-subclass-of-axioms.obo
 	$(ROBOT) merge --input $< \
 		reason --reasoner ELK \
+		relax \
 		remove --axioms equivalent \
 		merge -i tmp/asserted-subclass-of-axioms.obo \
 		convert --check false -f obo $(OBO_FORMAT_OPTIONS) -o tmp/source-merged.owl.obo &&\
@@ -46,35 +52,40 @@ oort: tmp/source-merged.obo
 #test_oort:
 #	ontology-release-runner --reasoner elk tmp/source-merged-minimal.obo --no-subsets --skip-ontology-checks --allow-equivalent-pairs --simple --allow-overwrite --outdir oort_test
 
-$(ONT)-simple.owl: oort
-	$(ROBOT) merge --input oort/$(ONT)-simple.obo \
-		merge -i tmp/asserted-subclass-of-axioms.obo \
-		reduce \
+mp/$(ONT)-stripped.owl:
+	$(ROBOT) filter --input oort/$(ONT)-simple.owl --term-file tmp/fbcv_terms.txt --trim false \
 		convert -o $@
 
-$(ONT)-simple.obo: oort
+tmp/fbcv_signature.txt: tmp/$(ONT)-stripped.owl tmp/fbcv_terms.txt
+	$(ROBOT) query -f csv -i $< --query ../sparql/object-properties.sparql $@_prop.tmp &&\
+	cat tmp/fbcv_terms.txt $@_prop.tmp | sort | uniq > $@ &&\
+	rm $@_prop.tmp
+
+# The standard simple artefacts keeps a bunch of irrelevant Typedefs which are a result of the merge. The following steps takes the result
+# of the oort simple version, and then removes them. A second problem is that oort does not deal well with cycles and removes some of the 
+# asserted FBCV subsumptions. This can hopefully be solved once we can move all the way to ROBOT, but for now, it requires merging in
+# the asserted hierarchy and reducing again.
+
+$(ONT)-simple.owl:# oort
+	$(ROBOT) merge --input oort/$(ONT)-simple.owl \
+		merge -i tmp/asserted-subclass-of-axioms.obo \
+		reduce \
+		remove --term-file tmp/fbcv_signature.txt --select complement --trim false \
+		convert -o $@
+
+$(ONT)-simple.obo:# oort
 	$(ROBOT) merge --input oort/$(ONT)-simple.obo \
 		merge -i tmp/asserted-subclass-of-axioms.obo \
 		reduce \
-		convert --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@
-	
-s:
-	$(ROBOT) merge --input oort/$(ONT)-simple.obo \
-		merge -i tmp/asserted-subclass-of-axioms.obo \
-		reduce \
-		convert --check false -f obo $(OBO_FORMAT_OPTIONS) -o ../../$(ONT)-simple.obo
+		remove --term-file tmp/fbcv_signature.txt --select complement --trim false \
+		convert -o $@
+		sed -i '/^date[:]/c\date: $(DATETIME)' $@
+		sed -i '/^data-version[:]/c\data-version: $(DATE)' $@
 
-$(ONT)-flybase.owl:
-	owltools fbcv-simple.obo --make-subset-by-properties part_of conditionality -o $@
+#$(ONT)-simple.obo: oort
 
-#$(ONT)-simple-x.owl:
-#	$(ROBOT) merge --input tmp/source-merged.obo $(patsubst %, -i %, $(OTHER_SRC)) \
-#		reason --reasoner ELK \
-##		remove --axioms equivalent \
-#		relax \
-#		reduce -r ELK \
-#		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@
-
+#$(ONT)-flybase.owl: $(ONT)-simple
+#	owltools $(ONT)-simple --make-subset-by-properties part_of conditionality -o $@
 
 ######################################################
 ### Code for generating additional FlyBase reports ###
@@ -128,12 +139,12 @@ prepare_release: $(ASSETS) $(PATTERN_RELEASE_FILES)
 # definition is translated into a human readable definitions. "$sub_" (SUB-) definitions are those that have 
 # special placeholder string to substitute in definitions from external ontologies, mostly CHEBI
 
-auto_generated_definitions_seed_dot.txt: $(SRC)
+tmp/auto_generated_definitions_seed_dot.txt: $(SRC)
 	$(ROBOT) query --use-graphs false -f csv -i $(SRC) --query ../sparql/dot-definitions.sparql $@.tmp &&\
 	cat $@.tmp | sort | uniq >  $@
 	rm -f $@.tmp
 	
-auto_generated_definitions_seed_sub.txt: $(SRC)
+tmp/auto_generated_definitions_seed_sub.txt: $(SRC)
 	$(ROBOT) query --use-graphs false -f csv -i $(SRC) --query ../sparql/classes-with-placeholder-definitions.sparql $@.tmp &&\
 	cat $@.tmp | sort | uniq >  $@
 	rm -f $@.tmp
@@ -141,19 +152,19 @@ auto_generated_definitions_seed_sub.txt: $(SRC)
 tmp/merged-source-pre.owl: $(SRC)
 	$(ROBOT) merge -i $(SRC) -i mirror/chebi.owl --output $@
 
-auto_generated_definitions_dot.owl: tmp/merged-source-pre.owl auto_generated_definitions_seed_dot.txt
-	java -jar ../scripts/eq-writer.jar $< auto_generated_definitions_seed_dot.txt flybase $@ NA
+tmp/auto_generated_definitions_dot.owl: tmp/merged-source-pre.owl tmp/auto_generated_definitions_seed_dot.txt
+	java -jar ../scripts/eq-writer.jar $< tmp/auto_generated_definitions_seed_dot.txt flybase $@ NA
 
-auto_generated_definitions_sub.owl: tmp/merged-source-pre.owl auto_generated_definitions_seed_sub.txt
-	java -jar ../scripts/eq-writer.jar $< auto_generated_definitions_seed_sub.txt sub_external $@ NA
+tmp/auto_generated_definitions_sub.owl: tmp/merged-source-pre.owl tmp/auto_generated_definitions_seed_sub.txt
+	java -jar ../scripts/eq-writer.jar $< tmp/auto_generated_definitions_seed_sub.txt sub_external $@ NA
 
-pre_release: $(ONT)-edit.obo auto_generated_definitions_dot.owl auto_generated_definitions_sub.owl components/dpo-simple.owl
+pre_release: $(ONT)-edit.obo tmp/auto_generated_definitions_dot.owl tmp/auto_generated_definitions_sub.owl components/dpo-simple.owl
 	cp $(ONT)-edit.obo tmp/$(ONT)-edit-release.obo
 	sed -i '/def[:] \"[.]\"/d' tmp/$(ONT)-edit-release.obo
 	sed -i '/sub_/d' tmp/$(ONT)-edit-release.obo
-	$(ROBOT) merge -i tmp/$(ONT)-edit-release.obo -i auto_generated_definitions_dot.owl -i auto_generated_definitions_sub.owl --collapse-import-closure false -o $(ONT)-edit-release.ofn && mv $(ONT)-edit-release.ofn $(ONT)-edit-release.owl
+	$(ROBOT) merge -i tmp/$(ONT)-edit-release.obo -i tmp/auto_generated_definitions_dot.owl -i tmp/auto_generated_definitions_sub.owl --collapse-import-closure false -o $(ONT)-edit-release.ofn && mv $(ONT)-edit-release.ofn $(ONT)-edit-release.owl
 	echo "Preprocessing done. Make sure that NO CHANGES TO THE EDIT FILE ARE COMMITTED!"
 	
-post_release: $(ONT)-flybase.owl
-	cp $(ONT)-flybase.owl ../..
+#post_release: $(ONT)-flybase.owl
+#	cp $(ONT)-flybase.owl ../..
 	

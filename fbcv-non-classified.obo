@@ -1,7 +1,6 @@
 format-version: 1.2
-data-version: fbcv/releases/2019-07-10/fbcv-non-classified.owl
+data-version: fbcv/releases/2019-07-11/fbcv-non-classified.owl
 date: 03:01:2018 20:37
-saved-by: temj2
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -34,7 +33,6 @@ synonymtypedef: IUPAC_NAME "IUPAC NAME"
 synonymtypedef: SMILES "SMILES"
 synonymtypedef: systematic_synonym "Systematic synonym" EXACT
 default-namespace: FlyBase miscellaneous CV
-remark: Imports terms from CHEBI - datestamp = 02:12:2011 01:47. And terms imported from http://purl.obolibrary.org/obo/go/releases/2018-01-03/go-simple.obo
 ontology: fbcv/fbcv-non-classified
 
 [Term]
@@ -89,36 +87,12 @@ id: BFO:0000040
 name: material entity
 def: "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time." []
 is_a: BFO:0000004 ! independent continuant
-disjoint_from: BFO:0000141 ! immaterial entity
-
-[Term]
-id: BFO:0000141
-name: immaterial entity
-is_a: BFO:0000004 ! independent continuant
 
 [Term]
 id: CARO:0000000
 name: anatomical entity
 is_a: CARO:0030000 ! biological entity
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/caro.owl
-
-[Term]
-id: CARO:0000003
-name: connected anatomical structure
-is_a: CARO:0000006 ! material anatomical entity
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/caro.owl
-
-[Term]
-id: CARO:0000006
-name: material anatomical entity
-is_a: BFO:0000040 ! material entity
-is_a: CARO:0000000 ! anatomical entity
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/caro.owl
-
-[Term]
-id: CARO:0000007
-name: immaterial anatomical entity
-is_a: BFO:0000141 ! immaterial entity
 
 [Term]
 id: CARO:0030000
@@ -15392,6 +15366,7 @@ is_a: FBcv:0000000 ! FlyBase CV
 id: FBcv:0000006
 name: male semi-fertile
 namespace: phenotypic_class
+def: "Any male semi fertile that inheres in some organism (FBbt:00000001)." []
 is_a: FBcv:0000375 ! semi-fertile
 is_a: FBcv:0000376 ! male fertile
 
@@ -15399,6 +15374,7 @@ is_a: FBcv:0000376 ! male fertile
 id: FBcv:0000007
 name: female semi-fertile
 namespace: phenotypic_class
+def: "Any female semi fertile that inheres in some organism (FBbt:00000001)." []
 is_a: FBcv:0000375 ! semi-fertile
 is_a: FBcv:0000377 ! female fertile
 
@@ -18139,6 +18115,7 @@ is_a: FBcv:0001347 ! phenotype
 id: FBcv:0000387
 name: behavior defective
 namespace: phenotypic_class
+def: "Phenotype that is a defect in behavior (GO:0007610). 'behavior' is defined as: 'The internally coordinated responses (actions or inactions) of animals (individuals or groups) to internal or external stimuli, via a mechanism that involves nervous system activity.'" []
 subset: fbcvsubset_mgiribbons
 synonym: "behavioral" RELATED []
 synonym: "behaviour defective" EXACT []
@@ -19294,7 +19271,7 @@ is_a: FBcv:0000452 ! origin of mutation
 id: FBcv:0000526
 name: alkylating agent
 namespace: origin_of_mutation
-def: "Any chemical (FBcv:0000525) that has role some alkylating agent (CHEBI:22333)" []
+def: "Any chemical (FBcv:0000525) that has role some alkylating agent (CHEBI:22333)." []
 synonym: "mutation induced by alkylating agent exposure" EXACT []
 intersection_of: FBcv:0000525 ! chemical
 intersection_of: has_role CHEBI:22333 ! alkylating agent
@@ -19303,7 +19280,7 @@ intersection_of: has_role CHEBI:22333 ! alkylating agent
 id: FBcv:0000527
 name: diethyl sulfate
 namespace: origin_of_mutation
-def: "No description" [CHEBI:34699]
+def: "No description." [CHEBI:34699]
 synonym: "DES" RELATED []
 synonym: "mutation induced by diethyl sulfate exposure" EXACT []
 is_a: FBcv:0000526 ! alkylating agent
@@ -19312,7 +19289,7 @@ is_a: FBcv:0000526 ! alkylating agent
 id: FBcv:0000528
 name: 2-chloroethyl methanesulfonate
 namespace: origin_of_mutation
-def: "No description" [CHEBI:19508]
+def: "No description." [CHEBI:19508]
 synonym: "CB1506" RELATED []
 synonym: "mutation induced by 2-chloroethyl methanesulfonate exposure" EXACT []
 is_a: FBcv:0000526 ! alkylating agent
@@ -19321,7 +19298,7 @@ is_a: FBcv:0000526 ! alkylating agent
 id: FBcv:0000529
 name: 2-fluoroethyl methanesulfonate
 namespace: origin_of_mutation
-def: "No description" [CHEBI:19579]
+def: "No description." [CHEBI:19579]
 synonym: "CB1522" RELATED []
 synonym: "mutation induced by 2-fluoroethyl methanesulfonate exposure" EXACT []
 is_a: FBcv:0000526 ! alkylating agent
@@ -19389,7 +19366,7 @@ is_a: FBcv:0000526 ! alkylating agent
 id: FBcv:0000535
 name: N-methyl-N'-nitro-N-nitrosoguanidine
 namespace: origin_of_mutation
-def: "An N-nitroguanidine compound having nitroso and methyl substituents at the N'-position" [CHEBI:21759]
+def: "An N-nitroguanidine compound having nitroso and methyl substituents at the N'-position." [CHEBI:21759]
 synonym: "MNNG" RELATED []
 synonym: "mutation induced by N-methyl-N'-nitro-N-nitrosoguanidine exposure" EXACT []
 synonym: "NNG" RELATED []
@@ -19404,7 +19381,7 @@ is_obsolete: true
 id: FBcv:0000538
 name: carbamate
 namespace: origin_of_mutation
-def: "No description" [CHEBI:13941]
+def: "No description." [CHEBI:13941]
 synonym: "mutation induced by carbamate exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
 
@@ -19420,7 +19397,7 @@ is_a: FBcv:0000538 ! carbamate
 id: FBcv:0000540
 name: vinyl carbamate
 namespace: origin_of_mutation
-def: "No description" [CHEBI:27292]
+def: "No description." [CHEBI:27292]
 synonym: "mutation induced by vinyl carbamate exposure" EXACT []
 is_a: FBcv:0000538 ! carbamate
 
@@ -19428,7 +19405,7 @@ is_a: FBcv:0000538 ! carbamate
 id: FBcv:0000541
 name: intercalating agent
 namespace: origin_of_mutation
-def: "Any chemical (FBcv:0000525) that has role some intercalator (CHEBI:24853)" []
+def: "Any chemical (FBcv:0000525) that has role some intercalator (CHEBI:24853)." []
 synonym: "mutation induced by intercalating agent exposure" EXACT []
 intersection_of: FBcv:0000525 ! chemical
 intersection_of: has_role CHEBI:24853 ! intercalator
@@ -19437,7 +19414,7 @@ intersection_of: has_role CHEBI:24853 ! intercalator
 id: FBcv:0000542
 name: mitomycin C
 namespace: origin_of_mutation
-def: "No description" [CHEBI:27504]
+def: "No description." [CHEBI:27504]
 synonym: "mutation induced by mitomycin C exposure" EXACT []
 is_a: FBcv:0000541 ! intercalating agent
 
@@ -19445,7 +19422,7 @@ is_a: FBcv:0000541 ! intercalating agent
 id: FBcv:0000543
 name: quinacrine mustard
 namespace: origin_of_mutation
-def: "No description" [CHEBI:37595]
+def: "No description." [CHEBI:37595]
 comment: Mapped to CHEBI on basis of synonym - quinacrine mustard. Originally primary name, ICR 100 is now relegated to a synonym.
 synonym: "2-methoxy-6-[3-(ethyl-2-chloroethyl)aminopropylamino]acridine" RELATED []
 synonym: "ICR 100" RELATED [CHEBI:37595]
@@ -19456,7 +19433,7 @@ is_a: FBcv:0000541 ! intercalating agent
 id: FBcv:0000544
 name: ICR 170
 namespace: origin_of_mutation
-def: "No description" [CHEBI:21183]
+def: "No description." [CHEBI:21183]
 synonym: "2-methoxy-6-dichloro-9-(3-ethyl-2-chloroethyl-aminopropylamino)acridine-dihydrochloride" RELATED []
 synonym: "mutation induced by ICR 170 exposure" EXACT []
 is_a: FBcv:0000541 ! intercalating agent
@@ -19516,7 +19493,7 @@ is_a: FBcv:0000548 ! base analog
 id: FBcv:0000551
 name: enzyme inhibitor
 namespace: origin_of_mutation
-def: "Any chemical (FBcv:0000525) that has role some enzyme inhibitor (CHEBI:23924)" []
+def: "Any chemical (FBcv:0000525) that has role some enzyme inhibitor (CHEBI:23924)." []
 synonym: "mutation induced by enzyme inhibitor exposure" EXACT []
 intersection_of: FBcv:0000525 ! chemical
 intersection_of: has_role CHEBI:23924 ! enzyme inhibitor
@@ -19525,7 +19502,7 @@ intersection_of: has_role CHEBI:23924 ! enzyme inhibitor
 id: FBcv:0000552
 name: aminopterin
 namespace: origin_of_mutation
-def: "No description" [CHEBI:22526]
+def: "No description." [CHEBI:22526]
 synonym: "mutation induced by aminopterin exposure" EXACT []
 is_a: FBcv:0000551 ! enzyme inhibitor
 
@@ -19551,7 +19528,7 @@ is_a: FBcv:0000553 ! inorganic compound
 id: FBcv:0000555
 name: H3BO3
 namespace: origin_of_mutation
-def: "No description" [CHEBI:33118]
+def: "No description." [CHEBI:33118]
 synonym: "mutation induced by H3BO3 exposure" EXACT []
 is_a: FBcv:0000553 ! inorganic compound
 
@@ -19559,7 +19536,7 @@ is_a: FBcv:0000553 ! inorganic compound
 id: FBcv:0000556
 name: sodium bisulphite
 namespace: origin_of_mutation
-def: "No description" [CHEBI:26709]
+def: "No description." [CHEBI:26709]
 synonym: "mutation induced by sodium bisulphite exposure" EXACT []
 is_a: FBcv:0000553 ! inorganic compound
 
@@ -19583,7 +19560,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000559
 name: diepoxybutane
 namespace: origin_of_mutation
-def: "No description" [CHEBI:23704]
+def: "No description." [CHEBI:23704]
 synonym: "DEB" RELATED []
 synonym: "erythritol anhydride" RELATED []
 synonym: "mutation induced by diepoxybutane exposure" EXACT []
@@ -19593,7 +19570,7 @@ is_a: FBcv:0000558 ! epoxy hydrocarbon
 id: FBcv:0000560
 name: diepoxyoctane
 namespace: origin_of_mutation
-def: "No description" [CHEBI:23705]
+def: "No description." [CHEBI:23705]
 synonym: "1,2:7,8-diepoxyoctane" RELATED [CHEBI:23705]
 synonym: "mutation induced by diepoxyoctane exposure" EXACT []
 is_a: FBcv:0000558 ! epoxy hydrocarbon
@@ -19609,7 +19586,7 @@ consider: FBcv:0000525
 id: FBcv:0000562
 name: 1,2:5,6-dibenzanthracene
 namespace: origin_of_mutation
-def: "No description" [CHEBI:35299]
+def: "No description." [CHEBI:35299]
 synonym: "mutation induced by 1,2:5,6-dibenzanthracene exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
 
@@ -19662,7 +19639,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000568
 name: 1-amino-2-naphthol-4-sulfonic acid
 namespace: origin_of_mutation
-def: "No description" [CHEBI:19024]
+def: "No description." [CHEBI:19024]
 synonym: "mutation induced by 1-amino-2-naphthol-4-sulfonic acid exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
 
@@ -19709,7 +19686,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000573
 name: actinomycin D
 namespace: origin_of_mutation
-def: "No description" [CHEBI:27666]
+def: "No description." [CHEBI:27666]
 synonym: "mutation induced by actinomycin D exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
 
@@ -19776,7 +19753,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000581
 name: ethylenimine
 namespace: origin_of_mutation
-def: "No description" [CHEBI:30969]
+def: "No description." [CHEBI:30969]
 synonym: "EI" RELATED []
 synonym: "mutation induced by ethylenimine exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
@@ -19795,7 +19772,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000583
 name: fagaronine
 namespace: origin_of_mutation
-def: "No description" [CHEBI:28954]
+def: "No description." [CHEBI:28954]
 synonym: "mutation induced by fagaronine exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
 
@@ -19820,7 +19797,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000586
 name: hexamethylmelamine
 namespace: origin_of_mutation
-def: "No description" [CHEBI:24564]
+def: "No description." [CHEBI:24564]
 synonym: "altretamine" RELATED []
 synonym: "HMM" RELATED []
 synonym: "mutation induced by hexamethylmelamine exposure" EXACT []
@@ -19831,7 +19808,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000587
 name: hexamethylphosphoramide
 namespace: origin_of_mutation
-def: "No description" [CHEBI:24565]
+def: "No description." [CHEBI:24565]
 synonym: "HMPA" RELATED []
 synonym: "mutation induced by hexamethylphosphoramide exposure" EXACT []
 synonym: "mutation induced by HMPA exposure" EXACT []
@@ -19849,7 +19826,7 @@ is_a: FBcv:0000553 ! inorganic compound
 id: FBcv:0000589
 name: Janus green B
 namespace: origin_of_mutation
-def: "No description" [CHEBI:21184]
+def: "No description." [CHEBI:21184]
 synonym: "Janus green B chloride" RELATED [CHEBI:21184]
 synonym: "mutation induced by Janus green B exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
@@ -19858,7 +19835,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000590
 name: methoxy diethylnitrosamine
 namespace: origin_of_mutation
-def: "No description" [CHEBI:25234]
+def: "No description." [CHEBI:25234]
 comment: Mapped to CHEBI:25234 (1-methoxy-N-nitrosodiethylamine) based on synonym of nitrosodiethylamine being diethylnitrosamine and CHEBI:25234 being classified as a mutagen.
 synonym: "1-methoxy-N-nitrosodiethylamine" RELATED [CHEBI:25234]
 synonym: "mutation induced by methoxy diethylnitrosamine exposure" EXACT []
@@ -19887,7 +19864,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000593
 name: N-nitrosodimethylamine
 namespace: origin_of_mutation
-def: "No description" [CHEBI:35807]
+def: "No description." [CHEBI:35807]
 synonym: "DMN" RELATED []
 synonym: "mutation induced by DMN exposure" EXACT []
 synonym: "mutation induced by N-nitrosodimethylamine exposure" EXACT []
@@ -19897,7 +19874,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000594
 name: p-N,N-di(2-chloroethyl)aminophenylvaleric acid
 namespace: origin_of_mutation
-def: "No description" [CHEBI:25813]
+def: "No description." [CHEBI:25813]
 synonym: "CB1356" RELATED []
 synonym: "mutation induced by p-N,N-di(2-chloroethyl)aminophenylvaleric acid exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
@@ -19906,7 +19883,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000595
 name: p-N,N-di-(2-chloroethyl)amino-D-phenylalanine
 namespace: origin_of_mutation
-def: "No description" [CHEBI:25814]
+def: "No description." [CHEBI:25814]
 synonym: "CB3026" RELATED []
 synonym: "mutation induced by p-N,N-di-(2-chloroethyl)amino-D-phenylalanine exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
@@ -19926,7 +19903,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000597
 name: p-N,N-di-(2-chloroethyl)amino-L-phenylalanine
 namespace: origin_of_mutation
-def: "No description" [CHEBI:25816]
+def: "No description." [CHEBI:25816]
 synonym: "CB3025" RELATED []
 synonym: "mutation induced by p-N,N-di-(2-chloroethyl)amino-L-phenylalanine exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
@@ -19941,7 +19918,7 @@ is_obsolete: true
 id: FBcv:0000599
 name: p-N,N-di-(2-chloroethyl)aminophenylethylamine
 namespace: origin_of_mutation
-def: "No description" [CHEBI:25818]
+def: "No description." [CHEBI:25818]
 synonym: "CB3034" RELATED []
 synonym: "mutation induced by p-N,N-di-(2-chloroethyl)aminophenylethylamine exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
@@ -19950,7 +19927,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000600
 name: p-p'-N,N-di(2-chloroethyl)aminophenoxyphenylalanine
 namespace: origin_of_mutation
-def: "No description" [CHEBI:25829]
+def: "No description." [CHEBI:25829]
 synonym: "CB305" RELATED []
 synonym: "mutation induced by p-p'-N,N-di(2-chloroethyl)aminophenoxyphenylalanine exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
@@ -19959,7 +19936,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000601
 name: quinhydrone
 namespace: origin_of_mutation
-def: "No description" [CHEBI:26491]
+def: "No description." [CHEBI:26491]
 synonym: "mutation induced by quinhydrone exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
 
@@ -19967,7 +19944,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000602
 name: S-2-chloroethylcysteine
 namespace: origin_of_mutation
-def: "No description" [CHEBI:22025]
+def: "No description." [CHEBI:22025]
 synonym: "CB1592" RELATED []
 synonym: "mutation induced by S-2-chloroethylcysteine exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
@@ -19976,7 +19953,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000603
 name: styryl quinoline
 namespace: origin_of_mutation
-def: "No description" [CHEBI:26800]
+def: "No description." [CHEBI:26800]
 synonym: "CB3086" RELATED []
 synonym: "mutation induced by styryl quinoline exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
@@ -19993,7 +19970,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000605
 name: triethylenemelamine
 namespace: origin_of_mutation
-def: "No description" [CHEBI:27919]
+def: "No description." [CHEBI:27919]
 synonym: "CB1246" RELATED []
 synonym: "mutation induced by triethylenemelamine exposure" EXACT []
 synonym: "TEM" RELATED []
@@ -21676,6 +21653,7 @@ is_a: FBcv:0001347 ! phenotype
 id: FBcv:0001325
 name: exocytosis defective
 namespace: phenotypic_class
+def: "Phenotype that is a defect in exocytosis (GO:0006887). 'exocytosis' is defined as: 'A process of secretion by a cell that results in the release of intracellular molecules (e.g. hormones, matrix proteins) contained within a membrane-bounded vesicle. Exocytosis can occur either by full fusion, when the vesicle collapses into the plasma membrane, or by a kiss-and-run mechanism that involves the formation of a transient contact, a pore, between a granule (for exemple of chromaffin cells) and the plasma membrane. The latter process most of the time leads to only partial secretion of the granule content. Exocytosis begins with steps that prepare vesicles for fusion with the membrane (tethering and docking) and ends when molecules are secreted from the cell.'" []
 subset: fbcvsubset_mgiribbons
 is_a: FBcv:0001347 ! phenotype
 
@@ -25898,27 +25876,6 @@ is_a: RO:0002323 ! mereotopologically related to
 expand_expression_to: "http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.obolibrary.org/obo/BFO_0000050 some ?Y)" []
 
 [Typedef]
-id: RO:0002170
-name: connected to
-def: "a is connected to b if and only if a and b are discrete structure, and there exists some connecting structure c, such that c connects a and b" []
-property_value: http://xmlns.com/foaf/0.1/page https://github.com/obophenotype/uberon/wiki/Connectivity-Design-Pattern xsd:anyURI
-property_value: http://xmlns.com/foaf/0.1/page https://github.com/obophenotype/uberon/wiki/Modeling-articulations-Design-Pattern xsd:anyURI
-property_value: IAO:0000112 "a 'toe distal phalanx bone' that is connected to a 'toe medial phalanx bone' (an interphalangeal joint *connects* these two bones)." xsd:string
-property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/22293552
-is_a: RO:0002323 ! mereotopologically related to
-
-[Typedef]
-id: RO:0002177
-name: attached to part of
-def: "a is attached to part of b if a is attached to b, or a is attached to some p, where p is part of b." []
-property_value: IAO:0000589 "attached to part of (anatomical structure to anatomical structure)" xsd:string
-domain: CARO:0000003 ! connected anatomical structure
-range: CARO:0000003 ! connected anatomical structure
-holds_over_chain: RO:0002371 BFO:0000050 {http://purl.obolibrary.org/obo/RO_0002582="true"}
-is_a: RO:0002323 ! mereotopologically related to
-is_a: RO:0002567 ! biomechanically related to
-
-[Typedef]
 id: RO:0002180
 name: has component
 def: "w 'has component' p if w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type." []
@@ -26083,17 +26040,6 @@ domain: BFO:0000015 ! process
 range: BFO:0000040 ! material entity
 is_a: RO:0000057 ! has participant
 inverse_of: RO:0002352 ! input of
-
-[Typedef]
-id: RO:0002234
-name: has output
-def: "p has output c iff c is a participant in p, c is present at the end of p, and c is not present at the beginning of p." []
-subset: ro-eco
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000118 "produces" xsd:string
-is_a: RO:0000057 ! has participant
-inverse_of: RO:0002353 ! output of
 
 [Typedef]
 id: RO:0002254
@@ -26289,15 +26235,6 @@ property_value: IAO:0000117 "Chris Mungall" xsd:string
 is_a: RO:0002334 ! regulated by
 
 [Typedef]
-id: RO:0002337
-name: related via localization to
-def: "A relationship that holds via some process of localization" []
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000232 "Do not use this relation directly. It is a grouping relation." xsd:string
-domain: BFO:0000015 ! process
-range: BFO:0000002 ! continuant
-
-[Typedef]
 id: RO:0002352
 name: input of
 def: "inverse of has input" []
@@ -26306,27 +26243,6 @@ subset: RO:0002259
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 is_a: RO:0000056 ! participates in
 is_a: RO:0002328 ! functionally related to
-
-[Typedef]
-id: RO:0002353
-name: output of
-def: "inverse of has output" []
-subset: ro-eco
-subset: RO:0002259
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-is_a: RO:0000056 ! participates in
-is_a: RO:0002328 ! functionally related to
-
-[Typedef]
-id: RO:0002371
-name: attached to
-def: "a is attached to b if and only if a and b are discrete objects or object parts, and there are physical connections between a and b such that a force pulling a will move b, or a force pulling b will move a" []
-subset: ro-eco
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000589 "attached to (anatomical structure to anatomical structure)" xsd:string
-is_symmetric: true
-is_a: RO:0002170 ! connected to
-is_a: RO:0002177 ! attached to part of
 
 [Typedef]
 id: RO:0002375
@@ -26736,16 +26652,6 @@ property_value: IAO:0000589 "causally influences (material entity to material en
 is_a: RO:0002506 ! causal relation between material entities
 
 [Typedef]
-id: RO:0002567
-name: biomechanically related to
-def: "A relation that holds between elements of a musculoskeletal system or its analogs." []
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000232 "Do not use this relation directly. It is ended as a grouping for a diverse set of relations, all involving the biomechanical processes." xsd:string
-domain: CARO:0000003 ! connected anatomical structure
-range: CARO:0000003 ! connected anatomical structure
-is_a: RO:0002328 ! functionally related to
-
-[Typedef]
 id: RO:0002578
 name: directly regulates
 def: "Process(P1) directly regulates process(P2) iff: P1 regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  regulates the kinase activity (P2) of protein B then P1 directly regulates P2." []
@@ -26765,12 +26671,6 @@ property_value: IAO:0000117 "Chris Mungall" xsd:string
 holds_over_chain: has_part RO:0002215
 is_a: RO:0002328 ! functionally related to
 is_a: RO:0002595 ! causal relation between material entity and a process
-
-[Typedef]
-id: RO:0002592
-name: results in organization of
-def: "p results in organization of c iff p results in the assembly, arrangement of constituent parts, or disassembly of c" []
-is_a: RO:0040036 ! has anatomical participant
 
 [Typedef]
 id: RO:0002595
@@ -26835,36 +26735,6 @@ property_value: IAO:0000589 "directly negatively regulates (process to process)"
 property_value: RO:0004050 RO:0002578
 is_a: RO:0002212 ! negatively regulates
 is_a: RO:0002578 ! directly regulates
-
-[Typedef]
-id: RO:0003000
-name: produces
-def: "a produces b if some process that occurs_in a has_output b, where a and b are material entities. Examples: hybridoma cell line produces monoclonal antibody reagent; chondroblast produces avascular GAG-rich matrix." []
-comment: Note that this definition doesn't quite distinguish the output of a transformation process from a production process, which is related to the identity/granularity issue.
-subset: ro-eco
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000117 "Melissa Haendel" xsd:string
-domain: BFO:0000040 ! material entity
-range: BFO:0000040 ! material entity
-inverse_of: RO:0003001 ! produced by
-
-[Typedef]
-id: RO:0003001
-name: produced by
-def: "a produced_by b iff some process that occurs_in b has_output a." []
-subset: ro-eco
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000117 "Melissa Haendel" xsd:string
-domain: BFO:0000040 ! material entity
-range: BFO:0000040 ! material entity
-
-[Typedef]
-id: RO:0004007
-name: has primary input or output
-def: "p 'has primary input ot output' c iff either (a) p 'has primary input' c or (b) p 'has primary output' c." []
-is_a: RO:0000057 ! has participant
-created_by: cjm
-creation_date: 2018-12-13T11:26:17Z
 
 [Typedef]
 id: RO:0004031
@@ -26941,14 +26811,6 @@ def: "This relation groups  relations between diseases and any other kind of ent
 property_value: IAO:0000232 "Do not use this relation directly. It is intended as a grouping for a diverse set of relations, in which the subject or object is a disease." xsd:string
 created_by: cjm
 creation_date: 2018-09-26T00:00:32Z
-
-[Typedef]
-id: RO:0040036
-name: has anatomical participant
-def: "p has anatomical participant c iff p has participant c, and c is an anatomical entity" []
-is_a: RO:0000057 ! has participant
-created_by: cjm
-creation_date: 2018-09-26T01:08:58Z
 
 [Typedef]
 id: conditionality
@@ -27038,16 +26900,4 @@ name: is tautomer of
 namespace: chebi_ontology
 is_cyclic: true
 is_transitive: true
-
-[Typedef]
-id: results_in_developmental_progression_of
-name: results in developmental progression of
-def: "p results in the developmental progression of s iff p is a developmental process and s is an anatomical structure and p causes s to undergo a change in state at some point along its natural developmental cycle (this cycle starts with its formation, through the mature structure, and ends with its loss)." []
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000116 "This property and its subproperties are being used primarily for the definition of GO developmental processes. The property hierarchy mirrors the core GO hierarchy. In future we may be able to make do with a more minimal set of properties, but due to the way GO is currently structured we require highly specific relations to avoid incorrect entailments. To avoid this, the corresponding genus terms in GO should be declared mutually disjoint." xsd:string
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: seeAlso Ontology:extensions
-domain: GO:0008150 ! biological_process
-range: CARO:0000003 ! connected anatomical structure
-is_a: RO:0002324 ! developmentally related to
 

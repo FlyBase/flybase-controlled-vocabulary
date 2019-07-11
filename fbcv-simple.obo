@@ -1,38 +1,14 @@
 format-version: 1.2
-data-version: 2018-01-03
-date: 03:01:2018 20:37
-saved-by: temj2
+data-version: 2019-07-11
+date: 11:07:2019 13:55
 auto-generated-by: OBO-Edit 2.3.1
-subsetdef: abnormal_slim "Abnormal/normal slim"
-subsetdef: absent_slim "Absent/present slim"
-subsetdef: attribute_slim "Attribute slim"
 subsetdef: camcur "camcur"
-subsetdef: cell_quality "cell_quality"
 subsetdef: common_tool_use "Terms to summarize typical use of a gene from one organism that is introduced into another organism primarily for use an experimental tool, rather than to study the function of the gene"
-subsetdef: cur "cur"
-subsetdef: deprecated "warning of impending obsoletion"
 subsetdef: do_not_annotate "Term not to be used for direct annotation"
 subsetdef: do_not_manually_annotate "Term not to be used for direct manual annotation"
-subsetdef: EmbDevSlim "EmbDevSlim"
 subsetdef: fbcvsubset_mgiribbons "MGI ribbon terms"
-subsetdef: FlyTed "Testis slim"
-subsetdef: FT_new "FlyTed temp subset for edit tracking purposes"
-subsetdef: larval_OF "larval olfactory system"
 subsetdef: lethal_phase "lethal phase terms"
-subsetdef: RD "terms for rd test ontology"
-subsetdef: relational_slim "Relational slim: types of quality that require an additional entity in order to exist"
-subsetdef: value_slim "Value slim"
-synonymtypedef: BRAIN_NAME_ABV "BrainName official abbreviation"
-synonymtypedef: BRAND_NAME "BRAND NAME"
-synonymtypedef: FORMULA "FORMULA"
-synonymtypedef: InChI "InChI"
-synonymtypedef: InChIKey "InChIKey"
-synonymtypedef: INN "INN"
-synonymtypedef: IUPAC_NAME "IUPAC NAME"
-synonymtypedef: SMILES "SMILES"
-synonymtypedef: systematic_synonym "Systematic synonym" EXACT
 default-namespace: FlyBase miscellaneous CV
-remark: Imports terms from CHEBI - datestamp = 02:12:2011 01:47. And terms imported from http://purl.obolibrary.org/obo/go/releases/2018-01-03/go-simple.obo
 ontology: fbcv
 
 [Term]
@@ -83,6 +59,7 @@ is_a: FBcv:0000000 ! FlyBase CV
 id: FBcv:0000006
 name: male semi-fertile
 namespace: phenotypic_class
+def: "Any male semi fertile that inheres in some organism (FBbt:00000001)." []
 is_a: FBcv:0000375 ! semi-fertile
 is_a: FBcv:0000376 ! male fertile
 
@@ -90,6 +67,7 @@ is_a: FBcv:0000376 ! male fertile
 id: FBcv:0000007
 name: female semi-fertile
 namespace: phenotypic_class
+def: "Any female semi fertile that inheres in some organism (FBbt:00000001)." []
 is_a: FBcv:0000375 ! semi-fertile
 is_a: FBcv:0000377 ! female fertile
 
@@ -2830,6 +2808,7 @@ is_a: FBcv:0001347 ! phenotype
 id: FBcv:0000387
 name: behavior defective
 namespace: phenotypic_class
+def: "Phenotype that is a defect in behavior (GO:0007610). 'behavior' is defined as: 'The internally coordinated responses (actions or inactions) of animals (individuals or groups) to internal or external stimuli, via a mechanism that involves nervous system activity.'" []
 subset: fbcvsubset_mgiribbons
 synonym: "behavioral" RELATED []
 synonym: "behaviour defective" EXACT []
@@ -3985,7 +3964,7 @@ is_a: FBcv:0000452 ! origin of mutation
 id: FBcv:0000526
 name: alkylating agent
 namespace: origin_of_mutation
-def: "Any chemical (FBcv:0000525) that has role some alkylating agent (CHEBI:22333)" []
+def: "Any chemical (FBcv:0000525) that has role some alkylating agent (CHEBI:22333)." []
 synonym: "mutation induced by alkylating agent exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
 
@@ -3993,7 +3972,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000527
 name: diethyl sulfate
 namespace: origin_of_mutation
-def: "No description" [CHEBI:34699]
+def: "No description." [CHEBI:34699]
 synonym: "DES" RELATED []
 synonym: "mutation induced by diethyl sulfate exposure" EXACT []
 is_a: FBcv:0000526 ! alkylating agent
@@ -4002,7 +3981,7 @@ is_a: FBcv:0000526 ! alkylating agent
 id: FBcv:0000528
 name: 2-chloroethyl methanesulfonate
 namespace: origin_of_mutation
-def: "No description" [CHEBI:19508]
+def: "No description." [CHEBI:19508]
 synonym: "CB1506" RELATED []
 synonym: "mutation induced by 2-chloroethyl methanesulfonate exposure" EXACT []
 is_a: FBcv:0000526 ! alkylating agent
@@ -4011,7 +3990,7 @@ is_a: FBcv:0000526 ! alkylating agent
 id: FBcv:0000529
 name: 2-fluoroethyl methanesulfonate
 namespace: origin_of_mutation
-def: "No description" [CHEBI:19579]
+def: "No description." [CHEBI:19579]
 synonym: "CB1522" RELATED []
 synonym: "mutation induced by 2-fluoroethyl methanesulfonate exposure" EXACT []
 is_a: FBcv:0000526 ! alkylating agent
@@ -4079,7 +4058,7 @@ is_a: FBcv:0000526 ! alkylating agent
 id: FBcv:0000535
 name: N-methyl-N'-nitro-N-nitrosoguanidine
 namespace: origin_of_mutation
-def: "An N-nitroguanidine compound having nitroso and methyl substituents at the N'-position" [CHEBI:21759]
+def: "An N-nitroguanidine compound having nitroso and methyl substituents at the N'-position." [CHEBI:21759]
 synonym: "MNNG" RELATED []
 synonym: "mutation induced by N-methyl-N'-nitro-N-nitrosoguanidine exposure" EXACT []
 synonym: "NNG" RELATED []
@@ -4094,8 +4073,9 @@ is_obsolete: true
 id: FBcv:0000538
 name: carbamate
 namespace: origin_of_mutation
-def: "No description" [CHEBI:13941]
+def: "No description." [CHEBI:13941]
 synonym: "mutation induced by carbamate exposure" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000539
@@ -4109,7 +4089,7 @@ is_a: FBcv:0000538 ! carbamate
 id: FBcv:0000540
 name: vinyl carbamate
 namespace: origin_of_mutation
-def: "No description" [CHEBI:27292]
+def: "No description." [CHEBI:27292]
 synonym: "mutation induced by vinyl carbamate exposure" EXACT []
 is_a: FBcv:0000538 ! carbamate
 
@@ -4117,7 +4097,7 @@ is_a: FBcv:0000538 ! carbamate
 id: FBcv:0000541
 name: intercalating agent
 namespace: origin_of_mutation
-def: "Any chemical (FBcv:0000525) that has role some intercalator (CHEBI:24853)" []
+def: "Any chemical (FBcv:0000525) that has role some intercalator (CHEBI:24853)." []
 synonym: "mutation induced by intercalating agent exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
 
@@ -4125,15 +4105,16 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000542
 name: mitomycin C
 namespace: origin_of_mutation
-def: "No description" [CHEBI:27504]
+def: "No description." [CHEBI:27504]
 synonym: "mutation induced by mitomycin C exposure" EXACT []
 is_a: FBcv:0000526 ! alkylating agent
+is_a: FBcv:0000541 ! intercalating agent
 
 [Term]
 id: FBcv:0000543
 name: quinacrine mustard
 namespace: origin_of_mutation
-def: "No description" [CHEBI:37595]
+def: "No description." [CHEBI:37595]
 comment: Mapped to CHEBI on basis of synonym - quinacrine mustard. Originally primary name, ICR 100 is now relegated to a synonym.
 synonym: "2-methoxy-6-[3-(ethyl-2-chloroethyl)aminopropylamino]acridine" RELATED []
 synonym: "ICR 100" RELATED [CHEBI:37595]
@@ -4145,7 +4126,7 @@ is_a: FBcv:0000813 ! nitrogen mustard
 id: FBcv:0000544
 name: ICR 170
 namespace: origin_of_mutation
-def: "No description" [CHEBI:21183]
+def: "No description." [CHEBI:21183]
 synonym: "2-methoxy-6-dichloro-9-(3-ethyl-2-chloroethyl-aminopropylamino)acridine-dihydrochloride" RELATED []
 synonym: "mutation induced by ICR 170 exposure" EXACT []
 is_a: FBcv:0000541 ! intercalating agent
@@ -4183,6 +4164,7 @@ name: base analog
 namespace: origin_of_mutation
 def: "A molecule that can substitute for a normal nucleobase in nucleic acids." [CHEBI:67142]
 synonym: "nucleobase analogue" RELATED [CHEBI:67142]
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000549
@@ -4204,7 +4186,7 @@ is_a: FBcv:0000548 ! base analog
 id: FBcv:0000551
 name: enzyme inhibitor
 namespace: origin_of_mutation
-def: "Any chemical (FBcv:0000525) that has role some enzyme inhibitor (CHEBI:23924)" []
+def: "Any chemical (FBcv:0000525) that has role some enzyme inhibitor (CHEBI:23924)." []
 synonym: "mutation induced by enzyme inhibitor exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
 
@@ -4212,7 +4194,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000552
 name: aminopterin
 namespace: origin_of_mutation
-def: "No description" [CHEBI:22526]
+def: "No description." [CHEBI:22526]
 synonym: "mutation induced by aminopterin exposure" EXACT []
 is_a: FBcv:0000551 ! enzyme inhibitor
 
@@ -4223,6 +4205,7 @@ namespace: origin_of_mutation
 def: "A molecular entity that contains no carbon." [CHEBI:24835]
 synonym: "inorganic molecular entity" EXACT [CHEBI:24835]
 synonym: "mutation induced by inorganic compound exposure" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000554
@@ -4231,12 +4214,13 @@ namespace: origin_of_mutation
 def: "A metal sulfate compound having copper(2+) as the metal ion." [CHEBI:23414]
 synonym: "copper(2+) sulfate" RELATED [CHEBI:23414]
 synonym: "mutation induced by cupric sulfate" EXACT []
+is_a: FBcv:0000553 ! inorganic compound
 
 [Term]
 id: FBcv:0000555
 name: H3BO3
 namespace: origin_of_mutation
-def: "No description" [CHEBI:33118]
+def: "No description." [CHEBI:33118]
 synonym: "mutation induced by H3BO3 exposure" EXACT []
 is_a: FBcv:0000553 ! inorganic compound
 
@@ -4244,8 +4228,9 @@ is_a: FBcv:0000553 ! inorganic compound
 id: FBcv:0000556
 name: sodium bisulphite
 namespace: origin_of_mutation
-def: "No description" [CHEBI:26709]
+def: "No description." [CHEBI:26709]
 synonym: "mutation induced by sodium bisulphite exposure" EXACT []
+is_a: FBcv:0000553 ! inorganic compound
 
 [Term]
 id: FBcv:0000557
@@ -4267,7 +4252,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000559
 name: diepoxybutane
 namespace: origin_of_mutation
-def: "No description" [CHEBI:23704]
+def: "No description." [CHEBI:23704]
 synonym: "DEB" RELATED []
 synonym: "erythritol anhydride" RELATED []
 synonym: "mutation induced by diepoxybutane exposure" EXACT []
@@ -4277,7 +4262,7 @@ is_a: FBcv:0000558 ! epoxy hydrocarbon
 id: FBcv:0000560
 name: diepoxyoctane
 namespace: origin_of_mutation
-def: "No description" [CHEBI:23705]
+def: "No description." [CHEBI:23705]
 synonym: "1,2:7,8-diepoxyoctane" RELATED [CHEBI:23705]
 synonym: "mutation induced by diepoxyoctane exposure" EXACT []
 is_a: FBcv:0000558 ! epoxy hydrocarbon
@@ -4293,8 +4278,9 @@ consider: FBcv:0000525
 id: FBcv:0000562
 name: 1,2:5,6-dibenzanthracene
 namespace: origin_of_mutation
-def: "No description" [CHEBI:35299]
+def: "No description." [CHEBI:35299]
 synonym: "mutation induced by 1,2:5,6-dibenzanthracene exposure" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000563
@@ -4345,8 +4331,9 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000568
 name: 1-amino-2-naphthol-4-sulfonic acid
 namespace: origin_of_mutation
-def: "No description" [CHEBI:19024]
+def: "No description." [CHEBI:19024]
 synonym: "mutation induced by 1-amino-2-naphthol-4-sulfonic acid exposure" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000569
@@ -4365,6 +4352,7 @@ name: 2-methoxyethanol
 namespace: origin_of_mutation
 def: "A hydroxyether that is ethanol substituted by a methoxy group at position 2." [CHEBI:46790]
 synonym: "mutation induced by 2-methoxyethanol exposure" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000571
@@ -4384,13 +4372,15 @@ synonym: "7-bromomethyl 12 methyl benz&agr; anthracine" RELATED []
 synonym: "7-bromomethyl 12 methyl benzalpha anthracine" RELATED []
 synonym: "7-bromomethyl-12-methyltetraphene" RELATED [CHEBI:20787]
 synonym: "mutation induced by 7-bromomethyl-12-methylbenz[a]anthracene exposure" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000573
 name: actinomycin D
 namespace: origin_of_mutation
-def: "No description" [CHEBI:27666]
+def: "No description." [CHEBI:27666]
 synonym: "mutation induced by actinomycin D exposure" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000574
@@ -4400,6 +4390,7 @@ def: "An ortho- and peri-fused polycyclic arene consisting of five fused benzene
 synonym: "benzo(&agr;)pyrene" RELATED []
 synonym: "benzo[a]pyrene" RELATED [CHEBI:29865]
 synonym: "mutation induced by benzo(alpha)pyrene exposure" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000575
@@ -4416,6 +4407,7 @@ namespace: origin_of_mutation
 def: "A diamminedichloroplatinum compound in which the two ammine ligands and two chloro ligands are oriented in a cis planar configuration around the central platinum ion. An anticancer drug that interacts with, and forms cross-links between, DNA and proteins, it is used as a neoplasm inhibitor to treat solid tumours, primarily of the testis and ovary. Commonly but incorrectly described as an alkylating agent due to its mechanism of action (but it lacks alkyl groups)." [CHEBI:27899]
 synonym: "cis-dichlorodiammineplatinum(II)" RELATED []
 synonym: "mutation induced by cisplatin exposure" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000577
@@ -4423,6 +4415,7 @@ name: colchicine
 namespace: origin_of_mutation
 def: "An  alkaloid that is a carbotricyclic compound comprising 5,6,7,9-tetrahydrobenzo[a]heptalene having four methoxy substituents at the 1-, 2-, 3- and 10-positions as well as an oxo group at the 9-position and an acetamido group at the 7-position. It has been isolated from the plants belonging to genus Colchicum." [CHEBI:23359]
 synonym: "mutation induced by colchicine exposure" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000578
@@ -4438,6 +4431,7 @@ name: DNA
 namespace: origin_of_mutation
 def: "High molecular weight, linear polymers, composed of nucleotides containing deoxyribose and linked by phosphodiester bonds; DNA contain the genetic information of organisms." [CHEBI:16991]
 synonym: "mutation induced by DNA treatment" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000580
@@ -4445,12 +4439,13 @@ name: ethyl ether
 namespace: origin_of_mutation
 def: "An ether in which the oxygen atom is linked to two ethyl groups." [CHEBI:35702]
 synonym: "mutation induced by ethyl ether exposure" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000581
 name: ethylenimine
 namespace: origin_of_mutation
-def: "No description" [CHEBI:30969]
+def: "No description." [CHEBI:30969]
 synonym: "EI" RELATED []
 synonym: "mutation induced by ethylenimine exposure" EXACT []
 is_a: FBcv:0000526 ! alkylating agent
@@ -4463,13 +4458,15 @@ def: "A  saturated organic heteromonocyclic parent that is a three-membered hete
 synonym: "ethylene oxide" RELATED [CHEBI:27561]
 synonym: "mutation induced by ethylene oxide exposure" EXACT []
 synonym: "oxirane" RELATED [CHEBI:27561]
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000583
 name: fagaronine
 namespace: origin_of_mutation
-def: "No description" [CHEBI:28954]
+def: "No description." [CHEBI:28954]
 synonym: "mutation induced by fagaronine exposure" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000584
@@ -4486,25 +4483,28 @@ namespace: origin_of_mutation
 def: "A disaccharide derivative that consists of hesperetin substituted by a 6-O-(alpha-L-rhamnopyranosyl)-beta-D-glucopyranosyl moiety at position 7 via a glycosidic linkage." [CHEBI:28775]
 synonym: "hesperidin" RELATED [CHEBI:28775]
 synonym: "mutation induced by hesperidine exposure" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000586
 name: hexamethylmelamine
 namespace: origin_of_mutation
-def: "No description" [CHEBI:24564]
+def: "No description." [CHEBI:24564]
 synonym: "altretamine" RELATED []
 synonym: "HMM" RELATED []
 synonym: "mutation induced by hexamethylmelamine exposure" EXACT []
 synonym: "mutation induced by HMM exposure" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000587
 name: hexamethylphosphoramide
 namespace: origin_of_mutation
-def: "No description" [CHEBI:24565]
+def: "No description." [CHEBI:24565]
 synonym: "HMPA" RELATED []
 synonym: "mutation induced by hexamethylphosphoramide exposure" EXACT []
 synonym: "mutation induced by HMPA exposure" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000588
@@ -4518,18 +4518,20 @@ is_a: FBcv:0000553 ! inorganic compound
 id: FBcv:0000589
 name: Janus green B
 namespace: origin_of_mutation
-def: "No description" [CHEBI:21184]
+def: "No description." [CHEBI:21184]
 synonym: "Janus green B chloride" RELATED [CHEBI:21184]
 synonym: "mutation induced by Janus green B exposure" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000590
 name: methoxy diethylnitrosamine
 namespace: origin_of_mutation
-def: "No description" [CHEBI:25234]
+def: "No description." [CHEBI:25234]
 comment: Mapped to CHEBI:25234 (1-methoxy-N-nitrosodiethylamine) based on synonym of nitrosodiethylamine being diethylnitrosamine and CHEBI:25234 being classified as a mutagen.
 synonym: "1-methoxy-N-nitrosodiethylamine" RELATED [CHEBI:25234]
 synonym: "mutation induced by methoxy diethylnitrosamine exposure" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000591
@@ -4554,26 +4556,29 @@ is_a: FBcv:0000526 ! alkylating agent
 id: FBcv:0000593
 name: N-nitrosodimethylamine
 namespace: origin_of_mutation
-def: "No description" [CHEBI:35807]
+def: "No description." [CHEBI:35807]
 synonym: "DMN" RELATED []
 synonym: "mutation induced by DMN exposure" EXACT []
 synonym: "mutation induced by N-nitrosodimethylamine exposure" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000594
 name: p-N,N-di(2-chloroethyl)aminophenylvaleric acid
 namespace: origin_of_mutation
-def: "No description" [CHEBI:25813]
+def: "No description." [CHEBI:25813]
 synonym: "CB1356" RELATED []
 synonym: "mutation induced by p-N,N-di(2-chloroethyl)aminophenylvaleric acid exposure" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000595
 name: p-N,N-di-(2-chloroethyl)amino-D-phenylalanine
 namespace: origin_of_mutation
-def: "No description" [CHEBI:25814]
+def: "No description." [CHEBI:25814]
 synonym: "CB3026" RELATED []
 synonym: "mutation induced by p-N,N-di-(2-chloroethyl)amino-D-phenylalanine exposure" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000596
@@ -4590,9 +4595,10 @@ is_a: FBcv:0000813 ! nitrogen mustard
 id: FBcv:0000597
 name: p-N,N-di-(2-chloroethyl)amino-L-phenylalanine
 namespace: origin_of_mutation
-def: "No description" [CHEBI:25816]
+def: "No description." [CHEBI:25816]
 synonym: "CB3025" RELATED []
 synonym: "mutation induced by p-N,N-di-(2-chloroethyl)amino-L-phenylalanine exposure" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000598
@@ -4604,40 +4610,45 @@ is_obsolete: true
 id: FBcv:0000599
 name: p-N,N-di-(2-chloroethyl)aminophenylethylamine
 namespace: origin_of_mutation
-def: "No description" [CHEBI:25818]
+def: "No description." [CHEBI:25818]
 synonym: "CB3034" RELATED []
 synonym: "mutation induced by p-N,N-di-(2-chloroethyl)aminophenylethylamine exposure" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000600
 name: p-p'-N,N-di(2-chloroethyl)aminophenoxyphenylalanine
 namespace: origin_of_mutation
-def: "No description" [CHEBI:25829]
+def: "No description." [CHEBI:25829]
 synonym: "CB305" RELATED []
 synonym: "mutation induced by p-p'-N,N-di(2-chloroethyl)aminophenoxyphenylalanine exposure" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000601
 name: quinhydrone
 namespace: origin_of_mutation
-def: "No description" [CHEBI:26491]
+def: "No description." [CHEBI:26491]
 synonym: "mutation induced by quinhydrone exposure" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000602
 name: S-2-chloroethylcysteine
 namespace: origin_of_mutation
-def: "No description" [CHEBI:22025]
+def: "No description." [CHEBI:22025]
 synonym: "CB1592" RELATED []
 synonym: "mutation induced by S-2-chloroethylcysteine exposure" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000603
 name: styryl quinoline
 namespace: origin_of_mutation
-def: "No description" [CHEBI:26800]
+def: "No description." [CHEBI:26800]
 synonym: "CB3086" RELATED []
 synonym: "mutation induced by styryl quinoline exposure" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000604
@@ -4651,7 +4662,7 @@ is_a: FBcv:0000526 ! alkylating agent
 id: FBcv:0000605
 name: triethylenemelamine
 namespace: origin_of_mutation
-def: "No description" [CHEBI:27919]
+def: "No description." [CHEBI:27919]
 synonym: "CB1246" RELATED []
 synonym: "mutation induced by triethylenemelamine exposure" EXACT []
 synonym: "TEM" RELATED []
@@ -5653,6 +5664,7 @@ namespace: origin_of_mutation
 def: "A nitrosamine that is N-ethylethanamine substituted by a nitroso group at the N-atom." [CHEBI:34873]
 synonym: "mutation induced by N-nitrosodiethylamine exposure" EXACT []
 synonym: "NDEA" RELATED [FlyBase:FBrf0139766]
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000736
@@ -5661,7 +5673,6 @@ namespace: allele_class
 def: "An allele that completely lacks function (i.e. whose gene productive is completely inactive) at high temperatures, but that retains at least some function at lower temperatures." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000739 ! temperature conditional amorphic allele
 is_a: FBcv:0000746 ! heat sensitive loss of function allele
-relationship: conditionality FBcv:0000311 ! heat sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:54:34Z
 
@@ -5672,7 +5683,6 @@ namespace: allele_class
 def: "An allele inferred to completely lack function at some temperatures (restrictive temperatures) but not others (permissive temperatures) from the observation that addition of extra copies in the genome has no effect on the phenotype at the restrictive temperatures. Most commonly, evidence takes the form of the observation that the phenotype of homozygotes (2 copies) is identical to that seen when the allele is in trans to a deletion of the gene (1 copy)." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000288 ! amorphic allele - genetic evidence
 is_a: FBcv:0000739 ! temperature conditional amorphic allele
-relationship: conditionality FBcv:0000310 ! temperature conditional
 created_by: djs93
 creation_date: 2012-03-22T03:55:17Z
 
@@ -5692,7 +5702,6 @@ namespace: allele_class
 def: "An allele that completely lacks function (i.e. whose gene productive is completely inactive) at some temperatures, but not others." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000688 ! amorphic allele
 is_a: FBcv:0000745 ! temperature conditional loss of function allele
-relationship: conditionality FBcv:0000310 ! temperature conditional
 created_by: djs93
 creation_date: 2012-03-22T03:57:02Z
 
@@ -5703,7 +5712,6 @@ namespace: allele_class
 def: "An allele inferred to completely lack function at low temperatures (restrictive temperatures) but not at high temperatures (permissive temperatures) from the observation that adding extra copies in the genome has no effect on the phenotype at the restrictive temperatures. Most commonly, evidence takes the form of the observation that the phenotype of homozygotes (2 copies) is identical to that seen when the allele is in trans to a deletion of the gene (1 copy)." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000737 ! temperature conditional amorphic allele - genetic evidence
 is_a: FBcv:0001003 ! cold sensitive amorphic allele
-relationship: conditionality FBcv:0000312 ! cold sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:58:31Z
 
@@ -5714,7 +5722,6 @@ namespace: allele_class
 def: "An allele inferred to completely lack function at high temperatures (restrictive temperatures) but not at low temperatures (permissive temperatures) from the observation that adding extra copies in the genome has no effect on the phenotype at the restrictive temperatures. Most commonly, evidence takes the form of the observation that the phenotype of homozygotes (2 copies) is identical to that seen when the allele is in trans to a deletion of the gene (1 copy)." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000736 ! heat sensitive amorphic allele
 is_a: FBcv:0000737 ! temperature conditional amorphic allele - genetic evidence
-relationship: conditionality FBcv:0000311 ! heat sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:59:43Z
 
@@ -5725,7 +5732,6 @@ namespace: allele_class
 def: "An allele shown by molecular evidence to completely lack function at low temperatures (restrictive temperatures) but not at high temperatures (permissive temperatures)." [FBC:DOS, FlyBase:FBrf0049147]
 is_a: FBcv:0000744 ! temperature conditional amorphic allele - molecular evidence
 is_a: FBcv:0001003 ! cold sensitive amorphic allele
-relationship: conditionality FBcv:0000312 ! cold sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:58:31Z
 
@@ -5736,7 +5742,6 @@ namespace: allele_class
 def: "An allele shown by molecular evidence to completely lack function at high temperatures (restrictive temperatures) but not at low temperatures (permissive temperatures)." [FBC:DOS, FlyBase:FBrf0049147]
 is_a: FBcv:0000736 ! heat sensitive amorphic allele
 is_a: FBcv:0000744 ! temperature conditional amorphic allele - molecular evidence
-relationship: conditionality FBcv:0000311 ! heat sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:59:43Z
 
@@ -5747,7 +5752,6 @@ namespace: allele_class
 def: "An allele shown by molecular evidence to completely lack function at some temperatures (restrictive temperatures) but not at others (permissive temperatures)." [FBC:DOS, FlyBase:FBrf0049147]
 is_a: FBcv:0000689 ! amorphic allele - molecular evidence
 is_a: FBcv:0000739 ! temperature conditional amorphic allele
-relationship: conditionality FBcv:0000310 ! temperature conditional
 created_by: djs93
 creation_date: 2012-03-22T03:55:17Z
 
@@ -5814,7 +5818,6 @@ namespace: allele_class
 def: "An allele that, at some temperatures but not others, makes a gene product that is functionally equivalent to wild-type but in a lesser amount or with lowered activity." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000690 ! hypomorphic allele
 is_a: FBcv:0000745 ! temperature conditional loss of function allele
-relationship: conditionality FBcv:0000310 ! temperature conditional
 created_by: djs93
 creation_date: 2012-03-22T03:57:02Z
 
@@ -5825,7 +5828,6 @@ namespace: allele_class
 def: "An allele that makes a gene product that is functionally equivalent to wild-type but which at high temperatures is present in a lesser amount or with lowered activity, and that retains normal levels of expression or activity at low temperatures." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000746 ! heat sensitive loss of function allele
 is_a: FBcv:0000751 ! temperature conditional hypomorphic allele
-relationship: conditionality FBcv:0000311 ! heat sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:54:34Z
 
@@ -5836,7 +5838,6 @@ namespace: allele_class
 def: "An allele that makes a gene product that is functionally equivalent to wild-type but which at low temperatures is present in a lesser amount or with lowered activity, and that retains normal function at higher temperatures." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000747 ! cold sensitive loss of function allele
 is_a: FBcv:0000751 ! temperature conditional hypomorphic allele
-relationship: conditionality FBcv:0000312 ! cold sensitive
 
 [Term]
 id: FBcv:0000754
@@ -5845,7 +5846,6 @@ namespace: allele_class
 def: "An allele inferred from genetic evidence to have normal activity at some temperatures (permissive temperatures) but at other temperatures to make a gene product with normal function but in a lesser amount or with lowered activity (non-permissive temperatures). The genetic evidence must consist of an observation extra copies in the genome decrease the expressivity and/or penetrance of the phenotype at non-permissive temperatures. Most commonly this evidence takes the form of experiments showing that the homozygote (2 copies) has a weaker phenotype at non-permissive temperatures than the allele in trans to a deletion of the gene (1 copy))." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000289 ! hypomorphic allele - genetic evidence
 is_a: FBcv:0000751 ! temperature conditional hypomorphic allele
-relationship: conditionality FBcv:0000310 ! temperature conditional
 created_by: djs93
 creation_date: 2012-03-22T03:55:17Z
 
@@ -5856,7 +5856,6 @@ namespace: allele_class
 def: "An allele inferred from genetic evidence to have normal activity at high temperatures (permissive temperatures) but to make a gene product with normal function but in a lesser amount or with lowered activity at lower temperatures (non-permissive temperatures). The genetic evidence must consist of an observation extra copies in the genome decrease the expressivity and/or penetrance of the phenotype at non-permissive temperatures. Most commonly this evidence takes the form of experiments showing that the homozygote (2 copies) has a weaker phenotype at non-permissive temperatures than the allele in trans to a deletion of the gene (1 copy))." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000753 ! cold sensitive hypomorphic allele
 is_a: FBcv:0000754 ! temperature conditional hypomorphic allele - genetic evidence
-relationship: conditionality FBcv:0000312 ! cold sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:58:31Z
 
@@ -5867,7 +5866,6 @@ namespace: allele_class
 def: "An allele inferred from genetic evidence to have normal activity at low temperatures (permissive temperatures) but to make a gene product with normal function but in a lesser amount or with lowered activity at higher temperatures (non-permissive temperatures). The genetic evidence must consist of an observation extra copies in the genome decrease the expressivity and/or penetrance of the phenotype at non-permissive temperatures. Most commonly this evidence takes the form of experiments showing that the homozygote (2 copies) has a weaker phenotype at non-permissive temperatures than the allele in trans to a deletion of the gene (1 copy))." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000752 ! heat sensitive hypomorphic allele
 is_a: FBcv:0000754 ! temperature conditional hypomorphic allele - genetic evidence
-relationship: conditionality FBcv:0000311 ! heat sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:59:43Z
 
@@ -5878,7 +5876,6 @@ namespace: allele_class
 def: "An allele shown by molecular evidence to make a normal gene product in normal amounts at some temperatures, but at other temperatures to make a gene product that is functionally equivalent to wild-type but in a lesser amount or with lowered activity." [FBC:DOS, FlyBase:FBrf0049147]
 is_a: FBcv:0000691 ! hypomorphic allele - molecular evidence
 is_a: FBcv:0000751 ! temperature conditional hypomorphic allele
-relationship: conditionality FBcv:0000310 ! temperature conditional
 created_by: djs93
 creation_date: 2012-03-22T03:55:17Z
 
@@ -5889,7 +5886,6 @@ namespace: allele_class
 def: "An allele shown by molecular evidence to make a normal gene product in normal amounts at high temperatures, but at lower temperatures to make a gene product that is functionally equivalent to wild-type but in a lesser amount or with lowered activity." [FBC:DOS, FlyBase:FBrf0049147]
 is_a: FBcv:0000753 ! cold sensitive hypomorphic allele
 is_a: FBcv:0000757 ! temperature conditional hypomorphic allele - molecular evidence
-relationship: conditionality FBcv:0000312 ! cold sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:58:31Z
 
@@ -5900,7 +5896,6 @@ namespace: allele_class
 def: "An allele shown by molecular evidence to make a normal gene product in normal amounts at low temperatures, but at higher temperatures to make a gene product that is functionally equivalent to wild-type but in a lesser amount or with lowered activity." [FBC:DOS, FlyBase:FBrf0049147]
 is_a: FBcv:0000752 ! heat sensitive hypomorphic allele
 is_a: FBcv:0000757 ! temperature conditional hypomorphic allele - molecular evidence
-relationship: conditionality FBcv:0000311 ! heat sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:59:43Z
 
@@ -5911,7 +5906,6 @@ namespace: allele_class
 def: "An allele that makes a gene product that is antagonistic to the function of the wild-type gene product at some temperatures, but not others." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000695 ! antimorphic allele
 is_a: FBcv:0000748 ! temperature conditional gain of function allele
-relationship: conditionality FBcv:0000310 ! temperature conditional
 created_by: djs93
 creation_date: 2012-03-22T03:57:02Z
 
@@ -5922,7 +5916,6 @@ namespace: allele_class
 def: "An allele that makes a gene product that is antagonistic to the function of the wild-type gene product at high temperatures, but not at lower temperatures." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000749 ! heat sensitive gain of function allele
 is_a: FBcv:0000760 ! temperature conditional antimorphic allele
-relationship: conditionality FBcv:0000311 ! heat sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:54:34Z
 
@@ -5933,7 +5926,6 @@ namespace: allele_class
 def: "An allele that makes a gene product that is antagonistic to the function of the wild-type gene product at cold temperatures, but not at higher temperatures." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000750 ! cold sensitive gain of function allele
 is_a: FBcv:0000760 ! temperature conditional antimorphic allele
-relationship: conditionality FBcv:0000312 ! cold sensitive
 
 [Term]
 id: FBcv:0000763
@@ -5942,7 +5934,6 @@ namespace: allele_class
 def: "An allele inferred to make a gene product that is antagonistic to the wild-type gene product at some temperatures (restrictive temperatures) but not at others (permissive temperatures) from the observation that, at the non-permissive temperatures, the phenotype over a deficiency is stronger than that over a wild-type allele, which in turn is stronger than that in the presence of a duplication of the wild-type locus." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000292 ! antimorphic allele - genetic evidence
 is_a: FBcv:0000760 ! temperature conditional antimorphic allele
-relationship: conditionality FBcv:0000310 ! temperature conditional
 created_by: djs93
 creation_date: 2012-03-22T03:55:17Z
 
@@ -5953,7 +5944,6 @@ namespace: allele_class
 def: "An allele inferred to make a gene product that is antagonistic to the wild-type gene product at low temperatures (restrictive temperatures) but not at high temperatures (permissive temperatures) from the observation that, at the non-permissive temperatures, the phenotype over a deficiency is stronger than that over a wild-type allele, which in turn is stronger than that in the presence of a duplication of the wild-type locus." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000762 ! cold sensitive antimorphic allele
 is_a: FBcv:0000763 ! temperature conditional antimorphic allele - genetic evidence
-relationship: conditionality FBcv:0000312 ! cold sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:58:31Z
 
@@ -5964,7 +5954,6 @@ namespace: allele_class
 def: "An allele inferred to make a gene product that is antagonistic to the wild-type gene product at high temperatures (restrictive temperatures) but not at lower temperatures (permissive temperatures) from the observation that, at the non-permissive temperatures, the phenotype over a deficiency is stronger than that over a wild-type allele, which in turn is stronger than that in the presence of a duplication of the wild-type locus." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000761 ! heat sensitive antimorphic allele
 is_a: FBcv:0000763 ! temperature conditional antimorphic allele - genetic evidence
-relationship: conditionality FBcv:0000311 ! heat sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:59:43Z
 
@@ -5975,7 +5964,6 @@ namespace: allele_class
 def: "An allele that has been shown by molecular evidence to make a gene product that is antagonistic to the function of the wild-type gene product at some temperatures but not others." [FBC:DOS, FlyBase:FBrf0049147]
 is_a: FBcv:0000694 ! antimorphic allele - molecular evidence
 is_a: FBcv:0000760 ! temperature conditional antimorphic allele
-relationship: conditionality FBcv:0000310 ! temperature conditional
 created_by: djs93
 creation_date: 2012-03-22T03:55:17Z
 
@@ -5986,7 +5974,6 @@ namespace: allele_class
 def: "An allele that has been shown by molecular evidence to make a gene product that is antagonistic to the function of the wild-type gene product at low temperatures but not higher temperatures." [FBC:DOS, FlyBase:FBrf0049147]
 is_a: FBcv:0000762 ! cold sensitive antimorphic allele
 is_a: FBcv:0000766 ! temperature conditional antimorphic allele - molecular evidence
-relationship: conditionality FBcv:0000312 ! cold sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:58:31Z
 
@@ -5997,7 +5984,6 @@ namespace: allele_class
 def: "An allele that has been shown by molecular evidence to make a gene product that is antagonistic to the function of the wild-type gene product at high temperatures but not lower temperatures." [FBC:DOS, FlyBase:FBrf0049147]
 is_a: FBcv:0000761 ! heat sensitive antimorphic allele
 is_a: FBcv:0000766 ! temperature conditional antimorphic allele - molecular evidence
-relationship: conditionality FBcv:0000311 ! heat sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:59:43Z
 
@@ -6008,7 +5994,6 @@ namespace: allele_class
 def: "An allele that, at some temperatures but not others, makes a gene product with a novel function or expression pattern compared to wild-type." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000697 ! neomorphic allele
 is_a: FBcv:0000748 ! temperature conditional gain of function allele
-relationship: conditionality FBcv:0000310 ! temperature conditional
 created_by: djs93
 creation_date: 2012-03-22T03:57:02Z
 
@@ -6019,7 +6004,6 @@ namespace: allele_class
 def: "An allele that, at some high temperatures but not lower temperatures, makes a gene product with a novel function or expression pattern compared to wild-type." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000749 ! heat sensitive gain of function allele
 is_a: FBcv:0000769 ! temperature conditional neomorphic allele
-relationship: conditionality FBcv:0000311 ! heat sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:54:34Z
 
@@ -6030,7 +6014,6 @@ namespace: allele_class
 def: "An allele that, at some low temperatures but not higher temperatures, makes a gene product at with a novel function or expression pattern compared to wild-type." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000750 ! cold sensitive gain of function allele
 is_a: FBcv:0000769 ! temperature conditional neomorphic allele
-relationship: conditionality FBcv:0000312 ! cold sensitive
 
 [Term]
 id: FBcv:0000772
@@ -6039,7 +6022,6 @@ namespace: allele_class
 def: "An allele that, is inferred to make a gene product with a novel function or expression pattern compared to wild-type at some temperatures (non-permissive temperatures) but not others (permissive temperatures) based on the evidence that the phenotype at the non-permissive temperature is unaffected by extra or fewer doses of the wild-type gene." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000291 ! neomorphic allele - genetic evidence
 is_a: FBcv:0000769 ! temperature conditional neomorphic allele
-relationship: conditionality FBcv:0000310 ! temperature conditional
 created_by: djs93
 creation_date: 2012-03-22T03:55:17Z
 
@@ -6050,7 +6032,6 @@ namespace: allele_class
 def: "An allele that, is inferred to make a gene product with a novel function or expression pattern compared to wild-type at some low temperatures (non-permissive temperatures) but not higher temperatures (permissive temperatures), based on the evidence that the phenotype at the non-permissive temperature is unaffected by extra or fewer doses of the wild-type gene." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000771 ! cold sensitive neomorphic allele
 is_a: FBcv:0000772 ! temperature conditional neomorphic allele - genetic evidence
-relationship: conditionality FBcv:0000312 ! cold sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:58:31Z
 
@@ -6061,7 +6042,6 @@ namespace: allele_class
 def: "An allele that, is inferred to make a gene product with a novel function or expression pattern compared to wild-type at some high temperatures (non-permissive temperatures) but not lower temperatures (permissive temperatures), based on the evidence that the phenotype at the non-permissive temperature is unaffected by extra or fewer doses of the wild-type gene." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000770 ! heat sensitive neomorphic allele
 is_a: FBcv:0000772 ! temperature conditional neomorphic allele - genetic evidence
-relationship: conditionality FBcv:0000311 ! heat sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:59:43Z
 
@@ -6072,7 +6052,6 @@ namespace: allele_class
 def: "An allele shown by molecular evidence to produce a gene product with a novel function or expression pattern (compared to wild-type) at some temperatures but not others." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000692 ! neomorphic allele - molecular evidence
 is_a: FBcv:0000769 ! temperature conditional neomorphic allele
-relationship: conditionality FBcv:0000310 ! temperature conditional
 created_by: djs93
 creation_date: 2012-03-22T03:55:17Z
 
@@ -6083,7 +6062,6 @@ namespace: allele_class
 def: "An allele shown by molecular evidence to produce a gene product with a novel function or expression pattern (compared to wild-type) at low temperatures but not higher temperatures." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000771 ! cold sensitive neomorphic allele
 is_a: FBcv:0000775 ! temperature conditional neomorphic allele - molecular evidence
-relationship: conditionality FBcv:0000312 ! cold sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:58:31Z
 
@@ -6094,7 +6072,6 @@ namespace: allele_class
 def: "An allele shown by molecular evidence to produce a gene product with a novel function or expression pattern (compared to wild-type) at high temperatures but not lower temperatures." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000770 ! heat sensitive neomorphic allele
 is_a: FBcv:0000775 ! temperature conditional neomorphic allele - molecular evidence
-relationship: conditionality FBcv:0000311 ! heat sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:59:43Z
 
@@ -6105,7 +6082,6 @@ namespace: allele_class
 def: "An allele that, at some temperatures but not others, makes a gene product with normal function but at higher levels or with higher activity than in wild-type." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000696 ! hypermorphic allele
 is_a: FBcv:0000748 ! temperature conditional gain of function allele
-relationship: conditionality FBcv:0000310 ! temperature conditional
 created_by: djs93
 creation_date: 2012-03-22T03:57:02Z
 
@@ -6116,7 +6092,6 @@ namespace: allele_class
 def: "An allele that, at high temperatures but not lower temperatures, makes a gene product with normal function but at higher levels or with higher activity than in wild-type." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000749 ! heat sensitive gain of function allele
 is_a: FBcv:0000778 ! temperature conditional hypermorphic allele
-relationship: conditionality FBcv:0000311 ! heat sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:54:34Z
 
@@ -6127,7 +6102,6 @@ namespace: allele_class
 def: "An allele that, at low temperatures but not higher temperatures, makes a gene product with normal function but at higher levels or with higher activity than in wild-type.." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000750 ! cold sensitive gain of function allele
 is_a: FBcv:0000778 ! temperature conditional hypermorphic allele
-relationship: conditionality FBcv:0000312 ! cold sensitive
 
 [Term]
 id: FBcv:0000781
@@ -6136,7 +6110,6 @@ namespace: allele_class
 def: "An allele inferred from genetic evidence to make a normal gene product at increased levels or with increased activity compared to wild-type, where this increased amount or activity is present at some temperatures (non-permissive temperatures) but not others (permissive temperatures), and where the genetic evidence consists of the observation that extra copies in the genome increase the expressivity and/or penetrance of the phenotype at the non-permissive temperatures." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000293 ! hypermorphic allele - genetic evidence
 is_a: FBcv:0000778 ! temperature conditional hypermorphic allele
-relationship: conditionality FBcv:0000310 ! temperature conditional
 created_by: djs93
 creation_date: 2012-03-22T03:55:17Z
 
@@ -6147,7 +6120,6 @@ namespace: allele_class
 def: "An allele inferred from genetic evidence to make a normal gene product at increased levels or with increased activity compared to wild-type, where this increased amount or activity is present at low temperatures (non-permissive temperatures) but not higher temperatures (permissive temperatures), and where the genetic evidence consists of the observation that extra copies in the genome increase the expressivity and/or penetrance of the phenotype at the non-permissive temperatures." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000780 ! cold sensitive hypermorphic allele
 is_a: FBcv:0000781 ! temperature conditional hypermorphic allele - genetic evidence
-relationship: conditionality FBcv:0000312 ! cold sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:58:31Z
 
@@ -6158,7 +6130,6 @@ namespace: allele_class
 def: "An allele inferred from genetic evidence to make a normal gene product at increased levels or with increased activity compared to wild-type, where this increased amount or activity is present at high temperatures (non-permissive temperatures) but not lower temperatures (permissive temperatures), and where the genetic evidence consists of the observation that extra copies in the genome increase the expressivity and/or penetrance of the phenotype at the non-permissive temperatures." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000779 ! heat sensitive hypermorphic allele
 is_a: FBcv:0000781 ! temperature conditional hypermorphic allele - genetic evidence
-relationship: conditionality FBcv:0000311 ! heat sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:59:43Z
 
@@ -6169,7 +6140,6 @@ namespace: allele_class
 def: "An allele shown by molecular evidence to make a functionally wild-type gene product at increased levels or with increased activity where this increased expression or activity occurs at some temperatures but not others." [FBC:DOS, FlyBase:FBrf0049147]
 is_a: FBcv:0000693 ! hypermorphic allele - molecular evidence
 is_a: FBcv:0000778 ! temperature conditional hypermorphic allele
-relationship: conditionality FBcv:0000310 ! temperature conditional
 created_by: djs93
 creation_date: 2012-03-22T03:55:17Z
 
@@ -6180,7 +6150,6 @@ namespace: allele_class
 def: "An allele shown by molecular evidence to make a functionally wild-type gene product at increased levels or with increased activity where this increased expression or activity occurs at low temperatures but not higher temperatures." [FBC:DOS, FlyBase:FBrf0049147]
 is_a: FBcv:0000780 ! cold sensitive hypermorphic allele
 is_a: FBcv:0000784 ! temperature conditional hypermorphic allele - molecular evidence
-relationship: conditionality FBcv:0000312 ! cold sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:58:31Z
 
@@ -6191,7 +6160,6 @@ namespace: allele_class
 def: "An allele shown by molecular evidence to make a functionally wild-type gene product at increased levels or with increased activity where this increased expression or activity occurs at high temperatures but not lower temperatures." [FBC:DOS, FlyBase:FBrf0049147]
 is_a: FBcv:0000779 ! heat sensitive hypermorphic allele
 is_a: FBcv:0000784 ! temperature conditional hypermorphic allele - molecular evidence
-relationship: conditionality FBcv:0000311 ! heat sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:59:43Z
 
@@ -6356,7 +6324,6 @@ name: cold sensitive amorphic allele
 def: "An allele that completely lacks function (i.e. whose gene productive is completely inactive) at low temperatures, but that retains at least some function at higher temperatures." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
 is_a: FBcv:0000739 ! temperature conditional amorphic allele
 is_a: FBcv:0000747 ! cold sensitive loss of function allele
-relationship: conditionality FBcv:0000312 ! cold sensitive
 
 [Term]
 id: FBcv:0001315
@@ -6378,6 +6345,7 @@ is_a: FBcv:0001347 ! phenotype
 id: FBcv:0001325
 name: exocytosis defective
 namespace: phenotypic_class
+def: "Phenotype that is a defect in exocytosis (GO:0006887). 'exocytosis' is defined as: 'A process of secretion by a cell that results in the release of intracellular molecules (e.g. hormones, matrix proteins) contained within a membrane-bounded vesicle. Exocytosis can occur either by full fusion, when the vesicle collapses into the plasma membrane, or by a kiss-and-run mechanism that involves the formation of a transient contact, a pore, between a granule (for exemple of chromaffin cells) and the plasma membrane. The latter process most of the time leads to only partial secretion of the granule content. Exocytosis begins with steps that prepare vesicles for fusion with the membrane (tethering and docking) and ends when molecules are secreted from the cell.'" []
 subset: fbcvsubset_mgiribbons
 is_a: FBcv:0001347 ! phenotype
 
@@ -10258,1381 +10226,12 @@ synonym: "Kyoto stock center" RELATED []
 is_obsolete: true
 
 [Typedef]
-id: BFO:0000050
-name: part of
-def: "a core relation that holds between a part and its whole" []
-property_value: IAO:0000111 "is part of" xsd:string
-property_value: IAO:0000112 "my brain is part of my body (continuant parthood, two material entities)" xsd:string
-property_value: IAO:0000112 "my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)" xsd:string
-property_value: IAO:0000112 "this day is part of this year (occurrent parthood)" xsd:string
-property_value: IAO:0000116 "Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other." xsd:string
-property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
-property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)\n\nA continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'." xsd:string
-property_value: IAO:0000118 "part_of" xsd:string
-property_value: RO:0001900 RO:0001901
-property_value: RO:0040042 BFO:0000002
-property_value: RO:0040042 BFO:0000003
-property_value: RO:0040042 BFO:0000004
-property_value: RO:0040042 BFO:0000017
-property_value: RO:0040042 BFO:0000019
-property_value: RO:0040042 BFO:0000020
-property_value: RO:0040042 BFO:0000031
-property_value: seeAlso http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections
-property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:PartOf
-property_value: seeAlso http://www.obofoundry.org/ro/#OBO_REL:part_of xsd:string
-is_transitive: true
-is_a: RO:0002131 ! overlaps
-inverse_of: has_part ! has part
-
-[Typedef]
-id: BFO:0000062
-name: preceded by
-def: "x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point." []
-subset: ro-eco
-property_value: http://purl.org/dc/elements/1.1/source http://www.obofoundry.org/ro/#OBO_REL:preceded_by xsd:string
-property_value: IAO:0000111 "preceded by" xsd:string
-property_value: IAO:0000116 "An example is: translation preceded_by transcription; aging preceded_by development (not however death preceded_by aging). Where derives_from links classes of continuants, preceded_by links classes of processes. Clearly, however, these two relations are not independent of each other. Thus if cells of type C1 derive_from cells of type C, then any cell division involving an instance of C1 in a given lineage is preceded_by cellular processes involving an instance of C.    The assertion P preceded_by P1 tells us something about Ps in general: that is, it tells us something about what happened earlier, given what we know about what happened later. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be succeeded by some instance of P. Note that an assertion to the effect that P preceded_by P1 is rather weak; it tells us little about the relations between the underlying instances in virtue of which the preceded_by relation obtains. Typically we will be interested in stronger relations, for example in the relation immediately_preceded_by, or in relations which combine preceded_by with a condition to the effect that the corresponding instances of P and P1 share participants, or that their participants are connected by relations of derivation, or (as a first step along the road to a treatment of causality) that the one process in some way affects (for example, initiates or regulates) the other." xsd:string
-property_value: IAO:0000118 "is preceded by" xsd:string
-property_value: IAO:0000118 "preceded_by" xsd:string
-holds_over_chain: BFO:0000050 BFO:0000062
-is_transitive: true
-is_a: RO:0002086 ! ends after
-inverse_of: BFO:0000063 ! precedes
-
-[Typedef]
-id: BFO:0000063
-name: precedes
-def: "x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point." []
-subset: ro-eco
-property_value: IAO:0000111 "precedes" xsd:string
-holds_over_chain: BFO:0000050 BFO:0000063
-is_transitive: true
-is_a: RO:0002222 ! temporally related to
-
-[Typedef]
-id: BFO:0000066
-name: occurs in
-def: "b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t" []
-comment: Paraphrase of definition: a relation between a process and an independent continuant, in which the process takes place entirely within the independent continuant
-property_value: IAO:0000111 "occurs in" xsd:string
-property_value: IAO:0000118 "occurs_in" xsd:string
-property_value: IAO:0000118 "unfolds in" xsd:string
-property_value: IAO:0000118 "unfolds_in" xsd:string
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
-holds_over_chain: BFO:0000050 BFO:0000066
-inverse_of: BFO:0000067 ! contains process
-transitive_over: BFO:0000050 ! part of
-
-[Typedef]
-id: BFO:0000067
-name: contains process
-def: "[copied from inverse property 'occurs in'] b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t" []
-comment: Paraphrase of definition: a relation between an independent continuant and a process, in which the process takes place entirely within the independent continuant
-property_value: IAO:0000111 "site of" xsd:string
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
-
-[Typedef]
 id: FBcv:0008000
 name: has_age
 namespace: FlyBase_miscellaneous_CV
 is_functional: true
 
 [Typedef]
-id: RO:0000052
-name: inheres in
-def: "a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence" []
-property_value: IAO:0000111 "inheres in" xsd:string
-property_value: IAO:0000112 "this fragility inheres in this vase" xsd:string
-property_value: IAO:0000112 "this red color inheres in this apple" xsd:string
-property_value: IAO:0000116 "A dependent inheres in its bearer at all times for which the dependent exists." xsd:string
-property_value: IAO:0000118 "inheres_in" xsd:string
-property_value: RO:0001900 RO:0001901
-is_a: RO:0002314 ! inheres in part of
-inverse_of: RO:0000053 ! bearer of
-
-[Typedef]
-id: RO:0000053
-name: bearer of
-def: "a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence" []
-property_value: IAO:0000111 "bearer of" xsd:string
-property_value: IAO:0000112 "this apple is bearer of this red color" xsd:string
-property_value: IAO:0000112 "this vase is bearer of this fragility" xsd:string
-property_value: IAO:0000116 "A bearer can have many dependents, and its dependents can exist for different periods of time, but none of its dependents can exist when the bearer does not exist." xsd:string
-property_value: IAO:0000118 "bearer_of" xsd:string
-property_value: IAO:0000118 "is bearer of" xsd:string
-property_value: RO:0001900 RO:0001901
-
-[Typedef]
-id: RO:0000056
-name: participates in
-def: "a relation between a continuant and a process, in which the continuant is somehow involved in the process" []
-property_value: IAO:0000111 "participates in" xsd:string
-property_value: IAO:0000112 "this blood clot participates in this blood coagulation" xsd:string
-property_value: IAO:0000112 "this input material (or this output material) participates in this process" xsd:string
-property_value: IAO:0000112 "this investigator participates in this investigation" xsd:string
-property_value: IAO:0000118 "participates_in" xsd:string
-inverse_of: RO:0000057 ! has participant
-
-[Typedef]
-id: RO:0000057
-name: has participant
-def: "a relation between a process and a continuant, in which the continuant is somehow involved in the process" []
-property_value: http://purl.org/dc/elements/1.1/source http://www.obofoundry.org/ro/#OBO_REL:has_participant xsd:string
-property_value: IAO:0000111 "has participant" xsd:string
-property_value: IAO:0000112 "this blood coagulation has participant this blood clot" xsd:string
-property_value: IAO:0000112 "this investigation has participant this investigator" xsd:string
-property_value: IAO:0000112 "this process has participant this input material (or this output material)" xsd:string
-property_value: IAO:0000116 "Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time." xsd:string
-property_value: IAO:0000118 "has_participant" xsd:string
-holds_over_chain: has_part RO:0000057
-
-[Typedef]
-id: RO:0000081
-name: role of
-def: "a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence" []
-property_value: IAO:0000112 "this investigator role is a role of this person" xsd:string
-property_value: IAO:0000116 "A role inheres in its bearer at all times for which the role exists, however the role need not be realized at all the times that the role exists." xsd:string
-property_value: IAO:0000118 "is role of" xsd:string
-property_value: IAO:0000118 "role_of" xsd:string
-is_a: RO:0000052 ! inheres in
-inverse_of: has_role ! has role
-
-[Typedef]
-id: RO:0002013
-name: has regulatory component activity
-def: "A 'has regulatory component activity' B if A and B are GO molecular functions (GO_0003674), A has_component B and A is regulated by B." []
-is_a: RO:0002017 ! has component activity
-is_a: RO:0002334 ! regulated by
-created_by: dos
-creation_date: 2017-05-24T09:30:46Z
-
-[Typedef]
-id: RO:0002014
-name: has negative regulatory component activity
-def: "A relationship that holds between a GO molecular function and a component of that molecular function that negatively regulates the activity of the whole.  More formally, A 'has regulatory component activity' B iff :A and B are GO molecular functions (GO_0003674), A has_component B and A is negatively regulated by B." []
-comment: By convention GO molecular functions are classified by their effector function.  Internal regulatory functions are treated as components.  For example, NMDA glutmate receptor activity is a cation channel activity with positive regulatory component 'glutamate binding' and negative regulatory components including 'zinc binding' and 'magnesium binding'.
-is_a: RO:0002013 ! has regulatory component activity
-is_a: RO:0002335 ! negatively regulated by
-created_by: dos
-creation_date: 2017-05-24T09:31:01Z
-
-[Typedef]
-id: RO:0002015
-name: has positive regulatory component activity
-def: "A relationship that holds between a GO molecular function and a component of that molecular function that positively regulates the activity of the whole.  More formally, A 'has regulatory component activity' B iff :A and B are GO molecular functions (GO_0003674), A has_component B and A is positively regulated by B." []
-comment: By convention GO molecular functions are classified by their effector function and internal regulatory functions are treated as components.  So, for example calmodulin has a protein binding activity that has positive regulatory component activity calcium binding activity. Receptor tyrosine kinase activity is a tyrosine kinase activity that has positive regulatory component 'ligand binding'.
-is_a: RO:0002013 ! has regulatory component activity
-is_a: RO:0002336 ! positively regulated by
-created_by: dos
-creation_date: 2017-05-24T09:31:17Z
-
-[Typedef]
-id: RO:0002017
-name: has component activity
-comment: A 'has component activity' B if A is A and B are molecular functions (GO_0003674) and A has_component B.
-is_a: RO:0002018 ! has component process
-created_by: dos
-creation_date: 2017-05-24T09:44:33Z
-
-[Typedef]
-id: RO:0002018
-name: has component process
-def: "w 'has process component' p if p and w are processes,  w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type." []
-is_a: RO:0002180 ! has component
-created_by: dos
-creation_date: 2017-05-24T09:49:21Z
-
-[Typedef]
-id: RO:0002019
-name: has ligand
-def: "A relationship that holds between between a receptor and an chemical entity, typically a small molecule or peptide, that carries information between cells or compartments of a cell and which binds the receptor and regulates its effector function." []
-is_a: RO:0002233 ! has input
-created_by: dos
-creation_date: 2017-07-19T17:30:36Z
-
-[Typedef]
-id: RO:0002022
-name: directly regulated by
-comment: Process(P2) is directly regulated by process(P1) iff: P1 regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  regulates the kinase activity (P2) of protein B then P1 directly regulates P2. {xref="GOC:dos"}
-is_a: RO:0002334 ! regulated by
-inverse_of: RO:0002578 ! directly regulates
-created_by: dos
-creation_date: 2017-09-17T13:52:24Z
-
-[Typedef]
-id: RO:0002023
-name: directly negatively regulated by
-def: "Process(P2) is directly negatively regulated by process(P1) iff: P1 negatively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  negatively regulates the kinase activity (P2) of protein B then P2 directly negatively regulated by P1." [GOC:dos]
-is_a: RO:0002022 ! directly regulated by
-inverse_of: RO:0002630 ! directly negatively regulates
-created_by: dos
-creation_date: 2017-09-17T13:52:38Z
-
-[Typedef]
-id: RO:0002024
-name: directly positively regulated by
-def: "Process(P2) is directly postively regulated by process(P1) iff: P1 positively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding positively regulates the kinase activity (P2) of protein B then P2 is directly postively regulated by P1." [GOC:dos]
-is_a: RO:0002022 ! directly regulated by
-inverse_of: RO:0002629 ! directly positively regulates
-created_by: dos
-creation_date: 2017-09-17T13:52:47Z
-
-[Typedef]
-id: RO:0002025
-name: has effector activity
-def: "A 'has effector activity' B if A and B are GO molecular functions (GO_0003674),  A 'has component activity' B and B is the effector (output function) of B.  Each compound function has only one effector activity." [GOC:dos]
-comment: This relation is designed for constructing compound molecular functions, typically in combination with one or more regulatory component activity relations.
-is_functional: true
-is_a: RO:0002017 ! has component activity
-is_a: RO:0002211 ! regulates
-created_by: dos
-creation_date: 2017-09-22T14:14:36Z
-
-[Typedef]
-id: RO:0002086
-name: ends after
-comment: X ends_after Y iff: end(Y) before_or_simultaneous_with end(X)
-subset: ro-eco
-property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
-is_transitive: true
-is_a: RO:0002222 ! temporally related to
-
-[Typedef]
-id: RO:0002087
-name: immediately preceded by
-comment: X immediately_preceded_by Y iff: end(X) simultaneous_with start(Y)
-property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
-property_value: IAO:0000118 "starts_at_end_of" xsd:string
-is_a: BFO:0000062 ! preceded by
-inverse_of: RO:0002090 ! immediately precedes
-
-[Typedef]
-id: RO:0002090
-name: immediately precedes
-comment: X immediately_precedes_Y iff: end(X) simultaneous_with start(Y)
-subset: ro-eco
-property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
-property_value: IAO:0000118 "ends_at_start_of" xsd:string
-property_value: IAO:0000118 "meets" xsd:string
-property_value: RO:0002575 BFO:0000063
-is_a: BFO:0000063 ! precedes
-
-[Typedef]
-id: RO:0002131
-name: overlaps
-def: "x overlaps y if and only if there exists some z such that x has part z and z part of y" []
-subset: ro-eco
-property_value: IAO:0000114 IAO:0000125
-property_value: RO:0001900 RO:0001901
-holds_over_chain: BFO:0000050 BFO:0000050
-holds_over_chain: has_part BFO:0000050
-holds_over_chain: has_part RO:0002131
-is_a: RO:0002323 ! mereotopologically related to
-expand_expression_to: "http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.obolibrary.org/obo/BFO_0000050 some ?Y)" []
-
-[Typedef]
-id: RO:0002170
-name: connected to
-def: "a is connected to b if and only if a and b are discrete structure, and there exists some connecting structure c, such that c connects a and b" []
-property_value: http://xmlns.com/foaf/0.1/page https://github.com/obophenotype/uberon/wiki/Connectivity-Design-Pattern xsd:anyURI
-property_value: http://xmlns.com/foaf/0.1/page https://github.com/obophenotype/uberon/wiki/Modeling-articulations-Design-Pattern xsd:anyURI
-property_value: IAO:0000112 "a 'toe distal phalanx bone' that is connected to a 'toe medial phalanx bone' (an interphalangeal joint *connects* these two bones)." xsd:string
-property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/22293552
-is_a: RO:0002323 ! mereotopologically related to
-
-[Typedef]
-id: RO:0002177
-name: attached to part of
-def: "a is attached to part of b if a is attached to b, or a is attached to some p, where p is part of b." []
-property_value: IAO:0000589 "attached to part of (anatomical structure to anatomical structure)" xsd:string
-holds_over_chain: RO:0002371 BFO:0000050
-is_a: RO:0002323 ! mereotopologically related to
-is_a: RO:0002567 ! biomechanically related to
-
-[Typedef]
-id: RO:0002180
-name: has component
-def: "w 'has component' p if w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type." []
-subset: ro-eco
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000116 "The definition of 'has component' is still under discussion. The challenge is in providing a definition that does not imply transitivity." xsd:string
-property_value: IAO:0000232 "For use in recording has_part with a cardinality constraint, because OWL does not permit cardinality constraints to be used in combination with transitive object properties. In situations where you would want to say something like 'has part exactly 5 digit, you would instead use has_component exactly 5 digit." xsd:string
-property_value: RO:0001900 RO:0001901
-property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:Componency
-is_a: has_part ! has part
-
-[Typedef]
-id: RO:0002202
-name: develops from
-def: "x develops from y if and only if either (a) x directly develops from y or (b) there exists some z such that x directly develops from z and z develops from y" []
-comment: This is the transitive form of the develops from relation
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
-property_value: IAO:0000117 "Melissa Haendel" xsd:string
-property_value: IAO:0000117 "Terry Meehan" xsd:string
-is_transitive: true
-is_a: RO:0002258 ! developmentally preceded by
-inverse_of: RO:0002203 ! develops into
-
-[Typedef]
-id: RO:0002203
-name: develops into
-def: "inverse of develops from" []
-subset: RO:0002259
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
-property_value: IAO:0000117 "Terry Meehan" xsd:string
-is_transitive: true
-is_a: RO:0002286 ! developmentally succeeded by
-is_a: RO:0002387 ! has potential to develop into
-is_a: RO:0002388 ! has potential to directly develop into
-
-[Typedef]
-id: RO:0002211
-name: regulates
-def: "process(P1) regulates process(P2) iff: P1 results in the initiation or termination of P2 OR affects the frequency of its initiation or termination OR affects the magnitude or rate of output of P2." []
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000116 "We use 'regulates' here to specifically imply control. However, many colloquial usages of the term correctly correspond to the weaker relation of 'causally upstream of or within' (aka influences). Consider relabeling to make things more explicit" xsd:string
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000117 "David Hill" xsd:string
-property_value: IAO:0000117 "Tanya Berardini" xsd:string
-property_value: IAO:0000119 "GO" xsd:string
-property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
-property_value: IAO:0000232 "Regulation precludes parthood; the regulatory process may not be within the regulated process." xsd:string
-property_value: IAO:0000589 "regulates (processual)" xsd:string
-property_value: IAO:0000600 "false" xsd:boolean
-holds_over_chain: RO:0002578 RO:0002578
-is_transitive: true
-is_a: RO:0002411 ! causally upstream of
-inverse_of: RO:0002334 ! regulated by
-
-[Typedef]
-id: RO:0002212
-name: negatively regulates
-def: "Process(P1) negatively regulates process(P2) iff: P1 terminates P2, or P1 descreases the the frequency of initiation of P2 or the magnitude or rate of output of P2." []
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
-property_value: IAO:0000589 "negatively regulates (process to process)" xsd:string
-property_value: RO:0004050 RO:0002211
-is_a: RO:0002211 ! regulates
-is_a: RO:0002305 ! causally upstream of, negative effect
-inverse_of: RO:0002335 ! negatively regulated by
-
-[Typedef]
-id: RO:0002213
-name: positively regulates
-def: "Process(P1) postively regulates process(P2) iff: P1 initiates P2, or P1 increases the the frequency of initiation of P2 or the magnitude or rate of output of P2." []
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
-property_value: IAO:0000589 "positively regulates (process to process)" xsd:string
-property_value: RO:0004049 RO:0002211
-holds_over_chain: RO:0002212 RO:0002212
-is_transitive: true
-is_a: RO:0002211 ! regulates
-is_a: RO:0002304 ! causally upstream of, positive effect
-inverse_of: RO:0002336 ! positively regulated by
-
-[Typedef]
-id: RO:0002215
-name: capable of
-def: "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. " []
-subset: ro-eco
-property_value: IAO:0000112 "mechanosensory neuron capable of detection of mechanical stimulus involved in sensory perception (GO:0050974)" xsd:string
-property_value: IAO:0000112 "osteoclast SubClassOf 'capable of' some 'bone resorption'" xsd:string
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000118 "has function realized in" xsd:string
-property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/20123131
-property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/21208450
-property_value: IAO:0000232 "For compatibility with BFO, this relation has a shortcut definition in which the expression \"capable of some P\" expands to \"bearer_of (some realized_by only P)\"." xsd:string
-is_a: RO:0002216 ! capable of part of
-expand_expression_to: "RO_0000053 some (RO_0000054 only ?Y)" []
-
-[Typedef]
-id: RO:0002216
-name: capable of part of
-def: "c stands in this relationship to p if and only if there exists some p' such that c is capable_of p', and p' is part_of p." []
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000118 "has function in" xsd:string
-property_value: seeAlso "defining-property-chains-involving-reflexivity"
-holds_over_chain: RO:0002215 BFO:0000050
-is_a: RO:0002328 ! functionally related to
-is_a: RO:0002500 ! causal agent in process
-expand_expression_to: "RO_0000053 some (RO_0000054 only (BFO_0000050 some ?Y))" []
-
-[Typedef]
-id: RO:0002217
-name: actively participates in
-def: "x actively participates in y if and only if x participates in y and x realizes some active role" []
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000118 "agent in" xsd:string
-is_a: RO:0000056 ! participates in
-inverse_of: RO:0002218 ! obsolete has active participant
-
-[Typedef]
-id: RO:0002218
-name: obsolete has active participant
-def: "x has participant y if and only if x realizes some active role that inheres in y" []
-subset: ro-eco
-property_value: IAO:0000112 "'heart development' has active participant some Shh protein" xsd:string
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000116 "This may be obsoleted and replaced by the original 'has agent' relation" xsd:string
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000118 "has agent" xsd:string
-is_a: RO:0000057 ! has participant
-is_obsolete: true
-
-[Typedef]
-id: RO:0002222
-name: temporally related to
-comment: A relation that holds between two occurrents. This is a grouping relation that collects together all the Allen relations.
-subset: ro-eco
-property_value: http://purl.org/dc/elements/1.1/source https://docs.google.com/document/d/1kBv1ep_9g3sTR-SD3jqzFqhuwo9TPNF-l-9fUDbO6rM/edit?pli=1 xsd:anyURI
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000119 https://en.wikipedia.org/wiki/Allen%27s_interval_algebra
-property_value: IAO:0000232 "Do not use this relation directly. It is ended as a grouping for relations between occurrents involving the relative timing of their starts and ends." xsd:string
-
-[Typedef]
-id: RO:0002233
-name: has input
-def: "p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p." []
-subset: ro-eco
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000118 "consumes" xsd:string
-is_a: RO:0000057 ! has participant
-inverse_of: RO:0002352 ! input of
-
-[Typedef]
-id: RO:0002234
-name: has output
-def: "p has output c iff c is a participant in p, c is present at the end of p, and c is not present at the beginning of p." []
-subset: ro-eco
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000118 "produces" xsd:string
-is_a: RO:0000057 ! has participant
-inverse_of: RO:0002353 ! output of
-
-[Typedef]
-id: RO:0002254
-name: has developmental contribution from
-def: "x has developmental contribution from y iff x has some part z such that z develops from y" []
-property_value: IAO:0000112 "Mammalian thymus has developmental contribution from some pharyngeal pouch 3; Mammalian thymus has developmental contribution from some pharyngeal pouch 4 [Kardong]" xsd:string
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-holds_over_chain: has_part RO:0002202
-is_a: RO:0002258 ! developmentally preceded by
-inverse_of: RO:0002255 ! developmentally contributes to
-
-[Typedef]
-id: RO:0002255
-name: developmentally contributes to
-def: "inverse of has developmental contribution from" []
-subset: RO:0002259
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-holds_over_chain: RO:0002203 BFO:0000050
-is_a: RO:0002286 ! developmentally succeeded by
-is_a: RO:0002385 ! has potential to developmentally contribute to
-
-[Typedef]
-id: RO:0002258
-name: developmentally preceded by
-def: "Candidate definition: x developmentally related to y if and only if there exists some developmental process (GO:0032502) p such that x and y both participates in p, and x is the output of p and y is the input of p" []
-comment: This relation groups together various other developmental relations. It is fairly generic, encompassing induction, developmental contribution and direct and transitive develops from
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000116 "false" xsd:boolean
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000232 "In general you should not use this relation to make assertions - use one of the more specific relations below this one" xsd:string
-is_a: RO:0002324 ! developmentally related to
-inverse_of: RO:0002286 ! developmentally succeeded by
-
-[Typedef]
-id: RO:0002263
-name: acts upstream of
-def: "c acts upstream of p if and only if c enables some f that is involved in p' and p' occurs chronologically before p, is not part of p, and affects the execution of p. c is a material entity and f, p, p' are processes." []
-property_value: IAO:0000112 "A faulty traffic light (material entity) whose malfunctioning (a process) is causally upstream of a traffic collision (a process): the traffic light acts upstream of the collision." xsd:string
-property_value: seeAlso http://wiki.geneontology.org/index.php/Acts_upstream_of
-holds_over_chain: RO:0002327 RO:0002411
-is_a: RO:0002264 ! acts upstream of or within
-
-[Typedef]
-id: RO:0002264
-name: acts upstream of or within
-def: "c acts upstream of or within p if c is enables f, and f is causally upstream of or within p. c is a material entity and p is an process." []
-synonym: "affects" RELATED []
-property_value: IAO:0000112 "A gene product that has some activity, where that activity may be a part of a pathway or upstream of the pathway." xsd:string
-property_value: seeAlso http://wiki.geneontology.org/index.php/Acts_upstream_of_or_within
-holds_over_chain: RO:0002327 RO:0002418
-is_a: RO:0002500 ! causal agent in process
-
-[Typedef]
-id: RO:0002286
-name: developmentally succeeded by
-def: "Inverse of developmentally preceded by" []
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-is_a: RO:0002384 ! has developmental potential involving
-
-[Typedef]
-id: RO:0002304
-name: causally upstream of, positive effect
-comment: holds between x and y if and only if x is causally upstream of y and the progression of x increases the frequency, rate or extent of y
-property_value: http://purl.org/dc/elements/1.1/creator "cjm" xsd:string
-property_value: RO:0004049 RO:0002411
-is_a: RO:0002411 ! causally upstream of
-is_a: RO:0004047 ! causally upstream of or within, positive effect
-
-[Typedef]
-id: RO:0002305
-name: causally upstream of, negative effect
-comment: holds between x and y if and only if x is causally upstream of y and the progression of x decreases the frequency, rate or extent of y
-property_value: http://purl.org/dc/elements/1.1/creator "cjm" xsd:string
-property_value: RO:0004050 RO:0002411
-is_a: RO:0002411 ! causally upstream of
-is_a: RO:0004046 ! causally upstream of or within, negative effect
-
-[Typedef]
-id: RO:0002314
-name: inheres in part of
-def: "q inheres in part of w if and only if there exists some p such that q inheres in p and p part of w." []
-property_value: IAO:0000116 "Because part_of is transitive, inheres in is a sub-relation of inheres in part of" xsd:string
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/20064205
-property_value: RO:0001900 RO:0001901
-property_value: seeAlso "defining-property-chains-involving-reflexivity"
-holds_over_chain: RO:0000052 BFO:0000050
-is_a: RO:0002502 ! depends on
-transitive_over: BFO:0000050 ! part of
-
-[Typedef]
-id: RO:0002323
-name: mereotopologically related to
-def: "A mereological relationship or a topological relationship" []
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000232 "Do not use this relation directly. It is ended as a grouping for a diverse set of relations, all involving parthood or connectivity relationships" xsd:string
-property_value: RO:0001900 RO:0001901
-
-[Typedef]
-id: RO:0002324
-name: developmentally related to
-def: "A relationship that holds between entities participating in some developmental process (GO:0032502)" []
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000232 "Do not use this relation directly. It is ended as a grouping for a diverse set of relations, all involving organismal development" xsd:string
-
-[Typedef]
-id: RO:0002327
-name: enables
-property_value: IAO:0000112 "a particular instances of akt-2 enables some instance of protein kinase activity" xsd:string
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000118 "catalyzes" xsd:string
-property_value: IAO:0000118 "executes" xsd:string
-property_value: IAO:0000118 "has" xsd:string
-property_value: IAO:0000118 "is catalyzing" xsd:string
-property_value: IAO:0000118 "is executing" xsd:string
-property_value: IAO:0000232 "This relation differs from the parent relation 'capable of' in that the parent is weaker and only expresses a capability that may not be actually realized, whereas this relation is always realized." xsd:string
-property_value: IAO:0000232 "This relation is currently used experimentally by the Gene Ontology Consortium. It may not be stable and may be obsoleted at some future time." xsd:string
-is_a: RO:0002215 ! capable of
-inverse_of: RO:0002333 ! enabled by
-transitive_over: has_part ! has part
-transitive_over: RO:0002017 ! has component activity
-
-[Typedef]
-id: RO:0002328
-name: functionally related to
-def: "A grouping relationship for any relationship directly involving a function, or that holds because of a function of one of the related entities." []
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000232 "This is a grouping relation that collects relations used for the purpose of connecting structure and function" xsd:string
-
-[Typedef]
-id: RO:0002329
-name: part of structure that is capable of
-def: "this relation holds between c and p when c is part of some c', and c' is capable of p." []
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000118 "false" xsd:boolean
-holds_over_chain: BFO:0000050 RO:0002215
-is_a: RO:0002328 ! functionally related to
-
-[Typedef]
-id: RO:0002331
-name: involved in
-def: "c involved_in p if and only if c enables some process p', and p' is part of p" []
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000118 "actively involved in" xsd:string
-property_value: IAO:0000118 "enables part of" xsd:string
-property_value: seeAlso Involved:in
-holds_over_chain: RO:0002327 BFO:0000050
-is_a: RO:0002217 ! actively participates in
-is_a: RO:0002431 ! involved in or involved in regulation of
-transitive_over: BFO:0000050 ! part of
-
-[Typedef]
-id: RO:0002333
-name: enabled by
-def: "inverse of enables" []
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-is_a: RO:0000057 ! has participant
-is_a: RO:0002328 ! functionally related to
-
-[Typedef]
-id: RO:0002334
-name: regulated by
-def: "inverse of regulates" []
-subset: RO:0002259
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000589 "regulated by (processual)" xsd:string
-is_transitive: true
-is_a: RO:0002427 ! causally downstream of or within
-
-[Typedef]
-id: RO:0002335
-name: negatively regulated by
-def: "inverse of negatively regulates" []
-subset: RO:0002259
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-is_a: RO:0002334 ! regulated by
-
-[Typedef]
-id: RO:0002336
-name: positively regulated by
-def: "inverse of positively regulates" []
-subset: RO:0002259
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-is_a: RO:0002334 ! regulated by
-
-[Typedef]
-id: RO:0002337
-name: related via localization to
-def: "A relationship that holds via some process of localization" []
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000232 "Do not use this relation directly. It is a grouping relation." xsd:string
-
-[Typedef]
-id: RO:0002352
-name: input of
-def: "inverse of has input" []
-subset: ro-eco
-subset: RO:0002259
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-is_a: RO:0000056 ! participates in
-is_a: RO:0002328 ! functionally related to
-
-[Typedef]
-id: RO:0002353
-name: output of
-def: "inverse of has output" []
-subset: ro-eco
-subset: RO:0002259
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-is_a: RO:0000056 ! participates in
-is_a: RO:0002328 ! functionally related to
-
-[Typedef]
-id: RO:0002371
-name: attached to
-def: "a is attached to b if and only if a and b are discrete objects or object parts, and there are physical connections between a and b such that a force pulling a will move b, or a force pulling b will move a" []
-subset: ro-eco
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000589 "attached to (anatomical structure to anatomical structure)" xsd:string
-is_symmetric: true
-is_a: RO:0002170 ! connected to
-is_a: RO:0002177 ! attached to part of
-
-[Typedef]
-id: RO:0002375
-name: in branching relationship with
-def: "A relationship that holds between two material entities in a system of connected structures, where the branching relationship holds based on properties of the connecting network." []
-property_value: http://xmlns.com/foaf/0.1/page https://github.com/obophenotype/uberon/issues/170 xsd:anyURI
-property_value: IAO:0000114 IAO:0000428
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000232 "Do not use this relation directly. It is ended as a grouping for a diverse set of relations, all involving branching relationships" xsd:string
-property_value: IAO:0000232 "This relation can be used for geographic features (e.g. rivers) as well as anatomical structures (plant branches and roots, leaf veins, animal veins, arteries, nerves)" xsd:string
-property_value: seeAlso http://purl.obolibrary.org/obo/ro/docs/branching_part_of.png
-is_a: BFO:0000050 ! part of
-is_a: RO:0002323 ! mereotopologically related to
-
-[Typedef]
-id: RO:0002384
-name: has developmental potential involving
-def: "x has developmental potential involving y iff x is capable of a developmental process with output y. y may be the successor of x, or may be a different structure in the vicinity (as for example in the case of developmental induction)." []
-property_value: IAO:0000114 IAO:0000428
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-is_a: RO:0002324 ! developmentally related to
-
-[Typedef]
-id: RO:0002385
-name: has potential to developmentally contribute to
-def: "x has potential to developmentrally contribute to y iff x developmentally contributes to y or x is capable of developmentally contributing to y" []
-property_value: IAO:0000114 IAO:0000428
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-is_a: RO:0002384 ! has developmental potential involving
-
-[Typedef]
-id: RO:0002387
-name: has potential to develop into
-def: "x has the potential to develop into y iff x develops into y or if x is capable of developing into y" []
-property_value: IAO:0000114 IAO:0000428
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-is_a: RO:0002384 ! has developmental potential involving
-
-[Typedef]
-id: RO:0002388
-name: has potential to directly develop into
-def: "x has potential to directly develop into y iff x directly develops into y or x is capable of directly developing into y" []
-property_value: IAO:0000114 IAO:0000428
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-is_a: RO:0002387 ! has potential to develop into
-
-[Typedef]
-id: RO:0002404
-name: causally downstream of
-def: "inverse of upstream of" []
-property_value: IAO:0000114 IAO:0000428
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-is_a: BFO:0000062 ! preceded by
-is_a: RO:0002427 ! causally downstream of or within
-inverse_of: RO:0002411 ! causally upstream of
-
-[Typedef]
-id: RO:0002405
-name: immediately causally downstream of
-property_value: IAO:0000114 IAO:0000428
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-is_a: RO:0002087 ! immediately preceded by
-is_a: RO:0002404 ! causally downstream of
-inverse_of: RO:0002412 ! immediately causally upstream of
-
-[Typedef]
-id: RO:0002410
-name: causally related to
-def: "This relation groups causal relations between material entities and causal relations between processes" []
-property_value: IAO:0000114 IAO:0000428
-property_value: IAO:0000116 "This branch of the ontology deals with causal relations between entities. It is divided into two branches: causal relations between occurrents/processes, and causal relations between material entities. We take an 'activity flow-centric approach', with the former as primary, and define causal relations between material entities in terms of causal relations between occurrents.\n\nTo define causal relations in an activity-flow type network, we make use of 3 primitives:\n\n * Temporal: how do the intervals of the two occurrents relate? \n * Is the causal relation regulatory?\n * Is the influence positive or negative\n\nThe first of these can be formalized in terms of the Allen Interval Algebra. Informally, the 3 bins we care about are 'direct', 'indirect' or overlapping. Note that all causal relations should be classified under a RO temporal relation (see the branch under 'temporally related to'). Note that all causal relations are temporal, but not all temporal relations are causal. Two occurrents can be related in time without being causally connected. We take causal influence to be primitive, elucidated as being such that has the upstream changed, some qualities of the donwstream would necessarily be modified.\n\nFor the second, we consider a relationship to be regulatory if the system in which the activities occur is capable of altering the relationship to achieve some objective. This could include changing the rate of production of a molecule.\n\nFor the third, we consider the effect of the upstream process on the output(s) of the downstream process. If the level of output is increased, or the rate of production of the output is increased, then the direction is increased. Direction can be positive, negative or neutral or capable of either direction. Two positives in succession yield a positive, two negatives in succession yield a positive, otherwise the default assumption is that the net effect is canceled and the influence is neutral.\n\nEach of these 3 primitives can be composed to yield a cross-product of different relation types." xsd:string
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000232 "Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect." xsd:string
-
-[Typedef]
-id: RO:0002411
-name: causally upstream of
-def: "p is causally upstream of q if and only if p precedes q and p and q are linked in a causal chain" []
-property_value: IAO:0000114 IAO:0000428
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-is_transitive: true
-is_a: BFO:0000063 ! precedes
-is_a: RO:0002418 ! causally upstream of or within
-
-[Typedef]
-id: RO:0002412
-name: immediately causally upstream of
-def: "p is immediately causally upstream of q iff both (a) p immediately precedes q and (b) p is causally upstream of q. In addition, the output of p  must be an input of q." []
-property_value: IAO:0000114 IAO:0000428
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: RO:0002575 RO:0002411
-is_a: RO:0002090 ! immediately precedes
-is_a: RO:0002411 ! causally upstream of
-
-[Typedef]
-id: RO:0002418
-name: causally upstream of or within
-def: "p 'causally upstream or within' q iff (1) the end of p is before the end of q and (2) the execution of p exerts some causal influence over the outputs of q; i.e. if p was abolished or the outputs of p were to be modified, this would necessarily affect q." []
-synonym: "affects" RELATED []
-property_value: IAO:0000116 "We would like to make this disjoint with 'preceded by', but this is prohibited in OWL2" xsd:string
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000118 "influences (processual)" xsd:string
-is_transitive: true
-is_a: RO:0002501 ! causal relation between processes
-inverse_of: RO:0002427 ! causally downstream of or within
-
-[Typedef]
-id: RO:0002427
-name: causally downstream of or within
-def: "inverse of causally upstream of or within" []
-subset: RO:0002259
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
-is_transitive: true
-is_a: RO:0002501 ! causal relation between processes
-
-[Typedef]
-id: RO:0002428
-name: involved in regulation of
-def: "c involved in regulation of p if c is involved in some p' and p' regulates some p" []
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-holds_over_chain: RO:0002327 RO:0002211
-holds_over_chain: RO:0002331 RO:0002211
-is_a: RO:0002263 ! acts upstream of
-is_a: RO:0002431 ! involved in or involved in regulation of
-
-[Typedef]
-id: RO:0002429
-name: involved in positive regulation of
-def: "c involved in regulation of p if c is involved in some p' and p' positively regulates some p" []
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: RO:0004049 RO:0002428
-holds_over_chain: RO:0002327 RO:0002213
-holds_over_chain: RO:0002331 RO:0002213
-is_a: RO:0002428 ! involved in regulation of
-
-[Typedef]
-id: RO:0002430
-name: involved in negative regulation of
-def: "c involved in regulation of p if c is involved in some p' and p' negatively regulates some p" []
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: RO:0004050 RO:0002428
-holds_over_chain: RO:0002327 RO:0002212
-holds_over_chain: RO:0002331 RO:0002212
-is_a: RO:0002428 ! involved in regulation of
-
-[Typedef]
-id: RO:0002431
-name: involved in or involved in regulation of
-def: "c involved in or regulates p if and only if either (i) c is involved in p or (ii) c is involved in regulation of p" []
-property_value: IAO:0000116 "OWL does not allow defining object properties via a Union" xsd:string
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000118 "involved in or reguates" xsd:string
-is_a: RO:0002264 ! acts upstream of or within
-is_a: RO:0002328 ! functionally related to
-is_a: RO:0002500 ! causal agent in process
-
-[Typedef]
-id: RO:0002432
-name: is active in
-def: "c executes activity in d if and only if c enables p and p occurs_in d.  Assuming no action at a distance by gene products, if a gene product enables (is capable of) a process that occurs in some structure, it must have at least some part in that structure." [GOC:cjm, GOC:dos]
-synonym: "enables activity in" EXACT []
-property_value: IAO:0000112 "A protein that enables activity in a cytosol." xsd:string
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000118 "executes activity in" xsd:string
-holds_over_chain: RO:0002327 BFO:0000066
-is_a: RO:0002131 ! overlaps
-is_a: RO:0002328 ! functionally related to
-
-[Typedef]
-id: RO:0002434
-name: interacts with
-def: "A relationship that holds between two entities in which the processes executed by the two entities are causally connected." []
-subset: ro-eco
-synonym: "in pairwise interaction with" EXACT []
-property_value: http://xmlns.com/foaf/0.1/page https://github.com/oborel/obo-relations/wiki/InteractionRelations xsd:anyURI
-property_value: IAO:0000116 "Considering relabeling as 'pairwise interacts with'" xsd:anyURI
-property_value: IAO:0000116 "This relation and all sub-relations can be applied to either (1) pairs of entities that are interacting at any moment of time (2) populations or species of entity whose members have the disposition to interact (3) classes whose members have the disposition to interact." xsd:string
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000232 "Note that this relationship type, and sub-relationship types may be redundant with process terms from other ontologies. For example, the symbiotic relationship hierarchy parallels GO. The relations are provided as a convenient shortcut. Consider using the more expressive processual form to capture your data. In the future, these relations will be linked to their cognate processes through rules." xsd:string
-property_value: seeAlso http://purl.obolibrary.org/obo/MI_0914 xsd:anyURI
-is_symmetric: true
-
-[Typedef]
-id: RO:0002436
-name: molecularly interacts with
-def: "An interaction relationship in which the two partners are molecular entities that directly physically interact with each other for example via a stable binding interaction or a brief interaction during which one modifies the other." []
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000118 "binds" xsd:string
-property_value: IAO:0000118 "molecularly binds with" xsd:string
-property_value: seeAlso ECO:0000353
-property_value: seeAlso http://purl.obolibrary.org/obo/MI_0915 xsd:anyURI
-is_symmetric: true
-is_a: RO:0002434 ! interacts with
-
-[Typedef]
-id: RO:0002447
-name: phosphorylates
-property_value: IAO:0000116 "Axiomatization to GO to be added later" xsd:string
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000118 "An interaction relation between x and y in which x catalyzes a reaction in which a phosphate group is added to y." xsd:string
-is_a: RO:0002436 ! molecularly interacts with
-
-[Typedef]
-id: RO:0002448
-name: activity directly regulates activity of
-def: "Holds between molecular entities A and B where A can physically interact with B and in doing so regulates a process that B is capable of.  For example, A and B may be gene products and binding of B by A regulates the kinase activity of B." []
-synonym: "molecularly controls" EXACT []
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-is_a: RO:0002436 ! molecularly interacts with
-is_a: RO:0002566 ! causally influences
-
-[Typedef]
-id: RO:0002449
-name: activity directly negatively regulates activity of
-def: "Holds between molecular entities A and B where A can physically interact with B and in doing so negatively regulates a process that B is capable of.  For example, A and B may be gene products and binding of B by A negatively regulates the kinase activity of B." []
-synonym: "molecularly decreases activity of" EXACT []
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000118 "inhibits" xsd:string
-is_a: RO:0002448 ! activity directly regulates activity of
-
-[Typedef]
-id: RO:0002450
-name: activity directly positively regulates activity of
-def: "Holds between molecular entities A and B where A can physically interact with B and in doing so positively regulates a process that B is capable of.  For example, A and B may be gene products and binding of B by A positively regulates the kinase activity of B." []
-synonym: "molecularly increases activity of" EXACT []
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000118 "activates" xsd:string
-is_a: RO:0002448 ! activity directly regulates activity of
-
-[Typedef]
-id: RO:0002464
-name: helper property (not for use in curation)
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000232 "This property or its subproperties is not to be used directly. These properties exist as helper properties that are used to support OWL reasoning." xsd:string
-
-[Typedef]
-id: RO:0002479
-name: has part that occurs in
-def: "p has part that occurs in c if and only if there exists some p1, such that p has_part p1, and p1 occurs in c." []
-subset: ro-eco
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-holds_over_chain: has_part BFO:0000066
-
-[Typedef]
-id: RO:0002481
-name: is kinase activity
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-is_a: RO:0002564 ! molecular interaction relation helper property
-
-[Typedef]
-id: RO:0002500
-name: causal agent in process
-def: "A relationship between a material entity and a process where the material entity has some causal role that influences the process" []
-property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
-is_a: RO:0002595 ! causal relation between material entity and a process
-inverse_of: RO:0002608 ! process has causal agent
-
-[Typedef]
-id: RO:0002501
-name: causal relation between processes
-def: "p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one of direct activation or direct inhibition. p may be upstream, downstream, part of or a container of q." []
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
-property_value: IAO:0000232 "Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect." xsd:string
-is_a: RO:0002410 ! causally related to
-
-[Typedef]
-id: RO:0002502
-name: depends on
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: seeAlso BFO:0000169
-
-[Typedef]
-id: RO:0002506
-name: causal relation between material entities
-property_value: IAO:0000116 "The intent is that the process branch of the causal property hierarchy is primary (causal relations hold between occurrents/processes), and that the material branch is defined in terms of the process branch" xsd:string
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
-property_value: IAO:0000232 "Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect." xsd:string
-is_a: RO:0002410 ! causally related to
-
-[Typedef]
-id: RO:0002509
-name: determined by part of
-def: "s 'determined by part of' w if and only if there exists some f such that (1) s 'determined by' f and (2) f part_of w, or f=w." []
-subset: ro-eco
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-is_a: RO:0002131 ! overlaps
-is_a: RO:0002506 ! causal relation between material entities
-
-[Typedef]
-id: RO:0002514
-name: sequentially related to
-def: "A relation that holds between two entities that have the property of being sequences or having sequences. " []
-property_value: http://purl.org/spar/cito/citesAsAuthority http://biorxiv.org/content/early/2014/06/27/006650.abstract
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/20226267 xsd:anyURI
-property_value: IAO:0000232 "Do not use this relation directly. It is ended as a grouping for a diverse set of relations, all involving cause and effect." xsd:string
-property_value: IAO:0000232 "The domain and range of this relation include entities such as: information-bearing macromolecules such as DNA, or regions of these molecules; abstract information entities encoded as a linear sequence including text, abstract DNA sequences; Sequence features, entities that have a sequence or sequences. Note that these entities are not necessarily contiguous - for example, the mereological sum of exons on a genome of a particular gene." xsd:string
-
-[Typedef]
-id: RO:0002522
-name: bounds sequence of
-def: "x bounds the sequence of y iff the upstream-most part of x is upstream of or coincident with the upstream-most part of y, and the downstream-most part of x is downstream of or coincident with the downstream-most part of y" []
-property_value: http://purl.org/spar/cito/citesAsAuthority http://biorxiv.org/content/early/2014/06/27/006650.abstract
-property_value: IAO:0000112 "The genomic exons of a transcript bound the sequence of the genomic introns of the same transcript (but the introns are not subsequences of the exons)" xsd:string
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-is_transitive: true
-is_a: RO:0002514 ! sequentially related to
-inverse_of: RO:0002523 ! is bound by sequence of
-
-[Typedef]
-id: RO:0002523
-name: is bound by sequence of
-def: "inverse of bounds sequence of" []
-subset: RO:0002259
-property_value: http://purl.org/spar/cito/citesAsAuthority http://biorxiv.org/content/early/2014/06/27/006650.abstract
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-is_transitive: true
-is_a: RO:0002514 ! sequentially related to
-
-[Typedef]
-id: RO:0002524
-name: has subsequence
-def: "x has subsequence y iff all of the sequence parts of x are sequence parts of y" []
-property_value: http://purl.org/spar/cito/citesAsAuthority http://biorxiv.org/content/early/2014/06/27/006650.abstract
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000118 "contains" xsd:string
-property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/20226267 xsd:anyURI
-is_transitive: true
-is_a: has_part ! has part
-is_a: RO:0002522 ! bounds sequence of
-is_a: RO:0002526 ! overlaps sequence of
-inverse_of: RO:0002525 ! is subsequence of
-
-[Typedef]
-id: RO:0002525
-name: is subsequence of
-def: "inverse of has subsequence" []
-subset: RO:0002259
-property_value: http://purl.org/spar/cito/citesAsAuthority http://biorxiv.org/content/early/2014/06/27/006650.abstract
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000118 "contained by" xsd:string
-is_transitive: true
-is_a: BFO:0000050 ! part of
-is_a: RO:0002523 ! is bound by sequence of
-is_a: RO:0002526 ! overlaps sequence of
-
-[Typedef]
-id: RO:0002526
-name: overlaps sequence of
-def: "x overlaps the sequence of x if and only if x has a subsequence z and z is a subsequence of y." []
-property_value: http://purl.org/spar/cito/citesAsAuthority http://biorxiv.org/content/early/2014/06/27/006650.abstract
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-holds_over_chain: RO:0002524 RO:0002525
-is_symmetric: true
-is_a: RO:0002131 ! overlaps
-is_a: RO:0002514 ! sequentially related to
-
-[Typedef]
-id: RO:0002559
-name: causally influenced by
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
-property_value: IAO:0000589 "causally influenced by (material entity to material entity)" xsd:string
-is_a: RO:0002506 ! causal relation between material entities
-inverse_of: RO:0002566 ! causally influences
-
-[Typedef]
-id: RO:0002563
-name: interaction relation helper property
-property_value: http://xmlns.com/foaf/0.1/page https://github.com/oborel/obo-relations/wiki/InteractionRelations xsd:anyURI
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:N-Ary_Relation_Pattern_%28OWL_2%29
-is_a: RO:0002464 ! helper property (not for use in curation)
-
-[Typedef]
-id: RO:0002564
-name: molecular interaction relation helper property
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-is_a: RO:0002563 ! interaction relation helper property
-
-[Typedef]
-id: RO:0002566
-name: causally influences
-def: "Holds between materal entities a and b if the activity of a is causally upstream of the activity of b, or causally upstream of a an activity that modifies b" []
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
-property_value: IAO:0000589 "causally influences (material entity to material entity)" xsd:string
-is_a: RO:0002506 ! causal relation between material entities
-
-[Typedef]
-id: RO:0002567
-name: biomechanically related to
-def: "A relation that holds between elements of a musculoskeletal system or its analogs." []
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000232 "Do not use this relation directly. It is ended as a grouping for a diverse set of relations, all involving the biomechanical processes." xsd:string
-is_a: RO:0002328 ! functionally related to
-
-[Typedef]
-id: RO:0002578
-name: directly regulates
-def: "Process(P1) directly regulates process(P2) iff: P1 regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  regulates the kinase activity (P2) of protein B then P1 directly regulates P2." []
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
-property_value: IAO:0000589 "directly regulates (processual)" xsd:string
-property_value: RO:0002575 RO:0002211
-is_a: RO:0002211 ! regulates
-is_a: RO:0002412 ! immediately causally upstream of
-
-[Typedef]
-id: RO:0002584
-name: has part structure that is capable of
-def: "s 'has part structure that is capable of' p if and only if there exists some part x such that s 'has part' x and x 'capable of' p" []
-property_value: IAO:0000112 "gland SubClassOf 'has part structure that is capable of' some 'secretion by cell'" xsd:string
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-holds_over_chain: has_part RO:0002215
-is_a: RO:0002328 ! functionally related to
-is_a: RO:0002595 ! causal relation between material entity and a process
-
-[Typedef]
-id: RO:0002592
-name: results in organization of
-def: "p results in organization of c iff p results in the assembly, arrangement of constituent parts, or disassembly of c" []
-is_a: RO:0040036 ! has anatomical participant
-
-[Typedef]
-id: RO:0002595
-name: causal relation between material entity and a process
-def: "A relationship that holds between a material entity and a process in which causality is involved, with either the material entity or some part of the material entity exerting some influence over the process, or the process influencing some aspect of the material entity." []
-property_value: IAO:0000116 "Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect." xsd:string
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
-is_a: RO:0002410 ! causally related to
-
-[Typedef]
-id: RO:0002596
-name: capable of regulating
-def: "Holds between c and p if and only if c is capable of some activity a, and a regulates p." []
-property_value: IAO:0000112 "pyrethroid -> growth" xsd:string
-property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
-holds_over_chain: RO:0002215 RO:0002211
-is_a: RO:0002500 ! causal agent in process
-
-[Typedef]
-id: RO:0002597
-name: capable of negatively regulating
-def: "Holds between c and p if and only if c is capable of some activity a, and a negatively regulates p." []
-property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
-holds_over_chain: RO:0002215 RO:0002212
-is_a: RO:0002596 ! capable of regulating
-
-[Typedef]
-id: RO:0002598
-name: capable of positively regulating
-def: "Holds between c and p if and only if c is capable of some activity a, and a positively regulates p." []
-property_value: IAO:0000112 "renin -> arteriolar smooth muscle contraction" xsd:string
-property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
-holds_over_chain: RO:0002215 RO:0002213
-is_a: RO:0002596 ! capable of regulating
-
-[Typedef]
-id: RO:0002608
-name: process has causal agent
-def: "Inverse of 'causal agent in process'" []
-property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
-is_a: RO:0002410 ! causally related to
-
-[Typedef]
-id: RO:0002629
-name: directly positively regulates
-def: "Process(P1) directly postively regulates process(P2) iff: P1 positively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding positively regulates the kinase activity (P2) of protein B then P1 directly positively regulates P2." []
-property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
-property_value: IAO:0000589 "directly positively regulates (process to process)" xsd:string
-property_value: RO:0004049 RO:0002578
-is_a: RO:0002213 ! positively regulates
-is_a: RO:0002578 ! directly regulates
-
-[Typedef]
-id: RO:0002630
-name: directly negatively regulates
-def: "Process(P1) directly negatively regulates process(P2) iff: P1 negatively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  negatively regulates the kinase activity (P2) of protein B then P1 directly negatively regulates P2." []
-property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
-property_value: IAO:0000589 "directly negatively regulates (process to process)" xsd:string
-property_value: RO:0004050 RO:0002578
-is_a: RO:0002212 ! negatively regulates
-is_a: RO:0002578 ! directly regulates
-
-[Typedef]
-id: RO:0003000
-name: produces
-def: "a produces b if some process that occurs_in a has_output b, where a and b are material entities. Examples: hybridoma cell line produces monoclonal antibody reagent; chondroblast produces avascular GAG-rich matrix." []
-comment: Note that this definition doesn't quite distinguish the output of a transformation process from a production process, which is related to the identity/granularity issue.
-subset: ro-eco
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000117 "Melissa Haendel" xsd:string
-inverse_of: RO:0003001 ! produced by
-
-[Typedef]
-id: RO:0003001
-name: produced by
-def: "a produced_by b iff some process that occurs_in b has_output a." []
-subset: ro-eco
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000117 "Melissa Haendel" xsd:string
-
-[Typedef]
-id: RO:0004007
-name: has primary input or output
-def: "p 'has primary input ot output' c iff either (a) p 'has primary input' c or (b) p 'has primary output' c." []
-is_a: RO:0000057 ! has participant
-created_by: cjm
-creation_date: 2018-12-13T11:26:17Z
-
-[Typedef]
-id: RO:0004031
-name: enables subfunction
-def: "Holds between an entity and an process P where the entity enables some larger compound process, and that larger process has-part P." []
-holds_over_chain: RO:0002327 has_part
-is_a: RO:0002328 ! functionally related to
-created_by: cjm
-creation_date: 2018-01-25T23:20:13Z
-
-[Typedef]
-id: RO:0004032
-name: acts upstream of or within, positive effect
-property_value: RO:0004049 RO:0002264
-property_value: seeAlso http://wiki.geneontology.org/index.php/Acts_upstream_of_or_within,_positive_effect
-holds_over_chain: RO:0002327 RO:0004047
-is_a: RO:0002264 ! acts upstream of or within
-created_by: cjm
-creation_date: 2018-01-26T23:49:30Z
-
-[Typedef]
-id: RO:0004033
-name: acts upstream of or within, negative effect
-property_value: RO:0004050 RO:0002264
-holds_over_chain: RO:0002327 RO:0004046
-is_a: RO:0002264 ! acts upstream of or within
-created_by: cjm
-creation_date: 2018-01-26T23:49:51Z
-
-[Typedef]
-id: RO:0004034
-name: acts upstream of, positive effect
-def: "c 'acts upstream of, positive effect' p if c is enables f, and f is causally upstream of p, and the direction of f is positive" []
-property_value: RO:0004049 RO:0002263
-property_value: seeAlso http://wiki.geneontology.org/index.php/Acts_upstream_of,_positive_effect
-holds_over_chain: RO:0002327 RO:0002304
-is_a: RO:0002263 ! acts upstream of
-is_a: RO:0004032 ! acts upstream of or within, positive effect
-created_by: cjm
-creation_date: 2018-01-26T23:53:14Z
-
-[Typedef]
-id: RO:0004035
-name: acts upstream of, negative effect
-def: "c 'acts upstream of, negative effect' p if c is enables f, and f is causally upstream of p, and the direction of f is negative" []
-property_value: RO:0004050 RO:0002263
-property_value: seeAlso http://wiki.geneontology.org/index.php/Acts_upstream_of,_negative_effect
-holds_over_chain: RO:0002327 RO:0002305
-is_a: RO:0002263 ! acts upstream of
-is_a: RO:0004033 ! acts upstream of or within, negative effect
-created_by: cjm
-creation_date: 2018-01-26T23:53:22Z
-
-[Typedef]
-id: RO:0004046
-name: causally upstream of or within, negative effect
-property_value: RO:0004050 RO:0002418
-is_a: RO:0002418 ! causally upstream of or within
-created_by: cjm
-creation_date: 2018-03-13T23:55:05Z
-
-[Typedef]
-id: RO:0004047
-name: causally upstream of or within, positive effect
-property_value: RO:0004049 RO:0002418
-is_a: RO:0002418 ! causally upstream of or within
-created_by: cjm
-creation_date: 2018-03-13T23:55:19Z
-
-[Typedef]
-id: RO:0040035
-name: disease relationship
-def: "This relation groups  relations between diseases and any other kind of entity." []
-property_value: IAO:0000232 "Do not use this relation directly. It is intended as a grouping for a diverse set of relations, in which the subject or object is a disease." xsd:string
-created_by: cjm
-creation_date: 2018-09-26T00:00:32Z
-
-[Typedef]
-id: RO:0040036
-name: has anatomical participant
-def: "p has anatomical participant c iff p has participant c, and c is an anatomical entity" []
-is_a: RO:0000057 ! has participant
-created_by: cjm
-creation_date: 2018-09-26T01:08:58Z
-
-[Typedef]
 id: conditionality
 name: conditionality
-
-[Typedef]
-id: has_functional_parent
-name: has functional parent
-namespace: chebi_ontology
-is_cyclic: false
-is_transitive: false
-
-[Typedef]
-id: has_parent_hydride
-name: has parent hydride
-namespace: chebi_ontology
-is_cyclic: false
-is_transitive: false
-
-[Typedef]
-id: has_part
-name: has part
-namespace: chebi_ontology
-def: "a core relation that holds between a whole and its part" []
-xref: BFO:0000051
-property_value: IAO:0000111 "has part" xsd:string
-property_value: IAO:0000112 "my body has part my brain (continuant parthood, two material entities)" xsd:string
-property_value: IAO:0000112 "my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)" xsd:string
-property_value: IAO:0000112 "this year has part this day (occurrent parthood)" xsd:string
-property_value: IAO:0000116 "Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part." xsd:string
-property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
-property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)\n\nA continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'." xsd:string
-property_value: IAO:0000118 "has_part" xsd:string
-property_value: RO:0001900 RO:0001901
-is_cyclic: false
-is_transitive: true
-is_a: RO:0002131 ! overlaps
-
-[Typedef]
-id: has_role
-name: has role
-namespace: chebi_ontology
-namespace: FlyBase_miscellaneous_CV
-def: "a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence" []
-xref: RO:0000087
-property_value: IAO:0000112 "this person has role this investigator role (more colloquially: this person has this role of investigator)" xsd:string
-property_value: IAO:0000116 "A bearer can have many roles, and its roles can exist for different periods of time, but none of its roles can exist when the bearer does not exist. A role need not be realized at all the times that the role exists." xsd:string
-property_value: IAO:0000118 "has_role" xsd:string
-is_cyclic: false
-is_transitive: false
-is_a: RO:0000053 ! bearer of
-
-[Typedef]
-id: is_conjugate_acid_of
-name: is conjugate acid of
-namespace: chebi_ontology
-is_cyclic: true
-is_transitive: false
-inverse_of: is_conjugate_base_of ! is conjugate base of
-
-[Typedef]
-id: is_conjugate_base_of
-name: is conjugate base of
-namespace: chebi_ontology
-is_cyclic: true
-is_transitive: false
-
-[Typedef]
-id: is_enantiomer_of
-name: is enantiomer of
-namespace: chebi_ontology
-is_cyclic: true
-is_transitive: false
-
-[Typedef]
-id: is_substituent_group_from
-name: is substituent group from
-namespace: chebi_ontology
-is_cyclic: false
-is_transitive: false
-
-[Typedef]
-id: is_tautomer_of
-name: is tautomer of
-namespace: chebi_ontology
-is_cyclic: true
-is_transitive: true
-
-[Typedef]
-id: results_in_developmental_progression_of
-name: results in developmental progression of
-def: "p results in the developmental progression of s iff p is a developmental process and s is an anatomical structure and p causes s to undergo a change in state at some point along its natural developmental cycle (this cycle starts with its formation, through the mature structure, and ends with its loss)." []
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000116 "This property and its subproperties are being used primarily for the definition of GO developmental processes. The property hierarchy mirrors the core GO hierarchy. In future we may be able to make do with a more minimal set of properties, but due to the way GO is currently structured we require highly specific relations to avoid incorrect entailments. To avoid this, the corresponding genus terms in GO should be declared mutually disjoint." xsd:string
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: seeAlso Ontology:extensions
-is_a: RO:0002324 ! developmentally related to
 
