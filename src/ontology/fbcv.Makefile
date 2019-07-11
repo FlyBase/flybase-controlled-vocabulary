@@ -49,13 +49,12 @@ tmp/source-merged.obo: $(SRC) tmp/asserted-subclass-of-axioms.obo
 oort: tmp/source-merged.obo
 	ontology-release-runner --reasoner elk $< --no-subsets --skip-ontology-checks --allow-equivalent-pairs --simple --relaxed --asserted --allow-overwrite --outdir oort
 
-#test_oort:
-#	ontology-release-runner --reasoner elk tmp/source-merged-minimal.obo --no-subsets --skip-ontology-checks --allow-equivalent-pairs --simple --allow-overwrite --outdir oort_test
-
-mp/$(ONT)-stripped.owl:
+tmp/$(ONT)-stripped.owl:
 	$(ROBOT) filter --input oort/$(ONT)-simple.owl --term-file tmp/fbcv_terms.txt --trim false \
 		convert -o $@
 
+# fbcv_signature.txt should contain all FBCV terms and all properties (and subsets) used by the ontology.
+# It serves like a proper signature, but including annotation properties
 tmp/fbcv_signature.txt: tmp/$(ONT)-stripped.owl tmp/fbcv_terms.txt
 	$(ROBOT) query -f csv -i $< --query ../sparql/object-properties.sparql $@_prop.tmp &&\
 	cat tmp/fbcv_terms.txt $@_prop.tmp | sort | uniq > $@ &&\
@@ -79,12 +78,22 @@ $(ONT)-simple.obo:# oort
 		reduce \
 		remove --term-file tmp/fbcv_signature.txt --select complement --trim false \
 		convert -o $@
-		sed -i '/^date[:]/c\date: $(DATETIME)' $@
-		sed -i '/^data-version[:]/c\data-version: $(DATE)' $@
-
 #$(ONT)-simple.obo: oort
 
-#$(ONT)-flybase.owl: $(ONT)-simple
+$(ONT)-flybase.obo: #$(ONT)-simple.obo
+	$(ROBOT) remove --input $(ONT)-simple.obo --term "http://purl.obolibrary.org/obo/FBcv_0008000" \
+		convert -o $@
+	sed -i '/^date[:]/c\date: $(DATETIME)' $@
+	sed -i '/^data-version[:]/c\data-version: $(DATE)' $@
+	echo "[Typedef]" >> $@
+	echo "id: part_of" >> $@
+	echo "name: part_of" >> $@
+	echo "namespace: relationship" >> $@
+	echo "synonym: "part_of" EXACT []" >> $@
+	echo "xref: BFO:0000050" >> $@
+	echo "xref_analog: OBO_REL:part_of" >> $@
+	echo "is_transitive: true" >> $@
+
 #	owltools $(ONT)-simple --make-subset-by-properties part_of conditionality -o $@
 
 ######################################################
@@ -133,7 +142,7 @@ prepare_release: $(ASSETS) $(PATTERN_RELEASE_FILES)
   echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on github"
 	
 #####################################################################################
-### Regenerate placeholder definitions                                            ###
+### Regenerate placeholder definitions         (Pre-release) pipelines            ###
 #####################################################################################
 # There are two types of definitions that FBCV uses: "." (DOT-) definitions are those for which the formal 
 # definition is translated into a human readable definitions. "$sub_" (SUB-) definitions are those that have 
