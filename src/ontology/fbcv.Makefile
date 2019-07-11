@@ -14,7 +14,8 @@ DATETIME ?= $(shell date +"%d:%m:%Y %H:%M")
 ######################################################
 
 DPO=https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/dpo-simple.obo
-components/dpo-simple.owl:
+
+components/dpo-simple.owl: .FORCE
 	echo "CHANGE DPO PURL!"
 	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) annotate -I $(DPO) --ontology-iri $(ONTBASE)/$@ \
 		convert -o $@; fi
@@ -49,7 +50,7 @@ tmp/source-merged.obo: $(SRC) tmp/asserted-subclass-of-axioms.obo
 oort: tmp/source-merged.obo
 	ontology-release-runner --reasoner elk $< --no-subsets --skip-ontology-checks --allow-equivalent-pairs --simple --relaxed --asserted --allow-overwrite --outdir oort
 
-tmp/$(ONT)-stripped.owl:
+tmp/$(ONT)-stripped.owl: oort
 	$(ROBOT) filter --input oort/$(ONT)-simple.owl --term-file tmp/fbcv_terms.txt --trim false \
 		convert -o $@
 
@@ -65,14 +66,17 @@ tmp/fbcv_signature.txt: tmp/$(ONT)-stripped.owl tmp/fbcv_terms.txt
 # asserted FBCV subsumptions. This can hopefully be solved once we can move all the way to ROBOT, but for now, it requires merging in
 # the asserted hierarchy and reducing again.
 
-$(ONT)-simple.owl:# oort
+
+# Note that right now, TypeDefs that are FBCV native (like has_age) are included in the release!
+
+$(ONT)-simple.owl: oort
 	$(ROBOT) merge --input oort/$(ONT)-simple.owl \
 		merge -i tmp/asserted-subclass-of-axioms.obo \
 		reduce \
 		remove --term-file tmp/fbcv_signature.txt --select complement --trim false \
 		convert -o $@
 
-$(ONT)-simple.obo:# oort
+$(ONT)-simple.obo: oort
 	$(ROBOT) merge --input oort/$(ONT)-simple.obo \
 		merge -i tmp/asserted-subclass-of-axioms.obo \
 		reduce \
@@ -80,16 +84,19 @@ $(ONT)-simple.obo:# oort
 		convert -o $@
 #$(ONT)-simple.obo: oort
 
-$(ONT)-flybase.obo: #$(ONT)-simple.obo
+# the fbcv-flybase target is a massive hack that 
+
+$(ONT)-flybase.obo: $(ONT)-simple.obo
 	$(ROBOT) remove --input $(ONT)-simple.obo --term "http://purl.obolibrary.org/obo/FBcv_0008000" \
 		convert -o $@
 	sed -i '/^date[:]/c\date: $(DATETIME)' $@
 	sed -i '/^data-version[:]/c\data-version: $(DATE)' $@
+	sed -i '/FlyBase_miscellaneous_CV/d' $@
 	echo "[Typedef]" >> $@
 	echo "id: part_of" >> $@
 	echo "name: part_of" >> $@
 	echo "namespace: relationship" >> $@
-	echo "synonym: "part_of" EXACT []" >> $@
+	echo 'synonym: "part_of" EXACT []' >> $@
 	echo "xref: BFO:0000050" >> $@
 	echo "xref_analog: OBO_REL:part_of" >> $@
 	echo "is_transitive: true" >> $@
@@ -100,7 +107,7 @@ $(ONT)-flybase.obo: #$(ONT)-simple.obo
 ### Code for generating additional FlyBase reports ###
 ######################################################
 
-REPORT_FILES := $(REPORT_FILES) reports/obo_track_new_simple.txt reports/onto_metrics_calc.txt #reports/chado_load_check_simple.txt
+REPORT_FILES := $(REPORT_FILES) reports/obo_track_new_simple.txt reports/onto_metrics_calc.txt reports/chado_load_check_simple.txt
 
 SIMPLE_PURL =	http://purl.obolibrary.org/obo/fbcv/fbcv-simple.obo
 LAST_DEPLOYED_SIMPLE=tmp/$(ONT)-simple-last.obo
@@ -120,7 +127,7 @@ install_flybase_scripts:
 	#wget -O ../scripts/chado_load_checks.pl $(chado_load_checks) && chmod +x ../scripts/chado_load_checks.pl
 	wget -O ../scripts/obo_track_new.pl $(obo_track_new) && chmod +x ../scripts/obo_track_new.pl
 	wget -O ../scripts/auto_def_sub.pl $(auto_def_sub) && chmod +x ../scripts/auto_def_sub.pl
-	echo "!!!!!Chado load checks currently not run!!!!!!!"
+	echo "!!!!!Chado load checks currently exclude ISBN!!!!!!!"
 
 reports/obo_track_new_simple.txt: $(LAST_DEPLOYED_SIMPLE) install_flybase_scripts $(ONT)-simple.obo
 	echo "Comparing with: "$(SIMPLE_PURL) && ../scripts/obo_track_new.pl $(LAST_DEPLOYED_SIMPLE) $(ONT)-simple.obo > $@
@@ -131,8 +138,8 @@ reports/robot_simple_diff.txt: #$(LAST_DEPLOYED_SIMPLE) #$(ONT)-simple.obo
 reports/onto_metrics_calc.txt: $(ONT)-simple.obo install_flybase_scripts
 	../scripts/onto_metrics_calc.pl 'phenotypic_class' $(ONT)-simple.obo > $@
 	
-reports/chado_load_check_simple.txt: $(ONT)-simple.obo install_flybase_scripts
-	../scripts/chado_load_checks.pl $(ONT)-simple.obo > $@
+reports/chado_load_check_simple.txt: install_flybase_scripts $(ONT)-flybase.obo 
+	../scripts/chado_load_checks.pl $(ONT)-flybase.obo > $@
 
 all_reports: all_reports_onestep $(REPORT_FILES)
 ASSETS := $(ASSETS) components/dpo-simple.owl
