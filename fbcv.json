@@ -283,6 +283,31 @@
       "type" : "CLASS",
       "lbl" : "San Diego Drosophila Species Stock Center"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002297",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+          "val" : "results_in_formation_of"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Chris Mungall"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "GOC:mtg_berkeley_2013"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "an annotation of gene X to anatomical structure formation with results_in_formation_of UBERON:0000007 (pituitary gland) means that at the beginning of the process a pituitary gland does not exist and at the end of the process a pituitary gland exists."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "every \"endocardial cushion formation\" (GO:0003272) results_in_formation_of some \"endocardial cushion\" (UBERON:0002062)"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "results in formation of"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/CHEBI_76807",
       "meta" : {
         "definition" : {
@@ -334,6 +359,32 @@
       },
       "type" : "CLASS",
       "lbl" : "organic heteromonocyclic compound"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002295",
+      "meta" : {
+        "definition" : {
+          "val" : "p results in the developmental progression of s iff p is a developmental process and s is an anatomical structure and p causes s to undergo a change in state at some point along its natural developmental cycle (this cycle starts with its formation, through the mature structure, and ends with its loss).",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Chris Mungall"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+          "val" : "results_in_developmental_progression_of"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "http://wiki.geneontology.org/index.php/Ontology_extensions"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "This property and its subproperties are being used primarily for the definition of GO developmental processes. The property hierarchy mirrors the core GO hierarchy. In future we may be able to make do with a more minimal set of properties, but due to the way GO is currently structured we require highly specific relations to avoid incorrect entailments. To avoid this, the corresponding genus terms in GO should be declared mutually disjoint."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "results in developmental progression of"
     }, {
       "id" : "http://purl.obolibrary.org/obo/CHEBI_35498",
       "meta" : {
@@ -1294,7 +1345,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in proboscis extension reflex (GO:0007637). 'proboscis extension reflex' is defined as: 'The extension, through direct muscle actions, of the proboscis (the trunk-like extension of the mouthparts on the adult external head) in response to a sugar stimulus.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FB:FBrf0044924", "FBC:DOS", "GOC:jid" ]
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -1324,7 +1375,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in sensory perception (GO:0007600). 'sensory perception' is defined as: 'The series of events required for an organism to receive a sensory stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:ai", "GOC:dph" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/dpo/dpo-simple#fbcvsubset_mgiribbons" ],
         "basicPropertyValues" : [ {
@@ -1474,7 +1525,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in sensory perception of touch (GO:0050975). 'sensory perception of touch' is defined as: 'The series of events required for an organism to receive a touch stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process. The perception of touch in animals is mediated by mechanoreceptors in the skin and mucous membranes and is the sense by which contact with objects gives evidence as to certain of their qualities. Different types of touch can be perceived (for example, light, coarse, pressure and tickling) and the stimulus may be external or internal (e.g. the feeling of a full stomach).'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:ai" ]
         },
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
@@ -1493,7 +1544,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in response to temperature stimulus (GO:0009266). 'response to temperature stimulus' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a temperature stimulus.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:hb" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/dpo/dpo-simple#fbcvsubset_mgiribbons" ],
         "basicPropertyValues" : [ {
@@ -1530,7 +1581,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in response to cold (GO:0009409). 'response to cold' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a cold stimulus, a temperature stimulus below the optimal temperature for that organism.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:lr" ]
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
@@ -1620,7 +1671,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in axis specification (GO:0009798). 'axis specification' is defined as: 'The establishment, maintenance and elaboration of a pattern along a line or around a point.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:dph", "GOC:go_curators", "GOC:isa_complete" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/dpo/dpo-simple#fbcvsubset_mgiribbons" ],
         "basicPropertyValues" : [ {
@@ -3719,6 +3770,27 @@
       },
       "type" : "PROPERTY",
       "lbl" : "has input"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002234",
+      "meta" : {
+        "definition" : {
+          "val" : "p has output c iff c is a participant in p, c is present at the end of p, and c is not present at the beginning of p.",
+          "xrefs" : [ ]
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Chris Mungall"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "produces"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "has output"
     }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0000056",
       "meta" : {
@@ -12976,10 +13048,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000602",
       "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:22025" ]
-        },
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "CB1592",
@@ -13031,10 +13099,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000603",
       "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:26800" ]
-        },
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "CB3086",
@@ -13109,10 +13173,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000605",
       "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:27919" ]
-        },
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "CB1246",
@@ -13315,10 +13375,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000600",
       "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:25829" ]
-        },
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "CB305",
@@ -13336,25 +13392,6 @@
       "type" : "CLASS",
       "lbl" : "p-p'-N,N-di(2-chloroethyl)aminophenoxyphenylalanine"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/FBcv_0000601",
-      "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:26491" ]
-        },
-        "synonyms" : [ {
-          "pred" : "hasExactSynonym",
-          "val" : "mutation induced by quinhydrone exposure",
-          "xrefs" : [ ]
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "origin_of_mutation"
-        } ]
-      },
-      "type" : "CLASS",
-      "lbl" : "quinhydrone"
-    }, {
       "id" : "http://purl.obolibrary.org/obo/CHEBI_33692",
       "meta" : {
         "definition" : {
@@ -13369,6 +13406,21 @@
       },
       "type" : "CLASS",
       "lbl" : "hydrides"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0000601",
+      "meta" : {
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "mutation induced by quinhydrone exposure",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "origin_of_mutation"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "quinhydrone"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0005065",
       "meta" : {
@@ -14116,21 +14168,6 @@
       "type" : "PROPERTY",
       "lbl" : "acts upstream of or within, negative effect"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/FBcv_0000668",
-      "meta" : {
-        "definition" : {
-          "val" : "Phenotype that is a defect in cell adhesion (GO:0007155). 'cell adhesion' is defined as: 'The attachment of a cell, either to another cell or to an underlying substrate such as the extracellular matrix, via cell adhesion molecules.'",
-          "xrefs" : [ "FBC:DOS" ]
-        },
-        "subsets" : [ "http://purl.obolibrary.org/obo/dpo/dpo-simple#fbcvsubset_mgiribbons" ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "phenotypic_class"
-        } ]
-      },
-      "type" : "CLASS",
-      "lbl" : "cell adhesion defective"
-    }, {
       "id" : "http://purl.obolibrary.org/obo/CHEBI_33671",
       "meta" : {
         "definition" : {
@@ -14154,6 +14191,21 @@
       },
       "type" : "CLASS",
       "lbl" : "heteropolycyclic compound"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0000668",
+      "meta" : {
+        "definition" : {
+          "val" : "Phenotype that is a defect in cell adhesion (GO:0007155). 'cell adhesion' is defined as: 'The attachment of a cell, either to another cell or to an underlying substrate such as the extracellular matrix, via cell adhesion molecules.'",
+          "xrefs" : [ "FBC:DOS", "GOC:hb", "GOC:pf" ]
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/dpo/dpo-simple#fbcvsubset_mgiribbons" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "phenotypic_class"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "cell adhesion defective"
     }, {
       "id" : "http://purl.obolibrary.org/obo/CHEBI_33672",
       "meta" : {
@@ -14179,7 +14231,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in hatching behavior (GO:0035187). 'hatching behavior' is defined as: 'The specific behavior of an organism during the emergence from an egg shell. In Drosophila for example, the larva swings its head reiteratively through a semicircular arc, using its mouth hooks to tear apart the chorion in front of it and thus free itself from within the egg shell.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:pr", "PMID:10436051" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -14698,7 +14750,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in eclosion (GO:0007562). 'eclosion' is defined as: 'The emergence of an adult insect from a pupa case.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:dgh", "GOC:dos", "GOC:mah", "ISBN:0198600461" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/dpo/dpo-simple#fbcvsubset_mgiribbons" ],
         "basicPropertyValues" : [ {
@@ -14813,7 +14865,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in circadian behavior (GO:0048512). 'circadian behavior' is defined as: 'The specific behavior of an organism that recurs with a regularity of approximately 24 hours.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:bf", "GOC:go_curators", "GOC:pr" ]
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
@@ -14909,7 +14961,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in cell cycle (GO:0007049). 'cell cycle' is defined as: 'The progression of biochemical and morphological phases and events that occur in a cell during successive cell replication or nuclear replication events. Canonically, the cell cycle comprises the replication and segregation of genetic material followed by the division of the cell, but in endocycles or syncytial cells nuclear replication or nuclear division may not be followed by cell division.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:go_curators", "GOC:mtg_cell_cycle" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/dpo/dpo-simple#fbcvsubset_mgiribbons" ],
         "basicPropertyValues" : [ {
@@ -14959,7 +15011,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in endomitotic cell cycle (GO:0007113). 'endomitotic cell cycle' is defined as: 'A mitotic cell cycle in which chromosomes are replicated and sister chromatids separate, but spindle formation, nuclear membrane breakdown and nuclear division do not occur, resulting in an increased number of chromosomes in the cell.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:curators", "GOC:dos", "GOC:expert_vm" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -15226,6 +15278,23 @@
       },
       "type" : "CLASS",
       "lbl" : "aliphatic compound"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0004007",
+      "meta" : {
+        "definition" : {
+          "val" : "p 'has primary input ot output' c iff either (a) p 'has primary input' c or (b) p 'has primary output' c.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "cjm"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2018-12-13T11:26:17Z"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "has primary input or output"
     }, {
       "id" : "http://purl.obolibrary.org/obo/CHEBI_33655",
       "meta" : {
@@ -15925,10 +15994,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000581",
       "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:30969" ]
-        },
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "EI",
@@ -16080,10 +16145,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000583",
       "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:28954" ]
-        },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "mutation induced by fagaronine exposure",
@@ -16209,10 +16270,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000586",
       "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:24564" ]
-        },
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "altretamine",
@@ -16356,10 +16413,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000587",
       "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:24565" ]
-        },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "mutation induced by hexamethylphosphoramide exposure",
@@ -16497,10 +16550,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000589",
       "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:21184" ]
-        },
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "Janus green B chloride",
@@ -16642,10 +16691,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000590",
       "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:25234" ]
-        },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "mutation induced by methoxy diethylnitrosamine exposure",
@@ -16718,10 +16763,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000593",
       "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:35807" ]
-        },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "mutation induced by DMN exposure",
@@ -16950,10 +16991,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000594",
       "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:25813" ]
-        },
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "CB1356",
@@ -17001,10 +17038,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000595",
       "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:25814" ]
-        },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "mutation induced by p-N,N-di-(2-chloroethyl)amino-D-phenylalanine exposure",
@@ -17069,10 +17102,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000597",
       "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:25816" ]
-        },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "mutation induced by p-N,N-di-(2-chloroethyl)amino-L-phenylalanine exposure",
@@ -17183,12 +17212,22 @@
       "type" : "CLASS",
       "lbl" : "disaccharide"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/FBcv_0000599",
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0000115",
       "meta" : {
         "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:25818" ]
+          "val" : "40-100% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.",
+          "xrefs" : [ "FBC:DOS" ]
         },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "spatial_qualifier"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "40-100% egg length"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0000599",
+      "meta" : {
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "mutation induced by p-N,N-di-(2-chloroethyl)aminophenylethylamine exposure",
@@ -17205,20 +17244,6 @@
       },
       "type" : "CLASS",
       "lbl" : "p-N,N-di-(2-chloroethyl)aminophenylethylamine"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/FBcv_0000115",
-      "meta" : {
-        "definition" : {
-          "val" : "40-100% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.",
-          "xrefs" : [ "FBC:DOS" ]
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "spatial_qualifier"
-        } ]
-      },
-      "type" : "CLASS",
-      "lbl" : "40-100% egg length"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000116",
       "meta" : {
@@ -17708,10 +17733,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000560",
       "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:23705" ]
-        },
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "1,2:7,8-diepoxyoctane",
@@ -18001,10 +18022,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000562",
       "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:35299" ]
-        },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "mutation induced by 1,2:5,6-dibenzanthracene exposure",
@@ -18231,10 +18248,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000568",
       "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:19024" ]
-        },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "mutation induced by 1-amino-2-naphthol-4-sulfonic acid exposure",
@@ -18577,10 +18590,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000573",
       "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:27666" ]
-        },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "mutation induced by actinomycin D exposure",
@@ -18715,6 +18724,16 @@
       "type" : "CLASS",
       "lbl" : "dimethyl sulfoxide"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/CARO_0000003",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/caro.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "connected anatomical structure"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/CHEBI_38870",
       "meta" : {
         "subsets" : [ "http://purl.obolibrary.org/obo/chebi#3_STAR" ],
@@ -18830,6 +18849,20 @@
       },
       "type" : "CLASS",
       "lbl" : "S-2-chloroethylcysteine"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CARO_0000007",
+      "type" : "CLASS",
+      "lbl" : "immaterial anatomical entity"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CARO_0000006",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/caro.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "material anatomical entity"
     }, {
       "id" : "http://purl.obolibrary.org/obo/CHEBI_23359",
       "meta" : {
@@ -19820,6 +19853,31 @@
       "type" : "PROPERTY",
       "lbl" : "input of"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002353",
+      "meta" : {
+        "definition" : {
+          "val" : "inverse of has output",
+          "xrefs" : [ ]
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco", "http://purl.obolibrary.org/obo/RO_0002259" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Chris Mungall"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "output of"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002354",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Chris Mungall"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "formed as result of"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/CHEBI_83039",
       "meta" : {
         "definition" : {
@@ -20326,6 +20384,23 @@
       },
       "type" : "PROPERTY",
       "lbl" : "positively regulated by"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002337",
+      "meta" : {
+        "definition" : {
+          "val" : "A relationship that holds via some process of localization",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Chris Mungall"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
+          "val" : "Do not use this relation directly. It is a grouping relation."
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "related via localization to"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000132",
       "meta" : {
@@ -21556,6 +21631,27 @@
       },
       "type" : "CLASS",
       "lbl" : "book review"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002321",
+      "meta" : {
+        "definition" : {
+          "val" : "A relationship that is mediated in some way by the environment or environmental feature (ENVO:00002297)",
+          "xrefs" : [ ]
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
+          "val" : "Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving ecological interactions"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Awaiting class for domain/range constraint, see: https://github.com/OBOFoundry/Experimental-OBO-Core/issues/6"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Chris Mungall"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "ecologically related to"
     }, {
       "id" : "http://purl.obolibrary.org/obo/CHEBI_28694",
       "meta" : {
@@ -26128,7 +26224,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in sensory perception of light stimulus (GO:0050953). 'sensory perception of light stimulus' is defined as: 'The series of events required for an organism to receive a sensory light stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process.'",
-          "xrefs" : [ "FBC:MMC" ]
+          "xrefs" : [ "FBC:MMC", "GOC:ai" ]
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -31813,10 +31909,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000540",
       "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:27292" ]
-        },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "mutation induced by vinyl carbamate exposure",
@@ -31851,10 +31943,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000542",
       "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:27504" ]
-        },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "mutation induced by mitomycin C exposure",
@@ -31870,10 +31958,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000543",
       "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:37595" ]
-        },
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "ICR 100",
@@ -31900,10 +31984,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000544",
       "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:21183" ]
-        },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "mutation induced by ICR 170 exposure",
@@ -32095,10 +32175,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000559",
       "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:23704" ]
-        },
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "DEB",
@@ -32160,10 +32236,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000552",
       "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:22526" ]
-        },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "mutation induced by aminopterin exposure",
@@ -32225,10 +32297,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000555",
       "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:33118" ]
-        },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "mutation induced by H3BO3 exposure",
@@ -32244,10 +32312,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000556",
       "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:26709" ]
-        },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "mutation induced by sodium bisulphite exposure",
@@ -32517,10 +32581,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000527",
       "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:34699" ]
-        },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "mutation induced by diethyl sulfate exposure",
@@ -32540,10 +32600,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000528",
       "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:19508" ]
-        },
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "CB1506",
@@ -32563,10 +32619,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000529",
       "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:19579" ]
-        },
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "CB1522",
@@ -33006,10 +33058,6 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000538",
       "meta" : {
-        "definition" : {
-          "val" : "No description.",
-          "xrefs" : [ "CHEBI:13941" ]
-        },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "mutation induced by carbamate exposure",
@@ -33988,7 +34036,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in exocytosis (GO:0006887). 'exocytosis' is defined as: 'A process of secretion by a cell that results in the release of intracellular molecules (e.g. hormones, matrix proteins) contained within a membrane-bounded vesicle. Exocytosis can occur either by full fusion, when the vesicle collapses into the plasma membrane, or by a kiss-and-run mechanism that involves the formation of a transient contact, a pore, between a granule (for exemple of chromaffin cells) and the plasma membrane. The latter process most of the time leads to only partial secretion of the granule content. Exocytosis begins with steps that prepare vesicles for fusion with the membrane (tethering and docking) and ends when molecules are secreted from the cell.'",
-          "xrefs" : [ ]
+          "xrefs" : [ "GOC:mah", "ISBN:0716731363", "PMID:22323285" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/dpo/dpo-simple#fbcvsubset_mgiribbons" ],
         "basicPropertyValues" : [ {
@@ -34022,7 +34070,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in endocytosis (GO:0006897). 'endocytosis' is defined as: 'A vesicle-mediated transport process in which cells take up external materials or membrane constituents by the invagination of a small region of the plasma membrane to form a new membrane-bounded vesicle.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:mah", "ISBN:0198506732", "ISBN:0716731363" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/dpo/dpo-simple#fbcvsubset_mgiribbons" ],
         "basicPropertyValues" : [ {
@@ -34322,7 +34370,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in immune response (GO:0006955). 'immune response' is defined as: 'Any immune system process that functions in the calibrated response of an organism to a potential internal or invasive threat.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:add", "GOC:mtg_15nov05", "GO_REF:0000022" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/dpo/dpo-simple#fbcvsubset_mgiribbons" ],
         "basicPropertyValues" : [ {
@@ -37315,7 +37363,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in thermotaxis (GO:0043052). 'thermotaxis' is defined as: 'The directed movement of a motile cell or organism in response to a temperature gradient. Movement may be towards either a higher or lower temperature.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:cab1", "WB_REF:cgc467" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -39955,6 +40003,29 @@
       },
       "type" : "PROPERTY",
       "lbl" : "immediately causally upstream of"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002414",
+      "meta" : {
+        "definition" : {
+          "val" : "transitive form of directly_provides_input_for",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
+          "val" : "This is a grouping relation that should probably not be used in annotation. Consider instead the child relation 'directly provides input for' (which may later be relabeled simply to 'provides input for')"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Chris Mungall"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000589",
+          "val" : "transitively provides input for (process to process)"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000428"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "transitively provides input for"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000055",
       "meta" : {
@@ -47466,7 +47537,7 @@
       "meta" : {
         "definition" : {
           "val" : "A short report describing a single stand-alone research finding that is peer-reviewed and published.",
-          "xrefs" : [ "FBC:SM", "https://www.micropublication.org" ]
+          "xrefs" : [ "FBC:SM", "http://www.micropublication.org" ]
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
@@ -48050,7 +48121,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in cell growth (GO:0016049). 'cell growth' is defined as: 'The process in which a cell irreversibly increases in size over time by accretion and biosynthetic production of matter similar to that already present.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:ai" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/dpo/dpo-simple#fbcvsubset_mgiribbons" ],
         "basicPropertyValues" : [ {
@@ -48223,7 +48294,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in grooming behavior (GO:0007625). 'grooming behavior' is defined as: 'The specific behavior of an organism relating to grooming, cleaning and brushing to remove dirt and parasites.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:jl", "GOC:pr" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -48278,7 +48349,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in entrainment of circadian clock by photoperiod (GO:0043153), which is defined as: 'The synchronization of a circadian rhythm to photoperiod, the intermittent cycle of light (day) and dark (night).'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:jl" ]
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -48292,7 +48363,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in DNA repair (GO:0006281). 'DNA repair' is defined as: 'The process of restoring DNA after damage. Genomes are subject to damage by chemical and physical agents in the environment (e.g. UV and ionizing radiations, chemical mutagens, fungal and bacterial toxins, etc.) and by free radicals or alkylating agents endogenously generated in metabolism. DNA is also damaged because of errors during its replication. A variety of different DNA repair pathways have been reported that include direct reversal, base excision repair, nucleotide excision repair, photoreactivation, bypass, double-strand break repair pathway, and mismatch repair pathway.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "PMID:11563486" ]
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -48697,7 +48768,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in meiotic cell cycle (GO:0051321). 'meiotic cell cycle' is defined as: 'Progression through the phases of the meiotic cell cycle, in which canonically a cell replicates to produce four offspring with half the chromosomal content of the progenitor cell via two nuclear divisions.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:ai" ]
         },
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
@@ -48757,7 +48828,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in mitotic cell cycle (GO:0000278). 'mitotic cell cycle' is defined as: 'Progression through the phases of the mitotic cell cycle, the most common eukaryotic cell cycle, which canonically comprises four successive phases called G1, S, G2, and M and includes replication of the genome and the subsequent segregation of chromosomes into daughter cells. In some variant cell cycles nuclear replication or nuclear division may not be followed by cell division, or G1 and G2 phases may be absent.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:mah", "ISBN:0815316194", "Reactome:69278" ]
         },
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
@@ -48776,7 +48847,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in cytokinesis (GO:0000910). 'cytokinesis' is defined as: 'The division of the cytoplasm and the plasma membrane of a cell and its partitioning into two daughter cells.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:mtg_cell_cycle" ]
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -48805,7 +48876,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in nervous system (FBbt:00005093). 'nervous system' is defined as: 'All the nerve centers and nerve fibers in the central, visceral and peripheral nervous systems.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "FlyBase:FBrf0166419" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/dpo/dpo-simple#fbcvsubset_mgiribbons" ],
         "basicPropertyValues" : [ {
@@ -48834,7 +48905,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in sex determination (GO:0007530). 'sex determination' is defined as: 'Any process that establishes and transmits the specification of sexual status of an individual organism.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "ISBN:0198506732" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/dpo/dpo-simple#fbcvsubset_mgiribbons" ],
         "basicPropertyValues" : [ {
@@ -48949,7 +49020,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in sensory perception of smell (GO:0007608). 'sensory perception of smell' is defined as: 'The series of events required for an organism to receive an olfactory stimulus, convert it to a molecular signal, and recognize and characterize the signal. Olfaction involves the detection of chemical composition of an organism's ambient medium by chemoreceptors. This is a neurological process.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:ai", "http://www.onelook.com/" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -48968,7 +49039,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in sensory perception of taste (GO:0050909). 'sensory perception of taste' is defined as: 'The series of events required for an organism to receive a gustatory stimulus, convert it to a molecular signal, and recognize and characterize the signal. Gustation involves the direct detection of chemical composition, usually through contact with chemoreceptor cells. This is a neurological process.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:ai", "http://www.onelook.com/" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -49037,7 +49108,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in sensory perception of sound (GO:0007605). 'sensory perception of sound' is defined as: 'The series of events required for an organism to receive an auditory stimulus, convert it to a molecular signal, and recognize and characterize the signal. Sonic stimuli are detected in the form of vibrations and are processed to form a sound.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:ai" ]
         },
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
@@ -49056,7 +49127,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in response to stress (GO:0006950). 'response to stress' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a disturbance in organismal or cellular homeostasis, usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation).'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:mah" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/dpo/dpo-simple#fbcvsubset_mgiribbons" ],
         "synonyms" : [ {
@@ -49076,7 +49147,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in response to osmotic stress (GO:0006970). 'response to osmotic stress' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus indicating an increase or decrease in the concentration of solutes outside the organism or cell.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:jl" ]
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -49090,7 +49161,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in mating (GO:0007618). 'mating' is defined as: 'The pairwise union of individuals for the purpose of sexual reproduction, ultimately resulting in the formation of zygotes.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:jl", "ISBN:0387520546" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/dpo/dpo-simple#fbcvsubset_mgiribbons" ],
         "basicPropertyValues" : [ {
@@ -49105,7 +49176,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in circadian mating behavior (GO:0035648). 'circadian mating behavior' is defined as: 'The fluctuation in mating behavior that occurs over an approximately 24 hour cycle.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:bf", "GOC:dos", "PMID:11470898", "PMID:17276917" ]
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -49119,7 +49190,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in male courtship behavior, veined wing generated song production (GO:0045433). This is defined as 'The process during wing vibration where the male insect produces a species-specific acoustic signal called a love song.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:mtg_sensu", "PMID:11092827" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -49142,7 +49213,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in chemosensory behavior (GO:0007635). 'chemosensory behavior' is defined as: 'Behavior that is dependent upon the sensation of chemicals.'.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:go_curators" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -49267,7 +49338,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in flight (GO:0060361). 'flight' is defined as: 'Self-propelled movement of an organism from one location to another through the air, usually by means of active wing movement.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:dph" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/dpo/dpo-simple#fbcvsubset_mgiribbons" ],
         "synonyms" : [ {
@@ -49290,7 +49361,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is the absence of flight (GO:0060361). 'flight' is defined as: 'Self-propelled movement of an organism from one location to another through the air, usually by means of active wing movement.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:dph" ]
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
@@ -49307,7 +49378,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in feeding behavior (GO:0007631). 'feeding behavior' is defined as: 'Behavior associated with the intake of food.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:mah" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -49432,7 +49503,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in response to heat (GO:0009408). 'response to heat' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a heat stimulus, a temperature stimulus above the optimal temperature for that organism.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:lr" ]
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -49446,7 +49517,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in visual behavior (GO:0007632). 'visual behavior' is defined as: 'The behavior of an organism in response to a visual stimulus.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:jid", "GOC:pr" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -49484,7 +49555,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in phototaxis (GO:0042331). 'phototaxis' is defined as: 'The directed movement of a motile cell or organism in response to light.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:jl", "ISBN:0192800981" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/dpo/dpo-simple#fbcvsubset_mgiribbons" ],
         "synonyms" : [ {
@@ -49500,11 +49571,15 @@
       "type" : "CLASS",
       "lbl" : "phototaxis defective"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000141",
+      "type" : "CLASS",
+      "lbl" : "immaterial entity"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000414",
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in locomotory behavior (GO:0007626). 'locomotory behavior' is defined as: 'The specific movement from place to place of an organism in response to external or internal stimuli. Locomotion of a whole organism in a manner dependent upon some combination of that organism's internal state and external conditions.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:dph" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -50354,6 +50429,45 @@
       "type" : "CLASS",
       "lbl" : "fungal metabolite"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0003001",
+      "meta" : {
+        "definition" : {
+          "val" : "a produced_by b iff some process that occurs_in b has_output a.",
+          "xrefs" : [ ]
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Melissa Haendel"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "produced by"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0003000",
+      "meta" : {
+        "definition" : {
+          "val" : "a produces b if some process that occurs_in a has_output b, where a and b are material entities. Examples: hybridoma cell line produces monoclonal antibody reagent; chondroblast produces avascular GAG-rich matrix.",
+          "xrefs" : [ ]
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Melissa Haendel"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "Note that this definition doesn't quite distinguish the output of a transformation process from a production process, which is related to the identity/granularity issue."
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "produces"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000327",
       "meta" : {
         "basicPropertyValues" : [ {
@@ -50563,7 +50677,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in dorsal/ventral axis specification (GO:0009950). 'dorsal/ventral axis specification' is defined as: 'The establishment, maintenance and elaboration of the dorsal/ventral axis. The dorsal/ventral axis is defined by a line that runs orthogonal to both the anterior/posterior and left/right axes. The dorsal end is defined by the upper or back side of an organism. The ventral end is defined by the lower or front side of an organism.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:dph", "GOC:go_curators", "GOC:tb" ]
         },
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
@@ -51559,7 +51673,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in behavior (GO:0007610). 'behavior' is defined as: 'The internally coordinated responses (actions or inactions) of animals (individuals or groups) to internal or external stimuli, via a mechanism that involves nervous system activity.'",
-          "xrefs" : [ ]
+          "xrefs" : [ "GOC:ems", "GOC:jl", "ISBN:0395448956", "PMID:20160973" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/dpo/dpo-simple#fbcvsubset_mgiribbons" ],
         "synonyms" : [ {
@@ -51891,7 +52005,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in response to pain (GO:0048265). 'response to pain' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a pain stimulus. Pain stimuli cause activation of nociceptors, peripheral receptors for pain, include receptors which are sensitive to painful mechanical stimuli, extreme heat or cold, and chemical stimuli.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:jid", "PMID:10203867", "PMID:12723742", "PMID:12843304", "Wikipedia:Pain" ]
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -51905,7 +52019,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in circadian rhythm (GO:0007623). 'circadian rhythm' is defined as: 'Any biological process in an organism that recurs with a regularity of approximately 24 hours.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:bf", "GOC:go_curators" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/dpo/dpo-simple#fbcvsubset_mgiribbons" ],
         "basicPropertyValues" : [ {
@@ -51920,7 +52034,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in locomotor rhythm (GO:0045475). 'locomotor rhythm' is defined as: 'The rhythm of the locomotor activity of an organism during its 24 hour activity cycle.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:go_curators" ]
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -52135,7 +52249,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in eclosion rhythm (GO:0008062). 'eclosion rhythm' is defined as: 'The timing of the emergence of the adult fly from its pupal case, which usually occurs at dawn.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "PMID:11715043" ]
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -52149,7 +52263,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in learning (GO:0007612). 'learning' is defined as: 'Any process in an organism in which a relatively long-lasting adaptive behavioral change occurs as the result of experience.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "ISBN:0582227089", "ISBN:0721662544" ]
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -52163,7 +52277,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in memory (GO:0007613). 'memory' is defined as: 'The activities involved in the mental information processing system that receives (registers), modifies, stores, and retrieves informational stimuli. The main stages involved in the formation and retrieval of memory are encoding (processing of received information by acquisition), storage (building a permanent record of received information as a result of consolidation) and retrieval (calling back the stored information and use it in a suitable way to execute a given task).'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:curators", "ISBN:0582227089", "http://www.onelook.com/" ]
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -52177,7 +52291,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in courtship behavior (GO:0007619). 'courtship behavior' is defined as: 'The behavioral interactions between organisms for the purpose of attracting sexual partners.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:ai", "GOC:dph" ]
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -52448,6 +52562,16 @@
       },
       "type" : "PROPERTY",
       "lbl" : "capable of negatively regulating"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002592",
+      "meta" : {
+        "definition" : {
+          "val" : "p results in organization of c iff p results in the assembly, arrangement of constituent parts, or disassembly of c",
+          "xrefs" : [ ]
+        }
+      },
+      "type" : "PROPERTY",
+      "lbl" : "results in organization of"
     }, {
       "id" : "http://purl.obolibrary.org/obo/CHEBI_35552",
       "meta" : {
@@ -52870,6 +52994,16 @@
       },
       "type" : "PROPERTY",
       "lbl" : "has part structure that is capable of"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002586",
+      "meta" : {
+        "definition" : {
+          "val" : "p results in breakdown of c if and only if the execution of p leads to c no longer being present at the end of p",
+          "xrefs" : [ ]
+        }
+      },
+      "type" : "PROPERTY",
+      "lbl" : "results in breakdown of"
     }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0002581",
       "meta" : {
@@ -53487,6 +53621,23 @@
       },
       "type" : "PROPERTY",
       "lbl" : "disease relationship"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0040036",
+      "meta" : {
+        "definition" : {
+          "val" : "p has anatomical participant c iff p has participant c, and c is an anatomical entity",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2018-09-26T01:08:58Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "cjm"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "has anatomical participant"
     }, {
       "id" : "http://purl.obolibrary.org/obo/CHEBI_32955",
       "meta" : {
@@ -57013,7 +57164,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in copulation (GO:0007620). 'copulation' is defined as: 'The act of sexual union between male and female, involving the transfer of sperm.'",
-          "xrefs" : [ "FBC:TEMJ" ]
+          "xrefs" : [ "FBC:TEMJ", "ISBN:0721662544" ]
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -57027,7 +57178,7 @@
       "meta" : {
         "definition" : {
           "val" : "A phenotype that is an increased occurrence of cell division (GO:0051301). 'cell division' is defined as 'The process resulting in division and partitioning of components of a cell to form more cells; may or may not be accompanied by the physical separation of a cell into distinct, individually membrane-bounded daughter cells.'.",
-          "xrefs" : [ "FBC:TEMJ" ]
+          "xrefs" : [ "FBC:TEMJ", "GOC:di", "GOC:go_curators", "GOC:pr" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/dpo/dpo-simple#fbcvsubset_mgiribbons" ],
         "basicPropertyValues" : [ {
@@ -57042,7 +57193,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in oviposition (GO:0007620). 'oviposition' is defined as: 'The deposition of eggs (either fertilized or not) upon a surface or into a medium such as water.'.",
-          "xrefs" : [ "FBC:TEMJ" ]
+          "xrefs" : [ "FBC:TEMJ", "GOC:ems" ]
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
@@ -57306,7 +57457,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in sleep (GO:0030431). 'sleep' is defined as: 'Any process in which an organism enters and maintains a periodic, readily reversible state of reduced awareness and metabolic activity. Usually accompanied by physical relaxation, the onset of sleep in humans and other mammals is marked by a change in the electrical activity of the brain.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "ISBN:0192800981" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/dpo/dpo-simple#fbcvsubset_mgiribbons" ],
         "basicPropertyValues" : [ {
@@ -57369,7 +57520,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in entry into diapause (GO:0055115). 'entry into diapause' is defined as: 'The dormancy process that results in entry into diapause. Diapause is a neurohormonally mediated, dynamic state of low metabolic activity. Associated characteristics of this form of dormancy include reduced morphogenesis, increased resistance to environmental extremes, and altered or reduced behavioral activity. Full expression develops in a species-specific manner, usually in response to a number of environmental stimuli that precede unfavorable conditions. Once diapause has begun, metabolic activity is suppressed even if conditions favorable for development prevail. Once initiated, only certain stimuli are capable of releasing the organism from this state, and this characteristic is essential in distinguishing diapause from hibernation.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:ds", "GOC:jid", "GOC:mah" ]
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
@@ -57389,7 +57540,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in entry into reproductive diapause (GO:0055116). 'entry into reproductive diapause' is defined as: 'The dormancy process that results in entry into reproductive diapause. Reproductive diapause is a form of diapause where the organism itself will remain fully active, including feeding and other routine activities, but the reproductive organs experience a tissue-specific reduction in metabolism, with characteristic triggering and releasing stimuli.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:ds", "GOC:jid", "GOC:mah" ]
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -57409,7 +57560,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in response to starvation (GO:0042594). 'response to starvation' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a starvation stimulus, deprivation of nourishment.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:go_curators" ]
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -57510,7 +57661,7 @@
       "meta" : {
         "definition" : {
           "val" : "A phenotype that is a decreased occurrence of cell division (GO:0051301). 'cell division' is defined as 'The process resulting in division and partitioning of components of a cell to form more cells; may or may not be accompanied by the physical separation of a cell into distinct, individually membrane-bounded daughter cells.'.",
-          "xrefs" : [ "FBC:TEMJ" ]
+          "xrefs" : [ "FBC:TEMJ", "GOC:di", "GOC:go_curators", "GOC:pr" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/dpo/dpo-simple#fbcvsubset_mgiribbons" ],
         "basicPropertyValues" : [ {
@@ -57915,7 +58066,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in cell migration (GO:0016477). 'cell migration' is defined as: 'The controlled self-propelled movement of a cell from one site to a destination guided by molecular cues. Cell migration is a central process in the development and maintenance of multicellular organisms.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:cjm", "GOC:dph", "GOC:ems", "GOC:pf", "http://en.wikipedia.org/wiki/Cell_migration" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/dpo/dpo-simple#fbcvsubset_mgiribbons" ],
         "basicPropertyValues" : [ {
@@ -59948,7 +60099,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in response to oxidative stress (GO:0006979). 'response to oxidative stress' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of oxidative stress, a state often resulting from exposure to high levels of reactive oxygen species, e.g. superoxide anions, hydrogen peroxide (H2O2), and hydroxyl radicals.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:jl", "PMID:12115731" ]
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -60204,7 +60355,7 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in mating behavior (GO:0007617). 'mating behavior' is defined as: 'The behavioral interactions between organisms for the purpose of mating, or sexual reproduction resulting in the formation of zygotes.'",
-          "xrefs" : [ "FBC:DOS" ]
+          "xrefs" : [ "FBC:DOS", "GOC:ai", "GOC:dph" ]
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -63876,13 +64027,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_33958"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/CHEBI_17568",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0000087",
-      "obj" : "http://purl.obolibrary.org/obo/CHEBI_75772"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000780",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000778"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHEBI_17568",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000087",
+      "obj" : "http://purl.obolibrary.org/obo/CHEBI_75772"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0005041",
       "pred" : "is_a",
@@ -64116,13 +64267,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000004"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000633",
-      "pred" : "is_a",
-      "obj" : "http://www.w3.org/2002/07/owl#Thing"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_22727",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_38166"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000633",
+      "pred" : "is_a",
+      "obj" : "http://www.w3.org/2002/07/owl#Thing"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000023",
       "pred" : "is_a",
@@ -64188,13 +64339,13 @@
       "pred" : "is_a",
       "obj" : "http://www.w3.org/2002/07/owl#Thing"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007004",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007003"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_25414",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_23906"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007004",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007003"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000543",
       "pred" : "is_a",
@@ -64264,13 +64415,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_36961"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/CHEBI_35692",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/CHEBI_33575"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_33338",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_33248"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHEBI_35692",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CHEBI_33575"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003192",
       "pred" : "is_a",
@@ -64488,6 +64639,10 @@
       "pred" : "is_a",
       "obj" : "http://www.w3.org/2002/07/owl#Thing"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002592",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0040036"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_16189",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_79388"
@@ -64496,13 +64651,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_132124"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0006001",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000714",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000309"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0006001",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_23377",
       "pred" : "is_a",
@@ -64560,13 +64715,13 @@
       "pred" : "is_a",
       "obj" : "http://www.w3.org/2002/07/owl#Thing"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/RO_0002131",
-      "pred" : "subPropertyOf",
-      "obj" : "http://purl.obolibrary.org/obo/RO_0002323"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_33694",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_50860"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002131",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002323"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_33674",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
@@ -64876,13 +65031,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003191"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000559",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/CHEBI_23704"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000530",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_23994"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000559",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CHEBI_23704"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003086",
       "pred" : "is_a",
@@ -64996,6 +65151,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0040036",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0000057"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_50315",
       "pred" : "http://purl.obolibrary.org/obo/chebi#is_conjugate_acid_of",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_17883"
@@ -65092,13 +65251,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000347"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000725",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000408"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_50314",
       "pred" : "http://purl.obolibrary.org/obo/chebi#is_conjugate_acid_of",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_29228"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000725",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000408"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000568",
       "pred" : "is_a",
@@ -65176,13 +65335,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_39447"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/RO_0002013",
-      "pred" : "subPropertyOf",
-      "obj" : "http://purl.obolibrary.org/obo/RO_0002334"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003197",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003191"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002013",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002334"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000445",
       "pred" : "is_a",
@@ -65436,13 +65595,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_28876"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/CHEBI_24060",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/CHEBI_24062"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000613",
       "pred" : "is_a",
       "obj" : "http://www.w3.org/2002/07/owl#Thing"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHEBI_24060",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CHEBI_24062"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_33242",
       "pred" : "is_a",
@@ -65476,13 +65635,13 @@
       "pred" : "is_a",
       "obj" : "http://www.w3.org/2002/07/owl#Thing"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/CHEBI_18367",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/CHEBI_79387"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_36358",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_36357"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHEBI_18367",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CHEBI_79387"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000055",
       "pred" : "is_a",
@@ -65772,13 +65931,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_37598"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/CHEBI_35237",
-      "pred" : "http://purl.obolibrary.org/obo/chebi#is_tautomer_of",
-      "obj" : "http://purl.obolibrary.org/obo/CHEBI_15356"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_38749",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_24697"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHEBI_35237",
+      "pred" : "http://purl.obolibrary.org/obo/chebi#is_tautomer_of",
+      "obj" : "http://purl.obolibrary.org/obo/CHEBI_15356"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000004",
       "pred" : "is_a",
@@ -65812,13 +65971,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_24431"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000271",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000274"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000275",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000271",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000274"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000550",
       "pred" : "is_a",
@@ -65996,6 +66155,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_38976"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHEBI_32486",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000004"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0002014",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0002012"
@@ -66003,10 +66166,6 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0002013",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0002022"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/CHEBI_32486",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000004"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_28230",
       "pred" : "http://purl.obolibrary.org/obo/chebi#is_conjugate_acid_of",
@@ -66336,6 +66495,10 @@
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_25555"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002353",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002328"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0002036",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0002038"
@@ -66600,13 +66763,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_38975"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003179",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003176"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_17295",
       "pred" : "http://purl.obolibrary.org/obo/RO_0000087",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_27027"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003179",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003176"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000076",
       "pred" : "is_a",
@@ -66892,13 +67055,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0002010"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000270",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000712",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000710"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000270",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000435",
       "pred" : "is_a",
@@ -66992,6 +67155,10 @@
       "pred" : "is_a",
       "obj" : "http://www.w3.org/2002/07/owl#Thing"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0002033",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0002032"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000272",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
@@ -67000,10 +67167,6 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_24432"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0002033",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0002032"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_51086",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_50906"
@@ -67011,6 +67174,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0002035",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0002010"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0003000",
+      "pred" : "inverseOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0003001"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000638",
       "pred" : "is_a",
@@ -67067,6 +67234,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000028",
       "pred" : "is_a",
       "obj" : "http://www.w3.org/2002/07/owl#Thing"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002354",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002353"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003024",
       "pred" : "is_a",
@@ -67320,13 +67491,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_64047"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/CHEBI_17594",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000004"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000665",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000357"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHEBI_17594",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000004"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_26800",
       "pred" : "is_a",
@@ -67563,6 +67734,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000609",
       "pred" : "is_a",
       "obj" : "http://www.w3.org/2002/07/owl#Thing"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CARO_0000007",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000141"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000778",
       "pred" : "is_a",
@@ -68239,6 +68414,10 @@
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_36338",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_36340"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002586",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002233"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003018",
       "pred" : "is_a",
@@ -69000,13 +69179,13 @@
       "pred" : "is_a",
       "obj" : "http://www.w3.org/2002/07/owl#Thing"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/RO_0002449",
-      "pred" : "subPropertyOf",
-      "obj" : "http://purl.obolibrary.org/obo/RO_0002448"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000605",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_27919"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002449",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002448"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000522",
       "pred" : "is_a",
@@ -69428,13 +69607,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_38313"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000762",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000750"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000761",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000760"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000762",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000750"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_35480",
       "pred" : "is_a",
@@ -69628,13 +69807,13 @@
       "pred" : "is_a",
       "obj" : "http://www.w3.org/2002/07/owl#Thing"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000433",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000671"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/GO_0003824",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/GO_0003674"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000433",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000671"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000479",
       "pred" : "is_a",
@@ -70004,13 +70183,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000525"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/CHEBI_33405",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/CHEBI_33608"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_17137",
       "pred" : "http://purl.obolibrary.org/obo/RO_0000087",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_77746"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHEBI_33405",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CHEBI_33608"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000364",
       "pred" : "is_a",
@@ -70376,6 +70555,10 @@
       "pred" : "is_a",
       "obj" : "http://www.w3.org/2002/07/owl#Thing"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000717",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000427"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000724",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000357"
@@ -70383,10 +70566,6 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000721",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000387"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000717",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000427"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000375",
       "pred" : "is_a",
@@ -70476,13 +70655,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_23888"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/CHEBI_38032",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/CHEBI_51959"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000246",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHEBI_38032",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CHEBI_51959"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_24433",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
@@ -70752,6 +70931,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_33704"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002297",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002234"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003180",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003176"
@@ -70900,13 +71083,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000403"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/CHEBI_18237",
-      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
-      "obj" : "http://purl.obolibrary.org/obo/CHEBI_50329"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_32456",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_33558"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHEBI_18237",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/CHEBI_50329"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_36340",
       "pred" : "is_a",
@@ -71832,6 +72015,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_33595"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002297",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002295"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003052",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003050"
@@ -72036,6 +72223,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_36586"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/BFO_0000141",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000004"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_24651",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_37577"
@@ -72172,13 +72363,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_35352"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000653",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000052"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003030",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003029"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000653",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000052"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_29987",
       "pred" : "is_a",
@@ -72732,21 +72923,21 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000428"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/CHEBI_26440",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/CHEBI_33838"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_35801",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_51144"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/CHEBI_17137",
-      "pred" : "http://purl.obolibrary.org/obo/chebi#is_conjugate_base_of",
-      "obj" : "http://purl.obolibrary.org/obo/CHEBI_48854"
+      "sub" : "http://purl.obolibrary.org/obo/CHEBI_26440",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CHEBI_33838"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_33521",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_33250"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHEBI_17137",
+      "pred" : "http://purl.obolibrary.org/obo/chebi#is_conjugate_base_of",
+      "obj" : "http://purl.obolibrary.org/obo/CHEBI_48854"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_17883",
       "pred" : "is_a",
@@ -72844,13 +73035,17 @@
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0000057"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003057",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003050"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000068",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000014"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003057",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003050"
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002353",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0000056"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000648",
       "pred" : "is_a",
@@ -72863,6 +73058,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000812",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000809"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002234",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0000057"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_32456",
       "pred" : "http://purl.obolibrary.org/obo/chebi#is_conjugate_base_of",
@@ -72892,13 +73091,13 @@
       "pred" : "is_a",
       "obj" : "http://www.w3.org/2002/07/owl#Thing"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000088",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000074"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_36043",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_35441"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000088",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000074"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_22323",
       "pred" : "is_a",
@@ -72996,13 +73195,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0002005"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/CHEBI_26709",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000556"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_50047",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000004"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHEBI_26709",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000556"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_24624",
       "pred" : "is_a",
@@ -73152,13 +73351,13 @@
       "pred" : "http://purl.obolibrary.org/obo/chebi#is_conjugate_acid_of",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_37022"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000359",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000709"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000391",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000389"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000359",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000709"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003144",
       "pred" : "is_a",
@@ -73200,13 +73399,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_33598"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/CHEBI_27376",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0000087",
-      "obj" : "http://purl.obolibrary.org/obo/CHEBI_76971"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000195",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000189"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHEBI_27376",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000087",
+      "obj" : "http://purl.obolibrary.org/obo/CHEBI_76971"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003059",
       "pred" : "is_a",
@@ -73300,25 +73499,25 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_51959"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/CHEBI_33408",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/CHEBI_24833"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_33838",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_21731"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHEBI_33408",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CHEBI_24833"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003036",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003029"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/RO_0002014",
-      "pred" : "subPropertyOf",
-      "obj" : "http://purl.obolibrary.org/obo/RO_0002013"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_76946",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_75763"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002014",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002013"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0002629",
       "pred" : "subPropertyOf",
@@ -73880,6 +74079,10 @@
       "pred" : "http://purl.obolibrary.org/obo/RO_0000087",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_50902"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/CARO_0000003",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CARO_0000006"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_22909",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_24834"
@@ -73928,13 +74131,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_25693"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/RO_0002524",
-      "pred" : "subPropertyOf",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000051"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000074",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000052"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002524",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000051"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_26834",
       "pred" : "is_a",
@@ -74056,13 +74259,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_36962"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/CHEBI_33671",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/CHEBI_33635"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_38102",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_50893"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHEBI_33671",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CHEBI_33635"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000518",
       "pred" : "is_a",
@@ -75288,13 +75491,13 @@
       "pred" : "is_a",
       "obj" : "http://www.w3.org/2002/07/owl#Thing"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000512",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000504"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_17258",
       "pred" : "http://purl.obolibrary.org/obo/chebi#is_tautomer_of",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_35586"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000512",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000504"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_79387",
       "pred" : "is_a",
@@ -75303,6 +75506,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000210",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000189"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CARO_0000006",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000040"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_28230",
       "pred" : "is_a",
@@ -75331,6 +75538,10 @@
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_84144",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_25985"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CARO_0000006",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CARO_0000000"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_27470",
       "pred" : "http://purl.obolibrary.org/obo/chebi#is_conjugate_acid_of",
@@ -75447,6 +75658,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000751",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000745"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0004007",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0000057"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0002412",
       "pred" : "subPropertyOf",
@@ -75824,6 +76039,10 @@
       "pred" : "http://purl.obolibrary.org/obo/chebi#is_tautomer_of",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_35588"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002414",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002411"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_25741",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_25806"
@@ -75940,13 +76159,13 @@
       "pred" : "is_a",
       "obj" : "http://www.w3.org/2002/07/owl#Thing"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/CHEBI_35588",
-      "pred" : "http://purl.obolibrary.org/obo/chebi#is_tautomer_of",
-      "obj" : "http://purl.obolibrary.org/obo/CHEBI_35589"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0007031",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0007030"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHEBI_35588",
+      "pred" : "http://purl.obolibrary.org/obo/chebi#is_tautomer_of",
+      "obj" : "http://purl.obolibrary.org/obo/CHEBI_35589"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_23357",
       "pred" : "is_a",
@@ -76007,6 +76226,10 @@
       "sub" : "http://purl.obolibrary.org/obo/RO_0002524",
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0002526"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002234",
+      "pred" : "inverseOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002353"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0001003",
       "pred" : "is_a",
@@ -76240,6 +76463,10 @@
       "pred" : "http://purl.obolibrary.org/obo/RO_0000087",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_85046"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002295",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002324"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_23239",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_25903"
@@ -76359,6 +76586,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0007018",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0005044"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002297",
+      "pred" : "inverseOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002354"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000443",
       "pred" : "is_a",
@@ -76753,7 +76984,7 @@
         "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion",
         "val" : "1.2"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/fbcv/releases/2019-07-11"
+      "version" : "http://purl.obolibrary.org/obo/fbcv/releases/2019-07-12"
     },
     "equivalentNodesSets" : [ {
       "nodeIds" : [ "http://purl.obolibrary.org/obo/CHEBI_24624", "http://purl.obolibrary.org/obo/FBcv_0000532" ]
@@ -77280,6 +77511,10 @@
       } ]
     } ],
     "domainRangeAxioms" : [ {
+      "predicateId" : "http://purl.obolibrary.org/obo/RO_0003001",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000040" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000040" ]
+    }, {
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0002375",
       "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000040" ],
       "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000040" ]
@@ -77304,26 +77539,34 @@
       "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000002" ],
       "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000003" ]
     }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/RO_0003000",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000040" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000040" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/RO_0002295",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/GO_0008150" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/CARO_0000003" ]
+    }, {
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0000053",
       "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000020" ]
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/BFO_0000050",
       "allValuesFromEdges" : [ {
-        "sub" : "http://purl.obolibrary.org/obo/BFO_0000020",
+        "sub" : "http://purl.obolibrary.org/obo/BFO_0000003",
         "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
-        "obj" : "http://purl.obolibrary.org/obo/BFO_0000020"
+        "obj" : "http://purl.obolibrary.org/obo/BFO_0000003"
       }, {
         "sub" : "http://purl.obolibrary.org/obo/BFO_0000002",
         "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
         "obj" : "http://purl.obolibrary.org/obo/BFO_0000002"
       }, {
+        "sub" : "http://purl.obolibrary.org/obo/BFO_0000020",
+        "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
+        "obj" : "http://purl.obolibrary.org/obo/BFO_0000020"
+      }, {
         "sub" : "http://purl.obolibrary.org/obo/BFO_0000017",
         "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
         "obj" : "http://purl.obolibrary.org/obo/BFO_0000017"
-      }, {
-        "sub" : "http://purl.obolibrary.org/obo/BFO_0000003",
-        "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
-        "obj" : "http://purl.obolibrary.org/obo/BFO_0000003"
       }, {
         "sub" : "http://purl.obolibrary.org/obo/BFO_0000004",
         "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
@@ -77387,6 +77630,14 @@
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0002215",
       "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000004" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000015" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/RO_0002337",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000015" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000002" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/RO_0002414",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000015" ],
       "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000015" ]
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0002018",

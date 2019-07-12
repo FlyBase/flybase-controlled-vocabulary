@@ -86,7 +86,7 @@ $(ONT)-simple.obo: oort
 
 # the fbcv-flybase target is a massive hack that 
 
-$(ONT)-flybase.obo: $(ONT)-simple.obo
+$(ONT)-flybase.obo: #$(ONT)-simple.obo
 	$(ROBOT) remove --input $(ONT)-simple.obo --term "http://purl.obolibrary.org/obo/FBcv_0008000" \
 		convert -o $@
 	sed -i '/^date[:]/c\date: $(DATETIME)' $@
@@ -172,7 +172,7 @@ tmp/auto_generated_definitions_dot.owl: tmp/merged-source-pre.owl tmp/auto_gener
 	java -jar ../scripts/eq-writer.jar $< tmp/auto_generated_definitions_seed_dot.txt flybase $@ NA
 
 tmp/auto_generated_definitions_sub.owl: tmp/merged-source-pre.owl tmp/auto_generated_definitions_seed_sub.txt
-	java -jar ../scripts/eq-writer.jar $< tmp/auto_generated_definitions_seed_sub.txt sub_external $@ NA
+	java -jar ../scripts/eq-writer.jar $< tmp/auto_generated_definitions_seed_sub.txt sub_external $@ NA source_xref
 
 pre_release: $(ONT)-edit.obo tmp/auto_generated_definitions_dot.owl tmp/auto_generated_definitions_sub.owl components/dpo-simple.owl
 	cp $(ONT)-edit.obo tmp/$(ONT)-edit-release.obo
@@ -181,6 +181,6 @@ pre_release: $(ONT)-edit.obo tmp/auto_generated_definitions_dot.owl tmp/auto_gen
 	$(ROBOT) merge -i tmp/$(ONT)-edit-release.obo -i tmp/auto_generated_definitions_dot.owl -i tmp/auto_generated_definitions_sub.owl --collapse-import-closure false -o $(ONT)-edit-release.ofn && mv $(ONT)-edit-release.ofn $(ONT)-edit-release.owl
 	echo "Preprocessing done. Make sure that NO CHANGES TO THE EDIT FILE ARE COMMITTED!"
 	
-#post_release: $(ONT)-flybase.owl
-#	cp $(ONT)-flybase.owl ../..
+post_release: $(ONT)-flybase.obo
+	cp $(ONT)-flybase.obo ../..
 	
