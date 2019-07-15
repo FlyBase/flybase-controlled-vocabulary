@@ -87,36 +87,12 @@ id: BFO:0000040
 name: material entity
 def: "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time." []
 is_a: BFO:0000004 ! independent continuant
-disjoint_from: BFO:0000141 ! immaterial entity
-
-[Term]
-id: BFO:0000141
-name: immaterial entity
-is_a: BFO:0000004 ! independent continuant
 
 [Term]
 id: CARO:0000000
 name: anatomical entity
 is_a: CARO:0030000 ! biological entity
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/caro.owl
-
-[Term]
-id: CARO:0000003
-name: connected anatomical structure
-is_a: CARO:0000006 ! material anatomical entity
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/caro.owl
-
-[Term]
-id: CARO:0000006
-name: material anatomical entity
-is_a: BFO:0000040 ! material entity
-is_a: CARO:0000000 ! anatomical entity
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/caro.owl
-
-[Term]
-id: CARO:0000007
-name: immaterial anatomical entity
-is_a: BFO:0000141 ! immaterial entity
 
 [Term]
 id: CARO:0030000
@@ -25994,17 +25970,6 @@ is_a: RO:0000057 ! has participant
 inverse_of: RO:0002352 ! input of
 
 [Typedef]
-id: RO:0002234
-name: has output
-def: "p has output c iff c is a participant in p, c is present at the end of p, and c is not present at the beginning of p." []
-subset: ro-eco
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000118 "produces" xsd:string
-is_a: RO:0000057 ! has participant
-inverse_of: RO:0002353 ! output of
-
-[Typedef]
 id: RO:0002254
 name: has developmental contribution from
 def: "x has developmental contribution from y iff x has some part z such that z develops from y" []
@@ -26099,6 +26064,15 @@ property_value: seeAlso "defining-property-chains-involving-reflexivity"
 holds_over_chain: RO:0000052 BFO:0000050 {http://purl.obolibrary.org/obo/RO_0002582="true"}
 is_a: RO:0002502 ! depends on
 transitive_over: BFO:0000050 ! part of
+
+[Typedef]
+id: RO:0002321
+name: ecologically related to
+def: "A relationship that is mediated in some way by the environment or environmental feature (ENVO:00002297)" []
+subset: ro-eco
+property_value: IAO:0000116 "Awaiting class for domain/range constraint, see: https://github.com/OBOFoundry/Experimental-OBO-Core/issues/6" xsd:string
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000232 "Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving ecological interactions" xsd:string
 
 [Typedef]
 id: RO:0002323
@@ -26208,16 +26182,6 @@ is_a: RO:0000056 ! participates in
 is_a: RO:0002328 ! functionally related to
 
 [Typedef]
-id: RO:0002353
-name: output of
-def: "inverse of has output" []
-subset: ro-eco
-subset: RO:0002259
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-is_a: RO:0000056 ! participates in
-is_a: RO:0002328 ! functionally related to
-
-[Typedef]
 id: RO:0002375
 name: in branching relationship with
 def: "A relationship that holds between two material entities in a system of connected structures, where the branching relationship holds based on properties of the connecting network." []
@@ -26246,6 +26210,14 @@ is_a: RO:0002324 ! developmentally related to
 id: RO:0002385
 name: has potential to developmentally contribute to
 def: "x has potential to developmentrally contribute to y iff x developmentally contributes to y or x is capable of developmentally contributing to y" []
+property_value: IAO:0000114 IAO:0000428
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+is_a: RO:0002384 ! has developmental potential involving
+
+[Typedef]
+id: RO:0002386
+name: has potential to developmentally induce
+def: "x has potential to developmentally induce y iff x developmentally induces y or x is capable of developmentally inducing y" []
 property_value: IAO:0000114 IAO:0000428
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 is_a: RO:0002384 ! has developmental potential involving
@@ -26312,6 +26284,19 @@ property_value: IAO:0000114 IAO:0000428
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: RO:0002575 RO:0002411
 is_a: RO:0002090 ! immediately precedes
+is_a: RO:0002411 ! causally upstream of
+
+[Typedef]
+id: RO:0002414
+name: transitively provides input for
+def: "transitive form of directly_provides_input_for" []
+property_value: IAO:0000114 IAO:0000428
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000232 "This is a grouping relation that should probably not be used in annotation. Consider instead the child relation 'directly provides input for' (which may later be relabeled simply to 'provides input for')" xsd:string
+property_value: IAO:0000589 "transitively provides input for (process to process)" xsd:string
+domain: BFO:0000015 ! process
+range: BFO:0000015 ! process
+is_transitive: true
 is_a: RO:0002411 ! causally upstream of
 
 [Typedef]
@@ -26646,12 +26631,6 @@ is_a: RO:0002328 ! functionally related to
 is_a: RO:0002595 ! causal relation between material entity and a process
 
 [Typedef]
-id: RO:0002592
-name: results in organization of
-def: "p results in organization of c iff p results in the assembly, arrangement of constituent parts, or disassembly of c" []
-is_a: RO:0040036 ! has anatomical participant
-
-[Typedef]
 id: RO:0002595
 name: causal relation between material entity and a process
 def: "A relationship that holds between a material entity and a process in which causality is involved, with either the material entity or some part of the material entity exerting some influence over the process, or the process influencing some aspect of the material entity." []
@@ -26714,36 +26693,6 @@ property_value: IAO:0000589 "directly negatively regulates (process to process)"
 property_value: RO:0004050 RO:0002578
 is_a: RO:0002212 ! negatively regulates
 is_a: RO:0002578 ! directly regulates
-
-[Typedef]
-id: RO:0003000
-name: produces
-def: "a produces b if some process that occurs_in a has_output b, where a and b are material entities. Examples: hybridoma cell line produces monoclonal antibody reagent; chondroblast produces avascular GAG-rich matrix." []
-comment: Note that this definition doesn't quite distinguish the output of a transformation process from a production process, which is related to the identity/granularity issue.
-subset: ro-eco
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000117 "Melissa Haendel" xsd:string
-domain: BFO:0000040 ! material entity
-range: BFO:0000040 ! material entity
-inverse_of: RO:0003001 ! produced by
-
-[Typedef]
-id: RO:0003001
-name: produced by
-def: "a produced_by b iff some process that occurs_in b has_output a." []
-subset: ro-eco
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000117 "Melissa Haendel" xsd:string
-domain: BFO:0000040 ! material entity
-range: BFO:0000040 ! material entity
-
-[Typedef]
-id: RO:0004007
-name: has primary input or output
-def: "p 'has primary input ot output' c iff either (a) p 'has primary input' c or (b) p 'has primary output' c." []
-is_a: RO:0000057 ! has participant
-created_by: cjm
-creation_date: 2018-12-13T11:26:17Z
 
 [Typedef]
 id: RO:0004031
@@ -26812,22 +26761,6 @@ property_value: RO:0004049 RO:0002418
 is_a: RO:0002418 ! causally upstream of or within
 created_by: cjm
 creation_date: 2018-03-13T23:55:19Z
-
-[Typedef]
-id: RO:0040035
-name: disease relationship
-def: "This relation groups  relations between diseases and any other kind of entity." []
-property_value: IAO:0000232 "Do not use this relation directly. It is intended as a grouping for a diverse set of relations, in which the subject or object is a disease." xsd:string
-created_by: cjm
-creation_date: 2018-09-26T00:00:32Z
-
-[Typedef]
-id: RO:0040036
-name: has anatomical participant
-def: "p has anatomical participant c iff p has participant c, and c is an anatomical entity" []
-is_a: RO:0000057 ! has participant
-created_by: cjm
-creation_date: 2018-09-26T01:08:58Z
 
 [Typedef]
 id: conditionality
@@ -26917,16 +26850,4 @@ name: is tautomer of
 namespace: chebi_ontology
 is_cyclic: true
 is_transitive: true
-
-[Typedef]
-id: results_in_developmental_progression_of
-name: results in developmental progression of
-def: "p results in the developmental progression of s iff p is a developmental process and s is an anatomical structure and p causes s to undergo a change in state at some point along its natural developmental cycle (this cycle starts with its formation, through the mature structure, and ends with its loss)." []
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000116 "This property and its subproperties are being used primarily for the definition of GO developmental processes. The property hierarchy mirrors the core GO hierarchy. In future we may be able to make do with a more minimal set of properties, but due to the way GO is currently structured we require highly specific relations to avoid incorrect entailments. To avoid this, the corresponding genus terms in GO should be declared mutually disjoint." xsd:string
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: seeAlso Ontology:extensions
-domain: GO:0008150 ! biological_process
-range: CARO:0000003 ! connected anatomical structure
-is_a: RO:0002324 ! developmentally related to
 
