@@ -44,7 +44,7 @@ tmp/source-merged.obo: $(SRC) tmp/asserted-subclass-of-axioms.obo
 		merge -i tmp/asserted-subclass-of-axioms.obo \
 		convert --check false -f obo $(OBO_FORMAT_OPTIONS) -o tmp/source-merged.owl.obo &&\
 		grep -v ^owl-axioms tmp/source-merged.owl.obo > tmp/source-stripped.obo &&\
-		cat tmp/source-stripped.obo | perl -0777 -e '$$_ = <>; s/name[:].*\nname[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/def[:].*\nname[:]/def:/g; print' > $@ &&\
+		cat tmp/source-stripped.obo | perl -0777 -e '$$_ = <>; s/name[:].*\nname[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/def[:].*\ndef[:]/def:/g; print' > $@ &&\
 		rm tmp/source-merged.owl.obo tmp/source-stripped.obo
 
 oort: tmp/source-merged.obo
@@ -92,14 +92,16 @@ $(ONT)-flybase.obo: #$(ONT)-simple.obo
 	sed -i '/^date[:]/c\date: $(DATETIME)' $@
 	sed -i '/^data-version[:]/c\data-version: $(DATE)' $@
 	sed -i '/FlyBase_miscellaneous_CV/d' $@
-	echo "[Typedef]" >> $@
-	echo "id: part_of" >> $@
-	echo "name: part_of" >> $@
-	echo "namespace: relationship" >> $@
-	echo 'synonym: "part_of" EXACT []' >> $@
-	echo "xref: BFO:0000050" >> $@
-	echo "xref_analog: OBO_REL:part_of" >> $@
-	echo "is_transitive: true" >> $@
+
+# The following lines were part of a previous misconception that we needed a part_of typedef for the flybase release.
+#	echo "[Typedef]" >> $@
+#	echo "id: part_of" >> $@
+#	echo "name: part_of" >> $@
+#	echo "namespace: relationship" >> $@
+#	echo 'synonym: "part_of" EXACT []' >> $@
+#	echo "xref: BFO:0000050" >> $@
+#	echo "xref_analog: OBO_REL:part_of" >> $@
+#	echo "is_transitive: true" >> $@
 
 #	owltools $(ONT)-simple --make-subset-by-properties part_of conditionality -o $@
 
@@ -174,6 +176,9 @@ tmp/auto_generated_definitions_dot.owl: tmp/merged-source-pre.owl tmp/auto_gener
 tmp/auto_generated_definitions_sub.owl: tmp/merged-source-pre.owl tmp/auto_generated_definitions_seed_sub.txt
 	java -jar ../scripts/eq-writer.jar $< tmp/auto_generated_definitions_seed_sub.txt sub_external $@ NA source_xref
 
+tmp/replaced_defs.txt:
+	cat tmp/auto_generated_definitions_seed_sub.txt tmp/auto_generated_definitions_seed_dot.txt | sort | uniq > $@
+
 pre_release: $(ONT)-edit.obo tmp/auto_generated_definitions_dot.owl tmp/auto_generated_definitions_sub.owl components/dpo-simple.owl
 	cp $(ONT)-edit.obo tmp/$(ONT)-edit-release.obo
 	sed -i '/def[:] \"[.]\"/d' tmp/$(ONT)-edit-release.obo
@@ -184,3 +189,6 @@ pre_release: $(ONT)-edit.obo tmp/auto_generated_definitions_dot.owl tmp/auto_gen
 post_release: $(ONT)-flybase.obo
 	cp $(ONT)-flybase.obo ../..
 	
+test_remove: $(ONT)-edit.obo tmp/replaced_defs.txt
+	$(ROBOT) remove -i $(ONT)-edit.obo remove --term-file tmp/replaced_defs.txt --axioms annotation --trim false \ merge -i tmp/auto_generated_definitions_dot.owl -i tmp/auto_generated_definitions_sub.owl --collapse-import-closure false -o $(ONT)-edit-release.ofn && mv $(ONT)-edit-release.ofn $(ONT)-edit-release2.owl
+	diff $(ONT)-edit-release2.owl $(ONT)-edit-release.owl
