@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: fbcv/releases/2019-07-15/fbcv-non-classified.owl
+data-version: fbcv/releases/2019-07-17/fbcv-non-classified.owl
 date: 03:01:2018 20:37
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -3173,8 +3173,8 @@ namespace: chebi_ontology
 subset: 3_STAR
 synonym: ">C=O" RELATED [IUPAC]
 synonym: "carbonyl" EXACT IUPAC_NAME [IUPAC]
-synonym: "carbonyl group" EXACT [UniProt]
 synonym: "carbonyl group" EXACT [ChEBI]
+synonym: "carbonyl group" EXACT [UniProt]
 is_a: CHEBI:51422 ! organodiyl group
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "CO" xsd:string
@@ -26287,14 +26287,6 @@ property_value: IAO:0000117 "Chris Mungall" xsd:string
 is_a: RO:0002384 ! has developmental potential involving
 
 [Typedef]
-id: RO:0002386
-name: has potential to developmentally induce
-def: "x has potential to developmentally induce y iff x developmentally induces y or x is capable of developmentally inducing y" []
-property_value: IAO:0000114 IAO:0000428
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-is_a: RO:0002384 ! has developmental potential involving
-
-[Typedef]
 id: RO:0002387
 name: has potential to develop into
 def: "x has the potential to develop into y iff x develops into y or if x is capable of developing into y" []
@@ -26765,6 +26757,14 @@ property_value: IAO:0000589 "directly negatively regulates (process to process)"
 property_value: RO:0004050 RO:0002578
 is_a: RO:0002212 ! negatively regulates
 is_a: RO:0002578 ! directly regulates
+
+[Typedef]
+id: RO:0004007
+name: has primary input or output
+def: "p 'has primary input ot output' c iff either (a) p 'has primary input' c or (b) p 'has primary output' c." []
+is_a: RO:0000057 ! has participant
+created_by: cjm
+creation_date: 2018-12-13T11:26:17Z
 
 [Typedef]
 id: RO:0004031
