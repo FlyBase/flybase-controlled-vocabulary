@@ -5,3 +5,5 @@ WHERE {
   { ?term ?p2 ?o2 . }
   FILTER(isIRI(?term) && (regex(str(?term), UCASE("fbcv_")) || regex(str(?term), "http://purl.obolibrary.org/obo/FBcv_") || regex(str(?term), "http://purl.obolibrary.org/obo/fbcv_")))
 }
+
+
