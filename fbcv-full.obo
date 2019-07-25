@@ -1,7 +1,6 @@
 format-version: 1.2
-data-version: fbcv/releases/2019-07-17/fbcv-full.owl
-date: 03:01:2018 20:37
-auto-generated-by: OBO-Edit 2.3.1
+data-version: fbcv/releases/2019-07-25/fbcv-full.owl
+date: 25:07:2019 17:18
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -10,11 +9,9 @@ subsetdef: cell_quality "cell_quality"
 subsetdef: common_tool_use "Terms to summarize typical use of a gene from one organism that is introduced into another organism primarily for use an experimental tool, rather than to study the function of the gene"
 subsetdef: cur "cur"
 subsetdef: deprecated "warning of impending obsoletion"
-subsetdef: do_not_annotate "do not annotate"
 subsetdef: do_not_annotate "Term not to be used for direct annotation"
 subsetdef: do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: EmbDevSlim "EmbDevSlim"
-subsetdef: fbcvsubset_mgiribbons "fbcvsubset_mgiribbons"
 subsetdef: fbcvsubset_mgiribbons "MGI ribbon terms"
 subsetdef: FlyTed "Testis slim"
 subsetdef: FT_new "FlyTed temp subset for edit tracking purposes"
@@ -54,6 +51,7 @@ name: independent continuant
 def: "A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything." []
 is_a: BFO:0000002 ! continuant
 disjoint_from: BFO:0000020 ! specifically dependent continuant
+disjoint_from: BFO:0000031 ! generically dependent continuant
 relationship: BFO:0000050 BFO:0000004 ! part of independent continuant
 
 [Term]
@@ -67,13 +65,21 @@ id: BFO:0000017
 name: realizable entity
 def: "A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances." []
 is_a: BFO:0000020 ! specifically dependent continuant
+disjoint_from: BFO:0000019 ! quality
 relationship: BFO:0000050 BFO:0000017 ! part of realizable entity
+
+[Term]
+id: BFO:0000019
+name: quality
+is_a: BFO:0000020 ! specifically dependent continuant
+relationship: BFO:0000050 BFO:0000019 ! part of quality
 
 [Term]
 id: BFO:0000020
 name: specifically dependent continuant
 def: "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same." []
 is_a: BFO:0000002 ! continuant
+disjoint_from: BFO:0000031 ! generically dependent continuant
 relationship: BFO:0000050 BFO:0000020 ! part of specifically dependent continuant
 
 [Term]
@@ -81,6 +87,13 @@ id: BFO:0000023
 name: role
 def: "A realizable entity  the manifestation of which brings about some result or end that is not essential to a continuant  in virtue of the kind of thing that it is but that can be served or participated in by that kind of continuant  in some kinds of natural, social or institutional contexts." []
 is_a: BFO:0000017 ! realizable entity
+
+[Term]
+id: BFO:0000031
+name: generically dependent continuant
+def: "A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time." []
+is_a: BFO:0000002 ! continuant
+relationship: BFO:0000050 BFO:0000031 ! part of generically dependent continuant
 
 [Term]
 id: BFO:0000040
