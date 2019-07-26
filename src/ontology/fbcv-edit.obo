@@ -3092,7 +3092,7 @@ id: FBcv:0000493
 name: MRh12 induced male recombination
 namespace: origin_of_mutation
 def: "Mutation caused by a male recombination event induced by a male recombination factor which is present in chromosomes extracted from a population in Haifa, Israel." [FlyBase:FBrf0202435]
-synonym: " MRh12" RELATED []
+synonym: "MRh12" RELATED []
 synonym: "mutation induced by  MRh12 male recombination" EXACT []
 is_a: FBcv:0000492 ! male recombination induced by dysgenesis
 
@@ -8151,7 +8151,7 @@ creation_date: 2017-06-28T11:41:27Z
 id: FBcv:0005056
 name: gene product cleavage tag
 namespace: experimental_tool_descriptor
-def: "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which allows the tagged gene product to be cleaved (broken into smaller molecules by the rupture of a covalent bond) by a specific process. " [FBC:GM]
+def: "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which allows the tagged gene product to be cleaved (broken into smaller molecules by the rupture of a covalent bond) by a specific process." [FBC:GM]
 is_a: FBcv:0005001 ! experimental tool descriptor
 created_by: temj2
 creation_date: 2017-06-28T11:41:27Z
@@ -8413,6 +8413,24 @@ synonym: "small molecule-dependent gene product degradation tag" EXACT []
 is_a: FBcv:0005042 ! gene product degradation tag
 created_by: temj2
 creation_date: 2017-12-22T13:09:10Z
+
+[Term]
+id: FBcv:0007000
+name: micropublication
+namespace: pub_type
+def: "A short report describing a single stand-alone research finding that is peer-reviewed and published." [FBC:SM, http://www.micropublication.org]
+is_a: FBcv:0000189 ! publication class
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2019-06-25T08:45:04Z
+
+[Term]
+id: FBcv:0007001
+name: preprint
+namespace: pub_type
+def: "A version of a scientific manuscript that is shared publicly on the web without peer review. In most cases, work posted as a preprint will be submitted for peer review at a journal." [FBC:SM, http://www.asapbio.org/preprint-info]
+is_a: FBcv:0000189 ! publication class
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2019-06-25T09:00:50Z
 
 [Term]
 id: FBcv:0007002
@@ -8722,24 +8740,6 @@ created_by: http://orcid.org/0000-0002-1373-1705
 creation_date: 2019-06-26T09:17:20Z
 
 [Term]
-id: FBcv:0007000
-name: micropublication
-namespace: pub_type
-def: "A short report describing a single stand-alone research finding that is peer-reviewed and published." [FBC:SM, http://www.micropublication.org]
-is_a: FBcv:0000189 ! publication class
-created_by: http://orcid.org/0000-0002-1373-1705
-creation_date: 2019-06-25T08:45:04Z
-
-[Term]
-id: FBcv:0007001
-name: preprint
-namespace: pub_type
-def: "A version of a scientific manuscript that is shared publicly on the web without peer review. In most cases, work posted as a preprint will be submitted for peer review at a journal." [FBC:SM, http://www.asapbio.org/preprint-info]
-is_a: FBcv:0000189 ! publication class
-created_by: http://orcid.org/0000-0002-1373-1705
-creation_date: 2019-06-25T09:00:50Z
-
-[Term]
 id: FBcv:0010000
 name: living stock
 comment: Consider - FBsv:0000002.
@@ -8896,3 +8896,4 @@ name: conditionality
 id: has_role
 name: has role
 xref: RO:0000087
+
