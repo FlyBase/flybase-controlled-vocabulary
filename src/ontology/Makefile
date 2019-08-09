@@ -1,6 +1,7 @@
 # ----------------------------------------
 # Makefile for fbcv
 # Generated using ontology-starter-kit
+# ODK Version: v1.2.17
 # ----------------------------------------
 # <do not edit above this line>
 
@@ -24,6 +25,7 @@ REPORT_FAIL_ON =            none
 OBO_FORMAT_OPTIONS =        
 SPARQL_VALIDATION_CHECKS =  equivalent-classes trailing-whitespace owldef-self-reference xref-syntax nolabels
 SPARQL_EXPORTS =            basic-report class-count-by-prefix edges xrefs obsoletes synonyms
+ODK_VERSION =               v1.2.17
 
 TODAY ?= $(shell date +%Y-%m-%d)
 OBODATE ?= $(shell date +'%d:%m:%Y %H:%M')
@@ -38,9 +40,13 @@ RELEASE_ARTEFACTS = $(sort  base simple non-classified full base full)
 # ----------------------------------------
 
 .PHONY: .FORCE
-all: all_imports all_main all_subsets sparql_test all_reports all_assets
-test: sparql_test all_reports
+all: odkversion all_imports all_main all_subsets sparql_test all_reports all_assets
+test: odkversion sparql_test all_reports
 	$(ROBOT) reason --input $(SRC) --reasoner ELK  --equivalent-classes-allowed asserted-only --output test.owl && rm test.owl && echo "Success"
+
+odkversion:
+	echo "ODK Makefile version: $(ODK_VERSION) (this is the version of the ODK with which this Makefile was generated, not the version of the ODK you are running)" &&\
+	echo "ROBOT version (ODK): " && $(ROBOT) --version
 
 ## -- main targets --
 ##
@@ -132,7 +138,7 @@ SIMPLESEED=simple_seed.txt
 # It will ensure that all assets/files are fresh, and will copy to release folder
 prepare_release: $(ASSETS) $(PATTERN_RELEASE_FILES)
 	rsync -R $(ASSETS) $(RELEASEDIR) &&\
-  echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on github"
+  echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
 
 prepare_initial_release: prepare_release
 	cd $(RELEASEDIR) && git add $(ASSETS)
@@ -264,6 +270,7 @@ imports/%_terms_combined.txt: seed.txt imports/%_terms.txt
 # This pattern uses ROBOT to generate an import module
 imports/%_import.owl: mirror/%.owl imports/%_terms_combined.txt
 	@if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/$*_terms_combined.txt --force true --method BOT \
+		query --update ../sparql/inject-subset-declaration.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 .PRECIOUS: imports/%_import.owl
 
@@ -338,7 +345,7 @@ sparql_test: $(SRC)
 # ROBOT report
 # ----------------------------------------
 reports/%-obo-report.tsv: %
-	$(ROBOT) report -i $< --fail-on $(REPORT_FAIL_ON) --print 5 -o $@
+	$(ROBOT) report -i $< --fail-on $(REPORT_FAIL_ON) -o $@
 
 # ----------------------------------------
 # Sparql queries: Exports
@@ -356,6 +363,54 @@ all_reports_onestep: $(SRC)
 IM=build-$(ONT)
 build-docker:
 	docker build -t $(ONT) .
+
+
+
+
+# ----------------------------------------
+# GitHub release (HIGHLY experimental)
+# ----------------------------------------
+
+RELEASEFILES=$(ASSETS)
+TAGNAME=v$(TODAY)
+
+
+
+USER=unknown
+GH_ASSETS = $(patsubst %, tmp/gh_release_asset_%.txt, $(RELEASEFILES))
+GITHUB_REPO=FlyBase/flybase-controlled-vocabulary
+
+tmp/release_get.txt:
+	curl -s https://api.github.com/repos/${GITHUB_REPO}/releases/tags/${TAGNAME} > $@
+
+tmp/release_op.txt: tmp/release_get.txt
+	$(eval RELEASEID=$(shell cat tmp/release_get.txt | jq '.id'))
+	if ! [ "$(RELEASEID)" -eq "$(RELEASEID)" ] ; then \
+		curl -s -X POST \
+			https://api.github.com/repos/${GITHUB_REPO}/releases \
+			-H 'Accept: */*' \
+			-H 'Content-Type: application/json' \
+			-u ${USER} \
+			-d '{ "tag_name": "${TAGNAME}", "target_commitish": "master", "name": "${TAGNAME}", "body": "Ontology release ${TODAY}", "draft": false, "prerelease": false }' > $@; \
+	else \
+		cp $< $@; \
+	fi;
+
+tmp/gh_release_id.txt: tmp/release_op.txt
+	echo $(shell cat tmp/release_op.txt | jq '.id') > $@;
+
+tmp/gh_release_asset_%.txt: tmp/gh_release_id.txt %
+	curl -X POST \
+		"https://uploads.github.com/repos/${GITHUB_REPO}/releases/$(shell cat tmp/gh_release_id.txt)/assets?name=$*&label=$*" \
+		--data-binary @$* \
+		-u ${USER} \
+		-H 'Accept: */*' \
+		-H 'Cache-Control: no-cache' \
+		-H 'Connection: keep-alive' \
+		-H 'Content-Type: application/octet-stream' > $@
+
+public_release: tmp/gh_release_id.txt $(GH_ASSETS)
+
 
 
 
