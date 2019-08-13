@@ -13,13 +13,14 @@ DATETIME ?= $(shell date +"%d:%m:%Y %H:%M")
 ### Download and integrate the DPO component       ###
 ######################################################
 
-DPO=https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/dpo-simple.obo
+DPO=http://purl.obolibrary.org/obo/dpo/dpo-simple.obo
 
 components/dpo-simple.owl: .FORCE
-	echo "CHANGE DPO PURL!"
-	$(ROBOT) annotate -I $(DPO) --ontology-iri $(URIBASE)/$(ONT).owl --version-iri $(ONTBASE)/releases/$(TODAY) -o tmp/$@.obo
-	$(ROBOT) convert -i tmp/$@.obo -o $@
+	wget $(DPO) && mv dpo-simple.obo tmp/dpo-simple.obo
+	$(ROBOT) annotate -i tmp/dpo-simple.obo --ontology-iri $(URIBASE)/$(ONT).owl --version-iri $(ONTBASE)/releases/$(TODAY) convert -f obo --check false -o tmp/dpo-simple.obo
+	$(ROBOT) convert -i tmp/dpo-simple.obo -o $@
 	$(ROBOT) annotate -i $@ --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ -o $@
+	rm tmp/dpo-simple.obo
 
 #####################################################################################
 ### Run ontology-release-runner instead of ROBOT as long as ROBOT is broken.      ###
