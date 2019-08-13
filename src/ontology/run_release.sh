@@ -1,4 +1,5 @@
 # Running the FBCV release pipeline
+set -e
 
 # 1. First, lets make sure the ODK is up to date (I comment this out because I use even newer version)
 #docker pull obolibrary/odkfull
