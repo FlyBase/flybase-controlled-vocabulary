@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: 2019-07-25
-date: 25:07:2019 17:24
+data-version: 2019-08-14
+date: 14:08:2019 18:04
 subsetdef: camcur "camcur"
 subsetdef: common_tool_use "Terms to summarize typical use of a gene from one organism that is introduced into another organism primarily for use an experimental tool, rather than to study the function of the gene"
 subsetdef: do_not_annotate "Term not to be used for direct annotation"
@@ -58,7 +58,7 @@ is_a: FBcv:0000000 ! FlyBase CV
 id: FBcv:0000006
 name: male semi-fertile
 namespace: phenotypic_class
-def: "Any male semi fertile that inheres in some organism (FBbt:00000001)." []
+def: "Any male semi-fertile (PATO:0001761) that inheres in some organism (FBbt:00000001)." []
 is_a: FBcv:0000375 ! semi-fertile
 is_a: FBcv:0000376 ! male fertile
 
@@ -66,7 +66,7 @@ is_a: FBcv:0000376 ! male fertile
 id: FBcv:0000007
 name: female semi-fertile
 namespace: phenotypic_class
-def: "Any female semi fertile that inheres in some organism (FBbt:00000001)." []
+def: "Any female semi-fertile (PATO:0001760) that inheres in some organism (FBbt:00000001)." []
 is_a: FBcv:0000375 ! semi-fertile
 is_a: FBcv:0000377 ! female fertile
 
@@ -3686,7 +3686,7 @@ id: FBcv:0000493
 name: MRh12 induced male recombination
 namespace: origin_of_mutation
 def: "Mutation caused by a male recombination event induced by a male recombination factor which is present in chromosomes extracted from a population in Haifa, Israel." [FlyBase:FBrf0202435]
-synonym: " MRh12" RELATED []
+synonym: "MRh12" RELATED []
 synonym: "mutation induced by  MRh12 male recombination" EXACT []
 is_a: FBcv:0000492 ! male recombination induced by dysgenesis
 
@@ -3963,7 +3963,7 @@ is_a: FBcv:0000452 ! origin of mutation
 id: FBcv:0000526
 name: alkylating agent
 namespace: origin_of_mutation
-def: "Any chemical (FBcv:0000525) that has role some alkylating agent (CHEBI:22333)." []
+def: "Any chemical (FBcv:0000525) that has role some alkylating agent (CHEBI:22333)." [CHEBI:22333]
 synonym: "mutation induced by alkylating agent exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
 
@@ -4096,7 +4096,7 @@ is_a: FBcv:0000538 ! carbamate
 id: FBcv:0000541
 name: intercalating agent
 namespace: origin_of_mutation
-def: "Any chemical (FBcv:0000525) that has role some intercalator (CHEBI:24853)." []
+def: "Any chemical (FBcv:0000525) that has role some intercalator (CHEBI:24853)." [CHEBI:24853]
 synonym: "mutation induced by intercalating agent exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
 
@@ -4185,7 +4185,7 @@ is_a: FBcv:0000548 ! base analog
 id: FBcv:0000551
 name: enzyme inhibitor
 namespace: origin_of_mutation
-def: "Any chemical (FBcv:0000525) that has role some enzyme inhibitor (CHEBI:23924)." []
+def: "Any chemical (FBcv:0000525) that has role some enzyme inhibitor (CHEBI:23924)." [CHEBI:23924]
 synonym: "mutation induced by enzyme inhibitor exposure" EXACT []
 is_a: FBcv:0000525 ! chemical
 
@@ -6406,10 +6406,11 @@ is_a: FBcv:0002002 ! lethal - all die before end of larval stage
 id: FBcv:0002004
 name: increased mortality
 namespace: phenotypic_class
-def: "A phenotype that is an increase in the rate of death in a population at any stage of life (during development or adulthood), over the rate seen in a wild type control population. " [FBC:DOS]
+def: "A phenotype that is an increase in the rate of death in a population at any stage of life (during development or adulthood), over the rate seen in a wild type control population." [FBC:DOS]
 subset: fbcvsubset_mgiribbons
 subset: lethal_phase
 is_a: FBcv:0001347 ! phenotype
+relationship: inheres_in FBcv:0006003 ! population of Drosophila
 
 [Term]
 id: FBcv:0002005
@@ -9432,7 +9433,7 @@ creation_date: 2017-06-28T11:41:27Z
 id: FBcv:0005056
 name: gene product cleavage tag
 namespace: experimental_tool_descriptor
-def: "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which allows the tagged gene product to be cleaved (broken into smaller molecules by the rupture of a covalent bond) by a specific process. " [FBC:GM]
+def: "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which allows the tagged gene product to be cleaved (broken into smaller molecules by the rupture of a covalent bond) by a specific process." [FBC:GM]
 is_a: FBcv:0005001 ! experimental tool descriptor
 created_by: temj2
 creation_date: 2017-06-28T11:41:27Z
@@ -10223,6 +10224,25 @@ synonym: "Kyoto stock center" RELATED []
 is_obsolete: true
 
 [Typedef]
+id: RO:0002314
+holds_over_chain: inheres_in BFO:0000050
+
+[Typedef]
 id: conditionality
 name: conditionality
+
+[Typedef]
+id: inheres_in
+name: inheres_in
+namespace: fly_anatomy.ontology
+def: "A relationship between a dependent continuant, for example a quality such as color, and an independent continuant, such as an eye." []
+comment: Example red (PATO) inheres_in some eye (FBbt).
+xref: RO:0000052
+property_value: IAO:0000111 "inheres in" xsd:string
+property_value: IAO:0000112 "this fragility inheres in this vase" xsd:string
+property_value: IAO:0000112 "this red color inheres in this apple" xsd:string
+property_value: IAO:0000116 "A dependent inheres in its bearer at all times for which the dependent exists." xsd:string
+property_value: IAO:0000118 "inheres_in" xsd:string
+property_value: RO:0001900 RO:0001901
+is_a: RO:0002314
 

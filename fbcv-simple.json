@@ -3111,6 +3111,47 @@
       "type" : "CLASS",
       "lbl" : "transposable element activity"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0000052",
+      "meta" : {
+        "definition" : {
+          "val" : "A relationship between a dependent continuant, for example a quality such as color, and an independent continuant, such as an eye.",
+          "xrefs" : [ ]
+        },
+        "xrefs" : [ {
+          "val" : "RO:0000052"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "inheres_in"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "this fragility inheres in this vase"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "A dependent inheres in its bearer at all times for which the dependent exists."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "inheres in"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "fly_anatomy.ontology"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "Example red (PATO) inheres_in some eye (FBbt)."
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+          "val" : "inheres_in"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "this red color inheres in this apple"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/RO_0001900",
+          "val" : "http://purl.obolibrary.org/obo/RO_0001901"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "inheres_in"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000008",
       "meta" : {
         "definition" : {
@@ -3488,7 +3529,7 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000006",
       "meta" : {
         "definition" : {
-          "val" : "Any male semi fertile that inheres in some organism (FBbt:00000001).",
+          "val" : "Any male semi-fertile (PATO:0001761) that inheres in some organism (FBbt:00000001).",
           "xrefs" : [ ]
         },
         "basicPropertyValues" : [ {
@@ -3502,7 +3543,7 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000007",
       "meta" : {
         "definition" : {
-          "val" : "Any female semi fertile that inheres in some organism (FBbt:00000001).",
+          "val" : "Any female semi-fertile (PATO:0001760) that inheres in some organism (FBbt:00000001).",
           "xrefs" : [ ]
         },
         "basicPropertyValues" : [ {
@@ -3653,7 +3694,7 @@
           "xrefs" : [ ]
         }, {
           "pred" : "hasRelatedSynonym",
-          "val" : " MRh12",
+          "val" : "MRh12",
           "xrefs" : [ ]
         } ],
         "basicPropertyValues" : [ {
@@ -4351,7 +4392,7 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0002004",
       "meta" : {
         "definition" : {
-          "val" : "A phenotype that is an increase in the rate of death in a population at any stage of life (during development or adulthood), over the rate seen in a wild type control population. ",
+          "val" : "A phenotype that is an increase in the rate of death in a population at any stage of life (during development or adulthood), over the rate seen in a wild type control population.",
           "xrefs" : [ "FBC:DOS" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons", "http://purl.obolibrary.org/obo/fbcv#lethal_phase" ],
@@ -10721,7 +10762,7 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0005056",
       "meta" : {
         "definition" : {
-          "val" : "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which allows the tagged gene product to be cleaved (broken into smaller molecules by the rupture of a covalent bond) by a specific process. ",
+          "val" : "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which allows the tagged gene product to be cleaved (broken into smaller molecules by the rupture of a covalent bond) by a specific process.",
           "xrefs" : [ "FBC:GM" ]
         },
         "basicPropertyValues" : [ {
@@ -19263,7 +19304,7 @@
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "FlyBase_miscellaneous_CV"
+          "val" : "FlyBase miscellaneous CV"
         } ]
       },
       "type" : "CLASS",
@@ -19433,7 +19474,7 @@
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "FlyBase_miscellaneous_CV"
+          "val" : "FlyBase miscellaneous CV"
         } ]
       },
       "type" : "CLASS",
@@ -20159,6 +20200,14 @@
       },
       "type" : "CLASS",
       "lbl" : "heat sensitive amorphic allele - genetic evidence"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "meta" : {
+        "definition" : {
+          "val" : "Q1 has_part Q2 if and only if: every instance of Q1 is a quality_of an entity that has_quality some Q2.",
+          "xrefs" : [ "PATOC:CJM" ]
+        }
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000500",
       "meta" : {
@@ -21310,7 +21359,7 @@
       "meta" : {
         "definition" : {
           "val" : "Any chemical (FBcv:0000525) that has role some intercalator (CHEBI:24853).",
-          "xrefs" : [ ]
+          "xrefs" : [ "CHEBI:24853" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -21836,7 +21885,7 @@
       "meta" : {
         "definition" : {
           "val" : "Any chemical (FBcv:0000525) that has role some enzyme inhibitor (CHEBI:23924).",
-          "xrefs" : [ ]
+          "xrefs" : [ "CHEBI:23924" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -22129,7 +22178,7 @@
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "FlyBase_miscellaneous_CV"
+          "val" : "FlyBase miscellaneous CV"
         } ]
       },
       "type" : "PROPERTY",
@@ -22198,7 +22247,7 @@
       "meta" : {
         "definition" : {
           "val" : "Any chemical (FBcv:0000525) that has role some alkylating agent (CHEBI:22333).",
-          "xrefs" : [ ]
+          "xrefs" : [ "CHEBI:22333" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -23049,6 +23098,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000189"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000717",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000427"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000724",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000357"
@@ -23056,10 +23109,6 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000721",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000387"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000717",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000427"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000286",
       "pred" : "is_a",
@@ -23265,13 +23314,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000503"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000751",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000690"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000758",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000753"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000751",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000690"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003094",
       "pred" : "is_a",
@@ -24201,6 +24250,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0005004"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0000052",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002314"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0002009",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0002007"
@@ -24977,13 +25030,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0005044"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000779",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000749"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000535",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000526"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000779",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000749"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0002005",
       "pred" : "is_a",
@@ -25197,13 +25250,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003191"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000267",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000047",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000038"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000267",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003118",
       "pred" : "is_a",
@@ -25229,13 +25282,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000492"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000241",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003226",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003222"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000241",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000398",
       "pred" : "is_a",
@@ -25277,13 +25330,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000512",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000504"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0007019",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0007018"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000512",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000504"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0007007",
       "pred" : "is_a",
@@ -25697,6 +25750,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000074"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0002004",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000052",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0006003"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003228",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003222"
@@ -25969,13 +26026,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003222"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000271",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000274"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000275",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000271",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000274"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003214",
       "pred" : "is_a",
@@ -26177,13 +26234,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0002014",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0002012"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0002013",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0002022"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0002014",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0002012"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000135",
       "pred" : "is_a",
@@ -26221,13 +26278,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003153",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003146"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000413",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003153",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003146"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000491",
       "pred" : "is_a",
@@ -26313,13 +26370,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003050"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000147",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000322"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000450",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000147",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000322"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000163",
       "pred" : "is_a",
@@ -26381,13 +26438,13 @@
       "pred" : "http://purl.obolibrary.org/obo/fbcv#conditionality",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000311"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000762",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000750"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000761",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000760"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000762",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000750"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0007028",
       "pred" : "is_a",
@@ -26541,13 +26598,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000739"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000176",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000005"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0005050",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0005044"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000176",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000005"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0001325",
       "pred" : "is_a",
@@ -26813,17 +26870,17 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0005068"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003011",
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000485",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000013"
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003020"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000274",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000485",
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003011",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003020"
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000013"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000439",
       "pred" : "is_a",
@@ -27615,7 +27672,7 @@
       "xrefs" : [ ],
       "basicPropertyValues" : [ {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#date",
-        "val" : "25:07:2019 17:23"
+        "val" : "14:08:2019 18:03"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#default-namespace",
         "val" : "FlyBase miscellaneous CV"
@@ -27623,11 +27680,14 @@
         "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion",
         "val" : "1.2"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/fbcv/releases/2019-07-25/fbcv-simple.json"
+      "version" : "http://purl.obolibrary.org/obo/fbcv/releases/2019-08-14/fbcv-simple.json"
     },
     "equivalentNodesSets" : [ ],
     "logicalDefinitionAxioms" : [ ],
     "domainRangeAxioms" : [ ],
-    "propertyChainAxioms" : [ ]
+    "propertyChainAxioms" : [ {
+      "predicateId" : "http://purl.obolibrary.org/obo/RO_0002314",
+      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0000052", "http://purl.obolibrary.org/obo/BFO_0000050" ]
+    } ]
   } ]
 }
