@@ -13,14 +13,12 @@ DATETIME ?= $(shell date +"%d:%m:%Y %H:%M")
 ### Download and integrate the DPO component       ###
 ######################################################
 
-DPO=http://purl.obolibrary.org/obo/dpo/dpo-simple.obo
+DPO=http://purl.obolibrary.org/obo/dpo/dpo-simple.owl
 
 components/dpo-simple.owl: .FORCE
-	wget $(DPO) && mv dpo-simple.obo tmp/dpo-simple.obo
-	$(ROBOT) annotate -i tmp/dpo-simple.obo --ontology-iri $(URIBASE)/$(ONT).owl --version-iri $(ONTBASE)/releases/$(TODAY) convert -f obo --check false -o tmp/dpo-simple.obo
-	$(ROBOT) convert -i tmp/dpo-simple.obo -o $@
-	$(ROBOT) annotate -i $@ --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ -o $@
-	rm tmp/dpo-simple.obo
+	wget $(DPO) && mv dpo-simple.owl tmp/dpo-simple.owl
+	$(ROBOT) annotate -i tmp/dpo-simple.owl --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ -o $@
+	rm tmp/dpo-simple.owl
 
 #####################################################################################
 ### Run ontology-release-runner instead of ROBOT as long as ROBOT is broken.      ###
@@ -71,7 +69,7 @@ tmp/fbcv_signature.txt: tmp/$(ONT)-stripped.owl tmp/fbcv_terms.txt
 
 # Note that right now, TypeDefs that are FBCV native (like has_age) are included in the release!
 
-$(ONT)-simple.owl: oort
+$(ONT)-simple.owl: oort tmp/fbcv_signature.txt
 	$(ROBOT) merge --input oort/$(ONT)-simple.owl \
 		merge -i tmp/asserted-subclass-of-axioms.obo \
 		reason --reasoner ELK --equivalent-classes-allowed asserted-only \
@@ -82,6 +80,17 @@ $(ONT)-simple.owl: oort
 		remove --term-file tmp/fbcv_signature.txt --select complement --trim false \
 		reduce -r ELK \
 		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --annotation oboInOwl:date "$(OBODATE)" --output $@.tmp.owl && mv $@.tmp.owl $@
+
+ontsim:
+	$(ROBOT) merge --input oort/$(ONT)-simple.owl \
+		merge -i tmp/asserted-subclass-of-axioms.obo \
+		reason --reasoner ELK --equivalent-classes-allowed asserted-only \
+		relax \
+		filter --term-file $(SIMPLESEED) --select "annotations ontology anonymous self" --trim true --signature true \
+		remove --term-file tmp/fbcv_signature.txt --select complement --trim false \
+		reduce -r ELK \
+		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --annotation oboInOwl:date "$(OBODATE)" --output $@.tmp.owl && mv $@.tmp.owl $@
+
 
 #$(ONT)-simple.obo: oort
 #	$(ROBOT) merge --input oort/$(ONT)-simple.obo \

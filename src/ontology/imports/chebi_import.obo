@@ -1,5 +1,8 @@
 format-version: 1.2
-data-version: fbcv/releases/2019-07-25/imports/chebi_import.owl
+data-version: fbcv/releases/2019-08-14/imports/chebi_import.owl
+subsetdef: 1_STAR "Preliminary entries"
+subsetdef: 2_STAR "Annotated by 3rd party"
+subsetdef: 3_STAR "Manually annotated by ChEBI Team"
 ontology: fbcv/imports/chebi_import
 
 [Term]
@@ -347,6 +350,7 @@ xref: PMID:17439666 "Europe PMC"
 xref: PMID:25181601 "Europe PMC"
 xref: Reaxys:1721406 "Reaxys"
 xref: Wikipedia:Cysteine
+is_a: CHEBI:26167 ! polar amino acid
 is_a: CHEBI:26834 ! sulfur-containing amino acid
 is_a: CHEBI:33704 ! alpha-amino acid
 relationship: has_part CHEBI:50326 ! sulfanylmethyl group
@@ -777,6 +781,7 @@ is_a: CHEBI:24834 ! inorganic anion
 is_a: CHEBI:33482 ! sulfur oxoanion
 is_a: CHEBI:48154 ! sulfur oxide
 is_a: CHEBI:79388 ! divalent inorganic anion
+relationship: has_role CHEBI:23357 ! cofactor
 relationship: has_role CHEBI:75772 ! Saccharomyces cerevisiae metabolite
 relationship: has_role CHEBI:77746 ! human metabolite
 relationship: is_conjugate_base_of CHEBI:45696 ! hydrogensulfate
@@ -1695,6 +1700,7 @@ xref: MetaCyc:HCO3
 xref: PDBeChem:BCT
 xref: PMID:17215880 "Europe PMC"
 xref: PMID:17505962 "Europe PMC"
+xref: PMID:18439416 "Europe PMC"
 xref: PMID:28732801 "Europe PMC"
 xref: PMID:29150416 "Europe PMC"
 xref: PMID:29460248 "Europe PMC"
@@ -1702,6 +1708,7 @@ xref: PMID:29466234 "Europe PMC"
 xref: PMID:4208463 "Europe PMC"
 xref: Wikipedia:Bicarbonate
 is_a: CHEBI:35604 ! carbon oxoanion
+relationship: has_role CHEBI:23357 ! cofactor
 relationship: has_role CHEBI:75771 ! mouse metabolite
 relationship: has_role CHEBI:75772 ! Saccharomyces cerevisiae metabolite
 relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
@@ -2125,6 +2132,7 @@ xref: PDBeChem:CL
 xref: UM-BBD_compID:c0884 "UM-BBD"
 is_a: CHEBI:16042 ! halide anion
 is_a: CHEBI:33432 ! monoatomic chlorine
+relationship: has_role CHEBI:23357 ! cofactor
 relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
 relationship: has_role CHEBI:77746 ! human metabolite
 relationship: is_conjugate_base_of CHEBI:17883 ! hydrogen chloride
@@ -2202,6 +2210,7 @@ xref: PMID:24616376 "Europe PMC"
 xref: PMID:24984001 "Europe PMC"
 xref: Reaxys:1723799 "Reaxys"
 xref: Wikipedia:Glutamic_acid
+is_a: CHEBI:26167 ! polar amino acid
 is_a: CHEBI:33704 ! alpha-amino acid
 relationship: has_part CHEBI:50329 ! 2-carboxyethyl group
 relationship: has_role CHEBI:78675 ! fundamental metabolite
@@ -3059,8 +3068,8 @@ namespace: chebi_ontology
 subset: 3_STAR
 synonym: ">C=O" RELATED [IUPAC]
 synonym: "carbonyl" EXACT IUPAC_NAME [IUPAC]
-synonym: "carbonyl group" EXACT [ChEBI]
 synonym: "carbonyl group" EXACT [UniProt]
+synonym: "carbonyl group" EXACT [ChEBI]
 is_a: CHEBI:51422 ! organodiyl group
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "CO" xsd:string
@@ -3218,6 +3227,7 @@ synonym: "copper cations" RELATED [ChEBI]
 synonym: "Cu cation" RELATED [UniProt]
 is_a: CHEBI:33515 ! transition element cation
 is_a: CHEBI:37404 ! elemental copper
+relationship: has_role CHEBI:23357 ! cofactor
 property_value: http://purl.obolibrary.org/obo/chebi/formula "Cu" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/mass "63.546" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "62.92960" xsd:string
@@ -4635,9 +4645,21 @@ id: CHEBI:26167
 name: polar amino acid
 namespace: chebi_ontology
 alt_id: CHEBI:8283
-subset: 1_STAR
+def: "Any amino acid whose side chain is capable of forming one or more hydrogen bonds as proton donors or acceptors." []
+subset: 3_STAR
+synonym: "polar amino acid" EXACT [ChEBI]
+synonym: "polar amino acids" RELATED [ChEBI]
+synonym: "polar amino-acid" RELATED [ChEBI]
+synonym: "polar amino-acids" RELATED [ChEBI]
+xref: MetaCyc:Polar-amino-acids
+xref: PMID:12016058 "Europe PMC"
 is_a: CHEBI:33709 ! amino acid
 relationship: is_tautomer_of CHEBI:62031 ! polar amino acid zwitterion
+property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/formula "C2H4NO2R" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/mass "74.059" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "74.02420" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/smiles "OC(C(*)N)=O" xsd:string
 
 [Term]
 id: CHEBI:26191
@@ -6510,6 +6532,7 @@ is_a: CHEBI:35106 ! nitrogen hydride
 is_a: CHEBI:35274 ! ammonium ion
 is_a: CHEBI:50313 ! onium cation
 is_a: CHEBI:60242 ! monovalent inorganic cation
+relationship: has_role CHEBI:23357 ! cofactor
 relationship: has_role CHEBI:75772 ! Saccharomyces cerevisiae metabolite
 relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
 relationship: has_role CHEBI:77746 ! human metabolite
@@ -6628,6 +6651,7 @@ xref: Reaxys:3587177 "Reaxys"
 is_a: CHEBI:23378 ! copper cation
 is_a: CHEBI:30412 ! monoatomic dication
 is_a: CHEBI:60240 ! divalent metal cation
+relationship: has_role CHEBI:23357 ! cofactor
 property_value: http://purl.obolibrary.org/obo/chebi/charge "+2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "Cu" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/Cu/q+2" xsd:string
@@ -6652,6 +6676,7 @@ synonym: "carboxylic anions" RELATED [ChEBI]
 is_a: CHEBI:25696 ! organic anion
 is_a: CHEBI:35406 ! oxoanion
 relationship: is_conjugate_base_of CHEBI:33575 ! carboxylic acid
+property_value: http://purl.obolibrary.org/obo/chebi/charge "-1" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "CO2R" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/mass "44.00950" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "43.98983" xsd:string
@@ -6682,6 +6707,7 @@ is_a: CHEBI:25414 ! monoatomic monocation
 is_a: CHEBI:33504 ! alkali metal cation
 is_a: CHEBI:37246 ! elemental sodium
 is_a: CHEBI:60242 ! monovalent inorganic cation
+relationship: has_role CHEBI:23357 ! cofactor
 relationship: has_role CHEBI:77746 ! human metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "+1" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "Na" xsd:string
@@ -11662,6 +11688,7 @@ xref: PDBeChem:IPS
 xref: PDBeChem:PI
 is_a: CHEBI:35780 ! phosphate ion
 is_a: CHEBI:79388 ! divalent inorganic anion
+relationship: has_role CHEBI:23357 ! cofactor
 relationship: has_role CHEBI:75772 ! Saccharomyces cerevisiae metabolite
 relationship: is_conjugate_acid_of CHEBI:18367 ! phosphate(3-)
 relationship: is_conjugate_base_of CHEBI:39745 ! dihydrogenphosphate
