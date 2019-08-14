@@ -191,3 +191,18 @@ Note: if you have only just created this project you will need to authorize trav
  3. Click the tick symbol next to flybase-controlled-vocabulary
 
 Travis builds should now be activated
+
+# SOP For build of all FlyBase ontologies
+In order to create a release of all FlyBase ontologies, do the following:
+1. FBDV
+  1. Build (cd src/ontology; sh run_release.sh)
+	1. Push to branch
+	1. Pull request
+	1. Merge in
+	1. Create GitHub release the usual way
+1. FBBT
+	1. Same as FBDV
+1. DPO
+  1. Same as FBDV
+1. FBCV
+  1. Same as FBDV
