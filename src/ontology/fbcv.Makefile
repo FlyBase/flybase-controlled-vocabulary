@@ -185,6 +185,13 @@ tmp/auto_generated_definitions_seed_sub.txt: $(SRC)
 	cat $@.tmp | sort | uniq >  $@
 	rm -f $@.tmp
 
+CHEBI=https://raw.githubusercontent.com/matentzn/large-ontology-dependencies/master/chebi.owl.gz
+
+mirror/chebi.owl: mirror/chebi.trigger
+	echo "WRONG CHEBI IS USED"
+	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then wget $(CHEBI) && mv chebi.owl.gz tmp/chebi.owl.gz && $(ROBOT) convert -i tmp/chebi.owl.gz -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+.PRECIOUS: mirror/%.owl
+
 tmp/merged-source-pre.owl: $(SRC) mirror/chebi.owl
 	$(ROBOT) merge -i $(SRC) -i mirror/chebi.owl --output $@
 
@@ -214,6 +221,7 @@ test_remove: $(ONT)-edit.obo tmp/replaced_defs.txt
 ########################
 ##    TRAVIS       #####
 ########################
+
 
 obo_qc_%:
 	$(ROBOT) report -i $* --profile qc-profile.txt --fail-on ERROR --print 5 -o $@.txt
