@@ -180,6 +180,10 @@ correct ontologies. Try it!
 
 For questions on this contact Chris Mungall or email obo-admin AT obofoundry.org
 
+# Configurable options:
+
+- src/ontology/blacklisted_classes.txt contains a set of classes that are removed from the ontology no matter what. This can be useful when imports import classes you do not care about.
+
 # Travis Continuous Integration System
 
 Check the build status here: [![Build Status](https://travis-ci.org/FlyBase/flybase-controlled-vocabulary.svg?branch=master)](https://travis-ci.org/FlyBase/flybase-controlled-vocabulary)
