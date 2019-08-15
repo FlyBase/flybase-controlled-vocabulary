@@ -210,3 +210,15 @@ post_release: $(ONT)-flybase.obo
 test_remove: $(ONT)-edit.obo tmp/replaced_defs.txt
 	$(ROBOT) remove -i $(ONT)-edit.obo remove --term-file tmp/replaced_defs.txt --axioms annotation --trim false \ merge -i tmp/auto_generated_definitions_dot.owl -i tmp/auto_generated_definitions_sub.owl --collapse-import-closure false -o $(ONT)-edit-release.ofn && mv $(ONT)-edit-release.ofn $(ONT)-edit-release2.owl
 	diff $(ONT)-edit-release2.owl $(ONT)-edit-release.owl
+	
+########################
+##    TRAVIS       #####
+########################
+
+obo_qc_%:
+	$(ROBOT) report -i $* --profile qc-profile.txt --fail-on ERROR --print 5 -o $@.txt
+
+obo_qc: obo_qc_$(ONT).obo obo_qc_$(ONT).owl
+
+flybase_qc: odkversion obo_qc
+	$(ROBOT) reason --input $(ONT)-full.owl --reasoner ELK  --equivalent-classes-allowed asserted-only --output test.owl && rm test.owl && echo "Success"
