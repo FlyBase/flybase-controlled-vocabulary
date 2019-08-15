@@ -1,6 +1,9 @@
 format-version: 1.2
-data-version: fbcv/releases/2019-07-25/fbcv-full.owl
-date: 25:07:2019 17:18
+data-version: fbcv/releases/2019-08-14/fbcv-full.owl
+date: 14:08:2019 18:01
+subsetdef: 1_STAR "Preliminary entries"
+subsetdef: 2_STAR "Annotated by 3rd party"
+subsetdef: 3_STAR "Manually annotated by ChEBI Team"
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -19,6 +22,8 @@ subsetdef: larval_OF "larval olfactory system"
 subsetdef: lethal_phase "lethal phase terms"
 subsetdef: RD "terms for rd test ontology"
 subsetdef: relational_slim "Relational slim: types of quality that require an additional entity in order to exist"
+subsetdef: ro-eco ""
+subsetdef: RO:0002259 ""
 subsetdef: value_slim "Value slim"
 synonymtypedef: BRAIN_NAME_ABV "BrainName official abbreviation"
 synonymtypedef: BRAND_NAME "BRAND NAME"
@@ -37,13 +42,13 @@ id: BFO:0000002
 name: continuant
 def: "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts." []
 disjoint_from: BFO:0000003 ! occurrent
-relationship: BFO:0000050 BFO:0000002 ! part of continuant
+relationship: part_of BFO:0000002 ! continuant
 
 [Term]
 id: BFO:0000003
 name: occurrent
 def: "An entity that has temporal parts and that happens, unfolds or develops through time." []
-relationship: BFO:0000050 BFO:0000003 ! part of occurrent
+relationship: part_of BFO:0000003 ! occurrent
 
 [Term]
 id: BFO:0000004
@@ -52,7 +57,7 @@ def: "A continuant that is a bearer of quality and realizable entity entities, i
 is_a: BFO:0000002 ! continuant
 disjoint_from: BFO:0000020 ! specifically dependent continuant
 disjoint_from: BFO:0000031 ! generically dependent continuant
-relationship: BFO:0000050 BFO:0000004 ! part of independent continuant
+relationship: part_of BFO:0000004 ! independent continuant
 
 [Term]
 id: BFO:0000015
@@ -66,13 +71,13 @@ name: realizable entity
 def: "A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances." []
 is_a: BFO:0000020 ! specifically dependent continuant
 disjoint_from: BFO:0000019 ! quality
-relationship: BFO:0000050 BFO:0000017 ! part of realizable entity
+relationship: part_of BFO:0000017 ! realizable entity
 
 [Term]
 id: BFO:0000019
 name: quality
 is_a: BFO:0000020 ! specifically dependent continuant
-relationship: BFO:0000050 BFO:0000019 ! part of quality
+relationship: part_of BFO:0000019 ! quality
 
 [Term]
 id: BFO:0000020
@@ -80,7 +85,7 @@ name: specifically dependent continuant
 def: "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same." []
 is_a: BFO:0000002 ! continuant
 disjoint_from: BFO:0000031 ! generically dependent continuant
-relationship: BFO:0000050 BFO:0000020 ! part of specifically dependent continuant
+relationship: part_of BFO:0000020 ! specifically dependent continuant
 
 [Term]
 id: BFO:0000023
@@ -93,7 +98,7 @@ id: BFO:0000031
 name: generically dependent continuant
 def: "A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time." []
 is_a: BFO:0000002 ! continuant
-relationship: BFO:0000050 BFO:0000031 ! part of generically dependent continuant
+relationship: part_of BFO:0000031 ! generically dependent continuant
 
 [Term]
 id: BFO:0000040
@@ -460,6 +465,7 @@ xref: PMID:17439666 "Europe PMC"
 xref: PMID:25181601 "Europe PMC"
 xref: Reaxys:1721406 "Reaxys"
 xref: Wikipedia:Cysteine
+is_a: CHEBI:26167 ! polar amino acid
 is_a: CHEBI:26834 ! sulfur-containing amino acid
 is_a: CHEBI:33704 ! alpha-amino acid
 relationship: has_part CHEBI:50326 ! sulfanylmethyl group
@@ -888,6 +894,7 @@ is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:33482 ! sulfur oxoanion
 is_a: CHEBI:48154 ! sulfur oxide
 is_a: CHEBI:79388 ! divalent inorganic anion
+relationship: has_role CHEBI:23357 ! cofactor
 relationship: has_role CHEBI:75772 ! Saccharomyces cerevisiae metabolite
 relationship: has_role CHEBI:77746 ! human metabolite
 relationship: is_conjugate_base_of CHEBI:45696 ! hydrogensulfate
@@ -1796,6 +1803,7 @@ xref: MetaCyc:HCO3
 xref: PDBeChem:BCT
 xref: PMID:17215880 "Europe PMC"
 xref: PMID:17505962 "Europe PMC"
+xref: PMID:18439416 "Europe PMC"
 xref: PMID:28732801 "Europe PMC"
 xref: PMID:29150416 "Europe PMC"
 xref: PMID:29460248 "Europe PMC"
@@ -1804,6 +1812,7 @@ xref: PMID:4208463 "Europe PMC"
 xref: Wikipedia:Bicarbonate
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:35604 ! carbon oxoanion
+relationship: has_role CHEBI:23357 ! cofactor
 relationship: has_role CHEBI:75771 ! mouse metabolite
 relationship: has_role CHEBI:75772 ! Saccharomyces cerevisiae metabolite
 relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
@@ -2231,6 +2240,7 @@ xref: UM-BBD_compID:c0884 "UM-BBD"
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:16042 ! halide anion
 is_a: CHEBI:33432 ! monoatomic chlorine
+relationship: has_role CHEBI:23357 ! cofactor
 relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
 relationship: has_role CHEBI:77746 ! human metabolite
 relationship: is_conjugate_base_of CHEBI:17883 ! hydrogen chloride
@@ -2308,6 +2318,7 @@ xref: PMID:24616376 "Europe PMC"
 xref: PMID:24984001 "Europe PMC"
 xref: Reaxys:1723799 "Reaxys"
 xref: Wikipedia:Glutamic_acid
+is_a: CHEBI:26167 ! polar amino acid
 is_a: CHEBI:33704 ! alpha-amino acid
 relationship: has_part CHEBI:50329 ! 2-carboxyethyl group
 relationship: has_role CHEBI:78675 ! fundamental metabolite
@@ -3303,8 +3314,10 @@ subset: 3_STAR
 synonym: "copper cation" EXACT IUPAC_NAME [IUPAC]
 synonym: "copper cations" RELATED [ChEBI]
 synonym: "Cu cation" RELATED [UniProt]
+is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:33515 ! transition element cation
 is_a: CHEBI:37404 ! elemental copper
+relationship: has_role CHEBI:23357 ! cofactor
 property_value: http://purl.obolibrary.org/obo/chebi/formula "Cu" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/mass "63.546" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "62.92960" xsd:string
@@ -4705,9 +4718,21 @@ id: CHEBI:26167
 name: polar amino acid
 namespace: chebi_ontology
 alt_id: CHEBI:8283
-subset: 1_STAR
+def: "Any amino acid whose side chain is capable of forming one or more hydrogen bonds as proton donors or acceptors." []
+subset: 3_STAR
+synonym: "polar amino acid" EXACT [ChEBI]
+synonym: "polar amino acids" RELATED [ChEBI]
+synonym: "polar amino-acid" RELATED [ChEBI]
+synonym: "polar amino-acids" RELATED [ChEBI]
+xref: MetaCyc:Polar-amino-acids
+xref: PMID:12016058 "Europe PMC"
 is_a: CHEBI:33709 ! amino acid
 relationship: is_tautomer_of CHEBI:62031 ! polar amino acid zwitterion
+property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/formula "C2H4NO2R" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/mass "74.059" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "74.02420" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/smiles "OC(C(*)N)=O" xsd:string
 
 [Term]
 id: CHEBI:26191
@@ -6513,6 +6538,7 @@ is_a: CHEBI:35106 ! nitrogen hydride
 is_a: CHEBI:35274 ! ammonium ion
 is_a: CHEBI:50313 ! onium cation
 is_a: CHEBI:60242 ! monovalent inorganic cation
+relationship: has_role CHEBI:23357 ! cofactor
 relationship: has_role CHEBI:75772 ! Saccharomyces cerevisiae metabolite
 relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
 relationship: has_role CHEBI:77746 ! human metabolite
@@ -6655,6 +6681,7 @@ synonym: "carboxylic anions" RELATED [ChEBI]
 is_a: CHEBI:25696 ! organic anion
 is_a: CHEBI:35406 ! oxoanion
 relationship: is_conjugate_base_of CHEBI:33575 ! carboxylic acid
+property_value: http://purl.obolibrary.org/obo/chebi/charge "-1" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "CO2R" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/mass "44.00950" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "43.98983" xsd:string
@@ -6686,6 +6713,7 @@ is_a: CHEBI:25414 ! monoatomic monocation
 is_a: CHEBI:33504 ! alkali metal cation
 is_a: CHEBI:37246 ! elemental sodium
 is_a: CHEBI:60242 ! monovalent inorganic cation
+relationship: has_role CHEBI:23357 ! cofactor
 relationship: has_role CHEBI:77746 ! human metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "+1" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "Na" xsd:string
@@ -11661,6 +11689,7 @@ xref: PDBeChem:IPS
 xref: PDBeChem:PI
 is_a: CHEBI:35780 ! phosphate ion
 is_a: CHEBI:79388 ! divalent inorganic anion
+relationship: has_role CHEBI:23357 ! cofactor
 relationship: has_role CHEBI:75772 ! Saccharomyces cerevisiae metabolite
 relationship: is_conjugate_acid_of CHEBI:18367 ! phosphate(3-)
 relationship: is_conjugate_base_of CHEBI:39745 ! dihydrogenphosphate
@@ -15188,7 +15217,7 @@ is_a: FBcv:0000000 ! FlyBase CV
 id: FBcv:0000006
 name: male semi-fertile
 namespace: phenotypic_class
-def: "Any male semi fertile that inheres in some organism (FBbt:00000001)." []
+def: "Any male semi-fertile (PATO:0001761) that inheres in some organism (FBbt:00000001)." []
 is_a: FBcv:0000375 ! semi-fertile
 is_a: FBcv:0000376 ! male fertile
 
@@ -15196,7 +15225,7 @@ is_a: FBcv:0000376 ! male fertile
 id: FBcv:0000007
 name: female semi-fertile
 namespace: phenotypic_class
-def: "Any female semi fertile that inheres in some organism (FBbt:00000001)." []
+def: "Any female semi-fertile (PATO:0001760) that inheres in some organism (FBbt:00000001)." []
 is_a: FBcv:0000375 ! semi-fertile
 is_a: FBcv:0000377 ! female fertile
 
@@ -18816,7 +18845,7 @@ id: FBcv:0000493
 name: MRh12 induced male recombination
 namespace: origin_of_mutation
 def: "Mutation caused by a male recombination event induced by a male recombination factor which is present in chromosomes extracted from a population in Haifa, Israel." [FlyBase:FBrf0202435]
-synonym: " MRh12" RELATED []
+synonym: "MRh12" RELATED []
 synonym: "mutation induced by  MRh12 male recombination" EXACT []
 is_a: FBcv:0000492 ! male recombination induced by dysgenesis
 
@@ -19093,7 +19122,7 @@ is_a: CHEBI:24431 ! chemical entity
 id: FBcv:0000526
 name: alkylating agent
 namespace: origin_of_mutation
-def: "Any chemical (FBcv:0000525) that has role some alkylating agent (CHEBI:22333)." []
+def: "Any chemical (FBcv:0000525) that has role some alkylating agent (CHEBI:22333)." [CHEBI:22333]
 synonym: "mutation induced by alkylating agent exposure" EXACT []
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:24431 ! chemical entity
@@ -19231,7 +19260,7 @@ is_a: CHEBI:27292 ! vinyl carbamate
 id: FBcv:0000541
 name: intercalating agent
 namespace: origin_of_mutation
-def: "Any chemical (FBcv:0000525) that has role some intercalator (CHEBI:24853)." []
+def: "Any chemical (FBcv:0000525) that has role some intercalator (CHEBI:24853)." [CHEBI:24853]
 synonym: "mutation induced by intercalating agent exposure" EXACT []
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:24431 ! chemical entity
@@ -19323,7 +19352,7 @@ is_a: CHEBI:20553 ! 5-bromouridine
 id: FBcv:0000551
 name: enzyme inhibitor
 namespace: origin_of_mutation
-def: "Any chemical (FBcv:0000525) that has role some enzyme inhibitor (CHEBI:23924)." []
+def: "Any chemical (FBcv:0000525) that has role some enzyme inhibitor (CHEBI:23924)." [CHEBI:23924]
 synonym: "mutation induced by enzyme inhibitor exposure" EXACT []
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:24431 ! chemical entity
@@ -21656,10 +21685,11 @@ is_a: FBcv:0002002 ! lethal - all die before end of larval stage
 id: FBcv:0002004
 name: increased mortality
 namespace: phenotypic_class
-def: "A phenotype that is an increase in the rate of death in a population at any stage of life (during development or adulthood), over the rate seen in a wild type control population. " [FBC:DOS]
+def: "A phenotype that is an increase in the rate of death in a population at any stage of life (during development or adulthood), over the rate seen in a wild type control population." [FBC:DOS]
 subset: fbcvsubset_mgiribbons
 subset: lethal_phase
 is_a: FBcv:0001347 ! phenotype
+relationship: inheres_in FBcv:0006003 ! population of Drosophila
 
 [Term]
 id: FBcv:0002005
@@ -24682,7 +24712,7 @@ creation_date: 2017-06-28T11:41:27Z
 id: FBcv:0005056
 name: gene product cleavage tag
 namespace: experimental_tool_descriptor
-def: "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which allows the tagged gene product to be cleaved (broken into smaller molecules by the rupture of a covalent bond) by a specific process. " [FBC:GM]
+def: "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which allows the tagged gene product to be cleaved (broken into smaller molecules by the rupture of a covalent bond) by a specific process." [FBC:GM]
 is_a: FBcv:0005001 ! experimental tool descriptor
 created_by: temj2
 creation_date: 2017-06-28T11:41:27Z
@@ -24969,7 +24999,6 @@ is_a: FBcv:0001347 ! phenotype
 [Term]
 id: FBcv:0006003
 name: population of Drosophila
-namespace: FlyBase_miscellaneous_CV
 
 [Term]
 id: FBcv:0006004
@@ -24998,7 +25027,6 @@ is_a: FBcv:0001347 ! phenotype
 [Term]
 id: FBcv:0006007
 name: population of cells
-namespace: FlyBase_miscellaneous_CV
 
 [Term]
 id: FBcv:0007000
@@ -25530,33 +25558,6 @@ property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 http://www.jbiomedsem.com/content/4/1/43 xsd:string
 
 [Typedef]
-id: BFO:0000050
-name: part of
-def: "a core relation that holds between a part and its whole" []
-property_value: IAO:0000111 "is part of" xsd:string
-property_value: IAO:0000112 "my brain is part of my body (continuant parthood, two material entities)" xsd:string
-property_value: IAO:0000112 "my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)" xsd:string
-property_value: IAO:0000112 "this day is part of this year (occurrent parthood)" xsd:string
-property_value: IAO:0000116 "Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other." xsd:string
-property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
-property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)\n\nA continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'." xsd:string
-property_value: IAO:0000118 "part_of" xsd:string
-property_value: RO:0001900 RO:0001901
-property_value: RO:0040042 BFO:0000002
-property_value: RO:0040042 BFO:0000003
-property_value: RO:0040042 BFO:0000004
-property_value: RO:0040042 BFO:0000017
-property_value: RO:0040042 BFO:0000019
-property_value: RO:0040042 BFO:0000020
-property_value: RO:0040042 BFO:0000031
-property_value: seeAlso http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections
-property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:PartOf
-property_value: seeAlso http://www.obofoundry.org/ro/#OBO_REL:part_of xsd:string
-is_transitive: true
-is_a: RO:0002131 ! overlaps
-inverse_of: has_part ! has part
-
-[Typedef]
 id: BFO:0000062
 name: preceded by
 def: "x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point." []
@@ -25568,22 +25569,10 @@ property_value: IAO:0000118 "is preceded by" xsd:string
 property_value: IAO:0000118 "preceded_by" xsd:string
 domain: BFO:0000003 ! occurrent
 range: BFO:0000003 ! occurrent
-holds_over_chain: BFO:0000050 BFO:0000062
+holds_over_chain: part_of BFO:0000062
 is_transitive: true
 is_a: RO:0002086 ! ends after
-inverse_of: BFO:0000063 ! precedes
-
-[Typedef]
-id: BFO:0000063
-name: precedes
-def: "x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point." []
-subset: ro-eco
-property_value: IAO:0000111 "precedes" xsd:string
-domain: BFO:0000003 ! occurrent
-range: BFO:0000003 ! occurrent
-holds_over_chain: BFO:0000050 BFO:0000063
-is_transitive: true
-is_a: RO:0002222 ! temporally related to
+inverse_of: precedes ! precedes
 
 [Typedef]
 id: BFO:0000066
@@ -25597,9 +25586,9 @@ property_value: IAO:0000118 "unfolds_in" xsd:string
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 domain: BFO:0000003 ! occurrent
 range: BFO:0000004 ! independent continuant
-holds_over_chain: BFO:0000050 BFO:0000066
+holds_over_chain: part_of BFO:0000066
 inverse_of: BFO:0000067 ! contains process
-transitive_over: BFO:0000050 ! part of
+transitive_over: part_of ! part_of
 
 [Typedef]
 id: BFO:0000067
@@ -25612,21 +25601,7 @@ property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 [Typedef]
 id: FBcv:0008000
 name: has_age
-namespace: FlyBase_miscellaneous_CV
 is_functional: true
-
-[Typedef]
-id: RO:0000052
-name: inheres in
-def: "a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence" []
-property_value: IAO:0000111 "inheres in" xsd:string
-property_value: IAO:0000112 "this fragility inheres in this vase" xsd:string
-property_value: IAO:0000112 "this red color inheres in this apple" xsd:string
-property_value: IAO:0000116 "A dependent inheres in its bearer at all times for which the dependent exists." xsd:string
-property_value: IAO:0000118 "inheres_in" xsd:string
-property_value: RO:0001900 RO:0001901
-is_a: RO:0002314 ! inheres in part of
-inverse_of: RO:0000053 ! bearer of
 
 [Typedef]
 id: RO:0000053
@@ -25677,7 +25652,7 @@ property_value: IAO:0000112 "this investigator role is a role of this person" xs
 property_value: IAO:0000116 "A role inheres in its bearer at all times for which the role exists, however the role need not be realized at all the times that the role exists." xsd:string
 property_value: IAO:0000118 "is role of" xsd:string
 property_value: IAO:0000118 "role_of" xsd:string
-is_a: RO:0000052 ! inheres in
+is_a: inheres_in ! inheres in
 inverse_of: has_role ! has role
 
 [Typedef]
@@ -25801,7 +25776,7 @@ property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
 property_value: IAO:0000118 "ends_at_start_of" xsd:string
 property_value: IAO:0000118 "meets" xsd:string
 property_value: RO:0002575 BFO:0000063
-is_a: BFO:0000063 ! precedes
+is_a: precedes ! precedes
 
 [Typedef]
 id: RO:0002131
@@ -25810,9 +25785,9 @@ def: "x overlaps y if and only if there exists some z such that x has part z and
 subset: ro-eco
 property_value: IAO:0000114 IAO:0000125
 property_value: RO:0001900 RO:0001901
-holds_over_chain: BFO:0000050 BFO:0000050
-holds_over_chain: has_part BFO:0000050 {http://purl.obolibrary.org/obo/RO_0002582="true"}
+holds_over_chain: has_part part_of {http://purl.obolibrary.org/obo/RO_0002582="true"}
 holds_over_chain: has_part RO:0002131
+holds_over_chain: part_of part_of
 is_a: RO:0002323 ! mereotopologically related to
 expand_expression_to: "http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.obolibrary.org/obo/BFO_0000050 some ?Y)" []
 
@@ -25826,7 +25801,7 @@ property_value: IAO:0000116 "The definition of 'has component' is still under di
 property_value: IAO:0000232 "For use in recording has_part with a cardinality constraint, because OWL does not permit cardinality constraints to be used in combination with transitive object properties. In situations where you would want to say something like 'has part exactly 5 digit, you would instead use has_component exactly 5 digit." xsd:string
 property_value: RO:0001900 RO:0001901
 property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:Componency
-is_a: has_part ! has part
+is_a: has_part ! has_part
 
 [Typedef]
 id: RO:0002202
@@ -25929,7 +25904,7 @@ def: "c stands in this relationship to p if and only if there exists some p' suc
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000118 "has function in" xsd:string
 property_value: seeAlso "defining-property-chains-involving-reflexivity"
-holds_over_chain: RO:0002215 BFO:0000050 {http://purl.obolibrary.org/obo/RO_0002582="true"}
+holds_over_chain: RO:0002215 part_of {http://purl.obolibrary.org/obo/RO_0002582="true"}
 is_a: RO:0002328 ! functionally related to
 is_a: RO:0002500 ! causal agent in process
 expand_expression_to: "RO_0000053 some (RO_0000054 only (BFO_0000050 some ?Y))" []
@@ -26002,7 +25977,7 @@ def: "inverse of has developmental contribution from" []
 subset: RO:0002259
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "Chris Mungall" xsd:string
-holds_over_chain: RO:0002203 BFO:0000050
+holds_over_chain: RO:0002203 part_of
 is_a: RO:0002286 ! developmentally succeeded by
 is_a: RO:0002385 ! has potential to developmentally contribute to
 
@@ -26074,9 +26049,9 @@ property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/20064205
 property_value: RO:0001900 RO:0001901
 property_value: seeAlso "defining-property-chains-involving-reflexivity"
-holds_over_chain: RO:0000052 BFO:0000050 {http://purl.obolibrary.org/obo/RO_0002582="true"}
+holds_over_chain: inheres_in part_of {http://purl.obolibrary.org/obo/RO_0002582="true"}
 is_a: RO:0002502 ! depends on
-transitive_over: BFO:0000050 ! part of
+transitive_over: part_of ! part_of
 
 [Typedef]
 id: RO:0002321
@@ -26116,7 +26091,7 @@ property_value: IAO:0000232 "This relation differs from the parent relation 'cap
 property_value: IAO:0000232 "This relation is currently used experimentally by the Gene Ontology Consortium. It may not be stable and may be obsoleted at some future time." xsd:string
 is_a: RO:0002215 ! capable of
 inverse_of: RO:0002333 ! enabled by
-transitive_over: has_part ! has part
+transitive_over: has_part ! has_part
 transitive_over: RO:0002017 ! has component activity
 
 [Typedef]
@@ -26132,7 +26107,7 @@ name: part of structure that is capable of
 def: "this relation holds between c and p when c is part of some c', and c' is capable of p." []
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000118 "false" xsd:boolean
-holds_over_chain: BFO:0000050 RO:0002215 {http://purl.obolibrary.org/obo/RO_0002581="true"}
+holds_over_chain: part_of RO:0002215 {http://purl.obolibrary.org/obo/RO_0002581="true"}
 is_a: RO:0002328 ! functionally related to
 
 [Typedef]
@@ -26143,10 +26118,10 @@ property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000118 "actively involved in" xsd:string
 property_value: IAO:0000118 "enables part of" xsd:string
 property_value: seeAlso Involved:in
-holds_over_chain: RO:0002327 BFO:0000050
+holds_over_chain: RO:0002327 part_of
 is_a: RO:0002217 ! actively participates in
 is_a: RO:0002431 ! involved in or involved in regulation of
-transitive_over: BFO:0000050 ! part of
+transitive_over: part_of ! part_of
 
 [Typedef]
 id: RO:0002333
@@ -26185,6 +26160,18 @@ property_value: IAO:0000117 "Chris Mungall" xsd:string
 is_a: RO:0002334 ! regulated by
 
 [Typedef]
+id: RO:0002350
+name: member of
+def: "is member of is a mereological relation between a item and a collection." []
+property_value: IAO:0000112 "An organism that is a member of a population of organisms" xsd:string
+property_value: IAO:0000118 "is member of" xsd:string
+property_value: IAO:0000118 "member part of" xsd:string
+property_value: IAO:0000119 "SIO" xsd:string
+property_value: RO:0001900 RO:0001901
+is_a: part_of ! part_of
+inverse_of: has_member ! has member
+
+[Typedef]
 id: RO:0002352
 name: input of
 def: "inverse of has input" []
@@ -26206,7 +26193,7 @@ property_value: IAO:0000232 "This relation can be used for geographic features (
 property_value: seeAlso http://purl.obolibrary.org/obo/ro/docs/branching_part_of.png
 domain: BFO:0000040 ! material entity
 range: BFO:0000040 ! material entity
-is_a: BFO:0000050 ! part of
+is_a: part_of ! part_of
 is_a: RO:0002323 ! mereotopologically related to
 
 [Typedef]
@@ -26278,7 +26265,7 @@ def: "p is causally upstream of q if and only if p precedes q and p and q are li
 property_value: IAO:0000114 IAO:0000428
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 is_transitive: true
-is_a: BFO:0000063 ! precedes
+is_a: precedes ! precedes
 is_a: RO:0002418 ! causally upstream of or within
 
 [Typedef]
@@ -26490,6 +26477,15 @@ property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: seeAlso BFO:0000169
 
 [Typedef]
+id: RO:0002503
+name: towards
+def: "q towards e2 if and only if q is a relational quality such that q inheres-in some e, and e != e2 and q is dependent on e2" []
+property_value: IAO:0000116 "This relation is provided in order to support the use of relational qualities such as 'concentration of'; for example, the concentration of C in V is a quality that inheres in V, but pertains to C." xsd:string
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/20064205
+is_a: RO:0002502 ! depends on
+
+[Typedef]
 id: RO:0002506
 name: causal relation between material entities
 property_value: IAO:0000116 "The intent is that the process branch of the causal property hierarchy is primary (causal relations hold between occurrents/processes), and that the material branch is defined in terms of the process branch" xsd:string
@@ -26553,7 +26549,7 @@ property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000118 "contains" xsd:string
 property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/20226267 xsd:anyURI
 is_transitive: true
-is_a: has_part ! has part
+is_a: has_part ! has_part
 is_a: RO:0002522 ! bounds sequence of
 is_a: RO:0002526 ! overlaps sequence of
 inverse_of: RO:0002525 ! is subsequence of
@@ -26567,7 +26563,7 @@ property_value: http://purl.org/spar/cito/citesAsAuthority http://biorxiv.org/co
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000118 "contained by" xsd:string
 is_transitive: true
-is_a: BFO:0000050 ! part of
+is_a: part_of ! part_of
 is_a: RO:0002523 ! is bound by sequence of
 is_a: RO:0002526 ! overlaps sequence of
 
@@ -26613,6 +26609,17 @@ property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
 property_value: IAO:0000589 "causally influences (material entity to material entity)" xsd:string
 is_a: RO:0002506 ! causal relation between material entities
+
+[Typedef]
+id: RO:0002573
+name: has modifier
+def: "A relation that holds between an attribute or a qualifier and another attribute." []
+subset: ro-eco
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/20064205
+property_value: IAO:0000232 "This relation is intended to be used in combination with PATO, to be able to refine PATO quality classes using modifiers such as 'abnormal' and 'normal'. It has yet to be formally aligned into an ontological framework; it's not clear what the ontological status of the \"modifiers\" are." xsd:string
+domain: BFO:0000020 ! specifically dependent continuant
+range: BFO:0000020 ! specifically dependent continuant
 
 [Typedef]
 id: RO:0002578
@@ -26787,6 +26794,16 @@ is_cyclic: false
 is_transitive: false
 
 [Typedef]
+id: has_member
+name: has member
+namespace: uberon
+def: "has member is a mereological relation between a collection and an item." []
+xref: RO:0002351
+property_value: IAO:0000119 "SIO" xsd:string
+property_value: RO:0001900 RO:0001901
+is_a: has_part ! has_part
+
+[Typedef]
 id: has_parent_hydride
 name: has parent hydride
 namespace: chebi_ontology
@@ -26796,9 +26813,18 @@ is_transitive: false
 [Typedef]
 id: has_part
 name: has part
+name: has_part
 namespace: chebi_ontology
+namespace: external
+namespace: protein
+namespace: quality
+namespace: relationship
+namespace: uberon
 def: "a core relation that holds between a whole and its part" []
+def: "Q1 has_part Q2 if and only if: every instance of Q1 is a quality_of an entity that has_quality some Q2." [PATOC:CJM]
+comment: We use the has_part relation to relate complex qualities to more primitive ones. A complex quality is a collection of qualities. The complex quality cannot exist without the sub-qualities. For example, the quality 'swollen' necessarily comes with the qualities of 'protruding' and 'increased size'.
 xref: BFO:0000051
+xref: OBO_REL:has_part
 property_value: IAO:0000111 "has part" xsd:string
 property_value: IAO:0000112 "my body has part my brain (continuant parthood, two material entities)" xsd:string
 property_value: IAO:0000112 "my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)" xsd:string
@@ -26807,6 +26833,7 @@ property_value: IAO:0000116 "Everything has itself as a part. Any part of any pa
 property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
 property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)\n\nA continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'." xsd:string
 property_value: IAO:0000118 "has_part" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/BFO
 property_value: RO:0001900 RO:0001901
 is_cyclic: false
 is_transitive: true
@@ -26816,7 +26843,6 @@ is_a: RO:0002131 ! overlaps
 id: has_role
 name: has role
 namespace: chebi_ontology
-namespace: FlyBase_miscellaneous_CV
 def: "a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence" []
 xref: RO:0000087
 property_value: IAO:0000112 "this person has role this investigator role (more colloquially: this person has this role of investigator)" xsd:string
@@ -26827,6 +26853,24 @@ range: BFO:0000023 ! role
 is_cyclic: false
 is_transitive: false
 is_a: RO:0000053 ! bearer of
+
+[Typedef]
+id: inheres_in
+name: inheres in
+name: inheres_in
+namespace: fly_anatomy.ontology
+def: "a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence" []
+def: "A relationship between a dependent continuant, for example a quality such as color, and an independent continuant, such as an eye." []
+comment: Example red (PATO) inheres_in some eye (FBbt).
+xref: RO:0000052
+property_value: IAO:0000111 "inheres in" xsd:string
+property_value: IAO:0000112 "this fragility inheres in this vase" xsd:string
+property_value: IAO:0000112 "this red color inheres in this apple" xsd:string
+property_value: IAO:0000116 "A dependent inheres in its bearer at all times for which the dependent exists." xsd:string
+property_value: IAO:0000118 "inheres_in" xsd:string
+property_value: RO:0001900 RO:0001901
+is_a: RO:0002314 ! inheres in part of
+inverse_of: RO:0000053 ! bearer of
 
 [Typedef]
 id: is_conjugate_acid_of
@@ -26863,4 +26907,64 @@ name: is tautomer of
 namespace: chebi_ontology
 is_cyclic: true
 is_transitive: true
+
+[Typedef]
+id: part_of
+name: part of
+name: part_of
+namespace: external
+namespace: protein
+namespace: quality
+namespace: relationship
+namespace: uberon
+def: "a core relation that holds between a part and its whole" []
+synonym: "part_of" EXACT []
+xref: BFO:0000050
+xref: OBO_REL:part_of
+property_value: IAO:0000111 "is part of" xsd:string
+property_value: IAO:0000112 "my brain is part of my body (continuant parthood, two material entities)" xsd:string
+property_value: IAO:0000112 "my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)" xsd:string
+property_value: IAO:0000112 "this day is part of this year (occurrent parthood)" xsd:string
+property_value: IAO:0000116 "Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other." xsd:string
+property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
+property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)\n\nA continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'." xsd:string
+property_value: IAO:0000118 "part_of" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/BFO
+property_value: RO:0001900 RO:0001901
+property_value: RO:0040042 BFO:0000002
+property_value: RO:0040042 BFO:0000003
+property_value: RO:0040042 BFO:0000004
+property_value: RO:0040042 BFO:0000017
+property_value: RO:0040042 BFO:0000019
+property_value: RO:0040042 BFO:0000020
+property_value: RO:0040042 BFO:0000031
+property_value: seeAlso http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections
+property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:PartOf
+property_value: seeAlso http://www.obofoundry.org/ro/#OBO_REL:part_of xsd:string
+is_transitive: true
+is_a: RO:0002131 ! overlaps
+inverse_of: has_part ! has_part
+
+[Typedef]
+id: precedes
+name: precedes
+namespace: uberon
+def: "x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point." []
+subset: ro-eco
+xref: BFO:0000063
+property_value: IAO:0000111 "precedes" xsd:string
+domain: BFO:0000003 ! occurrent
+range: BFO:0000003 ! occurrent
+holds_over_chain: part_of precedes
+is_transitive: true
+is_a: RO:0002222 ! temporally related to
+
+[Typedef]
+id: substage_of
+name: substage of
+namespace: relationship
+comment: Creating this relation as a temporary fix, pending adding the axiom occurent_part_of subpropertyof happens_during to RO
+xref: FBdv:00018001
+is_transitive: true
+is_a: part_of ! part_of
 
