@@ -192,17 +192,22 @@ Note: if you have only just created this project you will need to authorize trav
 
 Travis builds should now be activated
 
+The way QC now works for all four ontologies is this:
+
+  1. We run the whole (slightly modified) pipeline (encoded in travis.sh)
+  2. In the end some hard QC is run. This qc can be controlled through the file called qc-profile.txt in the src/ontology directory. Open this file; it is pretty permissive now, because there are some errors. We can discuss QC levels and so on over the next months in our meetings.
+
 # SOP For build of all FlyBase ontologies
 In order to create a release of all FlyBase ontologies, do the following:
 1. FBDV
   1. Build (cd src/ontology; sh run_release.sh)
-	1. Push to branch
-	1. Pull request
-	1. Merge in
-	1. Create GitHub release the usual way
-1. FBBT
+	2. Push to branch
+	3. Pull request
+	4. Merge in
+	5. Create GitHub release the usual way
+2. FBBT
 	1. Same as FBDV
-1. DPO
+3. DPO
   1. Same as FBDV
-1. FBCV
+4. FBCV
   1. Same as FBDV
