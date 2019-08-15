@@ -41,6 +41,7 @@ tmp/source-merged.obo: $(SRC) tmp/asserted-subclass-of-axioms.obo
 		reason --reasoner ELK \
 		relax \
 		remove --axioms equivalent \
+		remove -T blacklisted_classes.txt \
 		merge -i tmp/asserted-subclass-of-axioms.obo \
 		convert --check false -f obo $(OBO_FORMAT_OPTIONS) -o tmp/source-merged.owl.obo &&\
 		grep -v ^owl-axioms tmp/source-merged.owl.obo > tmp/source-stripped.obo &&\
