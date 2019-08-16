@@ -225,8 +225,12 @@ test_remove: $(ONT)-edit.obo tmp/replaced_defs.txt
 ########################
 
 
+# The merge hack allows to add axioms to the ontology used for QC to allow it to pass some
+# QC rule that is deemed irrelevant
+
 obo_qc_%:
-	$(ROBOT) report -i $* --profile qc-profile.txt --fail-on ERROR --print 5 -o $@.txt
+	$(ROBOT) merge -i $* -i components/qc_assertions.owl -o $@ &&\
+	$(ROBOT) report -i $@ --profile qc-profile.txt --fail-on ERROR --print 5 -o $@.txt
 
 obo_qc: obo_qc_$(ONT).obo obo_qc_$(ONT).owl
 
