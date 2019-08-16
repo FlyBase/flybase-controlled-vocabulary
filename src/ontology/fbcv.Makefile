@@ -230,7 +230,7 @@ obo_qc_%:
 
 obo_qc: obo_qc_$(ONT).obo obo_qc_$(ONT).owl
 
-flybase_qc.owl: odkversion #obo_qc
+flybase_qc.owl: odkversion obo_qc
 	$(ROBOT) merge -i $(ONT)-full.owl -i components/qc_assertions.owl -o $@
 
 flybase_qc: flybase_qc.owl
