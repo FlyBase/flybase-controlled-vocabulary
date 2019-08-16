@@ -186,7 +186,7 @@ tmp/auto_generated_definitions_seed_sub.txt: $(SRC)
 	cat $@.tmp | sort | uniq >  $@
 	rm -f $@.tmp
 
-CHEBI=https://raw.githubusercontent.com/matentzn/large-ontology-dependencies/master/chebi.owl.gz
+CHEBI=ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl.gz
 
 mirror/chebi.owl: mirror/chebi.trigger
 	echo "WRONG CHEBI IS USED"
