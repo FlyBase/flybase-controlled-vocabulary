@@ -36,10 +36,11 @@ tmp/asserted-subclass-of-axioms.obo: $(SRC) tmp/fbcv_terms.txt
 		filter --term-file tmp/fbcv_terms.txt --axioms "logical" --preserve-structure false \
 		convert --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@
 
-#		remove -T blacklisted_classes.txt \
+#		
 
 tmp/source-merged.obo: $(SRC) tmp/asserted-subclass-of-axioms.obo
 	$(ROBOT) merge --input $(SRC) \
+		remove --term GO:0004872 \
 		reason --reasoner ELK \
 		relax \
 		remove --axioms equivalent \
