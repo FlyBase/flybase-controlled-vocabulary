@@ -40,7 +40,6 @@ tmp/asserted-subclass-of-axioms.obo: $(SRC) tmp/fbcv_terms.txt
 
 tmp/source-merged.obo: $(SRC) tmp/asserted-subclass-of-axioms.obo
 	$(ROBOT) merge --input $(SRC) \
-		remove --term GO:0004872 \
 		reason --reasoner ELK \
 		relax \
 		remove --axioms equivalent \
@@ -231,5 +230,8 @@ obo_qc_%:
 
 obo_qc: obo_qc_$(ONT).obo obo_qc_$(ONT).owl
 
-flybase_qc: odkversion obo_qc
-	$(ROBOT) reason --input $(ONT)-full.owl --reasoner ELK  --equivalent-classes-allowed asserted-only --output test.owl && rm test.owl && echo "Success"
+flybase_qc.owl: odkversion #obo_qc
+	$(ROBOT) merge -i $(ONT)-full.owl -i components/qc_assertions.owl -o $@
+
+flybase_qc: flybase_qc.owl
+	$(ROBOT) reason --input $< --reasoner ELK  --equivalent-classes-allowed asserted-only --output test.owl && rm test.owl && echo "Success"
