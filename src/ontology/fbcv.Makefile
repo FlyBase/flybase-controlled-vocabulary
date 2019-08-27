@@ -104,7 +104,7 @@ ontsim:
 
 # the fbcv-flybase target is a massive hack that 
 
-$(ONT)-flybase.obo:
+flybase_controlled_vocabulary.obo:
 	$(ROBOT) remove --input $(ONT)-simple.obo --term "http://purl.obolibrary.org/obo/FBcv_0008000" \
 		convert -o $@
 	sed -i '/^date[:]/c\date: $(DATETIME)' $@
@@ -160,8 +160,8 @@ reports/robot_simple_diff.txt: $(LAST_DEPLOYED_SIMPLE) $(ONT)-simple.obo
 reports/onto_metrics_calc.txt: $(ONT)-simple.obo install_flybase_scripts
 	../scripts/onto_metrics_calc.pl 'phenotypic_class' $(ONT)-simple.obo > $@
 	
-reports/chado_load_check_simple.txt: install_flybase_scripts $(ONT)-flybase.obo 
-	../scripts/chado_load_checks.pl $(ONT)-flybase.obo > $@
+reports/chado_load_check_simple.txt: install_flybase_scripts flybase_controlled_vocabulary.obo 
+	../scripts/chado_load_checks.pl flybase_controlled_vocabulary.obo > $@
 
 all_reports: all_reports_onestep $(REPORT_FILES)
 ASSETS := $(ASSETS) components/dpo-simple.owl
@@ -213,8 +213,8 @@ pre_release: $(ONT)-edit.obo tmp/auto_generated_definitions_dot.owl tmp/auto_gen
 	$(ROBOT) merge -i tmp/$(ONT)-edit-release.obo -i tmp/auto_generated_definitions_dot.owl -i tmp/auto_generated_definitions_sub.owl --collapse-import-closure false -o $(ONT)-edit-release.ofn && mv $(ONT)-edit-release.ofn $(ONT)-edit-release.owl
 	echo "Preprocessing done. Make sure that NO CHANGES TO THE EDIT FILE ARE COMMITTED!"
 	
-post_release: $(ONT)-flybase.obo
-	cp $(ONT)-flybase.obo ../..
+post_release: flybase_controlled_vocabulary.obo
+	cp flybase_controlled_vocabulary.obo ../..
 	
 test_remove: $(ONT)-edit.obo tmp/replaced_defs.txt
 	$(ROBOT) remove -i $(ONT)-edit.obo remove --term-file tmp/replaced_defs.txt --axioms annotation --trim false \ merge -i tmp/auto_generated_definitions_dot.owl -i tmp/auto_generated_definitions_sub.owl --collapse-import-closure false -o $(ONT)-edit-release.ofn && mv $(ONT)-edit-release.ofn $(ONT)-edit-release2.owl
