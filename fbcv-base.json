@@ -21138,79 +21138,6 @@
       "type" : "CLASS",
       "lbl" : "cold sensitive amorphic allele - genetic evidence"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/BFO_0000051",
-      "meta" : {
-        "definition" : {
-          "val" : "a core relation that holds between a whole and its part",
-          "xrefs" : [ ]
-        },
-        "xrefs" : [ {
-          "val" : "OBO_REL:has_part"
-        }, {
-          "val" : "BFO:0000051"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
-          "val" : "We use the has_part relation to relate complex qualities to more primitive ones. A complex quality is a collection of qualities. The complex quality cannot exist without the sub-qualities. For example, the quality 'swollen' necessarily comes with the qualities of 'protruding' and 'increased size'."
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
-          "val" : "Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part."
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "has_part"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "has_part"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
-          "val" : "http://purl.obolibrary.org/obo/BFO"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "quality"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "this year has part this day (occurrent parthood)"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "protein"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "my body has part my brain (continuant parthood, two material entities)"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "external"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "relationship"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "chebi_ontology"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
-          "val" : "Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)\n\nA continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'."
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_cyclic",
-          "val" : "false"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "uberon"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "has part"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
-          "val" : "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/RO_0001900",
-          "val" : "http://purl.obolibrary.org/obo/RO_0001901"
-        } ]
-      },
-      "type" : "PROPERTY",
-      "lbl" : "has part"
-    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000741",
       "meta" : {
         "definition" : {
@@ -24269,6 +24196,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000189"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000717",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000427"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000724",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000357"
@@ -24276,10 +24207,6 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000721",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000387"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000717",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000427"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000286",
       "pred" : "is_a",
@@ -25189,13 +25116,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000474",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000470"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000486",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000483"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000474",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000470"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0005079",
       "pred" : "is_a",
@@ -25285,13 +25212,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000538"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000325",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000418",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000417"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000325",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000421",
       "pred" : "is_a",
@@ -25309,13 +25236,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000526"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000714",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000309"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0006001",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000714",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000309"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003211",
       "pred" : "is_a",
@@ -26013,10 +25940,6 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/BFO_0000050",
-      "pred" : "inverseOf",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000051"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000372",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000370"
@@ -26609,13 +26532,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000553"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000733",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000307"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000357",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000733",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000307"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000314",
       "pred" : "is_a",
@@ -26997,13 +26920,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0005058"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000531",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000526"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000162",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000161"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000531",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000526"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000209",
       "pred" : "is_a",
@@ -27169,10 +27092,6 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000525"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/RO_0002351",
-      "pred" : "subPropertyOf",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000051"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003032",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003029"
@@ -27193,13 +27112,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003153",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003146"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000413",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003153",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003146"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000491",
       "pred" : "is_a",
@@ -27281,13 +27200,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003050"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000147",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000322"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000450",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000147",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000322"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000163",
       "pred" : "is_a",
@@ -27709,13 +27628,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003011",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000013"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000485",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003020"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003011",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000013"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000439",
       "pred" : "is_a",
@@ -27901,13 +27820,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000714"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000359",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000709"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000391",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000389"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000359",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000709"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003144",
       "pred" : "is_a",
@@ -28435,7 +28354,7 @@
       "xrefs" : [ ],
       "basicPropertyValues" : [ {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#date",
-        "val" : "14:08:2019 18:01"
+        "val" : "28:08:2019 14:16"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#default-namespace",
         "val" : "FlyBase miscellaneous CV"
@@ -28443,7 +28362,7 @@
         "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion",
         "val" : "1.2"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/fbcv/releases/2019-08-14/fbcv-base.json"
+      "version" : "http://purl.obolibrary.org/obo/fbcv/releases/2019-08-28/fbcv-base.json"
     },
     "equivalentNodesSets" : [ {
       "nodeIds" : [ "http://purl.obolibrary.org/obo/FBcv_0000599", "http://purl.obolibrary.org/obo/CHEBI_25818" ]
@@ -28508,9 +28427,9 @@
     }, {
       "nodeIds" : [ "http://purl.obolibrary.org/obo/CHEBI_28901", "http://purl.obolibrary.org/obo/FBcv_0000814" ]
     }, {
-      "nodeIds" : [ "http://purl.obolibrary.org/obo/FBcv_0000589", "http://purl.obolibrary.org/obo/CHEBI_21184" ]
-    }, {
       "nodeIds" : [ "http://purl.obolibrary.org/obo/CHEBI_24565", "http://purl.obolibrary.org/obo/FBcv_0000587" ]
+    }, {
+      "nodeIds" : [ "http://purl.obolibrary.org/obo/FBcv_0000589", "http://purl.obolibrary.org/obo/CHEBI_21184" ]
     }, {
       "nodeIds" : [ "http://purl.obolibrary.org/obo/CHEBI_28534", "http://purl.obolibrary.org/obo/FBcv_0000545" ]
     }, {
