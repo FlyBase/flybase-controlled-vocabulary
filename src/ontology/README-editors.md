@@ -69,6 +69,8 @@ After doing this, you can run
 
 to regenerate imports.
 
+Note: `./run.sh make all_imports` did not work - used `sh run.sh make all_imports` successfully. cp190903.
+
 Note: the fbcv_terms.txt file may include 'starter' classes seeded from
 the ontology starter kit. It is safe to remove these.
 
