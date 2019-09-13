@@ -83,6 +83,14 @@ $(ONT)-simple.owl: oort tmp/fbcv_signature.txt
 		reduce -r ELK \
 		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --annotation oboInOwl:date "$(OBODATE)" --output $@.tmp.owl && mv $@.tmp.owl $@
 
+# For some reason, using reduce just does not work on FBCV this is a workaround, but it needs some figuring out..
+
+$(ONT)-full.owl: $(SRC) $(OTHER_SRC)
+	$(ROBOT) merge --input $< \
+		reason --reasoner ELK --equivalent-classes-allowed asserted-only \
+		relax \
+		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --annotation oboInOwl:date "$(OBODATE)" --output $@.tmp.owl && mv $@.tmp.owl $@
+
 ontsim:
 	$(ROBOT) merge --input oort/$(ONT)-simple.owl \
 		merge -i tmp/asserted-subclass-of-axioms.obo \
@@ -243,3 +251,5 @@ flybase_qc.owl: odkversion obo_qc
 
 flybase_qc: flybase_qc.owl
 	$(ROBOT) reason --input $< --reasoner ELK  --equivalent-classes-allowed asserted-only --output test.owl && rm test.owl && echo "Success"
+
+
