@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: releases/2019-08-28
-date: 28:08:2019 14:16
+data-version: releases/2019-09-19
+date: 19:09:2019 08:00
 subsetdef: 1_STAR "Preliminary entries"
 subsetdef: 2_STAR "Annotated by 3rd party"
 subsetdef: 3_STAR "Manually annotated by ChEBI Team"
@@ -328,8 +328,10 @@ synonym: "Karbamat" RELATED [ChEBI]
 xref: Beilstein:3903503 "Beilstein"
 xref: CAS:302-11-4 "ChemIDplus"
 xref: Gmelin:239604 "Gmelin"
+is_a: CHEBI:37022 ! amino-acid anion
 is_a: FBcv:0000538 ! carbamate
 equivalent_to: FBcv:0000538 ! carbamate
+relationship: is_conjugate_base_of CHEBI:28616 ! carbamic acid
 property_value: http://purl.obolibrary.org/obo/chebi/charge "-1" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "CH2NO2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/CH3NO2/c2-1(3)4/h2H2,(H,3,4)/p-1" xsd:string
@@ -694,6 +696,7 @@ is_a: CHEBI:24318 ! glutamine family amino acid
 relationship: has_role CHEBI:25512 ! neurotransmitter
 relationship: has_role CHEBI:27027 ! micronutrient
 relationship: has_role CHEBI:50733 ! nutraceutical
+relationship: has_role CHEBI:75771 ! mouse metabolite
 relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
 relationship: is_conjugate_acid_of CHEBI:29985 ! L-glutamate(1-)
 relationship: is_enantiomer_of CHEBI:15966 ! D-glutamic acid
@@ -810,6 +813,7 @@ is_a: CHEBI:138675 ! gas molecular entity
 is_a: CHEBI:35107 ! azane
 is_a: CHEBI:37176 ! mononuclear parent hydride
 is_a: FBcv:0000551 ! enzyme inhibitor
+relationship: has_role CHEBI:25212 ! metabolite
 relationship: has_role CHEBI:50910 ! neurotoxin
 relationship: has_role CHEBI:59740 ! nucleophilic reagent
 relationship: has_role CHEBI:75771 ! mouse metabolite
@@ -1085,8 +1089,10 @@ xref: Wikipedia:Naphthalene
 is_a: CHEBI:25477 ! naphthalenes
 is_a: CHEBI:35426 ! ortho-fused bicyclic arene
 relationship: has_role CHEBI:27311 ! volatile oil component
+relationship: has_role CHEBI:50903 ! carcinogenic agent
 relationship: has_role CHEBI:68494 ! apoptosis inhibitor
 relationship: has_role CHEBI:75771 ! mouse metabolite
+relationship: has_role CHEBI:76924 ! plant metabolite
 relationship: has_role CHEBI:78298 ! environmental contaminant
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C10H8" xsd:string
@@ -1343,8 +1349,19 @@ xref: PPDB:359
 xref: Reaxys:1209228 "Reaxys"
 xref: UM-BBD_compID:c0122 "UM-BBD"
 xref: Wikipedia:Formaldehyde
+is_a: CHEBI:17478 ! aldehyde
+is_a: CHEBI:64708 ! one-carbon compound
+is_a: FBcv:0000551 ! enzyme inhibitor
 is_a: FBcv:0000584 ! formaldehyde
 equivalent_to: FBcv:0000584 ! formaldehyde
+relationship: has_role CHEBI:48219 ! disinfectant
+relationship: has_role CHEBI:50903 ! carcinogenic agent
+relationship: has_role CHEBI:50904 ! allergen
+relationship: has_role CHEBI:75771 ! mouse metabolite
+relationship: has_role CHEBI:75772 ! Saccharomyces cerevisiae metabolite
+relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
+relationship: has_role CHEBI:77941 ! EC 3.5.1.4 (amidase) inhibitor
+relationship: has_role CHEBI:78298 ! environmental contaminant
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "CH2O" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/CH2O/c1-2/h1H2" xsd:string
@@ -1379,8 +1396,14 @@ synonym: "DNS" RELATED [ChEBI]
 synonym: "thymus nucleic acid" RELATED [ChEBI]
 xref: CAS:9007-49-2 "KEGG COMPOUND"
 xref: KEGG:C00039
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:33696 ! nucleic acid
 is_a: FBcv:0000579 ! DNA
 equivalent_to: FBcv:0000579 ! DNA
+relationship: has_part CHEBI:33793 ! canonical deoxyribonucleoside residue
+relationship: has_part CHEBI:50298 ! canonical deoxyribonucleotide residue
+relationship: has_role CHEBI:75771 ! mouse metabolite
+relationship: has_role CHEBI:77746 ! human metabolite
 
 [Term]
 id: CHEBI:16998
@@ -1628,6 +1651,7 @@ is_a: FBcv:0000551 ! enzyme inhibitor
 relationship: has_role CHEBI:27027 ! micronutrient
 relationship: has_role CHEBI:50733 ! nutraceutical
 relationship: has_role CHEBI:63332 ! EC 3.1.3.1 (alkaline phosphatase) inhibitor
+relationship: has_role CHEBI:75771 ! mouse metabolite
 relationship: has_role CHEBI:75772 ! Saccharomyces cerevisiae metabolite
 relationship: has_role CHEBI:76924 ! plant metabolite
 relationship: has_role CHEBI:76967 ! human xenobiotic metabolite
@@ -2199,8 +2223,14 @@ xref: PMID:15790490 "Europe PMC"
 xref: PMID:24386880 "Europe PMC"
 xref: Reaxys:635810 "Reaxys"
 xref: Wikipedia:Ethyl_carbamate
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:13941 ! carbamate
+is_a: CHEBI:23003 ! carbamate ester
+is_a: FBcv:0000538 ! carbamate
 is_a: FBcv:0000539 ! urethane
 equivalent_to: FBcv:0000539 ! urethane
+relationship: has_role CHEBI:25435 ! mutagen
+relationship: has_role CHEBI:76946 ! fungal metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C3H7NO2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C3H7NO2/c1-2-6-3(4)5/h2H2,1H3,(H2,4,5)" xsd:string
@@ -2446,8 +2476,12 @@ synonym: "4-amino-3-hydroxynaphthalene-1-sulphonic acid" RELATED [ChemIDplus]
 xref: Beilstein:2697469 "Beilstein"
 xref: CAS:116-63-2 "ChemIDplus"
 xref: Gmelin:241697 "Gmelin"
+is_a: CHEBI:36336 ! naphthalenesulfonic acid
+is_a: CHEBI:38034 ! aminonaphthalene
 is_a: FBcv:0000568 ! 1-amino-2-naphthol-4-sulfonic acid
 equivalent_to: FBcv:0000568 ! 1-amino-2-naphthol-4-sulfonic acid
+relationship: has_functional_parent CHEBI:10432 ! 2-naphthol
+relationship: has_role CHEBI:25435 ! mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C10H9NO4S" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C10H9NO4S/c11-10-7-4-2-1-3-6(7)9(5-8(10)12)16(13,14)15/h1-5,12H,11H2,(H,13,14,15)" xsd:string
@@ -2476,8 +2510,13 @@ xref: Gmelin:984479 "Gmelin"
 xref: PMID:6357525 "Europe PMC"
 xref: PMID:8200089 "Europe PMC"
 xref: Reaxys:605265 "Reaxys"
+is_a: CHEBI:24469 ! haloalkane
+is_a: CHEBI:36683 ! organochlorine compound
+is_a: CHEBI:37141 ! organobromine compound
+is_a: FBcv:0000541 ! intercalating agent
 is_a: FBcv:0000547 ! 1-bromo-2-chloroethane
 equivalent_to: FBcv:0000547 ! 1-bromo-2-chloroethane
+relationship: has_role CHEBI:25435 ! mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C2H4BrCl" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C2H4BrCl/c3-1-2-4/h1-2H2" xsd:string
@@ -2522,8 +2561,13 @@ xref: PMID:8137269 "Europe PMC"
 xref: PMID:8461296 "Europe PMC"
 xref: PMID:9690517 "Europe PMC"
 xref: Reaxys:169182 "Reaxys"
+is_a: CHEBI:132124 ! 1,4-benzoquinones
+is_a: CHEBI:22681 ! aziridines
+is_a: FBcv:0000526 ! alkylating agent
 is_a: FBcv:0000571 ! 2,5-bis(ethyleneimino)-1,4-benzoquinone
 equivalent_to: FBcv:0000571 ! 2,5-bis(ethyleneimino)-1,4-benzoquinone
+relationship: has_role CHEBI:22333 ! alkylating agent
+relationship: has_role CHEBI:25435 ! mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C10H10N2O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C10H10N2O2/c13-9-6-8(12-3-4-12)10(14)5-7(9)11-1-2-11/h5-6H,1-4H2" xsd:string
@@ -2537,16 +2581,24 @@ id: CHEBI:19508
 name: 2-chloroethyl methanesulfonate
 namespace: chebi_ontology
 subset: 1_STAR
+is_a: CHEBI:25223 ! methanesulfonate ester
+is_a: CHEBI:36683 ! organochlorine compound
+is_a: FBcv:0000526 ! alkylating agent
 is_a: FBcv:0000528 ! 2-chloroethyl methanesulfonate
 equivalent_to: FBcv:0000528 ! 2-chloroethyl methanesulfonate
+relationship: has_role CHEBI:22333 ! alkylating agent
 
 [Term]
 id: CHEBI:19579
 name: 2-fluoroethyl methanesulfonate
 namespace: chebi_ontology
 subset: 1_STAR
+is_a: CHEBI:25223 ! methanesulfonate ester
+is_a: CHEBI:37143 ! organofluorine compound
+is_a: FBcv:0000526 ! alkylating agent
 is_a: FBcv:0000529 ! 2-fluoroethyl methanesulfonate
 equivalent_to: FBcv:0000529 ! 2-fluoroethyl methanesulfonate
+relationship: has_role CHEBI:22333 ! alkylating agent
 
 [Term]
 id: CHEBI:20552
@@ -2567,8 +2619,14 @@ xref: PMID:14522043 "Europe PMC"
 xref: PMID:28166217 "Europe PMC"
 xref: PMID:28320905 "Europe PMC"
 xref: PMID:3950402 "Europe PMC"
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:39447 ! pyrimidines
+is_a: CHEBI:67142 ! nucleobase analogue
+is_a: FBcv:0000548 ! base analog
 is_a: FBcv:0000549 ! 5-bromouracil
 equivalent_to: FBcv:0000549 ! 5-bromouracil
+relationship: has_functional_parent CHEBI:17568 ! uracil
+relationship: has_role CHEBI:25435 ! mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C4H3BrN2O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C4H3BrN2O2/c5-2-1-6-4(9)7-3(2)8/h1H,(H2,6,7,8,9)" xsd:string
@@ -2592,8 +2650,13 @@ xref: Beilstein:33664 "Beilstein"
 xref: CAS:957-75-5 "ChemIDplus"
 xref: Gmelin:723432 "Gmelin"
 xref: PMID:3950402 "Europe PMC"
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:27242 ! uridines
+is_a: CHEBI:67142 ! nucleobase analogue
+is_a: FBcv:0000548 ! base analog
 is_a: FBcv:0000550 ! 5-bromouridine
 equivalent_to: FBcv:0000550 ! 5-bromouridine
+relationship: has_role CHEBI:25435 ! mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C9H11BrN2O6" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C9H11BrN2O6/c10-3-1-12(9(17)11-7(3)16)8-6(15)5(14)4(2-13)18-8/h1,4-6,8,13-15H,2H2,(H,11,16,17)/t4-,5-,6-,8-/m1/s1" xsd:string
@@ -2627,8 +2690,13 @@ xref: PMID:10838135 "Europe PMC"
 xref: PMID:3114533 "Europe PMC"
 xref: PMID:8625451 "Europe PMC"
 xref: Reaxys:2056479 "Reaxys"
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:37141 ! organobromine compound
+is_a: CHEBI:51067 ! tetraphenes
 is_a: FBcv:0000572 ! 7-bromomethyl-12-methylbenz[a]anthracene
 equivalent_to: FBcv:0000572 ! 7-bromomethyl-12-methylbenz[a]anthracene
+relationship: has_parent_hydride CHEBI:51348 ! tetraphene
+relationship: has_role CHEBI:25435 ! mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C20H15Br" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C20H15Br/c1-13-15-7-4-5-9-17(15)19(12-21)18-11-10-14-6-2-3-8-16(14)20(13)18/h2-11H,12H2,1H3" xsd:string
@@ -2647,8 +2715,12 @@ synonym: "ICR 170" RELATED [ChemIDplus]
 synonym: "N-(2-chloroethyl)-N'-(6-chloro-2-methoxy-9-acridinyl)-N-ethyl-1,3-propanediamine dihydrochloride" RELATED [ChemIDplus]
 synonym: "N-(2-chloroethyl)-N'-(6-chloro-2-methoxyacridin-9-yl)-N-ethylpropane-1,3-diamine dihydrochloride" EXACT IUPAC_NAME [IUPAC]
 xref: CAS:146-59-8 "ChemIDplus"
+is_a: CHEBI:22213 ! acridines
+is_a: FBcv:0000541 ! intercalating agent
 is_a: FBcv:0000544 ! ICR 170
 equivalent_to: FBcv:0000544 ! ICR 170
+relationship: has_part CHEBI:37594 ! N-(2-chloroethyl)-N'-(6-chloro-2-methoxyacridin-9-yl)-N-ethylpropane-1,3-diamine
+relationship: has_role CHEBI:24853 ! intercalator
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C21H27Cl4N3O" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C21H25Cl2N3O.2ClH/c1-3-26(12-9-22)11-4-10-24-21-17-7-5-15(23)13-20(17)25-19-8-6-16(27-2)14-18(19)21;;/h5-8,13-14H,3-4,9-12H2,1-2H3,(H,24,25);2*1H" xsd:string
@@ -2670,8 +2742,12 @@ synonym: "Janus Green V" RELATED [ChemIDplus]
 xref: Beilstein:9748061 "Beilstein"
 xref: CAS:2869-83-2 "ChemIDplus"
 xref: Patent:US2882209
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:36094 ! organic chloride salt
 is_a: FBcv:0000589 ! Janus green B
 equivalent_to: FBcv:0000589 ! Janus green B
+relationship: has_part CHEBI:51070 ! Janus Green B cation
+relationship: has_role CHEBI:37958 ! dye
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C30H31ClN6" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C30H31N6.ClH/c1-5-35(6-2)26-17-19-28-30(21-26)36(25-10-8-7-9-11-25)29-20-23(14-18-27(29)31-28)33-32-22-12-15-24(16-13-22)34(3)4;/h7-21H,5-6H2,1-4H3;1H/q+1;/p-1" xsd:string
@@ -2728,8 +2804,12 @@ synonym: "N-Nitroso-N-methyl-N'-nitroguanidine" RELATED [ChemIDplus]
 xref: Beilstein:1779490 "Beilstein"
 xref: CAS:70-25-7 "ChemIDplus"
 xref: KEGG:C14592
+is_a: CHEBI:35800 ! nitroso compound
+is_a: FBcv:0000526 ! alkylating agent
 is_a: FBcv:0000535 ! N-methyl-N'-nitro-N-nitrosoguanidine
 equivalent_to: FBcv:0000535 ! N-methyl-N'-nitro-N-nitrosoguanidine
+relationship: has_functional_parent CHEBI:39179 ! nitroguanidine
+relationship: has_role CHEBI:22333 ! alkylating agent
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C2H5N5O3" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C2H5N5O3/c1-6(5-8)2(3)4-7(9)10/h1H3,(H2,3,4)" xsd:string
@@ -2743,8 +2823,12 @@ id: CHEBI:22025
 name: S-2-chloroethylcysteine
 namespace: chebi_ontology
 subset: 1_STAR
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:23509 ! cysteine derivative
+is_a: CHEBI:36683 ! organochlorine compound
 is_a: FBcv:0000602 ! S-2-chloroethylcysteine
 equivalent_to: FBcv:0000602 ! S-2-chloroethylcysteine
+relationship: has_role CHEBI:25435 ! mutagen
 
 [Term]
 id: CHEBI:22063
@@ -2873,8 +2957,13 @@ xref: Beilstein:69045 "Beilstein"
 xref: CAS:54-62-6 "ChemIDplus"
 xref: Drug_Central:21 "DrugCentral"
 xref: PMID:18789931 "Europe PMC"
+is_a: CHEBI:35692 ! dicarboxylic acid
+is_a: FBcv:0000551 ! enzyme inhibitor
 is_a: FBcv:0000552 ! aminopterin
 equivalent_to: FBcv:0000552 ! aminopterin
+relationship: has_functional_parent CHEBI:27470 ! folic acid
+relationship: has_role CHEBI:25435 ! mutagen
+relationship: has_role CHEBI:50683 ! EC 1.5.1.3 (dihydrofolate reductase) inhibitor
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C19H20N8O5" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C19H20N8O5/c20-15-14-16(27-19(21)26-15)23-8-11(24-14)7-22-10-3-1-9(2-4-10)17(30)25-12(18(31)32)5-6-13(28)29/h1-4,8,12,22H,5-7H2,(H,25,30)(H,28,29)(H,31,32)(H4,20,21,23,26,27)/t12-/m0/s1" xsd:string
@@ -3270,8 +3359,14 @@ xref: PMID:24074178 "Europe PMC"
 xref: PMID:7200520 "Europe PMC"
 xref: PMID:9819133 "Europe PMC"
 xref: Reaxys:2228812 "Reaxys"
+is_a: CHEBI:22160 ! acetamides
+is_a: CHEBI:22315 ! alkaloid
+is_a: CHEBI:35618 ! aromatic ether
+is_a: CHEBI:38032 ! carbotricyclic compound
 is_a: FBcv:0000577 ! colchicine
 equivalent_to: FBcv:0000577 ! colchicine
+relationship: has_role CHEBI:61951 ! microtubule-destabilising agent
+relationship: has_role CHEBI:76924 ! plant metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C22H25NO6" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C22H25NO6/c1-12(24)23-16-8-6-13-10-19(27-3)21(28-4)22(29-5)20(13)14-7-9-18(26-2)17(25)11-15(14)16/h7,9-11,16H,6,8H2,1-5H3,(H,23,24)" xsd:string
@@ -3343,8 +3438,12 @@ xref: PMID:29079364 "Europe PMC"
 xref: PMID:8566016 "Europe PMC"
 xref: PPDB:178
 xref: Wikipedia:Copper(II)_sulfate
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:51336 ! metal sulfate
 is_a: FBcv:0000554 ! cupric sulfate
 equivalent_to: FBcv:0000554 ! cupric sulfate
+relationship: has_part CHEBI:29036 ! copper(2+)
+relationship: has_role CHEBI:139492 ! sensitiser
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "CuO4S" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/Cu.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2" xsd:string
@@ -3383,8 +3482,12 @@ synonym: "DEB" RELATED [NIST_Chemistry_WebBook]
 synonym: "dioxybutadiene" RELATED [ChemIDplus]
 xref: Beilstein:79831 "Beilstein"
 xref: CAS:1464-53-5 "ChemIDplus"
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:32955 ! epoxide
+is_a: FBcv:0000558 ! epoxy hydrocarbon
 is_a: FBcv:0000559 ! diepoxybutane
 equivalent_to: FBcv:0000559 ! diepoxybutane
+relationship: has_role CHEBI:25435 ! mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C4H6O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C4H6O2/c1-3(5-1)4-2-6-4/h3-4H,1-2H2" xsd:string
@@ -3405,8 +3508,13 @@ synonym: "2,2'-(1,4-Butanediyl)bisoxirane" RELATED [ChemIDplus]
 synonym: "2,2'-butane-1,4-diyldioxirane" EXACT IUPAC_NAME [IUPAC]
 xref: Beilstein:104873 "Beilstein"
 xref: CAS:2426-07-5 "NIST Chemistry WebBook"
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:32955 ! epoxide
+is_a: FBcv:0000558 ! epoxy hydrocarbon
 is_a: FBcv:0000560 ! diepoxyoctane
 equivalent_to: FBcv:0000560 ! diepoxyoctane
+relationship: has_parent_hydride CHEBI:17590 ! octane
+relationship: has_role CHEBI:25435 ! mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C8H14O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C8H14O2/c1(3-7-5-9-7)2-4-8-6-10-8/h7-8H,1-6H2" xsd:string
@@ -3492,8 +3600,16 @@ xref: PMID:6936603 "Europe PMC"
 xref: PMID:7285888 "Europe PMC"
 xref: Reaxys:773969 "Reaxys"
 xref: Wikipedia:Ethyl_methanesulfonate
+is_a: CHEBI:25223 ! methanesulfonate ester
+is_a: FBcv:0000526 ! alkylating agent
 is_a: FBcv:0000530 ! ethyl methanesulfonate
 equivalent_to: FBcv:0000530 ! ethyl methanesulfonate
+relationship: has_role CHEBI:22333 ! alkylating agent
+relationship: has_role CHEBI:25435 ! mutagen
+relationship: has_role CHEBI:35610 ! antineoplastic agent
+relationship: has_role CHEBI:50902 ! genotoxin
+relationship: has_role CHEBI:50903 ! carcinogenic agent
+relationship: has_role CHEBI:50905 ! teratogenic agent
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C3H8O3S" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C3H8O3S/c1-3-6-7(2,4)5/h3H2,1-2H3" xsd:string
@@ -3533,8 +3649,15 @@ xref: PMID:24175309 "Europe PMC"
 xref: PMID:8603364 "Europe PMC"
 xref: Reaxys:1761174 "Reaxys"
 xref: Wikipedia:ENU
+is_a: CHEBI:76551 ! N-nitrosoureas
+is_a: FBcv:0000526 ! alkylating agent
 is_a: FBcv:0000531 ! ethyl nitrosourea
 equivalent_to: FBcv:0000531 ! ethyl nitrosourea
+relationship: has_functional_parent CHEBI:16199 ! urea
+relationship: has_role CHEBI:22333 ! alkylating agent
+relationship: has_role CHEBI:25435 ! mutagen
+relationship: has_role CHEBI:50902 ! genotoxin
+relationship: has_role CHEBI:50903 ! carcinogenic agent
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C3H7N3O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C3H7N3O2/c1-2-6(5-8)3(4)7/h2H2,1H3,(H2,4,7)" xsd:string
@@ -3662,6 +3785,7 @@ namespace: chebi_ontology
 def: "A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances." []
 subset: 3_STAR
 synonym: "chemical entity" EXACT [UniProt]
+is_a: FBcv:0000452 ! origin of mutation
 is_a: FBcv:0000525 ! chemical
 equivalent_to: FBcv:0000525 ! chemical
 
@@ -3782,6 +3906,7 @@ xref: LINCS:LSM-3492
 xref: Patent:DE1240870
 xref: Patent:US3424752
 xref: Wikipedia:Altretamine
+is_a: CHEBI:38175 ! triamino-1,3,5-triazine
 is_a: FBcv:0000586 ! hexamethylmelamine
 equivalent_to: FBcv:0000586 ! hexamethylmelamine
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
@@ -3816,8 +3941,12 @@ xref: Beilstein:1099903 "Beilstein"
 xref: CAS:680-31-9 "KEGG COMPOUND"
 xref: Gmelin:3259 "Gmelin"
 xref: KEGG:C19250
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:17102 ! phosphoramide
 is_a: FBcv:0000587 ! hexamethylphosphoramide
 equivalent_to: FBcv:0000587 ! hexamethylphosphoramide
+relationship: has_role CHEBI:25435 ! mutagen
+relationship: has_role CHEBI:67105 ! insect sterilant
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C6H18N3OP" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C6H18N3OP/c1-7(2)11(10,8(3)4)9(5)6/h1-6H3" xsd:string
@@ -3853,8 +3982,14 @@ xref: PMID:6408464 "Europe PMC"
 xref: PMID:6815525 "Europe PMC"
 xref: PMID:8375330 "Europe PMC"
 xref: Reaxys:4096157 "Reaxys"
+is_a: CHEBI:38037 ! methanesulfonate salt
+is_a: FBcv:0000526 ! alkylating agent
 is_a: FBcv:0000532 ! hycanthon methanesulfonate
 equivalent_to: FBcv:0000532 ! hycanthon methanesulfonate
+relationship: has_part CHEBI:67141 ! hycanthone(1+)
+relationship: has_role CHEBI:22333 ! alkylating agent
+relationship: has_role CHEBI:25435 ! mutagen
+relationship: has_role CHEBI:38941 ! schistosomicide drug
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C21H28N2O5S2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C20H24N2O2S.CH4O3S/c1-3-22(4-2)12-11-21-16-10-9-14(13-23)20-18(16)19(24)15-7-5-6-8-17(15)25-20;1-5(2,3)4/h5-10,21,23H,3-4,11-13H2,1-2H3;1H3,(H,2,3,4)" xsd:string
@@ -3964,6 +4099,7 @@ synonym: "inorganic compounds" RELATED [ChEBI]
 synonym: "inorganic entity" RELATED [ChEBI]
 synonym: "inorganic molecular entities" RELATED [ChEBI]
 synonym: "inorganics" RELATED [ChEBI]
+is_a: CHEBI:23367 ! molecular entity
 is_a: FBcv:0000553 ! inorganic compound
 equivalent_to: FBcv:0000553 ! inorganic compound
 
@@ -4039,8 +4175,14 @@ synonym: "J" RELATED [ChEBI]
 synonym: "Jod" RELATED [ChEBI]
 synonym: "yodo" RELATED [ChEBI]
 xref: WebElements:I
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:24473 ! halogen
+is_a: CHEBI:24835 ! inorganic molecular entity
+is_a: FBcv:0000553 ! inorganic compound
 is_a: FBcv:0000588 ! iodine
 equivalent_to: FBcv:0000588 ! iodine
+relationship: has_role CHEBI:27027 ! micronutrient
+relationship: has_role CHEBI:77746 ! human metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "I" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/I" xsd:string
@@ -4180,8 +4322,11 @@ subset: 3_STAR
 synonym: "N-ethyl-1-methoxy-N-nitrosoethanamine" EXACT IUPAC_NAME [IUPAC]
 xref: Beilstein:4368978 "ChemIDplus"
 xref: CAS:61738-03-2 "ChemIDplus"
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:35803 ! nitrosamine
 is_a: FBcv:0000590 ! methoxy diethylnitrosamine
 equivalent_to: FBcv:0000590 ! methoxy diethylnitrosamine
+relationship: has_role CHEBI:25435 ! mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C5H12N2O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C5H12N2O2/c1-4-7(6-8)5(2)9-3/h5H,4H2,1-3H3" xsd:string
@@ -4227,8 +4372,15 @@ xref: PMID:23384783 "Europe PMC"
 xref: PMID:23483329 "Europe PMC"
 xref: Reaxys:1098586 "Reaxys"
 xref: Wikipedia:Methyl_methanesulfonate
+is_a: CHEBI:25223 ! methanesulfonate ester
+is_a: FBcv:0000526 ! alkylating agent
 is_a: FBcv:0000533 ! methyl methanesulfonate
 equivalent_to: FBcv:0000533 ! methyl methanesulfonate
+relationship: has_role CHEBI:22333 ! alkylating agent
+relationship: has_role CHEBI:25435 ! mutagen
+relationship: has_role CHEBI:50902 ! genotoxin
+relationship: has_role CHEBI:50903 ! carcinogenic agent
+relationship: has_role CHEBI:68495 ! apoptosis inducer
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C2H6O3S" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C2H6O3S/c1-5-6(2,3)4/h1-2H3" xsd:string
@@ -4259,6 +4411,7 @@ is_a: CHEBI:23003 ! carbamate ester
 is_a: CHEBI:25830 ! p-quinones
 is_a: CHEBI:38303 ! azirinopyrroloindole
 is_a: FBcv:0000541 ! intercalating agent
+relationship: has_role CHEBI:24853 ! intercalator
 relationship: has_role CHEBI:76969 ! bacterial metabolite
 
 [Term]
@@ -4335,8 +4488,14 @@ xref: PMID:24641121 "Europe PMC"
 xref: PMID:24791566 "Europe PMC"
 xref: PMID:24801489 "Europe PMC"
 xref: Wikipedia:Sulfur_mustard
+is_a: CHEBI:23996 ! ethyl sulfide
+is_a: CHEBI:36683 ! organochlorine compound
+is_a: FBcv:0000526 ! alkylating agent
 is_a: FBcv:0000534 ! bis(2-chloroethyl) sulfide
 equivalent_to: FBcv:0000534 ! bis(2-chloroethyl) sulfide
+relationship: has_role CHEBI:22333 ! alkylating agent
+relationship: has_role CHEBI:50903 ! carcinogenic agent
+relationship: has_role CHEBI:78592 ! vesicant
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C4H8Cl2S" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C4H8Cl2S/c5-1-3-7-4-2-6/h1-4H2" xsd:string
@@ -4553,24 +4712,36 @@ id: CHEBI:25813
 name: p-N,N-bis(2-chloroethyl)aminophenylvaleric acid
 namespace: chebi_ontology
 subset: 1_STAR
+is_a: CHEBI:33856 ! aromatic amino acid
+is_a: CHEBI:36683 ! organochlorine compound
 is_a: FBcv:0000594 ! p-N,N-di(2-chloroethyl)aminophenylvaleric acid
 equivalent_to: FBcv:0000594 ! p-N,N-di(2-chloroethyl)aminophenylvaleric acid
+relationship: has_functional_parent CHEBI:17418 ! valeric acid
+relationship: has_role CHEBI:25435 ! mutagen
 
 [Term]
 id: CHEBI:25814
 name: p-N,N-bis(2-chloroethyl)amino-D-phenylalanine
 namespace: chebi_ontology
 subset: 1_STAR
+is_a: CHEBI:16733 ! D-alpha-amino acid
+is_a: CHEBI:36683 ! organochlorine compound
+is_a: CHEBI:84143 ! D-phenylalanine derivative
 is_a: FBcv:0000595 ! p-N,N-di-(2-chloroethyl)amino-D-phenylalanine
 equivalent_to: FBcv:0000595 ! p-N,N-di-(2-chloroethyl)amino-D-phenylalanine
+relationship: has_role CHEBI:25435 ! mutagen
 
 [Term]
 id: CHEBI:25816
 name: p-N,N-bis(2-chloroethyl)amino-L-phenylalanine
 namespace: chebi_ontology
 subset: 1_STAR
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:36683 ! organochlorine compound
+is_a: CHEBI:84144 ! L-phenylalanine derivative
 is_a: FBcv:0000597 ! p-N,N-di-(2-chloroethyl)amino-L-phenylalanine
 equivalent_to: FBcv:0000597 ! p-N,N-di-(2-chloroethyl)amino-L-phenylalanine
+relationship: has_role CHEBI:25435 ! mutagen
 
 [Term]
 id: CHEBI:25818
@@ -4584,6 +4755,7 @@ synonym: "p-(bis(2-chloroethyl)amino)phenethylamine" RELATED [ChemIDplus]
 synonym: "p-N,N-di-(2-chloroethyl)aminophenylethylamine" RELATED [ChemIDplus]
 xref: Beilstein:3292665 "ChemIDplus"
 xref: CAS:58880-18-5 "ChemIDplus"
+is_a: CHEBI:36683 ! organochlorine compound
 is_a: FBcv:0000599 ! p-N,N-di-(2-chloroethyl)aminophenylethylamine
 equivalent_to: FBcv:0000599 ! p-N,N-di-(2-chloroethyl)aminophenylethylamine
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
@@ -4599,8 +4771,11 @@ id: CHEBI:25829
 name: p-p'-N,N-di(2-chloroethyl)aminophenoxyphenylalanine
 namespace: chebi_ontology
 subset: 1_STAR
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:36683 ! organochlorine compound
 is_a: FBcv:0000600 ! p-p'-N,N-di(2-chloroethyl)aminophenoxyphenylalanine
 equivalent_to: FBcv:0000600 ! p-p'-N,N-di(2-chloroethyl)aminophenoxyphenylalanine
+relationship: has_role CHEBI:25435 ! mutagen
 
 [Term]
 id: CHEBI:25830
@@ -4695,6 +4870,7 @@ relationship: has_role CHEBI:33287 ! fertilizer
 relationship: has_role CHEBI:46787 ! solvent
 relationship: has_role CHEBI:77746 ! human metabolite
 relationship: has_role CHEBI:84735 ! algal metabolite
+relationship: is_conjugate_acid_of CHEBI:35780 ! phosphate ion
 relationship: is_conjugate_acid_of CHEBI:39745 ! dihydrogenphosphate
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "H3O4P" xsd:string
@@ -4854,8 +5030,11 @@ synonym: "p-benzoquinone--hydroquinone compound (1:1)" RELATED [NIST_Chemistry_W
 xref: Beilstein:3919222 "Beilstein"
 xref: CAS:106-34-3 "NIST Chemistry WebBook"
 xref: Gmelin:253527 "Gmelin"
+is_a: CHEBI:35504 ! addition compound
 is_a: FBcv:0000601 ! quinhydrone
 equivalent_to: FBcv:0000601 ! quinhydrone
+relationship: has_part CHEBI:16509 ! 1,4-benzoquinone
+relationship: has_part CHEBI:17594 ! hydroquinone
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C12H10O4" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C6H6O2.C6H4O2/c2*7-5-1-2-6(8)4-3-5/h1-4,7-8H;1-4H" xsd:string
@@ -4979,8 +5158,13 @@ synonym: "sodium hydrogen sulfite" RELATED [ChemIDplus]
 synonym: "sodium hydrogensulfite" EXACT IUPAC_NAME [IUPAC]
 xref: CAS:7631-90-5 "ChemIDplus"
 xref: Gmelin:22395 "Gmelin"
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:38702 ! inorganic sodium salt
+is_a: CHEBI:48857 ! sulfite salt
 is_a: FBcv:0000556 ! sodium bisulphite
 equivalent_to: FBcv:0000556 ! sodium bisulphite
+relationship: has_part CHEBI:17137 ! hydrogensulfite
+relationship: has_role CHEBI:25435 ! mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "HNaO3S" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/Na.H2O3S/c;1-4(2)3/h;(H2,1,2,3)/q+1;/p-1" xsd:string
@@ -5017,6 +5201,7 @@ id: CHEBI:26800
 name: styrylquinoline
 namespace: chebi_ontology
 subset: 1_STAR
+is_a: CHEBI:26513 ! quinolines
 is_a: FBcv:0000603 ! styryl quinoline
 equivalent_to: FBcv:0000603 ! styryl quinoline
 
@@ -5279,8 +5464,13 @@ xref: PMID:624547 "Europe PMC"
 xref: PMID:74416 "Europe PMC"
 xref: Reaxys:238057 "Reaxys"
 xref: Wikipedia:Triaziquone
+is_a: CHEBI:132124 ! 1,4-benzoquinones
+is_a: CHEBI:22681 ! aziridines
+is_a: FBcv:0000526 ! alkylating agent
 is_a: FBcv:0000604 ! triaziquone
 equivalent_to: FBcv:0000604 ! triaziquone
+relationship: has_role CHEBI:22333 ! alkylating agent
+relationship: has_role CHEBI:35610 ! antineoplastic agent
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C12H13N3O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C12H13N3O2/c16-9-7-8(13-1-2-13)12(17)11(15-5-6-15)10(9)14-3-4-14/h7H,1-6H2" xsd:string
@@ -5336,6 +5526,9 @@ synonym: "ethenyl carbamate" RELATED [ChemIDplus]
 synonym: "vinyl carbamate" EXACT IUPAC_NAME [IUPAC]
 xref: Beilstein:1921122 "ChemIDplus"
 xref: CAS:15805-73-9 "ChemIDplus"
+is_a: CHEBI:13941 ! carbamate
+is_a: CHEBI:23003 ! carbamate ester
+is_a: FBcv:0000538 ! carbamate
 is_a: FBcv:0000540 ! vinyl carbamate
 equivalent_to: FBcv:0000540 ! vinyl carbamate
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
@@ -5464,6 +5657,7 @@ xref: Wikipedia:Folic_Acid
 is_a: CHEBI:37445 ! folic acids
 is_a: CHEBI:51569 ! N-acyl-amino acid
 relationship: has_functional_parent CHEBI:38794 ! pteroic acid
+relationship: has_role CHEBI:33284 ! nutrient
 relationship: has_role CHEBI:75769 ! B vitamin
 relationship: has_role CHEBI:75771 ! mouse metabolite
 relationship: has_role CHEBI:77746 ! human metabolite
@@ -5500,8 +5694,12 @@ xref: KEGG:D00208
 xref: KNApSAcK:C00018668
 xref: LINCS:LSM-6310
 xref: Wikipedia:Mitomycin
+is_a: CHEBI:25357 ! mitomycin
+is_a: FBcv:0000526 ! alkylating agent
 is_a: FBcv:0000542 ! mitomycin C
 equivalent_to: FBcv:0000542 ! mitomycin C
+relationship: has_role CHEBI:22333 ! alkylating agent
+relationship: has_role CHEBI:35610 ! antineoplastic agent
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C15H18N4O5" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C15H18N4O5/c1-5-9(16)12(21)8-6(4-24-14(17)22)15(23-2)13-7(18-13)3-19(15)10(8)11(5)20/h6-7,13,18H,3-4,16H2,1-2H3,(H2,17,22)/t6-,7+,13+,15-/m1/s1" xsd:string
@@ -5582,8 +5780,15 @@ xref: PMID:3932500 "Europe PMC"
 xref: Reaxys:102378 "Reaxys"
 xref: UM-BBD_compID:c0527 "UM-BBD"
 xref: Wikipedia:Oxirane
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:138675 ! gas molecular entity
+is_a: CHEBI:36389 ! saturated organic heteromonocyclic parent
+is_a: CHEBI:38104 ! oxacycle
 is_a: FBcv:0000582 ! ethylene oxide
 equivalent_to: FBcv:0000582 ! ethylene oxide
+relationship: has_role CHEBI:25435 ! mutagen
+relationship: has_role CHEBI:50904 ! allergen
+relationship: has_role CHEBI:75771 ! mouse metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C2H4O" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C2H4O/c1-2-3-1/h1-2H2" xsd:string
@@ -5646,8 +5851,10 @@ xref: KEGG:C06770
 xref: KEGG:D00214
 xref: LINCS:LSM-5783
 xref: Wikipedia:Dactinomycin
+is_a: CHEBI:15369 ! actinomycin
 is_a: FBcv:0000573 ! actinomycin D
 equivalent_to: FBcv:0000573 ! actinomycin D
+relationship: has_role CHEBI:25435 ! mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C62H86N12O16" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C62H86N12O16/c1-27(2)42-59(84)73-23-17-19-36(73)57(82)69(13)25-38(75)71(15)48(29(5)6)61(86)88-33(11)44(55(80)65-42)67-53(78)35-22-21-31(9)51-46(35)64-47-40(41(63)50(77)32(10)52(47)90-51)54(79)68-45-34(12)89-62(87)49(30(7)8)72(16)39(76)26-70(14)58(83)37-20-18-24-74(37)60(85)43(28(3)4)66-56(45)81/h21-22,27-30,33-34,36-37,42-45,48-49H,17-20,23-26,63H2,1-16H3,(H,65,80)(H,66,81)(H,67,78)(H,68,79)/t33-,34-,36+,37+,42-,43-,44+,45+,48+,49+/m1/s1" xsd:string
@@ -5764,8 +5971,28 @@ xref: PMID:9132918 "Europe PMC"
 xref: PMID:9218278 "Europe PMC"
 xref: Reaxys:17705 "Reaxys"
 xref: Wikipedia:Caffeine
+is_a: CHEBI:27134 ! trimethylxanthine
+is_a: FBcv:0000551 ! enzyme inhibitor
 is_a: FBcv:0000575 ! caffeine
 equivalent_to: FBcv:0000575 ! caffeine
+relationship: has_role CHEBI:25435 ! mutagen
+relationship: has_role CHEBI:35337 ! central nervous system stimulant
+relationship: has_role CHEBI:35471 ! psychotropic drug
+relationship: has_role CHEBI:35498 ! diuretic
+relationship: has_role CHEBI:35703 ! xenobiotic
+relationship: has_role CHEBI:38809 ! ryanodine receptor modulator
+relationship: has_role CHEBI:50218 ! EC 3.1.4.* (phosphoric diester hydrolase) inhibitor
+relationship: has_role CHEBI:50925 ! EC 2.7.11.1 (non-specific serine/threonine protein kinase) inhibitor
+relationship: has_role CHEBI:53121 ! adenosine A2A receptor antagonist
+relationship: has_role CHEBI:60809 ! adjuvant
+relationship: has_role CHEBI:64047 ! food additive
+relationship: has_role CHEBI:67114 ! ryanodine receptor agonist
+relationship: has_role CHEBI:71232 ! adenosine receptor antagonist
+relationship: has_role CHEBI:75771 ! mouse metabolite
+relationship: has_role CHEBI:76924 ! plant metabolite
+relationship: has_role CHEBI:76946 ! fungal metabolite
+relationship: has_role CHEBI:78298 ! environmental contaminant
+relationship: has_role CHEBI:85234 ! human blood serum metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C8H10N4O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3" xsd:string
@@ -5814,8 +6041,12 @@ xref: PPDB:2774
 xref: Reaxys:605264 "Reaxys"
 xref: UM-BBD_compID:c0001 "UM-BBD"
 xref: Wikipedia:1\,2-Dichloroethane
+is_a: CHEBI:36016 ! chloroethanes
+is_a: FBcv:0000541 ! intercalating agent
 is_a: FBcv:0000546 ! 1,2-dichloroethane
 equivalent_to: FBcv:0000546 ! 1,2-dichloroethane
+relationship: has_role CHEBI:25435 ! mutagen
+relationship: has_role CHEBI:48355 ! non-polar solvent
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C2H4Cl2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C2H4Cl2/c3-1-2-4/h1-2H2" xsd:string
@@ -5882,8 +6113,16 @@ xref: PMID:23604226 "Europe PMC"
 xref: PMID:23651576 "Europe PMC"
 xref: Reaxys:11324567 "Reaxys"
 xref: Wikipedia:Cisplatin
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:51214 ! diamminedichloroplatinum
 is_a: FBcv:0000576 ! cisplatin
 equivalent_to: FBcv:0000576 ! cisplatin
+relationship: has_role CHEBI:25435 ! mutagen
+relationship: has_role CHEBI:35610 ! antineoplastic agent
+relationship: has_role CHEBI:47868 ! photosensitizing agent
+relationship: has_role CHEBI:50684 ! cross-linking reagent
+relationship: has_role CHEBI:50902 ! genotoxin
+relationship: has_role CHEBI:61015 ! nephrotoxin
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "Cl2H6N2Pt" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "H6Cl2N2Pt" xsd:string
@@ -5914,8 +6153,12 @@ xref: CAS:51-18-3 "KEGG COMPOUND"
 xref: Drug_Central:2739 "DrugCentral"
 xref: KEGG:C07642
 xref: Reaxys:242245 "Reaxys"
+is_a: CHEBI:26588 ! 1,3,5-triazines
+is_a: FBcv:0000526 ! alkylating agent
 is_a: FBcv:0000605 ! triethylenemelamine
 equivalent_to: FBcv:0000605 ! triethylenemelamine
+relationship: has_role CHEBI:22333 ! alkylating agent
+relationship: has_role CHEBI:67105 ! insect sterilant
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C9H12N6" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C9H12N6/c1-2-13(1)7-10-8(14-3-4-14)12-9(11-7)15-5-6-15/h1-6H2" xsd:string
@@ -6066,8 +6309,18 @@ xref: PMID:22814967 "Europe PMC"
 xref: Reaxys:506008 "Reaxys"
 xref: UM-BBD_compID:c0236 "UM-BBD"
 xref: Wikipedia:Dimethyl_Sulfoxide
+is_a: CHEBI:134179 ! volatile organic compound
+is_a: CHEBI:22063 ! sulfoxide
+is_a: FBcv:0000526 ! alkylating agent
 is_a: FBcv:0000578 ! dimethyl sulfoxide
 equivalent_to: FBcv:0000578 ! dimethyl sulfoxide
+relationship: has_role CHEBI:22333 ! alkylating agent
+relationship: has_role CHEBI:35481 ! non-narcotic analgesic
+relationship: has_role CHEBI:37335 ! MRI contrast agent
+relationship: has_role CHEBI:48358 ! polar aprotic solvent
+relationship: has_role CHEBI:48578 ! radical scavenger
+relationship: has_role CHEBI:50247 ! antidote
+relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C2H6OS" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C2H6OS/c1-4(2)3/h1-2H3" xsd:string
@@ -6105,8 +6358,17 @@ xref: PMID:11312844 "Europe PMC"
 xref: PPDB:1484
 xref: Reaxys:605266 "Reaxys"
 xref: Wikipedia:1\,2-Dibromoethane
+is_a: CHEBI:22926 ! bromohydrocarbon
+is_a: CHEBI:22929 ! bromoalkane
+is_a: FBcv:0000541 ! intercalating agent
 is_a: FBcv:0000545 ! 1,2-dibromoethane
 equivalent_to: FBcv:0000545 ! 1,2-dibromoethane
+relationship: has_role CHEBI:25435 ! mutagen
+relationship: has_role CHEBI:39276 ! fumigant
+relationship: has_role CHEBI:50903 ! carcinogenic agent
+relationship: has_role CHEBI:75771 ! mouse metabolite
+relationship: has_role CHEBI:76507 ! marine metabolite
+relationship: has_role CHEBI:84735 ! algal metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C2H4Br2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C2H4Br2/c3-1-2-4/h1-2H2" xsd:string
@@ -6232,8 +6494,13 @@ xref: CAS:7681-49-4 "ChemIDplus"
 xref: KEGG:C08142
 xref: KEGG:D00943
 xref: Wikipedia:Sodium_Fluoride
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:24060 ! fluoride salt
+is_a: CHEBI:24835 ! inorganic molecular entity
+is_a: FBcv:0000553 ! inorganic compound
 is_a: FBcv:0000557 ! sodium fluoride
 equivalent_to: FBcv:0000557 ! sodium fluoride
+relationship: has_role CHEBI:25435 ! mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "FNa" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "Na.F" xsd:string
@@ -6270,8 +6537,18 @@ xref: LINCS:LSM-2858
 xref: MetaCyc:CPD-7075
 xref: Reaxys:75140 "Reaxys"
 xref: Wikipedia:Hesperidin
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:140332 ! 4'-methoxyflavanones
+is_a: CHEBI:26587 ! rutinoside
+is_a: CHEBI:38738 ! monomethoxyflavanone
+is_a: CHEBI:38749 ! dihydroxyflavanone
+is_a: CHEBI:48024 ! 3'-hydroxyflavanones
+is_a: CHEBI:63353 ! disaccharide derivative
+is_a: CHEBI:72730 ! flavanone glycoside
 is_a: FBcv:0000585 ! hesperidine
 equivalent_to: FBcv:0000585 ! hesperidine
+relationship: has_functional_parent CHEBI:28230 ! hesperetin
+relationship: has_role CHEBI:25435 ! mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C28H34O15" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C28H34O15/c1-10-21(32)23(34)25(36)27(40-10)39-9-19-22(33)24(35)26(37)28(43-19)41-12-6-14(30)20-15(31)8-17(42-18(20)7-12)11-3-4-16(38-2)13(29)5-11/h3-7,10,17,19,21-30,32-37H,8-9H2,1-2H3/t10-,17-,19+,21-,22+,23+,24-,25+,26+,27+,28+/m0/s1" xsd:string
@@ -6322,8 +6599,19 @@ xref: PMID:24147900 "Europe PMC"
 xref: PMID:24223689 "Europe PMC"
 xref: Reaxys:999011 "Reaxys"
 xref: Wikipedia:Chlorambucil
+is_a: CHEBI:25384 ! monocarboxylic acid
+is_a: CHEBI:33860 ! aromatic amine
+is_a: CHEBI:36683 ! organochlorine compound
+is_a: CHEBI:37598 ! nitrogen mustard
+is_a: CHEBI:50996 ! tertiary amino compound
+is_a: FBcv:0000813 ! nitrogen mustard
 is_a: FBcv:0000815 ! p-N,N-di-(2-chloroethyl)aminophenylbutyric acid
 equivalent_to: FBcv:0000815 ! p-N,N-di-(2-chloroethyl)aminophenylbutyric acid
+relationship: has_role CHEBI:22333 ! alkylating agent
+relationship: has_role CHEBI:35610 ! antineoplastic agent
+relationship: has_role CHEBI:35705 ! immunosuppressive agent
+relationship: has_role CHEBI:50903 ! carcinogenic agent
+relationship: has_role CHEBI:88188 ! drug allergen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C14H19Cl2NO2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C14H19Cl2NO2/c15-8-10-17(11-9-16)13-6-4-12(5-7-13)2-1-3-14(18)19/h4-7H,1-3,8-11H2,(H,18,19)" xsd:string
@@ -6430,8 +6718,18 @@ xref: PMID:9218926 "Europe PMC"
 xref: PMID:9250538 "Europe PMC"
 xref: Reaxys:2816456 "Reaxys"
 xref: Wikipedia:Melphalan
+is_a: CHEBI:36683 ! organochlorine compound
+is_a: CHEBI:37598 ! nitrogen mustard
+is_a: CHEBI:83822 ! non-proteinogenic L-alpha-amino acid
+is_a: CHEBI:84144 ! L-phenylalanine derivative
 is_a: FBcv:0000596 ! p-N,N-di-(2-chloroethyl)amino-DL-phenylalanine
+is_a: FBcv:0000813 ! nitrogen mustard
 equivalent_to: FBcv:0000596 ! p-N,N-di-(2-chloroethyl)amino-DL-phenylalanine
+relationship: has_role CHEBI:22333 ! alkylating agent
+relationship: has_role CHEBI:35610 ! antineoplastic agent
+relationship: has_role CHEBI:35705 ! immunosuppressive agent
+relationship: has_role CHEBI:50903 ! carcinogenic agent
+relationship: has_role CHEBI:88188 ! drug allergen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C13H18Cl2N2O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C13H18Cl2N2O2/c14-5-7-17(8-6-15)11-3-1-10(2-4-11)9-12(16)13(18)19/h1-4,12H,5-9,16H2,(H,18,19)/t12-/m0/s1" xsd:string
@@ -6479,8 +6777,16 @@ xref: PMID:19361744 "Europe PMC"
 xref: PMID:19611402 "Europe PMC"
 xref: Reaxys:1791786 "Reaxys"
 xref: Wikipedia:Busulfan
+is_a: CHEBI:25223 ! methanesulfonate ester
+is_a: FBcv:0000526 ! alkylating agent
 is_a: FBcv:0000814 ! 1,4-dimethanesulfonoxybutane
 equivalent_to: FBcv:0000814 ! 1,4-dimethanesulfonoxybutane
+relationship: has_functional_parent CHEBI:41189 ! butane-1,4-diol
+relationship: has_role CHEBI:22333 ! alkylating agent
+relationship: has_role CHEBI:35610 ! antineoplastic agent
+relationship: has_role CHEBI:50903 ! carcinogenic agent
+relationship: has_role CHEBI:50905 ! teratogenic agent
+relationship: has_role CHEBI:67105 ! insect sterilant
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C6H14O6S2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C6H14O6S2/c1-13(7,8)11-5-3-4-6-12-14(2,9)10/h3-6H2,1-2H3" xsd:string
@@ -6563,8 +6869,10 @@ synonym: "Fagaronine" EXACT [KEGG_COMPOUND]
 xref: CAS:52259-65-1 "KEGG COMPOUND"
 xref: KEGG:C09438
 xref: KNApSAcK:C00001857
+is_a: CHEBI:38517 ! benzophenanthridine alkaloid
 is_a: FBcv:0000583 ! fagaronine
 equivalent_to: FBcv:0000583 ! fagaronine
+relationship: has_role CHEBI:25435 ! mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "+1" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C21H20NO4" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C21H19NO4/c1-22-11-13-8-19(25-3)20(26-4)9-15(13)14-6-5-12-7-17(23)18(24-2)10-16(12)21(14)22/h5-11H,1-4H3/p+1" xsd:string
@@ -6657,6 +6965,7 @@ xref: Reaxys:3587177 "Reaxys"
 is_a: CHEBI:23378 ! copper cation
 is_a: CHEBI:30412 ! monoatomic dication
 is_a: CHEBI:60240 ! divalent metal cation
+relationship: has_role CHEBI:23357 ! cofactor
 property_value: http://purl.obolibrary.org/obo/chebi/charge "+2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "Cu" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/Cu/q+2" xsd:string
@@ -6944,8 +7253,11 @@ xref: PMID:7561049 "Europe PMC"
 xref: PMID:7721048 "Europe PMC"
 xref: Reaxys:1911333 "Reaxys"
 xref: Wikipedia:Benzo(a)pyrene
+is_a: CHEBI:35300 ! ortho- and peri-fused polycyclic arene
 is_a: FBcv:0000574 ! benzo(alpha)pyrene
 equivalent_to: FBcv:0000574 ! benzo(alpha)pyrene
+relationship: has_role CHEBI:50903 ! carcinogenic agent
+relationship: has_role CHEBI:75771 ! mouse metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C20H12" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C20H12/c1-2-7-17-15(4-1)12-16-9-8-13-5-3-6-14-10-11-18(17)20(16)19(13)14/h1-12H" xsd:string
@@ -7205,6 +7517,7 @@ xref: Wikipedia:Formic_acid
 is_a: CHEBI:25384 ! monocarboxylic acid
 relationship: has_role CHEBI:25212 ! metabolite
 relationship: has_role CHEBI:33282 ! antibacterial agent
+relationship: has_role CHEBI:46787 ! solvent
 relationship: has_role CHEBI:48356 ! protic solvent
 relationship: has_role CHEBI:74783 ! astringent
 relationship: is_conjugate_acid_of CHEBI:15740 ! formate
@@ -7254,8 +7567,14 @@ xref: Beilstein:102380 "Beilstein"
 xref: CAS:151-56-4 "NIST Chemistry WebBook"
 xref: Gmelin:616 "Gmelin"
 xref: KEGG:C11687
+is_a: CHEBI:22681 ! aziridines
+is_a: CHEBI:36389 ! saturated organic heteromonocyclic parent
+is_a: CHEBI:37949 ! azacycloalkane
+is_a: FBcv:0000526 ! alkylating agent
 is_a: FBcv:0000581 ! ethylenimine
 equivalent_to: FBcv:0000581 ! ethylenimine
+relationship: has_role CHEBI:22333 ! alkylating agent
+relationship: is_conjugate_base_of CHEBI:50929 ! aziridinium
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C2H5N" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C2H5N/c1-2-3-1/h3H,1-2H2" xsd:string
@@ -7568,8 +7887,13 @@ xref: KEGG:D01089
 xref: MolBase:1644
 xref: PDBeChem:BO3
 xref: PPDB:2136
+is_a: CHEBI:24835 ! inorganic molecular entity
+is_a: CHEBI:59765 ! boric acids
+is_a: FBcv:0000553 ! inorganic compound
 is_a: FBcv:0000555 ! H3BO3
 equivalent_to: FBcv:0000555 ! H3BO3
+relationship: has_role CHEBI:74783 ! astringent
+relationship: is_conjugate_acid_of CHEBI:29254 ! dihydrogenborate
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "BH3O3" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/BH3O3/c2-1(3)4/h2-4H" xsd:string
@@ -9041,6 +9365,7 @@ xref: KEGG:C00801
 is_a: CHEBI:21731 ! N-glycosyl compound
 is_a: CHEBI:26912 ! oxolanes
 is_a: CHEBI:61120 ! nucleobase-containing molecular entity
+relationship: has_functional_parent CHEBI:16646 ! carbohydrate
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C5H8O3R2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/mass "116.115" xsd:string
@@ -9225,6 +9550,8 @@ synonym: "DES" RELATED [KEGG_COMPOUND]
 synonym: "Diethyl sulfate" EXACT [KEGG_COMPOUND]
 xref: CAS:64-67-5 "KEGG COMPOUND"
 xref: KEGG:C14706
+is_a: CHEBI:29281 ! alkyl sulfate
+is_a: FBcv:0000526 ! alkylating agent
 is_a: FBcv:0000527 ! diethyl sulfate
 equivalent_to: FBcv:0000527 ! diethyl sulfate
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
@@ -9257,8 +9584,13 @@ xref: KEGG:C14422
 xref: PMID:24696076 "Europe PMC"
 xref: PMID:24755254 "Europe PMC"
 xref: Reaxys:1744991 "Reaxys"
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:35803 ! nitrosamine
 is_a: FBcv:0000735 ! N-nitrosodiethylamine
 equivalent_to: FBcv:0000735 ! N-nitrosodiethylamine
+relationship: has_role CHEBI:25435 ! mutagen
+relationship: has_role CHEBI:50903 ! carcinogenic agent
+relationship: has_role CHEBI:50908 ! hepatotoxic agent
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C4H10N2O" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C4H10N2O/c1-3-6(4-2)5-7/h3-4H2,1-2H3" xsd:string
@@ -9437,8 +9769,10 @@ synonym: "DBA" RELATED [ChemIDplus]
 synonym: "Dibenz[a,h]anthracene" EXACT [KEGG_COMPOUND]
 xref: CAS:53-70-3 "NIST Chemistry WebBook"
 xref: KEGG:C14325
+is_a: CHEBI:35296 ! ortho-fused polycyclic arene
 is_a: FBcv:0000562 ! 1,2:5,6-dibenzanthracene
 equivalent_to: FBcv:0000562 ! 1,2:5,6-dibenzanthracene
+relationship: has_role CHEBI:25435 ! mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C22H14" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C22H14/c1-3-7-19-15(5-1)9-11-17-14-22-18(13-21(17)19)12-10-16-6-2-4-8-20(16)22/h1-14H" xsd:string
@@ -9976,8 +10310,14 @@ xref: KEGG:D01772
 xref: PMID:24443836 "Europe PMC"
 xref: Reaxys:1696894 "Reaxys"
 xref: Wikipedia:Diethyl_ether
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:134179 ! volatile organic compound
+is_a: CHEBI:25698 ! ether
 is_a: FBcv:0000580 ! ethyl ether
 equivalent_to: FBcv:0000580 ! ethyl ether
+relationship: has_role CHEBI:38870 ! inhalation anaesthetic
+relationship: has_role CHEBI:48355 ! non-polar solvent
+relationship: has_role CHEBI:78433 ! refrigerant
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C4H10O" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3" xsd:string
@@ -10119,8 +10459,11 @@ synonym: "N-Nitrosodimethylamine" EXACT [KEGG_COMPOUND]
 xref: CAS:62-75-9 "ChemIDplus"
 xref: KEGG:C14704
 xref: PPDB:1645
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:35803 ! nitrosamine
 is_a: FBcv:0000593 ! N-nitrosodimethylamine
 equivalent_to: FBcv:0000593 ! N-nitrosodimethylamine
+relationship: has_role CHEBI:25435 ! mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C2H6N2O" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C2H6N2O/c1-4(2)3-5/h1-2H3" xsd:string
@@ -10748,8 +11091,13 @@ synonym: "N(1),N(1)-bis(2-chloroethyl)-N(4)-(6-chloro-2-methoxyacridin-9-yl)pent
 synonym: "quinacrine mustard" EXACT [ChemIDplus]
 xref: Beilstein:56337 "Beilstein"
 xref: CAS:64046-79-3 "ChemIDplus"
+is_a: CHEBI:37598 ! nitrogen mustard
+is_a: CHEBI:51803 ! aminoacridines
+is_a: FBcv:0000541 ! intercalating agent
 is_a: FBcv:0000543 ! quinacrine mustard
+is_a: FBcv:0000813 ! nitrogen mustard
 equivalent_to: FBcv:0000543 ! quinacrine mustard
+relationship: has_functional_parent CHEBI:8711 ! quinacrine
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C23H28Cl3N3O" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C23H28Cl3N3O/c1-16(4-3-11-29(12-9-24)13-10-25)27-23-19-7-5-17(26)14-22(19)28-21-8-6-18(30-2)15-20(21)23/h5-8,14-16H,3-4,9-13H2,1-2H3,(H,27,28)" xsd:string
@@ -10769,8 +11117,11 @@ synonym: "nitrogen mustard compounds" RELATED [ChEBI]
 synonym: "nitrogen mustards" EXACT IUPAC_NAME [IUPAC]
 synonym: "nitrogen mustards" RELATED [ChEBI]
 xref: Wikipedia:Nitrogen_mustard
+is_a: CHEBI:35352 ! organonitrogen compound
+is_a: FBcv:0000526 ! alkylating agent
 is_a: FBcv:0000813 ! nitrogen mustard
 equivalent_to: FBcv:0000813 ! nitrogen mustard
+relationship: has_role CHEBI:22333 ! alkylating agent
 
 [Term]
 id: CHEBI:37622
@@ -11444,6 +11795,7 @@ xref: PDBeChem:2HP
 is_a: CHEBI:35780 ! phosphate ion
 is_a: CHEBI:79389 ! monovalent inorganic anion
 relationship: is_conjugate_acid_of CHEBI:43474 ! hydrogenphosphate
+relationship: is_conjugate_base_of CHEBI:26078 ! phosphoric acid
 property_value: http://purl.obolibrary.org/obo/chebi/charge "-1" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "H2O4P" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/H3O4P/c1-5(2,3)4/h(H3,1,2,3,4)/p-1" xsd:string
@@ -11800,8 +12152,12 @@ xref: PMID:24399739 "Europe PMC"
 xref: PPDB:1639
 xref: Reaxys:1731074 "Reaxys"
 xref: Wikipedia:2-Methoxyethanol
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:46789 ! hydroxyether
 is_a: FBcv:0000570 ! 2-methoxyethanol
 equivalent_to: FBcv:0000570 ! 2-methoxyethanol
+relationship: has_role CHEBI:46787 ! solvent
+relationship: has_role CHEBI:48356 ! protic solvent
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C3H8O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C3H8O2/c1-5-3-2-4/h4H,2-3H2,1H3" xsd:string
@@ -12230,8 +12586,14 @@ xref: PMID:6243984 "Europe PMC"
 xref: PMID:8098217 "Europe PMC"
 xref: PMID:8603364 "Europe PMC"
 xref: Wikipedia:N-Methyl-N-nitrosourea
+is_a: CHEBI:76551 ! N-nitrosoureas
+is_a: FBcv:0000526 ! alkylating agent
 is_a: FBcv:0000592 ! nitrosomethyl urea
 equivalent_to: FBcv:0000592 ! nitrosomethyl urea
+relationship: has_role CHEBI:22333 ! alkylating agent
+relationship: has_role CHEBI:25435 ! mutagen
+relationship: has_role CHEBI:50903 ! carcinogenic agent
+relationship: has_role CHEBI:50905 ! teratogenic agent
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C2H5N3O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C2H5N3O2/c1-5(4-7)2(3)6/h1H3,(H2,3,6)" xsd:string
@@ -12925,8 +13287,18 @@ xref: PMID:6887199 "Europe PMC"
 xref: PMID:9169823 "Europe PMC"
 xref: Reaxys:312369 "Reaxys"
 xref: Wikipedia:Lucanthone
+is_a: CHEBI:50930 ! thioxanthenes
+is_a: FBcv:0000551 ! enzyme inhibitor
 is_a: FBcv:0000569 ! lucanthone
 equivalent_to: FBcv:0000569 ! lucanthone
+relationship: has_role CHEBI:25435 ! mutagen
+relationship: has_role CHEBI:35610 ! antineoplastic agent
+relationship: has_role CHEBI:38941 ! schistosomicide drug
+relationship: has_role CHEBI:47868 ! photosensitizing agent
+relationship: has_role CHEBI:50266 ! prodrug
+relationship: has_role CHEBI:50276 ! EC 5.99.1.2 (DNA topoisomerase) inhibitor
+relationship: has_role CHEBI:50750 ! EC 5.99.1.3 [DNA topoisomerase (ATP-hydrolysing)] inhibitor
+relationship: has_role CHEBI:60809 ! adjuvant
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C20H24N2OS" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C20H24N2OS/c1-4-22(5-2)13-12-21-16-11-10-14(3)20-18(16)19(23)15-8-6-7-9-17(15)24-20/h6-11,21H,4-5,12-13H2,1-3H3" xsd:string
@@ -14000,8 +14372,12 @@ synonym: "hexane-2,5-diyl dimethanesulfonate" EXACT IUPAC_NAME [IUPAC]
 xref: CAS:55-93-6 "ChemIDplus"
 xref: PMID:3800321 "Europe PMC"
 xref: Reaxys:1796040 "Reaxys"
+is_a: CHEBI:25223 ! methanesulfonate ester
+is_a: FBcv:0000526 ! alkylating agent
 is_a: FBcv:0000563 ! 1,4-dimethanesulfonoxy-1,4-dimethylbutane
 equivalent_to: FBcv:0000563 ! 1,4-dimethanesulfonoxy-1,4-dimethylbutane
+relationship: has_role CHEBI:22333 ! alkylating agent
+relationship: has_role CHEBI:25435 ! mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C8H18O6S2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C8H18O6S2/c1-7(13-15(3,9)10)5-6-8(2)14-16(4,11)12/h7-8H,5-6H2,1-4H3" xsd:string
@@ -14060,6 +14436,7 @@ synonym: "nucleobase analog" RELATED [ChEBI]
 synonym: "nucleobase analogs" RELATED [ChEBI]
 synonym: "nucleobase analogues" RELATED [ChEBI]
 xref: Wikipedia:Base_analog
+is_a: CHEBI:33832 ! organic cyclic compound
 is_a: FBcv:0000548 ! base analog
 equivalent_to: FBcv:0000548 ! base analog
 
@@ -19117,6 +19494,7 @@ namespace: origin_of_mutation
 def: "A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances." [CHEBI:24431]
 synonym: "mutation induced by chemical exposure" EXACT []
 is_a: CHEBI:24431 ! chemical entity
+is_a: FBcv:0000452 ! origin of mutation
 
 [Term]
 id: FBcv:0000526
@@ -19138,7 +19516,9 @@ namespace: origin_of_mutation
 def: "No description." [CHEBI:34699]
 synonym: "DES" RELATED []
 synonym: "mutation induced by diethyl sulfate exposure" EXACT []
+is_a: CHEBI:29281 ! alkyl sulfate
 is_a: CHEBI:34699 ! diethyl sulfate
+is_a: FBcv:0000526 ! alkylating agent
 
 [Term]
 id: FBcv:0000528
@@ -19148,6 +19528,9 @@ def: "No description." [CHEBI:19508]
 synonym: "CB1506" RELATED []
 synonym: "mutation induced by 2-chloroethyl methanesulfonate exposure" EXACT []
 is_a: CHEBI:19508 ! 2-chloroethyl methanesulfonate
+is_a: CHEBI:25223 ! methanesulfonate ester
+is_a: CHEBI:36683 ! organochlorine compound
+is_a: FBcv:0000526 ! alkylating agent
 
 [Term]
 id: FBcv:0000529
@@ -19157,6 +19540,9 @@ def: "No description." [CHEBI:19579]
 synonym: "CB1522" RELATED []
 synonym: "mutation induced by 2-fluoroethyl methanesulfonate exposure" EXACT []
 is_a: CHEBI:19579 ! 2-fluoroethyl methanesulfonate
+is_a: CHEBI:25223 ! methanesulfonate ester
+is_a: CHEBI:37143 ! organofluorine compound
+is_a: FBcv:0000526 ! alkylating agent
 
 [Term]
 id: FBcv:0000530
@@ -19168,6 +19554,8 @@ synonym: "EMS" RELATED []
 synonym: "mutation induced by EMS exposure" EXACT []
 synonym: "mutation induced by ethyl methanesulfonate exposure" EXACT []
 is_a: CHEBI:23994 ! ethyl methanesulfonate
+is_a: CHEBI:25223 ! methanesulfonate ester
+is_a: FBcv:0000526 ! alkylating agent
 
 [Term]
 id: FBcv:0000531
@@ -19179,6 +19567,8 @@ synonym: "mutation induced by ENU exposure" EXACT []
 synonym: "mutation induced by ethyl nitrosourea exposure" EXACT []
 synonym: "N-ethyl-N-nitrosourea" RELATED [CHEBI:23995]
 is_a: CHEBI:23995 ! N-ethyl-N-nitrosourea
+is_a: CHEBI:76551 ! N-nitrosoureas
+is_a: FBcv:0000526 ! alkylating agent
 
 [Term]
 id: FBcv:0000532
@@ -19190,6 +19580,8 @@ synonym: "hycanthone mesylate" RELATED [CHEBI:24624]
 synonym: "mutation induced by HMS exposure" EXACT []
 synonym: "mutation induced by hycanthon methanesulfonate exposure" EXACT []
 is_a: CHEBI:24624 ! hycanthone mesylate
+is_a: CHEBI:38037 ! methanesulfonate salt
+is_a: FBcv:0000526 ! alkylating agent
 
 [Term]
 id: FBcv:0000533
@@ -19200,7 +19592,9 @@ synonym: "CB1540" RELATED []
 synonym: "MMS" RELATED []
 synonym: "mutation induced by methyl methanesulfonate exposure" EXACT []
 synonym: "mutation induced by MMS exposure" EXACT []
+is_a: CHEBI:25223 ! methanesulfonate ester
 is_a: CHEBI:25255 ! methyl methanesulfonate
+is_a: FBcv:0000526 ! alkylating agent
 
 [Term]
 id: FBcv:0000534
@@ -19215,7 +19609,10 @@ synonym: "mutation induced by bis(2-chloroethyl) sulfide exposure" EXACT []
 synonym: "mutation induced by mustard gas exposure" EXACT []
 synonym: "mutation induced by sulfur gas exposure" EXACT []
 synonym: "sulfur mustard" RELATED [CHEBI:25434]
+is_a: CHEBI:23996 ! ethyl sulfide
 is_a: CHEBI:25434 ! bis(2-chloroethyl) sulfide
+is_a: CHEBI:36683 ! organochlorine compound
+is_a: FBcv:0000526 ! alkylating agent
 
 [Term]
 id: FBcv:0000535
@@ -19226,6 +19623,8 @@ synonym: "MNNG" RELATED []
 synonym: "mutation induced by N-methyl-N'-nitro-N-nitrosoguanidine exposure" EXACT []
 synonym: "NNG" RELATED []
 is_a: CHEBI:21759 ! N-methyl-N'-nitro-N-nitrosoguanidine
+is_a: CHEBI:35800 ! nitroso compound
+is_a: FBcv:0000526 ! alkylating agent
 
 [Term]
 id: FBcv:0000537
@@ -19239,6 +19638,7 @@ namespace: origin_of_mutation
 def: "No description." [CHEBI:13941]
 synonym: "mutation induced by carbamate exposure" EXACT []
 is_a: CHEBI:13941 ! carbamate
+is_a: CHEBI:37022 ! amino-acid anion
 
 [Term]
 id: FBcv:0000539
@@ -19246,7 +19646,11 @@ name: urethane
 namespace: origin_of_mutation
 def: "A carbamate ester obtained by the formal condensation of ethanol with carbamic acid. It has been found in alcoholic beverages." [CHEBI:17967]
 synonym: "mutation induced by urethane exposure" EXACT []
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:13941 ! carbamate
 is_a: CHEBI:17967 ! urethane
+is_a: CHEBI:23003 ! carbamate ester
+is_a: FBcv:0000538 ! carbamate
 
 [Term]
 id: FBcv:0000540
@@ -19254,7 +19658,10 @@ name: vinyl carbamate
 namespace: origin_of_mutation
 def: "No description." [CHEBI:27292]
 synonym: "mutation induced by vinyl carbamate exposure" EXACT []
+is_a: CHEBI:13941 ! carbamate
+is_a: CHEBI:23003 ! carbamate ester
 is_a: CHEBI:27292 ! vinyl carbamate
+is_a: FBcv:0000538 ! carbamate
 
 [Term]
 id: FBcv:0000541
@@ -19275,7 +19682,9 @@ name: mitomycin C
 namespace: origin_of_mutation
 def: "No description." [CHEBI:27504]
 synonym: "mutation induced by mitomycin C exposure" EXACT []
+is_a: CHEBI:25357 ! mitomycin
 is_a: CHEBI:27504 ! mitomycin C
+is_a: FBcv:0000526 ! alkylating agent
 
 [Term]
 id: FBcv:0000543
@@ -19287,6 +19696,10 @@ synonym: "2-methoxy-6-[3-(ethyl-2-chloroethyl)aminopropylamino]acridine" RELATED
 synonym: "ICR 100" RELATED [CHEBI:37595]
 synonym: "mutation induced by quinacrine mustard exposure" EXACT []
 is_a: CHEBI:37595 ! quinacrine mustard
+is_a: CHEBI:37598 ! nitrogen mustard
+is_a: CHEBI:51803 ! aminoacridines
+is_a: FBcv:0000541 ! intercalating agent
+is_a: FBcv:0000813 ! nitrogen mustard
 
 [Term]
 id: FBcv:0000544
@@ -19296,6 +19709,8 @@ def: "No description." [CHEBI:21183]
 synonym: "2-methoxy-6-dichloro-9-(3-ethyl-2-chloroethyl-aminopropylamino)acridine-dihydrochloride" RELATED []
 synonym: "mutation induced by ICR 170 exposure" EXACT []
 is_a: CHEBI:21183 ! ICR-170
+is_a: CHEBI:22213 ! acridines
+is_a: FBcv:0000541 ! intercalating agent
 
 [Term]
 id: FBcv:0000545
@@ -19304,7 +19719,10 @@ namespace: origin_of_mutation
 def: "A bromoalkane that is ethane carrying bromo substituents at positions 1 and 2. It is produced by marine algae." [CHEBI:28534]
 synonym: "DBE" RELATED []
 synonym: "mutation induced by 1,2-dibromoethane exposure" EXACT []
+is_a: CHEBI:22926 ! bromohydrocarbon
+is_a: CHEBI:22929 ! bromoalkane
 is_a: CHEBI:28534 ! 1,2-dibromoethane
+is_a: FBcv:0000541 ! intercalating agent
 
 [Term]
 id: FBcv:0000546
@@ -19314,6 +19732,8 @@ def: "A member of the class of chloroethanes substituted by two chloro groups at
 synonym: "DCE" RELATED []
 synonym: "mutation induced by 1,2-dichloroethane exposure" EXACT []
 is_a: CHEBI:27789 ! 1,2-dichloroethane
+is_a: CHEBI:36016 ! chloroethanes
+is_a: FBcv:0000541 ! intercalating agent
 
 [Term]
 id: FBcv:0000547
@@ -19323,6 +19743,10 @@ def: "A haloalkane that is bromoethane substituted by chlorine at position 2." [
 synonym: "BCE" RELATED []
 synonym: "mutation induced by 1-bromo-2-chloroethane exposure" EXACT []
 is_a: CHEBI:19032 ! 1-bromo-2-chloroethane
+is_a: CHEBI:24469 ! haloalkane
+is_a: CHEBI:36683 ! organochlorine compound
+is_a: CHEBI:37141 ! organobromine compound
+is_a: FBcv:0000541 ! intercalating agent
 
 [Term]
 id: FBcv:0000548
@@ -19330,6 +19754,7 @@ name: base analog
 namespace: origin_of_mutation
 def: "A molecule that can substitute for a normal nucleobase in nucleic acids." [CHEBI:67142]
 synonym: "nucleobase analogue" RELATED [CHEBI:67142]
+is_a: CHEBI:33832 ! organic cyclic compound
 is_a: CHEBI:67142 ! nucleobase analogue
 
 [Term]
@@ -19338,7 +19763,11 @@ name: 5-bromouracil
 namespace: origin_of_mutation
 def: "A pyrimidine having keto groups at the 2- and 4-positions and a bromo group at the 5-position. Used mainly as an experimental mutagen." [CHEBI:20552]
 synonym: "mutation induced by 5-bromouracil exposure" EXACT []
+is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:20552 ! 5-bromouracil
+is_a: CHEBI:39447 ! pyrimidines
+is_a: CHEBI:67142 ! nucleobase analogue
+is_a: FBcv:0000548 ! base analog
 
 [Term]
 id: FBcv:0000550
@@ -19346,7 +19775,11 @@ name: 5-bromouridine
 namespace: origin_of_mutation
 def: "A uridine having a bromo substituent at the 5-position." [CHEBI:20553]
 synonym: "mutation induced by 5-bromouridine exposure" EXACT []
+is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:20553 ! 5-bromouridine
+is_a: CHEBI:27242 ! uridines
+is_a: CHEBI:67142 ! nucleobase analogue
+is_a: FBcv:0000548 ! base analog
 
 [Term]
 id: FBcv:0000551
@@ -19368,6 +19801,8 @@ namespace: origin_of_mutation
 def: "No description." [CHEBI:22526]
 synonym: "mutation induced by aminopterin exposure" EXACT []
 is_a: CHEBI:22526 ! 4-aminofolic acid
+is_a: CHEBI:35692 ! dicarboxylic acid
+is_a: FBcv:0000551 ! enzyme inhibitor
 
 [Term]
 id: FBcv:0000553
@@ -19376,6 +19811,7 @@ namespace: origin_of_mutation
 def: "A molecular entity that contains no carbon." [CHEBI:24835]
 synonym: "inorganic molecular entity" EXACT [CHEBI:24835]
 synonym: "mutation induced by inorganic compound exposure" EXACT []
+is_a: CHEBI:23367 ! molecular entity
 is_a: CHEBI:24835 ! inorganic molecular entity
 
 [Term]
@@ -19385,7 +19821,9 @@ namespace: origin_of_mutation
 def: "A metal sulfate compound having copper(2+) as the metal ion." [CHEBI:23414]
 synonym: "copper(2+) sulfate" RELATED [CHEBI:23414]
 synonym: "mutation induced by cupric sulfate" EXACT []
+is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:23414 ! copper(II) sulfate
+is_a: CHEBI:51336 ! metal sulfate
 
 [Term]
 id: FBcv:0000555
@@ -19393,7 +19831,10 @@ name: H3BO3
 namespace: origin_of_mutation
 def: "No description." [CHEBI:33118]
 synonym: "mutation induced by H3BO3 exposure" EXACT []
+is_a: CHEBI:24835 ! inorganic molecular entity
 is_a: CHEBI:33118 ! boric acid
+is_a: CHEBI:59765 ! boric acids
+is_a: FBcv:0000553 ! inorganic compound
 
 [Term]
 id: FBcv:0000556
@@ -19401,7 +19842,10 @@ name: sodium bisulphite
 namespace: origin_of_mutation
 def: "No description." [CHEBI:26709]
 synonym: "mutation induced by sodium bisulphite exposure" EXACT []
+is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:26709 ! sodium hydrogensulfite
+is_a: CHEBI:38702 ! inorganic sodium salt
+is_a: CHEBI:48857 ! sulfite salt
 
 [Term]
 id: FBcv:0000557
@@ -19409,7 +19853,11 @@ name: sodium fluoride
 namespace: origin_of_mutation
 def: "A metal fluoride salt with a Na(+) counterion." [CHEBI:28741]
 synonym: "mutation induced by sodium fluoride exposure" EXACT []
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:24060 ! fluoride salt
+is_a: CHEBI:24835 ! inorganic molecular entity
 is_a: CHEBI:28741 ! sodium fluoride
+is_a: FBcv:0000553 ! inorganic compound
 
 [Term]
 id: FBcv:0000558
@@ -19428,7 +19876,10 @@ def: "No description." [CHEBI:23704]
 synonym: "DEB" RELATED []
 synonym: "erythritol anhydride" RELATED []
 synonym: "mutation induced by diepoxybutane exposure" EXACT []
+is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:23704 ! diepoxybutane
+is_a: CHEBI:32955 ! epoxide
+is_a: FBcv:0000558 ! epoxy hydrocarbon
 
 [Term]
 id: FBcv:0000560
@@ -19437,7 +19888,10 @@ namespace: origin_of_mutation
 def: "No description." [CHEBI:23705]
 synonym: "1,2:7,8-diepoxyoctane" RELATED [CHEBI:23705]
 synonym: "mutation induced by diepoxyoctane exposure" EXACT []
+is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:23705 ! 1,2:7,8-diepoxyoctane
+is_a: CHEBI:32955 ! epoxide
+is_a: FBcv:0000558 ! epoxy hydrocarbon
 
 [Term]
 id: FBcv:0000561
@@ -19452,6 +19906,7 @@ name: 1,2:5,6-dibenzanthracene
 namespace: origin_of_mutation
 def: "No description." [CHEBI:35299]
 synonym: "mutation induced by 1,2:5,6-dibenzanthracene exposure" EXACT []
+is_a: CHEBI:35296 ! ortho-fused polycyclic arene
 is_a: CHEBI:35299 ! dibenz[a,h]anthracene
 
 [Term]
@@ -19463,7 +19918,9 @@ synonym: "1,4-dimethanesulfonoxy-1:4-dimethylbutane" RELATED []
 synonym: "CB2348" RELATED []
 synonym: "dimethylmyleran" RELATED [CHEBI:67107]
 synonym: "mutation induced by 1,4-dimethanesulfonoxy-1,4-dimethylbutane exposure" EXACT []
+is_a: CHEBI:25223 ! methanesulfonate ester
 is_a: CHEBI:67107 ! dimethylmyleran
+is_a: FBcv:0000526 ! alkylating agent
 
 [Term]
 id: FBcv:0000564
@@ -19509,6 +19966,8 @@ namespace: origin_of_mutation
 def: "No description." [CHEBI:19024]
 synonym: "mutation induced by 1-amino-2-naphthol-4-sulfonic acid exposure" EXACT []
 is_a: CHEBI:19024 ! 4-amino-3-hydroxynaphthalene-1-sulfonic acid
+is_a: CHEBI:36336 ! naphthalenesulfonic acid
+is_a: CHEBI:38034 ! aminonaphthalene
 
 [Term]
 id: FBcv:0000569
@@ -19519,7 +19978,9 @@ synonym: "1-diethylaminoethylethylamino-4-methyl-thioxanthenone" RELATED []
 synonym: "1-{[2-(diethylamino)ethyl]amino}-4-methyl-9H-thioxanthen-9-one" RELATED [CHEBI:51052]
 synonym: "lucanthone" RELATED [CHEBI:51052]
 synonym: "mutation induced by lucanthone exposure" EXACT []
+is_a: CHEBI:50930 ! thioxanthenes
 is_a: CHEBI:51052 ! lucanthone
+is_a: FBcv:0000551 ! enzyme inhibitor
 
 [Term]
 id: FBcv:0000570
@@ -19527,6 +19988,8 @@ name: 2-methoxyethanol
 namespace: origin_of_mutation
 def: "A hydroxyether that is ethanol substituted by a methoxy group at position 2." [CHEBI:46790]
 synonym: "mutation induced by 2-methoxyethanol exposure" EXACT []
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:46789 ! hydroxyether
 is_a: CHEBI:46790 ! 2-methoxyethanol
 
 [Term]
@@ -19536,7 +19999,10 @@ namespace: origin_of_mutation
 def: "A member of the class of 1,4-benzoquinones that is p-benzoquinone in which the hydrogens at positions 2 and 5 are replaced by aziridin-1-yl groups." [CHEBI:19363]
 synonym: "2,5,-bisethylene-imine-1,4-benzoquinone" RELATED []
 synonym: "mutation induced by 2,5-bis(ethyleneimino)-1,4-benzoquinone exposure" EXACT []
+is_a: CHEBI:132124 ! 1,4-benzoquinones
 is_a: CHEBI:19363 ! 2,5-bis(aziridin-1-yl)-1,4-benzoquinone
+is_a: CHEBI:22681 ! aziridines
+is_a: FBcv:0000526 ! alkylating agent
 
 [Term]
 id: FBcv:0000572
@@ -19547,7 +20013,10 @@ synonym: "7-bromomethyl 12 methyl benz&agr; anthracine" RELATED []
 synonym: "7-bromomethyl 12 methyl benzalpha anthracine" RELATED []
 synonym: "7-bromomethyl-12-methyltetraphene" RELATED [CHEBI:20787]
 synonym: "mutation induced by 7-bromomethyl-12-methylbenz[a]anthracene exposure" EXACT []
+is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:20787 ! 7-bromomethyl-12-methyltetraphene
+is_a: CHEBI:37141 ! organobromine compound
+is_a: CHEBI:51067 ! tetraphenes
 
 [Term]
 id: FBcv:0000573
@@ -19555,6 +20024,7 @@ name: actinomycin D
 namespace: origin_of_mutation
 def: "No description." [CHEBI:27666]
 synonym: "mutation induced by actinomycin D exposure" EXACT []
+is_a: CHEBI:15369 ! actinomycin
 is_a: CHEBI:27666 ! actinomycin D
 
 [Term]
@@ -19566,6 +20036,7 @@ synonym: "benzo(&agr;)pyrene" RELATED []
 synonym: "benzo[a]pyrene" RELATED [CHEBI:29865]
 synonym: "mutation induced by benzo(alpha)pyrene exposure" EXACT []
 is_a: CHEBI:29865 ! benzo[a]pyrene
+is_a: CHEBI:35300 ! ortho- and peri-fused polycyclic arene
 
 [Term]
 id: FBcv:0000575
@@ -19573,7 +20044,9 @@ name: caffeine
 namespace: origin_of_mutation
 def: "A trimethylxanthine in which the three methyl groups are located at positions 1, 3, and 7. A purine alkaloid that occurs naturally in tea and coffee." [CHEBI:27732]
 synonym: "mutation induced by caffeine exposure" EXACT []
+is_a: CHEBI:27134 ! trimethylxanthine
 is_a: CHEBI:27732 ! caffeine
+is_a: FBcv:0000551 ! enzyme inhibitor
 
 [Term]
 id: FBcv:0000576
@@ -19582,7 +20055,9 @@ namespace: origin_of_mutation
 def: "A diamminedichloroplatinum compound in which the two ammine ligands and two chloro ligands are oriented in a cis planar configuration around the central platinum ion. An anticancer drug that interacts with, and forms cross-links between, DNA and proteins, it is used as a neoplasm inhibitor to treat solid tumours, primarily of the testis and ovary. Commonly but incorrectly described as an alkylating agent due to its mechanism of action (but it lacks alkyl groups)." [CHEBI:27899]
 synonym: "cis-dichlorodiammineplatinum(II)" RELATED []
 synonym: "mutation induced by cisplatin exposure" EXACT []
+is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:27899 ! cisplatin
+is_a: CHEBI:51214 ! diamminedichloroplatinum
 
 [Term]
 id: FBcv:0000577
@@ -19590,7 +20065,11 @@ name: colchicine
 namespace: origin_of_mutation
 def: "An  alkaloid that is a carbotricyclic compound comprising 5,6,7,9-tetrahydrobenzo[a]heptalene having four methoxy substituents at the 1-, 2-, 3- and 10-positions as well as an oxo group at the 9-position and an acetamido group at the 7-position. It has been isolated from the plants belonging to genus Colchicum." [CHEBI:23359]
 synonym: "mutation induced by colchicine exposure" EXACT []
+is_a: CHEBI:22160 ! acetamides
+is_a: CHEBI:22315 ! alkaloid
 is_a: CHEBI:23359 ! colchicine
+is_a: CHEBI:35618 ! aromatic ether
+is_a: CHEBI:38032 ! carbotricyclic compound
 
 [Term]
 id: FBcv:0000578
@@ -19598,7 +20077,10 @@ name: dimethyl sulfoxide
 namespace: origin_of_mutation
 def: "A 2-carbon sulfoxide in which the sulfur atom has two methyl substituents." [CHEBI:28262]
 synonym: "mutation induced by dimethyl sulfoxide exposure" EXACT []
+is_a: CHEBI:134179 ! volatile organic compound
+is_a: CHEBI:22063 ! sulfoxide
 is_a: CHEBI:28262 ! dimethyl sulfoxide
+is_a: FBcv:0000526 ! alkylating agent
 
 [Term]
 id: FBcv:0000579
@@ -19606,7 +20088,9 @@ name: DNA
 namespace: origin_of_mutation
 def: "High molecular weight, linear polymers, composed of nucleotides containing deoxyribose and linked by phosphodiester bonds; DNA contain the genetic information of organisms." [CHEBI:16991]
 synonym: "mutation induced by DNA treatment" EXACT []
+is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:16991 ! deoxyribonucleic acid
+is_a: CHEBI:33696 ! nucleic acid
 
 [Term]
 id: FBcv:0000580
@@ -19614,6 +20098,9 @@ name: ethyl ether
 namespace: origin_of_mutation
 def: "An ether in which the oxygen atom is linked to two ethyl groups." [CHEBI:35702]
 synonym: "mutation induced by ethyl ether exposure" EXACT []
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:134179 ! volatile organic compound
+is_a: CHEBI:25698 ! ether
 is_a: CHEBI:35702 ! diethyl ether
 
 [Term]
@@ -19623,7 +20110,11 @@ namespace: origin_of_mutation
 def: "No description." [CHEBI:30969]
 synonym: "EI" RELATED []
 synonym: "mutation induced by ethylenimine exposure" EXACT []
+is_a: CHEBI:22681 ! aziridines
 is_a: CHEBI:30969 ! aziridine
+is_a: CHEBI:36389 ! saturated organic heteromonocyclic parent
+is_a: CHEBI:37949 ! azacycloalkane
+is_a: FBcv:0000526 ! alkylating agent
 
 [Term]
 id: FBcv:0000582
@@ -19633,7 +20124,11 @@ def: "A  saturated organic heteromonocyclic parent that is a three-membered hete
 synonym: "ethylene oxide" RELATED [CHEBI:27561]
 synonym: "mutation induced by ethylene oxide exposure" EXACT []
 synonym: "oxirane" RELATED [CHEBI:27561]
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:138675 ! gas molecular entity
 is_a: CHEBI:27561 ! oxirane
+is_a: CHEBI:36389 ! saturated organic heteromonocyclic parent
+is_a: CHEBI:38104 ! oxacycle
 
 [Term]
 id: FBcv:0000583
@@ -19642,6 +20137,7 @@ namespace: origin_of_mutation
 def: "No description." [CHEBI:28954]
 synonym: "mutation induced by fagaronine exposure" EXACT []
 is_a: CHEBI:28954 ! fagaronine
+is_a: CHEBI:38517 ! benzophenanthridine alkaloid
 
 [Term]
 id: FBcv:0000584
@@ -19650,6 +20146,9 @@ namespace: origin_of_mutation
 def: "An aldehyde resulting from the formal oxidation of methanol." [CHEBI:16842]
 synonym: "mutation induced by formaldehyde exposure" EXACT []
 is_a: CHEBI:16842 ! formaldehyde
+is_a: CHEBI:17478 ! aldehyde
+is_a: CHEBI:64708 ! one-carbon compound
+is_a: FBcv:0000551 ! enzyme inhibitor
 
 [Term]
 id: FBcv:0000585
@@ -19658,7 +20157,15 @@ namespace: origin_of_mutation
 def: "A disaccharide derivative that consists of hesperetin substituted by a 6-O-(alpha-L-rhamnopyranosyl)-beta-D-glucopyranosyl moiety at position 7 via a glycosidic linkage." [CHEBI:28775]
 synonym: "hesperidin" RELATED [CHEBI:28775]
 synonym: "mutation induced by hesperidine exposure" EXACT []
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:140332 ! 4'-methoxyflavanones
+is_a: CHEBI:26587 ! rutinoside
 is_a: CHEBI:28775 ! hesperidin
+is_a: CHEBI:38738 ! monomethoxyflavanone
+is_a: CHEBI:38749 ! dihydroxyflavanone
+is_a: CHEBI:48024 ! 3'-hydroxyflavanones
+is_a: CHEBI:63353 ! disaccharide derivative
+is_a: CHEBI:72730 ! flavanone glycoside
 
 [Term]
 id: FBcv:0000586
@@ -19670,6 +20177,7 @@ synonym: "HMM" RELATED []
 synonym: "mutation induced by hexamethylmelamine exposure" EXACT []
 synonym: "mutation induced by HMM exposure" EXACT []
 is_a: CHEBI:24564 ! hexamethylmelamine
+is_a: CHEBI:38175 ! triamino-1,3,5-triazine
 
 [Term]
 id: FBcv:0000587
@@ -19679,6 +20187,8 @@ def: "No description." [CHEBI:24565]
 synonym: "HMPA" RELATED []
 synonym: "mutation induced by hexamethylphosphoramide exposure" EXACT []
 synonym: "mutation induced by HMPA exposure" EXACT []
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:17102 ! phosphoramide
 is_a: CHEBI:24565 ! hexamethylphosphoric triamide
 
 [Term]
@@ -19687,7 +20197,11 @@ name: iodine
 namespace: origin_of_mutation
 def: "Chemical element with atomic number 53." [CHEBI:24859]
 synonym: "mutation induced by iodine exposure" EXACT []
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:24473 ! halogen
+is_a: CHEBI:24835 ! inorganic molecular entity
 is_a: CHEBI:24859 ! iodine atom
+is_a: FBcv:0000553 ! inorganic compound
 
 [Term]
 id: FBcv:0000589
@@ -19696,7 +20210,9 @@ namespace: origin_of_mutation
 def: "No description." [CHEBI:21184]
 synonym: "Janus green B chloride" RELATED [CHEBI:21184]
 synonym: "mutation induced by Janus green B exposure" EXACT []
+is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:21184 ! Janus Green B chloride
+is_a: CHEBI:36094 ! organic chloride salt
 
 [Term]
 id: FBcv:0000590
@@ -19706,7 +20222,9 @@ def: "No description." [CHEBI:25234]
 comment: Mapped to CHEBI:25234 (1-methoxy-N-nitrosodiethylamine) based on synonym of nitrosodiethylamine being diethylnitrosamine and CHEBI:25234 being classified as a mutagen.
 synonym: "1-methoxy-N-nitrosodiethylamine" RELATED [CHEBI:25234]
 synonym: "mutation induced by methoxy diethylnitrosamine exposure" EXACT []
+is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:25234 ! 1-methoxy-N-nitrosodiethylamine
+is_a: CHEBI:35803 ! nitrosamine
 
 [Term]
 id: FBcv:0000591
@@ -19727,6 +20245,8 @@ synonym: "mutation induced by MNU exposure" EXACT []
 synonym: "mutation induced by nitrosomethyl urea exposure" EXACT []
 synonym: "N-methyl-N-nitrosourea" RELATED [CHEBI:50102]
 is_a: CHEBI:50102 ! N-methyl-N-nitrosourea
+is_a: CHEBI:76551 ! N-nitrosoureas
+is_a: FBcv:0000526 ! alkylating agent
 
 [Term]
 id: FBcv:0000593
@@ -19736,6 +20256,8 @@ def: "No description." [CHEBI:35807]
 synonym: "DMN" RELATED []
 synonym: "mutation induced by DMN exposure" EXACT []
 synonym: "mutation induced by N-nitrosodimethylamine exposure" EXACT []
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:35803 ! nitrosamine
 is_a: CHEBI:35807 ! N-nitrosodimethylamine
 
 [Term]
@@ -19746,6 +20268,8 @@ def: "No description." [CHEBI:25813]
 synonym: "CB1356" RELATED []
 synonym: "mutation induced by p-N,N-di(2-chloroethyl)aminophenylvaleric acid exposure" EXACT []
 is_a: CHEBI:25813 ! p-N,N-bis(2-chloroethyl)aminophenylvaleric acid
+is_a: CHEBI:33856 ! aromatic amino acid
+is_a: CHEBI:36683 ! organochlorine compound
 
 [Term]
 id: FBcv:0000595
@@ -19754,7 +20278,10 @@ namespace: origin_of_mutation
 def: "No description." [CHEBI:25814]
 synonym: "CB3026" RELATED []
 synonym: "mutation induced by p-N,N-di-(2-chloroethyl)amino-D-phenylalanine exposure" EXACT []
+is_a: CHEBI:16733 ! D-alpha-amino acid
 is_a: CHEBI:25814 ! p-N,N-bis(2-chloroethyl)amino-D-phenylalanine
+is_a: CHEBI:36683 ! organochlorine compound
+is_a: CHEBI:84143 ! D-phenylalanine derivative
 
 [Term]
 id: FBcv:0000596
@@ -19766,6 +20293,11 @@ synonym: "melphalan" RELATED [CHEBI:28876]
 synonym: "mutation induced by melphalan exposure" EXACT []
 synonym: "mutation induced by p-N,N-di-(2-chloroethyl)amino-DL-phenylalanine exposure" EXACT []
 is_a: CHEBI:28876 ! melphalan
+is_a: CHEBI:36683 ! organochlorine compound
+is_a: CHEBI:37598 ! nitrogen mustard
+is_a: CHEBI:83822 ! non-proteinogenic L-alpha-amino acid
+is_a: CHEBI:84144 ! L-phenylalanine derivative
+is_a: FBcv:0000813 ! nitrogen mustard
 
 [Term]
 id: FBcv:0000597
@@ -19774,7 +20306,10 @@ namespace: origin_of_mutation
 def: "No description." [CHEBI:25816]
 synonym: "CB3025" RELATED []
 synonym: "mutation induced by p-N,N-di-(2-chloroethyl)amino-L-phenylalanine exposure" EXACT []
+is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:25816 ! p-N,N-bis(2-chloroethyl)amino-L-phenylalanine
+is_a: CHEBI:36683 ! organochlorine compound
+is_a: CHEBI:84144 ! L-phenylalanine derivative
 
 [Term]
 id: FBcv:0000598
@@ -19790,6 +20325,7 @@ def: "No description." [CHEBI:25818]
 synonym: "CB3034" RELATED []
 synonym: "mutation induced by p-N,N-di-(2-chloroethyl)aminophenylethylamine exposure" EXACT []
 is_a: CHEBI:25818 ! 4-(2-aminoethyl)-N,N-bis(2-chloroethyl)aniline
+is_a: CHEBI:36683 ! organochlorine compound
 
 [Term]
 id: FBcv:0000600
@@ -19798,7 +20334,9 @@ namespace: origin_of_mutation
 def: "No description." [CHEBI:25829]
 synonym: "CB305" RELATED []
 synonym: "mutation induced by p-p'-N,N-di(2-chloroethyl)aminophenoxyphenylalanine exposure" EXACT []
+is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:25829 ! p-p'-N,N-di(2-chloroethyl)aminophenoxyphenylalanine
+is_a: CHEBI:36683 ! organochlorine compound
 
 [Term]
 id: FBcv:0000601
@@ -19807,6 +20345,7 @@ namespace: origin_of_mutation
 def: "No description." [CHEBI:26491]
 synonym: "mutation induced by quinhydrone exposure" EXACT []
 is_a: CHEBI:26491 ! quinhydrone
+is_a: CHEBI:35504 ! addition compound
 
 [Term]
 id: FBcv:0000602
@@ -19815,7 +20354,10 @@ namespace: origin_of_mutation
 def: "No description." [CHEBI:22025]
 synonym: "CB1592" RELATED []
 synonym: "mutation induced by S-2-chloroethylcysteine exposure" EXACT []
+is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:22025 ! S-2-chloroethylcysteine
+is_a: CHEBI:23509 ! cysteine derivative
+is_a: CHEBI:36683 ! organochlorine compound
 
 [Term]
 id: FBcv:0000603
@@ -19824,6 +20366,7 @@ namespace: origin_of_mutation
 def: "No description." [CHEBI:26800]
 synonym: "CB3086" RELATED []
 synonym: "mutation induced by styryl quinoline exposure" EXACT []
+is_a: CHEBI:26513 ! quinolines
 is_a: CHEBI:26800 ! styrylquinoline
 
 [Term]
@@ -19832,7 +20375,10 @@ name: triaziquone
 namespace: origin_of_mutation
 def: "A member of the class of 1,4-benzoquinones that is 1,4-benzoquinone in which three of the ring hydrogens are replaced by aziridin-1-yl groups." [CHEBI:27090]
 synonym: "mutation induced by triaziquone exposure" EXACT []
+is_a: CHEBI:132124 ! 1,4-benzoquinones
+is_a: CHEBI:22681 ! aziridines
 is_a: CHEBI:27090 ! triaziquone
+is_a: FBcv:0000526 ! alkylating agent
 
 [Term]
 id: FBcv:0000605
@@ -19843,7 +20389,9 @@ synonym: "CB1246" RELATED []
 synonym: "mutation induced by triethylenemelamine exposure" EXACT []
 synonym: "TEM" RELATED []
 synonym: "tretamine" RELATED [CHEBI:27919]
+is_a: CHEBI:26588 ! 1,3,5-triazines
 is_a: CHEBI:27919 ! tretamine
+is_a: FBcv:0000526 ! alkylating agent
 
 [Term]
 id: FBcv:0000606
@@ -20840,17 +21388,21 @@ namespace: origin_of_mutation
 def: "A nitrosamine that is N-ethylethanamine substituted by a nitroso group at the N-atom." [CHEBI:34873]
 synonym: "mutation induced by N-nitrosodiethylamine exposure" EXACT []
 synonym: "NDEA" RELATED [FlyBase:FBrf0139766]
+is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:34873 ! N-nitrosodiethylamine
+is_a: CHEBI:35803 ! nitrosamine
 
 [Term]
 id: FBcv:0000736
 name: heat sensitive amorphic allele
 namespace: allele_class
 def: "An allele that completely lacks function (i.e. whose gene productive is completely inactive) at high temperatures, but that retains at least some function at lower temperatures." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
+is_a: FBcv:0000688 ! amorphic allele
 is_a: FBcv:0000739 ! temperature conditional amorphic allele
 is_a: FBcv:0000746 ! heat sensitive loss of function allele
 intersection_of: FBcv:0000688 ! amorphic allele
 intersection_of: conditionality FBcv:0000311 ! heat sensitive
+relationship: conditionality FBcv:0000311 ! heat sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:54:34Z
 
@@ -20863,6 +21415,7 @@ is_a: FBcv:0000288 ! amorphic allele - genetic evidence
 is_a: FBcv:0000739 ! temperature conditional amorphic allele
 intersection_of: FBcv:0000288 ! amorphic allele - genetic evidence
 intersection_of: conditionality FBcv:0000310 ! temperature conditional
+relationship: conditionality FBcv:0000310 ! temperature conditional
 created_by: djs93
 creation_date: 2012-03-22T03:55:17Z
 
@@ -20884,6 +21437,7 @@ is_a: FBcv:0000688 ! amorphic allele
 is_a: FBcv:0000745 ! temperature conditional loss of function allele
 intersection_of: FBcv:0000688 ! amorphic allele
 intersection_of: conditionality FBcv:0000310 ! temperature conditional
+relationship: conditionality FBcv:0000310 ! temperature conditional
 created_by: djs93
 creation_date: 2012-03-22T03:57:02Z
 
@@ -20892,10 +21446,12 @@ id: FBcv:0000740
 name: cold sensitive amorphic allele - genetic evidence
 namespace: allele_class
 def: "An allele inferred to completely lack function at low temperatures (restrictive temperatures) but not at high temperatures (permissive temperatures) from the observation that adding extra copies in the genome has no effect on the phenotype at the restrictive temperatures. Most commonly, evidence takes the form of the observation that the phenotype of homozygotes (2 copies) is identical to that seen when the allele is in trans to a deletion of the gene (1 copy)." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
+is_a: FBcv:0000288 ! amorphic allele - genetic evidence
 is_a: FBcv:0000737 ! temperature conditional amorphic allele - genetic evidence
 is_a: FBcv:0001003 ! cold sensitive amorphic allele
 intersection_of: FBcv:0000288 ! amorphic allele - genetic evidence
 intersection_of: conditionality FBcv:0000312 ! cold sensitive
+relationship: conditionality FBcv:0000312 ! cold sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:58:31Z
 
@@ -20904,10 +21460,12 @@ id: FBcv:0000741
 name: heat sensitive amorphic allele - genetic evidence
 namespace: allele_class
 def: "An allele inferred to completely lack function at high temperatures (restrictive temperatures) but not at low temperatures (permissive temperatures) from the observation that adding extra copies in the genome has no effect on the phenotype at the restrictive temperatures. Most commonly, evidence takes the form of the observation that the phenotype of homozygotes (2 copies) is identical to that seen when the allele is in trans to a deletion of the gene (1 copy)." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
+is_a: FBcv:0000288 ! amorphic allele - genetic evidence
 is_a: FBcv:0000736 ! heat sensitive amorphic allele
 is_a: FBcv:0000737 ! temperature conditional amorphic allele - genetic evidence
 intersection_of: FBcv:0000288 ! amorphic allele - genetic evidence
 intersection_of: conditionality FBcv:0000311 ! heat sensitive
+relationship: conditionality FBcv:0000311 ! heat sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:59:43Z
 
@@ -20916,10 +21474,12 @@ id: FBcv:0000742
 name: cold sensitive amorphic allele - molecular evidence
 namespace: allele_class
 def: "An allele shown by molecular evidence to completely lack function at low temperatures (restrictive temperatures) but not at high temperatures (permissive temperatures)." [FBC:DOS, FlyBase:FBrf0049147]
+is_a: FBcv:0000689 ! amorphic allele - molecular evidence
 is_a: FBcv:0000744 ! temperature conditional amorphic allele - molecular evidence
 is_a: FBcv:0001003 ! cold sensitive amorphic allele
 intersection_of: FBcv:0000689 ! amorphic allele - molecular evidence
 intersection_of: conditionality FBcv:0000312 ! cold sensitive
+relationship: conditionality FBcv:0000312 ! cold sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:58:31Z
 
@@ -20928,10 +21488,12 @@ id: FBcv:0000743
 name: heat sensitive amorphic allele - molecular evidence
 namespace: allele_class
 def: "An allele shown by molecular evidence to completely lack function at high temperatures (restrictive temperatures) but not at low temperatures (permissive temperatures)." [FBC:DOS, FlyBase:FBrf0049147]
+is_a: FBcv:0000689 ! amorphic allele - molecular evidence
 is_a: FBcv:0000736 ! heat sensitive amorphic allele
 is_a: FBcv:0000744 ! temperature conditional amorphic allele - molecular evidence
 intersection_of: FBcv:0000689 ! amorphic allele - molecular evidence
 intersection_of: conditionality FBcv:0000311 ! heat sensitive
+relationship: conditionality FBcv:0000311 ! heat sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:59:43Z
 
@@ -20944,6 +21506,7 @@ is_a: FBcv:0000689 ! amorphic allele - molecular evidence
 is_a: FBcv:0000739 ! temperature conditional amorphic allele
 intersection_of: FBcv:0000689 ! amorphic allele - molecular evidence
 intersection_of: conditionality FBcv:0000310 ! temperature conditional
+relationship: conditionality FBcv:0000310 ! temperature conditional
 created_by: djs93
 creation_date: 2012-03-22T03:55:17Z
 
@@ -20964,6 +21527,7 @@ id: FBcv:0000746
 name: heat sensitive loss of function allele
 namespace: allele_class
 def: "An allele that at high temperatures but not low temperatures, either makes no functional gene product, makes reduced levels of a normally functioning gene product or makes a gene product with reduced activity compared to wild-type." [FBC:DOS, FlyBase:FBrf0049147]
+is_a: FBcv:0000287 ! loss of function allele
 is_a: FBcv:0000745 ! temperature conditional loss of function allele
 intersection_of: FBcv:0000287 ! loss of function allele
 intersection_of: conditionality FBcv:0000311 ! heat sensitive
@@ -20976,6 +21540,7 @@ id: FBcv:0000747
 name: cold sensitive loss of function allele
 namespace: allele_class
 def: "An allele that at low temperatures but not high temperatures, either makes no functional gene product, makes reduced levels of a normally functioning gene product or makes a gene product with reduced activity compared to wild-type." [FBC:DOS, FlyBase:FBrf0049147]
+is_a: FBcv:0000287 ! loss of function allele
 is_a: FBcv:0000745 ! temperature conditional loss of function allele
 intersection_of: FBcv:0000287 ! loss of function allele
 intersection_of: conditionality FBcv:0000312 ! cold sensitive
@@ -20998,6 +21563,7 @@ id: FBcv:0000749
 name: heat sensitive gain of function allele
 namespace: allele_class
 def: "An allele that at high temperatures but not low temperatures, either makes a normally functioning gene product but at higher levels or in a different spatial or temporal pattern to wild-type, or a product with increased or novel activity compared to wild-type." [FBC:DOS, FlyBase:FBrf0049147]
+is_a: FBcv:0000290 ! gain of function allele
 is_a: FBcv:0000748 ! temperature conditional gain of function allele
 intersection_of: FBcv:0000290 ! gain of function allele
 intersection_of: conditionality FBcv:0000311 ! heat sensitive
@@ -21010,6 +21576,7 @@ id: FBcv:0000750
 name: cold sensitive gain of function allele
 namespace: allele_class
 def: "An allele that at low temperatures but not high temperatures, either makes a normally functioning gene product but at higher levels or in a different spatial or temporal pattern to wild-type, or a product with increased or novel activity compared to wild-type." [FBC:DOS, FlyBase:FBrf0049147]
+is_a: FBcv:0000290 ! gain of function allele
 is_a: FBcv:0000748 ! temperature conditional gain of function allele
 intersection_of: FBcv:0000290 ! gain of function allele
 intersection_of: conditionality FBcv:0000312 ! cold sensitive
@@ -21024,6 +21591,7 @@ is_a: FBcv:0000690 ! hypomorphic allele
 is_a: FBcv:0000745 ! temperature conditional loss of function allele
 intersection_of: FBcv:0000690 ! hypomorphic allele
 intersection_of: conditionality FBcv:0000310 ! temperature conditional
+relationship: conditionality FBcv:0000310 ! temperature conditional
 created_by: djs93
 creation_date: 2012-03-22T03:57:02Z
 
@@ -21032,10 +21600,12 @@ id: FBcv:0000752
 name: heat sensitive hypomorphic allele
 namespace: allele_class
 def: "An allele that makes a gene product that is functionally equivalent to wild-type but which at high temperatures is present in a lesser amount or with lowered activity, and that retains normal levels of expression or activity at low temperatures." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
+is_a: FBcv:0000690 ! hypomorphic allele
 is_a: FBcv:0000746 ! heat sensitive loss of function allele
 is_a: FBcv:0000751 ! temperature conditional hypomorphic allele
 intersection_of: FBcv:0000690 ! hypomorphic allele
 intersection_of: conditionality FBcv:0000311 ! heat sensitive
+relationship: conditionality FBcv:0000311 ! heat sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:54:34Z
 
@@ -21044,10 +21614,12 @@ id: FBcv:0000753
 name: cold sensitive hypomorphic allele
 namespace: allele_class
 def: "An allele that makes a gene product that is functionally equivalent to wild-type but which at low temperatures is present in a lesser amount or with lowered activity, and that retains normal function at higher temperatures." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
+is_a: FBcv:0000690 ! hypomorphic allele
 is_a: FBcv:0000747 ! cold sensitive loss of function allele
 is_a: FBcv:0000751 ! temperature conditional hypomorphic allele
 intersection_of: FBcv:0000690 ! hypomorphic allele
 intersection_of: conditionality FBcv:0000312 ! cold sensitive
+relationship: conditionality FBcv:0000312 ! cold sensitive
 
 [Term]
 id: FBcv:0000754
@@ -21058,6 +21630,7 @@ is_a: FBcv:0000289 ! hypomorphic allele - genetic evidence
 is_a: FBcv:0000751 ! temperature conditional hypomorphic allele
 intersection_of: FBcv:0000289 ! hypomorphic allele - genetic evidence
 intersection_of: conditionality FBcv:0000310 ! temperature conditional
+relationship: conditionality FBcv:0000310 ! temperature conditional
 created_by: djs93
 creation_date: 2012-03-22T03:55:17Z
 
@@ -21066,10 +21639,12 @@ id: FBcv:0000755
 name: cold sensitive hypomorphic allele - genetic evidence
 namespace: allele_class
 def: "An allele inferred from genetic evidence to have normal activity at high temperatures (permissive temperatures) but to make a gene product with normal function but in a lesser amount or with lowered activity at lower temperatures (non-permissive temperatures). The genetic evidence must consist of an observation extra copies in the genome decrease the expressivity and/or penetrance of the phenotype at non-permissive temperatures. Most commonly this evidence takes the form of experiments showing that the homozygote (2 copies) has a weaker phenotype at non-permissive temperatures than the allele in trans to a deletion of the gene (1 copy))." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
+is_a: FBcv:0000289 ! hypomorphic allele - genetic evidence
 is_a: FBcv:0000753 ! cold sensitive hypomorphic allele
 is_a: FBcv:0000754 ! temperature conditional hypomorphic allele - genetic evidence
 intersection_of: FBcv:0000289 ! hypomorphic allele - genetic evidence
 intersection_of: conditionality FBcv:0000312 ! cold sensitive
+relationship: conditionality FBcv:0000312 ! cold sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:58:31Z
 
@@ -21078,10 +21653,12 @@ id: FBcv:0000756
 name: heat sensitive hypomorphic allele - genetic evidence
 namespace: allele_class
 def: "An allele inferred from genetic evidence to have normal activity at low temperatures (permissive temperatures) but to make a gene product with normal function but in a lesser amount or with lowered activity at higher temperatures (non-permissive temperatures). The genetic evidence must consist of an observation extra copies in the genome decrease the expressivity and/or penetrance of the phenotype at non-permissive temperatures. Most commonly this evidence takes the form of experiments showing that the homozygote (2 copies) has a weaker phenotype at non-permissive temperatures than the allele in trans to a deletion of the gene (1 copy))." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
+is_a: FBcv:0000289 ! hypomorphic allele - genetic evidence
 is_a: FBcv:0000752 ! heat sensitive hypomorphic allele
 is_a: FBcv:0000754 ! temperature conditional hypomorphic allele - genetic evidence
 intersection_of: FBcv:0000289 ! hypomorphic allele - genetic evidence
 intersection_of: conditionality FBcv:0000311 ! heat sensitive
+relationship: conditionality FBcv:0000311 ! heat sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:59:43Z
 
@@ -21094,6 +21671,7 @@ is_a: FBcv:0000691 ! hypomorphic allele - molecular evidence
 is_a: FBcv:0000751 ! temperature conditional hypomorphic allele
 intersection_of: FBcv:0000691 ! hypomorphic allele - molecular evidence
 intersection_of: conditionality FBcv:0000310 ! temperature conditional
+relationship: conditionality FBcv:0000310 ! temperature conditional
 created_by: djs93
 creation_date: 2012-03-22T03:55:17Z
 
@@ -21102,10 +21680,12 @@ id: FBcv:0000758
 name: cold sensitive hypomorphic allele - molecular evidence
 namespace: allele_class
 def: "An allele shown by molecular evidence to make a normal gene product in normal amounts at high temperatures, but at lower temperatures to make a gene product that is functionally equivalent to wild-type but in a lesser amount or with lowered activity." [FBC:DOS, FlyBase:FBrf0049147]
+is_a: FBcv:0000691 ! hypomorphic allele - molecular evidence
 is_a: FBcv:0000753 ! cold sensitive hypomorphic allele
 is_a: FBcv:0000757 ! temperature conditional hypomorphic allele - molecular evidence
 intersection_of: FBcv:0000691 ! hypomorphic allele - molecular evidence
 intersection_of: conditionality FBcv:0000312 ! cold sensitive
+relationship: conditionality FBcv:0000312 ! cold sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:58:31Z
 
@@ -21114,10 +21694,12 @@ id: FBcv:0000759
 name: heat sensitive hypomorphic allele - molecular evidence
 namespace: allele_class
 def: "An allele shown by molecular evidence to make a normal gene product in normal amounts at low temperatures, but at higher temperatures to make a gene product that is functionally equivalent to wild-type but in a lesser amount or with lowered activity." [FBC:DOS, FlyBase:FBrf0049147]
+is_a: FBcv:0000691 ! hypomorphic allele - molecular evidence
 is_a: FBcv:0000752 ! heat sensitive hypomorphic allele
 is_a: FBcv:0000757 ! temperature conditional hypomorphic allele - molecular evidence
 intersection_of: FBcv:0000691 ! hypomorphic allele - molecular evidence
 intersection_of: conditionality FBcv:0000311 ! heat sensitive
+relationship: conditionality FBcv:0000311 ! heat sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:59:43Z
 
@@ -21130,6 +21712,7 @@ is_a: FBcv:0000695 ! antimorphic allele
 is_a: FBcv:0000748 ! temperature conditional gain of function allele
 intersection_of: FBcv:0000695 ! antimorphic allele
 intersection_of: conditionality FBcv:0000310 ! temperature conditional
+relationship: conditionality FBcv:0000310 ! temperature conditional
 created_by: djs93
 creation_date: 2012-03-22T03:57:02Z
 
@@ -21138,10 +21721,12 @@ id: FBcv:0000761
 name: heat sensitive antimorphic allele
 namespace: allele_class
 def: "An allele that makes a gene product that is antagonistic to the function of the wild-type gene product at high temperatures, but not at lower temperatures." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
+is_a: FBcv:0000695 ! antimorphic allele
 is_a: FBcv:0000749 ! heat sensitive gain of function allele
 is_a: FBcv:0000760 ! temperature conditional antimorphic allele
 intersection_of: FBcv:0000695 ! antimorphic allele
 intersection_of: conditionality FBcv:0000311 ! heat sensitive
+relationship: conditionality FBcv:0000311 ! heat sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:54:34Z
 
@@ -21150,10 +21735,12 @@ id: FBcv:0000762
 name: cold sensitive antimorphic allele
 namespace: allele_class
 def: "An allele that makes a gene product that is antagonistic to the function of the wild-type gene product at cold temperatures, but not at higher temperatures." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
+is_a: FBcv:0000695 ! antimorphic allele
 is_a: FBcv:0000750 ! cold sensitive gain of function allele
 is_a: FBcv:0000760 ! temperature conditional antimorphic allele
 intersection_of: FBcv:0000695 ! antimorphic allele
 intersection_of: conditionality FBcv:0000312 ! cold sensitive
+relationship: conditionality FBcv:0000312 ! cold sensitive
 
 [Term]
 id: FBcv:0000763
@@ -21164,6 +21751,7 @@ is_a: FBcv:0000292 ! antimorphic allele - genetic evidence
 is_a: FBcv:0000760 ! temperature conditional antimorphic allele
 intersection_of: FBcv:0000292 ! antimorphic allele - genetic evidence
 intersection_of: conditionality FBcv:0000310 ! temperature conditional
+relationship: conditionality FBcv:0000310 ! temperature conditional
 created_by: djs93
 creation_date: 2012-03-22T03:55:17Z
 
@@ -21172,10 +21760,12 @@ id: FBcv:0000764
 name: cold sensitive antimorphic allele - genetic evidence
 namespace: allele_class
 def: "An allele inferred to make a gene product that is antagonistic to the wild-type gene product at low temperatures (restrictive temperatures) but not at high temperatures (permissive temperatures) from the observation that, at the non-permissive temperatures, the phenotype over a deficiency is stronger than that over a wild-type allele, which in turn is stronger than that in the presence of a duplication of the wild-type locus." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
+is_a: FBcv:0000292 ! antimorphic allele - genetic evidence
 is_a: FBcv:0000762 ! cold sensitive antimorphic allele
 is_a: FBcv:0000763 ! temperature conditional antimorphic allele - genetic evidence
 intersection_of: FBcv:0000292 ! antimorphic allele - genetic evidence
 intersection_of: conditionality FBcv:0000312 ! cold sensitive
+relationship: conditionality FBcv:0000312 ! cold sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:58:31Z
 
@@ -21184,10 +21774,12 @@ id: FBcv:0000765
 name: heat sensitive antimorphic allele - genetic evidence
 namespace: allele_class
 def: "An allele inferred to make a gene product that is antagonistic to the wild-type gene product at high temperatures (restrictive temperatures) but not at lower temperatures (permissive temperatures) from the observation that, at the non-permissive temperatures, the phenotype over a deficiency is stronger than that over a wild-type allele, which in turn is stronger than that in the presence of a duplication of the wild-type locus." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
+is_a: FBcv:0000292 ! antimorphic allele - genetic evidence
 is_a: FBcv:0000761 ! heat sensitive antimorphic allele
 is_a: FBcv:0000763 ! temperature conditional antimorphic allele - genetic evidence
 intersection_of: FBcv:0000292 ! antimorphic allele - genetic evidence
 intersection_of: conditionality FBcv:0000311 ! heat sensitive
+relationship: conditionality FBcv:0000311 ! heat sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:59:43Z
 
@@ -21200,6 +21792,7 @@ is_a: FBcv:0000694 ! antimorphic allele - molecular evidence
 is_a: FBcv:0000760 ! temperature conditional antimorphic allele
 intersection_of: FBcv:0000694 ! antimorphic allele - molecular evidence
 intersection_of: conditionality FBcv:0000310 ! temperature conditional
+relationship: conditionality FBcv:0000310 ! temperature conditional
 created_by: djs93
 creation_date: 2012-03-22T03:55:17Z
 
@@ -21208,10 +21801,12 @@ id: FBcv:0000767
 name: cold sensitive antimorphic allele - molecular evidence
 namespace: allele_class
 def: "An allele that has been shown by molecular evidence to make a gene product that is antagonistic to the function of the wild-type gene product at low temperatures but not higher temperatures." [FBC:DOS, FlyBase:FBrf0049147]
+is_a: FBcv:0000694 ! antimorphic allele - molecular evidence
 is_a: FBcv:0000762 ! cold sensitive antimorphic allele
 is_a: FBcv:0000766 ! temperature conditional antimorphic allele - molecular evidence
 intersection_of: FBcv:0000694 ! antimorphic allele - molecular evidence
 intersection_of: conditionality FBcv:0000312 ! cold sensitive
+relationship: conditionality FBcv:0000312 ! cold sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:58:31Z
 
@@ -21220,10 +21815,12 @@ id: FBcv:0000768
 name: heat sensitive antimorphic allele - molecular evidence
 namespace: allele_class
 def: "An allele that has been shown by molecular evidence to make a gene product that is antagonistic to the function of the wild-type gene product at high temperatures but not lower temperatures." [FBC:DOS, FlyBase:FBrf0049147]
+is_a: FBcv:0000694 ! antimorphic allele - molecular evidence
 is_a: FBcv:0000761 ! heat sensitive antimorphic allele
 is_a: FBcv:0000766 ! temperature conditional antimorphic allele - molecular evidence
 intersection_of: FBcv:0000694 ! antimorphic allele - molecular evidence
 intersection_of: conditionality FBcv:0000311 ! heat sensitive
+relationship: conditionality FBcv:0000311 ! heat sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:59:43Z
 
@@ -21236,6 +21833,7 @@ is_a: FBcv:0000697 ! neomorphic allele
 is_a: FBcv:0000748 ! temperature conditional gain of function allele
 intersection_of: FBcv:0000697 ! neomorphic allele
 intersection_of: conditionality FBcv:0000310 ! temperature conditional
+relationship: conditionality FBcv:0000310 ! temperature conditional
 created_by: djs93
 creation_date: 2012-03-22T03:57:02Z
 
@@ -21244,10 +21842,12 @@ id: FBcv:0000770
 name: heat sensitive neomorphic allele
 namespace: allele_class
 def: "An allele that, at some high temperatures but not lower temperatures, makes a gene product with a novel function or expression pattern compared to wild-type." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
+is_a: FBcv:0000697 ! neomorphic allele
 is_a: FBcv:0000749 ! heat sensitive gain of function allele
 is_a: FBcv:0000769 ! temperature conditional neomorphic allele
 intersection_of: FBcv:0000697 ! neomorphic allele
 intersection_of: conditionality FBcv:0000311 ! heat sensitive
+relationship: conditionality FBcv:0000311 ! heat sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:54:34Z
 
@@ -21256,10 +21856,12 @@ id: FBcv:0000771
 name: cold sensitive neomorphic allele
 namespace: allele_class
 def: "An allele that, at some low temperatures but not higher temperatures, makes a gene product at with a novel function or expression pattern compared to wild-type." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
+is_a: FBcv:0000697 ! neomorphic allele
 is_a: FBcv:0000750 ! cold sensitive gain of function allele
 is_a: FBcv:0000769 ! temperature conditional neomorphic allele
 intersection_of: FBcv:0000697 ! neomorphic allele
 intersection_of: conditionality FBcv:0000312 ! cold sensitive
+relationship: conditionality FBcv:0000312 ! cold sensitive
 
 [Term]
 id: FBcv:0000772
@@ -21270,6 +21872,7 @@ is_a: FBcv:0000291 ! neomorphic allele - genetic evidence
 is_a: FBcv:0000769 ! temperature conditional neomorphic allele
 intersection_of: FBcv:0000291 ! neomorphic allele - genetic evidence
 intersection_of: conditionality FBcv:0000310 ! temperature conditional
+relationship: conditionality FBcv:0000310 ! temperature conditional
 created_by: djs93
 creation_date: 2012-03-22T03:55:17Z
 
@@ -21278,10 +21881,12 @@ id: FBcv:0000773
 name: cold sensitive neomorphic allele - genetic evidence
 namespace: allele_class
 def: "An allele that, is inferred to make a gene product with a novel function or expression pattern compared to wild-type at some low temperatures (non-permissive temperatures) but not higher temperatures (permissive temperatures), based on the evidence that the phenotype at the non-permissive temperature is unaffected by extra or fewer doses of the wild-type gene." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
+is_a: FBcv:0000291 ! neomorphic allele - genetic evidence
 is_a: FBcv:0000771 ! cold sensitive neomorphic allele
 is_a: FBcv:0000772 ! temperature conditional neomorphic allele - genetic evidence
 intersection_of: FBcv:0000291 ! neomorphic allele - genetic evidence
 intersection_of: conditionality FBcv:0000312 ! cold sensitive
+relationship: conditionality FBcv:0000312 ! cold sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:58:31Z
 
@@ -21290,10 +21895,12 @@ id: FBcv:0000774
 name: heat sensitive neomorphic allele - genetic evidence
 namespace: allele_class
 def: "An allele that, is inferred to make a gene product with a novel function or expression pattern compared to wild-type at some high temperatures (non-permissive temperatures) but not lower temperatures (permissive temperatures), based on the evidence that the phenotype at the non-permissive temperature is unaffected by extra or fewer doses of the wild-type gene." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
+is_a: FBcv:0000291 ! neomorphic allele - genetic evidence
 is_a: FBcv:0000770 ! heat sensitive neomorphic allele
 is_a: FBcv:0000772 ! temperature conditional neomorphic allele - genetic evidence
 intersection_of: FBcv:0000291 ! neomorphic allele - genetic evidence
 intersection_of: conditionality FBcv:0000311 ! heat sensitive
+relationship: conditionality FBcv:0000311 ! heat sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:59:43Z
 
@@ -21306,6 +21913,7 @@ is_a: FBcv:0000692 ! neomorphic allele - molecular evidence
 is_a: FBcv:0000769 ! temperature conditional neomorphic allele
 intersection_of: FBcv:0000692 ! neomorphic allele - molecular evidence
 intersection_of: conditionality FBcv:0000310 ! temperature conditional
+relationship: conditionality FBcv:0000310 ! temperature conditional
 created_by: djs93
 creation_date: 2012-03-22T03:55:17Z
 
@@ -21314,10 +21922,12 @@ id: FBcv:0000776
 name: cold sensitive neomorphic allele - molecular evidence
 namespace: allele_class
 def: "An allele shown by molecular evidence to produce a gene product with a novel function or expression pattern (compared to wild-type) at low temperatures but not higher temperatures." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
+is_a: FBcv:0000692 ! neomorphic allele - molecular evidence
 is_a: FBcv:0000771 ! cold sensitive neomorphic allele
 is_a: FBcv:0000775 ! temperature conditional neomorphic allele - molecular evidence
 intersection_of: FBcv:0000692 ! neomorphic allele - molecular evidence
 intersection_of: conditionality FBcv:0000312 ! cold sensitive
+relationship: conditionality FBcv:0000312 ! cold sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:58:31Z
 
@@ -21326,10 +21936,12 @@ id: FBcv:0000777
 name: heat sensitive neomorphic allele - molecular evidence
 namespace: allele_class
 def: "An allele shown by molecular evidence to produce a gene product with a novel function or expression pattern (compared to wild-type) at high temperatures but not lower temperatures." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
+is_a: FBcv:0000692 ! neomorphic allele - molecular evidence
 is_a: FBcv:0000770 ! heat sensitive neomorphic allele
 is_a: FBcv:0000775 ! temperature conditional neomorphic allele - molecular evidence
 intersection_of: FBcv:0000692 ! neomorphic allele - molecular evidence
 intersection_of: conditionality FBcv:0000311 ! heat sensitive
+relationship: conditionality FBcv:0000311 ! heat sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:59:43Z
 
@@ -21342,6 +21954,7 @@ is_a: FBcv:0000696 ! hypermorphic allele
 is_a: FBcv:0000748 ! temperature conditional gain of function allele
 intersection_of: FBcv:0000696 ! hypermorphic allele
 intersection_of: conditionality FBcv:0000310 ! temperature conditional
+relationship: conditionality FBcv:0000310 ! temperature conditional
 created_by: djs93
 creation_date: 2012-03-22T03:57:02Z
 
@@ -21350,10 +21963,12 @@ id: FBcv:0000779
 name: heat sensitive hypermorphic allele
 namespace: allele_class
 def: "An allele that, at high temperatures but not lower temperatures, makes a gene product with normal function but at higher levels or with higher activity than in wild-type." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
+is_a: FBcv:0000696 ! hypermorphic allele
 is_a: FBcv:0000749 ! heat sensitive gain of function allele
 is_a: FBcv:0000778 ! temperature conditional hypermorphic allele
 intersection_of: FBcv:0000696 ! hypermorphic allele
 intersection_of: conditionality FBcv:0000311 ! heat sensitive
+relationship: conditionality FBcv:0000311 ! heat sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:54:34Z
 
@@ -21362,10 +21977,12 @@ id: FBcv:0000780
 name: cold sensitive hypermorphic allele
 namespace: allele_class
 def: "An allele that, at low temperatures but not higher temperatures, makes a gene product with normal function but at higher levels or with higher activity than in wild-type.." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
+is_a: FBcv:0000696 ! hypermorphic allele
 is_a: FBcv:0000750 ! cold sensitive gain of function allele
 is_a: FBcv:0000778 ! temperature conditional hypermorphic allele
 intersection_of: FBcv:0000696 ! hypermorphic allele
 intersection_of: conditionality FBcv:0000312 ! cold sensitive
+relationship: conditionality FBcv:0000312 ! cold sensitive
 
 [Term]
 id: FBcv:0000781
@@ -21376,6 +21993,7 @@ is_a: FBcv:0000293 ! hypermorphic allele - genetic evidence
 is_a: FBcv:0000778 ! temperature conditional hypermorphic allele
 intersection_of: FBcv:0000293 ! hypermorphic allele - genetic evidence
 intersection_of: conditionality FBcv:0000310 ! temperature conditional
+relationship: conditionality FBcv:0000310 ! temperature conditional
 created_by: djs93
 creation_date: 2012-03-22T03:55:17Z
 
@@ -21384,10 +22002,12 @@ id: FBcv:0000782
 name: cold sensitive hypermorphic allele - genetic evidence
 namespace: allele_class
 def: "An allele inferred from genetic evidence to make a normal gene product at increased levels or with increased activity compared to wild-type, where this increased amount or activity is present at low temperatures (non-permissive temperatures) but not higher temperatures (permissive temperatures), and where the genetic evidence consists of the observation that extra copies in the genome increase the expressivity and/or penetrance of the phenotype at the non-permissive temperatures." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
+is_a: FBcv:0000293 ! hypermorphic allele - genetic evidence
 is_a: FBcv:0000780 ! cold sensitive hypermorphic allele
 is_a: FBcv:0000781 ! temperature conditional hypermorphic allele - genetic evidence
 intersection_of: FBcv:0000293 ! hypermorphic allele - genetic evidence
 intersection_of: conditionality FBcv:0000312 ! cold sensitive
+relationship: conditionality FBcv:0000312 ! cold sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:58:31Z
 
@@ -21396,10 +22016,12 @@ id: FBcv:0000783
 name: heat sensitive hypermorphic allele - genetic evidence
 namespace: allele_class
 def: "An allele inferred from genetic evidence to make a normal gene product at increased levels or with increased activity compared to wild-type, where this increased amount or activity is present at high temperatures (non-permissive temperatures) but not lower temperatures (permissive temperatures), and where the genetic evidence consists of the observation that extra copies in the genome increase the expressivity and/or penetrance of the phenotype at the non-permissive temperatures." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
+is_a: FBcv:0000293 ! hypermorphic allele - genetic evidence
 is_a: FBcv:0000779 ! heat sensitive hypermorphic allele
 is_a: FBcv:0000781 ! temperature conditional hypermorphic allele - genetic evidence
 intersection_of: FBcv:0000293 ! hypermorphic allele - genetic evidence
 intersection_of: conditionality FBcv:0000311 ! heat sensitive
+relationship: conditionality FBcv:0000311 ! heat sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:59:43Z
 
@@ -21412,6 +22034,7 @@ is_a: FBcv:0000693 ! hypermorphic allele - molecular evidence
 is_a: FBcv:0000778 ! temperature conditional hypermorphic allele
 intersection_of: FBcv:0000693 ! hypermorphic allele - molecular evidence
 intersection_of: conditionality FBcv:0000310 ! temperature conditional
+relationship: conditionality FBcv:0000310 ! temperature conditional
 created_by: djs93
 creation_date: 2012-03-22T03:55:17Z
 
@@ -21420,10 +22043,12 @@ id: FBcv:0000785
 name: cold sensitive hypermorphic allele - molecular evidence
 namespace: allele_class
 def: "An allele shown by molecular evidence to make a functionally wild-type gene product at increased levels or with increased activity where this increased expression or activity occurs at low temperatures but not higher temperatures." [FBC:DOS, FlyBase:FBrf0049147]
+is_a: FBcv:0000693 ! hypermorphic allele - molecular evidence
 is_a: FBcv:0000780 ! cold sensitive hypermorphic allele
 is_a: FBcv:0000784 ! temperature conditional hypermorphic allele - molecular evidence
 intersection_of: FBcv:0000693 ! hypermorphic allele - molecular evidence
 intersection_of: conditionality FBcv:0000312 ! cold sensitive
+relationship: conditionality FBcv:0000312 ! cold sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:58:31Z
 
@@ -21432,10 +22057,12 @@ id: FBcv:0000786
 name: heat sensitive hypermorphic allele - molecular evidence
 namespace: allele_class
 def: "An allele shown by molecular evidence to make a functionally wild-type gene product at increased levels or with increased activity where this increased expression or activity occurs at high temperatures but not lower temperatures." [FBC:DOS, FlyBase:FBrf0049147]
+is_a: FBcv:0000693 ! hypermorphic allele - molecular evidence
 is_a: FBcv:0000779 ! heat sensitive hypermorphic allele
 is_a: FBcv:0000784 ! temperature conditional hypermorphic allele - molecular evidence
 intersection_of: FBcv:0000693 ! hypermorphic allele - molecular evidence
 intersection_of: conditionality FBcv:0000311 ! heat sensitive
+relationship: conditionality FBcv:0000311 ! heat sensitive
 created_by: djs93
 creation_date: 2012-03-22T03:59:43Z
 
@@ -21570,7 +22197,9 @@ synonym: "CB1414" RELATED []
 synonym: "HN2" RELATED []
 synonym: "mechlorethamine" RELATED []
 synonym: "mutation induced by nitrogen mustard exposure" EXACT []
+is_a: CHEBI:35352 ! organonitrogen compound
 is_a: CHEBI:37598 ! nitrogen mustard
+is_a: FBcv:0000526 ! alkylating agent
 
 [Term]
 id: FBcv:0000814
@@ -21581,7 +22210,9 @@ synonym: "busulfan" RELATED [CHEBI:28901]
 synonym: "CB2041" RELATED []
 synonym: "mutation induced by 1,4-dimethanesulfonoxybutane exposure" EXACT []
 synonym: "mutation induced by busulfan exposure" EXACT []
+is_a: CHEBI:25223 ! methanesulfonate ester
 is_a: CHEBI:28901 ! busulfan
+is_a: FBcv:0000526 ! alkylating agent
 
 [Term]
 id: FBcv:0000815
@@ -21592,16 +22223,24 @@ synonym: "CB1348" RELATED []
 synonym: "chlorambucil" EXACT [CHEBI:28830]
 synonym: "mutation induced by chlorambucil exposure" EXACT []
 synonym: "mutation induced by p-N,N-di-(2-chloroethyl)aminophenylbutyric acid exposure" EXACT []
+is_a: CHEBI:25384 ! monocarboxylic acid
 is_a: CHEBI:28830 ! chlorambucil
+is_a: CHEBI:33860 ! aromatic amine
+is_a: CHEBI:36683 ! organochlorine compound
+is_a: CHEBI:37598 ! nitrogen mustard
+is_a: CHEBI:50996 ! tertiary amino compound
+is_a: FBcv:0000813 ! nitrogen mustard
 
 [Term]
 id: FBcv:0001003
 name: cold sensitive amorphic allele
 def: "An allele that completely lacks function (i.e. whose gene productive is completely inactive) at low temperatures, but that retains at least some function at higher temperatures." [FBC:DOS, FlyBase:FBrf0002371, FlyBase:FBrf0049147]
+is_a: FBcv:0000688 ! amorphic allele
 is_a: FBcv:0000739 ! temperature conditional amorphic allele
 is_a: FBcv:0000747 ! cold sensitive loss of function allele
 intersection_of: FBcv:0000688 ! amorphic allele
 intersection_of: conditionality FBcv:0000312 ! cold sensitive
+relationship: conditionality FBcv:0000312 ! cold sensitive
 
 [Term]
 id: FBcv:0001315
