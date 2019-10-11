@@ -205,6 +205,7 @@ The way QC now works for all four ontologies is this:
 
 # SOP For build of all FlyBase ontologies
 In order to create a release of all FlyBase ontologies, do the following:
+0. Update odk - docker pull obolibrary/odkfull
 1. FBDV
   1. Build (cd src/ontology; sh run_release.sh)
 	2. Push to branch
