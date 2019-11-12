@@ -1509,7 +1509,7 @@ is_obsolete: true
 
 [Term]
 id: FBcv:0000176
-name: temporal  qualifier
+name: temporal qualifier
 namespace: temporal_qualifier
 subset: do_not_annotate
 is_a: FBcv:0000005 ! qualifier
@@ -4693,7 +4693,7 @@ id: FBcv:0000726
 name: virgin female
 namespace: sex_qualifier
 def: "Expressed in virgin females." [FBC:DOS]
-comment: May be used as a qualifier for gene  or transgene expression or phenotype.  Note - its use does not imply expression (of gene or phenotype) exclusively in virgin females.
+comment: May be used as a qualifier for gene  or transgene expression or phenotype. Note - its use does not imply expression (of gene or phenotype) exclusively in virgin females.
 is_a: FBcv:0000334 ! female
 created_by: djs93
 creation_date: 2011-04-21T01:10:32Z
@@ -4703,7 +4703,7 @@ id: FBcv:0000727
 name: mated female
 namespace: sex_qualifier
 def: "Expressed in mated females." [FBC:DOS]
-comment: May be used as a qualifier for gene  or transgene expression or phenotype.  Note - its use does not imply expression (of gene or phenotype) exclusively in mated females.
+comment: May be used as a qualifier for gene  or transgene expression or phenotype. Note - its use does not imply expression (of gene or phenotype) exclusively in mated females.
 is_a: FBcv:0000334 ! female
 created_by: djs93
 creation_date: 2011-04-21T01:10:49Z
@@ -4713,7 +4713,7 @@ id: FBcv:0000728
 name: virgin male
 namespace: sex_qualifier
 def: "Expressed in virgin males." [FBC:DOS]
-comment: May be used as a qualifier for gene  or transgene expression or phenotype.  Note - its use does not imply expression  (of gene or phenotype) exclusively in virgin males.
+comment: May be used as a qualifier for gene  or transgene expression or phenotype. Note - its use does not imply expression  (of gene or phenotype) exclusively in virgin males.
 is_a: FBcv:0000333 ! male
 created_by: djs93
 creation_date: 2011-04-21T01:11:13Z
@@ -4723,7 +4723,7 @@ id: FBcv:0000729
 name: mated male
 namespace: sex_qualifier
 def: "Expressed in mated males." [FBC:DOS]
-comment: May be used as a qualifier for gene  or transgene expression or phenotype.  Note - its use does not imply expression  (of gene or phenotype) exclusively in mated females.
+comment: May be used as a qualifier for gene  or transgene expression or phenotype. Note - its use does not imply expression  (of gene or phenotype) exclusively in mated females.
 is_a: FBcv:0000333 ! male
 created_by: djs93
 creation_date: 2011-04-21T01:11:21Z
@@ -7945,7 +7945,7 @@ creation_date: 2017-06-28T11:41:27Z
 id: FBcv:0005034
 name: signal sequence
 namespace: experimental_tool_descriptor
-def: "A peptide sequence that forms part of the protein product encoded by a transgenic locus or modified endogenous locus and which is used to target the tagged protein to the secretory pathway. This results in the protein either being secreted or inserted into a cellular membrane, depending on the presence of other specific sequences in the tagged protein.  The signal sequence must be fused to the N-terminal end of the tagged protein." [FBC:GM, http://en.wikipedia.org/wiki/Signal_peptide]
+def: "A peptide sequence that forms part of the protein product encoded by a transgenic locus or modified endogenous locus and which is used to target the tagged protein to the secretory pathway. This results in the protein either being secreted or inserted into a cellular membrane, depending on the presence of other specific sequences in the tagged protein. The signal sequence must be fused to the N-terminal end of the tagged protein." [FBC:GM, http://en.wikipedia.org/wiki/Signal_peptide]
 xref: SO:0000418
 is_a: FBcv:0005023 ! protein localization tag
 created_by: temj2
@@ -8275,7 +8275,7 @@ creation_date: 2017-12-13T13:17:30Z
 id: FBcv:0005069
 name: enhancer trap
 namespace: experimental_tool_descriptor
-def: "An enhancer trap cassette is designed to report or utilize the expression of endogenous enhancer elements upon integration of the cassette into the genome. The basic components of an enhancer trap cassette are a minimal promoter element fused upstream of a gene. Upon integration into the genome, a neighboring genomic enhancer may activate expression of the gene encoded by the enhancer trap cassette. Depending on the nature of this gene, the insertion may directly report the expression pattern of the 'trapped' enhancer (e.g. if the gene encodes a reporter enzyme or fluorescent protein), or it may be used to drive expression of any gene of interest (e.g. if the gene encodes a driver that forms part of a binary expression system). An enhancer trap cassette may be inserted into a genome as part of a transgenic contruct via transposable-element-mediated transgenesis, or may be inserted directly into a modified endogenous locus via a genome engineering method such as homologous recombination or CRISPR. An enhancer trap insertion can be mutagenic, disrupting the function of an endogenous locus, depending on the particular insertion site." [FBC:GM, FlyBase:FBrf0128252, FlyBase:FBrf0216478, PMID:10899970]
+def: "An enhancer trap cassette is designed to report or utilize the expression of endogenous enhancer elements upon integration of the cassette into the genome. The basic components of an enhancer trap cassette are a minimal promoter element fused upstream of a gene. Upon integration into the genome, a neighboring genomic enhancer may activate expression of the gene encoded by the enhancer trap cassette. Depending on the nature of this gene, the insertion may directly report the expression pattern of the 'trapped' enhancer (e.g. if the gene encodes a reporter enzyme or fluorescent protein), or it may be used to drive expression of any gene of interest (e.g. if the gene encodes a driver that forms part of a binary expression system). An enhancer trap cassette may be inserted into a genome as part of a transgenic construct via transposable-element-mediated transgenesis, or may be inserted directly into a modified endogenous locus via a genome engineering method such as homologous recombination or CRISPR. An enhancer trap insertion can be mutagenic, disrupting the function of an endogenous locus, depending on the particular insertion site." [FBC:GM, FlyBase:FBrf0128252, FlyBase:FBrf0216478, PMID:10899970]
 synonym: "enhancer detection tool" RELATED [FBC:GM]
 xref: SO:0001479
 is_a: FBcv:0005068 ! insertional mutagenesis tool
@@ -8295,7 +8295,7 @@ creation_date: 2017-12-13T13:17:30Z
 id: FBcv:0005071
 name: gene trap
 namespace: experimental_tool_descriptor
-def: "A gene trap cassette is designed to interrupt transcription of an endogenous locus upon integration of the cassette into the genome. The basic components of a gene trap cassette are a promoterless gene with an upstream splice acceptor site. Upon integration into an intron, splicing from the genomic splice donor site to the splice acceptor site in the cassette results in a transcriptional fusion containing the endogenous exon(s) upstream of the insertion fused to the gene sequence encoded by the cassette. Any open reading frame (ORF) encoded by the trap cassette gene may be translated from this transcriptional fusion either as a translational fusion with any ORF sequence encoded by the upstream exons, or if an internal ribosome entry site (IRES) or viral 2A-like peptide sequence (which promotes ribosome skipping) is present upstream of the gene trap ORF, it may be produced as a separate protein expressed under the control of the regulatory sequences of the endogenous locus. Gene trap insertions are usually mutagenic, disrupting the locus into which they have inserted, since termination sequences are usually present at the 3' end of the cassette, truncating the endogenous transcript. Depending on the nature of the gene encoded by the gene trap cassette, a gene trap insertion may directly report the expression pattern of the disrupted locus (e.g. if it encodes a reporter enzyme or fluorescent protein), or it may be used to drive expression of any gene of interest in the pattern of the trapped locus (e.g. if it is a driver that forms part of a binary expression system). A gene trap cassette may be inserted into a genome as part of a transgenic contruct via transposable-element-mediated transgenesis, or may be inserted directly into a modified endogenous locus via a genome engineering method such as homologous recombination or CRISPR." [FBC:GM, http://www.genetrap.org/tutorials/overview.html#vector, PMID:10899970]
+def: "A gene trap cassette is designed to interrupt transcription of an endogenous locus upon integration of the cassette into the genome. The basic components of a gene trap cassette are a promoterless gene with an upstream splice acceptor site. Upon integration into an intron, splicing from the genomic splice donor site to the splice acceptor site in the cassette results in a transcriptional fusion containing the endogenous exon(s) upstream of the insertion fused to the gene sequence encoded by the cassette. Any open reading frame (ORF) encoded by the trap cassette gene may be translated from this transcriptional fusion either as a translational fusion with any ORF sequence encoded by the upstream exons, or if an internal ribosome entry site (IRES) or viral 2A-like peptide sequence (which promotes ribosome skipping) is present upstream of the gene trap ORF, it may be produced as a separate protein expressed under the control of the regulatory sequences of the endogenous locus. Gene trap insertions are usually mutagenic, disrupting the locus into which they have inserted, since termination sequences are usually present at the 3' end of the cassette, truncating the endogenous transcript. Depending on the nature of the gene encoded by the gene trap cassette, a gene trap insertion may directly report the expression pattern of the disrupted locus (e.g. if it encodes a reporter enzyme or fluorescent protein), or it may be used to drive expression of any gene of interest in the pattern of the trapped locus (e.g. if it is a driver that forms part of a binary expression system). A gene trap cassette may be inserted into a genome as part of a transgenic construct via transposable-element-mediated transgenesis, or may be inserted directly into a modified endogenous locus via a genome engineering method such as homologous recombination or CRISPR." [FBC:GM, http://www.genetrap.org/tutorials/overview.html#vector, PMID:10899970]
 xref: SO:0001477
 is_a: FBcv:0005068 ! insertional mutagenesis tool
 created_by: temj2
@@ -8305,7 +8305,7 @@ creation_date: 2017-12-13T13:17:30Z
 id: FBcv:0005072
 name: polyA trap
 namespace: experimental_tool_descriptor
-def: "The basic components of a polyA trap cassette are a promoter fused to a gene sequence that lacks a polyadenylation (polyA) sequence but is followed by a splice donor sequence. If the cassette is integrated into the genome outside a gene, the mRNA produced by the polyA trap is not polyadenylated and is expected to be rapidly degraded. However, if the cassette is integrated into an intron, the promoter in the polyA trap will drive expression of a transcriptional fusion containing the polyA gene trap fused to any downstream exons. The downstream terminal exon can provide a polyA signal, allowing stable expression of the gene encoded by the polyA trap. polyA trap cassettes can be used to report the expression of genes that are not normally expressed, or are expressed at very low levels, or may be used as a marker of successful integration of an insertion into a transcription unit. A polyA trap cassette may be inserted into a genome as part of a transgenic contruct via transposable-element-mediated transgenesis, or may be inserted directly into a modified endogenous locus via a genome engineering method such as homologous recombination or CRISPR." [FBC:GM, FlyBase:FBrf0132344, FlyBase:FBrf0206814, http://www.genetrap.org/tutorials/overview.html#vector, PMID:9560157]
+def: "The basic components of a polyA trap cassette are a promoter fused to a gene sequence that lacks a polyadenylation (polyA) sequence but is followed by a splice donor sequence. If the cassette is integrated into the genome outside a gene, the mRNA produced by the polyA trap is not polyadenylated and is expected to be rapidly degraded. However, if the cassette is integrated into an intron, the promoter in the polyA trap will drive expression of a transcriptional fusion containing the polyA gene trap fused to any downstream exons. The downstream terminal exon can provide a polyA signal, allowing stable expression of the gene encoded by the polyA trap. polyA trap cassettes can be used to report the expression of genes that are not normally expressed, or are expressed at very low levels, or may be used as a marker of successful integration of an insertion into a transcription unit. A polyA trap cassette may be inserted into a genome as part of a transgenic construct via transposable-element-mediated transgenesis, or may be inserted directly into a modified endogenous locus via a genome engineering method such as homologous recombination or CRISPR." [FBC:GM, FlyBase:FBrf0132344, FlyBase:FBrf0206814, http://www.genetrap.org/tutorials/overview.html#vector, PMID:9560157]
 is_a: FBcv:0005068 ! insertional mutagenesis tool
 created_by: temj2
 creation_date: 2017-12-13T13:17:30Z
@@ -8341,7 +8341,7 @@ creation_date: 2017-12-13T13:17:30Z
 id: FBcv:0005076
 name: integrase
 namespace: experimental_tool_descriptor
-def: "An enzyme that mediates an exchange reaction between two DNA templates, resulting in integration of DNA from one of the templates into the other. An integrase binds a pair of compatible recognition sites (typically called attP and attB) which each contain a short integration core flanked by imperfect inverted repeats that are not identical. Exchange between the attP/attB pair results in the formation of hybrid sites (typically called attL and attR) that are no longer a substrate of the integrase. Thus the exchange reaction driven by an integrase is undirectional. Mutually exclusive pairs of recognition site have been engineered for some integrases. Integrases can be used to generate many different types of genetic modification, with the outcome being influenced by the relative orientation (direct or inverted), relative location and composition of the two recognition sites. The types of possible modification include deletion of DNA, generation of chromosomal rearrangements, integration of DNA into the genome, and replacement of genetic material with that from a donor plasmid using recombination-mediated cassette exchange (RMCE)." [FlyBase:FBrf0231034]
+def: "An enzyme that mediates an exchange reaction between two DNA templates, resulting in integration of DNA from one of the templates into the other. An integrase binds a pair of compatible recognition sites (typically called attP and attB) which each contain a short integration core flanked by imperfect inverted repeats that are not identical. Exchange between the attP/attB pair results in the formation of hybrid sites (typically called attL and attR) that are no longer a substrate of the integrase. Thus the exchange reaction driven by an integrase is unidirectional. Mutually exclusive pairs of recognition site have been engineered for some integrases. Integrases can be used to generate many different types of genetic modification, with the outcome being influenced by the relative orientation (direct or inverted), relative location and composition of the two recognition sites. The types of possible modification include deletion of DNA, generation of chromosomal rearrangements, integration of DNA into the genome, and replacement of genetic material with that from a donor plasmid using recombination-mediated cassette exchange (RMCE)." [FlyBase:FBrf0231034]
 subset: common_tool_use
 is_a: FBcv:0005075 ! genome engineering tool
 created_by: temj2
@@ -8372,7 +8372,7 @@ creation_date: 2017-12-13T13:17:30Z
 id: FBcv:0005079
 name: integrase target site
 namespace: experimental_tool_descriptor
-def: "A recognition site for an integrase, an enzyme that mediates an exchange reaction between two DNA templates, resulting in integration of DNA from one of the templates into the other. An integrase binds a pair of compatible recognition sites (typically called attP and attB) which each contain a short integration core flanked by imperfect inverted repeats that are not identical. Exchange between the attP/attB pair results in the formation of hybrid sites (typically called attL and attR) that are no longer a substrate of the integrase. Thus the exchange reaction driven by an integrase is undirectional. Mutually exclusive pairs of recognition site have been engineered for some integrases. Integrases can be used to generate many different types of genetic modification, with the outcome being influenced by the relative orientation (direct or inverted), relative location and composition of the two recognition sites. The types of possible modification include deletion of DNA, generation of chromosomal rearrangements, integration of DNA into the genome, and replacement of genetic material with that from a donor plasmid using recombination-mediated cassette exchange (RMCE)." [FlyBase:FBrf0231034]
+def: "A recognition site for an integrase, an enzyme that mediates an exchange reaction between two DNA templates, resulting in integration of DNA from one of the templates into the other. An integrase binds a pair of compatible recognition sites (typically called attP and attB) which each contain a short integration core flanked by imperfect inverted repeats that are not identical. Exchange between the attP/attB pair results in the formation of hybrid sites (typically called attL and attR) that are no longer a substrate of the integrase. Thus the exchange reaction driven by an integrase is unidirectional. Mutually exclusive pairs of recognition site have been engineered for some integrases. Integrases can be used to generate many different types of genetic modification, with the outcome being influenced by the relative orientation (direct or inverted), relative location and composition of the two recognition sites. The types of possible modification include deletion of DNA, generation of chromosomal rearrangements, integration of DNA into the genome, and replacement of genetic material with that from a donor plasmid using recombination-mediated cassette exchange (RMCE)." [FlyBase:FBrf0231034]
 is_a: FBcv:0005075 ! genome engineering tool
 created_by: temj2
 creation_date: 2017-12-13T13:17:30Z
