@@ -3111,47 +3111,6 @@
       "type" : "CLASS",
       "lbl" : "transposable element activity"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/RO_0000052",
-      "meta" : {
-        "definition" : {
-          "val" : "A relationship between a dependent continuant, for example a quality such as color, and an independent continuant, such as an eye.",
-          "xrefs" : [ ]
-        },
-        "xrefs" : [ {
-          "val" : "RO:0000052"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "inheres_in"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "this fragility inheres in this vase"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
-          "val" : "A dependent inheres in its bearer at all times for which the dependent exists."
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "inheres in"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "fly_anatomy.ontology"
-        }, {
-          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
-          "val" : "Example red (PATO) inheres_in some eye (FBbt)."
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "inheres_in"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "this red color inheres in this apple"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/RO_0001900",
-          "val" : "http://purl.obolibrary.org/obo/RO_0001901"
-        } ]
-      },
-      "type" : "PROPERTY",
-      "lbl" : "inheres_in"
-    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000008",
       "meta" : {
         "definition" : {
@@ -3529,7 +3488,7 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000006",
       "meta" : {
         "definition" : {
-          "val" : "Any male semi-fertile (PATO:0001761) that inheres in some organism (FBbt:00000001).",
+          "val" : "Phenotype of males that is a reduction in the proportion of fertilized eggs produced, but only to > 50% of wild-type.",
           "xrefs" : [ ]
         },
         "basicPropertyValues" : [ {
@@ -3543,7 +3502,7 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000007",
       "meta" : {
         "definition" : {
-          "val" : "Any female semi-fertile (PATO:0001760) that inheres in some organism (FBbt:00000001).",
+          "val" : "Phenotype of females that is a reduction in the proportion of fertilized eggs produced, but only to > 50% of wild-type.",
           "xrefs" : [ ]
         },
         "basicPropertyValues" : [ {
@@ -8209,7 +8168,7 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0005034",
       "meta" : {
         "definition" : {
-          "val" : "A peptide sequence that forms part of the protein product encoded by a transgenic locus or modified endogenous locus and which is used to target the tagged protein to the secretory pathway. This results in the protein either being secreted or inserted into a cellular membrane, depending on the presence of other specific sequences in the tagged protein.  The signal sequence must be fused to the N-terminal end of the tagged protein.",
+          "val" : "A peptide sequence that forms part of the protein product encoded by a transgenic locus or modified endogenous locus and which is used to target the tagged protein to the secretory pathway. This results in the protein either being secreted or inserted into a cellular membrane, depending on the presence of other specific sequences in the tagged protein. The signal sequence must be fused to the N-terminal end of the tagged protein.",
           "xrefs" : [ "FBC:GM", "http://en.wikipedia.org/wiki/Signal_peptide" ]
         },
         "xrefs" : [ {
@@ -9638,7 +9597,7 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0005076",
       "meta" : {
         "definition" : {
-          "val" : "An enzyme that mediates an exchange reaction between two DNA templates, resulting in integration of DNA from one of the templates into the other. An integrase binds a pair of compatible recognition sites (typically called attP and attB) which each contain a short integration core flanked by imperfect inverted repeats that are not identical. Exchange between the attP/attB pair results in the formation of hybrid sites (typically called attL and attR) that are no longer a substrate of the integrase. Thus the exchange reaction driven by an integrase is undirectional. Mutually exclusive pairs of recognition site have been engineered for some integrases. Integrases can be used to generate many different types of genetic modification, with the outcome being influenced by the relative orientation (direct or inverted), relative location and composition of the two recognition sites. The types of possible modification include deletion of DNA, generation of chromosomal rearrangements, integration of DNA into the genome, and replacement of genetic material with that from a donor plasmid using recombination-mediated cassette exchange (RMCE).",
+          "val" : "An enzyme that mediates an exchange reaction between two DNA templates, resulting in integration of DNA from one of the templates into the other. An integrase binds a pair of compatible recognition sites (typically called attP and attB) which each contain a short integration core flanked by imperfect inverted repeats that are not identical. Exchange between the attP/attB pair results in the formation of hybrid sites (typically called attL and attR) that are no longer a substrate of the integrase. Thus the exchange reaction driven by an integrase is unidirectional. Mutually exclusive pairs of recognition site have been engineered for some integrases. Integrases can be used to generate many different types of genetic modification, with the outcome being influenced by the relative orientation (direct or inverted), relative location and composition of the two recognition sites. The types of possible modification include deletion of DNA, generation of chromosomal rearrangements, integration of DNA into the genome, and replacement of genetic material with that from a donor plasmid using recombination-mediated cassette exchange (RMCE).",
           "xrefs" : [ "FlyBase:FBrf0231034" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#common_tool_use" ],
@@ -9896,7 +9855,7 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0005079",
       "meta" : {
         "definition" : {
-          "val" : "A recognition site for an integrase, an enzyme that mediates an exchange reaction between two DNA templates, resulting in integration of DNA from one of the templates into the other. An integrase binds a pair of compatible recognition sites (typically called attP and attB) which each contain a short integration core flanked by imperfect inverted repeats that are not identical. Exchange between the attP/attB pair results in the formation of hybrid sites (typically called attL and attR) that are no longer a substrate of the integrase. Thus the exchange reaction driven by an integrase is undirectional. Mutually exclusive pairs of recognition site have been engineered for some integrases. Integrases can be used to generate many different types of genetic modification, with the outcome being influenced by the relative orientation (direct or inverted), relative location and composition of the two recognition sites. The types of possible modification include deletion of DNA, generation of chromosomal rearrangements, integration of DNA into the genome, and replacement of genetic material with that from a donor plasmid using recombination-mediated cassette exchange (RMCE).",
+          "val" : "A recognition site for an integrase, an enzyme that mediates an exchange reaction between two DNA templates, resulting in integration of DNA from one of the templates into the other. An integrase binds a pair of compatible recognition sites (typically called attP and attB) which each contain a short integration core flanked by imperfect inverted repeats that are not identical. Exchange between the attP/attB pair results in the formation of hybrid sites (typically called attL and attR) that are no longer a substrate of the integrase. Thus the exchange reaction driven by an integrase is unidirectional. Mutually exclusive pairs of recognition site have been engineered for some integrases. Integrases can be used to generate many different types of genetic modification, with the outcome being influenced by the relative orientation (direct or inverted), relative location and composition of the two recognition sites. The types of possible modification include deletion of DNA, generation of chromosomal rearrangements, integration of DNA into the genome, and replacement of genetic material with that from a donor plasmid using recombination-mediated cassette exchange (RMCE).",
           "xrefs" : [ "FlyBase:FBrf0231034" ]
         },
         "basicPropertyValues" : [ {
@@ -9916,7 +9875,7 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0005072",
       "meta" : {
         "definition" : {
-          "val" : "The basic components of a polyA trap cassette are a promoter fused to a gene sequence that lacks a polyadenylation (polyA) sequence but is followed by a splice donor sequence. If the cassette is integrated into the genome outside a gene, the mRNA produced by the polyA trap is not polyadenylated and is expected to be rapidly degraded. However, if the cassette is integrated into an intron, the promoter in the polyA trap will drive expression of a transcriptional fusion containing the polyA gene trap fused to any downstream exons. The downstream terminal exon can provide a polyA signal, allowing stable expression of the gene encoded by the polyA trap. polyA trap cassettes can be used to report the expression of genes that are not normally expressed, or are expressed at very low levels, or may be used as a marker of successful integration of an insertion into a transcription unit. A polyA trap cassette may be inserted into a genome as part of a transgenic contruct via transposable-element-mediated transgenesis, or may be inserted directly into a modified endogenous locus via a genome engineering method such as homologous recombination or CRISPR.",
+          "val" : "The basic components of a polyA trap cassette are a promoter fused to a gene sequence that lacks a polyadenylation (polyA) sequence but is followed by a splice donor sequence. If the cassette is integrated into the genome outside a gene, the mRNA produced by the polyA trap is not polyadenylated and is expected to be rapidly degraded. However, if the cassette is integrated into an intron, the promoter in the polyA trap will drive expression of a transcriptional fusion containing the polyA gene trap fused to any downstream exons. The downstream terminal exon can provide a polyA signal, allowing stable expression of the gene encoded by the polyA trap. polyA trap cassettes can be used to report the expression of genes that are not normally expressed, or are expressed at very low levels, or may be used as a marker of successful integration of an insertion into a transcription unit. A polyA trap cassette may be inserted into a genome as part of a transgenic construct via transposable-element-mediated transgenesis, or may be inserted directly into a modified endogenous locus via a genome engineering method such as homologous recombination or CRISPR.",
           "xrefs" : [ "FBC:GM", "FlyBase:FBrf0132344", "FlyBase:FBrf0206814", "PMID:9560157", "http://www.genetrap.org/tutorials/overview.html#vector" ]
         },
         "basicPropertyValues" : [ {
@@ -9976,7 +9935,7 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0005071",
       "meta" : {
         "definition" : {
-          "val" : "A gene trap cassette is designed to interrupt transcription of an endogenous locus upon integration of the cassette into the genome. The basic components of a gene trap cassette are a promoterless gene with an upstream splice acceptor site. Upon integration into an intron, splicing from the genomic splice donor site to the splice acceptor site in the cassette results in a transcriptional fusion containing the endogenous exon(s) upstream of the insertion fused to the gene sequence encoded by the cassette. Any open reading frame (ORF) encoded by the trap cassette gene may be translated from this transcriptional fusion either as a translational fusion with any ORF sequence encoded by the upstream exons, or if an internal ribosome entry site (IRES) or viral 2A-like peptide sequence (which promotes ribosome skipping) is present upstream of the gene trap ORF, it may be produced as a separate protein expressed under the control of the regulatory sequences of the endogenous locus. Gene trap insertions are usually mutagenic, disrupting the locus into which they have inserted, since termination sequences are usually present at the 3' end of the cassette, truncating the endogenous transcript. Depending on the nature of the gene encoded by the gene trap cassette, a gene trap insertion may directly report the expression pattern of the disrupted locus (e.g. if it encodes a reporter enzyme or fluorescent protein), or it may be used to drive expression of any gene of interest in the pattern of the trapped locus (e.g. if it is a driver that forms part of a binary expression system). A gene trap cassette may be inserted into a genome as part of a transgenic contruct via transposable-element-mediated transgenesis, or may be inserted directly into a modified endogenous locus via a genome engineering method such as homologous recombination or CRISPR.",
+          "val" : "A gene trap cassette is designed to interrupt transcription of an endogenous locus upon integration of the cassette into the genome. The basic components of a gene trap cassette are a promoterless gene with an upstream splice acceptor site. Upon integration into an intron, splicing from the genomic splice donor site to the splice acceptor site in the cassette results in a transcriptional fusion containing the endogenous exon(s) upstream of the insertion fused to the gene sequence encoded by the cassette. Any open reading frame (ORF) encoded by the trap cassette gene may be translated from this transcriptional fusion either as a translational fusion with any ORF sequence encoded by the upstream exons, or if an internal ribosome entry site (IRES) or viral 2A-like peptide sequence (which promotes ribosome skipping) is present upstream of the gene trap ORF, it may be produced as a separate protein expressed under the control of the regulatory sequences of the endogenous locus. Gene trap insertions are usually mutagenic, disrupting the locus into which they have inserted, since termination sequences are usually present at the 3' end of the cassette, truncating the endogenous transcript. Depending on the nature of the gene encoded by the gene trap cassette, a gene trap insertion may directly report the expression pattern of the disrupted locus (e.g. if it encodes a reporter enzyme or fluorescent protein), or it may be used to drive expression of any gene of interest in the pattern of the trapped locus (e.g. if it is a driver that forms part of a binary expression system). A gene trap cassette may be inserted into a genome as part of a transgenic construct via transposable-element-mediated transgenesis, or may be inserted directly into a modified endogenous locus via a genome engineering method such as homologous recombination or CRISPR.",
           "xrefs" : [ "FBC:GM", "PMID:10899970", "http://www.genetrap.org/tutorials/overview.html#vector" ]
         },
         "xrefs" : [ {
@@ -11233,7 +11192,7 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0005069",
       "meta" : {
         "definition" : {
-          "val" : "An enhancer trap cassette is designed to report or utilize the expression of endogenous enhancer elements upon integration of the cassette into the genome. The basic components of an enhancer trap cassette are a minimal promoter element fused upstream of a gene. Upon integration into the genome, a neighboring genomic enhancer may activate expression of the gene encoded by the enhancer trap cassette. Depending on the nature of this gene, the insertion may directly report the expression pattern of the 'trapped' enhancer (e.g. if the gene encodes a reporter enzyme or fluorescent protein), or it may be used to drive expression of any gene of interest (e.g. if the gene encodes a driver that forms part of a binary expression system). An enhancer trap cassette may be inserted into a genome as part of a transgenic contruct via transposable-element-mediated transgenesis, or may be inserted directly into a modified endogenous locus via a genome engineering method such as homologous recombination or CRISPR. An enhancer trap insertion can be mutagenic, disrupting the function of an endogenous locus, depending on the particular insertion site.",
+          "val" : "An enhancer trap cassette is designed to report or utilize the expression of endogenous enhancer elements upon integration of the cassette into the genome. The basic components of an enhancer trap cassette are a minimal promoter element fused upstream of a gene. Upon integration into the genome, a neighboring genomic enhancer may activate expression of the gene encoded by the enhancer trap cassette. Depending on the nature of this gene, the insertion may directly report the expression pattern of the 'trapped' enhancer (e.g. if the gene encodes a reporter enzyme or fluorescent protein), or it may be used to drive expression of any gene of interest (e.g. if the gene encodes a driver that forms part of a binary expression system). An enhancer trap cassette may be inserted into a genome as part of a transgenic construct via transposable-element-mediated transgenesis, or may be inserted directly into a modified endogenous locus via a genome engineering method such as homologous recombination or CRISPR. An enhancer trap insertion can be mutagenic, disrupting the function of an endogenous locus, depending on the particular insertion site.",
           "xrefs" : [ "FBC:GM", "FlyBase:FBrf0128252", "FlyBase:FBrf0216478", "PMID:10899970" ]
         },
         "xrefs" : [ {
@@ -15571,7 +15530,7 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000399",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in courtship behavior (GO:0007619). 'courtship behavior' is defined as: 'The behavioral interactions between organisms for the purpose of attracting sexual partners.'",
+          "val" : "Phenotype that is a defect in courtship behavior (GO:0007619). 'courtship behavior' is defined as: 'The behavior of an organism for the purpose of attracting sexual partners.'",
           "xrefs" : [ "FBC:DOS", "GOC:ai", "GOC:dph" ]
         },
         "basicPropertyValues" : [ {
@@ -16075,7 +16034,7 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000375",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a reduction in the proportion of fertilized eggs produced to, but only to > 50% of wild-type.",
+          "val" : "Phenotype that is a reduction in the proportion of fertilized eggs produced, but only to > 50% of wild-type.",
           "xrefs" : [ "FBC:DOS" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
@@ -17334,7 +17293,7 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "temporal  qualifier"
+      "lbl" : "temporal qualifier"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000177",
       "meta" : {
@@ -20201,6 +20160,14 @@
       "type" : "CLASS",
       "lbl" : "heat sensitive amorphic allele - genetic evidence"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "meta" : {
+        "definition" : {
+          "val" : "Q1 has_part Q2 if and only if: every instance of Q1 is a quality_of an entity that has_quality some Q2.",
+          "xrefs" : [ "PATOC:CJM" ]
+        }
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000500",
       "meta" : {
         "definition" : {
@@ -20757,7 +20724,7 @@
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
-          "val" : "May be used as a qualifier for gene  or transgene expression or phenotype.  Note - its use does not imply expression (of gene or phenotype) exclusively in virgin females."
+          "val" : "May be used as a qualifier for gene  or transgene expression or phenotype. Note - its use does not imply expression (of gene or phenotype) exclusively in virgin females."
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2011-04-21T01:10:32Z"
@@ -20785,11 +20752,11 @@
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "sex_qualifier"
         }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
+          "val" : "May be used as a qualifier for gene  or transgene expression or phenotype. Note - its use does not imply expression (of gene or phenotype) exclusively in mated females."
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "djs93"
-        }, {
-          "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
-          "val" : "May be used as a qualifier for gene  or transgene expression or phenotype.  Note - its use does not imply expression (of gene or phenotype) exclusively in mated females."
         } ]
       },
       "type" : "CLASS",
@@ -20803,7 +20770,7 @@
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
-          "val" : "May be used as a qualifier for gene  or transgene expression or phenotype.  Note - its use does not imply expression  (of gene or phenotype) exclusively in virgin males."
+          "val" : "May be used as a qualifier for gene  or transgene expression or phenotype. Note - its use does not imply expression  (of gene or phenotype) exclusively in virgin males."
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "sex_qualifier"
@@ -20826,7 +20793,7 @@
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
-          "val" : "May be used as a qualifier for gene  or transgene expression or phenotype.  Note - its use does not imply expression  (of gene or phenotype) exclusively in mated females."
+          "val" : "May be used as a qualifier for gene  or transgene expression or phenotype. Note - its use does not imply expression  (of gene or phenotype) exclusively in mated females."
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2011-04-21T01:11:21Z"
@@ -21040,6 +21007,19 @@
       },
       "type" : "CLASS",
       "lbl" : "virgin female limited"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000062",
+      "meta" : {
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "takes place after",
+          "xrefs" : [ "Allen:precedes" ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "is preceded by",
+          "xrefs" : [ "SIO:000249" ]
+        } ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000731",
       "meta" : {
@@ -24086,13 +24066,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000486",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000483"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000474",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000470"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000486",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000483"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0005079",
       "pred" : "is_a",
@@ -24206,13 +24186,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000526"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000714",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000309"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0006001",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000714",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000309"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000757",
       "pred" : "is_a",
@@ -24241,10 +24221,6 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0005021",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0005004"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/RO_0000052",
-      "pred" : "subPropertyOf",
-      "obj" : "http://purl.obolibrary.org/obo/RO_0002314"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0002009",
       "pred" : "is_a",
@@ -25022,13 +24998,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0005044"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000779",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000749"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000535",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000526"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000779",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000749"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0002005",
       "pred" : "is_a",
@@ -25274,13 +25250,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000492"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000241",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003226",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003222"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000241",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000398",
       "pred" : "is_a",
@@ -25654,13 +25630,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000553"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000733",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000307"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000357",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000733",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000307"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000314",
       "pred" : "is_a",
@@ -25742,10 +25718,6 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000074"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0002004",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0000052",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0006003"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003228",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003222"
@@ -25790,13 +25762,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000074"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003030",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003029"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000653",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000052"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003030",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003029"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000417",
       "pred" : "is_a",
@@ -26018,13 +25990,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003222"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000275",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000271",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000274"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000275",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003214",
       "pred" : "is_a",
@@ -26130,13 +26102,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000541"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000737",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000288"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0002037",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0002041"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000737",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000288"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000554",
       "pred" : "is_a",
@@ -26226,13 +26198,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0002013",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0002022"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0002014",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0002012"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0002013",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0002022"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000135",
       "pred" : "is_a",
@@ -26270,13 +26242,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003153",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003146"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000413",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003153",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003146"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000491",
       "pred" : "is_a",
@@ -26322,13 +26294,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000074"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0005051",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0005001"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003215",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003240"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0005051",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0005001"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0002012",
       "pred" : "is_a",
@@ -26430,13 +26402,13 @@
       "pred" : "http://purl.obolibrary.org/obo/fbcv#conditionality",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000311"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000762",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000750"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000761",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000760"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000762",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000750"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0007028",
       "pred" : "is_a",
@@ -26862,10 +26834,6 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0005068"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000485",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003020"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003011",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000013"
@@ -26873,6 +26841,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000274",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000485",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003020"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000439",
       "pred" : "is_a",
@@ -27086,13 +27058,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000714"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000359",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000709"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000391",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000389"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000359",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000709"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003144",
       "pred" : "is_a",
@@ -27330,13 +27302,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0005001"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000712",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000710"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000270",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000712",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000710"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000435",
       "pred" : "is_a",
@@ -27610,13 +27582,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0005001"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000736",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000746"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000793",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000176"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000736",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000746"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000361",
       "pred" : "is_a",
@@ -27664,7 +27636,7 @@
       "xrefs" : [ ],
       "basicPropertyValues" : [ {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#date",
-        "val" : "19:09:2019 08:02"
+        "val" : "12:11:2019 12:56"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#default-namespace",
         "val" : "FlyBase miscellaneous CV"
@@ -27672,14 +27644,11 @@
         "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion",
         "val" : "1.2"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/fbcv/releases/2019-09-19/fbcv-simple.json"
+      "version" : "http://purl.obolibrary.org/obo/fbcv/releases/2019-11-12/fbcv-simple.json"
     },
     "equivalentNodesSets" : [ ],
     "logicalDefinitionAxioms" : [ ],
     "domainRangeAxioms" : [ ],
-    "propertyChainAxioms" : [ {
-      "predicateId" : "http://purl.obolibrary.org/obo/RO_0002314",
-      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0000052", "http://purl.obolibrary.org/obo/BFO_0000050" ]
-    } ]
+    "propertyChainAxioms" : [ ]
   } ]
 }
