@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: releases/2019-09-19
-date: 19:09:2019 08:00
+data-version: releases/2019-11-12
+date: 12:11:2019 12:53
 subsetdef: 1_STAR "Preliminary entries"
 subsetdef: 2_STAR "Annotated by 3rd party"
 subsetdef: 3_STAR "Manually annotated by ChEBI Team"
@@ -15594,7 +15594,7 @@ is_a: FBcv:0000000 ! FlyBase CV
 id: FBcv:0000006
 name: male semi-fertile
 namespace: phenotypic_class
-def: "Any male semi-fertile (PATO:0001761) that inheres in some organism (FBbt:00000001)." []
+def: "Phenotype of males that is a reduction in the proportion of fertilized eggs produced, but only to > 50% of wild-type." []
 is_a: FBcv:0000375 ! semi-fertile
 is_a: FBcv:0000376 ! male fertile
 
@@ -15602,7 +15602,7 @@ is_a: FBcv:0000376 ! male fertile
 id: FBcv:0000007
 name: female semi-fertile
 namespace: phenotypic_class
-def: "Any female semi-fertile (PATO:0001760) that inheres in some organism (FBbt:00000001)." []
+def: "Phenotype of females that is a reduction in the proportion of fertilized eggs produced, but only to > 50% of wild-type." []
 is_a: FBcv:0000375 ! semi-fertile
 is_a: FBcv:0000377 ! female fertile
 
@@ -15874,7 +15874,7 @@ is_a: FBcv:0000038 ! relative spatial qualifier
 id: FBcv:0000046
 name: precursor
 namespace: temporal_qualifier
-is_a: FBcv:0000176 ! temporal  qualifier
+is_a: FBcv:0000176 ! temporal qualifier
 
 [Term]
 id: FBcv:0000047
@@ -16767,7 +16767,7 @@ is_obsolete: true
 
 [Term]
 id: FBcv:0000176
-name: temporal  qualifier
+name: temporal qualifier
 namespace: temporal_qualifier
 subset: do_not_annotate
 is_a: FBcv:0000005 ! qualifier
@@ -18248,7 +18248,7 @@ is_a: FBcv:0000347 ! phenotypic class
 id: FBcv:0000375
 name: semi-fertile
 namespace: phenotypic_class
-def: "Phenotype that is a reduction in the proportion of fertilized eggs produced to, but only to > 50% of wild-type." [FBC:DOS]
+def: "Phenotype that is a reduction in the proportion of fertilized eggs produced, but only to > 50% of wild-type." [FBC:DOS]
 subset: fbcvsubset_mgiribbons
 is_a: FBcv:0000374 ! fertile
 is_a: FBcv:0001347 ! phenotype
@@ -18442,7 +18442,7 @@ is_a: FBcv:0000387 ! behavior defective
 id: FBcv:0000399
 name: courtship behavior defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in courtship behavior (GO:0007619). 'courtship behavior' is defined as: 'The behavioral interactions between organisms for the purpose of attracting sexual partners.'" [FBC:DOS, GOC:ai, GOC:dph]
+def: "Phenotype that is a defect in courtship behavior (GO:0007619). 'courtship behavior' is defined as: 'The behavior of an organism for the purpose of attracting sexual partners.'" [FBC:DOS, GOC:ai, GOC:dph]
 is_a: FBcv:0000721 ! mating behavior defective
 
 [Term]
@@ -21297,7 +21297,7 @@ id: FBcv:0000726
 name: virgin female
 namespace: sex_qualifier
 def: "Expressed in virgin females." [FBC:DOS]
-comment: May be used as a qualifier for gene  or transgene expression or phenotype.  Note - its use does not imply expression (of gene or phenotype) exclusively in virgin females.
+comment: May be used as a qualifier for gene  or transgene expression or phenotype. Note - its use does not imply expression (of gene or phenotype) exclusively in virgin females.
 is_a: FBcv:0000334 ! female
 created_by: djs93
 creation_date: 2011-04-21T01:10:32Z
@@ -21307,7 +21307,7 @@ id: FBcv:0000727
 name: mated female
 namespace: sex_qualifier
 def: "Expressed in mated females." [FBC:DOS]
-comment: May be used as a qualifier for gene  or transgene expression or phenotype.  Note - its use does not imply expression (of gene or phenotype) exclusively in mated females.
+comment: May be used as a qualifier for gene  or transgene expression or phenotype. Note - its use does not imply expression (of gene or phenotype) exclusively in mated females.
 is_a: FBcv:0000334 ! female
 created_by: djs93
 creation_date: 2011-04-21T01:10:49Z
@@ -21317,7 +21317,7 @@ id: FBcv:0000728
 name: virgin male
 namespace: sex_qualifier
 def: "Expressed in virgin males." [FBC:DOS]
-comment: May be used as a qualifier for gene  or transgene expression or phenotype.  Note - its use does not imply expression  (of gene or phenotype) exclusively in virgin males.
+comment: May be used as a qualifier for gene  or transgene expression or phenotype. Note - its use does not imply expression  (of gene or phenotype) exclusively in virgin males.
 is_a: FBcv:0000333 ! male
 created_by: djs93
 creation_date: 2011-04-21T01:11:13Z
@@ -21327,7 +21327,7 @@ id: FBcv:0000729
 name: mated male
 namespace: sex_qualifier
 def: "Expressed in mated males." [FBC:DOS]
-comment: May be used as a qualifier for gene  or transgene expression or phenotype.  Note - its use does not imply expression  (of gene or phenotype) exclusively in mated females.
+comment: May be used as a qualifier for gene  or transgene expression or phenotype. Note - its use does not imply expression  (of gene or phenotype) exclusively in mated females.
 is_a: FBcv:0000333 ! male
 created_by: djs93
 creation_date: 2011-04-21T01:11:21Z
@@ -22125,7 +22125,7 @@ id: FBcv:0000793
 name: progressive
 namespace: temporal_qualifier
 def: "An adult phenotype that becomes more severe with age." [FBC:DOS]
-is_a: FBcv:0000176 ! temporal  qualifier
+is_a: FBcv:0000176 ! temporal qualifier
 created_by: djs93
 creation_date: 2012-10-10T12:02:35Z
 
@@ -22328,7 +22328,6 @@ def: "A phenotype that is an increase in the rate of death in a population at an
 subset: fbcvsubset_mgiribbons
 subset: lethal_phase
 is_a: FBcv:0001347 ! phenotype
-relationship: inheres_in FBcv:0006003 ! population of Drosophila
 
 [Term]
 id: FBcv:0002005
@@ -25145,7 +25144,7 @@ creation_date: 2017-06-28T11:41:27Z
 id: FBcv:0005034
 name: signal sequence
 namespace: experimental_tool_descriptor
-def: "A peptide sequence that forms part of the protein product encoded by a transgenic locus or modified endogenous locus and which is used to target the tagged protein to the secretory pathway. This results in the protein either being secreted or inserted into a cellular membrane, depending on the presence of other specific sequences in the tagged protein.  The signal sequence must be fused to the N-terminal end of the tagged protein." [FBC:GM, http://en.wikipedia.org/wiki/Signal_peptide]
+def: "A peptide sequence that forms part of the protein product encoded by a transgenic locus or modified endogenous locus and which is used to target the tagged protein to the secretory pathway. This results in the protein either being secreted or inserted into a cellular membrane, depending on the presence of other specific sequences in the tagged protein. The signal sequence must be fused to the N-terminal end of the tagged protein." [FBC:GM, http://en.wikipedia.org/wiki/Signal_peptide]
 xref: SO:0000418
 is_a: FBcv:0005023 ! protein localization tag
 created_by: temj2
@@ -25475,7 +25474,7 @@ creation_date: 2017-12-13T13:17:30Z
 id: FBcv:0005069
 name: enhancer trap
 namespace: experimental_tool_descriptor
-def: "An enhancer trap cassette is designed to report or utilize the expression of endogenous enhancer elements upon integration of the cassette into the genome. The basic components of an enhancer trap cassette are a minimal promoter element fused upstream of a gene. Upon integration into the genome, a neighboring genomic enhancer may activate expression of the gene encoded by the enhancer trap cassette. Depending on the nature of this gene, the insertion may directly report the expression pattern of the 'trapped' enhancer (e.g. if the gene encodes a reporter enzyme or fluorescent protein), or it may be used to drive expression of any gene of interest (e.g. if the gene encodes a driver that forms part of a binary expression system). An enhancer trap cassette may be inserted into a genome as part of a transgenic contruct via transposable-element-mediated transgenesis, or may be inserted directly into a modified endogenous locus via a genome engineering method such as homologous recombination or CRISPR. An enhancer trap insertion can be mutagenic, disrupting the function of an endogenous locus, depending on the particular insertion site." [FBC:GM, FlyBase:FBrf0128252, FlyBase:FBrf0216478, PMID:10899970]
+def: "An enhancer trap cassette is designed to report or utilize the expression of endogenous enhancer elements upon integration of the cassette into the genome. The basic components of an enhancer trap cassette are a minimal promoter element fused upstream of a gene. Upon integration into the genome, a neighboring genomic enhancer may activate expression of the gene encoded by the enhancer trap cassette. Depending on the nature of this gene, the insertion may directly report the expression pattern of the 'trapped' enhancer (e.g. if the gene encodes a reporter enzyme or fluorescent protein), or it may be used to drive expression of any gene of interest (e.g. if the gene encodes a driver that forms part of a binary expression system). An enhancer trap cassette may be inserted into a genome as part of a transgenic construct via transposable-element-mediated transgenesis, or may be inserted directly into a modified endogenous locus via a genome engineering method such as homologous recombination or CRISPR. An enhancer trap insertion can be mutagenic, disrupting the function of an endogenous locus, depending on the particular insertion site." [FBC:GM, FlyBase:FBrf0128252, FlyBase:FBrf0216478, PMID:10899970]
 synonym: "enhancer detection tool" RELATED [FBC:GM]
 xref: SO:0001479
 is_a: FBcv:0005068 ! insertional mutagenesis tool
@@ -25495,7 +25494,7 @@ creation_date: 2017-12-13T13:17:30Z
 id: FBcv:0005071
 name: gene trap
 namespace: experimental_tool_descriptor
-def: "A gene trap cassette is designed to interrupt transcription of an endogenous locus upon integration of the cassette into the genome. The basic components of a gene trap cassette are a promoterless gene with an upstream splice acceptor site. Upon integration into an intron, splicing from the genomic splice donor site to the splice acceptor site in the cassette results in a transcriptional fusion containing the endogenous exon(s) upstream of the insertion fused to the gene sequence encoded by the cassette. Any open reading frame (ORF) encoded by the trap cassette gene may be translated from this transcriptional fusion either as a translational fusion with any ORF sequence encoded by the upstream exons, or if an internal ribosome entry site (IRES) or viral 2A-like peptide sequence (which promotes ribosome skipping) is present upstream of the gene trap ORF, it may be produced as a separate protein expressed under the control of the regulatory sequences of the endogenous locus. Gene trap insertions are usually mutagenic, disrupting the locus into which they have inserted, since termination sequences are usually present at the 3' end of the cassette, truncating the endogenous transcript. Depending on the nature of the gene encoded by the gene trap cassette, a gene trap insertion may directly report the expression pattern of the disrupted locus (e.g. if it encodes a reporter enzyme or fluorescent protein), or it may be used to drive expression of any gene of interest in the pattern of the trapped locus (e.g. if it is a driver that forms part of a binary expression system). A gene trap cassette may be inserted into a genome as part of a transgenic contruct via transposable-element-mediated transgenesis, or may be inserted directly into a modified endogenous locus via a genome engineering method such as homologous recombination or CRISPR." [FBC:GM, http://www.genetrap.org/tutorials/overview.html#vector, PMID:10899970]
+def: "A gene trap cassette is designed to interrupt transcription of an endogenous locus upon integration of the cassette into the genome. The basic components of a gene trap cassette are a promoterless gene with an upstream splice acceptor site. Upon integration into an intron, splicing from the genomic splice donor site to the splice acceptor site in the cassette results in a transcriptional fusion containing the endogenous exon(s) upstream of the insertion fused to the gene sequence encoded by the cassette. Any open reading frame (ORF) encoded by the trap cassette gene may be translated from this transcriptional fusion either as a translational fusion with any ORF sequence encoded by the upstream exons, or if an internal ribosome entry site (IRES) or viral 2A-like peptide sequence (which promotes ribosome skipping) is present upstream of the gene trap ORF, it may be produced as a separate protein expressed under the control of the regulatory sequences of the endogenous locus. Gene trap insertions are usually mutagenic, disrupting the locus into which they have inserted, since termination sequences are usually present at the 3' end of the cassette, truncating the endogenous transcript. Depending on the nature of the gene encoded by the gene trap cassette, a gene trap insertion may directly report the expression pattern of the disrupted locus (e.g. if it encodes a reporter enzyme or fluorescent protein), or it may be used to drive expression of any gene of interest in the pattern of the trapped locus (e.g. if it is a driver that forms part of a binary expression system). A gene trap cassette may be inserted into a genome as part of a transgenic construct via transposable-element-mediated transgenesis, or may be inserted directly into a modified endogenous locus via a genome engineering method such as homologous recombination or CRISPR." [FBC:GM, http://www.genetrap.org/tutorials/overview.html#vector, PMID:10899970]
 xref: SO:0001477
 is_a: FBcv:0005068 ! insertional mutagenesis tool
 created_by: temj2
@@ -25505,7 +25504,7 @@ creation_date: 2017-12-13T13:17:30Z
 id: FBcv:0005072
 name: polyA trap
 namespace: experimental_tool_descriptor
-def: "The basic components of a polyA trap cassette are a promoter fused to a gene sequence that lacks a polyadenylation (polyA) sequence but is followed by a splice donor sequence. If the cassette is integrated into the genome outside a gene, the mRNA produced by the polyA trap is not polyadenylated and is expected to be rapidly degraded. However, if the cassette is integrated into an intron, the promoter in the polyA trap will drive expression of a transcriptional fusion containing the polyA gene trap fused to any downstream exons. The downstream terminal exon can provide a polyA signal, allowing stable expression of the gene encoded by the polyA trap. polyA trap cassettes can be used to report the expression of genes that are not normally expressed, or are expressed at very low levels, or may be used as a marker of successful integration of an insertion into a transcription unit. A polyA trap cassette may be inserted into a genome as part of a transgenic contruct via transposable-element-mediated transgenesis, or may be inserted directly into a modified endogenous locus via a genome engineering method such as homologous recombination or CRISPR." [FBC:GM, FlyBase:FBrf0132344, FlyBase:FBrf0206814, http://www.genetrap.org/tutorials/overview.html#vector, PMID:9560157]
+def: "The basic components of a polyA trap cassette are a promoter fused to a gene sequence that lacks a polyadenylation (polyA) sequence but is followed by a splice donor sequence. If the cassette is integrated into the genome outside a gene, the mRNA produced by the polyA trap is not polyadenylated and is expected to be rapidly degraded. However, if the cassette is integrated into an intron, the promoter in the polyA trap will drive expression of a transcriptional fusion containing the polyA gene trap fused to any downstream exons. The downstream terminal exon can provide a polyA signal, allowing stable expression of the gene encoded by the polyA trap. polyA trap cassettes can be used to report the expression of genes that are not normally expressed, or are expressed at very low levels, or may be used as a marker of successful integration of an insertion into a transcription unit. A polyA trap cassette may be inserted into a genome as part of a transgenic construct via transposable-element-mediated transgenesis, or may be inserted directly into a modified endogenous locus via a genome engineering method such as homologous recombination or CRISPR." [FBC:GM, FlyBase:FBrf0132344, FlyBase:FBrf0206814, http://www.genetrap.org/tutorials/overview.html#vector, PMID:9560157]
 is_a: FBcv:0005068 ! insertional mutagenesis tool
 created_by: temj2
 creation_date: 2017-12-13T13:17:30Z
@@ -25541,7 +25540,7 @@ creation_date: 2017-12-13T13:17:30Z
 id: FBcv:0005076
 name: integrase
 namespace: experimental_tool_descriptor
-def: "An enzyme that mediates an exchange reaction between two DNA templates, resulting in integration of DNA from one of the templates into the other. An integrase binds a pair of compatible recognition sites (typically called attP and attB) which each contain a short integration core flanked by imperfect inverted repeats that are not identical. Exchange between the attP/attB pair results in the formation of hybrid sites (typically called attL and attR) that are no longer a substrate of the integrase. Thus the exchange reaction driven by an integrase is undirectional. Mutually exclusive pairs of recognition site have been engineered for some integrases. Integrases can be used to generate many different types of genetic modification, with the outcome being influenced by the relative orientation (direct or inverted), relative location and composition of the two recognition sites. The types of possible modification include deletion of DNA, generation of chromosomal rearrangements, integration of DNA into the genome, and replacement of genetic material with that from a donor plasmid using recombination-mediated cassette exchange (RMCE)." [FlyBase:FBrf0231034]
+def: "An enzyme that mediates an exchange reaction between two DNA templates, resulting in integration of DNA from one of the templates into the other. An integrase binds a pair of compatible recognition sites (typically called attP and attB) which each contain a short integration core flanked by imperfect inverted repeats that are not identical. Exchange between the attP/attB pair results in the formation of hybrid sites (typically called attL and attR) that are no longer a substrate of the integrase. Thus the exchange reaction driven by an integrase is unidirectional. Mutually exclusive pairs of recognition site have been engineered for some integrases. Integrases can be used to generate many different types of genetic modification, with the outcome being influenced by the relative orientation (direct or inverted), relative location and composition of the two recognition sites. The types of possible modification include deletion of DNA, generation of chromosomal rearrangements, integration of DNA into the genome, and replacement of genetic material with that from a donor plasmid using recombination-mediated cassette exchange (RMCE)." [FlyBase:FBrf0231034]
 subset: common_tool_use
 is_a: FBcv:0005075 ! genome engineering tool
 created_by: temj2
@@ -25572,7 +25571,7 @@ creation_date: 2017-12-13T13:17:30Z
 id: FBcv:0005079
 name: integrase target site
 namespace: experimental_tool_descriptor
-def: "A recognition site for an integrase, an enzyme that mediates an exchange reaction between two DNA templates, resulting in integration of DNA from one of the templates into the other. An integrase binds a pair of compatible recognition sites (typically called attP and attB) which each contain a short integration core flanked by imperfect inverted repeats that are not identical. Exchange between the attP/attB pair results in the formation of hybrid sites (typically called attL and attR) that are no longer a substrate of the integrase. Thus the exchange reaction driven by an integrase is undirectional. Mutually exclusive pairs of recognition site have been engineered for some integrases. Integrases can be used to generate many different types of genetic modification, with the outcome being influenced by the relative orientation (direct or inverted), relative location and composition of the two recognition sites. The types of possible modification include deletion of DNA, generation of chromosomal rearrangements, integration of DNA into the genome, and replacement of genetic material with that from a donor plasmid using recombination-mediated cassette exchange (RMCE)." [FlyBase:FBrf0231034]
+def: "A recognition site for an integrase, an enzyme that mediates an exchange reaction between two DNA templates, resulting in integration of DNA from one of the templates into the other. An integrase binds a pair of compatible recognition sites (typically called attP and attB) which each contain a short integration core flanked by imperfect inverted repeats that are not identical. Exchange between the attP/attB pair results in the formation of hybrid sites (typically called attL and attR) that are no longer a substrate of the integrase. Thus the exchange reaction driven by an integrase is unidirectional. Mutually exclusive pairs of recognition site have been engineered for some integrases. Integrases can be used to generate many different types of genetic modification, with the outcome being influenced by the relative orientation (direct or inverted), relative location and composition of the two recognition sites. The types of possible modification include deletion of DNA, generation of chromosomal rearrangements, integration of DNA into the genome, and replacement of genetic material with that from a donor plasmid using recombination-mediated cassette exchange (RMCE)." [FlyBase:FBrf0231034]
 is_a: FBcv:0005075 ! genome engineering tool
 created_by: temj2
 creation_date: 2017-12-13T13:17:30Z
@@ -26197,23 +26196,6 @@ property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 http://www.jbiomedsem.com/content/4/1/43 xsd:string
 
 [Typedef]
-id: BFO:0000062
-name: preceded by
-def: "x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point." []
-subset: ro-eco
-property_value: http://purl.org/dc/elements/1.1/source http://www.obofoundry.org/ro/#OBO_REL:preceded_by xsd:string
-property_value: IAO:0000111 "preceded by" xsd:string
-property_value: IAO:0000116 "An example is: translation preceded_by transcription; aging preceded_by development (not however death preceded_by aging). Where derives_from links classes of continuants, preceded_by links classes of processes. Clearly, however, these two relations are not independent of each other. Thus if cells of type C1 derive_from cells of type C, then any cell division involving an instance of C1 in a given lineage is preceded_by cellular processes involving an instance of C.    The assertion P preceded_by P1 tells us something about Ps in general: that is, it tells us something about what happened earlier, given what we know about what happened later. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be succeeded by some instance of P. Note that an assertion to the effect that P preceded_by P1 is rather weak; it tells us little about the relations between the underlying instances in virtue of which the preceded_by relation obtains. Typically we will be interested in stronger relations, for example in the relation immediately_preceded_by, or in relations which combine preceded_by with a condition to the effect that the corresponding instances of P and P1 share participants, or that their participants are connected by relations of derivation, or (as a first step along the road to a treatment of causality) that the one process in some way affects (for example, initiates or regulates) the other." xsd:string
-property_value: IAO:0000118 "is preceded by" xsd:string
-property_value: IAO:0000118 "preceded_by" xsd:string
-domain: BFO:0000003 ! occurrent
-range: BFO:0000003 ! occurrent
-holds_over_chain: part_of BFO:0000062
-is_transitive: true
-is_a: RO:0002086 ! ends after
-inverse_of: precedes ! precedes
-
-[Typedef]
 id: BFO:0000066
 name: occurs in
 def: "b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t" []
@@ -26403,7 +26385,7 @@ name: immediately preceded by
 comment: X immediately_preceded_by Y iff: end(X) simultaneous_with start(Y)
 property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
 property_value: IAO:0000118 "starts_at_end_of" xsd:string
-is_a: BFO:0000062 ! preceded by
+is_a: preceded_by ! preceded_by
 inverse_of: RO:0002090 ! immediately precedes
 
 [Typedef]
@@ -26428,6 +26410,7 @@ holds_over_chain: has_part part_of {http://purl.obolibrary.org/obo/RO_0002582="t
 holds_over_chain: has_part RO:0002131
 holds_over_chain: part_of part_of
 is_a: RO:0002323 ! mereotopologically related to
+transitive_over: part_of ! part_of
 expand_expression_to: "http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.obolibrary.org/obo/BFO_0000050 some ?Y)" []
 
 [Typedef]
@@ -26440,7 +26423,7 @@ property_value: IAO:0000116 "The definition of 'has component' is still under di
 property_value: IAO:0000232 "For use in recording has_part with a cardinality constraint, because OWL does not permit cardinality constraints to be used in combination with transitive object properties. In situations where you would want to say something like 'has part exactly 5 digit, you would instead use has_component exactly 5 digit." xsd:string
 property_value: RO:0001900 RO:0001901
 property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:Componency
-is_a: has_part ! has part
+is_a: has_part ! has_part
 
 [Typedef]
 id: RO:0002202
@@ -26575,7 +26558,7 @@ id: RO:0002222
 name: temporally related to
 comment: A relation that holds between two occurrents. This is a grouping relation that collects together all the Allen relations.
 subset: ro-eco
-property_value: http://purl.org/dc/elements/1.1/source https://docs.google.com/document/d/1kBv1ep_9g3sTR-SD3jqzFqhuwo9TPNF-l-9fUDbO6rM/edit?pli=1 xsd:anyURI
+property_value: http://purl.org/dc/terms/source https://docs.google.com/document/d/1kBv1ep_9g3sTR-SD3jqzFqhuwo9TPNF-l-9fUDbO6rM/edit?pli=1 xsd:anyURI
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 https://en.wikipedia.org/wiki/Allen%27s_interval_algebra
@@ -26665,7 +26648,7 @@ is_a: RO:0002384 ! has developmental potential involving
 id: RO:0002304
 name: causally upstream of, positive effect
 comment: holds between x and y if and only if x is causally upstream of y and the progression of x increases the frequency, rate or extent of y
-property_value: http://purl.org/dc/elements/1.1/creator "cjm" xsd:string
+property_value: http://purl.org/dc/terms/creator "cjm" xsd:string
 property_value: RO:0004049 RO:0002411
 is_a: RO:0002411 ! causally upstream of
 is_a: RO:0004047 ! causally upstream of or within, positive effect
@@ -26674,7 +26657,7 @@ is_a: RO:0004047 ! causally upstream of or within, positive effect
 id: RO:0002305
 name: causally upstream of, negative effect
 comment: holds between x and y if and only if x is causally upstream of y and the progression of x decreases the frequency, rate or extent of y
-property_value: http://purl.org/dc/elements/1.1/creator "cjm" xsd:string
+property_value: http://purl.org/dc/terms/creator "cjm" xsd:string
 property_value: RO:0004050 RO:0002411
 is_a: RO:0002411 ! causally upstream of
 is_a: RO:0004046 ! causally upstream of or within, negative effect
@@ -26730,7 +26713,7 @@ property_value: IAO:0000232 "This relation differs from the parent relation 'cap
 property_value: IAO:0000232 "This relation is currently used experimentally by the Gene Ontology Consortium. It may not be stable and may be obsoleted at some future time." xsd:string
 is_a: RO:0002215 ! capable of
 inverse_of: RO:0002333 ! enabled by
-transitive_over: has_part ! has part
+transitive_over: has_part ! has_part
 transitive_over: RO:0002017 ! has component activity
 
 [Typedef]
@@ -26875,7 +26858,7 @@ name: causally downstream of
 def: "inverse of upstream of" []
 property_value: IAO:0000114 IAO:0000428
 property_value: IAO:0000117 "Chris Mungall" xsd:string
-is_a: BFO:0000062 ! preceded by
+is_a: preceded_by ! preceded_by
 is_a: RO:0002427 ! causally downstream of or within
 inverse_of: RO:0002411 ! causally upstream of
 
@@ -27188,7 +27171,7 @@ property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000118 "contains" xsd:string
 property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/20226267 xsd:anyURI
 is_transitive: true
-is_a: has_part ! has part
+is_a: has_part ! has_part
 is_a: RO:0002522 ! bounds sequence of
 is_a: RO:0002526 ! overlaps sequence of
 inverse_of: RO:0002525 ! is subsequence of
@@ -27440,7 +27423,7 @@ def: "has member is a mereological relation between a collection and an item." [
 xref: RO:0002351
 property_value: IAO:0000119 "SIO" xsd:string
 property_value: RO:0001900 RO:0001901
-is_a: has_part ! has part
+is_a: has_part ! has_part
 
 [Typedef]
 id: has_parent_hydride
@@ -27452,9 +27435,18 @@ is_transitive: false
 [Typedef]
 id: has_part
 name: has part
+name: has_part
 namespace: chebi_ontology
+namespace: external
+namespace: protein
+namespace: quality
+namespace: relationship
+namespace: uberon
 def: "a core relation that holds between a whole and its part" []
+def: "Q1 has_part Q2 if and only if: every instance of Q1 is a quality_of an entity that has_quality some Q2." [PATOC:CJM]
+comment: We use the has_part relation to relate complex qualities to more primitive ones. A complex quality is a collection of qualities. The complex quality cannot exist without the sub-qualities. For example, the quality 'swollen' necessarily comes with the qualities of 'protruding' and 'increased size'.
 xref: BFO:0000051
+xref: OBO_REL:has_part
 property_value: IAO:0000111 "has part" xsd:string
 property_value: IAO:0000112 "my body has part my brain (continuant parthood, two material entities)" xsd:string
 property_value: IAO:0000112 "my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)" xsd:string
@@ -27463,6 +27455,7 @@ property_value: IAO:0000116 "Everything has itself as a part. Any part of any pa
 property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
 property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)\n\nA continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'." xsd:string
 property_value: IAO:0000118 "has_part" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/BFO
 property_value: RO:0001900 RO:0001901
 is_cyclic: false
 is_transitive: true
@@ -27489,8 +27482,6 @@ name: inheres in
 name: inheres_in
 namespace: fly_anatomy.ontology
 def: "a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence" []
-def: "A relationship between a dependent continuant, for example a quality such as color, and an independent continuant, such as an eye." []
-comment: Example red (PATO) inheres_in some eye (FBbt).
 xref: RO:0000052
 property_value: IAO:0000111 "inheres in" xsd:string
 property_value: IAO:0000112 "this fragility inheres in this vase" xsd:string
@@ -27572,7 +27563,34 @@ property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:PartO
 property_value: seeAlso http://www.obofoundry.org/ro/#OBO_REL:part_of xsd:string
 is_transitive: true
 is_a: RO:0002131 ! overlaps
-inverse_of: has_part ! has part
+inverse_of: has_part ! has_part
+
+[Typedef]
+id: preceded_by
+name: preceded by
+name: preceded_by
+namespace: relationship
+namespace: uberon
+def: "x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point." []
+def: "X preceded_by Y iff: end(Y) before_or_simultaneous_with start(X)" []
+subset: ro-eco
+synonym: "is preceded by" EXACT [SIO:000249]
+synonym: "takes place after" EXACT [Allen:precedes]
+xref: BFO:0000062
+xref: OBO_REL:preceded_by
+property_value: http://purl.org/dc/elements/1.1/source http://www.obofoundry.org/ro/#OBO_REL:preceded_by xsd:string
+property_value: IAO:0000111 "preceded by" xsd:string
+property_value: IAO:0000116 "An example is: translation preceded_by transcription; aging preceded_by development (not however death preceded_by aging). Where derives_from links classes of continuants, preceded_by links classes of processes. Clearly, however, these two relations are not independent of each other. Thus if cells of type C1 derive_from cells of type C, then any cell division involving an instance of C1 in a given lineage is preceded_by cellular processes involving an instance of C.    The assertion P preceded_by P1 tells us something about Ps in general: that is, it tells us something about what happened earlier, given what we know about what happened later. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be succeeded by some instance of P. Note that an assertion to the effect that P preceded_by P1 is rather weak; it tells us little about the relations between the underlying instances in virtue of which the preceded_by relation obtains. Typically we will be interested in stronger relations, for example in the relation immediately_preceded_by, or in relations which combine preceded_by with a condition to the effect that the corresponding instances of P and P1 share participants, or that their participants are connected by relations of derivation, or (as a first step along the road to a treatment of causality) that the one process in some way affects (for example, initiates or regulates) the other." xsd:string
+property_value: IAO:0000118 "is preceded by" xsd:string
+property_value: IAO:0000118 "preceded_by" xsd:string
+domain: BFO:0000003 ! occurrent
+range: BFO:0000003 ! occurrent
+holds_over_chain: part_of preceded_by
+is_transitive: true
+is_a: RO:0002086 ! ends after
+inverse_of: precedes ! precedes
+created_by: djs93
+creation_date: 2009-10-09T10:00:53Z
 
 [Typedef]
 id: precedes
@@ -27590,7 +27608,7 @@ is_a: RO:0002222 ! temporally related to
 
 [Typedef]
 id: substage_of
-name: substage of
+name: substage_of
 namespace: relationship
 comment: Creating this relation as a temporary fix, pending adding the axiom occurent_part_of subpropertyof happens_during to RO
 xref: FBdv:00018001
