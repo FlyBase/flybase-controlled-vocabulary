@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbcv/releases/2019-11-12/fbcv-base.owl
-date: 12:11:2019 12:54
+data-version: fbcv/releases/2019-11-27/fbcv-base.owl
+date: 27:11:2019 13:35
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -31,6 +31,14 @@ synonymtypedef: SMILES "SMILES"
 synonymtypedef: systematic_synonym "Systematic synonym" EXACT
 default-namespace: FlyBase miscellaneous CV
 ontology: fbcv/fbcv-base
+property_value: attributionURL http://dx.doi.org/10.1186/2041-1480-4-30 xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1373-1705 xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-7073-9172 xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-5948-3092 xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-0027-0858 xsd:string
+property_value: http://purl.org/dc/elements/1.1/description "A miscellaneous ontology of terms used for curation in FlyBase, including the DPO." xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "FlyBase Controlled Vocabulary (FBcv)" xsd:string
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/3.0/ xsd:string
 
 [Term]
 id: CHEBI:13941
@@ -2921,7 +2929,7 @@ id: FBcv:0000362
 name: increased cell number
 namespace: phenotypic_class
 def: "Phenotype that is an increase in the number of cells in a whole animal or in some specific organ, tissue or clone of cells compared to wild-type." [FBC:DOS]
-comment: This phenotype is not necessarily accompanied by overgrowth of a tissue - there may be more cells in an otherwise normal volume of tissue. It is not necessarily due to an increase in cell growth -it may be the result of an increase in the division rate at normal growth rates.  It may not even be due to an increase in the cell division rate - a reduced rate of cell death while the division rate is normal could also achieve it.
+comment: This phenotype is not necessarily accompanied by overgrowth of a tissue - there may be more cells in an otherwise normal volume of tissue. It is not necessarily due to an increase in cell growth -it may be the result of an increase in the division rate at normal growth rates. It may not even be due to an increase in the cell division rate - a reduced rate of cell death while the division rate is normal could also achieve it.
 is_a: FBcv:0000709 ! cell number defective
 
 [Term]
@@ -3139,7 +3147,7 @@ is_a: FBcv:0001347 ! phenotype
 id: FBcv:0000389
 name: paralytic
 namespace: phenotypic_class
-def: "Phenotype that is a disposition to paralysis under conditions that do not cause paralysis in a wild-type animal.  Paralysis is defined as an inability to exhibit `multicellular organismal movement` (GO:0050879)" [FBC:DOS]
+def: "Phenotype that is a disposition to paralysis under conditions that do not cause paralysis in a wild-type animal. Paralysis is defined as an inability to exhibit `multicellular organismal movement` (GO:0050879)" [FBC:DOS]
 subset: fbcvsubset_mgiribbons
 is_a: FBcv:0001347 ! phenotype
 
@@ -3395,7 +3403,7 @@ id: FBcv:0000421
 name: touch response defective
 namespace: phenotypic_class
 def: "Phenotype that is reduction in or loss of a stereotypical behavioral response to touch." [FlyBase:FBrf0073546]
-comment: This phenotype is commonly assayed by scoring larval avoidance responses following stroking of the thoracic segments (see Kernan et al., 1994).  On its own, this is not sufficient evidence for a defect in sensory perception of touch, as motor defects can also cause this phenotype.
+comment: This phenotype is commonly assayed by scoring larval avoidance responses following stroking of the thoracic segments (see Kernan et al., 1994). On its own, this is not sufficient evidence for a defect in sensory perception of touch, as motor defects can also cause this phenotype.
 synonym: "touch sensitivity defective" EXACT []
 is_a: FBcv:0000387 ! behavior defective
 
@@ -3997,7 +4005,7 @@ name: MRh12 induced male recombination
 namespace: origin_of_mutation
 def: "Mutation caused by a male recombination event induced by a male recombination factor which is present in chromosomes extracted from a population in Haifa, Israel." [FlyBase:FBrf0202435]
 synonym: "MRh12" RELATED []
-synonym: "mutation induced by  MRh12 male recombination" EXACT []
+synonym: "mutation induced by MRh12 male recombination" EXACT []
 is_a: FBcv:0000492 ! male recombination induced by dysgenesis
 
 [Term]
@@ -5883,7 +5891,7 @@ id: FBcv:0000726
 name: virgin female
 namespace: sex_qualifier
 def: "Expressed in virgin females." [FBC:DOS]
-comment: May be used as a qualifier for gene  or transgene expression or phenotype. Note - its use does not imply expression (of gene or phenotype) exclusively in virgin females.
+comment: May be used as a qualifier for gene or transgene expression or phenotype. Note - its use does not imply expression (of gene or phenotype) exclusively in virgin females.
 is_a: FBcv:0000334 ! female
 created_by: djs93
 creation_date: 2011-04-21T01:10:32Z
@@ -5903,7 +5911,7 @@ id: FBcv:0000728
 name: virgin male
 namespace: sex_qualifier
 def: "Expressed in virgin males." [FBC:DOS]
-comment: May be used as a qualifier for gene  or transgene expression or phenotype. Note - its use does not imply expression  (of gene or phenotype) exclusively in virgin males.
+comment: May be used as a qualifier for gene or transgene expression or phenotype. Note - its use does not imply expression (of gene or phenotype) exclusively in virgin males.
 is_a: FBcv:0000333 ! male
 created_by: djs93
 creation_date: 2011-04-21T01:11:13Z
@@ -5913,7 +5921,7 @@ id: FBcv:0000729
 name: mated male
 namespace: sex_qualifier
 def: "Expressed in mated males." [FBC:DOS]
-comment: May be used as a qualifier for gene  or transgene expression or phenotype. Note - its use does not imply expression  (of gene or phenotype) exclusively in mated females.
+comment: May be used as a qualifier for gene or transgene expression or phenotype. Note - its use does not imply expression (of gene or phenotype) exclusively in mated females.
 is_a: FBcv:0000333 ! male
 created_by: djs93
 creation_date: 2011-04-21T01:11:21Z
@@ -6682,7 +6690,7 @@ id: FBcv:0002000
 name: lethal - all die before end of P-stage
 namespace: phenotypic_class
 def: "A phenotype of a population that is the death of all animals in that population at some stage or stages prior to eclosion from the pupal case (the end of the P-stage)." [FBC:DOS]
-comment: As the P-Stage and the 'pharate adult stage' have the same end,  there is no need for a seprate term for 'lethal - all die before end of pharate adult stage.
+comment: As the P-Stage and the 'pharate adult stage' have the same end, there is no need for a separate term for 'lethal - all die before end of pharate adult stage.
 subset: lethal_phase
 synonym: "lethal - all die before end of pharate adult stage" EXACT []
 is_a: FBcv:0000351 ! lethal
@@ -6700,7 +6708,7 @@ id: FBcv:0002002
 name: lethal - all die before end of larval stage
 namespace: phenotypic_class
 def: "A phenotype of a population that is the death of all animals in that population at some stage or stages before the end of the larval stage." [FBC:DOS]
-comment: As the larval stage and third instar larval stage have the same end,  there is no need for a separate term for 'lethal - all die before end of third instar larval stage'.
+comment: As the larval stage and third instar larval stage have the same end, there is no need for a separate term for 'lethal - all die before end of third instar larval stage'.
 subset: lethal_phase
 synonym: "lethal - all die before end of third instar larval stage" EXACT []
 is_a: FBcv:0002026 ! lethal - all die before end of prepupal stage
@@ -7552,7 +7560,7 @@ creation_date: 2016-02-24T19:19:21Z
 
 [Term]
 id: FBcv:0003057
-name: DNAse-chip
+name: DNase-chip
 namespace: assay_type
 def: "An assay that characterizes the genome's DNase hypersensitivity using genome tiling array." [FBC:GD]
 is_a: FBcv:0003050 ! assay type
@@ -7561,7 +7569,7 @@ creation_date: 2016-02-24T19:19:21Z
 
 [Term]
 id: FBcv:0003058
-name: DNAse-Seq
+name: DNase-Seq
 namespace: assay_type
 def: "An assay that characterizes the genome's DNase hypersensitivity using high-throughput sequencing." [FBC:GD]
 is_a: FBcv:0003050 ! assay type
