@@ -206,7 +206,7 @@ The way QC now works for all four ontologies is this:
 # SOP For build of all FlyBase ontologies
 In order to create a release of all FlyBase ontologies, do the following:
 
-0. Update odk - docker pull obolibrary/odkfull
+0. Update odk - docker pull obolibrary/odkfull - only needed if makefiles updated
 1. FBDV
   1. Build (cd src/ontology; sh run_release.sh)
 	2. Push to branch
@@ -219,3 +219,7 @@ In order to create a release of all FlyBase ontologies, do the following:
   1. Same as FBDV
 4. FBCV
   1. Same as FBDV
+  
+# Important notes
+NEVER edit src/ontology/Makefile - this file is managed by the ODK and will be replaced when repo is upgraded.
+For changing the the pipeline, edit src/ontology/fbcv.Makefile - everything added here will override instructions in the other Makefile.

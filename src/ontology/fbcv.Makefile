@@ -214,8 +214,8 @@ tmp/auto_generated_definitions_sub.owl: tmp/merged-source-pre.owl tmp/auto_gener
 tmp/replaced_defs.txt:
 	cat tmp/auto_generated_definitions_seed_sub.txt tmp/auto_generated_definitions_seed_dot.txt | sort | uniq > $@
 
-pre_release: $(ONT)-edit.obo tmp/auto_generated_definitions_dot.owl tmp/auto_generated_definitions_sub.owl components/dpo-simple.owl
-	cp $(ONT)-edit.obo tmp/$(ONT)-edit-release.obo
+pre_release: $(SRC) tmp/auto_generated_definitions_dot.owl tmp/auto_generated_definitions_sub.owl components/dpo-simple.owl
+	cp $(SRC) tmp/$(ONT)-edit-release.obo
 	sed -i '/def[:] \"[.]\"/d' tmp/$(ONT)-edit-release.obo
 	sed -i '/sub_/d' tmp/$(ONT)-edit-release.obo
 	$(ROBOT) merge -i tmp/$(ONT)-edit-release.obo -i tmp/auto_generated_definitions_dot.owl -i tmp/auto_generated_definitions_sub.owl --collapse-import-closure false -o $(ONT)-edit-release.ofn && mv $(ONT)-edit-release.ofn $(ONT)-edit-release.owl
@@ -224,9 +224,9 @@ pre_release: $(ONT)-edit.obo tmp/auto_generated_definitions_dot.owl tmp/auto_gen
 post_release: flybase_controlled_vocabulary.obo reports/chado_load_check_simple.txt
 	cp flybase_controlled_vocabulary.obo ../..
 	
-test_remove: $(ONT)-edit.obo tmp/replaced_defs.txt
-	$(ROBOT) remove -i $(ONT)-edit.obo remove --term-file tmp/replaced_defs.txt --axioms annotation --trim false \ merge -i tmp/auto_generated_definitions_dot.owl -i tmp/auto_generated_definitions_sub.owl --collapse-import-closure false -o $(ONT)-edit-release.ofn && mv $(ONT)-edit-release.ofn $(ONT)-edit-release2.owl
-	diff $(ONT)-edit-release2.owl $(ONT)-edit-release.owl
+#test_remove: $(ONT)-edit.obo tmp/replaced_defs.txt
+#	$(ROBOT) remove -i $(ONT)-edit.obo remove --term-file tmp/replaced_defs.txt --axioms annotation --trim false \ merge -i tmp/auto_generated_definitions_dot.owl -i tmp/auto_generated_definitions_sub.owl --collapse-import-closure false -o $(ONT)-edit-release.ofn && mv $(ONT)-edit-release.ofn $(ONT)-edit-release2.owl
+#	diff $(ONT)-edit-release2.owl $(ONT)-edit-release.owl
 	
 ########################
 ##    TRAVIS       #####
@@ -251,5 +251,3 @@ flybase_qc.owl: odkversion obo_qc
 
 flybase_qc: flybase_qc.owl
 	$(ROBOT) reason --input $< --reasoner ELK  --equivalent-classes-allowed asserted-only --output test.owl && rm test.owl && echo "Success"
-
-
