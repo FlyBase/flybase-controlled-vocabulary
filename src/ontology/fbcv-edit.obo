@@ -32,14 +32,14 @@ import: http://purl.obolibrary.org/obo/fbcv/components/dpo-simple.owl
 import: http://purl.obolibrary.org/obo/fbcv/imports/chebi_import.owl
 import: http://purl.obolibrary.org/obo/fbcv/imports/ro_import.owl
 ontology: fbcv
-property_value: http://purl.org/dc/elements/1.1/description "A miscellaneous ontology of terms used for curation in FlyBase, including the DPO." xsd:string
-property_value: http://purl.org/dc/elements/1.1/title "FlyBase Controlled Vocabulary (FBcv)" xsd:string
-property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/3.0/ xsd:string
+property_value: attributionURL http://dx.doi.org/10.1186/2041-1480-4-30 xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1373-1705 xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-7073-9172 xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-5948-3092 xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-0027-0858 xsd:string
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1373-1705 xsd:string
-property_value: http://creativecommons.org/ns#attributionURL http://dx.doi.org/10.1186/2041-1480-4-30 xsd:string
+property_value: http://purl.org/dc/elements/1.1/description "A miscellaneous ontology of terms used for curation in FlyBase, including the DPO." xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "FlyBase Controlled Vocabulary (FBcv)" xsd:string
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/3.0/ xsd:string
 
 [Term]
 id: CHEBI:13941 ! carbamate
@@ -624,7 +624,7 @@ is_a: FBcv:0000038 ! relative spatial qualifier
 id: FBcv:0000046
 name: precursor
 namespace: temporal_qualifier
-is_a: FBcv:0000176 ! temporal  qualifier
+is_a: FBcv:0000176 ! temporal qualifier
 
 [Term]
 id: FBcv:0000047
@@ -1644,7 +1644,7 @@ is_a: FBcv:0000189 ! publication class
 id: FBcv:0000194
 name: biography
 namespace: pub_type
-def: "A work consisting of an account of the events, works, and achievements, personal and professional, during a person's life. This class includes articles on the activities and accomplishments of living persons as well as the presentation of an obituary." [http://www.nlm.nih.gov/cgi/mesh/2011/MB_cgi?view=expanded&field=uid&term=D019215]
+def: "A work consisting of an account of the events, works, and achievements, personal and professional, during a person's life. This class includes articles on the activities and accomplishments of living persons as well as the presentation of an obituary." [http://id.nlm.nih.gov/mesh/M0028621]
 xref: MeSH:D019215
 is_a: FBcv:0000189 ! publication class
 
@@ -5327,7 +5327,7 @@ id: FBcv:0000793
 name: progressive
 namespace: temporal_qualifier
 def: "An adult phenotype that becomes more severe with age." [FBC:DOS]
-is_a: FBcv:0000176 ! temporal  qualifier
+is_a: FBcv:0000176 ! temporal qualifier
 created_by: djs93
 creation_date: 2012-10-10T12:02:35Z
 
@@ -8746,6 +8746,14 @@ def: "An enzyme that catalyzes hydrolysis of DNA in a site-specific manner, havi
 is_a: FBcv:0005077 ! nuclease
 created_by: http://orcid.org/0000-0002-1373-1705
 creation_date: 2019-06-26T09:17:20Z
+
+[Term]
+id: FBcv:0007036
+name: lecture
+def: "Work consisting of speeches read or delivered before an audience or class, especially for instruction or to set forth some subject." [http://id.nlm.nih.gov/mesh/M0029016]
+is_a: FBcv:0000189 ! publication class
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2020-01-23T15:24:54Z
 
 [Term]
 id: FBcv:0010000
