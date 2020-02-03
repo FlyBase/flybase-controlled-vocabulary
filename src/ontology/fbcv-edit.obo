@@ -8760,6 +8760,47 @@ created_by: http://orcid.org/0000-0002-1373-1705
 creation_date: 2020-01-23T15:24:54Z
 
 [Term]
+id: FBcv:0007037
+name: antibody
+namespace: experimental_tool_descriptor
+def: "An immunoglobulin molecule having a specific amino acid sequence that gives each antibody the ability to adhere to and interact with the antigen that induced its synthesis and with molecules containing structures similar to that antigen. An antigen is any substance capable of inducing a specific immune response, including but not limited to toxins, bacterial proteins and viruses." [XCO:0000194]
+subset: common_tool_use
+xref: XCO:0000194
+is_a: FBcv:0007029 ! specific binding tool
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2020-01-24T08:44:55Z
+
+[Term]
+id: FBcv:0007039
+name: engineered antibody
+namespace: experimental_tool_descriptor
+def: "An antibody whose domain architecture has been engineered in vitro. An engineered antibody typically contains only a subset of the domains found in a naturally occurring antibody. In some cases, domains that are normally found in different chains of a naturally occurring antibody are synthesized as a single fusion protein." [FBC:GM]
+is_a: FBcv:0007037 ! antibody
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2020-02-03T11:36:12Z
+
+[Term]
+id: FBcv:0007040
+name: nanobody
+namespace: experimental_tool_descriptor
+def: "An engineered antibody consisting of the antigen-binding variable domain (VHH domain) of a camelid single-domain heavy chain antibody (HCab)." [FBC:GM, PMID:22886243, PMID:8502296, PMID:9323027]
+is_a: FBcv:0007039 ! engineered antibody
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2020-02-03T11:51:11Z
+
+[Term]
+id: FBcv:0007041
+name: single-chain variable fragment antibody
+namespace: experimental_tool_descriptor
+def: "An engineered antibody consisting of the heavy (VH) and light (VL) chains of an immunoglobulin, separated by a short flexible linker peptide and expressed as a single fusion protein." [FBC:GM, PMID:3045807]
+synonym: "scFv antibody" EXACT [FBC:GM]
+synonym: "sFv antibody" EXACT [PMID:3045807]
+synonym: "single-chain variable region fragment antibody" EXACT [PMID:3045807]
+is_a: FBcv:0007039 ! engineered antibody
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2020-02-03T12:25:24Z
+
+[Term]
 id: FBcv:0007038
 name: light conditional
 namespace: environmental_qualifier
