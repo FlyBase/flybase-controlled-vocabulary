@@ -8771,6 +8771,15 @@ created_by: http://orcid.org/0000-0002-1373-1705
 creation_date: 2020-01-24T08:44:55Z
 
 [Term]
+id: FBcv:0007038
+name: light conditional
+namespace: environmental_qualifier
+def: "Phenotype expressed only in the presence or absence of light, which may be white light or particular wavelength(s)." [FBC:CP]
+is_a: FBcv:0000309 ! conditional
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2020-01-24T09:10:41Z
+
+[Term]
 id: FBcv:0007039
 name: engineered antibody
 namespace: experimental_tool_descriptor
@@ -8801,13 +8810,24 @@ created_by: http://orcid.org/0000-0002-1373-1705
 creation_date: 2020-02-03T12:25:24Z
 
 [Term]
-id: FBcv:0007038
-name: light conditional
-namespace: environmental_qualifier
-def: "Phenotype expressed only in the presence or absence of light, which may be white light or particular wavelength(s)." [FBC:CP]
-is_a: FBcv:0000309 ! conditional
+id: FBcv:0007042
+name: RMCE target element
+namespace: experimental_tool_descriptor
+def: "An RMCE target element contains a region of DNA sequence flanked by a pair of target sites for a recombinase or an integrase, which are arranged such that this target sequence cassette can be replaced with donor sequence from a compatible RMCE donor element via recombination-mediated cassette exchange (RMCE). For RMCE mediated by a recombinase, the target cassette is flanked by two non-identical recombinase target sites that each carry a different mutation in the spacer sequence of the target site; this renders the two sites incompatible with each other. A compatible RMCE donor cassette is flanked by the same pair of non-identical sites; in the presence of recombinase, a double recombination event between the identical sites on the donor and target sequences results in replacement of the target cassette with the donor cassette. In the case of RMCE mediated by an integrase, the RMCE cassette is flanked by identical integrase target sites, while a compatible RMCE donor cassette is flanked by copies of the orthogonal integrase target site; in the presence of integrase, a double recombination event results in the target cassette being replaced with that of the donor cassette. In this case, if the flanking sites are in inverted orientation, replacement of the target cassette can occur in either direction." [FBC:GM, FlyBase:FBrf0231034, PMID:21445009, PMID:7947678]
+synonym: "recombination-mediated cassette exchange target element" EXACT []
+is_a: FBcv:0005075 ! genome engineering tool
 created_by: http://orcid.org/0000-0002-1373-1705
-creation_date: 2020-01-24T09:10:41Z
+creation_date: 2020-02-03T14:52:50Z
+
+[Term]
+id: FBcv:0007043
+name: RMCE donor element
+namespace: experimental_tool_descriptor
+def: "An RMCE donor element contains a region of DNA sequence flanked by a pair of target sites for a recombinase or an integrase, which are arranged such that this donor sequence cassette can be used to replace target sequence of a compatible RMCE target element via recombination-mediated cassette exchange (RMCE). For RMCE mediated by a recombinase, the target cassette is flanked by two non-identical recombinase target sites that each carry a different mutation in the spacer sequence of the target site; this renders the two sites incompatible with each other. A compatible RMCE donor cassette is flanked by the same pair of non-identical sites; in the presence of recombinase, a double recombination event between the identical sites on the donor and target sequences results in replacement of the target cassette with the donor cassette. In the case of RMCE mediated by an integrase, the RMCE cassette is flanked by identical integrase target sites, while a compatible RMCE donor cassette is flanked by copies of the orthogonal integrase target site; in the presence of integrase, a double recombination event results in the target cassette being replaced with that of the donor cassette. In this case, if the flanking sites are in inverted orientation, replacement of the target cassette can occur in either direction." [FBC:GM, FlyBase:FBrf0231034, PMID:21445009, PMID:7947678]
+synonym: "recombination-mediated cassette exchange donor element" EXACT []
+is_a: FBcv:0005075 ! genome engineering tool
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2020-02-03T15:00:41Z
 
 [Term]
 id: FBcv:0010000
