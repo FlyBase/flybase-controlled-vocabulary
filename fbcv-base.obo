@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbcv/releases/2019-11-27/fbcv-base.owl
-date: 27:11:2019 13:35
+data-version: fbcv/releases/2020-02-20/fbcv-base.owl
+date: 20:02:2020 15:08
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -341,9 +341,10 @@ is_obsolete: true
 
 [Term]
 id: FBcv:0000002
-name: thermotaxis behavior defective
+name: thermotaxis defective
 namespace: phenotypic_class
 def: "Phenotype that is a defect in thermotaxis (GO:0043052). 'thermotaxis' is defined as: 'The directed movement of a motile cell or organism in response to a temperature gradient. Movement may be towards either a higher or lower temperature.'" [FBC:DOS, GOC:cab1, WB_REF:cgc467]
+synonym: "thermotaxis behavior defective" EXACT []
 synonym: "thermotaxis behaviour defective" EXACT []
 is_a: FBcv:0000683 ! temperature response defective
 
@@ -467,19 +468,19 @@ is_obsolete: true
 [Term]
 id: FBcv:0000018
 name: penetrance complete
-def: "Penetrance is the fraction of individuals of a given genotype who exhibit the phenotype associated with that genotype.  Penetrance is complete when all the individuals of a given genotype exhibit the phenotype associated with that genotype." [ISBN:978-0-7167-3520-5]
+def: "Penetrance is the fraction of individuals of a given genotype who exhibit the phenotype associated with that genotype. Penetrance is complete when all the individuals of a given genotype exhibit the phenotype associated with that genotype." [ISBN:978-0-7167-3520-5]
 is_obsolete: true
 
 [Term]
 id: FBcv:0000019
 name: penetrance incomplete
-def: "Penetrance is the fraction of individuals of a given genotype who exhibit the phenotype associated with that genotype.  Penetrance is incomplete when only some the individuals of a given genotype exhibit the phenotype associated with that genotype." [ISBN:978-0-7167-3520-5]
+def: "Penetrance is the fraction of individuals of a given genotype who exhibit the phenotype associated with that genotype. Penetrance is incomplete when only some the individuals of a given genotype exhibit the phenotype associated with that genotype." [ISBN:978-0-7167-3520-5]
 is_obsolete: true
 
 [Term]
 id: FBcv:0000020
 name: penetrance percent
-def: "Penetrance is the fraction of individuals of a given genotype who exhibit the phenotype associated with that genotype.  Penetrance is incomplete when only a percentage of the individuals of a given genotype exhibit the phenotype associated with that genotype." [ISBN:978-0-7167-3520-5]
+def: "Penetrance is the fraction of individuals of a given genotype who exhibit the phenotype associated with that genotype. Penetrance is incomplete when only a percentage of the individuals of a given genotype exhibit the phenotype associated with that genotype." [ISBN:978-0-7167-3520-5]
 comment: This term should be modified by a % value. This is not currently possible in FlyBase curation.
 is_obsolete: true
 
@@ -492,25 +493,25 @@ is_obsolete: true
 [Term]
 id: FBcv:0000022
 name: expressivity complete
-def: "Expressivity measures the extent to which a given genotype is expressed at the phenotypic level.  Expressivity is complete when an individual of a given genotype expresses the full phenotype associated with that genotype." [ISBN:978-0-7167-3520-5]
+def: "Expressivity measures the extent to which a given genotype is expressed at the phenotypic level. Expressivity is complete when an individual of a given genotype expresses the full phenotype associated with that genotype." [ISBN:978-0-7167-3520-5]
 is_obsolete: true
 
 [Term]
 id: FBcv:0000023
 name: expressivity incomplete
-def: "Expressivity measures the extent to which a given genotype is expressed at the phenotypic level.  Expressivity is incomplete when an individual of a given genotype expresses only partially the phenotype associated with that genotype." [ISBN:978-0-7167-3520-5]
+def: "Expressivity measures the extent to which a given genotype is expressed at the phenotypic level. Expressivity is incomplete when an individual of a given genotype expresses only partially the phenotype associated with that genotype." [ISBN:978-0-7167-3520-5]
 is_obsolete: true
 
 [Term]
 id: FBcv:0000024
 name: expressivity high
-def: "Expressivity measures the extent to which a given genotype is expressed at the phenotypic level.  \"High expressivity\" conveys that while expressivity is not complete, the phenotype expressed is approaching that of complete expressivity." [ISBN:978-0-7167-3520-5]
+def: "Expressivity measures the extent to which a given genotype is expressed at the phenotypic level. 'High expressivity' conveys that while expressivity is not complete, the phenotype expressed is approaching that of complete expressivity." [ISBN:978-0-7167-3520-5]
 is_obsolete: true
 
 [Term]
 id: FBcv:0000025
 name: expressivity low
-def: "Expressivity measures the extent to which a given genotype is expressed at the phenotypic level.  \"Low expressivity\" conveys that phenotype expressed is a much reduced version compared to complete expressivity." [ISBN:978-0-7167-3520-5]
+def: "Expressivity measures the extent to which a given genotype is expressed at the phenotypic level. 'Low expressivity' conveys that phenotype expressed is a much reduced version compared to complete expressivity." [ISBN:978-0-7167-3520-5]
 is_obsolete: true
 
 [Term]
@@ -1643,7 +1644,7 @@ is_a: FBcv:0000188 ! publication descriptor
 id: FBcv:0000190
 name: abstract
 namespace: pub_type
-def: "An individual abstract of a presentation at a meeting, congress, conference, symposium, colloquium, seminar, workshop, round table, or other professional gathering." [http://www.nlm.nih.gov/cgi/mesh/2011/MB_cgi?view=expanded&field=uid&term=D016416]
+def: "An individual abstract of a presentation at a meeting, congress, conference, symposium, colloquium, seminar, workshop, round table, or other professional gathering." [MeSH:D016416]
 synonym: "Meeting Abstracts" EXACT [MeSH:D016416]
 xref: MeSH:D016416
 is_a: FBcv:0000189 ! publication class
@@ -1659,7 +1660,7 @@ is_obsolete: true
 id: FBcv:0000192
 name: autobiography
 namespace: pub_type
-def: "A work consisting of a self-described account." [http://www.nlm.nih.gov/cgi/mesh/2011/MB_cgi?view=expanded&field=uid&term=D020493]
+def: "A work consisting of a self-described account." [MeSH:D020493]
 xref: MeSH:D020493
 is_a: FBcv:0000194 ! biography
 
@@ -1667,7 +1668,7 @@ is_a: FBcv:0000194 ! biography
 id: FBcv:0000193
 name: bibliographic list
 namespace: pub_type
-def: "A work consisting of a list of books, articles, documents, publications, and other items, usually on a single subject or related subjects." [http://www.nlm.nih.gov/cgi/mesh/2011/MB_cgi?view=expanded&field=uid&term=D016417]
+def: "A work consisting of a list of books, articles, documents, publications, and other items, usually on a single subject or related subjects." [MeSH:D016417]
 synonym: "Bibliography" EXACT [MeSH:D016417]
 xref: MeSH:D016417
 is_a: FBcv:0000189 ! publication class
@@ -1676,7 +1677,7 @@ is_a: FBcv:0000189 ! publication class
 id: FBcv:0000194
 name: biography
 namespace: pub_type
-def: "A work consisting of an account of the events, works, and achievements, personal and professional, during a person's life. This class includes articles on the activities and accomplishments of living persons as well as the presentation of an obituary." [http://www.nlm.nih.gov/cgi/mesh/2011/MB_cgi?view=expanded&field=uid&term=D019215]
+def: "A work consisting of an account of the events, works, and achievements, personal and professional, during a person's life. This class includes articles on the activities and accomplishments of living persons as well as the presentation of an obituary." [MeSH:D019215]
 xref: MeSH:D019215
 is_a: FBcv:0000189 ! publication class
 
@@ -1699,7 +1700,7 @@ is_obsolete: true
 id: FBcv:0000197
 name: book review
 namespace: pub_type
-def: "A work consisting of a critical analysis of one or more books or other monographic works." [http://www.nlm.nih.gov/cgi/mesh/2011/MB_cgi?view=expanded&field=uid&term=D022921]
+def: "A work consisting of a critical analysis of one or more books or other monographic works." [MeSH:D022921]
 synonym: "Book Reviews" EXACT [MeSH:D022921]
 xref: MeSH:D022921
 is_a: FBcv:0000189 ! publication class
@@ -1715,7 +1716,7 @@ is_obsolete: true
 id: FBcv:0000199
 name: conference report
 namespace: pub_type
-def: "The published records of the papers delivered at or issued on the occasion of individual congresses, symposia, and meetings; abstracts of papers delivered at such congresses; reports of the officers and delegates of such congresses; combinations of the foregoing; or proceedings of the conference of a society if they are not limited to matters of internal organization." [http://www.nlm.nih.gov/cgi/mesh/2011/MB_cgi?view=expanded&field=uid&term=D016423]
+def: "The published records of the papers delivered at or issued on the occasion of individual congresses, symposia, and meetings; abstracts of papers delivered at such congresses; reports of the officers and delegates of such congresses; combinations of the foregoing; or proceedings of the conference of a society if they are not limited to matters of internal organization." [MeSH:D016423]
 comment: The definition is taken straight from the MeSH term Congresses, which PubMed uses to annotate both meeting reports written by attendees and conference abstract books. This term should therefore be used to index both of these two rather different artefacts.
 synonym: "conference proceedings" NARROW []
 synonym: "Congresses" EXACT [MeSH:D016423]
@@ -1748,7 +1749,7 @@ is_a: FBcv:0000789 ! sequence record
 id: FBcv:0000203
 name: erratum
 namespace: pub_type
-def: "A work consisting of an acknowledgement of an error, issued by a publisher, editor, or author." [http://www.nlm.nih.gov/cgi/mesh/2011/MB_cgi?view=expanded&field=uid&term=D016425]
+def: "A work consisting of an acknowledgement of an error, issued by a publisher, editor, or author." [MeSH:D016425]
 synonym: "correction" EXACT []
 synonym: "Corrigendum" EXACT [MeSH:D016425]
 synonym: "Published Erratum" EXACT [MeSH:D016425]
@@ -1767,7 +1768,7 @@ is_a: FBcv:0000189 ! publication class
 id: FBcv:0000205
 name: interview
 namespace: pub_type
-def: "A work consisting of a conversation with an individual regarding his or her background and other personal and professional details, opinions on specific subjects posed by the interviewer." [http://www.nlm.nih.gov/cgi/mesh/2011/MB_cgi?view=expanded&field=uid&term=D017203]
+def: "A work consisting of a conversation with an individual regarding his or her background and other personal and professional details, opinions on specific subjects posed by the interviewer." [MeSH:D017203]
 xref: MeSH:D017203
 is_a: FBcv:0000194 ! biography
 
@@ -1782,7 +1783,7 @@ is_obsolete: true
 id: FBcv:0000207
 name: letter
 namespace: pub_type
-def: "A work consisting of written or printed communication between individuals or between persons and representatives of corporate bodies. The correspondence may be personal or professional." [http://www.nlm.nih.gov/cgi/mesh/2011/MB_cgi?view=expanded&field=uid&term=D016422]
+def: "A work consisting of written or printed communication between individuals or between persons and representatives of corporate bodies. The correspondence may be personal or professional." [MeSH:D016422]
 comment: In medical and other scientific publications the letter is usually from one or more authors to the editor of the journal or book publishing the item being commented upon or discussed.
 xref: MeSH:D016422
 is_a: FBcv:0000189 ! publication class
@@ -1806,7 +1807,7 @@ is_a: FBcv:0000189 ! publication class
 id: FBcv:0000210
 name: note
 namespace: pub_type
-def: "A work consisting of a critical or explanatory note written to discuss, support, or dispute an article or other presentation previously published." [http://www.nlm.nih.gov/cgi/mesh/2011/MB_cgi?view=expanded&field=uid&term=D016420]
+def: "A work consisting of a critical or explanatory note written to discuss, support, or dispute an article or other presentation previously published." [MeSH:D016420]
 synonym: "Comment" EXACT [MeSH:D016420]
 xref: MeSH:D016420
 is_a: FBcv:0000189 ! publication class
@@ -1832,7 +1833,7 @@ is_a: FBcv:0000189 ! publication class
 id: FBcv:0000213
 name: patent
 namespace: pub_type
-def: "A work consisting of documents granted by a government giving exclusive rights to an inventor or assignee to manufacture, use, or sell an invention for a certain number of years." [http://www.nlm.nih.gov/cgi/mesh/2011/MB_cgi?view=expanded&field=uid&term=D020490]
+def: "A work consisting of documents granted by a government giving exclusive rights to an inventor or assignee to manufacture, use, or sell an invention for a certain number of years." [MeSH:D020490]
 xref: MeSH:D020490
 is_a: FBcv:0000189 ! publication class
 
@@ -1847,7 +1848,7 @@ is_a: FBcv:0000233 ! unpublished
 id: FBcv:0000215
 name: poem
 namespace: pub_type
-def: "A literary or oral work expressing meaning via symbolism and following formal or informal patterns." [http://www.nlm.nih.gov/cgi/mesh/2011/MB_cgi?view=expanded&field=uid&term=D055821]
+def: "A literary or oral work expressing meaning via symbolism and following formal or informal patterns." [MeSH:D055821]
 synonym: "poetry" EXACT [MeSH:D055821]
 xref: MeSH:D055821
 is_a: FBcv:0000189 ! publication class
@@ -1856,7 +1857,7 @@ is_a: FBcv:0000189 ! publication class
 id: FBcv:0000216
 name: poster
 namespace: pub_type
-def: "A work consisting of a single or multi-sheet notice made to attract attention to events, activities, causes, goods, or services. It is for posting, usually in a public place and is chiefly pictorial. It is intended to make an immediate impression from a distance." [http://www.nlm.nih.gov/cgi/mesh/2011/MB_cgi?view=expanded&field=uid&term=D019519]
+def: "A work consisting of a single or multi-sheet notice made to attract attention to events, activities, causes, goods, or services. It is for posting, usually in a public place and is chiefly pictorial. It is intended to make an immediate impression from a distance." [MeSH:D019519]
 comment: The class does not encompass poster presentations at conferences and meetings.
 xref: MeSH:D019519
 is_a: FBcv:0000189 ! publication class
@@ -1879,7 +1880,7 @@ is_obsolete: true
 id: FBcv:0000219
 name: retraction
 namespace: pub_type
-def: "A work consisting of a statement issued by one or more authors of an article or a book, withdrawing or disavowing acknowledgement of their participation in performing research or writing the results of their study." [http://www.nlm.nih.gov/cgi/mesh/2011/MB_cgi?view=expanded&field=uid&term=D016440]
+def: "A work consisting of a statement issued by one or more authors of an article or a book, withdrawing or disavowing acknowledgement of their participation in performing research or writing the results of their study." [MeSH:D016440]
 synonym: "Retraction of Publication" EXACT [MeSH:D016440]
 xref: MeSH:D016440
 is_a: FBcv:0000189 ! publication class
@@ -1888,7 +1889,7 @@ is_a: FBcv:0000189 ! publication class
 id: FBcv:0000220
 name: review
 namespace: pub_type
-def: "An article or book published after examination of published material on a subject." [http://www.nlm.nih.gov/cgi/mesh/2011/MB_cgi?view=expanded&field=uid&term=D016454]
+def: "An article or book published after examination of published material on a subject." [MeSH:D016454]
 comment: The reviews most often desired are reviews of the current literature, but a review of historical literature is also within the scope of this publication type.
 xref: MeSH:D016454
 is_a: FBcv:0000189 ! publication class
@@ -1919,7 +1920,7 @@ is_a: FBcv:0000189 ! publication class
 id: FBcv:0000224
 name: supplementary material
 namespace: pub_type
-def: "Supporting content or information, such as animation, datasets, multimedia files, video, movies, audio files, text files, or software, which is submitted for publication in an online journal or an online edition of a journal. This information may be referenced in the text of the article with a link to the supplementary data provided." [http://www.nlm.nih.gov/cgi/mesh/2011/MB_cgi?view=expanded&field=uid&term=D058537]
+def: "Supporting content or information, such as animation, datasets, multimedia files, video, movies, audio files, text files, or software, which is submitted for publication in an online journal or an online edition of a journal. This information may be referenced in the text of the article with a link to the supplementary data provided." [MeSH:D058537]
 synonym: "additional files" EXACT []
 synonym: "Electronic Supplementary Materials" EXACT [MeSH:D058537]
 synonym: "supplementary information" EXACT []
@@ -1952,7 +1953,7 @@ is_a: FBcv:0000189 ! publication class
 id: FBcv:0000228
 name: thesis
 namespace: pub_type
-def: "A work consisting of a formal presentation made usually to fulfill requirements for an academic degree." [http://www.nlm.nih.gov/cgi/mesh/2011/MB_cgi?view=expanded&field=uid&term=D019478]
+def: "A work consisting of a formal presentation made usually to fulfill requirements for an academic degree." [MeSH:D019478]
 synonym: "Academic Dissertations" EXACT [MeSH:D019478]
 xref: MeSH:D019478
 is_a: FBcv:0000189 ! publication class
@@ -1978,7 +1979,7 @@ replaced_by: FBcv:0000229
 id: FBcv:0000231
 name: white paper
 namespace: pub_type
-def: "A work consisting of a set of statements, directions, or principles presenting current or future rules or policy." [FBC:SM, http://www.nlm.nih.gov/cgi/mesh/2011/MB_cgi?view=expanded&field=uid&term=D016431]
+def: "A work consisting of a set of statements, directions, or principles presenting current or future rules or policy." [FBC:SM, MeSH:D016431]
 synonym: "Guideline" BROAD [MeSH:D016431]
 xref: MeSH:D016431
 is_a: FBcv:0000189 ! publication class
@@ -1992,7 +1993,7 @@ is_obsolete: true
 id: FBcv:0000233
 name: unpublished
 namespace: pub_type
-def: "A work that has not been formally published." [http://www.nlm.nih.gov/cgi/mesh/2011/MB_cgi?view=expanded&field=uid&term=D022902]
+def: "A work that has not been formally published." [MeSH:D022902]
 synonym: "privately distributed report" RELATED []
 synonym: "Unpublished Works" EXACT [MeSH:D022902]
 xref: MeSH:D022902
@@ -3217,7 +3218,7 @@ is_a: FBcv:0000387 ! behavior defective
 id: FBcv:0000398
 name: memory defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in memory (GO:0007613). 'memory' is defined as: 'The activities involved in the mental information processing system that receives (registers), modifies, stores, and retrieves informational stimuli. The main stages involved in the formation and retrieval of memory are encoding (processing of received information by acquisition), storage (building a permanent record of received information as a result of consolidation) and retrieval (calling back the stored information and use it in a suitable way to execute a given task).'" [FBC:DOS, GOC:curators, http://www.onelook.com/, ISBN:0582227089]
+def: "Phenotype that is a defect in memory (GO:0007613). 'memory' is defined as: 'The activities involved in the mental information processing system that receives (registers), modifies, stores, and retrieves informational stimuli. The main stages involved in the formation and retrieval of memory are encoding (processing of received information by acquisition), storage (building a permanent record of received information as a result of consolidation) and retrieval (calling back the stored information and use it in a suitable way to execute a given task).'" [FBC:DOS, GOC:curators, ISBN:0582227089]
 is_a: FBcv:0000387 ! behavior defective
 
 [Term]
@@ -3264,7 +3265,7 @@ is_a: FBcv:0000387 ! behavior defective
 id: FBcv:0000404
 name: smell perception defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in sensory perception of smell (GO:0007608). 'sensory perception of smell' is defined as: 'The series of events required for an organism to receive an olfactory stimulus, convert it to a molecular signal, and recognize and characterize the signal. Olfaction involves the detection of chemical composition of an organism's ambient medium by chemoreceptors. This is a neurological process.'" [FBC:DOS, GOC:ai, http://www.onelook.com/]
+def: "Phenotype that is a defect in sensory perception of smell (GO:0007608). 'sensory perception of smell' is defined as: 'The series of events required for an organism to receive an olfactory stimulus, convert it to a molecular signal, and recognize and characterize the signal. Olfaction involves the detection of chemical composition of an organism's ambient medium by chemoreceptors. This is a neurological process.'" [FBC:DOS, GOC:ai]
 synonym: "olfaction defective" EXACT []
 is_a: FBcv:0000681 ! sensory perception defective
 
@@ -3272,7 +3273,7 @@ is_a: FBcv:0000681 ! sensory perception defective
 id: FBcv:0000405
 name: taste perception defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in sensory perception of taste (GO:0050909). 'sensory perception of taste' is defined as: 'The series of events required for an organism to receive a gustatory stimulus, convert it to a molecular signal, and recognize and characterize the signal. Gustation involves the direct detection of chemical composition, usually through contact with chemoreceptor cells. This is a neurological process.'" [FBC:DOS, GOC:ai, http://www.onelook.com/]
+def: "Phenotype that is a defect in sensory perception of taste (GO:0050909). 'sensory perception of taste' is defined as: 'The series of events required for an organism to receive a gustatory stimulus, convert it to a molecular signal, and recognize and characterize the signal. Gustation involves the direct detection of chemical composition, usually through contact with chemoreceptor cells. This is a neurological process.'" [FBC:DOS, GOC:ai]
 synonym: "gustation defective" EXACT []
 synonym: "taste defective" EXACT []
 is_a: FBcv:0000681 ! sensory perception defective
@@ -5277,7 +5278,7 @@ is_obsolete: true
 id: FBcv:0000650
 name: editorial
 namespace: pub_type
-def: "Work consisting of a statement of the opinions, beliefs, and policy of the editor or publisher of a journal, usually on current matters of medical or scientific significance to the medical community or society at large." [http://www.nlm.nih.gov/cgi/mesh/2011/MB_cgi?view=expanded&field=uid&term=D016421]
+def: "Work consisting of a statement of the opinions, beliefs, and policy of the editor or publisher of a journal, usually on current matters of medical or scientific significance to the medical community or society at large." [MeSH:D016421]
 xref: MeSH:D016421
 is_a: FBcv:0000189 ! publication class
 
@@ -5489,7 +5490,7 @@ creation_date: 2009-11-30T11:06:35Z
 id: FBcv:0000680
 name: proboscis extension reflex defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in proboscis extension reflex (GO:0007637). 'proboscis extension reflex' is defined as: 'The extension, through direct muscle actions, of the proboscis (the trunk-like extension of the mouthparts on the adult external head) in response to a sugar stimulus.'" [FB:FBrf0044924, FBC:DOS, GOC:jid]
+def: "Phenotype that is a defect in proboscis extension reflex (GO:0007637). 'proboscis extension reflex' is defined as: 'The extension, through direct muscle actions, of the proboscis (the trunk-like extension of the mouthparts on the adult external head) in response to a nutritional stimulus.'" [FB:FBrf0044924, FBC:DOS, GOC:jid]
 is_a: FBcv:0000403 ! chemosensitive behavior defective
 
 [Term]
@@ -5901,7 +5902,7 @@ id: FBcv:0000727
 name: mated female
 namespace: sex_qualifier
 def: "Expressed in mated females." [FBC:DOS]
-comment: May be used as a qualifier for gene  or transgene expression or phenotype. Note - its use does not imply expression (of gene or phenotype) exclusively in mated females.
+comment: May be used as a qualifier for gene or transgene expression or phenotype. Note - its use does not imply expression (of gene or phenotype) exclusively in mated females.
 is_a: FBcv:0000334 ! female
 created_by: djs93
 creation_date: 2011-04-21T01:10:49Z
@@ -10090,6 +10091,7 @@ id: FBcv:0007002
 name: neuron activity regulation tool
 namespace: experimental_tool_descriptor
 def: "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property that can be used to regulate the activity of a neuron. This is often achieved by manipulation of membrane potential or synaptic transmission dynamics." [FBC:GM]
+subset: common_tool_use
 synonym: "electrically signalling cell activity regulation tool" EXACT []
 is_a: FBcv:0005001 ! experimental tool descriptor
 created_by: http://orcid.org/0000-0002-1373-1705
@@ -10196,6 +10198,7 @@ id: FBcv:0007013
 name: cell ablation tool
 namespace: experimental_tool_descriptor
 def: "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property used to ablate a specific cell or anatomical structure." [FBC:GM]
+subset: common_tool_use
 is_a: FBcv:0005001 ! experimental tool descriptor
 created_by: http://orcid.org/0000-0002-1373-1705
 creation_date: 2019-06-25T10:53:21Z
@@ -10229,7 +10232,7 @@ creation_date: 2019-06-25T10:56:47Z
 
 [Term]
 id: FBcv:0007017
-name: smal molecule-regulated cell ablation tool
+name: small molecule-regulated cell ablation tool
 namespace: experimental_tool_descriptor
 def: "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property used to ablate a specific cell or anatomical structure, where this property can be regulated by binding to a small molecule, such as an ion or ligand." [FBC:GM]
 is_a: FBcv:0007014 ! conditional cell ablation tool
@@ -10271,6 +10274,7 @@ id: FBcv:0007021
 name: proximity labeling tool
 namespace: experimental_tool_descriptor
 def: "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that encodes an enzyme which covalently tags neighboring macromolecules, facilitating the subsequent purification or detection of the tagged macromolecules by an experimental method." [FBC:GM, PMID:30774936]
+subset: common_tool_use
 is_a: FBcv:0005001 ! experimental tool descriptor
 created_by: http://orcid.org/0000-0002-1373-1705
 creation_date: 2019-06-25T14:01:14Z
@@ -10343,6 +10347,7 @@ id: FBcv:0007029
 name: specific binding tool
 namespace: experimental_tool_descriptor
 def: "Sequence that has a property that allows specific binding to another macromolecule." [FBC:GM]
+subset: common_tool_use
 is_a: FBcv:0005001 ! experimental tool descriptor
 created_by: http://orcid.org/0000-0002-1373-1705
 creation_date: 2019-06-26T08:11:17Z
@@ -10391,6 +10396,116 @@ def: "An enzyme that catalyzes hydrolysis of DNA in a site-specific manner, havi
 is_a: FBcv:0005077 ! nuclease
 created_by: http://orcid.org/0000-0002-1373-1705
 creation_date: 2019-06-26T09:17:20Z
+
+[Term]
+id: FBcv:0007036
+name: lecture
+def: "Work consisting of speeches read or delivered before an audience or class, especially for instruction or to set forth some subject." [MeSH:D019531]
+is_a: FBcv:0000189 ! publication class
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2020-01-23T15:24:54Z
+
+[Term]
+id: FBcv:0007037
+name: antibody
+namespace: experimental_tool_descriptor
+def: "An immunoglobulin molecule having a specific amino acid sequence that gives each antibody the ability to adhere to and interact with the antigen that induced its synthesis and with molecules containing structures similar to that antigen. An antigen is any substance capable of inducing a specific immune response, including but not limited to toxins, bacterial proteins and viruses." [XCO:0000194]
+subset: common_tool_use
+xref: XCO:0000194
+is_a: FBcv:0007029 ! specific binding tool
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2020-01-24T08:44:55Z
+
+[Term]
+id: FBcv:0007038
+name: light conditional
+namespace: environmental_qualifier
+def: "Phenotype expressed only in the presence or absence of light, which may be white light or particular wavelength(s)." [FBC:CP]
+is_a: FBcv:0000309 ! conditional
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2020-01-24T09:10:41Z
+
+[Term]
+id: FBcv:0007039
+name: engineered antibody
+namespace: experimental_tool_descriptor
+def: "An antibody whose domain architecture has been engineered in vitro. An engineered antibody typically contains only a subset of the domains found in a naturally occurring antibody. In some cases, domains that are normally found in different chains of a naturally occurring antibody are synthesized as a single fusion protein." [FBC:GM]
+is_a: FBcv:0007037 ! antibody
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2020-02-03T11:36:12Z
+
+[Term]
+id: FBcv:0007040
+name: nanobody
+namespace: experimental_tool_descriptor
+def: "An engineered antibody consisting of the antigen-binding variable domain (VHH domain) of a camelid single-domain heavy chain antibody (HCab)." [FBC:GM, PMID:22886243, PMID:8502296, PMID:9323027]
+is_a: FBcv:0007039 ! engineered antibody
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2020-02-03T11:51:11Z
+
+[Term]
+id: FBcv:0007041
+name: single-chain variable fragment antibody
+namespace: experimental_tool_descriptor
+def: "An engineered antibody consisting of the heavy (VH) and light (VL) chains of an immunoglobulin, separated by a short flexible linker peptide and expressed as a single fusion protein." [FBC:GM, PMID:3045807]
+synonym: "scFv antibody" EXACT [FBC:GM]
+synonym: "sFv antibody" EXACT [PMID:3045807]
+synonym: "single-chain variable region fragment antibody" EXACT [PMID:3045807]
+is_a: FBcv:0007039 ! engineered antibody
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2020-02-03T12:25:24Z
+
+[Term]
+id: FBcv:0007042
+name: RMCE target element
+namespace: experimental_tool_descriptor
+def: "An RMCE target element contains a region of DNA sequence flanked by a pair of target sites for a recombinase or an integrase, which are arranged such that this target sequence cassette can be replaced with donor sequence from a compatible RMCE donor element via recombination-mediated cassette exchange (RMCE). For RMCE mediated by a recombinase, the target cassette is flanked by two non-identical recombinase target sites that each carry a different mutation in the spacer sequence of the target site; this renders the two sites incompatible with each other. A compatible RMCE donor cassette is flanked by the same pair of non-identical sites; in the presence of recombinase, a double recombination event between the identical sites on the donor and target sequences results in replacement of the target cassette with the donor cassette. In the case of RMCE mediated by an integrase, the RMCE cassette is flanked by identical integrase target sites, while a compatible RMCE donor cassette is flanked by copies of the orthogonal integrase target site; in the presence of integrase, a double recombination event results in the target cassette being replaced with that of the donor cassette. In this case, if the flanking sites are in inverted orientation, replacement of the target cassette can occur in either direction." [FBC:GM, FlyBase:FBrf0231034, PMID:21445009, PMID:7947678]
+synonym: "recombination-mediated cassette exchange target element" EXACT []
+is_a: FBcv:0005075 ! genome engineering tool
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2020-02-03T14:52:50Z
+
+[Term]
+id: FBcv:0007043
+name: RMCE donor element
+namespace: experimental_tool_descriptor
+def: "An RMCE donor element contains a region of DNA sequence flanked by a pair of target sites for a recombinase or an integrase, which are arranged such that this donor sequence cassette can be used to replace target sequence of a compatible RMCE target element via recombination-mediated cassette exchange (RMCE). For RMCE mediated by a recombinase, the target cassette is flanked by two non-identical recombinase target sites that each carry a different mutation in the spacer sequence of the target site; this renders the two sites incompatible with each other. A compatible RMCE donor cassette is flanked by the same pair of non-identical sites; in the presence of recombinase, a double recombination event between the identical sites on the donor and target sequences results in replacement of the target cassette with the donor cassette. In the case of RMCE mediated by an integrase, the RMCE cassette is flanked by identical integrase target sites, while a compatible RMCE donor cassette is flanked by copies of the orthogonal integrase target site; in the presence of integrase, a double recombination event results in the target cassette being replaced with that of the donor cassette. In this case, if the flanking sites are in inverted orientation, replacement of the target cassette can occur in either direction." [FBC:GM, FlyBase:FBrf0231034, PMID:21445009, PMID:7947678]
+synonym: "recombination-mediated cassette exchange donor element" EXACT []
+is_a: FBcv:0005075 ! genome engineering tool
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2020-02-03T15:00:41Z
+
+[Term]
+id: FBcv:0007044
+name: docking element
+namespace: experimental_tool_descriptor
+def: "A docking element is an element that has been introduced into a site in the genome to allow integration of DNA at a defined location; this neutralizes the problem of position effects that are seen with non-specific insertion techniques such as transposable-element-mediated transgenesis. A docking element contains a single target site for an integrase, allowing subsequent integration of DNA into this site from a donor element via integrase mediated recombination. The docking element in the genome typically contains the 'attB' site and the donor plasmid contains the 'attP' site, since this directionality gives higher integration rates compared to the alternative combination where the 'attB' site is integrated into the genome. A docking element insertion is typically selected to be 'benign' (that is it does not result in disruption of an endogenous locus) and to show a high rate of integration in the presence of integrase." [FBC:GM, FlyBase:FBrf0192974, FlyBase:FBrf0194996, FlyBase:FBrf0231034, PMID:11359900, PMID:12563279]
+comment: This includes any element containing a single site for integrase-mediated integration, as in FBrf0231034 Fig 10a, but not elements with multiple integrase sites, as in FBrf0231034 Fig 10b (see FBcv:0007042 - RMCE target element). Elements with sites for recombinase-mediated exchange (as in FBrf0231034 Fig 10c) are only included if they additionally carry exactly one integrase site for integrase-mediated integration.
+synonym: "docking site element" EXACT []
+synonym: "landing site element" EXACT []
+is_a: FBcv:0005075 ! genome engineering tool
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2020-02-03T15:54:09Z
+
+[Term]
+id: FBcv:0007045
+name: RNA engineering tool
+namespace: experimental_tool_descriptor
+def: "Sequence that forms all or part of a transgenic locus or modified endogenous locus and which can be used to modify an RNA of interest in a defined manner. Examples of RNA engineering include the targeting of an individual transcript for knockdown, and targeted manipulation of RNA splicing or editing." [FBC:GM, PMID:30021724, PMID:30388409, PMID:31367845]
+subset: common_tool_use
+is_a: FBcv:0005001 ! experimental tool descriptor
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2020-02-04T09:01:14Z
+
+[Term]
+id: FBcv:0007046
+name: RNA-guided ribonuclease
+namespace: experimental_tool_descriptor
+def: "An enzyme that catalyzes hydrolysis of RNA in a site-specific manner, and in which the specificity is determined by a guide RNA that contains sequence complementary to the target RNA sequence of interest, rather than being an inherent property of the ribonuclease itself. This property can be used to modify an organism's transcriptome in a defined manner." [FBC:GM, PMID:30021724, PMID:30388409, PMID:31367845]
+subset: common_tool_use
+is_a: FBcv:0007045 ! RNA engineering tool
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2020-02-04T09:12:14Z
 
 [Term]
 id: FBcv:0010000
