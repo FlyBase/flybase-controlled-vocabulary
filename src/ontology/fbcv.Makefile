@@ -118,6 +118,7 @@ flybase_controlled_vocabulary.obo:
 	sed -i '/^date[:]/c\date: $(DATETIME)' $@
 	sed -i '/^data-version[:]/c\data-version: $(DATE)' $@
 	sed -i '/FlyBase_miscellaneous_CV/d' $@
+	sed -i '/property_value:/d' $@
 
 # The following lines were part of a previous misconception that we needed a part_of typedef for the flybase release.
 #	echo "[Typedef]" >> $@
