@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: releases/2020-02-20
-date: 20:02:2020 15:07
+data-version: releases/2020-03-26
+date: 26:03:2020 16:07
 subsetdef: 1_STAR "Preliminary entries"
 subsetdef: 2_STAR "Annotated by 3rd party"
 subsetdef: 3_STAR "Manually annotated by ChEBI Team"
@@ -3256,8 +3256,8 @@ namespace: chebi_ontology
 subset: 3_STAR
 synonym: ">C=O" RELATED [IUPAC]
 synonym: "carbonyl" EXACT IUPAC_NAME [IUPAC]
-synonym: "carbonyl group" EXACT [UniProt]
 synonym: "carbonyl group" EXACT [ChEBI]
+synonym: "carbonyl group" EXACT [UniProt]
 is_a: CHEBI:51422 ! organodiyl group
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "CO" xsd:string
@@ -18848,7 +18848,7 @@ is_a: FBcv:0001347 ! phenotype
 id: FBcv:0000448
 name: immune response defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in immune response (GO:0006955). 'immune response' is defined as: 'Any immune system process that functions in the calibrated response of an organism to a potential internal or invasive threat.'" [FBC:DOS, GO_REF:0000022, GOC:add, GOC:mtg_15nov05]
+def: "Phenotype that is a defect in immune response (GO:0006955). 'immune response' is defined as: 'Any immune system process that functions in the calibrated response of an organism to a potential internal or invasive threat.'" [FBC:DOS, GO_REF:0000022, GOC:add]
 subset: fbcvsubset_mgiribbons
 is_a: FBcv:0001347 ! phenotype
 
@@ -21223,7 +21223,7 @@ creation_date: 2011-01-14T05:12:37Z
 id: FBcv:0000716
 name: cell migration defective
 namespace: phenotypic_class
-def: "Phenotype that is a defect in cell migration (GO:0016477). 'cell migration' is defined as: 'The controlled self-propelled movement of a cell from one site to a destination guided by molecular cues. Cell migration is a central process in the development and maintenance of multicellular organisms.'" [FBC:DOS, GOC:cjm, GOC:dph, GOC:ems, GOC:pf, http://en.wikipedia.org/wiki/Cell_migration]
+def: "Phenotype that is a defect in cell migration (GO:0016477). 'cell migration' is defined as: 'The controlled self-propelled movement of a cell from one site to a destination guided by molecular cues. Cell migration is a central process in the development and maintenance of multicellular organisms.'" [FBC:DOS, GOC:cjm, GOC:dph, GOC:ems, GOC:pf, Wikipedia:Cell_migration]
 subset: fbcvsubset_mgiribbons
 is_a: FBcv:0001347 ! phenotype
 
@@ -26007,6 +26007,7 @@ creation_date: 2019-06-26T09:17:20Z
 [Term]
 id: FBcv:0007036
 name: lecture
+namespace: pub_type
 def: "Work consisting of speeches read or delivered before an audience or class, especially for instruction or to set forth some subject." [MeSH:D019531]
 is_a: FBcv:0000189 ! publication class
 created_by: http://orcid.org/0000-0002-1373-1705
@@ -26656,12 +26657,12 @@ expand_expression_to: "RO_0000053 some (RO_0000054 only (BFO_0000050 some ?Y))" 
 
 [Typedef]
 id: RO:0002217
-name: actively participates in
-def: "x actively participates in y if and only if x participates in y and x realizes some active role" []
+name: obsolete actively participates in
+def: "OBSOLETE x actively participates in y if and only if x participates in y and x realizes some active role" []
+comment: Obsoleted as the inverse property was obsoleted.
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000118 "agent in" xsd:string
-is_a: RO:0000056 ! participates in
-inverse_of: RO:0002218 ! obsolete has active participant
+is_obsolete: true
 
 [Typedef]
 id: RO:0002218
@@ -26864,7 +26865,7 @@ property_value: IAO:0000118 "actively involved in" xsd:string
 property_value: IAO:0000118 "enables part of" xsd:string
 property_value: seeAlso Involved:in
 holds_over_chain: RO:0002327 part_of
-is_a: RO:0002217 ! actively participates in
+is_a: RO:0000056 ! participates in
 is_a: RO:0002431 ! involved in or involved in regulation of
 transitive_over: part_of ! part_of
 
@@ -27149,30 +27150,39 @@ is_a: RO:0002436 ! molecularly interacts with
 
 [Typedef]
 id: RO:0002448
-name: activity directly regulates activity of
-def: "Holds between molecular entities A and B where A can physically interact with B and in doing so regulates a process that B is capable of.  For example, A and B may be gene products and binding of B by A regulates the kinase activity of B." []
+name: directly regulates activity of
+def: "The entity A, immediately upstream of the entity B, has an activity that regulates an activity performed by B. For example, A and B may be gene products and binding of B by A regulates the kinase activity of B.\n\nA and B can be physically interacting but not necessarily. Immediately upstream means there are no intermediate entity between A and B." []
 synonym: "molecularly controls" EXACT []
 property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000117 "Vasundra Touré" xsd:string
+domain: BFO:0000040 ! material entity
+range: BFO:0000040 ! material entity
 is_a: RO:0002436 ! molecularly interacts with
-is_a: RO:0002566 ! causally influences
+is_a: RO:0011002 ! regulates activity of
 
 [Typedef]
 id: RO:0002449
-name: activity directly negatively regulates activity of
-def: "Holds between molecular entities A and B where A can physically interact with B and in doing so negatively regulates a process that B is capable of.  For example, A and B may be gene products and binding of B by A negatively regulates the kinase activity of B." []
+name: directly negatively regulates activity of
+def: "The entity A, immediately upstream of the entity B, has an activity that negatively regulates an activity performed by B. \nFor example, A and B may be gene products and binding of B by A negatively regulates the kinase activity of B." []
 synonym: "molecularly decreases activity of" EXACT []
 property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000118 "inhibits" xsd:string
-is_a: RO:0002448 ! activity directly regulates activity of
+property_value: IAO:0000117 "Vasundra Touré" xsd:string
+property_value: IAO:0000118 "directly inhibits" xsd:string
+domain: BFO:0000040 ! material entity
+range: BFO:0000040 ! material entity
+is_a: RO:0002448 ! directly regulates activity of
 
 [Typedef]
 id: RO:0002450
-name: activity directly positively regulates activity of
-def: "Holds between molecular entities A and B where A can physically interact with B and in doing so positively regulates a process that B is capable of.  For example, A and B may be gene products and binding of B by A positively regulates the kinase activity of B." []
+name: directly positively regulates activity of
+def: "The entity A, immediately upstream of the entity B, has an activity that positively regulates an activity performed by B. \nFor example, A and B may be gene products and binding of B by A positively regulates the kinase activity of B." []
 synonym: "molecularly increases activity of" EXACT []
 property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000118 "activates" xsd:string
-is_a: RO:0002448 ! activity directly regulates activity of
+property_value: IAO:0000117 "Vasundra Touré" xsd:string
+property_value: IAO:0000118 "directly activates" xsd:string
+domain: BFO:0000040 ! material entity
+range: BFO:0000040 ! material entity
+is_a: RO:0002448 ! directly regulates activity of
 
 [Typedef]
 id: RO:0002464
@@ -27232,13 +27242,13 @@ is_a: RO:0002502 ! depends on
 
 [Typedef]
 id: RO:0002506
-name: causal relation between material entities
+name: causal relation between entities
 property_value: IAO:0000116 "The intent is that the process branch of the causal property hierarchy is primary (causal relations hold between occurrents/processes), and that the material branch is defined in terms of the process branch" xsd:string
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
 property_value: IAO:0000232 "Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect." xsd:string
-domain: BFO:0000040 ! material entity
-range: BFO:0000040 ! material entity
+domain: BFO:0000002 ! continuant
+range: BFO:0000002 ! continuant
 is_a: RO:0002410 ! causally related to
 
 [Typedef]
@@ -27250,7 +27260,7 @@ property_value: IAO:0000117 "Chris Mungall" xsd:string
 domain: RO:0002577 ! system
 range: BFO:0000040 ! material entity
 is_a: RO:0002131 ! overlaps
-is_a: RO:0002506 ! causal relation between material entities
+is_a: RO:0002506 ! causal relation between entities
 
 [Typedef]
 id: RO:0002514
@@ -27328,8 +27338,8 @@ id: RO:0002559
 name: causally influenced by
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
-property_value: IAO:0000589 "causally influenced by (material entity to material entity)" xsd:string
-is_a: RO:0002506 ! causal relation between material entities
+property_value: IAO:0000589 "causally influenced by (entity-centric)" xsd:string
+is_a: RO:0002506 ! causal relation between entities
 inverse_of: RO:0002566 ! causally influences
 
 [Typedef]
@@ -27349,11 +27359,14 @@ is_a: RO:0002563 ! interaction relation helper property
 [Typedef]
 id: RO:0002566
 name: causally influences
-def: "Holds between materal entities a and b if the activity of a is causally upstream of the activity of b, or causally upstream of a an activity that modifies b" []
+def: "The entity or characteristic A is causally upstream of the entity or characteristic B, A having an effect on B. An entity corresponds to any biological type of entity as long as a mass is measurable. A characteristic corresponds to a particular specificity of an entity (e.g., phenotype, shape, size)." []
 property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000117 "Vasundra Touré" xsd:string
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
-property_value: IAO:0000589 "causally influences (material entity to material entity)" xsd:string
-is_a: RO:0002506 ! causal relation between material entities
+property_value: IAO:0000589 "causally influences (entity-centric)" xsd:string
+domain: BFO:0000002 ! continuant
+range: BFO:0000002 ! continuant
+is_a: RO:0002506 ! causal relation between entities
 
 [Typedef]
 id: RO:0002573
@@ -27526,6 +27539,15 @@ property_value: RO:0004049 RO:0002418
 is_a: RO:0002418 ! causally upstream of or within
 created_by: cjm
 creation_date: 2018-03-13T23:55:19Z
+
+[Typedef]
+id: RO:0011002
+name: regulates activity of
+def: "The entity A has an activity that regulates an activity of the entity B. For example, A and B are gene products where the catalytic activity of A regulates the kinase activity of B." []
+property_value: IAO:0000117 "Vasundra Touré" xsd:string
+domain: BFO:0000040 ! material entity
+range: BFO:0000040 ! material entity
+is_a: RO:0002566 ! causally influences
 
 [Typedef]
 id: conditionality
