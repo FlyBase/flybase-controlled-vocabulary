@@ -1,4 +1,5 @@
 ## ID Ranges File
+## Copy changes to dpo repo if modified
 Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 Prefix: idsfor: <http://purl.obolibrary.org/obo/IAO_0000598>
 Prefix: dc: <http://purl.org/dc/elements/1.1/>
@@ -15,8 +16,8 @@ Ontology: <http://purl.obolibrary.org/obo/fbcv/fbcv-idranges.owl>
 
 
 Annotations: 
-    idsfor: "FBCV",
-    idprefix: "http://purl.obolibrary.org/obo/FBCV_",
+    idsfor: "FBcv",
+    idprefix: "http://purl.obolibrary.org/obo/FBcv_",
     iddigits: 7
 
 AnnotationProperty: idprefix:
@@ -33,19 +34,50 @@ AnnotationProperty: allocatedto:
 Datatype: idrange:1
 
     Annotations: 
-        allocatedto: "ONTOLOGY-CREATOR"
+        allocatedto: "Marta_FBcv"
     
     EquivalentTo: 
-        xsd:integer[>= 0 , <= 999999]
+        xsd:integer[>= 0003000 , <= 0003500]
 
-    
 Datatype: idrange:2
 
     Annotations: 
-        allocatedto: "ADDITIONAL EDITOR"
+        allocatedto: "Marta_dpo"
     
     EquivalentTo: 
-        xsd:integer[>= 1000000 , <= 1999999]
+        xsd:integer[>= 0004000 , <= 0004500]
+
+Datatype: idrange:3
+
+    Annotations: 
+        allocatedto: "Tamsin_FBcv"
+    
+    EquivalentTo: 
+        xsd:integer[>= 0005000 , <= 0005500]
+
+Datatype: idrange:4
+
+    Annotations: 
+        allocatedto: "Tamsin_dpo"
+    
+    EquivalentTo: 
+        xsd:integer[>= 0006000 , <= 0006500]
+
+Datatype: idrange:5
+
+    Annotations: 
+        allocatedto: "Clare_FBcv"
+    
+    EquivalentTo: 
+        xsd:integer[>= 0007000 , <= 0007499]
+
+Datatype: idrange:6
+
+    Annotations: 
+        allocatedto: "Clare_dpo"
+    
+    EquivalentTo: 
+        xsd:integer[>= 0007500 , <= 0007999]
     
     
 Datatype: xsd:integer
