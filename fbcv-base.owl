@@ -12,7 +12,8 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/fbcv/fbcv-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2020-03-26/fbcv-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2020-06-12/fbcv-base.owl"/>
+        <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000000"/>
         <fbcv:attributionURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dx.doi.org/10.1186/2041-1480-4-30</fbcv:attributionURL>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://orcid.org/0000-0002-1373-1705</dc:creator>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://orcid.org/0000-0002-7073-9172</dc:creator>
@@ -21,7 +22,7 @@
         <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A miscellaneous ontology of terms used for curation in FlyBase, including the DPO.</dc:description>
         <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase Controlled Vocabulary (FBcv)</dc:title>
         <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://creativecommons.org/licenses/by/3.0/</terms:license>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">26:03:2020 16:07</oboInOwl:date>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12:06:2020 09:53</oboInOwl:date>
         <oboInOwl:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase miscellaneous CV</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
     </owl:Ontology>
@@ -98,6 +99,12 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000700 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000700"/>
     
 
 
@@ -14423,7 +14430,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in entry into diapause (GO:0055115). &apos;entry into diapause&apos; is defined as: &apos;The dormancy process that results in entry into diapause. Diapause is a neurohormonally mediated, dynamic state of low metabolic activity. Associated characteristics of this form of dormancy include reduced morphogenesis, increased resistance to environmental extremes, and altered or reduced behavioral activity. Full expression develops in a species-specific manner, usually in response to a number of environmental stimuli that precede unfavorable conditions. Once diapause has begun, metabolic activity is suppressed even if conditions favorable for development prevail. Once initiated, only certain stimuli are capable of releasing the organism from this state, and this characteristic is essential in distinguishing diapause from hibernation.&apos;</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:ds</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:ds</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:jid</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mah</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -14446,7 +14453,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in entry into reproductive diapause (GO:0055116). &apos;entry into reproductive diapause&apos; is defined as: &apos;The dormancy process that results in entry into reproductive diapause. Reproductive diapause is a form of diapause where the organism itself will remain fully active, including feeding and other routine activities, but the reproductive organs experience a tissue-specific reduction in metabolism, with characteristic triggering and releasing stimuli.&apos;</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:ds</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:ds</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:jid</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mah</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -17054,7 +17061,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mah</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0198506732</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0716731363</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:0716731363</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -17074,7 +17081,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenotype that is a defect in exocytosis (GO:0006887). &apos;exocytosis&apos; is defined as: &apos;A process of secretion by a cell that results in the release of intracellular molecules (e.g. hormones, matrix proteins) contained within a membrane-bounded vesicle. Exocytosis can occur either by full fusion, when the vesicle collapses into the plasma membrane, or by a kiss-and-run mechanism that involves the formation of a transient contact, a pore, between a granule (for exemple of chromaffin cells) and the plasma membrane. The latter process most of the time leads to only partial secretion of the granule content. Exocytosis begins with steps that prepare vesicles for fusion with the membrane (tethering and docking) and ends when molecules are secreted from the cell.&apos;</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mah</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0716731363</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:0716731363</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:22323285</oboInOwl:hasDbXref>
     </owl:Axiom>
     
