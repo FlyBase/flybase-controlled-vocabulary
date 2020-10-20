@@ -12,7 +12,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/fbcv/fbcv-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2020-08-14/fbcv-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2020-10-20/fbcv-simple.owl"/>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000000"/>
         <fbcv:attributionURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dx.doi.org/10.1186/2041-1480-4-30</fbcv:attributionURL>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://orcid.org/0000-0002-1373-1705</dc:creator>
@@ -22,7 +22,7 @@
         <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A miscellaneous ontology of terms used for curation in FlyBase, including the DPO.</dc:description>
         <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase Controlled Vocabulary (FBcv)</dc:title>
         <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://creativecommons.org/licenses/by/3.0/</terms:license>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14:08:2020 10:28</oboInOwl:date>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20:10:2020 16:10</oboInOwl:date>
         <oboInOwl:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase miscellaneous CV</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
     </owl:Ontology>
@@ -124,6 +124,12 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MGI ribbon terms</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fbcv#isDefinedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#isDefinedBy"/>
     
 
 
@@ -24217,14 +24223,16 @@
         <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/BFO"/>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
-        <fbcv:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:PartOf"/>
+        <fbcv:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <fbcv:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:PartOf"/>
         <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q1 has_part Q2 if and only if: every instance of Q1 is a quality_of an entity that has_quality some Q2.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/BFO"/>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <fbcv:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
     </rdf:Description>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -24234,23 +24242,11 @@
     </owl:Axiom>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000062">
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbcv#ro-eco"/>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">takes place after</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is preceded by</oboInOwl:hasExactSynonym>
+        <fbcv:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
     </rdf:Description>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">takes place after</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allen:precedes</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is preceded by</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SIO:000249</oboInOwl:hasDbXref>
-    </owl:Axiom>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000063">
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbcv#ro-eco"/>
+        <fbcv:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000052">
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
