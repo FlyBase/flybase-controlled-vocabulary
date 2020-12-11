@@ -333,6 +333,7 @@ equivalent_to: FBcv:0000548 ! base analog
 [Term]
 id: FBcv:0000000
 name: FlyBase CV
+def: "FlyBase miscellaneous controlled vocabulary term." []
 
 [Term]
 id: FBcv:0000001
@@ -571,6 +572,7 @@ consider: FBcv:0000052
 id: FBcv:0000038
 name: relative spatial qualifier
 namespace: spatial_qualifier
+def: "Qualifier that describes the spatial characteristics of a phenotype or expression pattern relative to the position of another entity." [FBC:CP]
 subset: do_not_annotate
 xref: PATO:0001631
 is_a: FBcv:0000052 ! spatial qualifier
@@ -579,6 +581,7 @@ is_a: FBcv:0000052 ! spatial qualifier
 id: FBcv:0000039
 name: anterior to
 namespace: spatial_qualifier
+def: "A spatial quality inhering in a bearer by virtue of the bearer's being located toward the front of an organism relative to another entity." [PATO:0001632]
 xref: PATO:0001632
 is_a: FBcv:0000038 ! relative spatial qualifier
 
@@ -586,6 +589,7 @@ is_a: FBcv:0000038 ! relative spatial qualifier
 id: FBcv:0000040
 name: distal to
 namespace: spatial_qualifier
+def: "A spatial quality inhering in a bearer by virtue of the bearer's being located further from a more centrally located entity." [PATO:0001234]
 xref: PATO:0001234
 is_a: FBcv:0000038 ! relative spatial qualifier
 
@@ -593,6 +597,7 @@ is_a: FBcv:0000038 ! relative spatial qualifier
 id: FBcv:0000041
 name: dorsal to
 namespace: spatial_qualifier
+def: "A spatial quality inhering in a bearer by virtue of the bearer's being located toward the back or upper surface of an organism relative to another entity." [PATO:0001233]
 xref: PATO:0001233
 is_a: FBcv:0000038 ! relative spatial qualifier
 
@@ -618,6 +623,7 @@ is_obsolete: true
 id: FBcv:0000045
 name: posterior to
 namespace: spatial_qualifier
+def: "A spatial quality inhering in a bearer by virtue of the bearer's being located toward the rear of an organism relative to another entity." [PATO:0001633]
 xref: PATO:0001633
 is_a: FBcv:0000038 ! relative spatial qualifier
 
@@ -631,6 +637,7 @@ is_a: FBcv:0000176 ! temporal qualifier
 id: FBcv:0000047
 name: proximal to
 namespace: spatial_qualifier
+def: "A spatial quality inhering in a bearer by virtue of the bearer's being located more centrally than another entity." [PATO:0001195]
 xref: PATO:0001195
 is_a: FBcv:0000038 ! relative spatial qualifier
 
@@ -638,6 +645,7 @@ is_a: FBcv:0000038 ! relative spatial qualifier
 id: FBcv:0000048
 name: surrounding
 namespace: spatial_qualifier
+def: "A spatial quality inhering in a bearer by virtue of the bearer's being extended on all sides of another entity simultaneously." [PATO:0001772]
 xref: PATO:0001772
 is_a: FBcv:0000038 ! relative spatial qualifier
 
@@ -645,6 +653,7 @@ is_a: FBcv:0000038 ! relative spatial qualifier
 id: FBcv:0000049
 name: ventral to
 namespace: spatial_qualifier
+def: "A spatial quality inhering in a bearer by virtue of the bearer's being located toward the belly or lower surface of an organism relative to another entity." [FBC:CP]
 xref: PATO:0001196
 is_a: FBcv:0000038 ! relative spatial qualifier
 
@@ -652,7 +661,9 @@ is_a: FBcv:0000038 ! relative spatial qualifier
 id: FBcv:0000050
 name: vicinity of
 namespace: spatial_qualifier
-xref: PATO:0001771
+def: "A spatial quality inhering in a bearer by virtue of the bearer's being located near in space in relation to another entity." [PATO:0002259]
+synonym: "adjacent to" NARROW [PATO:0002259]
+xref: PATO:0002259
 is_a: FBcv:0000038 ! relative spatial qualifier
 
 [Term]
@@ -981,7 +992,7 @@ is_a: FBcv:0000074 ! egg length
 id: FBcv:0000097
 name: 20% egg length
 namespace: spatial_qualifier
-def: "10% of egg length from the posterior tip of the egg or pre-gastrula embryo." [FBC:DOS]
+def: "20% of egg length from the posterior tip of the egg or pre-gastrula embryo." [FBC:DOS]
 is_a: FBcv:0000074 ! egg length
 
 [Term]
@@ -3118,7 +3129,8 @@ is_a: FBcv:0000492 ! male recombination induced by dysgenesis
 id: FBcv:0000495
 name: MRF23.5 induced male recombination
 namespace: origin_of_mutation
-def: "Mutation caused by a male recombination event induced by a male recombination factor which is present in chromosomes extracted from a population in Patras, Greece." [FlyBase:FBrf0202435]
+def: "Mutation caused by a male recombination event induced by male recombination factor 23.5 MRF which is present in second chromosomes extracted from a population in Patras, Greece." [FlyBase:FBrf0039984, FlyBase:FBrf0202435]
+synonym: "23.5 MRF" EXACT [FlyBase:FBrf0039984]
 synonym: "MRF23.5" RELATED []
 synonym: "mutation induced by MRF23.5 male recombination" EXACT []
 is_a: FBcv:0000492 ! male recombination induced by dysgenesis
@@ -3127,7 +3139,8 @@ is_a: FBcv:0000492 ! male recombination induced by dysgenesis
 id: FBcv:0000496
 name: MRF31.1 induced male recombination
 namespace: origin_of_mutation
-def: "Mutation caused by a male recombination event induced by a male recombination factor which is present in chromosomes extracted from a population in Patras, Greece." [FlyBase:FBrf0202435]
+def: "Mutation caused by a male recombination event induced by male recombination factor 31.1 MRF which is present in second chromosomes extracted from a population in Patras, Greece." [FlyBase:FBrf0030109, FlyBase:FBrf0202435]
+synonym: "31.1 MRF" EXACT [FlyBase:FBrf0030109]
 synonym: "MRF31.1" RELATED []
 synonym: "mutation induced by MRF31.1 male recombination" EXACT []
 is_a: FBcv:0000492 ! male recombination induced by dysgenesis
