@@ -411,7 +411,7 @@ is_a: FBcv:0000000 ! FlyBase CV
 id: FBcv:0000014
 name: structural qualifier
 namespace: structural_qualifier
-def: "Qualifier used to describe the appearance of extra copies of an anatomical structure." [FBC:MMC]
+def: "Qualifier used to describe changes in number or location of an anatomical structure compared to wild type." [FBC:CP, FBC:MMC]
 subset: do_not_annotate
 is_a: FBcv:0000809 ! phenotype qualifier
 
@@ -742,8 +742,9 @@ is_a: FBcv:0000052 ! spatial qualifier
 id: FBcv:0000061
 name: ectopic
 namespace: structural_qualifier
-def: "When, compared to wild-type, an extra copy of an anatomical structure is present in an abnormal location, then this structure is ectopic." [FBC:DOS]
-comment: An extra copy of an anatomical structure that is present in the same location as in wild-type is supernumerary, rather than ectopic.
+def: "Anatomical structure is present in a location in which it would not be present in wild-type." [FBC:CP]
+comment: An extra copy of an anatomical structure that is present in the same location as in wild-type should use 'increased number', rather than 'ectopic'.
+xref: PATO:0000628
 is_a: FBcv:0000014 ! structural qualifier
 
 [Term]
@@ -791,9 +792,10 @@ is_a: FBcv:0000052 ! spatial qualifier
 
 [Term]
 id: FBcv:0000068
-name: supernumerary
+name: increased number
 namespace: structural_qualifier
 def: "Present in the correct location but in larger numbers than in wild-type." [FBC:DOS]
+synonym: "supernumerary" EXACT []
 is_a: FBcv:0000014 ! structural qualifier
 
 [Term]
@@ -8884,6 +8886,25 @@ def: "Sequence that forms part of the gene product encoded by a transgenic locus
 is_a: FBcv:0005042 ! gene product degradation tag
 created_by: http://orcid.org/0000-0002-1373-1705
 creation_date: 2020-12-10T13:05:28Z
+
+[Term]
+id: FBcv:0007048
+name: decreased number
+namespace: structural_qualifier
+def: "Present in the correct location but in smaller numbers than in wild-type." [FBC:CP]
+is_a: FBcv:0000014 ! structural qualifier
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2020-12-14T14:38:52Z
+
+[Term]
+id: FBcv:0007049
+name: absent
+namespace: structural_qualifier
+def: "Anatomical structure that would be present in wild-type is not present." [FBC:CP]
+xref: PATO:0000462
+is_a: FBcv:0000014 ! structural qualifier
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2020-12-14T14:39:35Z
 
 [Term]
 id: FBcv:0010000
