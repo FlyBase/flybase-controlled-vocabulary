@@ -742,8 +742,9 @@ is_a: FBcv:0000052 ! spatial qualifier
 id: FBcv:0000061
 name: ectopic
 namespace: structural_qualifier
-def: "When, compared to wild-type, an extra copy of an anatomical structure is present in an abnormal location, then this structure is ectopic." [FBC:DOS]
-comment: An extra copy of an anatomical structure that is present in the same location as in wild-type is supernumerary, rather than ectopic.
+def: "Anatomical structure is present in a location in which it would not be present in wild-type." [FBC:CP]
+comment: An extra copy of an anatomical structure that is present in the same location as in wild-type should use 'increased number', rather than 'ectopic'.
+xref: PATO:0000628
 is_a: FBcv:0000014 ! structural qualifier
 
 [Term]
@@ -791,9 +792,10 @@ is_a: FBcv:0000052 ! spatial qualifier
 
 [Term]
 id: FBcv:0000068
-name: supernumerary
+name: increased number
 namespace: structural_qualifier
 def: "Present in the correct location but in larger numbers than in wild-type." [FBC:DOS]
+synonym: "supernumerary" EXACT []
 is_a: FBcv:0000014 ! structural qualifier
 
 [Term]
