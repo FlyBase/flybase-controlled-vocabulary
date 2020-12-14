@@ -114,11 +114,8 @@ ontsim:
 
 flybase_controlled_vocabulary.obo:
 	$(ROBOT) remove --input $(ONT)-simple.obo --term "http://purl.obolibrary.org/obo/FBcv_0008000" \
-		convert -o $@
-	sed -i '/^date[:]/c\date: $(DATETIME)' $@
-	sed -i '/^data-version[:]/c\data-version: $(DATE)' $@
-	sed -i '/FlyBase_miscellaneous_CV/d' $@
-	sed -i '/property_value:/d' $@
+		convert -o $@.tmp.obo
+	cat $@.tmp.obo | grep -v FlyBase_miscellaneous_CV | grep -v property_value: | sed '/^date[:]/c\date: $(OBODATE)' | sed '/^data-version[:]/c\data-version: $(DATE)' > $@
 
 # The following lines were part of a previous misconception that we needed a part_of typedef for the flybase release.
 #	echo "[Typedef]" >> $@
@@ -216,9 +213,7 @@ tmp/replaced_defs.txt:
 	cat tmp/auto_generated_definitions_seed_sub.txt tmp/auto_generated_definitions_seed_dot.txt | sort | uniq > $@
 
 pre_release: $(SRC) tmp/auto_generated_definitions_dot.owl tmp/auto_generated_definitions_sub.owl components/dpo-simple.owl
-	cp $(SRC) tmp/$(ONT)-edit-release.obo
-	sed -i '/def[:] \"[.]\"/d' tmp/$(ONT)-edit-release.obo
-	sed -i '/sub_/d' tmp/$(ONT)-edit-release.obo
+	cat $(ONT)-edit.obo | grep -v '/def[:] \"[.]\"/d' | grep -v 'sub_' > tmp/$(ONT)-edit-release.obo
 	$(ROBOT) merge -i tmp/$(ONT)-edit-release.obo -i tmp/auto_generated_definitions_dot.owl -i tmp/auto_generated_definitions_sub.owl --collapse-import-closure false -o $(ONT)-edit-release.ofn && mv $(ONT)-edit-release.ofn $(ONT)-edit-release.owl
 	echo "Preprocessing done. Make sure that NO CHANGES TO THE EDIT FILE ARE COMMITTED!"
 	
