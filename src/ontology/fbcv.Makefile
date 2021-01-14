@@ -238,7 +238,7 @@ obo_qc_%.obo:
 
 obo_qc_%.owl:
 	$(ROBOT) merge -i $*.owl -i components/qc_assertions.owl -o $@ &&\
-	$(ROBOT) report -i $@ --profile qc-profile.txt --fail-on ERROR --print 5 -o $@.txt
+	$(ROBOT) report -i $@ --profile qc-profile.txt --fail-on None --print 5 -o $@.txt
 
 obo_qc: obo_qc_$(ONT).obo obo_qc_$(ONT).owl
 
