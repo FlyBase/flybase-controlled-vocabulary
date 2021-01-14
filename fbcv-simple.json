@@ -757,21 +757,6 @@
       "type" : "CLASS",
       "lbl" : "publication language"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/FBcv_0001325",
-      "meta" : {
-        "definition" : {
-          "val" : "Phenotype that is a defect in exocytosis (GO:0006887). 'exocytosis' is defined as: 'A process of secretion by a cell that results in the release of intracellular molecules (e.g. hormones, matrix proteins) contained within a membrane-bounded vesicle. Exocytosis can occur either by full fusion, when the vesicle collapses into the plasma membrane, or by a kiss-and-run mechanism that involves the formation of a transient contact, a pore, between a granule (for exemple of chromaffin cells) and the plasma membrane. The latter process most of the time leads to only partial secretion of the granule content. Exocytosis begins with steps that prepare vesicles for fusion with the membrane (tethering and docking) and ends when molecules are secreted from the cell.'",
-          "xrefs" : [ "GOC:mah", "ISBN:0716731363", "PMID:22323285" ]
-        },
-        "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "phenotypic_class"
-        } ]
-      },
-      "type" : "CLASS",
-      "lbl" : "exocytosis defective"
-    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000477",
       "meta" : {
         "definition" : {
@@ -790,6 +775,27 @@
       },
       "type" : "CLASS",
       "lbl" : "reduction"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0001325",
+      "meta" : {
+        "definition" : {
+          "val" : "Phenotype that is a defect in exocytosis (GO:0006887). 'exocytosis' is defined as: 'A process of secretion by a cell that results in the release of intracellular molecules (e.g. hormones, matrix proteins) contained within a membrane-bounded vesicle. Exocytosis can occur either by full fusion, when the vesicle collapses into the plasma membrane, or by a kiss-and-run mechanism that involves the formation of a transient contact, a pore, between a granule (for exemple of chromaffin cells) and the plasma membrane. The latter process most of the time leads to only partial secretion of the granule content. Exocytosis begins with steps that prepare vesicles for fusion with the membrane (tethering and docking) and ends when molecules are secreted from the cell.'",
+          "xrefs" : [ ]
+        },
+        "comments" : [ "Obsoleted as this is phenotype is too molecular to be captured by FlyBase phenotype curation and will be captured by GO curation [FBC:CP]." ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "abnormal exocytosis",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "phenotypic_class"
+        } ],
+        "deprecated" : true
+      },
+      "type" : "CLASS",
+      "lbl" : "exocytosis defective"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000235",
       "meta" : {
@@ -823,13 +829,19 @@
       "meta" : {
         "definition" : {
           "val" : "Phenotype that is a defect in endocytosis (GO:0006897). 'endocytosis' is defined as: 'A vesicle-mediated transport process in which cells take up external materials or membrane constituents by the invagination of a small region of the plasma membrane to form a new membrane-bounded vesicle.'",
-          "xrefs" : [ "FBC:DOS", "GOC:mah", "ISBN:0198506732", "ISBN:0716731363" ]
+          "xrefs" : [ "FBC:DOS" ]
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
+        "comments" : [ "Obsoleted as this is phenotype is too molecular to be captured by FlyBase phenotype curation and will be captured by GO curation [FBC:CP]." ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "abnormal endocytosis",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
-        } ]
+        } ],
+        "deprecated" : true
       },
       "type" : "CLASS",
       "lbl" : "endocytosis defective"
@@ -978,24 +990,34 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000680",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in proboscis extension reflex (GO:0007637). 'proboscis extension reflex' is defined as: 'The extension, through direct muscle actions, of the proboscis (the trunk-like extension of the mouthparts on the adult external head) in response to a nutritional stimulus.'",
+          "val" : "Phenotype that is any abnormality in proboscis extension reflex (GO:0007637). 'proboscis extension reflex' is defined as: 'The extension, through direct muscle actions, of the proboscis (the trunk-like extension of the mouthparts on the adult external head) in response to a nutritional stimulus.'",
           "xrefs" : [ "FB:FBrf0044924", "FBC:DOS", "GOC:jid" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "proboscis extension reflex defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "proboscis extension reflex defective"
+      "lbl" : "abnormal proboscis extension reflex"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000681",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in sensory perception (GO:0007600). 'sensory perception' is defined as: 'The series of events required for an organism to receive a sensory stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process.'",
+          "val" : "Phenotype that is any abnormality in sensory perception (GO:0007600). 'sensory perception' is defined as: 'The series of events required for an organism to receive a sensory stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process.'",
           "xrefs" : [ "FBC:DOS", "GOC:ai", "GOC:dph" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "sensory perception defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2010-02-23T12:28:26Z"
@@ -1008,7 +1030,7 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "sensory perception defective"
+      "lbl" : "abnormal sensory perception"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0010000",
       "meta" : {
@@ -1048,17 +1070,22 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000448",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in immune response (GO:0006955). 'immune response' is defined as: 'Any immune system process that functions in the calibrated response of an organism to a potential internal or invasive threat.'",
+          "val" : "Phenotype that is any abnormality in immune response (GO:0006955). 'immune response' is defined as: 'Any immune system process that functions in the calibrated response of an organism to a potential internal or invasive threat.'",
           "xrefs" : [ "FBC:DOS", "GOC:add", "GO_REF:0000022" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "immune response defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "immune response defective"
+      "lbl" : "abnormal immune response"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000206",
       "meta" : {
@@ -1075,7 +1102,7 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000449",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in establishment of planar polarity (GO:0001736). 'establishment of planar polarity' is defined as: 'Coordinated organization of groups of cells in the plane of an epithelium, such that they all orient to similar coordinates.'",
+          "val" : "Phenotype that is any abnormality in establishment of planar polarity (GO:0001736). 'establishment of planar polarity' is defined as: 'Coordinated organization of groups of cells in the plane of an epithelium, such that they all orient to similar coordinates.'",
           "xrefs" : [ "GOC:dph" ]
         },
         "comments" : [ "For apical-basal polarity phenotypes of epithelia, the appropriate term is 'cell polarity defective'." ],
@@ -1084,6 +1111,10 @@
           "pred" : "hasBroadSynonym",
           "val" : "tissue polarity defective",
           "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "planar polarity defective",
+          "xrefs" : [ ]
         } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -1091,7 +1122,7 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "planar polarity defective"
+      "lbl" : "abnormal planar polarity"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000207",
       "meta" : {
@@ -1143,10 +1174,14 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000682",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in sensory perception of touch (GO:0050975). 'sensory perception of touch' is defined as: 'The series of events required for an organism to receive a touch stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process. The perception of touch in animals is mediated by mechanoreceptors in the skin and mucous membranes and is the sense by which contact with objects gives evidence as to certain of their qualities. Different types of touch can be perceived (for example, light, coarse, pressure and tickling) and the stimulus may be external or internal (e.g. the feeling of a full stomach).'",
+          "val" : "Phenotype that is any abnormality in sensory perception of touch (GO:0050975). 'sensory perception of touch' is defined as: 'The series of events required for an organism to receive a touch stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process. The perception of touch in animals is mediated by mechanoreceptors in the skin and mucous membranes and is the sense by which contact with objects gives evidence as to certain of their qualities. Different types of touch can be perceived (for example, light, coarse, pressure and tickling) and the stimulus may be external or internal (e.g. the feeling of a full stomach).'",
           "xrefs" : [ "FBC:DOS", "GOC:ai" ]
         },
         "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "touch perception defective",
+          "xrefs" : [ ]
+        }, {
           "pred" : "hasRelatedSynonym",
           "val" : "touch perception defective",
           "xrefs" : [ ]
@@ -1157,7 +1192,7 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "touch perception defective"
+      "lbl" : "abnormal touch perception"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000440",
       "meta" : {
@@ -1174,6 +1209,32 @@
       "type" : "CLASS",
       "lbl" : "chemical sensitive"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0000683",
+      "meta" : {
+        "definition" : {
+          "val" : "Phenotype that is any abnormality in response to temperature stimulus (GO:0009266). 'response to temperature stimulus' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a temperature stimulus.'",
+          "xrefs" : [ "FBC:DOS", "GOC:hb" ]
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "temperature response defective",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "djs93"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2010-02-23T12:51:02Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "phenotypic_class"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "abnormal temperature response"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000441",
       "meta" : {
         "definition" : {
@@ -1189,33 +1250,17 @@
       "type" : "CLASS",
       "lbl" : "radiation resistant"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/FBcv_0000683",
-      "meta" : {
-        "definition" : {
-          "val" : "Phenotype that is a defect in response to temperature stimulus (GO:0009266). 'response to temperature stimulus' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a temperature stimulus.'",
-          "xrefs" : [ "FBC:DOS", "GOC:hb" ]
-        },
-        "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
-          "val" : "djs93"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
-          "val" : "2010-02-23T12:51:02Z"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "phenotypic_class"
-        } ]
-      },
-      "type" : "CLASS",
-      "lbl" : "temperature response defective"
-    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000684",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in response to cold (GO:0009409). 'response to cold' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a cold stimulus, a temperature stimulus below the optimal temperature for that organism.'",
+          "val" : "Phenotype that is any abnormality in response to cold (GO:0009409). 'response to cold' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a cold stimulus, a temperature stimulus below the optimal temperature for that organism.'",
           "xrefs" : [ "FBC:DOS", "GOC:lr" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "cold stress response defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "djs93"
@@ -1228,7 +1273,7 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "cold stress response defective"
+      "lbl" : "abnormal cold stress response"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000200",
       "meta" : {
@@ -1303,18 +1348,23 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000686",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in axis specification (GO:0009798). 'axis specification' is defined as: 'The establishment, maintenance and elaboration of a pattern along a line or around a point.'",
+          "val" : "Phenotype that is any abnormality in axis specification (GO:0009798). 'axis specification' is defined as: 'The establishment, maintenance and elaboration of a pattern along a line or around a point.'",
           "xrefs" : [ "FBC:DOS", "GOC:dph", "GOC:go_curators", "GOC:isa_complete" ]
         },
         "comments" : [ "This phenotypic class does not encompass planar polarity." ],
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "axis specification defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "axis specification defective"
+      "lbl" : "abnormal axis specification"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000202",
       "meta" : {
@@ -1400,10 +1450,15 @@
           "val" : "Phenotype that is characterized by the formation of abnormal masses of tissue (tumors) as the result of neoplasia.",
           "xrefs" : [ "FBC:DOS" ]
         },
+        "comments" : [ "Obsoleted as this is the same phenotype as neoplasia." ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
-        } ]
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0100001",
+          "val" : "FBcv:0000723"
+        } ],
+        "deprecated" : true
       },
       "type" : "CLASS",
       "lbl" : "tumorigenic"
@@ -1671,22 +1726,6 @@
       "type" : "CLASS",
       "lbl" : "laboratory wild-type stock"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/FBcv_0000450",
-      "meta" : {
-        "definition" : {
-          "val" : "Phenotype that is a change in the rate of some developmental process (GO:0032502) taking place prior to mature adulthood (defined as adult stage A3), compared to wild-type. Note, developmental processes include stages in development of the whole animal (e.g.- larval development) as well as specific sub-processes, such as dorsal closure.",
-          "xrefs" : [ "FBC:DOS" ]
-        },
-        "comments" : [ "A more complete formalization would require a clause specifying stage. It might be possible to do this in OWL using the same system as we are using for lethal phase." ],
-        "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "phenotypic_class"
-        } ]
-      },
-      "type" : "CLASS",
-      "lbl" : "developmental rate defective"
-    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000692",
       "meta" : {
         "definition" : {
@@ -1706,6 +1745,27 @@
       },
       "type" : "CLASS",
       "lbl" : "neomorphic allele - molecular evidence"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0000450",
+      "meta" : {
+        "definition" : {
+          "val" : "Phenotype that is a change in the rate of some developmental process (GO:0032502) taking place prior to mature adulthood (defined as adult stage A3), compared to wild-type. Note, developmental processes include stages in development of the whole animal (e.g.- larval development) as well as specific sub-processes, such as dorsal closure.",
+          "xrefs" : [ "FBC:DOS" ]
+        },
+        "comments" : [ "A more complete formalization would require a clause specifying stage. It might be possible to do this in OWL using the same system as we are using for lethal phase." ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "developmental rate defective",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "phenotypic_class"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "abnormal developmental rate"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0010018",
       "meta" : {
@@ -1809,16 +1869,21 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000451",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in wound healing (GO:0042060). 'wound healing' is defined as: 'The series of events that restore integrity to a damaged tissue, following an injury.'",
+          "val" : "Phenotype that is any abnormality in wound healing (GO:0042060). 'wound healing' is defined as: 'The series of events that restore integrity to a damaged tissue, following an injury.'",
           "xrefs" : [ "GOC:bf", "PMID:15269788" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "wound healing defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "wound healing defective"
+      "lbl" : "abnormal wound healing"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000693",
       "meta" : {
@@ -2768,6 +2833,10 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000038",
       "meta" : {
+        "definition" : {
+          "val" : "Qualifier that describes the spatial characteristics of a phenotype or expression pattern relative to the position of another entity.",
+          "xrefs" : [ "FBC:CP" ]
+        },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#do_not_annotate" ],
         "xrefs" : [ {
           "val" : "PATO:0001631"
@@ -2782,6 +2851,10 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000039",
       "meta" : {
+        "definition" : {
+          "val" : "A spatial quality inhering in a bearer by virtue of the bearer's being located toward the front of an organism relative to another entity.",
+          "xrefs" : [ "PATO:0001632" ]
+        },
         "xrefs" : [ {
           "val" : "PATO:0001632"
         } ],
@@ -2990,6 +3063,10 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000000",
       "meta" : {
+        "definition" : {
+          "val" : "FlyBase miscellaneous controlled vocabulary term.",
+          "xrefs" : [ ]
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "FlyBase miscellaneous CV"
@@ -3046,10 +3123,14 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000002",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in thermotaxis (GO:0043052). 'thermotaxis' is defined as: 'The directed movement of a motile cell or organism in response to a temperature gradient. Movement may be towards either a higher or lower temperature.'",
+          "val" : "Phenotype that is any abnormality in thermotaxis (GO:0043052). 'thermotaxis' is defined as: 'The directed movement of a motile cell or organism in response to a temperature gradient. Movement may be towards either a higher or lower temperature.'",
           "xrefs" : [ "FBC:DOS", "GOC:cab1", "WB_REF:cgc467" ]
         },
         "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "thermotaxis defective",
+          "xrefs" : [ ]
+        }, {
           "pred" : "hasExactSynonym",
           "val" : "thermotaxis behaviour defective",
           "xrefs" : [ ]
@@ -3064,7 +3145,7 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "thermotaxis defective"
+      "lbl" : "abnormal thermotaxis"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000486",
       "meta" : {
@@ -3518,8 +3599,8 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000495",
       "meta" : {
         "definition" : {
-          "val" : "Mutation caused by a male recombination event induced by a male recombination factor which is present in chromosomes extracted from a population in Patras, Greece.",
-          "xrefs" : [ "FlyBase:FBrf0202435" ]
+          "val" : "Mutation caused by a male recombination event induced by male recombination factor 23.5 MRF which is present in second chromosomes extracted from a population in Patras, Greece.",
+          "xrefs" : [ "FlyBase:FBrf0039984", "FlyBase:FBrf0202435" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -3529,6 +3610,10 @@
           "pred" : "hasRelatedSynonym",
           "val" : "MRF23.5",
           "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "23.5 MRF",
+          "xrefs" : [ "FlyBase:FBrf0039984" ]
         } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -3570,10 +3655,14 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000496",
       "meta" : {
         "definition" : {
-          "val" : "Mutation caused by a male recombination event induced by a male recombination factor which is present in chromosomes extracted from a population in Patras, Greece.",
-          "xrefs" : [ "FlyBase:FBrf0202435" ]
+          "val" : "Mutation caused by a male recombination event induced by male recombination factor 31.1 MRF which is present in second chromosomes extracted from a population in Patras, Greece.",
+          "xrefs" : [ "FlyBase:FBrf0030109", "FlyBase:FBrf0202435" ]
         },
         "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "31.1 MRF",
+          "xrefs" : [ "FlyBase:FBrf0030109" ]
+        }, {
           "pred" : "hasExactSynonym",
           "val" : "mutation induced by MRF31.1 male recombination",
           "xrefs" : [ ]
@@ -3673,8 +3762,8 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000014",
       "meta" : {
         "definition" : {
-          "val" : "Qualifier used to describe the appearance of extra copies of an anatomical structure.",
-          "xrefs" : [ "FBC:MMC" ]
+          "val" : "Qualifier used to describe changes in number or location of an anatomical structure compared to wild type.",
+          "xrefs" : [ "FBC:CP", "FBC:MMC" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#do_not_annotate" ],
         "basicPropertyValues" : [ {
@@ -3717,6 +3806,27 @@
       },
       "type" : "CLASS",
       "lbl" : "hobo dysgenesis"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0001347",
+      "meta" : {
+        "definition" : {
+          "val" : "Any abnormality in or loss of some anatomical structure or biological process compared to wild-type.",
+          "xrefs" : [ "FBC:DOS" ]
+        },
+        "comments" : [ "The subclasses of this term classify Drosophila phenotypes into different common categories. They have been chosen by FlyBase to reflect phenotype terms most often reported by Drosophila researchers in the published literature." ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#do_not_annotate" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "phenotypic class",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "phenotypic_class"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "phenotype"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000499",
       "meta" : {
@@ -3770,27 +3880,6 @@
       },
       "type" : "CLASS",
       "lbl" : "postage stamp"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/FBcv_0001347",
-      "meta" : {
-        "definition" : {
-          "val" : "A defect in or loss of some anatomical structure or biological process compared to wild-type.",
-          "xrefs" : [ "FBC:DOS" ]
-        },
-        "comments" : [ "The subclasses of this term classify Drosophila phenotypes into different common categories. They have been chosen by FlyBase to reflect phenotype terms most often reported by Drosophila researchers in the published literature." ],
-        "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#do_not_annotate" ],
-        "synonyms" : [ {
-          "pred" : "hasExactSynonym",
-          "val" : "phenotypic class",
-          "xrefs" : [ ]
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "phenotypic_class"
-        } ]
-      },
-      "type" : "CLASS",
-      "lbl" : "phenotype"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000016",
       "meta" : {
@@ -3879,10 +3968,13 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000061",
       "meta" : {
         "definition" : {
-          "val" : "When, compared to wild-type, an extra copy of an anatomical structure is present in an abnormal location, then this structure is ectopic.",
-          "xrefs" : [ "FBC:DOS" ]
+          "val" : "Anatomical structure is present in a location in which it would not be present in wild-type.",
+          "xrefs" : [ "FBC:CP" ]
         },
-        "comments" : [ "An extra copy of an anatomical structure that is present in the same location as in wild-type is supernumerary, rather than ectopic." ],
+        "comments" : [ "An extra copy of an anatomical structure that is present in the same location as in wild-type should use 'increased number', rather than 'ectopic'." ],
+        "xrefs" : [ {
+          "val" : "PATO:0000628"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "structural_qualifier"
@@ -3975,6 +4067,10 @@
           "pred" : "hasExactSynonym",
           "val" : "lethal - all die before end of pharate adult stage",
           "xrefs" : [ ]
+        }, {
+          "pred" : "hasBroadSynonym",
+          "val" : "pupal lethal",
+          "xrefs" : [ ]
         } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -4025,6 +4121,10 @@
           "pred" : "hasExactSynonym",
           "val" : "lethal - all die before end of third instar larval stage",
           "xrefs" : [ ]
+        }, {
+          "pred" : "hasBroadSynonym",
+          "val" : "larval lethal",
+          "xrefs" : [ ]
         } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -4054,13 +4154,18 @@
           "val" : "Present in the correct location but in larger numbers than in wild-type.",
           "xrefs" : [ "FBC:DOS" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "supernumerary",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "structural_qualifier"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "supernumerary"
+      "lbl" : "increased number"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0002005",
       "meta" : {
@@ -4069,6 +4174,11 @@
           "xrefs" : [ "FBC:DOS" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#lethal_phase" ],
+        "synonyms" : [ {
+          "pred" : "hasBroadSynonym",
+          "val" : "pupal lethal",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
@@ -4113,6 +4223,11 @@
           "xrefs" : [ "FBC:DOS" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#lethal_phase" ],
+        "synonyms" : [ {
+          "pred" : "hasBroadSynonym",
+          "val" : "larval lethal",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
@@ -4635,6 +4750,10 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000040",
       "meta" : {
+        "definition" : {
+          "val" : "A spatial quality inhering in a bearer by virtue of the bearer's being located further from a more centrally located entity.",
+          "xrefs" : [ "PATO:0001234" ]
+        },
         "xrefs" : [ {
           "val" : "PATO:0001234"
         } ],
@@ -4663,6 +4782,10 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000041",
       "meta" : {
+        "definition" : {
+          "val" : "A spatial quality inhering in a bearer by virtue of the bearer's being located toward the back or upper surface of an organism relative to another entity.",
+          "xrefs" : [ "PATO:0001233" ]
+        },
         "xrefs" : [ {
           "val" : "PATO:0001233"
         } ],
@@ -4776,6 +4899,23 @@
       "type" : "CLASS",
       "lbl" : "ammunition source for transposable element mutagenesis"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0000045",
+      "meta" : {
+        "definition" : {
+          "val" : "A spatial quality inhering in a bearer by virtue of the bearer's being located toward the rear of an organism relative to another entity.",
+          "xrefs" : [ "PATO:0001633" ]
+        },
+        "xrefs" : [ {
+          "val" : "PATO:0001633"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "spatial_qualifier"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "posterior to"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000287",
       "meta" : {
         "definition" : {
@@ -4790,19 +4930,6 @@
       },
       "type" : "CLASS",
       "lbl" : "loss of function allele"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/FBcv_0000045",
-      "meta" : {
-        "xrefs" : [ {
-          "val" : "PATO:0001633"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "spatial_qualifier"
-        } ]
-      },
-      "type" : "CLASS",
-      "lbl" : "posterior to"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000288",
       "meta" : {
@@ -4830,6 +4957,10 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000047",
       "meta" : {
+        "definition" : {
+          "val" : "A spatial quality inhering in a bearer by virtue of the bearer's being located more centrally than another entity.",
+          "xrefs" : [ "PATO:0001195" ]
+        },
         "xrefs" : [ {
           "val" : "PATO:0001195"
         } ],
@@ -4857,6 +4988,10 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000048",
       "meta" : {
+        "definition" : {
+          "val" : "A spatial quality inhering in a bearer by virtue of the bearer's being extended on all sides of another entity simultaneously.",
+          "xrefs" : [ "PATO:0001772" ]
+        },
         "xrefs" : [ {
           "val" : "PATO:0001772"
         } ],
@@ -4870,6 +5005,10 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000049",
       "meta" : {
+        "definition" : {
+          "val" : "A spatial quality inhering in a bearer by virtue of the bearer's being located toward the belly or lower surface of an organism relative to another entity.",
+          "xrefs" : [ "FBC:CP" ]
+        },
         "xrefs" : [ {
           "val" : "PATO:0001196"
         } ],
@@ -4926,8 +5065,17 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000050",
       "meta" : {
+        "definition" : {
+          "val" : "A spatial quality inhering in a bearer by virtue of the bearer's being located near in space in relation to another entity.",
+          "xrefs" : [ "PATO:0002259" ]
+        },
         "xrefs" : [ {
-          "val" : "PATO:0001771"
+          "val" : "PATO:0002259"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasNarrowSynonym",
+          "val" : "adjacent to",
+          "xrefs" : [ "PATO:0002259" ]
         } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -5475,6 +5623,26 @@
       "type" : "CLASS",
       "lbl" : "single individual sample"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007501",
+      "meta" : {
+        "definition" : {
+          "val" : "Phenotype that is any abnormality in short-term memory (GO:0007614). 'short-term memory' is defined as: 'The memory process that deals with the storage, retrieval and modification of information received a short time (up to about 30 minutes) ago. This type of memory is typically dependent on direct, transient effects of second messenger activation.'",
+          "xrefs" : [ "ISBN:0582227089", "http://hebb.mit.edu/courses/9.03/lecture4.html" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "phenotypic_class"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2020-12-15T14:50:19Z"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "abnormal short-term memory"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0003143",
       "meta" : {
         "definition" : {
@@ -5494,6 +5662,26 @@
       },
       "type" : "CLASS",
       "lbl" : "environmental"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007500",
+      "meta" : {
+        "definition" : {
+          "val" : "Phenotype that is any abnormality in anesthesia-resistant memory (GO:0007615). 'anesthesia-resistant memory' is defined as: 'The memory process that results in the formation of consolidated memory resistant to disruption of the patterned activity of the brain, without requiring protein synthesis.'",
+          "xrefs" : [ "PMID:15143285", "PMID:17088531" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "phenotypic_class"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2020-12-15T14:46:41Z"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "abnormal anesthesia-resistant memory"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0003142",
       "meta" : {
@@ -5575,6 +5763,46 @@
       "type" : "CLASS",
       "lbl" : "trait selection"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007505",
+      "meta" : {
+        "definition" : {
+          "val" : "Phenotype that is an increase in body weight compared to identically raised wild-type controls.",
+          "xrefs" : [ "FBC:CP" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "FlyBase miscellaneous CV"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2020-12-15T15:50:18Z"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "increased body weight"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007504",
+      "meta" : {
+        "definition" : {
+          "val" : "Phenotype that is any abnormality in body weight compared to identically raised wild-type controls.",
+          "xrefs" : [ "FBC:CP" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2020-12-15T15:47:07Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "FlyBase miscellaneous CV"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "abnormal body weight"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0003146",
       "meta" : {
         "definition" : {
@@ -5615,6 +5843,26 @@
       "type" : "CLASS",
       "lbl" : "mated"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007503",
+      "meta" : {
+        "definition" : {
+          "val" : "Phenotype that is any abnormality in long-term memory (GO:0007616). 'long-term memory' is defined as: 'The memory process that deals with the storage, retrieval and modification of information a long time (typically weeks, months or years) after receiving that information. This type of memory is typically dependent on gene transcription regulated by second messenger activation.'",
+          "xrefs" : [ "ISBN:0582227089", "http://hebb.mit.edu/courses/9.03/lecture4.html" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2020-12-15T14:51:45Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "phenotypic_class"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "abnormal long-term memory"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0003148",
       "meta" : {
         "definition" : {
@@ -5634,6 +5882,106 @@
       },
       "type" : "CLASS",
       "lbl" : "interspecific hybrid"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007502",
+      "meta" : {
+        "definition" : {
+          "val" : "Phenotype that is any abnormality in medium-term memory (GO:0072375). 'medium-term memory' is defined as: 'The memory process that deals with the storage, retrieval and modification of information received at a time ago that is intermediate between that of short and long term memory (30min - 7hrs in Drosophila melanogaster).'",
+          "xrefs" : [ "GOC:sart", "PMID:14659098", "PMID:7923375" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "phenotypic_class"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2020-12-15T14:51:08Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "abnormal medium-term memory"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007509",
+      "meta" : {
+        "definition" : {
+          "val" : "Phenotype that is an increase in the rate of phototaxis (GO:0042331). 'phototaxis' is defined as: 'The directed movement of a motile cell or organism in response to light.'",
+          "xrefs" : [ "FBC:CP", "GOC:jl", "ISBN:0192800981" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2020-12-16T09:10:39Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "phenotypic_class"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "increased rate of phototaxis"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007508",
+      "meta" : {
+        "definition" : {
+          "val" : "A phenotype that is a decrease in the size of the whole body or some body part compared to wild-type.",
+          "xrefs" : [ "FBC:CP" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2020-12-15T15:52:59Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "phenotypic_class"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "decreased size"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007507",
+      "meta" : {
+        "definition" : {
+          "val" : "A phenotype that is an increase in the size of the whole body or some body part compared to wild-type.",
+          "xrefs" : [ "FBC:CP" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "phenotypic_class"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2020-12-15T15:52:00Z"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "increased size"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007506",
+      "meta" : {
+        "definition" : {
+          "val" : "Phenotype that is a decrease in body weight compared to identically raised wild-type controls.",
+          "xrefs" : [ "FBC:CP" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "FlyBase miscellaneous CV"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2020-12-15T15:50:44Z"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "decreased body weight"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000080",
       "meta" : {
@@ -5992,6 +6340,11 @@
           "xrefs" : [ "FBC:DOS" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#lethal_phase" ],
+        "synonyms" : [ {
+          "pred" : "hasBroadSynonym",
+          "val" : "pupal lethal",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
@@ -6130,6 +6483,11 @@
           "xrefs" : [ "FBC:DOS" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#lethal_phase" ],
+        "synonyms" : [ {
+          "pred" : "hasBroadSynonym",
+          "val" : "pupal lethal",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
@@ -6206,11 +6564,15 @@
           "val" : "A phenotype of a population that is the death of all animals in that population at some stage or stages before the end of the embryonic stage.",
           "xrefs" : [ "FBC:DOS" ]
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#lethal_phase" ],
+        "comments" : [ "Obsoleted due to equivalence with FBcv:0002033 'lethal - all die during embryonic stage'." ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
-        } ]
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0100001",
+          "val" : "FBcv:0002033"
+        } ],
+        "deprecated" : true
       },
       "type" : "CLASS",
       "lbl" : "lethal - all die before end of embryonic stage"
@@ -6267,7 +6629,7 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000097",
       "meta" : {
         "definition" : {
-          "val" : "10% of egg length from the posterior tip of the egg or pre-gastrula embryo.",
+          "val" : "20% of egg length from the posterior tip of the egg or pre-gastrula embryo.",
           "xrefs" : [ "FBC:DOS" ]
         },
         "basicPropertyValues" : [ {
@@ -6320,6 +6682,11 @@
           "xrefs" : [ "FBC:DOS" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#lethal_phase" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "embryonic lethal",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
@@ -8052,7 +8419,7 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0005043",
       "meta" : {
         "definition" : {
-          "val" : "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which results in the tagged gene product being targeted for degradation by a specific process that is dependent on the cell cycle.",
+          "val" : "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which results in the tagged gene product being targeted for degradation, where this property can be regulated by the cell cycle.",
           "xrefs" : [ "FBC:GM" ]
         },
         "basicPropertyValues" : [ {
@@ -8067,7 +8434,7 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "cell-cycle regulated gene product degradation tag"
+      "lbl" : "cell cycle-regulated gene product degradation tag"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0005044",
       "meta" : {
@@ -8117,7 +8484,7 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0005042",
       "meta" : {
         "definition" : {
-          "val" : "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which results in the tagged gene product being targeted for degradation by a specific process.",
+          "val" : "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which results in the tagged gene product being targeted for degradation, where this property can be regulated by a specific process or entity.",
           "xrefs" : [ "FBC:GM" ]
         },
         "basicPropertyValues" : [ {
@@ -10029,7 +10396,7 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0005083",
       "meta" : {
         "definition" : {
-          "val" : "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which results in the tagged gene product being targeted for degradation by a specific process that is regulated by a small molecule.",
+          "val" : "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which results in the tagged gene product being targeted for degradation, where this property can be regulated by a small molecule.",
           "xrefs" : [ "FBC:GM" ]
         },
         "synonyms" : [ {
@@ -11255,17 +11622,22 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000668",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in cell adhesion (GO:0007155). 'cell adhesion' is defined as: 'The attachment of a cell, either to another cell or to an underlying substrate such as the extracellular matrix, via cell adhesion molecules.'",
+          "val" : "Phenotype that is any abnormality in cell adhesion (GO:0007155). 'cell adhesion' is defined as: 'The attachment of a cell, either to another cell or to an underlying substrate such as the extracellular matrix, via cell adhesion molecules.'",
           "xrefs" : [ "FBC:DOS", "GOC:hb", "GOC:pf" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "cell adhesion defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "cell adhesion defective"
+      "lbl" : "abnormal cell adhesion"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000426",
       "meta" : {
@@ -11290,15 +11662,17 @@
       "type" : "CLASS",
       "lbl" : "decreased cell death"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/FBcv_0000669",
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0000427",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in hatching behavior (GO:0035187). 'hatching behavior' is defined as: 'The specific behavior of an organism during the emergence from an egg shell. In Drosophila for example, the larva swings its head reiteratively through a semicircular arc, using its mouth hooks to tear apart the chorion in front of it and thus free itself from within the egg shell.'",
-          "xrefs" : [ "FBC:DOS", "GOC:pr", "PMID:10436051" ]
+          "val" : "Phenotype that is any abnormality in cell growth (GO:0016049). 'cell growth' is defined as: 'The process in which a cell irreversibly increases in size over time by accretion and biosynthetic production of matter similar to that already present.'",
+          "xrefs" : [ "FBC:DOS", "GOC:ai" ]
         },
+        "comments" : [ "Note that defects in cell size are not necessarily the result of defects in cell growth. A change in the rate of cell division in the absence of any change in cell growth rate can result in smaller or larger cells." ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
-          "val" : "hatching behaviour defective",
+          "val" : "cell growth defective",
           "xrefs" : [ ]
         } ],
         "basicPropertyValues" : [ {
@@ -11307,53 +11681,70 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "hatching behavior defective"
+      "lbl" : "abnormal cell growth"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/FBcv_0000427",
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0000669",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in cell growth (GO:0016049). 'cell growth' is defined as: 'The process in which a cell irreversibly increases in size over time by accretion and biosynthetic production of matter similar to that already present.'",
-          "xrefs" : [ "FBC:DOS", "GOC:ai" ]
+          "val" : "Phenotype that is any abnormality in hatching behavior (GO:0035187). 'hatching behavior' is defined as: 'The specific behavior of an organism during the emergence from an egg shell. In Drosophila for example, the larva swings its head reiteratively through a semicircular arc, using its mouth hooks to tear apart the chorion in front of it and thus free itself from within the egg shell.'",
+          "xrefs" : [ "FBC:DOS", "GOC:pr", "PMID:10436051" ]
         },
-        "comments" : [ "Note that defects in cell size are not necessarily the result of defects in cell growth. A change in the rate of cell division in the absence of any change in cell growth rate can result in smaller or larger cells." ],
-        "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "hatching behaviour defective",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "hatching behavior defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "cell growth defective"
+      "lbl" : "abnormal hatching behavior"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000428",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in the size of cells in a whole animal or in some specific organ, tissue or clone of cells compared to wild-type.",
+          "val" : "Phenotype that is any abnormality in the size of cells in a whole animal or in some specific organ, tissue or clone of cells compared to wild-type.",
           "xrefs" : [ "FBC:DOS" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "cell size defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "cell size defective"
+      "lbl" : "abnormal cell size"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000429",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in the shape (PATO:0000052) of some cell compared to wild-type.",
+          "val" : "Phenotype that is any abnormality in the shape (PATO:0000052) of some cell compared to wild-type.",
           "xrefs" : [ "FBC:DOS" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "cell shape defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "cell shape defective"
+      "lbl" : "abnormal cell shape"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000660",
       "meta" : {
@@ -11382,10 +11773,14 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000420",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in grooming behavior (GO:0007625). 'grooming behavior' is defined as: 'The specific behavior of an organism relating to grooming, cleaning and brushing to remove dirt and parasites.'",
+          "val" : "Phenotype that is any abnormality in grooming behavior (GO:0007625). 'grooming behavior' is defined as: 'The specific behavior of an organism relating to grooming, cleaning and brushing to remove dirt and parasites.'",
           "xrefs" : [ "FBC:DOS", "GOC:jl", "GOC:pr" ]
         },
         "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "grooming behavior defective",
+          "xrefs" : [ ]
+        }, {
           "pred" : "hasExactSynonym",
           "val" : "grooming behaviour defective",
           "xrefs" : [ ]
@@ -11396,7 +11791,7 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "grooming behavior defective"
+      "lbl" : "abnormal grooming behavior"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000662",
       "meta" : {
@@ -11428,13 +11823,17 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000421",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is reduction in or loss of a stereotypical behavioral response to touch.",
+          "val" : "Phenotype that is any abnormality in or loss of a stereotypical behavioral response to touch.",
           "xrefs" : [ "FlyBase:FBrf0073546" ]
         },
-        "comments" : [ "This phenotype is commonly assayed by scoring larval avoidance responses following stroking of the thoracic segments (see Kernan et al., 1994). On its own, this is not sufficient evidence for a defect in sensory perception of touch, as motor defects can also cause this phenotype." ],
+        "comments" : [ "This phenotype is commonly assayed by scoring larval avoidance responses following stroking of the thoracic segments (see Kernan et al., 1994). On its own, this is not sufficient evidence for an abnormality in sensory perception of touch, as motor defects can also cause this phenotype." ],
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "touch sensitivity defective",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "touch response defective",
           "xrefs" : [ ]
         } ],
         "basicPropertyValues" : [ {
@@ -11443,12 +11842,12 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "touch response defective"
+      "lbl" : "abnormal touch response"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000422",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in entrainment of circadian clock by photoperiod (GO:0043153), which is defined as: 'The synchronization of a circadian rhythm to photoperiod, the intermittent cycle of light (day) and dark (night).'",
+          "val" : "Phenotype that is any abnormality in entrainment of circadian clock by photoperiod (GO:0043153), which is defined as: 'The synchronization of a circadian rhythm to photoperiod, the intermittent cycle of light (day) and dark (night).'",
           "xrefs" : [ "FBC:DOS", "GOC:jl" ]
         },
         "basicPropertyValues" : [ {
@@ -11473,16 +11872,21 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000423",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in DNA repair (GO:0006281). 'DNA repair' is defined as: 'The process of restoring DNA after damage. Genomes are subject to damage by chemical and physical agents in the environment (e.g. UV and ionizing radiations, chemical mutagens, fungal and bacterial toxins, etc.) and by free radicals or alkylating agents endogenously generated in metabolism. DNA is also damaged because of errors during its replication. A variety of different DNA repair pathways have been reported that include direct reversal, base excision repair, nucleotide excision repair, photoreactivation, bypass, double-strand break repair pathway, and mismatch repair pathway.'",
+          "val" : "Phenotype that is any abnormality in DNA repair (GO:0006281). 'DNA repair' is defined as: 'The process of restoring DNA after damage. Genomes are subject to damage by chemical and physical agents in the environment (e.g. UV and ionizing radiations, chemical mutagens, fungal and bacterial toxins, etc.) and by free radicals or alkylating agents endogenously generated in metabolism. DNA is also damaged because of errors during its replication. A variety of different DNA repair pathways have been reported that include direct reversal, base excision repair, nucleotide excision repair, photoreactivation, bypass, double-strand break repair pathway, and mismatch repair pathway.'",
           "xrefs" : [ "FBC:DOS", "PMID:11563486" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "DNA repair defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "DNA repair defective"
+      "lbl" : "abnormal DNA repair"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000665",
       "meta" : {
@@ -11490,13 +11894,18 @@
           "val" : "Phenotype that is an abnormality in body size compared to wild-type animals raised under the same conditions as the animals exhibiting the phenotype.",
           "xrefs" : [ "FBC:DOS" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "body size defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "body size defective"
+      "lbl" : "abnormal body size"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000424",
       "meta" : {
@@ -11517,6 +11926,10 @@
           "pred" : "hasNarrowSynonym",
           "val" : "programmed cell death defective",
           "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "cell death defective",
+          "xrefs" : [ ]
         } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -11524,7 +11937,7 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "cell death defective"
+      "lbl" : "abnormal cell death"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000666",
       "meta" : {
@@ -11581,24 +11994,34 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000670",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in eclosion (GO:0007562). 'eclosion' is defined as: 'The emergence of an adult insect from a pupa case.'",
+          "val" : "Phenotype that is any abnormality in eclosion (GO:0007562). 'eclosion' is defined as: 'The emergence of an adult insect from a pupa case.'",
           "xrefs" : [ "FBC:DOS", "GOC:dgh", "GOC:dos", "GOC:mah", "ISBN:0198600461" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "eclosion defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "eclosion defective"
+      "lbl" : "abnormal eclosion"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000679",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in circadian behavior (GO:0048512). 'circadian behavior' is defined as: 'The specific behavior of an organism that recurs with a regularity of approximately 24 hours.'",
+          "val" : "Phenotype that is any abnormality in circadian behavior (GO:0048512). 'circadian behavior' is defined as: 'The specific behavior of an organism that recurs with a regularity of approximately 24 hours.'",
           "xrefs" : [ "FBC:DOS", "GOC:bf", "GOC:go_curators", "GOC:pr" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "circadian behavior defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "djs93"
@@ -11611,7 +12034,7 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "circadian behavior defective"
+      "lbl" : "abnormal circadian behavior"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000437",
       "meta" : {
@@ -11660,27 +12083,13 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000671",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in cell cycle (GO:0007049). 'cell cycle' is defined as: 'The progression of biochemical and morphological phases and events that occur in a cell during successive cell replication or nuclear replication events. Canonically, the cell cycle comprises the replication and segregation of genetic material followed by the division of the cell, but in endocycles or syncytial cells nuclear replication or nuclear division may not be followed by cell division.'",
+          "val" : "Phenotype that is any abnormality in cell cycle (GO:0007049). 'cell cycle' is defined as: 'The progression of biochemical and morphological phases and events that occur in a cell during successive cell replication or nuclear replication events. Canonically, the cell cycle comprises the replication and segregation of genetic material followed by the division of the cell, but in endocycles or syncytial cells nuclear replication or nuclear division may not be followed by cell division.'",
           "xrefs" : [ "FBC:DOS", "GOC:go_curators", "GOC:mtg_cell_cycle" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "phenotypic_class"
-        } ]
-      },
-      "type" : "CLASS",
-      "lbl" : "cell cycle defective"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/FBcv_0000672",
-      "meta" : {
-        "definition" : {
-          "val" : "Phenotype that is a defect in endomitotic cell cycle (GO:0007113). 'endomitotic cell cycle' is defined as: 'A mitotic cell cycle in which chromosomes are replicated and sister chromatids separate, but spindle formation, nuclear membrane breakdown and nuclear division do not occur, resulting in an increased number of chromosomes in the cell.'",
-          "xrefs" : [ "FBC:DOS", "GOC:curators", "GOC:dos", "GOC:expert_vm" ]
-        },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
-          "val" : "endocycle defective",
+          "val" : "cell cycle defective",
           "xrefs" : [ ]
         } ],
         "basicPropertyValues" : [ {
@@ -11689,22 +12098,50 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "endomitotic cell cycle defective"
+      "lbl" : "abnormal cell cycle"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/FBcv_0000430",
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0000672",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in the asymmetric distribution of components within a cell. For example an epithelial cell is 'cell polarity defective' if it lacks the normal asymmetric distribution of proteins or cell components such as junctions or villi along its apical-basal axis.",
-          "xrefs" : [ "FBC:DOS" ]
+          "val" : "Phenotype that is any abnormality in endomitotic cell cycle (GO:0007113). 'endomitotic cell cycle' is defined as: 'A mitotic cell cycle in which chromosomes are replicated and sister chromatids separate, but spindle formation, nuclear membrane breakdown and nuclear division do not occur, resulting in an increased number of chromosomes in the cell.'",
+          "xrefs" : [ "FBC:DOS", "GOC:curators", "GOC:dos", "GOC:expert_vm" ]
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "endocycle defective",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "endomitotic cell cycle defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "cell polarity defective"
+      "lbl" : "abnormal endomitotic cell cycle"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0000430",
+      "meta" : {
+        "definition" : {
+          "val" : "Phenotype that is any abnormality in the asymmetric distribution of components within a cell. For example an epithelial cell is 'cell polarity defective' if it lacks the normal asymmetric distribution of proteins or cell components such as junctions or villi along its apical-basal axis.",
+          "xrefs" : [ "FBC:DOS" ]
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "cell polarity defective",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "phenotypic_class"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "abnormal cell polarity"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000673",
       "meta" : {
@@ -11721,31 +12158,16 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000431",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in meiotic cell cycle (GO:0051321). 'meiotic cell cycle' is defined as: 'Progression through the phases of the meiotic cell cycle, in which canonically a cell replicates to produce four offspring with half the chromosomal content of the progenitor cell via two nuclear divisions.'",
+          "val" : "Phenotype that is any abnormality in meiotic cell cycle (GO:0051321). 'meiotic cell cycle' is defined as: 'Progression through the phases of the meiotic cell cycle, in which canonically a cell replicates to produce four offspring with half the chromosomal content of the progenitor cell via two nuclear divisions.'",
           "xrefs" : [ "FBC:DOS", "GOC:ai" ]
         },
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "meiotic",
           "xrefs" : [ ]
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "phenotypic_class"
-        } ]
-      },
-      "type" : "CLASS",
-      "lbl" : "meiotic cell cycle defective"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/FBcv_0000432",
-      "meta" : {
-        "definition" : {
-          "val" : "Phenotype that is a defect in mitotic cell cycle (GO:0000278). 'mitotic cell cycle' is defined as: 'Progression through the phases of the mitotic cell cycle, the most common eukaryotic cell cycle, which canonically comprises four successive phases called G1, S, G2, and M and includes replication of the genome and the subsequent segregation of chromosomes into daughter cells. In some variant cell cycles nuclear replication or nuclear division may not be followed by cell division, or G1 and G2 phases may be absent.'",
-          "xrefs" : [ "FBC:DOS", "GOC:mah", "ISBN:0815316194", "Reactome:69278" ]
-        },
-        "synonyms" : [ {
-          "pred" : "hasRelatedSynonym",
-          "val" : "mitotic",
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "meiotic cell cycle defective",
           "xrefs" : [ ]
         } ],
         "basicPropertyValues" : [ {
@@ -11754,7 +12176,30 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "mitotic cell cycle defective"
+      "lbl" : "abnormal meiotic cell cycle"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0000432",
+      "meta" : {
+        "definition" : {
+          "val" : "Phenotype that is any abnormality in mitotic cell cycle (GO:0000278). 'mitotic cell cycle' is defined as: 'Progression through the phases of the mitotic cell cycle, the most common eukaryotic cell cycle, which canonically comprises four successive phases called G1, S, G2, and M and includes replication of the genome and the subsequent segregation of chromosomes into daughter cells. In some variant cell cycles nuclear replication or nuclear division may not be followed by cell division, or G1 and G2 phases may be absent.'",
+          "xrefs" : [ "FBC:DOS", "GOC:mah", "ISBN:0815316194", "Reactome:69278" ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasRelatedSynonym",
+          "val" : "mitotic",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "mitotic cell cycle defective",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "phenotypic_class"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "abnormal mitotic cell cycle"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000674",
       "meta" : {
@@ -11770,16 +12215,21 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000433",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in cytokinesis (GO:0000910). 'cytokinesis' is defined as: 'The division of the cytoplasm and the plasma membrane of a cell and its partitioning into two daughter cells.'",
+          "val" : "Phenotype that is any abnormality in cytokinesis (GO:0000910). 'cytokinesis' is defined as: 'The division of the cytoplasm and the plasma membrane of a cell and its partitioning into two daughter cells.'",
           "xrefs" : [ "FBC:DOS", "GOC:mtg_cell_cycle" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "cytokinesis defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "cytokinesis defective"
+      "lbl" : "abnormal cytokinesis"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000675",
       "meta" : {
@@ -11795,17 +12245,22 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000434",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in the electrophysiological properties of some class of neurons, muscles or anatomical structure of the nervous system. Examples of these phenotypes at the neuron class level include defects in spontaneous or evoked excitatory junction potential. Examples at a more gross anatomical level include abnormal retinal electrophysiology (e.g.- measured by an electroretinogram).",
+          "val" : "Phenotype that is any abnormality in the electrophysiological properties of some class of neurons, muscles or other anatomical structure of the nervous system. Examples of these phenotypes at the neuron class level include defects in spontaneous or evoked excitatory junction potential. Examples at a more gross anatomical level include abnormal retinal electrophysiology (e.g.- measured by an electroretinogram).",
           "xrefs" : [ "FBC:DOS" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "neurophysiology defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "neurophysiology defective"
+      "lbl" : "abnormal neurophysiology"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000676",
       "meta" : {
@@ -11842,17 +12297,22 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000435",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in nervous system (FBbt:00005093). 'nervous system' is defined as: 'All the nerve centers and nerve fibers in the central, visceral and peripheral nervous systems.'",
+          "val" : "Phenotype that is any abnormality in the anatomy of the nervous system (FBbt:00005093). 'nervous system' is defined as: 'All the nerve centers and nerve fibers in the central, visceral and peripheral nervous systems.'",
           "xrefs" : [ "FBC:DOS", "FlyBase:FBrf0166419" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "neuroanatomy defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "neuroanatomy defective"
+      "lbl" : "abnormal neuroanatomy"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000678",
       "meta" : {
@@ -11877,17 +12337,22 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000436",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in sex determination (GO:0007530). 'sex determination' is defined as: 'Any process that establishes and transmits the specification of sexual status of an individual organism.'",
+          "val" : "Phenotype that is any abnormality in sex determination (GO:0007530). 'sex determination' is defined as: 'Any process that establishes and transmits the specification of sexual status of an individual organism.'",
           "xrefs" : [ "FBC:DOS", "ISBN:0198506732" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "sex-determination defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "sex-determination defective"
+      "lbl" : "abnormal sex-determination"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0007035",
       "meta" : {
@@ -12076,12 +12541,16 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000404",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in sensory perception of smell (GO:0007608). 'sensory perception of smell' is defined as: 'The series of events required for an organism to receive an olfactory stimulus, convert it to a molecular signal, and recognize and characterize the signal. Olfaction involves the detection of chemical composition of an organism's ambient medium by chemoreceptors. This is a neurological process.'",
+          "val" : "Phenotype that is any abnormality in sensory perception of smell (GO:0007608). 'sensory perception of smell' is defined as: 'The series of events required for an organism to receive an olfactory stimulus, convert it to a molecular signal, and recognize and characterize the signal. Olfaction involves the detection of chemical composition of an organism's ambient medium by chemoreceptors. This is a neurological process.'",
           "xrefs" : [ "FBC:DOS", "GOC:ai" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "olfaction defective",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "smell perception defective",
           "xrefs" : [ ]
         } ],
         "basicPropertyValues" : [ {
@@ -12090,7 +12559,7 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "smell perception defective"
+      "lbl" : "abnormal smell perception"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000646",
       "meta" : {
@@ -12117,12 +12586,16 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000405",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in sensory perception of taste (GO:0050909). 'sensory perception of taste' is defined as: 'The series of events required for an organism to receive a gustatory stimulus, convert it to a molecular signal, and recognize and characterize the signal. Gustation involves the direct detection of chemical composition, usually through contact with chemoreceptor cells. This is a neurological process.'",
+          "val" : "Phenotype that is any abnormality in sensory perception of taste (GO:0050909). 'sensory perception of taste' is defined as: 'The series of events required for an organism to receive a gustatory stimulus, convert it to a molecular signal, and recognize and characterize the signal. Gustation involves the direct detection of chemical composition, usually through contact with chemoreceptor cells. This is a neurological process.'",
           "xrefs" : [ "FBC:DOS", "GOC:ai" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "gustation defective",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "taste perception defective",
           "xrefs" : [ ]
         }, {
           "pred" : "hasExactSynonym",
@@ -12135,7 +12608,26 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "taste perception defective"
+      "lbl" : "abnormal taste perception"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0000406",
+      "meta" : {
+        "definition" : {
+          "val" : "Phenotype that is any abnormality in or absense of proboscis extension reflex in response to a sugar stimulus via taste sensilla on the tarsus.",
+          "xrefs" : [ "FBC:DOS" ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "tarsal response defective",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "phenotypic_class"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "abnormal tarsal response"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000648",
       "meta" : {
@@ -12148,19 +12640,28 @@
       "type" : "CLASS",
       "lbl" : "mapping stock"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/FBcv_0000406",
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0000407",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a failure to exhibit proboscis extension reflex in response to a sugar stimulus via taste sensilla on the tarsus.",
-          "xrefs" : [ "FBC:DOS" ]
+          "val" : "Phenotype that is any abnormality in sensory perception of sound (GO:0007605). 'sensory perception of sound' is defined as: 'The series of events required for an organism to receive an auditory stimulus, convert it to a molecular signal, and recognize and characterize the signal. Sonic stimuli are detected in the form of vibrations and are processed to form a sound.'",
+          "xrefs" : [ "FBC:DOS", "GOC:ai" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "auditory perception defective",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "auditory system defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "tarsal response defective"
+      "lbl" : "abnormal auditory perception"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000649",
       "meta" : {
@@ -12173,29 +12674,10 @@
       "type" : "CLASS",
       "lbl" : "visible allele recombination mapping stock"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/FBcv_0000407",
-      "meta" : {
-        "definition" : {
-          "val" : "Phenotype that is a defect in sensory perception of sound (GO:0007605). 'sensory perception of sound' is defined as: 'The series of events required for an organism to receive an auditory stimulus, convert it to a molecular signal, and recognize and characterize the signal. Sonic stimuli are detected in the form of vibrations and are processed to form a sound.'",
-          "xrefs" : [ "FBC:DOS", "GOC:ai" ]
-        },
-        "synonyms" : [ {
-          "pred" : "hasRelatedSynonym",
-          "val" : "auditory system defective",
-          "xrefs" : [ ]
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "phenotypic_class"
-        } ]
-      },
-      "type" : "CLASS",
-      "lbl" : "auditory perception defective"
-    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000408",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in response to stress (GO:0006950). 'response to stress' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a disturbance in organismal or cellular homeostasis, usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation).'",
+          "val" : "Phenotype that is any abnormality in response to stress (GO:0006950). 'response to stress' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a disturbance in organismal or cellular homeostasis, usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation).'",
           "xrefs" : [ "FBC:DOS", "GOC:mah" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
@@ -12203,6 +12685,10 @@
           "pred" : "hasNarrowSynonym",
           "val" : "environmental stress response defective",
           "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "stress response defective",
+          "xrefs" : [ ]
         } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -12210,21 +12696,26 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "stress response defective"
+      "lbl" : "abnormal stress response"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000409",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in response to osmotic stress (GO:0006970). 'response to osmotic stress' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus indicating an increase or decrease in the concentration of solutes outside the organism or cell.'",
+          "val" : "Phenotype that is any abnormality in response to osmotic stress (GO:0006970). 'response to osmotic stress' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus indicating an increase or decrease in the concentration of solutes outside the organism or cell.'",
           "xrefs" : [ "FBC:DOS", "GOC:jl" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "osmotic stress response defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "osmotic stress response defective"
+      "lbl" : "abnormal osmotic stress response"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000640",
       "meta" : {
@@ -12248,6 +12739,26 @@
       "type" : "CLASS",
       "lbl" : "stock by cytotype"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0000400",
+      "meta" : {
+        "definition" : {
+          "val" : "Phenotype that is any abnormality in mating (GO:0007618). 'mating' is defined as: 'The pairwise union of individuals for the purpose of sexual reproduction, ultimately resulting in the formation of zygotes.'",
+          "xrefs" : [ "FBC:DOS", "GOC:jl", "ISBN:0387520546" ]
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "mating defective",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "phenotypic_class"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "abnormal mating"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000642",
       "meta" : {
         "basicPropertyValues" : [ {
@@ -12259,34 +12770,24 @@
       "type" : "CLASS",
       "lbl" : "H cytotype stock"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/FBcv_0000400",
-      "meta" : {
-        "definition" : {
-          "val" : "Phenotype that is a defect in mating (GO:0007618). 'mating' is defined as: 'The pairwise union of individuals for the purpose of sexual reproduction, ultimately resulting in the formation of zygotes.'",
-          "xrefs" : [ "FBC:DOS", "GOC:jl", "ISBN:0387520546" ]
-        },
-        "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "phenotypic_class"
-        } ]
-      },
-      "type" : "CLASS",
-      "lbl" : "mating defective"
-    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000401",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in circadian mating behavior (GO:0035648). 'circadian mating behavior' is defined as: 'The fluctuation in mating behavior that occurs over an approximately 24 hour cycle.'",
+          "val" : "Phenotype that is any abnormality in circadian mating behavior (GO:0035648). 'circadian mating behavior' is defined as: 'The fluctuation in mating behavior that occurs over an approximately 24 hour cycle.'",
           "xrefs" : [ "FBC:DOS", "GOC:bf", "GOC:dos", "PMID:11470898", "PMID:17276917" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "mating rhythm defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "mating rhythm defective"
+      "lbl" : "abnormal mating rhythm"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000643",
       "meta" : {
@@ -12302,7 +12803,7 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000402",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in male courtship behavior, veined wing generated song production (GO:0045433). This is defined as 'The process during wing vibration where the male insect produces a species-specific acoustic signal called a love song.'",
+          "val" : "Phenotype that is any abnormality in male courtship behavior, veined wing generated song production (GO:0045433). This is defined as 'The process during wing vibration where the male insect produces a species-specific acoustic signal called a love song.'",
           "xrefs" : [ "FBC:DOS", "GOC:mtg_sensu", "PMID:11092827" ]
         },
         "synonyms" : [ {
@@ -12313,6 +12814,10 @@
           "pred" : "hasExactSynonym",
           "val" : "song production defective",
           "xrefs" : [ "FBC:SM" ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "song defective",
+          "xrefs" : [ ]
         } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -12320,7 +12825,7 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "song defective"
+      "lbl" : "abnormal song"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000644",
       "meta" : {
@@ -12336,12 +12841,16 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000403",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in chemosensory behavior (GO:0007635). 'chemosensory behavior' is defined as: 'Behavior that is dependent upon the sensation of chemicals.'.'",
+          "val" : "Phenotype that is any abnormality in chemosensory behavior (GO:0007635). 'chemosensory behavior' is defined as: 'Behavior that is dependent upon the sensation of chemicals.'.'",
           "xrefs" : [ "FBC:DOS", "GOC:go_curators" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "chemosensitive behaviour defective",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "chemosensitive behavior defective",
           "xrefs" : [ ]
         } ],
         "basicPropertyValues" : [ {
@@ -12350,7 +12859,7 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "chemosensitive behavior defective"
+      "lbl" : "abnormal chemosensitive behavior"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000645",
       "meta" : {
@@ -12460,6 +12969,69 @@
       "type" : "CLASS",
       "lbl" : "RMCE donor element"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007049",
+      "meta" : {
+        "definition" : {
+          "val" : "Anatomical structure that would be present in wild-type is not present.",
+          "xrefs" : [ "FBC:CP" ]
+        },
+        "xrefs" : [ {
+          "val" : "PATO:0000462"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2020-12-14T14:39:35Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "structural_qualifier"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "absent"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007048",
+      "meta" : {
+        "definition" : {
+          "val" : "Present in the correct location but in smaller numbers than in wild-type.",
+          "xrefs" : [ "FBC:CP" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2020-12-14T14:38:52Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "structural_qualifier"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "decreased number"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007047",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which results in the tagged gene product being targeted for degradation, where this property can be regulated by irradiation with a pulse of light.",
+          "xrefs" : [ "FBC:GM" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "experimental_tool_descriptor"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2020-12-10T13:05:28Z"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "light-regulated gene product degradation tag"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0007042",
       "meta" : {
         "definition" : {
@@ -12545,13 +13117,18 @@
           "xrefs" : [ "FBC:DOS" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "jumping defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "jumping defective"
+      "lbl" : "abnormal jumping"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000657",
       "meta" : {
@@ -12567,8 +13144,8 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000416",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a lack of normal co-ordination in locomotor activity.",
-          "xrefs" : [ "FBC:DOS" ]
+          "val" : "Phenotype that is abnormal co-ordination of motor activity.",
+          "xrefs" : [ "FBC:CP", "FBC:DOS" ]
         },
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -12603,7 +13180,7 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000417",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in flight (GO:0060361). 'flight' is defined as: 'Self-propelled movement of an organism from one location to another through the air, usually by means of active wing movement.'",
+          "val" : "Phenotype that is any abnormality in flight (GO:0060361). 'flight' is defined as: 'Self-propelled movement of an organism from one location to another through the air, usually by means of active wing movement.'",
           "xrefs" : [ "FBC:DOS", "GOC:dph" ]
         },
         "comments" : [ "This term is agnostic as to the causes of defects in flight. An animal's flight may be defective for mechanical, behavioral or sensory reasons." ],
@@ -12612,6 +13189,10 @@
           "pred" : "hasNarrowSynonym",
           "val" : "flight behaviour defective",
           "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "flight defective",
+          "xrefs" : [ ]
         } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -12619,7 +13200,7 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "flight defective"
+      "lbl" : "abnormal flight"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000418",
       "meta" : {
@@ -12639,10 +13220,14 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000419",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in feeding behavior (GO:0007631). 'feeding behavior' is defined as: 'Behavior associated with the intake of food.'",
+          "val" : "Phenotype that is any abnormality in feeding behavior (GO:0007631). 'feeding behavior' is defined as: 'Behavior associated with the intake of food.'",
           "xrefs" : [ "FBC:DOS", "GOC:mah" ]
         },
         "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "feeding behavior defective",
+          "xrefs" : [ ]
+        }, {
           "pred" : "hasExactSynonym",
           "val" : "feeding behaviour defective",
           "xrefs" : [ ]
@@ -12653,7 +13238,7 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "feeding behavior defective"
+      "lbl" : "abnormal feeding behavior"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000650",
       "meta" : {
@@ -12690,16 +13275,21 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000410",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in response to heat (GO:0009408). 'response to heat' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a heat stimulus, a temperature stimulus above the optimal temperature for that organism.'",
+          "val" : "Phenotype that is any abnormality in response to heat (GO:0009408). 'response to heat' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a heat stimulus, a temperature stimulus above the optimal temperature for that organism.'",
           "xrefs" : [ "FBC:DOS", "GOC:lr" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "heat stress response defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "heat stress response defective"
+      "lbl" : "abnormal heat stress response"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000652",
       "meta" : {
@@ -12728,25 +13318,6 @@
       "type" : "CLASS",
       "lbl" : "compendium"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/FBcv_0000411",
-      "meta" : {
-        "definition" : {
-          "val" : "Phenotype that is a defect in visual behavior (GO:0007632). 'visual behavior' is defined as: 'The behavior of an organism in response to a visual stimulus.'",
-          "xrefs" : [ "FBC:DOS", "GOC:jid", "GOC:pr" ]
-        },
-        "synonyms" : [ {
-          "pred" : "hasExactSynonym",
-          "val" : "visual behaviour defective",
-          "xrefs" : [ ]
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "phenotypic_class"
-        } ]
-      },
-      "type" : "CLASS",
-      "lbl" : "visual behavior defective"
-    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000653",
       "meta" : {
         "definition" : {
@@ -12760,6 +13331,29 @@
       },
       "type" : "CLASS",
       "lbl" : "subset"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0000411",
+      "meta" : {
+        "definition" : {
+          "val" : "Phenotype that is any abnormality in visual behavior (GO:0007632). 'visual behavior' is defined as: 'The behavior of an organism in response to a visual stimulus.'",
+          "xrefs" : [ "FBC:DOS", "GOC:jid", "GOC:pr" ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "visual behavior defective",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "visual behaviour defective",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "phenotypic_class"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "abnormal visual behavior"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0001500",
       "meta" : {
@@ -12783,12 +13377,16 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000412",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in optomotor response: a motor response during flight or walking that serves to stabilize both image formation on the retina and locomotor course.",
+          "val" : "Phenotype that is any abnormality in optomotor response: a motor response during flight or walking that serves to stabilize both image formation on the retina and locomotor course.",
           "xrefs" : [ "FBC:DOS" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "optomotor behaviour defective",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "optomotor response defective",
           "xrefs" : [ ]
         } ],
         "basicPropertyValues" : [ {
@@ -12797,7 +13395,7 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "optomotor response defective"
+      "lbl" : "abnormal optomotor response"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000654",
       "meta" : {
@@ -12817,13 +13415,17 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000413",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in phototaxis (GO:0042331). 'phototaxis' is defined as: 'The directed movement of a motile cell or organism in response to light.'",
+          "val" : "Phenotype that is any abnormality in phototaxis (GO:0042331). 'phototaxis' is defined as: 'The directed movement of a motile cell or organism in response to light.'",
           "xrefs" : [ "FBC:DOS", "GOC:jl", "ISBN:0192800981" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "phototaxis behaviour defective",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "phototaxis defective",
           "xrefs" : [ ]
         } ],
         "basicPropertyValues" : [ {
@@ -12832,7 +13434,7 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "phototaxis defective"
+      "lbl" : "abnormal phototaxis"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000655",
       "meta" : {
@@ -12870,12 +13472,16 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000414",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in locomotory behavior (GO:0007626). 'locomotory behavior' is defined as: 'The specific movement from place to place of an organism in response to external or internal stimuli. Locomotion of a whole organism in a manner dependent upon some combination of that organism's internal state and external conditions.'",
+          "val" : "Phenotype that is any abnormality in locomotory behavior (GO:0007626). 'locomotory behavior' is defined as: 'The specific movement from place to place of an organism in response to external or internal stimuli. Locomotion of a whole organism in a manner dependent upon some combination of that organism's internal state and external conditions.'",
           "xrefs" : [ "FBC:DOS", "GOC:dph" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "locomotor behaviour defective",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "locomotor behavior defective",
           "xrefs" : [ ]
         } ],
         "basicPropertyValues" : [ {
@@ -12884,7 +13490,7 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "locomotor behavior defective"
+      "lbl" : "abnormal locomotor behavior"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000580",
       "meta" : {
@@ -13766,12 +14372,16 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000355",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in eye color compared to wild-type.",
+          "val" : "Phenotype that is any abnormality in eye color compared to wild-type.",
           "xrefs" : [ "FBC:DOS" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "eye colour defective",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "eye color defective",
           "xrefs" : [ ]
         } ],
         "basicPropertyValues" : [ {
@@ -13780,7 +14390,7 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "eye color defective"
+      "lbl" : "abnormal eye color"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000113",
       "meta" : {
@@ -13799,12 +14409,16 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000356",
       "meta" : {
         "definition" : {
-          "val" : "A phenotype that is a defect in body color compared to wild-type.",
+          "val" : "A phenotype that is any abnormality in body color compared to wild-type.",
           "xrefs" : [ "FBC:DOS" ]
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "body colour defective",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "body color defective",
           "xrefs" : [ ]
         } ],
         "basicPropertyValues" : [ {
@@ -13813,7 +14427,7 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "body color defective"
+      "lbl" : "abnormal body color"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000114",
       "meta" : {
@@ -13881,17 +14495,22 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000357",
       "meta" : {
         "definition" : {
-          "val" : "A phenotype that is a defect in the size of the whole body or some body part compared to wild-type.",
+          "val" : "A phenotype that is any abnormality in the size of the whole body or some body part compared to wild-type.",
           "xrefs" : [ "FBC:DOS" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "size defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "size defective"
+      "lbl" : "abnormal size"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000358",
       "meta" : {
@@ -13899,13 +14518,18 @@
           "val" : "Phenotype that is a decrease in body size compared to identically raised wild-type controls.",
           "xrefs" : [ "FBC:DOS" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "small body",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "small body"
+      "lbl" : "decreased body size"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000116",
       "meta" : {
@@ -14200,25 +14824,6 @@
       "type" : "CLASS",
       "lbl" : "segment polarity expression pattern"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/FBcv_0000324",
-      "meta" : {
-        "definition" : {
-          "val" : "Phenotype that is a defect in dorsal/ventral axis specification (GO:0009950). 'dorsal/ventral axis specification' is defined as: 'The establishment, maintenance and elaboration of the dorsal/ventral axis. The dorsal/ventral axis is defined by a line that runs orthogonal to both the anterior/posterior and left/right axes. The dorsal end is defined by the upper or back side of an organism. The ventral end is defined by the lower or front side of an organism.'",
-          "xrefs" : [ "FBC:DOS", "GOC:dph", "GOC:go_curators", "GOC:tb" ]
-        },
-        "synonyms" : [ {
-          "pred" : "hasRelatedSynonym",
-          "val" : "dorsal-ventral polarity",
-          "xrefs" : [ "FBC:DOS" ]
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "phenotypic_class"
-        } ]
-      },
-      "type" : "CLASS",
-      "lbl" : "dorsal/ventral axis specification defective"
-    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000566",
       "meta" : {
         "definition" : {
@@ -14241,6 +14846,29 @@
       },
       "type" : "CLASS",
       "lbl" : "1,6-dimethylsulfonoxy D-mannitol"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0000324",
+      "meta" : {
+        "definition" : {
+          "val" : "Phenotype that is any abnormality in dorsal/ventral axis specification (GO:0009950). 'dorsal/ventral axis specification' is defined as: 'The establishment, maintenance and elaboration of the dorsal/ventral axis. The dorsal/ventral axis is defined by a line that runs orthogonal to both the anterior/posterior and left/right axes. The dorsal end is defined by the upper or back side of an organism. The ventral end is defined by the lower or front side of an organism.'",
+          "xrefs" : [ "FBC:DOS", "GOC:dph", "GOC:go_curators", "GOC:tb" ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "dorsal/ventral axis specification defective",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "dorsal-ventral polarity",
+          "xrefs" : [ "FBC:DOS" ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "phenotypic_class"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "abnormal dorsal/ventral axis specification"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000567",
       "meta" : {
@@ -14786,17 +15414,22 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000384",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in aging (GO:0007568). 'aging' is defined as: 'A developmental process that is a deterioration and loss of function over time. Aging includes loss of functions such as resistance to disease, homeostasis, and fertility, as well as wear and tear. Aging includes cellular senescence, but is more inclusive. May precede death and may succeed developmental maturation (GO:0021700).'",
+          "val" : "Phenotype that is any abnormality in aging (GO:0007568). 'aging' is defined as: 'A developmental process that is a deterioration and loss of function over time. Aging includes loss of functions such as resistance to disease, homeostasis, and fertility, as well as wear and tear. Aging includes cellular senescence, but is more inclusive. May precede death and may succeed developmental maturation (GO:0021700).'",
           "xrefs" : [ "GOC:PO_curators" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "aging defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "aging defective"
+      "lbl" : "abnormal aging"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000143",
       "meta" : {
@@ -14861,7 +15494,7 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000387",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in behavior (GO:0007610). 'behavior' is defined as: 'The internally coordinated responses (actions or inactions) of animals (individuals or groups) to internal or external stimuli, via a mechanism that involves nervous system activity.'",
+          "val" : "Phenotype that is any abnormality in behavior (GO:0007610). 'behavior' is defined as: 'The internally coordinated responses (actions or inactions) of animals (individuals or groups) to internal or external stimuli, via a mechanism that involves nervous system activity.'",
           "xrefs" : [ "GOC:ems", "GOC:jl", "ISBN:0395448956", "PMID:20160973" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
@@ -14875,6 +15508,10 @@
           "xrefs" : [ ]
         }, {
           "pred" : "hasExactSynonym",
+          "val" : "behavior defective",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
           "val" : "behavioural",
           "xrefs" : [ ]
         } ],
@@ -14884,7 +15521,7 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "behavior defective"
+      "lbl" : "abnormal behavior"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000145",
       "meta" : {
@@ -14932,6 +15569,10 @@
           "val" : "geotaxis behaviour defective",
           "xrefs" : [ ]
         }, {
+          "pred" : "hasExactSynonym",
+          "val" : "gravitaxis defective",
+          "xrefs" : [ ]
+        }, {
           "pred" : "hasRelatedSynonym",
           "val" : "gravitaxis behavior defective",
           "xrefs" : [ ]
@@ -14942,7 +15583,7 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "gravitaxis defective"
+      "lbl" : "abnormal gravitaxis"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000147",
       "meta" : {
@@ -15067,16 +15708,21 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000393",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in response to pain (GO:0048265). 'response to pain' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a pain stimulus. Pain stimuli cause activation of nociceptors, peripheral receptors for pain, include receptors which are sensitive to painful mechanical stimuli, extreme heat or cold, and chemical stimuli.'",
+          "val" : "Phenotype that is any abnormality in response to pain (GO:0048265). 'response to pain' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a pain stimulus. Pain stimuli cause activation of nociceptors, peripheral receptors for pain, include receptors which are sensitive to painful mechanical stimuli, extreme heat or cold, and chemical stimuli.'",
           "xrefs" : [ "FBC:DOS", "GOC:jid", "PMID:10203867", "PMID:12723742", "PMID:12843304", "Wikipedia:Pain" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "pain response defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "pain response defective"
+      "lbl" : "abnormal pain response"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000151",
       "meta" : {
@@ -15093,17 +15739,22 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000394",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in circadian rhythm (GO:0007623). 'circadian rhythm' is defined as: 'Any biological process in an organism that recurs with a regularity of approximately 24 hours.'",
+          "val" : "Phenotype that is any abnormality in circadian rhythm (GO:0007623). 'circadian rhythm' is defined as: 'Any biological process in an organism that recurs with a regularity of approximately 24 hours.'",
           "xrefs" : [ "FBC:DOS", "GOC:bf", "GOC:go_curators" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "circadian rhythm defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "circadian rhythm defective"
+      "lbl" : "abnormal circadian rhythm"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000152",
       "meta" : {
@@ -15138,30 +15789,40 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000395",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in locomotor rhythm (GO:0045475). 'locomotor rhythm' is defined as: 'The rhythm of the locomotor activity of an organism during its 24 hour activity cycle.'",
+          "val" : "Phenotype that is any abnormality in locomotor rhythm (GO:0045475). 'locomotor rhythm' is defined as: 'The rhythm of the locomotor activity of an organism during its 24 hour activity cycle.'",
           "xrefs" : [ "FBC:DOS", "GOC:go_curators" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "locomotor rhythm defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "locomotor rhythm defective"
+      "lbl" : "abnormal locomotor rhythm"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000396",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in eclosion rhythm (GO:0008062). 'eclosion rhythm' is defined as: 'The timing of the emergence of the adult fly from its pupal case, which usually occurs at dawn.'",
+          "val" : "Phenotype that is any abnormality in eclosion rhythm (GO:0008062). 'eclosion rhythm' is defined as: 'The timing of the emergence of the adult fly from its pupal case, which usually occurs at dawn.'",
           "xrefs" : [ "FBC:DOS", "PMID:11715043" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "eclosion rhythm defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "eclosion rhythm defective"
+      "lbl" : "abnormal eclosion rhythm"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000154",
       "meta" : {
@@ -15180,16 +15841,21 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000397",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in learning (GO:0007612). 'learning' is defined as: 'Any process in an organism in which a relatively long-lasting adaptive behavioral change occurs as the result of experience.'",
+          "val" : "Phenotype that is any abnormality in learning (GO:0007612). 'learning' is defined as: 'Any process in an organism in which a relatively long-lasting adaptive behavioral change occurs as the result of experience.'",
           "xrefs" : [ "FBC:DOS", "ISBN:0582227089", "ISBN:0721662544" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "learning defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "learning defective"
+      "lbl" : "abnormal learning"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000155",
       "meta" : {
@@ -15208,16 +15874,21 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000398",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in memory (GO:0007613). 'memory' is defined as: 'The activities involved in the mental information processing system that receives (registers), modifies, stores, and retrieves informational stimuli. The main stages involved in the formation and retrieval of memory are encoding (processing of received information by acquisition), storage (building a permanent record of received information as a result of consolidation) and retrieval (calling back the stored information and use it in a suitable way to execute a given task).'",
+          "val" : "Phenotype that is any abnormality in memory (GO:0007613). 'memory' is defined as: 'The activities involved in the mental information processing system that receives (registers), modifies, stores, and retrieves informational stimuli. The main stages involved in the formation and retrieval of memory are encoding (processing of received information by acquisition), storage (building a permanent record of received information as a result of consolidation) and retrieval (calling back the stored information and use it in a suitable way to execute a given task).'",
           "xrefs" : [ "FBC:DOS", "GOC:curators", "ISBN:0582227089" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "memory defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "memory defective"
+      "lbl" : "abnormal memory"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000156",
       "meta" : {
@@ -15233,16 +15904,21 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000399",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in courtship behavior (GO:0007619). 'courtship behavior' is defined as: 'The behavior of an organism for the purpose of attracting sexual partners.'",
+          "val" : "Phenotype that is any abnormality in courtship behavior (GO:0007619). 'courtship behavior' is defined as: 'The behavior of an organism for the purpose of attracting sexual partners.'",
           "xrefs" : [ "FBC:DOS", "GOC:ai", "GOC:dph" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "courtship behavior defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "courtship behavior defective"
+      "lbl" : "abnormal courtship behavior"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0001003",
       "meta" : {
@@ -15319,13 +15995,18 @@
           "val" : "Phenotype that is an increase in body size compared to identically raised wild-type controls.",
           "xrefs" : [ "FBC:DOS" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "large body",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "large body"
+      "lbl" : "increased body size"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000120",
       "meta" : {
@@ -18463,6 +19144,26 @@
       "type" : "CLASS",
       "lbl" : "virgin"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007512",
+      "meta" : {
+        "definition" : {
+          "val" : "Phenotype that is a decrease in the rate of cell adhesion (GO:0007155). 'cell adhesion' is defined as: 'The attachment of a cell, either to another cell or to an underlying substrate such as the extracellular matrix, via cell adhesion molecules.'",
+          "xrefs" : [ "FBC:CP", "GOC:hb", "GOC:pf" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "phenotypic_class"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2020-12-16T09:22:22Z"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "decreased rate of cell adhesion"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0003155",
       "meta" : {
         "definition" : {
@@ -18482,6 +19183,26 @@
       },
       "type" : "CLASS",
       "lbl" : "cell culture property"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007511",
+      "meta" : {
+        "definition" : {
+          "val" : "Phenotype that is an increase in the rate of cell adhesion (GO:0007155). 'cell adhesion' is defined as: 'The attachment of a cell, either to another cell or to an underlying substrate such as the extracellular matrix, via cell adhesion molecules.'",
+          "xrefs" : [ "FBC:CP", "GOC:hb", "GOC:pf" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2020-12-16T09:21:22Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "phenotypic_class"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "increased rate of cell adhesion"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0003156",
       "meta" : {
@@ -18523,19 +19244,44 @@
       "type" : "CLASS",
       "lbl" : "light-dark cycle"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007510",
+      "meta" : {
+        "definition" : {
+          "val" : "Phenotype that is a decrease in the rate of phototaxis (GO:0042331). 'phototaxis' is defined as: 'The directed movement of a motile cell or organism in response to light.'",
+          "xrefs" : [ "FBC:CP", "GOC:jl", "ISBN:0192800981" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2020-12-16T09:20:20Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "phenotypic_class"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "decreased rate of phototaxis"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0004000",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in sensory perception of light stimulus (GO:0050953). 'sensory perception of light stimulus' is defined as: 'The series of events required for an organism to receive a sensory light stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process.'",
+          "val" : "Phenotype that is any abnormality in sensory perception of light stimulus (GO:0050953). 'sensory perception of light stimulus' is defined as: 'The series of events required for an organism to receive a sensory light stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process.'",
           "xrefs" : [ "FBC:MMC", "GOC:ai" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "visual perception defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "visual perception defective"
+      "lbl" : "abnormal visual perception"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0003154",
       "meta" : {
@@ -18557,6 +19303,26 @@
       "type" : "CLASS",
       "lbl" : "primary cell culture"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007516",
+      "meta" : {
+        "definition" : {
+          "val" : "Phenotype that is a decrease in the total amount or frequency of feeding behavior (GO:0007631) over a given time interval, compared to wild-type. 'feeding behavior' is defined as: 'Behavior associated with the intake of food.'",
+          "xrefs" : [ "FBC:DOS", "GOC:mah" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "phenotypic_class"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2020-12-16T12:16:19Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "decreased feeding behavior"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0003159",
       "meta" : {
         "definition" : {
@@ -18576,6 +19342,46 @@
       },
       "type" : "CLASS",
       "lbl" : "stationary phase cells"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007515",
+      "meta" : {
+        "definition" : {
+          "val" : "Phenotype that is an increase in the total amount or frequency of feeding behavior (GO:0007631) over a given time interval, compared to wild-type. 'feeding behavior' is defined as: 'Behavior associated with the intake of food.'",
+          "xrefs" : [ "FBC:DOS", "GOC:mah" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2020-12-16T12:14:26Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "phenotypic_class"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "increased feeding behavior"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007514",
+      "meta" : {
+        "definition" : {
+          "val" : "Phenotype that is a decrease in the total amount or frequency of sleep (GO:0030431) over a given time interval, compared to wild-type. 'sleep' is defined as: 'Any process in which an organism enters and maintains a periodic, readily reversible state of reduced awareness and metabolic activity. Usually accompanied by physical relaxation, the onset of sleep in humans and other mammals is marked by a change in the electrical activity of the brain.'",
+          "xrefs" : [ "FBC:CP", "ISBN:0192800981" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "phenotypic_class"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2020-12-16T12:12:40Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "decreased sleep"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0003157",
       "meta" : {
@@ -18616,6 +19422,26 @@
       },
       "type" : "CLASS",
       "lbl" : "log phase cells"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/FBcv_0007513",
+      "meta" : {
+        "definition" : {
+          "val" : "Phenotype that is an increase in the total amount or frequency of sleep (GO:0030431) over a given time interval, compared to wild-type. 'sleep' is defined as: 'Any process in which an organism enters and maintains a periodic, readily reversible state of reduced awareness and metabolic activity. Usually accompanied by physical relaxation, the onset of sleep in humans and other mammals is marked by a change in the electrical activity of the brain.'",
+          "xrefs" : [ "FBC:CP", "ISBN:0192800981" ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2020-12-16T12:02:45Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "phenotypic_class"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "http://orcid.org/0000-0002-1373-1705"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "increased sleep"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0003162",
       "meta" : {
@@ -18834,16 +19660,21 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0006000",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in copulation (GO:0007620). 'copulation' is defined as: 'The act of sexual union between male and female, involving the transfer of sperm.'",
+          "val" : "Phenotype that is any abnormality in copulation (GO:0007620). 'copulation' is defined as: 'The act of sexual union between male and female, involving the transfer of sperm.'",
           "xrefs" : [ "FBC:TEMJ", "ISBN:0721662544" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "copulation defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "copulation defective"
+      "lbl" : "abnormal copulation"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0006005",
       "meta" : {
@@ -18863,17 +19694,22 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0006004",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in oviposition (GO:0007620). 'oviposition' is defined as: 'The deposition of eggs (either fertilized or not) upon a surface or into a medium such as water.'.",
+          "val" : "Phenotype that is any abnormality in oviposition (GO:0007620). 'oviposition' is defined as: 'The deposition of eggs (either fertilized or not) upon a surface or into a medium such as water.'.",
           "xrefs" : [ "FBC:TEMJ", "GOC:ems" ]
         },
         "comments" : [ "This term should only be used to report defects specifically in oviposition, as opposed to an overall loss of fertility. If a difference in \"oviposition rate\" is measured by authors as a proxy for sterility/fertility, it would be better to use the terms \"sterile\", \"semi-sterile\", or \"semi-fertile\", as appropriate." ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "oviposition defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "oviposition defective"
+      "lbl" : "abnormal oviposition"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0006003",
       "meta" : {
@@ -18967,10 +19803,15 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000705",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in sleep (GO:0030431). 'sleep' is defined as: 'Any process in which an organism enters and maintains a periodic, readily reversible state of reduced awareness and metabolic activity. Usually accompanied by physical relaxation, the onset of sleep in humans and other mammals is marked by a change in the electrical activity of the brain.'",
+          "val" : "Phenotype that is any abnormality in sleep (GO:0030431). 'sleep' is defined as: 'Any process in which an organism enters and maintains a periodic, readily reversible state of reduced awareness and metabolic activity. Usually accompanied by physical relaxation, the onset of sleep in humans and other mammals is marked by a change in the electrical activity of the brain.'",
           "xrefs" : [ "FBC:DOS", "ISBN:0192800981" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "sleep defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
@@ -18983,14 +19824,19 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "sleep defective"
+      "lbl" : "abnormal sleep"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000706",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in entry into diapause (GO:0055115). 'entry into diapause' is defined as: 'The dormancy process that results in entry into diapause. Diapause is a neurohormonally mediated, dynamic state of low metabolic activity. Associated characteristics of this form of dormancy include reduced morphogenesis, increased resistance to environmental extremes, and altered or reduced behavioral activity. Full expression develops in a species-specific manner, usually in response to a number of environmental stimuli that precede unfavorable conditions. Once diapause has begun, metabolic activity is suppressed even if conditions favorable for development prevail. Once initiated, only certain stimuli are capable of releasing the organism from this state, and this characteristic is essential in distinguishing diapause from hibernation.'",
+          "val" : "Phenotype that is any abnormality in entry into diapause (GO:0055115). 'entry into diapause' is defined as: 'The dormancy process that results in entry into diapause. Diapause is a neurohormonally mediated, dynamic state of low metabolic activity. Associated characteristics of this form of dormancy include reduced morphogenesis, increased resistance to environmental extremes, and altered or reduced behavioral activity. Full expression develops in a species-specific manner, usually in response to a number of environmental stimuli that precede unfavorable conditions. Once diapause has begun, metabolic activity is suppressed even if conditions favorable for development prevail. Once initiated, only certain stimuli are capable of releasing the organism from this state, and this characteristic is essential in distinguishing diapause from hibernation.'",
           "xrefs" : [ "FBC:DOS", "GOC:ds", "GOC:jid", "GOC:mah" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "diapause defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "djs93"
@@ -19003,14 +19849,19 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "diapause defective"
+      "lbl" : "abnormal diapause"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000707",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in entry into reproductive diapause (GO:0055116). 'entry into reproductive diapause' is defined as: 'The dormancy process that results in entry into reproductive diapause. Reproductive diapause is a form of diapause where the organism itself will remain fully active, including feeding and other routine activities, but the reproductive organs experience a tissue-specific reduction in metabolism, with characteristic triggering and releasing stimuli.'",
+          "val" : "Phenotype that is any abnormality in entry into reproductive diapause (GO:0055116). 'entry into reproductive diapause' is defined as: 'The dormancy process that results in entry into reproductive diapause. Reproductive diapause is a form of diapause where the organism itself will remain fully active, including feeding and other routine activities, but the reproductive organs experience a tissue-specific reduction in metabolism, with characteristic triggering and releasing stimuli.'",
           "xrefs" : [ "FBC:DOS", "GOC:ds", "GOC:jid", "GOC:mah" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "reproductive diapause defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "djs93"
@@ -19023,21 +19874,26 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "reproductive diapause defective"
+      "lbl" : "abnormal reproductive diapause"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000708",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in response to starvation (GO:0042594). 'response to starvation' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a starvation stimulus, deprivation of nourishment.'",
+          "val" : "Phenotype that is any abnormality in response to starvation (GO:0042594). 'response to starvation' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a starvation stimulus, deprivation of nourishment.'",
           "xrefs" : [ "FBC:DOS", "GOC:go_curators" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "starvation stress response defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "starvation stress response defective"
+      "lbl" : "abnormal starvation stress response"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0006007",
       "meta" : {
@@ -19086,13 +19942,18 @@
           "xrefs" : [ "FBC:DOS" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "cell number defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "cell number defective"
+      "lbl" : "abnormal cell number"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000712",
       "meta" : {
@@ -19176,17 +20037,22 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000716",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in cell migration (GO:0016477). 'cell migration' is defined as: 'The controlled self-propelled movement of a cell from one site to a destination guided by molecular cues. Cell migration is a central process in the development and maintenance of multicellular organisms.'",
+          "val" : "Phenotype that is any abnormality in cell migration (GO:0016477). 'cell migration' is defined as: 'The controlled self-propelled movement of a cell from one site to a destination guided by molecular cues. Cell migration is a central process in the development and maintenance of multicellular organisms.'",
           "xrefs" : [ "FBC:DOS", "GOC:cjm", "GOC:dph", "GOC:ems", "GOC:pf", "Wikipedia:Cell_migration" ]
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "cell migration defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "cell migration defective"
+      "lbl" : "abnormal cell migration"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000717",
       "meta" : {
@@ -20334,6 +21200,23 @@
           "val" : "Phenotype that consists of abnormal growth of a tissue or organ due to increased numbers of cells, but in which the affected tissue or organ does not maintain its normal form.",
           "xrefs" : [ "FBC:DOS" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasNarrowSynonym",
+          "val" : "neoplastic",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasNarrowSynonym",
+          "val" : "tumorigenic",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasNarrowSynonym",
+          "val" : "tumorigenesis",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasNarrowSynonym",
+          "val" : "neoplasm",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
@@ -20360,16 +21243,21 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000725",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in response to oxidative stress (GO:0006979). 'response to oxidative stress' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of oxidative stress, a state often resulting from exposure to high levels of reactive oxygen species, e.g. superoxide anions, hydrogen peroxide (H2O2), and hydroxyl radicals.'",
+          "val" : "Phenotype that is any abnormality in response to oxidative stress (GO:0006979). 'response to oxidative stress' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of oxidative stress, a state often resulting from exposure to high levels of reactive oxygen species, e.g. superoxide anions, hydrogen peroxide (H2O2), and hydroxyl radicals.'",
           "xrefs" : [ "FBC:DOS", "GOC:jl", "PMID:12115731" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "oxidative stress response defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "oxidative stress response defective"
+      "lbl" : "abnormal oxidative stress response"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000726",
       "meta" : {
@@ -20458,9 +21346,14 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000720",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect or in or absence of a jump response (GO:0007630). The jump response in Drosophila is a reflex escape response that can be triggered by a number of signals including odor and light. Standard assays are commonly used to test odor and light induced jump response.",
+          "val" : "Phenotype that is any abnormality or in or absence of a jump response (GO:0007630). The jump response in Drosophila is a reflex escape response that can be triggered by a number of signals including odor and light. Standard assays are commonly used to test odor and light induced jump response.",
           "xrefs" : [ "FlyBase:FBrf0187887", "FlyBase:FBrf0191819" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "jump response defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "djs93"
@@ -20473,21 +21366,26 @@
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "jump response defective"
+      "lbl" : "abnormal jump response"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000721",
       "meta" : {
         "definition" : {
-          "val" : "Phenotype that is a defect in mating behavior (GO:0007617). 'mating behavior' is defined as: 'The behavioral interactions between organisms for the purpose of mating, or sexual reproduction resulting in the formation of zygotes.'",
+          "val" : "Phenotype that is any abnormality in mating behavior (GO:0007617). 'mating behavior' is defined as: 'The behavioral interactions between organisms for the purpose of mating, or sexual reproduction resulting in the formation of zygotes.'",
           "xrefs" : [ "FBC:DOS", "GOC:ai", "GOC:dph" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "mating behavior defective",
+          "xrefs" : [ ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "phenotypic_class"
         } ]
       },
       "type" : "CLASS",
-      "lbl" : "mating behavior defective"
+      "lbl" : "abnormal mating behavior"
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000722",
       "meta" : {
@@ -20656,6 +21554,15 @@
       "id" : "http://purl.obolibrary.org/obo/BFO_0000062",
       "meta" : {
         "subsets" : [ "http://purl.obolibrary.org/obo/fbcv#ro-eco" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "takes place after",
+          "xrefs" : [ "Allen:precedes" ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "is preceded by",
+          "xrefs" : [ "SIO:000249" ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/fbcv#isDefinedBy",
           "val" : "http://purl.obolibrary.org/obo/bfo.owl"
@@ -20691,6 +21598,14 @@
       },
       "type" : "CLASS",
       "lbl" : "mated female limited"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/source",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/fbcv#isDefinedBy",
+          "val" : "http://purl.org/dc/elements/1.1.owl"
+        } ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000732",
       "meta" : {
@@ -21460,7 +22375,7 @@
       "id" : "http://purl.obolibrary.org/obo/FBcv_0000793",
       "meta" : {
         "definition" : {
-          "val" : "An adult phenotype that becomes more severe with age.",
+          "val" : "A phenotype that becomes more severe with age.",
           "xrefs" : [ "FBC:DOS" ]
         },
         "basicPropertyValues" : [ {
@@ -22692,6 +23607,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000189"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007509",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000413"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000721",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000387"
@@ -22699,10 +23618,6 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000717",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000427"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000724",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000357"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000286",
       "pred" : "is_a",
@@ -22936,13 +23851,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000811"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000422",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000387"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003104",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003082"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000422",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000387"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000684",
       "pred" : "is_a",
@@ -23015,6 +23930,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003026",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003022"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007514",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000705"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000407",
       "pred" : "is_a",
@@ -23268,6 +24187,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000074"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0002033",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0002001"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000696",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000290"
@@ -23295,6 +24218,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000095",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000074"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007500",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000398"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000462",
       "pred" : "is_a",
@@ -23331,6 +24258,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000202",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000789"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007048",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000014"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000710",
       "pred" : "is_a",
@@ -23395,6 +24326,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000691",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000690"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000724",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007508"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003027",
       "pred" : "is_a",
@@ -23580,6 +24515,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000670"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007047",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0005042"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003181",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003176"
@@ -23683,10 +24622,6 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0007015",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0007014"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0002032",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0002001"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003149",
       "pred" : "is_a",
@@ -23796,10 +24731,6 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000538"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000418",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000417"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000421",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000387"
@@ -23807,6 +24738,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000325",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000418",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000417"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003182",
       "pred" : "is_a",
@@ -23923,6 +24858,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000093",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000074"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007502",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000398"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000282",
       "pred" : "is_a",
@@ -24180,6 +25119,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000074"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007501",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000398"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000695",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000290"
@@ -24231,6 +25174,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003099",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003082"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007049",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000014"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000256",
       "pred" : "is_a",
@@ -24416,13 +25363,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003050"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000792",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000384"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000755",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000754"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000792",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000384"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0006000",
       "pred" : "is_a",
@@ -24552,6 +25499,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007508",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000357"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000741",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000736"
@@ -24647,6 +25598,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003208",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003175"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007512",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000668"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003064",
       "pred" : "is_a",
@@ -24816,9 +25771,17 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0005077"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007507",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000357"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000102",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000074"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007503",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000398"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000092",
       "pred" : "is_a",
@@ -24856,13 +25819,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003191"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000267",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000047",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000038"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000267",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003118",
       "pred" : "is_a",
@@ -24871,10 +25834,6 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003078",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003050"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000445",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000723"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003088",
       "pred" : "is_a",
@@ -24887,6 +25846,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000494",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000492"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007510",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000413"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003226",
       "pred" : "is_a",
@@ -24963,6 +25926,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000373",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000370"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007511",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000668"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000753",
       "pred" : "is_a",
@@ -25116,6 +26083,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000652"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007505",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000492",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000487"
@@ -25152,13 +26123,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000322"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000533",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000526"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000775",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000769"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000533",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000526"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000264",
       "pred" : "is_a",
@@ -25211,10 +26182,6 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000762",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000760"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000719",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000357"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0005002",
       "pred" : "is_a",
@@ -25364,6 +26331,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007504",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000481",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000478"
@@ -25472,6 +26443,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000052"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000361",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007507"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0005025",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0005023"
@@ -25515,10 +26490,6 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003187",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003186"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000444",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000357"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000412",
       "pred" : "is_a",
@@ -25616,6 +26587,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000719",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007508"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000402",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000399"
@@ -25688,13 +26663,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0005058"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000531",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000526"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000162",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000161"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000531",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000526"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000209",
       "pred" : "is_a",
@@ -25751,6 +26726,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000737",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000288"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007515",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000419"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0002037",
       "pred" : "is_a",
@@ -25832,25 +26811,25 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000526"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000400",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0002025",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0002036"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000400",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000390",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0002014",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0002012"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0002013",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0002022"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0002014",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0002012"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000135",
       "pred" : "is_a",
@@ -25888,13 +26867,17 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003153",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003146"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000413",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003153",
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000444",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003146"
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007507"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000491",
       "pred" : "is_a",
@@ -25940,13 +26923,17 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000074"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003215",
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007506",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003240"
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0005051",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0005001"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0003215",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0003240"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0002012",
       "pred" : "is_a",
@@ -25980,13 +26967,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003050"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000147",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000322"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000450",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000147",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000322"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000163",
       "pred" : "is_a",
@@ -26216,10 +27203,6 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0005044"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0001325",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000760",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000748"
@@ -26324,13 +27307,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000189"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000068",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000014"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003057",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003050"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000068",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000014"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000353",
       "pred" : "is_a",
@@ -26548,10 +27531,6 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0001324",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0001347"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003080",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003050"
@@ -26664,6 +27643,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003044"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007516",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000419"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000089",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000074"
@@ -26716,13 +27699,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000714"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000391",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000389"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000359",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000709"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000391",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000389"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003144",
       "pred" : "is_a",
@@ -26755,6 +27738,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000346",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000811"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000358",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0007508"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0002034",
       "pred" : "is_a",
@@ -26847,6 +27834,10 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0003047",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0003044"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0007513",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000705"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0002023",
       "pred" : "is_a",
@@ -26964,13 +27955,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0005001"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000270",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000712",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000710"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000270",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000435",
       "pred" : "is_a",
@@ -27055,10 +28046,6 @@
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000272",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000234"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0002033",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0002032"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000310",
       "pred" : "is_a",
@@ -27244,13 +28231,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0005001"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000736",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000746"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000793",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/FBcv_0000176"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/FBcv_0000736",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/FBcv_0000746"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/FBcv_0000361",
       "pred" : "is_a",
@@ -27325,15 +28312,18 @@
         "val" : "https://creativecommons.org/licenses/by/3.0/"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#date",
-        "val" : "20:10:2020 16:10"
+        "val" : "14:01:2021 18:57"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#default-namespace",
         "val" : "FlyBase miscellaneous CV"
       }, {
         "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion",
         "val" : "1.2"
+      }, {
+        "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
+        "val" : "2021-01-14"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/fbcv/releases/2020-10-20/fbcv-simple.json"
+      "version" : "http://purl.obolibrary.org/obo/fbcv/releases/2021-01-14/fbcv-simple.json"
     },
     "equivalentNodesSets" : [ ],
     "logicalDefinitionAxioms" : [ ],
