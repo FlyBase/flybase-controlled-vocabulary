@@ -9,12 +9,12 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
      xmlns:chebi1="http://purl.obolibrary.org/obo/chebi#2"
-     xmlns:chebi2="http://purl.obolibrary.org/obo/chebi#"
-     xmlns:chebi3="http://purl.obolibrary.org/obo/chebi#3"
-     xmlns:chebi4="http://purl.obolibrary.org/obo/chebi#1"
+     xmlns:chebi2="http://purl.obolibrary.org/obo/chebi#3"
+     xmlns:chebi3="http://purl.obolibrary.org/obo/chebi#1"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/fbcv/imports/chebi_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2020-10-20/imports/chebi_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2021-01-14/imports/chebi_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-14</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -50,34 +50,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/chebi#BRAND_NAME -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi#BRAND_NAME">
-        <rdfs:label>BRAND NAME</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/chebi#INN -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi#INN">
-        <rdfs:label>INN</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/chebi#IUPAC_NAME -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi#IUPAC_NAME">
-        <rdfs:label>IUPAC NAME</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/chebi#1_STAR -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi#1_STAR">
-        <rdfs:comment>Preliminary entries</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -86,7 +61,6 @@
     <!-- http://purl.obolibrary.org/obo/chebi#2_STAR -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi#2_STAR">
-        <rdfs:comment>Annotated by 3rd party</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -95,7 +69,6 @@
     <!-- http://purl.obolibrary.org/obo/chebi#3_STAR -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi#3_STAR">
-        <rdfs:comment>Manually annotated by ChEBI Team</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -221,9 +194,7 @@
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasSynonymType -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasSynonymType">
-        <rdfs:label>has_synonym_type</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasSynonymType"/>
     
 
 
@@ -250,6 +221,12 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#is_transitive -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_transitive"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#saved-by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#saved-by"/>
     
 
 
