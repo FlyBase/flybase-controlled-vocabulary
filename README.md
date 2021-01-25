@@ -2,20 +2,41 @@
  
 This repository is a home for the development and release of a number of controlled vocabularies and ontologies developed and used by FlyBase, including the Drosophila phenotype ontology.
 
-These ontologies and CVs have historically been released as a single file (flybase_controlled_vocabulary.obo). This file makes little sense as a single ontology, so, while we will continue to release this combined file for legacy support purposes, this site aims to provide access to separate files for the various underlying ontologies.
-
-Arguably the most important of the component ontologies is the Drosophila Phenotype Ontology (DPO) - which, as of April 2013 had been used to annotate over 160,000 phenotypes by FlyBase. The DPO can be accessed [here](https://github.com/FlyBase/drosophila-phenotype-ontology).
+These ontologies and CVs have historically been released as a single file (the Flybase Controlled Vocabulary), found in this repository. Arguably the most important of the component ontologies is the Drosophila Phenotype Ontology (DPO) - which, as of April 2013 had been used to annotate over 160,000 phenotypes by FlyBase. The DPO can be accessed [here](https://github.com/FlyBase/drosophila-phenotype-ontology).
 
 These ontologies are freely available under a [CC-BY](http://creativecommons.org/licenses/by/3.0/) license.
 
 ## Downloads:
-* flybase controlled vocabulary, full OWL version: [latest](http://purl.obolibrary.org/obo/fbcv/fbcv-non-classified.owl); [archive](http://purl.obolibrary.org/obo/fbcv/)
-* flybase controlled vocabulary, pre-reasoned 'simple' OBO version: [latest](http://purl.obolibrary.org/obo/fbcv/fbcv-simple.obo); [archive](http://obo.cvs.sourceforge.net/viewvc/obo/obo/ontology/vocabularies/flybase_controlled_vocabulary.obo?view=log)
-* flybase controlled vocabulary, pre-reasoned flybase 'simple' OBO version (strips all but part_of and conditionality relations): [latest](http://purl.obolibrary.org/obo/fbcv/fbcv-flybase.obo)
 
-* Drosophila phenotype ontology, full OWL version: [latest](http://purl.obolibrary.org/obo/fbcv/dpo-non-classified.owl); [archive](http://purl.obolibrary.org/obo/fbcv/dpo-non-classified)
-* Drosophila phenotype ontology, pre-reasoned 'simple' OBO version: [latest](http://purl.obolibrary.org/obo/fbcv/dpo-simple.obo); [archive](http://purl.obolibrary.org/obo/fbcv/)
-* Drosophila phenotype ontology, pre-reasoned 'simple' OWL version: [latest](http://purl.obolibrary.org/obo/fbcv/dpo-simple.owl); [archive](http://purl.obolibrary.org/obo/fbcv/)
+The latest version of the ontology is available in various forms at `http://purl.obolibrary.org/obo/fbcv/<filename>`
+
+Dated releases can be found at `http://purl.obolibrary.org/obo/fbcv/releases/<YYYY-MM-DD>/<filename>`
+
+Descriptions of the different versions (artefacts) are available [here](https://github.com/INCATools/ontology-development-kit/blob/master/docs/ReleaseArtefacts.md). Files are provided in owl, obo and json format.
+
+### Base files
+
+* [fbcv-base.owl](http://purl.obolibrary.org/obo/fbcv/fbcv-base.owl)
+* [fbcv-base.obo](http://purl.obolibrary.org/obo/fbcv/fbcv-base.obo)
+* [fbcv-base.json](http://purl.obolibrary.org/obo/fbcv/fbcv-base.json)
+
+### Full files
+
+* [fbcv-full.owl](http://purl.obolibrary.org/obo/fbcv/fbcv-full.owl)
+* [fbcv-full.obo](http://purl.obolibrary.org/obo/fbcv/fbcv-full.obo)
+* [fbcv-full.json](http://purl.obolibrary.org/obo/fbcv/fbcv-full.json)
+
+### Non-classified files
+
+* [fbcv-non-classified.owl](http://purl.obolibrary.org/obo/fbcv/fbcv-non-classified.owl)
+* [fbcv-non-classified.obo](http://purl.obolibrary.org/obo/fbcv/fbcv-non-classified.obo)
+* [fbcv-non-classified.json](http://purl.obolibrary.org/obo/fbcv/fbcv-non-classified.json)
+
+### Simple files
+
+* [fbcv-simple.owl](http://purl.obolibrary.org/obo/fbcv/fbcv-simple.owl)
+* [fbcv-simple.obo](http://purl.obolibrary.org/obo/fbcv/fbcv-simple.obo)
+* [fbcv-simple.json](http://purl.obolibrary.org/obo/fbcv/fbcv-simple.json)
 
 ## Publications
 
@@ -23,4 +44,4 @@ These ontologies are freely available under a [CC-BY](http://creativecommons.org
  
 ## Funding
 
-Development of the FlyBase controlled vocabulary has been funded by a series of grants to [FlyBase](http://www.flybase.org) from the [National Human Genome Research Institute](http://www.genome.gov/) at the [U.S. National Institutes of Health](http://www.nih.gov/), the most recent of which is #U41 HG000739. 
+Development of the FlyBase controlled vocabulary has been funded by a series of grants to [FlyBase](http://www.flybase.org) from the [National Human Genome Research Institute](http://www.genome.gov/) at the [U.S. National Institutes of Health](http://www.nih.gov/).
