@@ -194,7 +194,7 @@ tmp/auto_generated_definitions_seed_sub.txt: $(SRC)
 	rm -f $@.tmp
 
 mirror/chebi.owl: mirror/chebi.trigger
-	curl http://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl.gz --create-dirs -o mirror/chebi.owl.gz &&\
+	curl http://purl.obolibrary.org/obo/chebi.owl.gz --create-dirs -o mirror/chebi.owl.gz &&\
 	$(ROBOT) convert -i mirror/chebi.owl.gz -o $@.tmp.owl &&\
 	mv $@.tmp.owl $@
 
