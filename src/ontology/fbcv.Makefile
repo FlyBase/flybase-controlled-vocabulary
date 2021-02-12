@@ -193,12 +193,10 @@ tmp/auto_generated_definitions_seed_sub.txt: $(SRC)
 	cat $@.tmp | sort | uniq >  $@
 	rm -f $@.tmp
 
-CHEBI=https://raw.githubusercontent.com/matentzn/large-ontology-dependencies/master/chebi.owl.gz
-
 mirror/chebi.owl: mirror/chebi.trigger
-	echo "WRONG CHEBI IS USED"
-	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then wget $(CHEBI) && mv chebi.owl.gz tmp/chebi.owl.gz && $(ROBOT) convert -i tmp/chebi.owl.gz -o $@.tmp.owl && mv $@.tmp.owl $@; fi
-.PRECIOUS: mirror/%.owl
+	curl -L http://purl.obolibrary.org/obo/chebi.owl.gz --create-dirs -o mirror/chebi.owl.gz &&\
+	$(ROBOT) convert -i mirror/chebi.owl.gz -o $@.tmp.owl &&\
+	mv $@.tmp.owl $@
 
 tmp/merged-source-pre.owl: $(SRC) mirror/chebi.owl
 	$(ROBOT) merge -i $(SRC) -i mirror/chebi.owl --output $@
