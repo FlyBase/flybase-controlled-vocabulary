@@ -9,7 +9,6 @@ ERROR	duplicate_definition	quinacrine mustard	textual definition	No description.
 ERROR	duplicate_definition	ICR 170	textual definition	No description.
 ERROR	duplicate_definition	aminopterin	textual definition	No description.
 ERROR	duplicate_definition	H3BO3	textual definition	No description.
-ERROR	duplicate_definition	sodium bisulphite	textual definition	No description.
 ERROR	duplicate_definition	diepoxybutane	textual definition	No description.
 ERROR	duplicate_definition	diepoxyoctane	textual definition	No description.
 ERROR	duplicate_definition	1,2:5,6-dibenzanthracene	textual definition	No description.
@@ -39,6 +38,8 @@ ERROR	duplicate_definition	iodine atom	textual definition	Chemical element with 
 ERROR	duplicate_definition	iodine	textual definition	Chemical element with atomic number 53.
 ERROR	duplicate_definition	benzo[a]pyrene	textual definition	An ortho- and peri-fused polycyclic arene consisting of five fused benzene rings.
 ERROR	duplicate_definition	benzo(alpha)pyrene	textual definition	An ortho- and peri-fused polycyclic arene consisting of five fused benzene rings.
+ERROR	duplicate_definition	sodium hydrogensulfite	textual definition	An inorganic sodium salt having hydrogensulfite as the counterion.
+ERROR	duplicate_definition	sodium bisulphite	textual definition	An inorganic sodium salt having hydrogensulfite as the counterion.
 ERROR	duplicate_definition	bis(2-chloroethyl) sulfide	textual definition	An ethyl sulfide that is diethyl sulfide in which a hydrogen from each of the terminal methyl groups is replaced by a chlorine. It is a powerful vesicant regulated under the Chemical Weapons Convention.
 ERROR	duplicate_definition	bis(2-chloroethyl) sulfide	textual definition	An ethyl sulfide that is diethyl sulfide in which a hydrogen from each of the terminal methyl groups is replaced by a chlorine. It is a powerful vesicant regulated under the Chemical Weapons Convention.
 ERROR	duplicate_definition	diethyl ether	textual definition	An ether in which the oxygen atom is linked to two ethyl groups.
@@ -112,6 +113,7 @@ ERROR	duplicate_definition	ethylene oxide	textual definition	A  saturated organi
 ERROR	duplicate_definition	alkylating agent	textual definition	.
 ERROR	duplicate_definition	intercalating agent	textual definition	.
 ERROR	duplicate_definition	enzyme inhibitor	textual definition	.
+ERROR	missing_label	dc11:source	label	
 ERROR	missing_label	oboInOwl:created_by	label	
 ERROR	missing_label	oboInOwl:creation_date	label	
 ERROR	missing_label	oboInOwl:id	label	
@@ -223,6 +225,8 @@ ERROR	multiple_labels	textual definition	label	textual definition
 ERROR	multiple_labels	has ontology root term	label	has ontology root term
 ERROR	multiple_labels	has ontology root term	label	has ontology root term@en
 ERROR	multiple_labels	has ontology root term	label	preferred_root
+ERROR	multiple_labels	term replaced by	label	term replaced by
+ERROR	multiple_labels	term replaced by	label	term replaced by@en
 ERROR	multiple_labels	inheres in	label	inheres in@en
 ERROR	multiple_labels	inheres in	label	inheres_in
 ERROR	multiple_labels	has role	label	has role
@@ -373,7 +377,6 @@ WARN	missing_definition	p-N,N-bis(2-chloroethyl)amino-D-phenylalanine	textual de
 WARN	missing_definition	p-N,N-bis(2-chloroethyl)amino-L-phenylalanine	textual definition	
 WARN	missing_definition	4-(2-aminoethyl)-N,N-bis(2-chloroethyl)aniline	textual definition	
 WARN	missing_definition	p-p'-N,N-di(2-chloroethyl)aminophenoxyphenylalanine	textual definition	
-WARN	missing_definition	peptide antibiotic	textual definition	
 WARN	missing_definition	phosphorus molecular entity	textual definition	
 WARN	missing_definition	pteridines	textual definition	
 WARN	missing_definition	pterins	textual definition	
@@ -383,7 +386,6 @@ WARN	missing_definition	quinhydrone	textual definition
 WARN	missing_definition	rhamnosylglucoside	textual definition	
 WARN	missing_definition	rutinoside	textual definition	
 WARN	missing_definition	sodium atom	textual definition	
-WARN	missing_definition	sodium hydrogensulfite	textual definition	
 WARN	missing_definition	sodium molecular entity	textual definition	
 WARN	missing_definition	styrylquinoline	textual definition	
 WARN	missing_definition	sulfur atom	textual definition	
@@ -469,7 +471,6 @@ WARN	missing_definition	benzenoid aromatic compound	textual definition
 WARN	missing_definition	aromatic annulene	textual definition	
 WARN	missing_definition	transition element coordination entity	textual definition	
 WARN	missing_definition	platinum coordination entity	textual definition	
-WARN	missing_definition	macronutrient	textual definition	
 WARN	missing_definition	halide salt	textual definition	
 WARN	missing_definition	diethyl sulfate	textual definition	
 WARN	missing_definition	nitrogen hydride	textual definition	
@@ -601,9 +602,10 @@ WARN	missing_definition	editor note	textual definition
 WARN	missing_definition	term editor	textual definition	
 WARN	missing_definition	alternative term	textual definition	
 WARN	missing_definition	definition source	textual definition	
+WARN	missing_definition	ready for release	textual definition	
+WARN	missing_definition	pending final vetting	textual definition	
 WARN	missing_definition	curator note	textual definition	
 WARN	missing_definition	imported from	textual definition	
-WARN	missing_definition	term replaced by	textual definition	
 WARN	missing_definition	has component activity	textual definition	
 WARN	missing_definition	directly regulated by	textual definition	
 WARN	missing_definition	ends after	textual definition	
@@ -644,7 +646,10 @@ WARN	missing_definition	SMILES	textual definition
 WARN	missing_definition	conditionality	textual definition	
 WARN	missing_definition	has role	textual definition	
 WARN	missing_definition	Systematic synonym	textual definition	
-WARN	missing_definition	derived from resource	textual definition	
+WARN	missing_definition	description	textual definition	
+WARN	missing_definition	dc11:source	textual definition	
+WARN	missing_definition	title	textual definition	
+WARN	missing_definition	license	textual definition	
 WARN	missing_definition	subset_property	textual definition	
 WARN	missing_definition	synonym_type_property	textual definition	
 WARN	missing_definition	consider	textual definition	
