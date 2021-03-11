@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: 2021-01-14
-date: 14:01:2021 18:58
+data-version: 2021-03-11
+date: 11:03:2021 15:12
 subsetdef: camcur ""
 subsetdef: common_tool_use "Terms to summarize typical use of a gene from one organism that is introduced into another organism primarily for use an experimental tool, rather than to study the function of the gene"
 subsetdef: do_not_annotate "Term not to be used for direct annotation"
@@ -3086,7 +3086,7 @@ namespace: phenotypic_class
 def: "Phenotype that is a reduced ability to jump or a reduced jump response. This may be due to neurological or muscular defects." [FBC:DOS]
 subset: fbcvsubset_mgiribbons
 synonym: "jumping defective" EXACT []
-is_a: FBcv:0001347 ! phenotype
+is_a: FBcv:0000387 ! abnormal behavior
 
 [Term]
 id: FBcv:0000416
@@ -4300,7 +4300,7 @@ is_a: FBcv:0000553 ! inorganic compound
 id: FBcv:0000556
 name: sodium bisulphite
 namespace: origin_of_mutation
-def: "No description." [CHEBI:26709]
+def: "An inorganic sodium salt having hydrogensulfite as the counterion." [CHEBI:26709]
 synonym: "mutation induced by sodium bisulphite exposure" EXACT []
 is_a: FBcv:0000553 ! inorganic compound
 
@@ -10367,6 +10367,7 @@ creation_date: 2020-12-15T14:51:45Z
 [Term]
 id: FBcv:0007504
 name: abnormal body weight
+namespace: phenotypic_class
 def: "Phenotype that is any abnormality in body weight compared to identically raised wild-type controls." [FBC:CP]
 is_a: FBcv:0001347 ! phenotype
 created_by: http://orcid.org/0000-0002-1373-1705
@@ -10375,16 +10376,18 @@ creation_date: 2020-12-15T15:47:07Z
 [Term]
 id: FBcv:0007505
 name: increased body weight
+namespace: phenotypic_class
 def: "Phenotype that is an increase in body weight compared to identically raised wild-type controls." [FBC:CP]
-is_a: FBcv:0001347 ! phenotype
+is_a: FBcv:0007504 ! abnormal body weight
 created_by: http://orcid.org/0000-0002-1373-1705
 creation_date: 2020-12-15T15:50:18Z
 
 [Term]
 id: FBcv:0007506
 name: decreased body weight
+namespace: phenotypic_class
 def: "Phenotype that is a decrease in body weight compared to identically raised wild-type controls." [FBC:CP]
-is_a: FBcv:0001347 ! phenotype
+is_a: FBcv:0007504 ! abnormal body weight
 created_by: http://orcid.org/0000-0002-1373-1705
 creation_date: 2020-12-15T15:50:44Z
 
