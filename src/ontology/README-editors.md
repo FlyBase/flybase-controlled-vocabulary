@@ -1,30 +1,30 @@
 These notes are for the EDITORS of FBcv
 
-This project uses the [ontology development kit](https://github.com/INCATools/ontology-development-kit). See the site for details.
+This project uses the [ontology development kit](https://github.com/INCATools/ontology-development-kit).
 
-For more details on ontology management, please see the [OBO tutorial](https://github.com/jamesaoverton/obo-tutorial) or the [Gene Ontology Editors Tutorial](https://go-protege-tutorial.readthedocs.io/en/latest/)
+For more details on ontology management, please see the [OBO tutorial](https://github.com/jamesaoverton/obo-tutorial) or the [Gene Ontology Editors Tutorial](https://go-protege-tutorial.readthedocs.io/en/latest/).
 
-You may also want to read the [GO ontology editors guide](http://go-ontology.readthedocs.org/)
+You may also want to read the [GO ontology editors guide](http://go-ontology.readthedocs.org/).
 
 ## Requirements
 
- 1. Protege (for editing)
+ 1. [Protege](https://protege.stanford.edu/) (for editing)
  2. A git client (we assume command line git)
  3. [docker](https://www.docker.com/get-docker) (for managing releases)
 
 ## Editing the Ontology
 
+First, clone the repository:
+
+`git clone https://github.com/FlyBase/flybase-controlled-vocabulary.git`
+
 Make sure you have an ID range in the [idranges file](fbcv-idranges.owl) (see below).
 
-The editors' version is [fbcv-edit.obo](fbcv-edit.obo)
+The editors' version is [fbcv-edit.obo](fbcv-edit.obo), [../../fbcv.owl](../../fbcv.owl) is the release version.
 
 ** DO NOT EDIT fbcv.obo OR fbcv.owl in the top level directory **
 
-[../../fbcv.owl](../../fbcv.owl) is the release version
-
-To edit, open the file in Protege. First make sure you have the repository cloned, see [the GitHub project](https://github.com/FlyBase/flybase-controlled-vocabulary) for details.
-
-Changes should be made on a branch and merged via a Pull Request (PR) after travis checks have passed. If your changes relate to an issue, link the PR to the issue using 'related to #' or 'fixes #' as appropriate in the PR description.
+Changes to the editors' file should be made on a branch and merged via a Pull Request (PR) after travis checks have passed. If your changes relate to an issue, link the PR to the issue using 'related to #' or 'fixes #' as appropriate in the PR description.
 
 ## ID Ranges
 
@@ -43,8 +43,14 @@ All import modules are in the [imports/](imports/) folder.
 To include new classes in an import module:
 
 1. Reference an external ontology class in the edit ontology. In Protege: "add new entity" and paste in the PURL, then add a relationship to the new term from an FBcv term.
-
 2. Run: `sh run.sh make all_imports` to regenerate imports.
+
+To add a new import module:
+
+1. Add the short form of the ontology you wish to import to the list of imports in [fbcv-odk.yaml](fbcv-odk.yaml).
+2. Run: `sh run.sh make update_repo`
+3. Add lines to [catalog-v001.xml](catalog-v001.xml) and add a new Import statement to the editors' file for the newly-imported ontology.
+4. Add a class from the ontology you wish to import as above.
 
 ## Design Patterns
 
@@ -75,25 +81,22 @@ FlyBase ontologies are usually released over the course of a day or two, in the 
 2. FBbt
 3. DPO
 4. FBcv
+
 This order is important because DPO imports FBdv and FBbt, and FBcv imports DPO.
 
 You should only attempt to make a release if the travis build is passing on the master branch.
 
-These instructions assume you have
-[docker](https://www.docker.com/get-docker). This folder has a script
-[run.sh](run.sh) that wraps docker commands.
+These instructions assume you have [docker](https://www.docker.com/get-docker) running, the script [run.sh](run.sh) wraps docker commands.
 
-Everything should be done from the /src/ontology/ folder.
+Everything should be done from this (/src/ontology/) folder.
 
 To release:
 
 1. Make a branch (directly from master) for the release.
 
 2. Run `sh run_release.sh`
-
-This generates derived files such as fbcv.owl and fbcv.obo and places them in the top level (../..).
-
-Note that the versionIRI value will be automatically added, and will end with YYYY-MM-DD, as per OBO guidelines.
+ * This generates derived files such as fbcv.owl and fbcv.obo and places them in the top level (../..).
+ * Note that the versionIRI value will be automatically added, and will end with YYYY-MM-DD, as per OBO guidelines.
 
 3. Checks:
  * Check the diff (header and Typedefs of fbcv-simple.obo are usually most informative).
@@ -108,13 +111,9 @@ Note that the versionIRI value will be automatically added, and will end with YY
 
  * https://github.com/FlyBase/flybase-controlled-vocabulary/releases/new
 
-__IMPORTANT__: The value of the "Tag version" field MUST be
+__IMPORTANT__: The value of the "Tag version" field MUST be `vYYYY-MM-DD`
 
-    vYYYY-MM-DD
-
-The initial lowercase "v" is REQUIRED. The YYYY-MM-DD *must* match what is in the `owl:versionIRI` of the derived fbcv.owl (`data-version` in fbcv.obo). This will be today's date.
-
-This cannot be changed after the fact, be sure to get this right!
+The initial lowercase "v" is REQUIRED. The YYYY-MM-DD *must* match what is in the `owl:versionIRI` of the derived fbcv.owl (`data-version` in fbcv.obo), which will be today's date. This cannot be changed after the fact, be sure to get this right!
 
 Release title should be YYYY-MM-DD, optionally followed by a title (e.g. "January release")
 
@@ -122,12 +121,12 @@ You can also add release notes (this can also be done after the fact). These are
 
 Then click "Publish release"
 
-__IMPORTANT__: NO MORE THAN ONE RELEASE PER DAY.
+__IMPORTANT__: NO MORE THAN ONE RELEASE PER ONTOLOGY PER DAY.
 
 The PURLs are already configured to pull from github. This means that BOTH ontology purls and versioned ontology purls will resolve to the correct ontologies. Try it!
 
  * http://purl.obolibrary.org/obo/fbcv.owl <-- current ontology PURL
- * http://purl.obolibrary.org/obo/fbcv/releases/YYYY-MM-DD.owl <-- change to the release you just made
+ * http://purl.obolibrary.org/obo/fbcv/releases/2021-03-11/fbcv.owl <-- specific release
 
 For questions on this contact Chris Mungall or email obo-admin AT obofoundry.org
 
@@ -137,11 +136,11 @@ For questions on this contact Chris Mungall or email obo-admin AT obofoundry.org
 
 # Travis Continuous Integration System
 
-Check the build status here: [![Build Status](https://travis-ci.org/FlyBase/flybase-controlled-vocabulary.svg?branch=master)](https://travis-ci.org/FlyBase/flybase-controlled-vocabulary)
+Check the build status here: [![Build Status](https://travis-ci.com/FlyBase/flybase-controlled-vocabulary.svg?branch=master)](https://travis-ci.com/FlyBase/flybase-controlled-vocabulary)
 
 The way QC now works for all four ontologies is this:
 
-  1. We run the whole (slightly modified) pipeline (encoded in travis.sh)
+  1. We run the whole (slightly modified) pipeline (encoded in [travis.sh](travis.sh))
   2. In the end some hard QC is run. This QC can be controlled through the file [qc-profile.txt](qc-profile.txt). It is pretty permissive now, because there are some errors.
 
 # Updates
