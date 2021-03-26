@@ -34,7 +34,7 @@ These are stored in the file [fbcv-idranges.owl](fbcv-idranges.owl)
 
 If you do not have an ID range, get one from the maintainer of this repo.
 
-Note Protege does not read the file, it is up to you to ensure correct Protege configuration (under Protege > Preferences > New entities) - see [ODK documentation](https://ontology-development-kit.readthedocs.io/en/latest/InitialSetup.html#setting-id-ranges-in-protege).
+Note: Protege does not read the file, it is up to you to ensure correct Protege configuration (under Protege > Preferences > New entities) - see [ODK documentation](https://ontology-development-kit.readthedocs.io/en/latest/InitialSetup.html#setting-id-ranges-in-protege).
 
 ## Imports
 
@@ -86,7 +86,7 @@ This order is important because DPO imports FBdv and FBbt, and FBcv imports DPO.
 
 You should only attempt to make a release if the travis build is passing on the master branch.
 
-These instructions assume you have [docker](https://www.docker.com/get-docker) running, the script [run.sh](run.sh) wraps docker commands.
+These instructions assume you have [docker](https://www.docker.com/get-docker) running. The script [run.sh](run.sh) wraps docker commands.
 
 Everything should be done from this (/src/ontology/) folder.
 
