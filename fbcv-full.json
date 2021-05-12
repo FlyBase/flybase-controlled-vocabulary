@@ -21096,7 +21096,7 @@
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#date",
-            "val": "11:03:2021 15:06"
+            "val": "12:05:2021 09:09"
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#default-namespace",
@@ -21108,48 +21108,14 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-03-11"
+            "val": "2021-05-12"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/fbcv/releases/2021-03-11/fbcv-full.json",
+        "version": "http://purl.obolibrary.org/obo/fbcv/releases/2021-05-12/fbcv-full.json",
         "xrefs": []
       },
       "nodes": [
-        {
-          "id": "http://purl.obolibrary.org/obo/IAO_0000122",
-          "lbl": "ready for release",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000125"
-              }
-            ]
-          }
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/IAO_0000125",
-          "lbl": "pending final vetting",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000125"
-              }
-            ]
-          }
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/RO_0001901",
-          "lbl": "axiom holds for all times",
-          "meta": {
-            "definition": {
-              "val": "\n\n## Elucidation\n\nThis is used when the statement/axiom is assumed to hold true 'eternally'\n\n## How to interpret (informal)\n\nFirst the \"atemporal\" FOL is derived from the OWL using the standard\ninterpretation. This axiom is temporalized by embedding the axiom\nwithin a for-all-times quantified sentence. The t argument is added to\nall instantiation predicates and predicates that use this relation.\n\n## Example\n\n    Class: nucleus\n    SubClassOf: part_of some cell\n\n    forall t :\n      forall n :\n        instance_of(n,Nucleus,t)\n         implies\n        exists c :\n          instance_of(c,Cell,t)\n          part_of(n,c,t)\n\n## Notes\n\nThis interpretation is *not* the same as an at-all-times relation\n\n",
-              "xrefs": []
-            }
-          }
-        },
         {
           "id": "http://purl.obolibrary.org/obo/BFO_0000002",
           "lbl": "continuant",
@@ -45334,10 +45300,16 @@
                 "val": "CAS:67-68-5"
               },
               {
+                "val": "Chemspider:659"
+              },
+              {
                 "val": "DrugBank:DB01093"
               },
               {
                 "val": "Drug_Central:906"
+              },
+              {
+                "val": "FooDB:FDB000764"
               },
               {
                 "val": "Gmelin:1556"
@@ -45352,16 +45324,31 @@
                 "val": "KEGG:D01043"
               },
               {
+                "val": "KNApSAcK:C00053120"
+              },
+              {
                 "val": "LINCS:LSM-36361"
               },
               {
+                "val": "MetaCyc:DMSO"
+              },
+              {
                 "val": "PDBeChem:DMS"
+              },
+              {
+                "val": "PMID:10298633"
               },
               {
                 "val": "PMID:11162043"
               },
               {
                 "val": "PMID:11350866"
+              },
+              {
+                "val": "PMID:11474739"
+              },
+              {
+                "val": "PMID:12663039"
               },
               {
                 "val": "PMID:15237653"
@@ -45376,10 +45363,16 @@
                 "val": "PMID:16434015"
               },
               {
+                "val": "PMID:16522014"
+              },
+              {
                 "val": "PMID:19096138"
               },
               {
                 "val": "PMID:19382398"
+              },
+              {
+                "val": "PMID:19443933"
               },
               {
                 "val": "PMID:21426213"
@@ -45397,13 +45390,49 @@
                 "val": "PMID:22814967"
               },
               {
+                "val": "PMID:23050031"
+              },
+              {
+                "val": "PMID:28220525"
+              },
+              {
+                "val": "PMID:29938311"
+              },
+              {
+                "val": "PMID:31489176"
+              },
+              {
+                "val": "PMID:3510103"
+              },
+              {
+                "val": "PMID:3898376"
+              },
+              {
+                "val": "PMID:3916302"
+              },
+              {
+                "val": "PMID:4223708"
+              },
+              {
+                "val": "PMID:4556944"
+              },
+              {
+                "val": "PMID:4963226"
+              },
+              {
+                "val": "PMID:6309056"
+              },
+              {
+                "val": "PMID:6379027"
+              },
+              {
                 "val": "Reaxys:506008"
               },
               {
                 "val": "UM-BBD_compID:c0236"
               },
               {
-                "val": "Wikipedia:Dimethyl_Sulfoxide"
+                "val": "Wikipedia:Dimethyl_sulfoxide"
               }
             ]
           },
@@ -113135,6 +113164,32 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/IAO_0000122",
+          "lbl": "ready for release",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
+                "val": "http://purl.obolibrary.org/obo/IAO_0000125"
+              }
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/IAO_0000125",
+          "lbl": "pending final vetting",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
+                "val": "http://purl.obolibrary.org/obo/IAO_0000125"
+              }
+            ]
+          },
+          "type": "INDIVIDUAL"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/IAO_0000232",
           "lbl": "curator note",
           "meta": {
@@ -113473,6 +113528,17 @@
             }
           },
           "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0001901",
+          "lbl": "axiom holds for all times",
+          "meta": {
+            "definition": {
+              "val": "\n\n## Elucidation\n\nThis is used when the statement/axiom is assumed to hold true 'eternally'\n\n## How to interpret (informal)\n\nFirst the \"atemporal\" FOL is derived from the OWL using the standard\ninterpretation. This axiom is temporalized by embedding the axiom\nwithin a for-all-times quantified sentence. The t argument is added to\nall instantiation predicates and predicates that use this relation.\n\n## Example\n\n    Class: nucleus\n    SubClassOf: part_of some cell\n\n    forall t :\n      forall n :\n        instance_of(n,Nucleus,t)\n         implies\n        exists c :\n          instance_of(c,Cell,t)\n          part_of(n,c,t)\n\n## Notes\n\nThis interpretation is *not* the same as an at-all-times relation\n\n",
+              "xrefs": []
+            }
+          },
+          "type": "INDIVIDUAL"
         },
         {
           "id": "http://purl.obolibrary.org/obo/RO_0002013",
