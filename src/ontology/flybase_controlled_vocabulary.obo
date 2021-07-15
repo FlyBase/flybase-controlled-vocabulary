@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: 2021-05-12
-date: 12:05:2021 09:13
+data-version: 2021-07-15
+date: 15:07:2021 17:03
 subsetdef: camcur ""
 subsetdef: common_tool_use "Terms to summarize typical use of a gene from one organism that is introduced into another organism primarily for use an experimental tool, rather than to study the function of the gene"
 subsetdef: do_not_annotate "Term not to be used for direct annotation"
@@ -61,7 +61,7 @@ is_a: FBcv:0000000 ! FlyBase CV
 id: FBcv:0000006
 name: male semi-fertile
 namespace: phenotypic_class
-def: "Phenotype of males that is a reduction in the proportion of fertilized eggs produced, but only to > 50% of wild-type." []
+def: "A phenotype that is a reduction in the ability of males to produce fertilized eggs as a result of mating, but only to > 50% of wild-type." [FBC:AO, FBC:CP, FBC:DOS]
 is_a: FBcv:0000375 ! semi-fertile
 is_a: FBcv:0000376 ! male fertile
 
@@ -69,7 +69,7 @@ is_a: FBcv:0000376 ! male fertile
 id: FBcv:0000007
 name: female semi-fertile
 namespace: phenotypic_class
-def: "Phenotype of females that is a reduction in the proportion of fertilized eggs produced, but only to > 50% of wild-type." []
+def: "A phenotype that is a reduction in the ability of females to produce fertilized eggs as a result of mating, but only to > 50% of wild-type." [FBC:AO, FBC:CP, FBC:DOS]
 is_a: FBcv:0000375 ! semi-fertile
 is_a: FBcv:0000377 ! female fertile
 
@@ -2649,7 +2649,7 @@ is_a: FBcv:0000428 ! abnormal cell size
 id: FBcv:0000364
 name: sterile
 namespace: phenotypic_class
-def: "A phenotype that is the inability to produce a zygote." [FBC:DOS]
+def: "A phenotype that is the inability to produce fertilized eggs as a result of mating." [FBC:AO, FBC:CP, FBC:DOS]
 comment: The cause of sterility may be physical or behavioral. Note, this term should not be used with the qualifier 'partially'. Use semi-sterile or semi-fertile instead.
 subset: fbcvsubset_mgiribbons
 is_a: FBcv:0001347 ! phenotype
@@ -2658,7 +2658,7 @@ is_a: FBcv:0001347 ! phenotype
 id: FBcv:0000365
 name: semi-sterile
 namespace: phenotypic_class
-def: "A phenotype that is a reduction in the proportion of fertilized eggs produced to below 50% of wild-type." [FBC:DOS]
+def: "A phenotype that is a reduction in the ability to produce fertilized eggs as a result of mating to below 50% of wild-type." [FBC:AO, FBC:CP, FBC:DOS]
 subset: fbcvsubset_mgiribbons
 is_a: FBcv:0001347 ! phenotype
 
@@ -2666,7 +2666,7 @@ is_a: FBcv:0001347 ! phenotype
 id: FBcv:0000366
 name: female sterile
 namespace: phenotypic_class
-def: "A phenotype that is the inability of females to mate and produce fertilized offspring." [FBC:DOS]
+def: "A phenotype that is the inability of females to produce fertilized eggs as a result of mating." [FBC:AO, FBC:CP, FBC:DOS]
 comment: The cause of sterility may be physical or behavioral. Note: this term should not be used with the qualifier 'partially' - use semi-sterile or semi-fertile instead.
 is_a: FBcv:0000364 ! sterile
 
@@ -2674,7 +2674,7 @@ is_a: FBcv:0000364 ! sterile
 id: FBcv:0000367
 name: female semi-sterile
 namespace: phenotypic_class
-def: "A phenotype that is a reduction in the proportion of fertilized eggs produced by females to below 50% of wild-type." [FBC:DOS]
+def: "A phenotype that is a reduction in the ability of females to produce fertilized eggs as a result of mating to below 50% of wild-type." [FBC:AO, FBC:CP, FBC:DOS]
 is_a: FBcv:0000365 ! semi-sterile
 
 [Term]
@@ -2696,7 +2696,7 @@ is_a: FBcv:0000366 ! female sterile
 id: FBcv:0000370
 name: male sterile
 namespace: phenotypic_class
-def: "A phenotype that is the inability of males to mate and produce fertilized offspring." [FBC:DOS]
+def: "A phenotype that is the inability of males to produce fertilized eggs as a result of mating." [FBC:AO, FBC:CP, FBC:DOS]
 comment: The cause of sterility may be physical or behavioral. Note - this term should not be used with the qualifier 'partially' - use semi-sterile or semi-fertile instead.
 is_a: FBcv:0000364 ! sterile
 
@@ -2704,7 +2704,7 @@ is_a: FBcv:0000364 ! sterile
 id: FBcv:0000371
 name: male semi-sterile
 namespace: phenotypic_class
-def: "A phenotype that is a reduction in the proportion of fertilized eggs produced by males to below 50% of wild-type." [FBC:DOS]
+def: "A phenotype that is a reduction in the ability of males to produce fertilized eggs as a result of mating to below 50% of wild-type." [FBC:AO, FBC:CP, FBC:DOS]
 is_a: FBcv:0000365 ! semi-sterile
 
 [Term]
@@ -2726,7 +2726,7 @@ is_a: FBcv:0000370 ! male sterile
 id: FBcv:0000374
 name: fertile
 namespace: phenotypic_class
-def: "A phenotype that is the ability to mate and as a result produce fertilized eggs." [FBC:DOS]
+def: "A phenotype that is the ability to produce fertilized eggs as a result of mating." [FBC:AO, FBC:CP, FBC:DOS]
 comment: Note, this term should not be used with the qualifier 'partially'. Use semi-sterile or semi-fertile instead.
 subset: fbcvsubset_mgiribbons
 is_a: FBcv:0000347 ! phenotypic class
@@ -2735,7 +2735,7 @@ is_a: FBcv:0000347 ! phenotypic class
 id: FBcv:0000375
 name: semi-fertile
 namespace: phenotypic_class
-def: "Phenotype that is a reduction in the proportion of fertilized eggs produced, but only to > 50% of wild-type." [FBC:DOS]
+def: "A phenotype that is a reduction in the ability to produce fertilized eggs as a result of mating, but only to > 50% of wild-type." [FBC:AO, FBC:CP, FBC:DOS]
 subset: fbcvsubset_mgiribbons
 is_a: FBcv:0000374 ! fertile
 is_a: FBcv:0001347 ! phenotype
@@ -2744,7 +2744,7 @@ is_a: FBcv:0001347 ! phenotype
 id: FBcv:0000376
 name: male fertile
 namespace: phenotypic_class
-def: "A phenotype that is the ability of males to mate and as a result produce fertilized eggs." [FBC:DOS]
+def: "A phenotype that is the ability of males to produce fertilized eggs as a result of mating." [FBC:AO, FBC:CP, FBC:DOS]
 comment: Note - this term should not be used with the qualifier 'partially' - use male semi-sterile or male semi-fertile instead.
 is_a: FBcv:0000374 ! fertile
 
@@ -2752,7 +2752,7 @@ is_a: FBcv:0000374 ! fertile
 id: FBcv:0000377
 name: female fertile
 namespace: phenotypic_class
-def: "A phenotype that is the ability of females to mate and as a result produce fertilized eggs." [FBC:DOS]
+def: "A phenotype that is the ability of females to produce fertilized eggs as a result of mating." [FBC:AO, FBC:CP, FBC:DOS]
 comment: Note - this term should not be used with the qualifier 'partially' - use female semi-sterile or female semi-fertile instead.
 is_a: FBcv:0000374 ! fertile
 
@@ -9865,7 +9865,9 @@ id: FBcv:0007000
 name: micropublication
 namespace: pub_type
 def: "A short report describing a single stand-alone research finding that is peer-reviewed and published." [FBC:SM, http://www.micropublication.org]
-is_a: FBcv:0000189 ! publication class
+comment: Obsoleted, as 'paper' publication type will now be used for micropublications.
+is_obsolete: true
+replaced_by: FBcv:0000212
 created_by: http://orcid.org/0000-0002-1373-1705
 creation_date: 2019-06-25T08:45:04Z
 

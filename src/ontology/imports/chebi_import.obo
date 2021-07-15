@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: fbcv/releases/2021-05-12/imports/chebi_import.owl
+data-version: fbcv/releases/2021-07-15/imports/chebi_import.owl
 subsetdef: 1_STAR ""
 subsetdef: 2_STAR ""
 subsetdef: 3_STAR ""
 ontology: fbcv/imports/chebi_import
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chebi/199/chebi.owl
-property_value: owl:versionInfo "2021-05-12" xsd:string
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chebi/201/chebi.owl
+property_value: owl:versionInfo "2021-07-15" xsd:string
 
 [Term]
 id: CHEBI:10432
@@ -14,38 +14,71 @@ namespace: chebi_ontology
 def: "A naphthol carrying a hydroxy group at position 2." []
 subset: 3_STAR
 synonym: "2-hydroxynaphthalene" RELATED [HMDB]
+synonym: "2-Naftol" RELATED [ChemIDplus]
+synonym: "2-naftolo" RELATED [ChemIDplus]
 synonym: "2-naphthalenol" RELATED [NIST_Chemistry_WebBook]
 synonym: "2-Naphthol" EXACT [KEGG_COMPOUND]
 synonym: "2-naphthol" EXACT [UniProt]
+synonym: "2-naphtol" RELATED [ChemIDplus]
+synonym: "Antioxygene BN" RELATED BRAND_NAME [HMDB]
+synonym: "Azogen Developer A" RELATED BRAND_NAME [HMDB]
 synonym: "beta-hydroxynaphthalene" RELATED [NIST_Chemistry_WebBook]
+synonym: "beta-hydroxynaphthalene" RELATED [ChemIDplus]
+synonym: "beta-Naftol" RELATED [ChemIDplus]
+synonym: "beta-naftolo" RELATED [ChemIDplus]
 synonym: "beta-Naphthol" RELATED [KEGG_COMPOUND]
 synonym: "beta-naphthol" RELATED [NIST_Chemistry_WebBook]
+synonym: "beta-naphthyl alcohol" RELATED [ChemIDplus]
+synonym: "beta-naphthyl hydroxide" RELATED [ChemIDplus]
+synonym: "beta-Naphtol" RELATED [ChemIDplus]
+synonym: "C.I. Azoic Coupling Component 1" RELATED BRAND_NAME [ChemIDplus]
+synonym: "C.I. Developer 5" RELATED BRAND_NAME [ChemIDplus]
+synonym: "Developer A" RELATED BRAND_NAME [ChemIDplus]
+synonym: "Developer AMS" RELATED BRAND_NAME [ChemIDplus]
+synonym: "Developer BN" RELATED BRAND_NAME [ChemIDplus]
+synonym: "Isonaphthol" RELATED [ChemIDplus]
 synonym: "naphthalen-2-ol" EXACT IUPAC_NAME [IUPAC]
 xref: Beilstein:742134 {source="Beilstein"}
 xref: CAS:135-19-3 {source="NIST Chemistry WebBook"}
 xref: CAS:135-19-3 {source="ChemIDplus"}
 xref: CAS:135-19-3 {source="KEGG COMPOUND"}
 xref: Drug_Central:3370 {source="DrugCentral"}
+xref: FooDB:FDB000877
 xref: Gmelin:27395 {source="Gmelin"}
 xref: HMDB:HMDB0012322
 xref: KEGG:C11713
+xref: MetaCyc:CPD-8131
+xref: PDBeChem:03V
+xref: PMID:13386410 {source="Europe PMC"}
 xref: PMID:14751800 {source="Europe PMC"}
 xref: PMID:18515997 {source="Europe PMC"}
+xref: PMID:18856458 {source="Europe PMC"}
+xref: PMID:20260560 {source="Europe PMC"}
+xref: PMID:22069470 {source="Europe PMC"}
 xref: PMID:22740618 {source="Europe PMC"}
+xref: PMID:23344974 {source="Europe PMC"}
+xref: PMID:29987264 {source="Europe PMC"}
+xref: PMID:30572877 {source="Europe PMC"}
+xref: PMID:30828382 {source="Europe PMC"}
+xref: PMID:32206945 {source="Europe PMC"}
+xref: PMID:33862438 {source="Europe PMC"}
+xref: PMID:34033865 {source="Europe PMC"}
 xref: Reaxys:742134 {source="Reaxys"}
 xref: Wikipedia:2-Naphthol
 is_a: CHEBI:35682 ! naphthol
 relationship: has_role CHEBI:35444 ! antinematodal drug
+relationship: has_role CHEBI:48578 ! radical scavenger
 relationship: has_role CHEBI:50902 ! genotoxin
 relationship: has_role CHEBI:75771 ! mouse metabolite
 relationship: has_role CHEBI:76967 ! human xenobiotic metabolite
+relationship: has_role CHEBI:84087 ! human urinary metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C10H8O" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C10H8O/c11-10-6-5-8-3-1-2-4-9(8)7-10/h1-7,11H" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchikey "JWAZRIHNYRIHIV-UHFFFAOYSA-N" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/mass "144.16992" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/mass "144.173" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "144.05751" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/smiles "Oc1ccc2ccccc2c1" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/smiles "OC1=CC2=CC=CC=C2C=C1" xsd:string
 
 [Term]
 id: CHEBI:10545
@@ -615,6 +648,7 @@ is_a: CHEBI:15705 ! L-alpha-amino acid
 is_a: CHEBI:18237 ! glutamic acid
 is_a: CHEBI:24318 ! glutamine family amino acid
 is_a: CHEBI:83813 ! proteinogenic amino acid
+relationship: has_role CHEBI:173085 ! ferroptosis inducer
 relationship: has_role CHEBI:25512 ! neurotransmitter
 relationship: has_role CHEBI:27027 ! micronutrient
 relationship: has_role CHEBI:50733 ! nutraceutical
@@ -1505,6 +1539,23 @@ property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "80.96519"
 property_value: http://purl.obolibrary.org/obo/chebi/smiles "OS([O-])=O" xsd:string
 
 [Term]
+id: CHEBI:172390
+name: glycol ether
+namespace: chebi_ontology
+def: "A hydroxyether which contains both an ether and alcohol functional groups. It is one of the most versatile classes of organic solvents which are commonly used in paints, cleaners, adhesives, pharmaceuticals and cosmetics." []
+subset: 3_STAR
+synonym: "glycol ethers" RELATED [ChEBI]
+xref: PMID:28650840 {source="Europe PMC"}
+xref: PMID:29536623 {source="Europe PMC"}
+xref: PMID:30471335 {source="Europe PMC"}
+xref: PMID:31518935 {source="Europe PMC"}
+xref: PMID:32172156 {source="Europe PMC"}
+xref: Wikipedia:Glycol_ethers
+is_a: CHEBI:46789 ! hydroxyether
+relationship: has_functional_parent CHEBI:13643 ! glycol
+relationship: has_role CHEBI:48356 ! protic solvent
+
+[Term]
 id: CHEBI:17258
 name: 7H-purine
 namespace: chebi_ontology
@@ -1609,6 +1660,20 @@ property_value: http://purl.obolibrary.org/obo/chebi/inchikey "COLNVLDHVKWLRT-QM
 property_value: http://purl.obolibrary.org/obo/chebi/mass "165.18918" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "165.07898" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/smiles "N[C@@H](Cc1ccccc1)C(O)=O" xsd:string
+
+[Term]
+id: CHEBI:173085
+name: ferroptosis inducer
+namespace: chebi_ontology
+def: "Any substance that induces or promotes ferroptosis (a type of programmed cell death dependent on iron and characterized by the accumulation of lipid peroxides) in organisms." []
+subset: 3_STAR
+synonym: "ferroptosis inducers" RELATED [ChEBI]
+xref: PMID:31899616 {source="Europe PMC"}
+xref: PMID:32015325 {source="SUBMITTER"}
+xref: PMID:33167414 {source="Europe PMC"}
+xref: PMID:34012798 {source="Europe PMC"}
+xref: Wikipedia:Ferroptosis
+is_a: CHEBI:52206 ! biochemical role
 
 [Term]
 id: CHEBI:17359
@@ -3387,9 +3452,11 @@ property_value: http://purl.obolibrary.org/obo/chebi/smiles "[Cu++].[O-]S([O-])(
 id: CHEBI:23509
 name: cysteine derivative
 namespace: chebi_ontology
+alt_id: CHEBI:25309
 def: "An amino acid derivative resulting from reaction of cysteine at the amino group, carboxy group, or thiol group, or from the replacement of any hydrogen of cysteine by a heteroatom. The definition normally excludes peptides containing cysteine residues." []
 subset: 3_STAR
 synonym: "cysteine derivative" EXACT [ChEBI]
+synonym: "cysteine derivatives" RELATED [ChEBI]
 is_a: CHEBI:83821 ! amino acid derivative
 relationship: has_functional_parent CHEBI:15356 ! cysteine
 
@@ -5922,9 +5989,14 @@ xref: HMDB:HMDB0029571
 xref: KEGG:C06752
 xref: MetaCyc:12-DICHLOROETHANE
 xref: PDBeChem:DCE
+xref: PMID:17564600 {source="Europe PMC"}
+xref: PMID:18579268 {source="Europe PMC"}
 xref: PMID:24228488 {source="Europe PMC"}
 xref: PMID:24329990 {source="Europe PMC"}
 xref: PMID:24441515 {source="Europe PMC"}
+xref: PMID:31520740 {source="Europe PMC"}
+xref: PMID:32830330 {source="Europe PMC"}
+xref: PMID:33047531 {source="Europe PMC"}
 xref: PPDB:2774
 xref: Reaxys:605264 {source="Reaxys"}
 xref: UM-BBD_compID:c0001 {source="UM-BBD"}
@@ -5932,6 +6004,7 @@ xref: Wikipedia:1\,2-Dichloroethane
 is_a: CHEBI:36016 ! chloroethanes
 relationship: has_role CHEBI:25435 ! mutagen
 relationship: has_role CHEBI:48355 ! non-polar solvent
+relationship: has_role CHEBI:50908 ! hepatotoxic agent
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C2H4Cl2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C2H4Cl2/c3-1-2-4/h1-2H2" xsd:string
@@ -5997,15 +6070,18 @@ xref: PMID:1855275 {source="Europe PMC"}
 xref: PMID:23554447 {source="Europe PMC"}
 xref: PMID:23604226 {source="Europe PMC"}
 xref: PMID:23651576 {source="Europe PMC"}
+xref: PMID:28494534 {source="Europe PMC"}
 xref: Reaxys:11324567 {source="Reaxys"}
 xref: Wikipedia:Cisplatin
 is_a: CHEBI:51214 ! diamminedichloroplatinum
+relationship: has_role CHEBI:173085 ! ferroptosis inducer
 relationship: has_role CHEBI:25435 ! mutagen
 relationship: has_role CHEBI:35610 ! antineoplastic agent
 relationship: has_role CHEBI:47868 ! photosensitizing agent
 relationship: has_role CHEBI:50684 ! cross-linking reagent
 relationship: has_role CHEBI:50902 ! genotoxin
 relationship: has_role CHEBI:61015 ! nephrotoxin
+relationship: has_role CHEBI:68495 ! apoptosis inducer
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "Cl2H6N2Pt" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "H6Cl2N2Pt" xsd:string
@@ -9256,6 +9332,7 @@ synonym: "Nucleoside" EXACT [KEGG_COMPOUND]
 synonym: "nucleosides" EXACT IUPAC_NAME [IUPAC]
 synonym: "nucleosides" RELATED [ChEBI]
 xref: KEGG:C00801
+xref: Wikipedia:Nucleoside
 is_a: CHEBI:21731 ! N-glycosyl compound
 is_a: CHEBI:26912 ! oxolanes
 is_a: CHEBI:61120 ! nucleobase-containing molecular entity
@@ -12057,7 +12134,7 @@ xref: PMID:24399739 {source="Europe PMC"}
 xref: PPDB:1639
 xref: Reaxys:1731074 {source="Reaxys"}
 xref: Wikipedia:2-Methoxyethanol
-is_a: CHEBI:46789 ! hydroxyether
+is_a: CHEBI:172390 ! glycol ether
 relationship: has_role CHEBI:46787 ! solvent
 relationship: has_role CHEBI:48356 ! protic solvent
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
@@ -15306,6 +15383,15 @@ synonym: "L-glutamic acid derivatives" RELATED [ChEBI]
 is_a: CHEBI:24315 ! glutamic acid derivative
 is_a: CHEBI:83811 ! proteinogenic amino acid derivative
 relationship: has_functional_parent CHEBI:16015 ! L-glutamic acid
+
+[Term]
+id: CHEBI:84087
+name: human urinary metabolite
+namespace: chebi_ontology
+def: "Any metabolite (endogenous or exogenous) found in human urine samples." []
+subset: 3_STAR
+synonym: "human urinary metabolites" RELATED [ChEBI]
+is_a: CHEBI:77746 ! human metabolite
 
 [Term]
 id: CHEBI:84143

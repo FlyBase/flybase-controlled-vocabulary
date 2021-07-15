@@ -50,6 +50,12 @@
         },
         {
           "domainClassIds": [
+            "http://purl.obolibrary.org/obo/BFO_0000034"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0000079"
+        },
+        {
+          "domainClassIds": [
             "http://purl.obolibrary.org/obo/BFO_0000002"
           ],
           "predicateId": "http://purl.obolibrary.org/obo/RO_0000056",
@@ -151,9 +157,27 @@
           "domainClassIds": [
             "http://purl.obolibrary.org/obo/BFO_0000004"
           ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0000085",
+          "rangeClassIds": [
+            "http://purl.obolibrary.org/obo/BFO_0000034"
+          ]
+        },
+        {
+          "domainClassIds": [
+            "http://purl.obolibrary.org/obo/BFO_0000004"
+          ],
           "predicateId": "http://purl.obolibrary.org/obo/RO_0000087",
           "rangeClassIds": [
             "http://purl.obolibrary.org/obo/BFO_0000023"
+          ]
+        },
+        {
+          "domainClassIds": [
+            "http://purl.obolibrary.org/obo/BFO_0000004"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0000091",
+          "rangeClassIds": [
+            "http://purl.obolibrary.org/obo/BFO_0000016"
           ]
         },
         {
@@ -287,6 +311,12 @@
           "rangeClassIds": [
             "http://purl.obolibrary.org/obo/BFO_0000020"
           ]
+        },
+        {
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0000086",
+          "rangeClassIds": [
+            "http://purl.obolibrary.org/obo/BFO_0000019"
+          ]
         }
       ],
       "edges": [
@@ -329,6 +359,16 @@
           "obj": "http://purl.obolibrary.org/obo/BFO_0000015",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/GO_0008150"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000016",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/BFO_0000034"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000017",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/BFO_0000016"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000017",
@@ -464,6 +504,11 @@
           "obj": "http://purl.obolibrary.org/obo/CHEBI_134249",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/CHEBI_62081"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_13643",
+          "pred": "http://purl.obolibrary.org/obo/chebi#has_functional_parent",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_172390"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/CHEBI_13643",
@@ -896,6 +941,11 @@
           "sub": "http://purl.obolibrary.org/obo/CHEBI_17359"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_172390",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_46790"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/CHEBI_17258",
           "pred": "http://purl.obolibrary.org/obo/chebi#is_tautomer_of",
           "sub": "http://purl.obolibrary.org/obo/CHEBI_35586"
@@ -934,6 +984,16 @@
           "obj": "http://purl.obolibrary.org/obo/CHEBI_17295",
           "pred": "http://purl.obolibrary.org/obo/chebi#is_tautomer_of",
           "sub": "http://purl.obolibrary.org/obo/CHEBI_58095"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_173085",
+          "pred": "http://purl.obolibrary.org/obo/RO_0000087",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_16015"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_173085",
+          "pred": "http://purl.obolibrary.org/obo/RO_0000087",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_27899"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/CHEBI_17359",
@@ -7483,7 +7543,7 @@
         {
           "obj": "http://purl.obolibrary.org/obo/CHEBI_46789",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/CHEBI_46790"
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_172390"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/CHEBI_46883",
@@ -7583,6 +7643,11 @@
         {
           "obj": "http://purl.obolibrary.org/obo/CHEBI_48356",
           "pred": "http://purl.obolibrary.org/obo/RO_0000087",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_172390"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_48356",
+          "pred": "http://purl.obolibrary.org/obo/RO_0000087",
           "sub": "http://purl.obolibrary.org/obo/CHEBI_30751"
         },
         {
@@ -7634,6 +7699,11 @@
           "obj": "http://purl.obolibrary.org/obo/CHEBI_48544",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/CHEBI_38037"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_48578",
+          "pred": "http://purl.obolibrary.org/obo/RO_0000087",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_10432"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/CHEBI_48578",
@@ -8103,6 +8173,11 @@
         {
           "obj": "http://purl.obolibrary.org/obo/CHEBI_50908",
           "pred": "http://purl.obolibrary.org/obo/RO_0000087",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_27789"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_50908",
+          "pred": "http://purl.obolibrary.org/obo/RO_0000087",
           "sub": "http://purl.obolibrary.org/obo/CHEBI_34873"
         },
         {
@@ -8364,6 +8439,11 @@
           "obj": "http://purl.obolibrary.org/obo/CHEBI_51959",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/CHEBI_38032"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_52206",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_173085"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/CHEBI_52206",
@@ -8984,6 +9064,11 @@
           "obj": "http://purl.obolibrary.org/obo/CHEBI_68495",
           "pred": "http://purl.obolibrary.org/obo/RO_0000087",
           "sub": "http://purl.obolibrary.org/obo/CHEBI_25255"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_68495",
+          "pred": "http://purl.obolibrary.org/obo/RO_0000087",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_27899"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/CHEBI_70727",
@@ -9718,6 +9803,11 @@
         {
           "obj": "http://purl.obolibrary.org/obo/CHEBI_77746",
           "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_84087"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_77746",
+          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/CHEBI_85234"
         },
         {
@@ -10019,6 +10109,11 @@
           "obj": "http://purl.obolibrary.org/obo/CHEBI_83982",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/CHEBI_37445"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_84087",
+          "pred": "http://purl.obolibrary.org/obo/RO_0000087",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_10432"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/CHEBI_84143",
@@ -10924,11 +11019,6 @@
           "obj": "http://purl.obolibrary.org/obo/FBcv_0000189",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/FBcv_0000790"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/FBcv_0000189",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/FBcv_0007000"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/FBcv_0000189",
@@ -15498,7 +15588,22 @@
         {
           "obj": "http://purl.obolibrary.org/obo/RO_0000052",
           "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0000079"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/RO_0000052",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0000080"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/RO_0000052",
+          "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/RO_0000081"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/RO_0000052",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0000092"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/RO_0000053",
@@ -15508,7 +15613,22 @@
         {
           "obj": "http://purl.obolibrary.org/obo/RO_0000053",
           "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0000085"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/RO_0000053",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0000086"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/RO_0000053",
+          "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/RO_0000087"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/RO_0000053",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0000091"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/RO_0000056",
@@ -15536,9 +15656,24 @@
           "sub": "http://purl.obolibrary.org/obo/RO_0002333"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/RO_0000085",
+          "pred": "inverseOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0000079"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/RO_0000086",
+          "pred": "inverseOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0000080"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/RO_0000087",
           "pred": "inverseOf",
           "sub": "http://purl.obolibrary.org/obo/RO_0000081"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/RO_0000092",
+          "pred": "inverseOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0000091"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/RO_0002013",
@@ -15574,6 +15709,11 @@
           "obj": "http://purl.obolibrary.org/obo/RO_0002022",
           "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/RO_0002024"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/RO_0002081",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0002083"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/RO_0002086",
@@ -15659,6 +15799,11 @@
           "obj": "http://purl.obolibrary.org/obo/RO_0002222",
           "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/BFO_0000063"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/RO_0002222",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0002081"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/RO_0002222",
@@ -17311,7 +17456,7 @@
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#date",
-            "val": "12:05:2021 09:10"
+            "val": "15:07:2021 17:00"
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#default-namespace",
@@ -17323,11 +17468,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-05-12"
+            "val": "2021-07-15"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/fbcv/releases/2021-05-12/fbcv-non-classified.json",
+        "version": "http://purl.obolibrary.org/obo/fbcv/releases/2021-07-15/fbcv-non-classified.json",
         "xrefs": []
       },
       "nodes": [
@@ -17457,6 +17602,10 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
+                "val": "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
                 "val": "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime"
               },
               {
@@ -17528,10 +17677,6 @@
                 "val": "part_of"
               },
               {
-                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-                "val": "http://purl.obolibrary.org/obo/bfo.owl"
-              },
-              {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections"
               },
@@ -17599,6 +17744,10 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
+                "val": "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
                 "val": "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime"
               },
               {
@@ -17648,10 +17797,6 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
                 "val": "has_part"
-              },
-              {
-                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-                "val": "http://purl.obolibrary.org/obo/bfo.owl"
               }
             ],
             "comments": [
@@ -17681,7 +17826,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/BFO_0000062",
-          "lbl": "preceded_by",
+          "lbl": "preceded by",
           "meta": {
             "basicPropertyValues": [
               {
@@ -17703,62 +17848,14 @@
               {
                 "pred": "http://purl.org/dc/elements/1.1/source",
                 "val": "http://www.obofoundry.org/ro/#OBO_REL:preceded_by"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
-                "val": "djs93"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
-                "val": "2009-10-09T10:00:53Z"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-                "val": "relationship"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-                "val": "uberon"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
-                "val": "preceded_by"
-              },
-              {
-                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-                "val": "http://purl.obolibrary.org/obo/bfo.owl"
               }
             ],
             "definition": {
-              "val": "X preceded_by Y iff: end(Y) before_or_simultaneous_with start(X)",
+              "val": "x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.",
               "xrefs": []
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/ro/subsets#ro-eco"
-            ],
-            "synonyms": [
-              {
-                "pred": "hasExactSynonym",
-                "val": "is preceded by",
-                "xrefs": [
-                  "SIO:000249"
-                ]
-              },
-              {
-                "pred": "hasExactSynonym",
-                "val": "takes place after",
-                "xrefs": [
-                  "Allen:precedes"
-                ]
-              }
-            ],
-            "xrefs": [
-              {
-                "val": "BFO:0000062"
-              },
-              {
-                "val": "OBO_REL:preceded_by"
-              }
             ]
           },
           "type": "PROPERTY"
@@ -17901,7 +17998,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/chebi/mass",
-                "val": "144.16992"
+                "val": "144.173"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/chebi/monoisotopicmass",
@@ -17909,7 +18006,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/chebi/smiles",
-                "val": "Oc1ccc2ccccc2c1"
+                "val": "OC1=CC2=CC=CC=C2C=C1"
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -17933,6 +18030,62 @@
                 ]
               },
               {
+                "pred": "hasRelatedSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#BRAND_NAME",
+                "val": "Antioxygene BN",
+                "xrefs": [
+                  "HMDB"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#BRAND_NAME",
+                "val": "Azogen Developer A",
+                "xrefs": [
+                  "HMDB"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#BRAND_NAME",
+                "val": "C.I. Azoic Coupling Component 1",
+                "xrefs": [
+                  "ChemIDplus"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#BRAND_NAME",
+                "val": "C.I. Developer 5",
+                "xrefs": [
+                  "ChemIDplus"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#BRAND_NAME",
+                "val": "Developer A",
+                "xrefs": [
+                  "ChemIDplus"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#BRAND_NAME",
+                "val": "Developer AMS",
+                "xrefs": [
+                  "ChemIDplus"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#BRAND_NAME",
+                "val": "Developer BN",
+                "xrefs": [
+                  "ChemIDplus"
+                ]
+              },
+              {
                 "pred": "hasExactSynonym",
                 "val": "2-Naphthol",
                 "xrefs": [
@@ -17948,9 +18101,23 @@
               },
               {
                 "pred": "hasRelatedSynonym",
+                "val": "2-Naftol",
+                "xrefs": [
+                  "ChemIDplus"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
                 "val": "2-hydroxynaphthalene",
                 "xrefs": [
                   "HMDB"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "2-naftolo",
+                "xrefs": [
+                  "ChemIDplus"
                 ]
               },
               {
@@ -17962,9 +18129,44 @@
               },
               {
                 "pred": "hasRelatedSynonym",
+                "val": "2-naphtol",
+                "xrefs": [
+                  "ChemIDplus"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "Isonaphthol",
+                "xrefs": [
+                  "ChemIDplus"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "beta-Naftol",
+                "xrefs": [
+                  "ChemIDplus"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
                 "val": "beta-Naphthol",
                 "xrefs": [
                   "KEGG_COMPOUND"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "beta-Naphtol",
+                "xrefs": [
+                  "ChemIDplus"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "beta-hydroxynaphthalene",
+                "xrefs": [
+                  "ChemIDplus"
                 ]
               },
               {
@@ -17976,9 +18178,30 @@
               },
               {
                 "pred": "hasRelatedSynonym",
+                "val": "beta-naftolo",
+                "xrefs": [
+                  "ChemIDplus"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
                 "val": "beta-naphthol",
                 "xrefs": [
                   "NIST_Chemistry_WebBook"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "beta-naphthyl alcohol",
+                "xrefs": [
+                  "ChemIDplus"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "beta-naphthyl hydroxide",
+                "xrefs": [
+                  "ChemIDplus"
                 ]
               }
             ],
@@ -17999,6 +18222,9 @@
                 "val": "Drug_Central:3370"
               },
               {
+                "val": "FooDB:FDB000877"
+              },
+              {
                 "val": "Gmelin:27395"
               },
               {
@@ -18008,13 +18234,52 @@
                 "val": "KEGG:C11713"
               },
               {
+                "val": "MetaCyc:CPD-8131"
+              },
+              {
+                "val": "PDBeChem:03V"
+              },
+              {
+                "val": "PMID:13386410"
+              },
+              {
                 "val": "PMID:14751800"
               },
               {
                 "val": "PMID:18515997"
               },
               {
+                "val": "PMID:18856458"
+              },
+              {
+                "val": "PMID:20260560"
+              },
+              {
+                "val": "PMID:22069470"
+              },
+              {
                 "val": "PMID:22740618"
+              },
+              {
+                "val": "PMID:23344974"
+              },
+              {
+                "val": "PMID:29987264"
+              },
+              {
+                "val": "PMID:30572877"
+              },
+              {
+                "val": "PMID:30828382"
+              },
+              {
+                "val": "PMID:32206945"
+              },
+              {
+                "val": "PMID:33862438"
+              },
+              {
+                "val": "PMID:34033865"
               },
               {
                 "val": "Reaxys:742134"
@@ -23637,6 +23902,55 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_172390",
+          "lbl": "glycol ether",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "A hydroxyether which contains both an ether and alcohol functional groups. It is one of the most versatile classes of organic solvents which are commonly used in paints, cleaners, adhesives, pharmaceuticals and cosmetics.",
+              "xrefs": []
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "glycol ethers",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ],
+            "xrefs": [
+              {
+                "val": "PMID:28650840"
+              },
+              {
+                "val": "PMID:29536623"
+              },
+              {
+                "val": "PMID:30471335"
+              },
+              {
+                "val": "PMID:31518935"
+              },
+              {
+                "val": "PMID:32172156"
+              },
+              {
+                "val": "Wikipedia:Glycol_ethers"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/CHEBI_17258",
           "lbl": "7H-purine",
           "meta": {
@@ -23969,6 +24283,52 @@
               },
               {
                 "val": "YMDB:YMDB00304"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_173085",
+          "lbl": "ferroptosis inducer",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "Any substance that induces or promotes ferroptosis (a type of programmed cell death dependent on iron and characterized by the accumulation of lipid peroxides) in organisms.",
+              "xrefs": []
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "ferroptosis inducers",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ],
+            "xrefs": [
+              {
+                "val": "PMID:31899616"
+              },
+              {
+                "val": "PMID:32015325"
+              },
+              {
+                "val": "PMID:33167414"
+              },
+              {
+                "val": "PMID:34012798"
+              },
+              {
+                "val": "Wikipedia:Ferroptosis"
               }
             ]
           },
@@ -30791,6 +31151,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+                "val": "CHEBI:25309"
+              },
+              {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
                 "val": "chebi_ontology"
               }
@@ -30806,6 +31170,13 @@
               {
                 "pred": "hasExactSynonym",
                 "val": "cysteine derivative",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "cysteine derivatives",
                 "xrefs": [
                   "ChEBI"
                 ]
@@ -40466,6 +40837,12 @@
                 "val": "PDBeChem:DCE"
               },
               {
+                "val": "PMID:17564600"
+              },
+              {
+                "val": "PMID:18579268"
+              },
+              {
                 "val": "PMID:24228488"
               },
               {
@@ -40473,6 +40850,15 @@
               },
               {
                 "val": "PMID:24441515"
+              },
+              {
+                "val": "PMID:31520740"
+              },
+              {
+                "val": "PMID:32830330"
+              },
+              {
+                "val": "PMID:33047531"
               },
               {
                 "val": "PPDB:2774"
@@ -40821,6 +41207,9 @@
               },
               {
                 "val": "PMID:23651576"
+              },
+              {
+                "val": "PMID:28494534"
               },
               {
                 "val": "Patent:DE2318020"
@@ -53058,6 +53447,9 @@
             "xrefs": [
               {
                 "val": "KEGG:C00801"
+              },
+              {
+                "val": "Wikipedia:Nucleoside"
               }
             ]
           },
@@ -76243,6 +76635,35 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_84087",
+          "lbl": "human urinary metabolite",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "Any metabolite (endogenous or exogenous) found in human urine samples.",
+              "xrefs": []
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "human urinary metabolites",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/CHEBI_84143",
           "lbl": "D-phenylalanine derivative",
           "meta": {
@@ -76887,8 +77308,12 @@
               }
             ],
             "definition": {
-              "val": "Phenotype of males that is a reduction in the proportion of fertilized eggs produced, but only to > 50% of wild-type.",
-              "xrefs": []
+              "val": "A phenotype that is a reduction in the ability of males to produce fertilized eggs as a result of mating, but only to > 50% of wild-type.",
+              "xrefs": [
+                "FBC:AO",
+                "FBC:CP",
+                "FBC:DOS"
+              ]
             }
           },
           "type": "CLASS"
@@ -76904,8 +77329,12 @@
               }
             ],
             "definition": {
-              "val": "Phenotype of females that is a reduction in the proportion of fertilized eggs produced, but only to > 50% of wild-type.",
-              "xrefs": []
+              "val": "A phenotype that is a reduction in the ability of females to produce fertilized eggs as a result of mating, but only to > 50% of wild-type.",
+              "xrefs": [
+                "FBC:AO",
+                "FBC:CP",
+                "FBC:DOS"
+              ]
             }
           },
           "type": "CLASS"
@@ -84317,8 +84746,10 @@
               "The cause of sterility may be physical or behavioral. Note, this term should not be used with the qualifier 'partially'. Use semi-sterile or semi-fertile instead."
             ],
             "definition": {
-              "val": "A phenotype that is the inability to produce a zygote.",
+              "val": "A phenotype that is the inability to produce fertilized eggs as a result of mating.",
               "xrefs": [
+                "FBC:AO",
+                "FBC:CP",
                 "FBC:DOS"
               ]
             },
@@ -84339,8 +84770,10 @@
               }
             ],
             "definition": {
-              "val": "A phenotype that is a reduction in the proportion of fertilized eggs produced to below 50% of wild-type.",
+              "val": "A phenotype that is a reduction in the ability to produce fertilized eggs as a result of mating to below 50% of wild-type.",
               "xrefs": [
+                "FBC:AO",
+                "FBC:CP",
                 "FBC:DOS"
               ]
             },
@@ -84364,8 +84797,10 @@
               "The cause of sterility may be physical or behavioral. Note: this term should not be used with the qualifier 'partially' - use semi-sterile or semi-fertile instead."
             ],
             "definition": {
-              "val": "A phenotype that is the inability of females to mate and produce fertilized offspring.",
+              "val": "A phenotype that is the inability of females to produce fertilized eggs as a result of mating.",
               "xrefs": [
+                "FBC:AO",
+                "FBC:CP",
                 "FBC:DOS"
               ]
             }
@@ -84383,8 +84818,10 @@
               }
             ],
             "definition": {
-              "val": "A phenotype that is a reduction in the proportion of fertilized eggs produced by females to below 50% of wild-type.",
+              "val": "A phenotype that is a reduction in the ability of females to produce fertilized eggs as a result of mating to below 50% of wild-type.",
               "xrefs": [
+                "FBC:AO",
+                "FBC:CP",
                 "FBC:DOS"
               ]
             }
@@ -84450,8 +84887,10 @@
               "The cause of sterility may be physical or behavioral. Note - this term should not be used with the qualifier 'partially' - use semi-sterile or semi-fertile instead."
             ],
             "definition": {
-              "val": "A phenotype that is the inability of males to mate and produce fertilized offspring.",
+              "val": "A phenotype that is the inability of males to produce fertilized eggs as a result of mating.",
               "xrefs": [
+                "FBC:AO",
+                "FBC:CP",
                 "FBC:DOS"
               ]
             }
@@ -84469,8 +84908,10 @@
               }
             ],
             "definition": {
-              "val": "A phenotype that is a reduction in the proportion of fertilized eggs produced by males to below 50% of wild-type.",
+              "val": "A phenotype that is a reduction in the ability of males to produce fertilized eggs as a result of mating to below 50% of wild-type.",
               "xrefs": [
+                "FBC:AO",
+                "FBC:CP",
                 "FBC:DOS"
               ]
             }
@@ -84536,8 +84977,10 @@
               "Note, this term should not be used with the qualifier 'partially'. Use semi-sterile or semi-fertile instead."
             ],
             "definition": {
-              "val": "A phenotype that is the ability to mate and as a result produce fertilized eggs.",
+              "val": "A phenotype that is the ability to produce fertilized eggs as a result of mating.",
               "xrefs": [
+                "FBC:AO",
+                "FBC:CP",
                 "FBC:DOS"
               ]
             },
@@ -84558,8 +85001,10 @@
               }
             ],
             "definition": {
-              "val": "Phenotype that is a reduction in the proportion of fertilized eggs produced, but only to > 50% of wild-type.",
+              "val": "A phenotype that is a reduction in the ability to produce fertilized eggs as a result of mating, but only to > 50% of wild-type.",
               "xrefs": [
+                "FBC:AO",
+                "FBC:CP",
                 "FBC:DOS"
               ]
             },
@@ -84583,8 +85028,10 @@
               "Note - this term should not be used with the qualifier 'partially' - use male semi-sterile or male semi-fertile instead."
             ],
             "definition": {
-              "val": "A phenotype that is the ability of males to mate and as a result produce fertilized eggs.",
+              "val": "A phenotype that is the ability of males to produce fertilized eggs as a result of mating.",
               "xrefs": [
+                "FBC:AO",
+                "FBC:CP",
                 "FBC:DOS"
               ]
             }
@@ -84605,8 +85052,10 @@
               "Note - this term should not be used with the qualifier 'partially' - use female semi-sterile or female semi-fertile instead."
             ],
             "definition": {
-              "val": "A phenotype that is the ability of females to mate and as a result produce fertilized eggs.",
+              "val": "A phenotype that is the ability of females to produce fertilized eggs as a result of mating.",
               "xrefs": [
+                "FBC:AO",
+                "FBC:CP",
                 "FBC:DOS"
               ]
             }
@@ -88844,7 +89293,7 @@
               }
             ],
             "definition": {
-              "val": ".",
+              "val": "Any chemical (FBcv:0000525) that has role some alkylating agent (CHEBI:22333).",
               "xrefs": [
                 "CHEBI:22333"
               ]
@@ -89325,7 +89774,7 @@
               }
             ],
             "definition": {
-              "val": ".",
+              "val": "Any chemical (FBcv:0000525) that has role some intercalator (CHEBI:24853).",
               "xrefs": [
                 "CHEBI:24853"
               ]
@@ -89622,7 +90071,7 @@
               }
             ],
             "definition": {
-              "val": ".",
+              "val": "Any chemical (FBcv:0000525) that has role some enzyme inhibitor (CHEBI:23924).",
               "xrefs": [
                 "CHEBI:23924"
               ]
@@ -106795,6 +107244,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0100001",
+                "val": "FBcv:0000212"
+              },
+              {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
                 "val": "http://orcid.org/0000-0002-1373-1705"
               },
@@ -106807,13 +107260,17 @@
                 "val": "pub_type"
               }
             ],
+            "comments": [
+              "Obsoleted, as 'paper' publication type will now be used for micropublications."
+            ],
             "definition": {
               "val": "A short report describing a single stand-alone research finding that is peer-reviewed and published.",
               "xrefs": [
                 "FBC:SM",
                 "http://www.micropublication.org"
               ]
-            }
+            },
+            "deprecated": true
           },
           "type": "CLASS"
         },
@@ -109291,14 +109748,6 @@
                 "val": "definition"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
-                "val": "definition"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
-                "val": "textual definition"
-              },
-              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
                 "val": "http://purl.obolibrary.org/obo/IAO_0000122"
               },
@@ -109320,7 +109769,7 @@
               }
             ],
             "definition": {
-              "val": "The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.",
+              "val": "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.",
               "xrefs": []
             }
           },
@@ -109485,7 +109934,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/RO_0000052",
-          "lbl": "inheres in",
+          "lbl": "characteristic of",
           "meta": {
             "basicPropertyValues": [
               {
@@ -109498,7 +109947,15 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "this fragility is a characteristic of this vase"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
                 "val": "this red color inheres in this apple"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "this red color is a characteristic of this apple"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
@@ -109518,11 +109975,14 @@
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
-                "val": "inheres_in"
+                "val": "characteristic_of"
               }
             ],
+            "comments": [
+              "Note that this relation was previously called \"inheres in\", but was changed to be called \"characteristic of\" because BFO2 uses \"inheres in\" in a more restricted fashion. This relation differs from BFO2:inheres_in in two respects: (1) it does not impose a range constraint, and thus it allows qualities of processes, as well as of information entities, whereas BFO2 restricts inheres_in to only apply to independent continuants (2) it is declared functional, i.e. something can only be a characteristic of one thing."
+            ],
             "definition": {
-              "val": "a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence",
+              "val": "a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.",
               "xrefs": []
             },
             "xrefs": [
@@ -109535,7 +109995,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/RO_0000053",
-          "lbl": "bearer of",
+          "lbl": "has characteristic",
           "meta": {
             "basicPropertyValues": [
               {
@@ -109568,7 +110028,7 @@
               }
             ],
             "definition": {
-              "val": "a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence",
+              "val": "Inverse of characteristic_of",
               "xrefs": []
             }
           },
@@ -109649,6 +110109,70 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/RO_0000079",
+          "lbl": "function of",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "this catalysis function is a function of this enzyme"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
+                "val": "A function inheres in its bearer at all times for which the function exists, however the function need not be realized at all the times that the function exists."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "function_of"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "is function of"
+              }
+            ],
+            "comments": [
+              "This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020."
+            ],
+            "definition": {
+              "val": "a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence",
+              "xrefs": []
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0000080",
+          "lbl": "quality of",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "this red color is a quality of this apple"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
+                "val": "A quality inheres in its bearer at all times for which the quality exists."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "is quality of"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "quality_of"
+              }
+            ],
+            "comments": [
+              "This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020."
+            ],
+            "definition": {
+              "val": "a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence",
+              "xrefs": []
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/RO_0000081",
           "lbl": "role of",
           "meta": {
@@ -109670,8 +110194,61 @@
                 "val": "role_of"
               }
             ],
+            "comments": [
+              "This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020."
+            ],
             "definition": {
               "val": "a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence",
+              "xrefs": []
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0000085",
+          "lbl": "has function",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "this enzyme has function this catalysis function (more colloquially: this enzyme has this catalysis function)"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
+                "val": "A bearer can have many functions, and its functions can exist for different periods of time, but none of its functions can exist when the bearer does not exist. A function need not be realized at all the times that the function exists."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "has_function"
+              }
+            ],
+            "definition": {
+              "val": "a relation between an independent continuant (the bearer) and a function, in which the function specifically depends on the bearer for its existence",
+              "xrefs": []
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0000086",
+          "lbl": "has quality",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "this apple has quality this red color"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
+                "val": "A bearer can have many qualities, and its qualities can exist for different periods of time, but none of its qualities can exist when the bearer does not exist."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "has_quality"
+              }
+            ],
+            "definition": {
+              "val": "a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence",
               "xrefs": []
             }
           },
@@ -109728,13 +110305,45 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/RO_0000091",
+          "lbl": "has disposition",
+          "meta": {
+            "definition": {
+              "val": "a relation between an independent continuant (the bearer) and a disposition, in which the disposition specifically depends on the bearer for its existence",
+              "xrefs": []
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0000092",
+          "lbl": "disposition of",
+          "meta": {
+            "comments": [
+              "This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020."
+            ],
+            "definition": {
+              "val": "inverse of has disposition",
+              "xrefs": []
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/RO_0002259"
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/RO_0001900",
           "lbl": "temporal interpretation",
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://xmlns.com/foaf/0.1/page",
-                "val": "https://github.com/oborel/obo-relations/wiki/ROAndTime"
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "https://oborel.github.io/obo-relations/temporal-semantics/"
               }
             ],
             "definition": {
@@ -109954,6 +110563,48 @@
                 "GOC:dos"
               ]
             }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0002081",
+          "lbl": "before or simultaneous with",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "David Osumi-Sutherland"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "<="
+              }
+            ],
+            "comments": [
+              "Primitive instance level timing relation between events"
+            ],
+            "subsets": [
+              "http://purl.obolibrary.org/obo/ro/subsets#ro-eco"
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0002083",
+          "lbl": "before",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "David Osumi-Sutherland"
+              }
+            ],
+            "comments": [
+              "t1 before t2 iff:=  t1 before_or_simulataneous_with t2  and not (t1 simultaeous_with t2)"
+            ],
+            "subsets": [
+              "http://purl.obolibrary.org/obo/ro/subsets#ro-eco"
+            ]
           },
           "type": "PROPERTY"
         },
@@ -110346,7 +110997,7 @@
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
-                "val": "https://github.com/oborel/obo-relations/wiki/ROGuide#defining-property-chains-involving-reflexivity"
+                "val": "http://purl.obolibrary.org/obo/ro/docs/reflexivity/"
               }
             ],
             "definition": {
@@ -110625,16 +111276,20 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/RO_0002314",
-          "lbl": "inheres in part of",
+          "lbl": "characteristic of part of",
           "meta": {
             "basicPropertyValues": [
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "Because part_of is transitive, inheres in is a sub-relation of inheres in part of"
+                "val": "Because part_of is transitive, inheres in is a sub-relation of characteristic of part of"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "Chris Mungall"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "inheres in part of"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
@@ -110646,11 +111301,15 @@
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "http://purl.obolibrary.org/obo/ro/docs/reflexivity/"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
                 "val": "https://github.com/oborel/obo-relations/wiki/ROGuide#defining-property-chains-involving-reflexivity"
               }
             ],
             "definition": {
-              "val": "q inheres in part of w if and only if there exists some p such that q inheres in p and p part of w.",
+              "val": "q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.",
               "xrefs": []
             }
           },
@@ -111395,11 +112054,11 @@
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
-                "val": "http://purl.obolibrary.org/obo/MI_0914"
+                "val": "http://purl.obolibrary.org/obo/ro/docs/interaction-relations/"
               },
               {
-                "pred": "http://xmlns.com/foaf/0.1/page",
-                "val": "https://github.com/oborel/obo-relations/wiki/InteractionRelations"
+                "pred": "http://www.w3.org/2004/02/skos/core#closeMatch",
+                "val": "http://purl.obolibrary.org/obo/MI_0914"
               }
             ],
             "definition": {
@@ -111441,7 +112100,7 @@
                 "val": "http://purl.obolibrary.org/obo/ECO_0000353"
               },
               {
-                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "pred": "http://www.w3.org/2004/02/skos/core#closeMatch",
                 "val": "http://purl.obolibrary.org/obo/MI_0915"
               }
             ],
@@ -111759,8 +112418,8 @@
                 "val": "http://ontologydesignpatterns.org/wiki/Submissions:N-Ary_Relation_Pattern_%28OWL_2%29"
               },
               {
-                "pred": "http://xmlns.com/foaf/0.1/page",
-                "val": "https://github.com/oborel/obo-relations/wiki/InteractionRelations"
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "http://purl.obolibrary.org/obo/ro/docs/interaction-relations/"
               }
             ]
           },
@@ -112472,6 +113131,19 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/ro/subsets#ro-eco",
+          "lbl": "eco subset",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "http://purl.obolibrary.org/obo/ro/docs/subsets/"
+              }
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
           "lbl": "valid_for_go_annotation_extension",
           "meta": {
@@ -112483,6 +113155,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
                 "val": "2020-09-22T11:05:29Z"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "http://purl.obolibrary.org/obo/ro/docs/subsets/"
               }
             ]
           },
@@ -112500,6 +113176,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
                 "val": "2020-09-22T11:05:18Z"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "http://purl.obolibrary.org/obo/ro/docs/subsets/"
               }
             ]
           },
@@ -112517,6 +113197,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
                 "val": "2020-09-22T11:04:12Z"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "http://purl.obolibrary.org/obo/ro/docs/subsets/"
               }
             ]
           },
@@ -112534,6 +113218,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
                 "val": "2020-09-22T11:05:45Z"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "http://purl.obolibrary.org/obo/ro/docs/subsets/"
               }
             ]
           },
@@ -112724,8 +113412,18 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/BFO_0000016",
+          "lbl": "disposition",
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/BFO_0000019",
           "lbl": "quality",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/BFO_0000034",
+          "lbl": "function",
           "type": "CLASS"
         },
         {
@@ -112831,11 +113529,6 @@
         {
           "id": "http://purl.obolibrary.org/obo/fbcv#has_role",
           "lbl": "has role",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/ro/subsets#ro-eco",
-          "lbl": "eco subset",
           "type": "PROPERTY"
         },
         {
