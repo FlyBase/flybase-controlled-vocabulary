@@ -14,9 +14,9 @@
      xmlns:chebi3="http://purl.obolibrary.org/obo/chebi#1"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/fbcv/imports/chebi_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2021-05-12/imports/chebi_import.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chebi/199/chebi.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-05-12</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2021-07-15/imports/chebi_import.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chebi/201/chebi.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-07-15</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -412,6 +412,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48578"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50902"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -427,34 +433,70 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_76967"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_84087"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A naphthol carrying a hydroxy group at position 2.</obo:IAO_0000115>
         <chebi:charge>0</chebi:charge>
         <chebi:formula>C10H8O</chebi:formula>
         <chebi:inchi>InChI=1S/C10H8O/c11-10-6-5-8-3-1-2-4-9(8)7-10/h1-7,11H</chebi:inchi>
         <chebi:inchikey>JWAZRIHNYRIHIV-UHFFFAOYSA-N</chebi:inchikey>
-        <chebi:mass>144.16992</chebi:mass>
+        <chebi:mass>144.173</chebi:mass>
         <chebi:monoisotopicmass>144.05751</chebi:monoisotopicmass>
-        <chebi:smiles>Oc1ccc2ccccc2c1</chebi:smiles>
+        <chebi:smiles>OC1=CC2=CC=CC=C2C=C1</chebi:smiles>
         <oboInOwl:hasDbXref>Beilstein:742134</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>CAS:135-19-3</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Drug_Central:3370</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FooDB:FDB000877</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Gmelin:27395</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>HMDB:HMDB0012322</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>KEGG:C11713</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MetaCyc:CPD-8131</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PDBeChem:03V</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:13386410</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:14751800</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:18515997</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:18856458</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:20260560</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:22069470</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:22740618</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:23344974</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:29987264</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:30572877</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:30828382</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:32206945</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:33862438</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:34033865</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Reaxys:742134</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Wikipedia:2-Naphthol</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>2-Naphthol</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>2-naphthol</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>naphthalen-2-ol</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>2-Naftol</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>2-hydroxynaphthalene</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>2-naftolo</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>2-naphthalenol</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>2-naphtol</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Antioxygene BN</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Azogen Developer A</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>C.I. Azoic Coupling Component 1</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>C.I. Developer 5</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Developer A</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Developer AMS</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Developer BN</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Isonaphthol</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>beta-Naftol</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>beta-Naphthol</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>beta-Naphtol</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>beta-hydroxynaphthalene</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>beta-naftolo</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>beta-naphthol</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>beta-naphthyl alcohol</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>beta-naphthyl hydroxide</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>CHEBI:10432</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
         <rdfs:label>2-naphthol</rdfs:label>
@@ -462,8 +504,26 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>CAS:135-19-3</owl:annotatedTarget>
+        <oboInOwl:source>NIST Chemistry WebBook</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Drug_Central:3370</owl:annotatedTarget>
+        <oboInOwl:source>DrugCentral</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>Gmelin:27395</owl:annotatedTarget>
         <oboInOwl:source>Gmelin</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>PMID:13386410</owl:annotatedTarget>
+        <oboInOwl:source>Europe PMC</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
@@ -480,7 +540,67 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>PMID:18856458</owl:annotatedTarget>
+        <oboInOwl:source>Europe PMC</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>PMID:20260560</owl:annotatedTarget>
+        <oboInOwl:source>Europe PMC</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>PMID:22069470</owl:annotatedTarget>
+        <oboInOwl:source>Europe PMC</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>PMID:22740618</owl:annotatedTarget>
+        <oboInOwl:source>Europe PMC</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>PMID:23344974</owl:annotatedTarget>
+        <oboInOwl:source>Europe PMC</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>PMID:29987264</owl:annotatedTarget>
+        <oboInOwl:source>Europe PMC</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>PMID:30572877</owl:annotatedTarget>
+        <oboInOwl:source>Europe PMC</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>PMID:30828382</owl:annotatedTarget>
+        <oboInOwl:source>Europe PMC</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>PMID:32206945</owl:annotatedTarget>
+        <oboInOwl:source>Europe PMC</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>PMID:33862438</owl:annotatedTarget>
+        <oboInOwl:source>Europe PMC</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>PMID:34033865</owl:annotatedTarget>
         <oboInOwl:source>Europe PMC</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
@@ -511,8 +631,20 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>2-Naftol</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ChemIDplus</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>2-hydroxynaphthalene</owl:annotatedTarget>
         <oboInOwl:hasDbXref>HMDB</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>2-naftolo</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ChemIDplus</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
@@ -523,8 +655,87 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>2-naphtol</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ChemIDplus</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>Antioxygene BN</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>HMDB</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#BRAND_NAME"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>Azogen Developer A</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>HMDB</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#BRAND_NAME"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>C.I. Azoic Coupling Component 1</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ChemIDplus</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#BRAND_NAME"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>C.I. Developer 5</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ChemIDplus</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#BRAND_NAME"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>Developer A</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ChemIDplus</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#BRAND_NAME"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>Developer AMS</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ChemIDplus</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#BRAND_NAME"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>Developer BN</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ChemIDplus</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#BRAND_NAME"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>Isonaphthol</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ChemIDplus</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>beta-Naftol</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ChemIDplus</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>beta-Naphthol</owl:annotatedTarget>
         <oboInOwl:hasDbXref>KEGG_COMPOUND</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>beta-Naphtol</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ChemIDplus</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>beta-hydroxynaphthalene</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ChemIDplus</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
@@ -535,8 +746,26 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>beta-naftolo</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ChemIDplus</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>beta-naphthol</owl:annotatedTarget>
         <oboInOwl:hasDbXref>NIST_Chemistry_WebBook</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>beta-naphthyl alcohol</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ChemIDplus</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>beta-naphthyl hydroxide</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ChemIDplus</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
@@ -555,18 +784,6 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>CAS:135-19-3</owl:annotatedTarget>
         <oboInOwl:source>KEGG COMPOUND</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>CAS:135-19-3</owl:annotatedTarget>
-        <oboInOwl:source>NIST Chemistry WebBook</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10432"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>Drug_Central:3370</owl:annotatedTarget>
-        <oboInOwl:source>DrugCentral</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -1065,12 +1282,6 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_138103"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>inorganic acids</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>ChEBI</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_138103"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>mineral acid</owl:annotatedTarget>
         <oboInOwl:hasDbXref>ChEBI</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -1078,6 +1289,12 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_138103"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>mineral acids</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_138103"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>inorganic acids</owl:annotatedTarget>
         <oboInOwl:hasDbXref>ChEBI</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -2236,6 +2453,12 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_18237"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24318"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_83813"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_173085"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
@@ -6148,6 +6371,74 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_172390 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_172390">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46789"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48356"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/chebi#has_functional_parent"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_13643"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A hydroxyether which contains both an ether and alcohol functional groups. It is one of the most versatile classes of organic solvents which are commonly used in paints, cleaners, adhesives, pharmaceuticals and cosmetics.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>PMID:28650840</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:29536623</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:30471335</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:31518935</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:32172156</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Glycol_ethers</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>glycol ethers</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>CHEBI:172390</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label>glycol ether</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_172390"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>PMID:28650840</owl:annotatedTarget>
+        <oboInOwl:source>Europe PMC</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_172390"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>PMID:29536623</owl:annotatedTarget>
+        <oboInOwl:source>Europe PMC</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_172390"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>PMID:30471335</owl:annotatedTarget>
+        <oboInOwl:source>Europe PMC</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_172390"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>PMID:31518935</owl:annotatedTarget>
+        <oboInOwl:source>Europe PMC</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_172390"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>PMID:32172156</owl:annotatedTarget>
+        <oboInOwl:source>Europe PMC</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_172390"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>glycol ethers</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_17258 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_17258">
@@ -6563,6 +6854,55 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>beta-phenyl-L-alanine</owl:annotatedTarget>
         <oboInOwl:hasDbXref>NIST_Chemistry_WebBook</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_173085 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_173085">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52206"/>
+        <obo:IAO_0000115>Any substance that induces or promotes ferroptosis (a type of programmed cell death dependent on iron and characterized by the accumulation of lipid peroxides) in organisms.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>PMID:31899616</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:32015325</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:33167414</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:34012798</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Ferroptosis</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>ferroptosis inducers</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>CHEBI:173085</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label>ferroptosis inducer</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_173085"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>PMID:31899616</owl:annotatedTarget>
+        <oboInOwl:source>Europe PMC</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_173085"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>PMID:32015325</owl:annotatedTarget>
+        <oboInOwl:source>SUBMITTER</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_173085"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>PMID:33167414</owl:annotatedTarget>
+        <oboInOwl:source>Europe PMC</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_173085"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>PMID:34012798</owl:annotatedTarget>
+        <oboInOwl:source>Europe PMC</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_173085"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>ferroptosis inducers</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ChEBI</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -8620,12 +8960,6 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17792"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>organohalogen compounds</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>ChEBI</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17792"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>RX</owl:annotatedTarget>
         <oboInOwl:hasDbXref>KEGG_COMPOUND</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -8645,6 +8979,12 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17792"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>organic halides</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17792"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>organohalogen compounds</owl:annotatedTarget>
         <oboInOwl:hasDbXref>ChEBI</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -12958,8 +13298,10 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An amino acid derivative resulting from reaction of cysteine at the amino group, carboxy group, or thiol group, or from the replacement of any hydrogen of cysteine by a heteroatom. The definition normally excludes peptides containing cysteine residues.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>CHEBI:25309</oboInOwl:hasAlternativeId>
         <oboInOwl:hasExactSynonym>cysteine derivative</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>cysteine derivatives</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>CHEBI:23509</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
         <rdfs:label>cysteine derivative</rdfs:label>
@@ -12968,6 +13310,12 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23509"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>cysteine derivative</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23509"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>cysteine derivatives</owl:annotatedTarget>
         <oboInOwl:hasDbXref>ChEBI</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -21899,6 +22247,12 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_48355"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50908"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A member of the class of chloroethanes substituted by two chloro groups at positions 1 and 2.</obo:IAO_0000115>
         <chebi:charge>0</chebi:charge>
         <chebi:formula>C2H4Cl2</chebi:formula>
@@ -21918,9 +22272,14 @@
         <oboInOwl:hasDbXref>KEGG:C06752</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MetaCyc:12-DICHLOROETHANE</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PDBeChem:DCE</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:17564600</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:18579268</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:24228488</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:24329990</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:24441515</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:31520740</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:32830330</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:33047531</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PPDB:2774</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Reaxys:605264</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UM-BBD_compID:c0001</oboInOwl:hasDbXref>
@@ -21978,6 +22337,18 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27789"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>PMID:17564600</owl:annotatedTarget>
+        <oboInOwl:source>Europe PMC</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27789"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>PMID:18579268</owl:annotatedTarget>
+        <oboInOwl:source>Europe PMC</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27789"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>PMID:24228488</owl:annotatedTarget>
         <oboInOwl:source>Europe PMC</oboInOwl:source>
     </owl:Axiom>
@@ -21991,6 +22362,24 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27789"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>PMID:24441515</owl:annotatedTarget>
+        <oboInOwl:source>Europe PMC</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27789"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>PMID:31520740</owl:annotatedTarget>
+        <oboInOwl:source>Europe PMC</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27789"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>PMID:32830330</owl:annotatedTarget>
+        <oboInOwl:source>Europe PMC</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27789"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>PMID:33047531</owl:annotatedTarget>
         <oboInOwl:source>Europe PMC</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
@@ -22112,6 +22501,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_173085"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25435"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -22145,6 +22540,12 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_61015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_68495"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A diamminedichloroplatinum compound in which the two ammine ligands and two chloro ligands are oriented in a cis planar configuration around the central platinum ion. An anticancer drug that interacts with, and forms cross-links between, DNA and proteins, it is used as a neoplasm inhibitor to treat solid tumours, primarily of the testis and ovary. Commonly but incorrectly described as an alkylating agent due to its mechanism of action (but it lacks alkyl groups).</obo:IAO_0000115>
         <chebi:charge>0</chebi:charge>
         <chebi:formula>Cl2H6N2Pt</chebi:formula>
@@ -22174,6 +22575,7 @@
         <oboInOwl:hasDbXref>PMID:23554447</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:23604226</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:23651576</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:28494534</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Patent:DE2318020</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Patent:DE2329485</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Reaxys:11324567</oboInOwl:hasDbXref>
@@ -22287,6 +22689,12 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27899"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>PMID:23651576</owl:annotatedTarget>
+        <oboInOwl:source>Europe PMC</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27899"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>PMID:28494534</owl:annotatedTarget>
         <oboInOwl:source>Europe PMC</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
@@ -33454,6 +33862,7 @@
         <oboInOwl:hasAlternativeId>CHEBI:25611</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>CHEBI:7647</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDbXref>KEGG:C00801</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Nucleoside</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Nucleoside</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>nucleosides</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -41623,7 +42032,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_46790 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_46790">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46789"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_172390"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
@@ -52726,6 +53135,26 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_83982"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>L-glutamic acid derivatives</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_84087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_84087">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_77746"/>
+        <obo:IAO_0000115>Any metabolite (endogenous or exogenous) found in human urine samples.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>human urinary metabolites</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>CHEBI:84087</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label>human urinary metabolite</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_84087"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>human urinary metabolites</owl:annotatedTarget>
         <oboInOwl:hasDbXref>ChEBI</oboInOwl:hasDbXref>
     </owl:Axiom>
     
