@@ -211,7 +211,7 @@ tmp/replaced_defs.txt:
 	cat tmp/auto_generated_definitions_seed_sub.txt tmp/auto_generated_definitions_seed_dot.txt | sort | uniq > $@
 
 pre_release: $(SRC) tmp/auto_generated_definitions_dot.owl tmp/auto_generated_definitions_sub.owl components/dpo-simple.owl
-	cat $(ONT)-edit.obo | grep -v '/def[:] \"[.]\"/d' | grep -v 'sub_' > tmp/$(ONT)-edit-release.obo
+	cat $(ONT)-edit.obo | grep -v 'def[:] \"[.]\"' | grep -v 'sub_' > tmp/$(ONT)-edit-release.obo
 	$(ROBOT) merge -i tmp/$(ONT)-edit-release.obo -i tmp/auto_generated_definitions_dot.owl -i tmp/auto_generated_definitions_sub.owl --collapse-import-closure false -o $(ONT)-edit-release.ofn && mv $(ONT)-edit-release.ofn $(ONT)-edit-release.owl
 	echo "Preprocessing done. Make sure that NO CHANGES TO THE EDIT FILE ARE COMMITTED!"
 	
