@@ -6111,7 +6111,7 @@ id: FBcv:0003070
 name: short RNA-Seq
 namespace: assay_type
 def: "An assay characterizing of small RNA species 17-35 nt in size by high-throughput sequencing." [FBC:GD]
-is_a: FBcv:0003050 ! assay type
+is_a: FBcv:0003068 ! RNA-Seq
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -6309,7 +6309,7 @@ id: FBcv:0003092
 name: TSS identification
 namespace: result_type
 def: "An analysis that results in the identification of discrete transcription start site regions." [FBC:GD]
-is_a: FBcv:0003082 ! result type
+is_a: FBcv:0003108 ! analysis
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -6318,7 +6318,7 @@ id: FBcv:0003093
 name: poly(A) site identification
 namespace: result_type
 def: "An analysis that results in the identification of discrete polyadenylation sites." [FBC:GD]
-is_a: FBcv:0003082 ! result type
+is_a: FBcv:0003108 ! analysis
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -6327,7 +6327,7 @@ id: FBcv:0003094
 name: exon junction identification
 namespace: result_type
 def: "An analysis that results in the identification of discrete exon junctions." [FBC:GD]
-is_a: FBcv:0003082 ! result type
+is_a: FBcv:0003108 ! analysis
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -6336,7 +6336,7 @@ id: FBcv:0003095
 name: editing site identification
 namespace: result_type
 def: "An analysis that results in the identification of discrete A-to-I RNA editing sites." [FBC:GD]
-is_a: FBcv:0003082 ! result type
+is_a: FBcv:0003108 ! analysis
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -6345,7 +6345,7 @@ id: FBcv:0003096
 name: binding site identification
 namespace: result_type
 def: "An analysis that results in the identification of discrete DNA or RNA binding sites." [FBC:GD]
-is_a: FBcv:0003082 ! result type
+is_a: FBcv:0003108 ! analysis
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -6354,7 +6354,7 @@ id: FBcv:0003097
 name: differential gene expression analysis
 namespace: result_type
 def: "An analysis that results from the comparison of expression profiles for different conditions to identify genes that are regulated by those conditions." [FBC:GD]
-is_a: FBcv:0003082 ! result type
+is_a: FBcv:0003108 ! analysis
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -6363,7 +6363,7 @@ id: FBcv:0003098
 name: expression clustering
 namespace: result_type
 def: "The analysis of a gene expression profiles to define sets of genes that share similar expression characteristics." [FBC:GD]
-is_a: FBcv:0003082 ! result type
+is_a: FBcv:0003108 ! analysis
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -8907,6 +8907,92 @@ xref: PATO:0000462
 is_a: FBcv:0000014 ! structural qualifier
 created_by: http://orcid.org/0000-0002-1373-1705
 creation_date: 2020-12-14T14:39:35Z
+
+[Term]
+id: FBcv:0009000
+name: single-cell RNA-Seq
+namespace: assay_type
+def: "A method for quantifying the transcriptome of individual cells, in which transcripts isolated from single cells are subjected to high-throughput sequencing and mapping to a reference genome." [PMID:28821273]
+synonym: "scRNA-Seq" EXACT [PMID:32405060]
+synonym: "single-cell RNA sequencing assay" EXACT []
+xref: OBI:0002631
+is_a: FBcv:0003068 ! RNA-Seq
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2021-07-26T12:18:07Z
+
+[Term]
+id: FBcv:0009001
+name: single-nucleus RNA-Seq
+namespace: assay_type
+def: "A method for quantifying the transcriptome of individual cells, in which transcripts isolated from single nuclei are subjected to high-throughput sequencing and mapping to a reference genome." [PMID:28821273]
+synonym: "single-nucleus RNA sequencing assay" EXACT []
+synonym: "snRNA-Seq" EXACT [PMID:32405060]
+is_a: FBcv:0009000 ! single-cell RNA-Seq
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2021-07-26T12:19:45Z
+
+[Term]
+id: FBcv:0009002
+name: cell clustering analysis
+namespace: result_type
+def: "A result that groups individual cells into populations sharing a similar transcriptional profile." [PMID:28821273]
+is_a: FBcv:0003108 ! analysis
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2021-07-26T12:21:05Z
+
+[Term]
+id: FBcv:0009003
+name: transcriptional cell cluster
+namespace: result_type
+def: "A result that represents a population of cells sharing a similar transcriptional profile." [PMID:28821273]
+is_a: FBcv:0003082 ! result type
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2021-07-26T12:22:16Z
+
+[Term]
+id: FBcv:0009004
+name: isolated nuclei
+namespace: biosample_type
+def: "A biosample containing dissociated cell nuclei isolated from the organism." [FBC:DPG]
+is_a: FBcv:0003044 ! biosample type
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2021-07-26T12:23:17Z
+
+[Term]
+id: FBcv:0009005
+name: single-cell library sequencing
+namespace: assay_attribute
+def: "A method to prepare and sequence a library of cDNAs obtained from single cells." [FBC:DPG]
+is_a: FBcv:0003208 ! assay method
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2021-07-26T13:40:26Z
+
+[Term]
+id: FBcv:0009006
+name: DROP-Seq
+namespace: assay_attribute
+def: "A method that uses the DROP-Seq platform (Macosko et al., 2015) to prepare and sequence a cDNA library." [PMID:26000488]
+is_a: FBcv:0009005 ! single-cell library sequencing
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2021-07-26T13:41:58Z
+
+[Term]
+id: FBcv:0009007
+name: Smart-seq2
+namespace: assay_attribute
+def: "A method that uses the Smart-seq2 platform (Picelli et al., 2013) to prepare and sequence a cDNA library." [PMID:24056875]
+is_a: FBcv:0009005 ! single-cell library sequencing
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2021-07-26T13:44:02Z
+
+[Term]
+id: FBcv:0009008
+name: 10x sequencing
+namespace: assay_attribute
+def: "A method that uses the Chromium platform from 10x Genomics to prepare and sequence a cDNA library." [PMID:29126257]
+is_a: FBcv:0009005 ! single-cell library sequencing
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2021-07-26T13:45:06Z
 
 [Term]
 id: FBcv:0010000
