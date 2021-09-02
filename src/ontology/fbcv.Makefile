@@ -113,15 +113,15 @@ ontsim:
 # Overwriting all obo files to remove excess labels, defs, comments.
 $(ONT)-simple.obo: $(ONT)-simple.owl
 	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
-	cat $@.tmp.obo | grep -v ^owl-axioms | grep -v 'namespace[:][ ]external' | grep -v 'namespace[:][ ]quality' > $@.tmp &&\
+	cat $@.tmp.obo | grep -v ^owl-axioms > $@.tmp &&\
 	cat $@.tmp | perl -0777 -e '$$_ = <>; s/(?:name[:].*\n)+name[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/(?:comment[:].*\n)+comment[:]/comment:/g; print' | perl -0777 -e '$$_ = <>; s/(?:def[:].*\n)+def[:]/def:/g; print' > $@
 	rm -f $@.tmp.obo $@.tmp
 
 # We want the OBO release to be based on the simple release. It needs to be annotated however in the way map releases (fbbt.owl) are annotated.
-$(ONT).obo: $(ONT)-simple.owl
+$(ONT).obo: $(ONT).owl
 	$(ROBOT)  annotate --input $< --ontology-iri $(URIBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY) \
 	convert --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
-	cat $@.tmp.obo | grep -v ^owl-axioms | grep -v 'namespace[:][ ]external' | grep -v 'namespace[:][ ]quality' > $@.tmp &&\
+	cat $@.tmp.obo | grep -v ^owl-axioms > $@.tmp &&\
 	cat $@.tmp | perl -0777 -e '$$_ = <>; s/(?:name[:].*\n)+name[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/(?:comment[:].*\n)+comment[:]/comment:/g; print' | perl -0777 -e '$$_ = <>; s/(?:def[:].*\n)+def[:]/def:/g; print' > $@
 	rm -f $@.tmp.obo $@.tmp
 
