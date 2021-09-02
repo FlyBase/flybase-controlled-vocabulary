@@ -238,8 +238,10 @@ pre_release: $(SRC) tmp/auto_generated_definitions_dot.owl tmp/auto_generated_de
 	$(ROBOT) merge -i tmp/$(ONT)-edit-release.obo -i tmp/auto_generated_definitions_dot.owl -i tmp/auto_generated_definitions_sub.owl --collapse-import-closure false -o $(ONT)-edit-release.ofn && mv $(ONT)-edit-release.ofn $(ONT)-edit-release.owl
 	echo "Preprocessing done. Make sure that NO CHANGES TO THE EDIT FILE ARE COMMITTED!"
 	
-post_release: flybase_controlled_vocabulary.obo reports/chado_load_check_simple.txt
+post_release: flybase_controlled_vocabulary.obo reports/chado_load_check_simple.txt obo_qc
 	cp flybase_controlled_vocabulary.obo ../..
+	mv obo_qc_$(ONT).obo.txt reports/obo_qc_$(ONT).obo.txt
+	mv obo_qc_$(ONT).owl.txt reports/obo_qc_$(ONT).owl.txt
 	
 #test_remove: $(ONT)-edit.obo tmp/replaced_defs.txt
 #	$(ROBOT) remove -i $(ONT)-edit.obo remove --term-file tmp/replaced_defs.txt --axioms annotation --trim false \ merge -i tmp/auto_generated_definitions_dot.owl -i tmp/auto_generated_definitions_sub.owl --collapse-import-closure false -o $(ONT)-edit-release.ofn && mv $(ONT)-edit-release.ofn $(ONT)-edit-release2.owl
