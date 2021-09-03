@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: 2021-07-15
-date: 15:07:2021 17:03
+data-version: 2021-09-02
+date: 02:09:2021 16:04
 subsetdef: camcur ""
 subsetdef: common_tool_use "Terms to summarize typical use of a gene from one organism that is introduced into another organism primarily for use an experimental tool, rather than to study the function of the gene"
 subsetdef: do_not_annotate "Term not to be used for direct annotation"
@@ -3900,25 +3900,27 @@ def: "Mutation induced by exposure to 226Ra alpha rays." [FBC:MMC]
 synonym: "226Ra &agr; ray" RELATED []
 synonym: "mutation induced by 226Ra alpha ray irradiation" EXACT []
 synonym: "radium" RELATED []
-is_a: FBcv:0000506 ! gamma ray
+is_a: FBcv:0000505 ! alpha ray
 
 [Term]
 id: FBcv:0000510
 name: 32P
 namespace: origin_of_mutation
-def: "Mutation induced by exposure to 32P radiation." [FBC:MMC]
-synonym: "32-Phosphorous" RELATED []
+def: "The radioactive isotope of phosphorus with relative atomic mass 31.973907 and half-life of 14.26 days." [CHEBI:37972]
+synonym: "32-phosphorous" EXACT []
 synonym: "mutation induced by 32-P irradiation" EXACT []
-is_a: FBcv:0000504 ! ionizing radiation
+synonym: "phosphorus-32 atom" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000511
 name: 3H
 namespace: origin_of_mutation
-def: "Mutation induced by exposure to 3H radiation." [FBC:MMC]
+def: "The radioactive isotope of hydrogen with relative atomic mass 3.016049 and half-life of 12.33 years (from Greek taurhoiotatauomicronsigma, third)." [CHEBI:29238]
+synonym: "hydrogen-3" EXACT []
 synonym: "mutation induced by 3H irradiation" EXACT []
-synonym: "tritium" RELATED []
-is_a: FBcv:0000504 ! ionizing radiation
+synonym: "tritium atom" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000512
@@ -3926,15 +3928,18 @@ name: 3H-deoxycytidine
 namespace: origin_of_mutation
 def: "Mutation induced by exposure to 3H-deoxycytidine radiation." [FBC:MMC]
 synonym: "mutation induced by 3H-deoxycytidine irradiation" EXACT []
-is_a: FBcv:0000504 ! ionizing radiation
+synonym: "tritiated 2'-deoxycytidine" EXACT []
+synonym: "tritiated deoxycytidine" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000513
 name: 3H-thymidine
 namespace: origin_of_mutation
-def: "Mutation induced by exposure to 3H-thymidine radiation." [FBC:MMC]
+def: "Thymidine linked to the radioisotope tritium. Used to label DNA in the study of cellular and viral DNA synthesis." [CHEBI:53526]
 synonym: "mutation induced by 3H-thymidine irradiation" EXACT []
-is_a: FBcv:0000504 ! ionizing radiation
+synonym: "tritiated thymidine" EXACT []
+is_a: FBcv:0000525 ! chemical
 
 [Term]
 id: FBcv:0000514
@@ -5271,7 +5276,6 @@ name: abnormal touch perception
 namespace: phenotypic_class
 def: "Phenotype that is any abnormality in sensory perception of touch (GO:0050975). 'sensory perception of touch' is defined as: 'The series of events required for an organism to receive a touch stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process. The perception of touch in animals is mediated by mechanoreceptors in the skin and mucous membranes and is the sense by which contact with objects gives evidence as to certain of their qualities. Different types of touch can be perceived (for example, light, coarse, pressure and tickling) and the stimulus may be external or internal (e.g. the feeling of a full stomach).'" [FBC:DOS, GOC:ai]
 synonym: "touch perception defective" EXACT []
-synonym: "touch perception defective" RELATED []
 is_a: FBcv:0000681 ! abnormal sensory perception
 
 [Term]
@@ -7470,7 +7474,7 @@ id: FBcv:0003070
 name: short RNA-Seq
 namespace: assay_type
 def: "An assay characterizing of small RNA species 17-35 nt in size by high-throughput sequencing." [FBC:GD]
-is_a: FBcv:0003050 ! assay type
+is_a: FBcv:0003068 ! RNA-Seq
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -7668,7 +7672,7 @@ id: FBcv:0003092
 name: TSS identification
 namespace: result_type
 def: "An analysis that results in the identification of discrete transcription start site regions." [FBC:GD]
-is_a: FBcv:0003082 ! result type
+is_a: FBcv:0003108 ! analysis
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -7677,7 +7681,7 @@ id: FBcv:0003093
 name: poly(A) site identification
 namespace: result_type
 def: "An analysis that results in the identification of discrete polyadenylation sites." [FBC:GD]
-is_a: FBcv:0003082 ! result type
+is_a: FBcv:0003108 ! analysis
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -7686,7 +7690,7 @@ id: FBcv:0003094
 name: exon junction identification
 namespace: result_type
 def: "An analysis that results in the identification of discrete exon junctions." [FBC:GD]
-is_a: FBcv:0003082 ! result type
+is_a: FBcv:0003108 ! analysis
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -7695,7 +7699,7 @@ id: FBcv:0003095
 name: editing site identification
 namespace: result_type
 def: "An analysis that results in the identification of discrete A-to-I RNA editing sites." [FBC:GD]
-is_a: FBcv:0003082 ! result type
+is_a: FBcv:0003108 ! analysis
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -7704,7 +7708,7 @@ id: FBcv:0003096
 name: binding site identification
 namespace: result_type
 def: "An analysis that results in the identification of discrete DNA or RNA binding sites." [FBC:GD]
-is_a: FBcv:0003082 ! result type
+is_a: FBcv:0003108 ! analysis
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -7713,7 +7717,7 @@ id: FBcv:0003097
 name: differential gene expression analysis
 namespace: result_type
 def: "An analysis that results from the comparison of expression profiles for different conditions to identify genes that are regulated by those conditions." [FBC:GD]
-is_a: FBcv:0003082 ! result type
+is_a: FBcv:0003108 ! analysis
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -7722,7 +7726,7 @@ id: FBcv:0003098
 name: expression clustering
 namespace: result_type
 def: "The analysis of a gene expression profiles to define sets of genes that share similar expression characteristics." [FBC:GD]
-is_a: FBcv:0003082 ! result type
+is_a: FBcv:0003108 ! analysis
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -10331,6 +10335,25 @@ created_by: http://orcid.org/0000-0002-1373-1705
 creation_date: 2020-12-14T14:39:35Z
 
 [Term]
+id: FBcv:0007050
+name: somatic clone - tissue specific
+namespace: clone_qualifier
+def: "A clone of somatic cells that share a genotype that is different from the genotype of the animal and are intentionally generated in a specific tissue of the organism." [FBC:AO]
+is_a: FBcv:0000336 ! somatic clone
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2021-08-26T09:58:12Z
+
+[Term]
+id: FBcv:0007051
+name: somatic clone - tissue specific, Minute background
+namespace: clone_qualifier
+def: "A clone of somatic cells that share a mutant genotype that includes being Minute +/+ and that are part of and derived from an animal with a different genotype that includes being Minute +/- and are intentionally generated in a specific tissue of the organism." [FBC:CP]
+is_a: FBcv:0000722 ! somatic clone - Minute background
+is_a: FBcv:0007050 ! somatic clone - tissue specific
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2021-08-26T10:04:31Z
+
+[Term]
 id: FBcv:0007500
 name: abnormal anesthesia-resistant memory
 namespace: phenotypic_class
@@ -10482,6 +10505,200 @@ def: "Phenotype that is a decrease in the total amount or frequency of feeding b
 is_a: FBcv:0000419 ! abnormal feeding behavior
 created_by: http://orcid.org/0000-0002-1373-1705
 creation_date: 2020-12-16T12:16:19Z
+
+[Term]
+id: FBcv:0007517
+name: increased memory
+namespace: phenotypic_class
+def: "Phenotype that is an increase in the efficacy of memory (GO:0007613) relative to controls. 'memory' is defined as: 'The activities involved in the mental information processing system that receives (registers), modifies, stores, and retrieves informational stimuli. The main stages involved in the formation and retrieval of memory are encoding (processing of received information by acquisition), storage (building a permanent record of received information as a result of consolidation) and retrieval (calling back the stored information and use it in a suitable way to execute a given task).'" [FBC:CP, GOC:curators, ISBN:0582227089]
+comment: This will usually be measured as an increased magnitude/rate of a behavioral output associated with memory formation.
+is_a: FBcv:0000398 ! abnormal memory
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2021-08-06T11:45:09Z
+
+[Term]
+id: FBcv:0007518
+name: decreased memory
+namespace: phenotypic_class
+def: "Phenotype that is a decrease in the efficacy of memory (GO:0007613) relative to controls. 'memory' is defined as: 'The activities involved in the mental information processing system that receives (registers), modifies, stores, and retrieves informational stimuli. The main stages involved in the formation and retrieval of memory are encoding (processing of received information by acquisition), storage (building a permanent record of received information as a result of consolidation) and retrieval (calling back the stored information and use it in a suitable way to execute a given task).'" [FBC:CP, GOC:curators, ISBN:0582227089]
+comment: This will usually be measured as a decreased magnitude/rate of a behavioral output associated with memory formation.
+is_a: FBcv:0000398 ! abnormal memory
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2021-08-06T11:55:18Z
+
+[Term]
+id: FBcv:0007519
+name: increased short-term memory
+namespace: phenotypic_class
+def: "Phenotype that is an increase in the efficacy of short-term memory (GO:0007614) relative to controls. 'short-term memory' is defined as: 'The memory process that deals with the storage, retrieval and modification of information received a short time (up to about 30 minutes) ago. This type of memory is typically dependent on direct, transient effects of second messenger activation.'" [FBC:CP, http://hebb.mit.edu/courses/9.03/lecture4.html, ISBN:0582227089]
+comment: This will usually be measured as an increased magnitude/rate of a behavioral output associated with short-term memory formation.
+is_a: FBcv:0007501 ! abnormal short-term memory
+is_a: FBcv:0007517 ! increased memory
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2021-08-06T11:56:41Z
+
+[Term]
+id: FBcv:0007520
+name: decreased short-term memory
+namespace: phenotypic_class
+def: "Phenotype that is a decrease in the efficacy of short-term memory (GO:0007614) relative to controls. 'short-term memory' is defined as: 'The memory process that deals with the storage, retrieval and modification of information received a short time (up to about 30 minutes) ago. This type of memory is typically dependent on direct, transient effects of second messenger activation.'" [FBC:CP, http://hebb.mit.edu/courses/9.03/lecture4.html, ISBN:0582227089]
+comment: This will usually be measured as a decreased magnitude/rate of a behavioral output associated with short-term memory formation.
+is_a: FBcv:0007501 ! abnormal short-term memory
+is_a: FBcv:0007518 ! decreased memory
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2021-08-06T11:57:17Z
+
+[Term]
+id: FBcv:0007521
+name: increased long-term memory
+namespace: phenotypic_class
+def: "Phenotype that is an increase in the efficacy of long-term memory (GO:0007616) relative to controls. 'long-term memory' is defined as: 'The memory process that deals with the storage, retrieval and modification of information a long time (typically weeks, months or years) after receiving that information. This type of memory is typically dependent on gene transcription regulated by second messenger activation.'" [FBC:CP, http://hebb.mit.edu/courses/9.03/lecture4.html, ISBN:0582227089]
+comment: This will usually be measured as an increased magnitude/rate of a behavioral output associated with long-term memory formation.
+is_a: FBcv:0007503 ! abnormal long-term memory
+is_a: FBcv:0007517 ! increased memory
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2021-08-06T12:02:59Z
+
+[Term]
+id: FBcv:0007522
+name: decreased long-term memory
+namespace: phenotypic_class
+def: "Phenotype that is a decrease in the efficacy of long-term memory (GO:0007616) relative to controls. 'long-term memory' is defined as: 'The memory process that deals with the storage, retrieval and modification of information a long time (typically weeks, months or years) after receiving that information. This type of memory is typically dependent on gene transcription regulated by second messenger activation.'" [FBC:CP, http://hebb.mit.edu/courses/9.03/lecture4.html, ISBN:0582227089]
+comment: This will usually be measured as a decreased magnitude/rate of a behavioral output associated with long-term memory formation.
+is_a: FBcv:0007503 ! abnormal long-term memory
+is_a: FBcv:0007518 ! decreased memory
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2021-08-06T12:04:30Z
+
+[Term]
+id: FBcv:0007523
+name: increased anesthesia-resistant memory
+namespace: phenotypic_class
+def: "Phenotype that is an increase in the efficacy of anesthesia-resistant memory (GO:0007615) relative to controls. 'anesthesia-resistant memory' is defined as: 'The memory process that results in the formation of consolidated memory resistant to disruption of the patterned activity of the brain, without requiring protein synthesis.'" [FBC:CP, PMID:15143285, PMID:17088531]
+comment: This will usually be measured as an increased magnitude/rate of a behavioral output associated with anesthesia-resistant memory formation.
+is_a: FBcv:0007500 ! abnormal anesthesia-resistant memory
+is_a: FBcv:0007517 ! increased memory
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2021-08-06T12:08:22Z
+
+[Term]
+id: FBcv:0007524
+name: decreased anesthesia-resistant memory
+namespace: phenotypic_class
+def: "Phenotype that is a decrease in the efficacy of anesthesia-resistant memory (GO:0007615) relative to controls. 'anesthesia-resistant memory' is defined as: 'The memory process that results in the formation of consolidated memory resistant to disruption of the patterned activity of the brain, without requiring protein synthesis.'" [FBC:CP, PMID:15143285, PMID:17088531]
+comment: This will usually be measured as a decreased magnitude/rate of a behavioral output associated with anesthesia-resistant memory formation.
+is_a: FBcv:0007500 ! abnormal anesthesia-resistant memory
+is_a: FBcv:0007518 ! decreased memory
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2021-08-06T12:10:03Z
+
+[Term]
+id: FBcv:0007525
+name: increased medium-term memory
+namespace: phenotypic_class
+def: "Phenotype that is an increase in the efficacy of medium-term memory (GO:0072375) relative to controls. 'medium-term memory' is defined as: 'The memory process that deals with the storage, retrieval and modification of information received at a time ago that is intermediate between that of short and long term memory (30min - 7hrs in Drosophila melanogaster).'" [FBC:CP, GOC:sart, PMID:14659098, PMID:7923375]
+comment: This will usually be measured as an increased magnitude/rate of a behavioral output associated with medium-term memory formation.
+is_a: FBcv:0007502 ! abnormal medium-term memory
+is_a: FBcv:0007517 ! increased memory
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2021-08-06T12:11:31Z
+
+[Term]
+id: FBcv:0007526
+name: decreased medium-term memory
+namespace: phenotypic_class
+def: "Phenotype that is a decrease in the efficacy of medium-term memory (GO:0072375) relative to controls. 'medium-term memory' is defined as: 'The memory process that deals with the storage, retrieval and modification of information received at a time ago that is intermediate between that of short and long term memory (30min - 7hrs in Drosophila melanogaster).'" [FBC:CP, GOC:sart, PMID:14659098, PMID:7923375]
+comment: This will usually be measured as a decreased magnitude/rate of a behavioral output associated with medium-term memory formation.
+is_a: FBcv:0007502 ! abnormal medium-term memory
+is_a: FBcv:0007518 ! decreased memory
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2021-08-06T12:12:48Z
+
+[Term]
+id: FBcv:0009000
+name: single-cell RNA-Seq
+namespace: assay_type
+def: "A method for quantifying the transcriptome of individual cells, in which transcripts isolated from single cells are subjected to high-throughput sequencing and mapping to a reference genome." [PMID:28821273]
+synonym: "scRNA-Seq" EXACT [PMID:32405060]
+synonym: "single-cell RNA sequencing assay" EXACT []
+xref: OBI:0002631
+is_a: FBcv:0003068 ! RNA-Seq
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2021-07-26T12:18:07Z
+
+[Term]
+id: FBcv:0009001
+name: single-nucleus RNA-Seq
+namespace: assay_type
+def: "A method for quantifying the transcriptome of individual cells, in which transcripts isolated from single nuclei are subjected to high-throughput sequencing and mapping to a reference genome." [PMID:28821273]
+synonym: "single-nucleus RNA sequencing assay" EXACT []
+synonym: "snRNA-Seq" EXACT [PMID:32405060]
+is_a: FBcv:0009000 ! single-cell RNA-Seq
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2021-07-26T12:19:45Z
+
+[Term]
+id: FBcv:0009002
+name: cell clustering analysis
+namespace: result_type
+def: "A result that groups individual cells into populations sharing a similar transcriptional profile." [PMID:28821273]
+is_a: FBcv:0003108 ! analysis
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2021-07-26T12:21:05Z
+
+[Term]
+id: FBcv:0009003
+name: transcriptional cell cluster
+namespace: result_type
+def: "A result that represents a population of cells sharing a similar transcriptional profile." [PMID:28821273]
+is_a: FBcv:0003082 ! result type
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2021-07-26T12:22:16Z
+
+[Term]
+id: FBcv:0009004
+name: isolated nuclei
+namespace: biosample_type
+def: "A biosample containing dissociated cell nuclei isolated from the organism." [FBC:DPG]
+is_a: FBcv:0003044 ! biosample type
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2021-07-26T12:23:17Z
+
+[Term]
+id: FBcv:0009005
+name: single-cell library sequencing
+namespace: assay_attribute
+def: "A method to prepare and sequence a library of cDNAs obtained from single cells." [FBC:DPG]
+is_a: FBcv:0003208 ! assay method
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2021-07-26T13:40:26Z
+
+[Term]
+id: FBcv:0009006
+name: DROP-Seq
+namespace: assay_attribute
+def: "A method that uses the DROP-Seq platform (Macosko et al., 2015) to prepare and sequence a cDNA library." [PMID:26000488]
+is_a: FBcv:0009005 ! single-cell library sequencing
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2021-07-26T13:41:58Z
+
+[Term]
+id: FBcv:0009007
+name: Smart-seq2
+namespace: assay_attribute
+def: "A method that uses the Smart-seq2 platform (Picelli et al., 2013) to prepare and sequence a cDNA library." [PMID:24056875]
+is_a: FBcv:0009005 ! single-cell library sequencing
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2021-07-26T13:44:02Z
+
+[Term]
+id: FBcv:0009008
+name: 10x sequencing
+namespace: assay_attribute
+def: "A method that uses the Chromium platform from 10x Genomics to prepare and sequence a cDNA library." [PMID:29126257]
+is_a: FBcv:0009005 ! single-cell library sequencing
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2021-07-26T13:45:06Z
 
 [Term]
 id: FBcv:0010000

@@ -110,22 +110,45 @@ ontsim:
 #		convert -o $@
 #$(ONT)-simple.obo: oort
 
-# the fbcv-flybase target is a massive hack that 
+# Overwriting all obo files to remove excess labels, defs, comments.
+$(ONT)-simple.obo: $(ONT)-simple.owl
+	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
+	cat $@.tmp.obo | grep -v ^owl-axioms > $@.tmp &&\
+	cat $@.tmp | perl -0777 -e '$$_ = <>; s/(?:name[:].*\n)+name[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/(?:comment[:].*\n)+comment[:]/comment:/g; print' | perl -0777 -e '$$_ = <>; s/(?:def[:].*\n)+def[:]/def:/g; print' > $@
+	rm -f $@.tmp.obo $@.tmp
+
+# We want the OBO release to be based on the simple release. It needs to be annotated however in the way map releases (fbbt.owl) are annotated.
+$(ONT).obo: $(ONT).owl
+	$(ROBOT)  annotate --input $< --ontology-iri $(URIBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY) \
+	convert --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
+	cat $@.tmp.obo | grep -v ^owl-axioms > $@.tmp &&\
+	cat $@.tmp | perl -0777 -e '$$_ = <>; s/(?:name[:].*\n)+name[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/(?:comment[:].*\n)+comment[:]/comment:/g; print' | perl -0777 -e '$$_ = <>; s/(?:def[:].*\n)+def[:]/def:/g; print' > $@
+	rm -f $@.tmp.obo $@.tmp
+
+$(ONT)-base.obo: $(ONT)-base.owl
+	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
+	cat $@.tmp.obo | grep -v ^owl-axioms > $@.tmp &&\
+	cat $@.tmp | perl -0777 -e '$$_ = <>; s/(?:name[:].*\n)+name[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/(?:comment[:].*\n)+comment[:]/comment:/g; print' | perl -0777 -e '$$_ = <>; s/(?:def[:].*\n)+def[:]/def:/g; print' > $@
+	rm -f $@.tmp.obo $@.tmp
+		
+$(ONT)-non-classified.obo: $(ONT)-non-classified.owl
+	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
+	cat $@.tmp.obo | grep -v ^owl-axioms > $@.tmp &&\
+	cat $@.tmp | perl -0777 -e '$$_ = <>; s/(?:name[:].*\n)+name[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/(?:comment[:].*\n)+comment[:]/comment:/g; print' | perl -0777 -e '$$_ = <>; s/(?:def[:].*\n)+def[:]/def:/g; print' > $@
+	rm -f $@.tmp.obo $@.tmp
+
+$(ONT)-full.obo: $(ONT)-full.owl
+	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
+	cat $@.tmp.obo | grep -v ^owl-axioms > $@.tmp &&\
+	cat $@.tmp | perl -0777 -e '$$_ = <>; s/(?:name[:].*\n)+name[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/(?:comment[:].*\n)+comment[:]/comment:/g; print' | perl -0777 -e '$$_ = <>; s/(?:def[:].*\n)+def[:]/def:/g; print' > $@
+	rm -f $@.tmp.obo $@.tmp
+
 
 flybase_controlled_vocabulary.obo:
 	$(ROBOT) remove --input $(ONT)-simple.obo --term "http://purl.obolibrary.org/obo/FBcv_0008000" \
 		convert -o $@.tmp.obo
 	cat $@.tmp.obo | grep -v FlyBase_miscellaneous_CV | grep -v property_value: | sed '/^date[:]/c\date: $(OBODATE)' | sed '/^data-version[:]/c\data-version: $(DATE)' > $@
 
-# The following lines were part of a previous misconception that we needed a part_of typedef for the flybase release.
-#	echo "[Typedef]" >> $@
-#	echo "id: part_of" >> $@
-#	echo "name: part_of" >> $@
-#	echo "namespace: relationship" >> $@
-#	echo 'synonym: "part_of" EXACT []' >> $@
-#	echo "xref: BFO:0000050" >> $@
-#	echo "xref_analog: OBO_REL:part_of" >> $@
-#	echo "is_transitive: true" >> $@
 
 #	owltools $(ONT)-simple --make-subset-by-properties part_of conditionality -o $@
 
@@ -215,8 +238,10 @@ pre_release: $(SRC) tmp/auto_generated_definitions_dot.owl tmp/auto_generated_de
 	$(ROBOT) merge -i tmp/$(ONT)-edit-release.obo -i tmp/auto_generated_definitions_dot.owl -i tmp/auto_generated_definitions_sub.owl --collapse-import-closure false -o $(ONT)-edit-release.ofn && mv $(ONT)-edit-release.ofn $(ONT)-edit-release.owl
 	echo "Preprocessing done. Make sure that NO CHANGES TO THE EDIT FILE ARE COMMITTED!"
 	
-post_release: flybase_controlled_vocabulary.obo reports/chado_load_check_simple.txt
+post_release: flybase_controlled_vocabulary.obo reports/chado_load_check_simple.txt obo_qc
 	cp flybase_controlled_vocabulary.obo ../..
+	mv obo_qc_$(ONT).obo.txt reports/obo_qc_$(ONT).obo.txt
+	mv obo_qc_$(ONT).owl.txt reports/obo_qc_$(ONT).owl.txt
 	
 #test_remove: $(ONT)-edit.obo tmp/replaced_defs.txt
 #	$(ROBOT) remove -i $(ONT)-edit.obo remove --term-file tmp/replaced_defs.txt --axioms annotation --trim false \ merge -i tmp/auto_generated_definitions_dot.owl -i tmp/auto_generated_definitions_sub.owl --collapse-import-closure false -o $(ONT)-edit-release.ofn && mv $(ONT)-edit-release.ofn $(ONT)-edit-release2.owl
