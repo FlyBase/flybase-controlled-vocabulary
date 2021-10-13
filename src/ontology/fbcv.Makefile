@@ -205,6 +205,7 @@ prepare_release: $(ASSETS) $(PATTERN_RELEASE_FILES)
 # There are two types of definitions that FBCV uses: "." (DOT-) definitions are those for which the formal 
 # definition is translated into a human readable definitions. "$sub_" (SUB-) definitions are those that have 
 # special placeholder string to substitute in definitions from external ontologies, mostly CHEBI
+# DOT definitions no longer used as of 2021-10-13.
 
 tmp/auto_generated_definitions_seed_dot.txt: $(SRC)
 	$(ROBOT) query --use-graphs false -f csv -i $(SRC) --query ../sparql/dot-definitions.sparql $@.tmp &&\
@@ -233,9 +234,9 @@ tmp/auto_generated_definitions_sub.owl: tmp/merged-source-pre.owl tmp/auto_gener
 tmp/replaced_defs.txt:
 	cat tmp/auto_generated_definitions_seed_sub.txt tmp/auto_generated_definitions_seed_dot.txt | sort | uniq > $@
 
-pre_release: $(SRC) tmp/auto_generated_definitions_dot.owl tmp/auto_generated_definitions_sub.owl components/dpo-simple.owl
+pre_release: $(SRC) tmp/auto_generated_definitions_sub.owl components/dpo-simple.owl #tmp/auto_generated_definitions_dot.owl
 	cat $(ONT)-edit.obo | grep -v 'def[:] \"[.]\"' | grep -v 'sub_' > tmp/$(ONT)-edit-release.obo
-	$(ROBOT) merge -i tmp/$(ONT)-edit-release.obo -i tmp/auto_generated_definitions_dot.owl -i tmp/auto_generated_definitions_sub.owl --collapse-import-closure false -o $(ONT)-edit-release.ofn && mv $(ONT)-edit-release.ofn $(ONT)-edit-release.owl
+	$(ROBOT) merge -i tmp/$(ONT)-edit-release.obo -i tmp/auto_generated_definitions_sub.owl --collapse-import-closure false -o $(ONT)-edit-release.ofn && mv $(ONT)-edit-release.ofn $(ONT)-edit-release.owl
 	echo "Preprocessing done. Make sure that NO CHANGES TO THE EDIT FILE ARE COMMITTED!"
 	
 post_release: flybase_controlled_vocabulary.obo reports/chado_load_check_simple.txt obo_qc
