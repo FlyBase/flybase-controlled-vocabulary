@@ -292,7 +292,7 @@ mirror/ro.owl: mirror/ro.trigger
 mirror/chebi.trigger: $(SRC)
 
 mirror/chebi.owl: mirror/chebi.trigger
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I http://purl.obolibrary.org/obo/chebi.owl.gz -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/chebi.owl.gz --create-dirs -o mirror/chebi.owl.gz --retry 4 --max-time 200 && $(ROBOT) convert -i mirror/chebi.owl.gz -o $@.tmp.owl && mv $@.tmp.owl $@; fi
 .PRECIOUS: mirror/chebi.owl
 
 
