@@ -214,11 +214,6 @@ tmp/auto_generated_definitions_seed_sub.txt: $(SRC)
 	cat $@.tmp | sort | uniq >  $@
 	rm -f $@.tmp
 
-mirror/chebi.owl: mirror/chebi.trigger
-	curl -L http://purl.obolibrary.org/obo/chebi.owl.gz --create-dirs -o mirror/chebi.owl.gz &&\
-	$(ROBOT) convert -i mirror/chebi.owl.gz -o $@.tmp.owl &&\
-	mv $@.tmp.owl $@
-
 tmp/merged-source-pre.owl: $(SRC) mirror/chebi.owl
 	$(ROBOT) merge -i $(SRC) -i mirror/chebi.owl --output $@
 
