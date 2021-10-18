@@ -1658,6 +1658,11 @@
           "sub": "http://purl.obolibrary.org/obo/CHEBI_26491"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_176497",
+          "pred": "http://purl.obolibrary.org/obo/RO_0000087",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_27732"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/CHEBI_176842",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/CHEBI_37445"
@@ -9376,6 +9381,11 @@
           "obj": "http://purl.obolibrary.org/obo/CHEBI_50266",
           "pred": "http://purl.obolibrary.org/obo/RO_0000087",
           "sub": "http://purl.obolibrary.org/obo/CHEBI_51052"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_50267",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_176497"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/CHEBI_50267",
@@ -21714,7 +21724,7 @@
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#date",
-            "val": "02:09:2021 15:59"
+            "val": "18:10:2021 13:03"
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#default-namespace",
@@ -21726,11 +21736,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-09-02"
+            "val": "2021-10-18"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/fbcv/releases/2021-09-02/fbcv.json",
+        "version": "http://purl.obolibrary.org/obo/fbcv/releases/2021-10-18/fbcv.json",
         "xrefs": []
       },
       "nodes": [
@@ -30538,6 +30548,97 @@
               },
               {
                 "val": "Wikipedia:Hydroquinone"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_176497",
+          "lbl": "geroprotector",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "Any compound that supports healthy aging, slows the biological aging process, or extends lifespan.",
+              "xrefs": []
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "anti-aging agent",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "anti-aging agents",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "anti-aging drug",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "anti-aging drugs",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "geroprotective agent",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "geroprotective agents",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "geroprotectors",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ],
+            "xrefs": [
+              {
+                "val": "PMID:23372317"
+              },
+              {
+                "val": "PMID:28580190"
+              },
+              {
+                "val": "PMID:30885572"
+              },
+              {
+                "val": "PMID:33144142"
+              },
+              {
+                "val": "PMID:33973253"
+              },
+              {
+                "val": "Wikipedia:Geroprotector"
               }
             ]
           },
@@ -45903,6 +46004,9 @@
                 "val": "PMID:18421070"
               },
               {
+                "val": "PMID:18513215"
+              },
+              {
                 "val": "PMID:18625110"
               },
               {
@@ -45933,7 +46037,16 @@
                 "val": "PMID:20470411"
               },
               {
+                "val": "PMID:22114686"
+              },
+              {
                 "val": "PMID:22770225"
+              },
+              {
+                "val": "PMID:23551936"
+              },
+              {
+                "val": "PMID:24039592"
               },
               {
                 "val": "PMID:7441110"
@@ -60816,7 +60929,7 @@
               }
             ],
             "definition": {
-              "val": "Any aliphatic monocarboxylic acid derived from or contained in esterified form in an animal or vegetable fat, oil or wax.",
+              "val": "Any aliphatic monocarboxylic acid derived from or contained in esterified form in an animal or vegetable fat, oil or wax. Natural fatty acids commonly have a chain of 4 to 28 carbons (usually unbranched and even-numbered), which may be saturated or unsaturated. By extension, the term is sometimes used to embrace all acyclic aliphatic carboxylic acids.",
               "xrefs": []
             },
             "subsets": [
@@ -83614,7 +83727,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000001",
-          "lbl": "death certificate",
+          "lbl": "obsolete death certificate",
           "meta": {
             "basicPropertyValues": [
               {
@@ -83669,7 +83782,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000003",
-          "lbl": "In transgenic Drosophila (intraspecific)",
+          "lbl": "obsolete In transgenic Drosophila (intraspecific)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -83695,7 +83808,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000004",
-          "lbl": "Whole-organism transient assay (intraspecific)",
+          "lbl": "obsolete Whole-organism transient assay (intraspecific)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -83816,7 +83929,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000009",
-          "lbl": "temporal stage qualifier",
+          "lbl": "obsolete temporal stage qualifier",
           "meta": {
             "basicPropertyValues": [
               {
@@ -83842,7 +83955,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000010",
-          "lbl": "monophasic",
+          "lbl": "obsolete monophasic",
           "meta": {
             "basicPropertyValues": [
               {
@@ -83868,7 +83981,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000011",
-          "lbl": "relative temporal qualifier",
+          "lbl": "obsolete relative temporal qualifier",
           "meta": {
             "basicPropertyValues": [
               {
@@ -83889,7 +84002,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000012",
-          "lbl": "absolute temporal qualifier",
+          "lbl": "obsolete absolute temporal qualifier",
           "meta": {
             "basicPropertyValues": [
               {
@@ -83960,7 +84073,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000015",
-          "lbl": "postage stamp",
+          "lbl": "obsolete postage stamp",
           "meta": {
             "basicPropertyValues": [
               {
@@ -83977,7 +84090,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000016",
-          "lbl": "Baylor TE recombination mapping kit stock",
+          "lbl": "obsolete Baylor TE recombination mapping kit stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -83994,7 +84107,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000017",
-          "lbl": "penetrance qualifier",
+          "lbl": "obsolete penetrance qualifier",
           "meta": {
             "basicPropertyValues": [
               {
@@ -84014,7 +84127,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000018",
-          "lbl": "penetrance complete",
+          "lbl": "obsolete penetrance complete",
           "meta": {
             "basicPropertyValues": [
               {
@@ -84034,7 +84147,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000019",
-          "lbl": "penetrance incomplete",
+          "lbl": "obsolete penetrance incomplete",
           "meta": {
             "basicPropertyValues": [
               {
@@ -84054,7 +84167,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000020",
-          "lbl": "penetrance percent",
+          "lbl": "obsolete penetrance percent",
           "meta": {
             "basicPropertyValues": [
               {
@@ -84077,7 +84190,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000021",
-          "lbl": "expressivity qualifier",
+          "lbl": "obsolete expressivity qualifier",
           "meta": {
             "basicPropertyValues": [
               {
@@ -84097,7 +84210,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000022",
-          "lbl": "expressivity complete",
+          "lbl": "obsolete expressivity complete",
           "meta": {
             "basicPropertyValues": [
               {
@@ -84117,7 +84230,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000023",
-          "lbl": "expressivity incomplete",
+          "lbl": "obsolete expressivity incomplete",
           "meta": {
             "basicPropertyValues": [
               {
@@ -84137,7 +84250,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000024",
-          "lbl": "expressivity high",
+          "lbl": "obsolete expressivity high",
           "meta": {
             "basicPropertyValues": [
               {
@@ -84157,7 +84270,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000025",
-          "lbl": "expressivity low",
+          "lbl": "obsolete expressivity low",
           "meta": {
             "basicPropertyValues": [
               {
@@ -84177,7 +84290,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000026",
-          "lbl": "recessive visible allele recombination mapping stock",
+          "lbl": "obsolete recessive visible allele recombination mapping stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -84191,7 +84304,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000027",
-          "lbl": "dominant visible allele recombination mapping stock",
+          "lbl": "obsolete dominant visible allele recombination mapping stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -84205,7 +84318,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000028",
-          "lbl": "SNP recombination mapping stock",
+          "lbl": "obsolete SNP recombination mapping stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -84222,7 +84335,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000029",
-          "lbl": "transposable element mutagenesis stock",
+          "lbl": "obsolete transposable element mutagenesis stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -84236,7 +84349,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000030",
-          "lbl": "compartment",
+          "lbl": "obsolete compartment",
           "meta": {
             "basicPropertyValues": [
               {
@@ -84257,7 +84370,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000031",
-          "lbl": "anterior compartment",
+          "lbl": "obsolete anterior compartment",
           "meta": {
             "basicPropertyValues": [
               {
@@ -84278,7 +84391,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000032",
-          "lbl": "compartment boundary",
+          "lbl": "obsolete compartment boundary",
           "meta": {
             "basicPropertyValues": [
               {
@@ -84299,7 +84412,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000033",
-          "lbl": "anterior/posterior compartment boundary",
+          "lbl": "obsolete anterior/posterior compartment boundary",
           "meta": {
             "basicPropertyValues": [
               {
@@ -84320,7 +84433,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000034",
-          "lbl": "dorsal/ventral compartment boundary",
+          "lbl": "obsolete dorsal/ventral compartment boundary",
           "meta": {
             "basicPropertyValues": [
               {
@@ -84341,7 +84454,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000035",
-          "lbl": "dorsal compartment",
+          "lbl": "obsolete dorsal compartment",
           "meta": {
             "basicPropertyValues": [
               {
@@ -84362,7 +84475,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000036",
-          "lbl": "posterior compartment",
+          "lbl": "obsolete posterior compartment",
           "meta": {
             "basicPropertyValues": [
               {
@@ -84383,7 +84496,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000037",
-          "lbl": "ventral compartment",
+          "lbl": "obsolete ventral compartment",
           "meta": {
             "basicPropertyValues": [
               {
@@ -84503,7 +84616,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000042",
-          "lbl": "deficiency kit stock",
+          "lbl": "obsolete deficiency kit stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -84524,7 +84637,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000043",
-          "lbl": "transposase source for transposable element mutagenesis",
+          "lbl": "obsolete transposase source for transposable element mutagenesis",
           "meta": {
             "basicPropertyValues": [
               {
@@ -84541,7 +84654,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000044",
-          "lbl": "ammunition source for transposable element mutagenesis",
+          "lbl": "obsolete ammunition source for transposable element mutagenesis",
           "meta": {
             "basicPropertyValues": [
               {
@@ -84817,7 +84930,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000057",
-          "lbl": "contralateral",
+          "lbl": "obsolete contralateral",
           "meta": {
             "basicPropertyValues": [
               {
@@ -84922,7 +85035,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000062",
-          "lbl": "ipsilateral",
+          "lbl": "obsolete ipsilateral",
           "meta": {
             "basicPropertyValues": [
               {
@@ -85121,7 +85234,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000072",
-          "lbl": "gene expression qualifier",
+          "lbl": "obsolete gene expression qualifier",
           "meta": {
             "basicPropertyValues": [
               {
@@ -85135,7 +85248,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000073",
-          "lbl": "embryonic expression pattern",
+          "lbl": "obsolete embryonic expression pattern",
           "meta": {
             "basicPropertyValues": [
               {
@@ -86471,7 +86584,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000144",
-          "lbl": "maternal pattern",
+          "lbl": "obsolete maternal pattern",
           "meta": {
             "basicPropertyValues": [
               {
@@ -86606,7 +86719,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000151",
-          "lbl": "archive",
+          "lbl": "obsolete archive",
           "meta": {
             "basicPropertyValues": [
               {
@@ -86623,7 +86736,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000152",
-          "lbl": "balancer stock",
+          "lbl": "obsolete balancer stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -86704,7 +86817,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000156",
-          "lbl": "pair of homologous balancers",
+          "lbl": "obsolete pair of homologous balancers",
           "meta": {
             "basicPropertyValues": [
               {
@@ -86718,7 +86831,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000157",
-          "lbl": "recessive lethal balancer",
+          "lbl": "obsolete recessive lethal balancer",
           "meta": {
             "basicPropertyValues": [
               {
@@ -86732,7 +86845,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000158",
-          "lbl": "balancer for chromosome 1",
+          "lbl": "obsolete balancer for chromosome 1",
           "meta": {
             "basicPropertyValues": [
               {
@@ -86749,7 +86862,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000159",
-          "lbl": "balancer for chromosome 2",
+          "lbl": "obsolete balancer for chromosome 2",
           "meta": {
             "basicPropertyValues": [
               {
@@ -86766,7 +86879,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000160",
-          "lbl": "balancer for chromosome 3",
+          "lbl": "obsolete balancer for chromosome 3",
           "meta": {
             "basicPropertyValues": [
               {
@@ -86859,7 +86972,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000165",
-          "lbl": "pair of balancers for chromosome 2",
+          "lbl": "obsolete pair of balancers for chromosome 2",
           "meta": {
             "basicPropertyValues": [
               {
@@ -87034,7 +87147,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000173",
-          "lbl": "pair of balancers for chromosome 3",
+          "lbl": "obsolete pair of balancers for chromosome 3",
           "meta": {
             "basicPropertyValues": [
               {
@@ -87048,7 +87161,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000174",
-          "lbl": "dominant male sterile balancer",
+          "lbl": "obsolete dominant male sterile balancer",
           "meta": {
             "basicPropertyValues": [
               {
@@ -87065,7 +87178,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000175",
-          "lbl": "dominant female sterile balancer",
+          "lbl": "obsolete dominant female sterile balancer",
           "meta": {
             "basicPropertyValues": [
               {
@@ -87098,7 +87211,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000177",
-          "lbl": "dominant female sterile balancer for chromosome 2",
+          "lbl": "obsolete dominant female sterile balancer for chromosome 2",
           "meta": {
             "basicPropertyValues": [
               {
@@ -87112,7 +87225,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000178",
-          "lbl": "early",
+          "lbl": "obsolete early",
           "meta": {
             "basicPropertyValues": [
               {
@@ -87138,7 +87251,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000179",
-          "lbl": "dominant female sterile balancer for chromosome 3",
+          "lbl": "obsolete dominant female sterile balancer for chromosome 3",
           "meta": {
             "basicPropertyValues": [
               {
@@ -87152,7 +87265,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000180",
-          "lbl": "dominant male sterile balancer for chromosome 2",
+          "lbl": "obsolete dominant male sterile balancer for chromosome 2",
           "meta": {
             "basicPropertyValues": [
               {
@@ -87166,7 +87279,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000181",
-          "lbl": "late",
+          "lbl": "obsolete late",
           "meta": {
             "basicPropertyValues": [
               {
@@ -87192,7 +87305,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000182",
-          "lbl": "mid",
+          "lbl": "obsolete mid",
           "meta": {
             "basicPropertyValues": [
               {
@@ -87213,7 +87326,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000183",
-          "lbl": "n day",
+          "lbl": "obsolete n day",
           "meta": {
             "basicPropertyValues": [
               {
@@ -87234,7 +87347,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000184",
-          "lbl": "n hr",
+          "lbl": "obsolete n hr",
           "meta": {
             "basicPropertyValues": [
               {
@@ -87255,7 +87368,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000185",
-          "lbl": "dominant male sterile balancer for chromosome 3",
+          "lbl": "obsolete dominant male sterile balancer for chromosome 3",
           "meta": {
             "basicPropertyValues": [
               {
@@ -87269,7 +87382,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000186",
-          "lbl": "recessive lethal balancer for chromosome 1",
+          "lbl": "obsolete recessive lethal balancer for chromosome 1",
           "meta": {
             "basicPropertyValues": [
               {
@@ -87283,7 +87396,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000187",
-          "lbl": "recessive lethal balancer for chromosome 2",
+          "lbl": "obsolete recessive lethal balancer for chromosome 2",
           "meta": {
             "basicPropertyValues": [
               {
@@ -87375,7 +87488,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000191",
-          "lbl": "advertisement",
+          "lbl": "obsolete advertisement",
           "meta": {
             "basicPropertyValues": [
               {
@@ -87495,7 +87608,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000196",
-          "lbl": "booklet",
+          "lbl": "obsolete booklet",
           "meta": {
             "basicPropertyValues": [
               {
@@ -87545,7 +87658,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000198",
-          "lbl": "computer file",
+          "lbl": "obsolete computer file",
           "meta": {
             "basicPropertyValues": [
               {
@@ -87612,7 +87725,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000200",
-          "lbl": "demonstration",
+          "lbl": "obsolete demonstration",
           "meta": {
             "basicPropertyValues": [
               {
@@ -87765,7 +87878,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000206",
-          "lbl": "jigsaw puzzle",
+          "lbl": "obsolete jigsaw puzzle",
           "meta": {
             "basicPropertyValues": [
               {
@@ -87809,7 +87922,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000208",
-          "lbl": "microscope slides",
+          "lbl": "obsolete microscope slides",
           "meta": {
             "basicPropertyValues": [
               {
@@ -88062,7 +88175,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000218",
-          "lbl": "recording",
+          "lbl": "obsolete recording",
           "meta": {
             "basicPropertyValues": [
               {
@@ -88139,7 +88252,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000221",
-          "lbl": "slides",
+          "lbl": "obsolete slides",
           "meta": {
             "basicPropertyValues": [
               {
@@ -88247,7 +88360,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000225",
-          "lbl": "T-shirt",
+          "lbl": "obsolete T-shirt",
           "meta": {
             "basicPropertyValues": [
               {
@@ -88264,7 +88377,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000226",
-          "lbl": "tactile diagram",
+          "lbl": "obsolete tactile diagram",
           "meta": {
             "basicPropertyValues": [
               {
@@ -88365,7 +88478,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000230",
-          "lbl": "automatic genome annotation",
+          "lbl": "obsolete automatic genome annotation",
           "meta": {
             "basicPropertyValues": [
               {
@@ -88420,7 +88533,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000232",
-          "lbl": "recessive lethal balancer for chromosome 3",
+          "lbl": "obsolete recessive lethal balancer for chromosome 3",
           "meta": {
             "basicPropertyValues": [
               {
@@ -89703,7 +89816,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000297",
-          "lbl": "extracted wild-type chromosome 1",
+          "lbl": "obsolete extracted wild-type chromosome 1",
           "meta": {
             "basicPropertyValues": [
               {
@@ -89793,7 +89906,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000302",
-          "lbl": "extracted wild-type chromosome 2",
+          "lbl": "obsolete extracted wild-type chromosome 2",
           "meta": {
             "basicPropertyValues": [
               {
@@ -89807,7 +89920,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000303",
-          "lbl": "extracted wild-type chromosome 3",
+          "lbl": "obsolete extracted wild-type chromosome 3",
           "meta": {
             "basicPropertyValues": [
               {
@@ -89821,7 +89934,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000304",
-          "lbl": "extracted wild-type chromosome 4",
+          "lbl": "obsolete extracted wild-type chromosome 4",
           "meta": {
             "basicPropertyValues": [
               {
@@ -89835,7 +89948,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000305",
-          "lbl": "extracted wild-type chromosome Y",
+          "lbl": "obsolete extracted wild-type chromosome Y",
           "meta": {
             "basicPropertyValues": [
               {
@@ -90130,7 +90243,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000317",
-          "lbl": "isogenic chromosome 1",
+          "lbl": "obsolete isogenic chromosome 1",
           "meta": {
             "basicPropertyValues": [
               {
@@ -90144,7 +90257,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000318",
-          "lbl": "isogenic chromosome 2",
+          "lbl": "obsolete isogenic chromosome 2",
           "meta": {
             "basicPropertyValues": [
               {
@@ -90203,7 +90316,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000321",
-          "lbl": "isogenic chromosome 3",
+          "lbl": "obsolete isogenic chromosome 3",
           "meta": {
             "basicPropertyValues": [
               {
@@ -90324,7 +90437,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000326",
-          "lbl": "isogenic chromosome 4",
+          "lbl": "obsolete isogenic chromosome 4",
           "meta": {
             "basicPropertyValues": [
               {
@@ -90338,7 +90451,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000327",
-          "lbl": "P-element transposase source for transposable element mutagenesis",
+          "lbl": "obsolete P-element transposase source for transposable element mutagenesis",
           "meta": {
             "basicPropertyValues": [
               {
@@ -90352,7 +90465,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000328",
-          "lbl": "hobo transposase source for transposable element mutagenesis",
+          "lbl": "obsolete hobo transposase source for transposable element mutagenesis",
           "meta": {
             "basicPropertyValues": [
               {
@@ -90366,7 +90479,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000329",
-          "lbl": "piggyBac transposase source for transposable element mutagenesis",
+          "lbl": "obsolete piggyBac transposase source for transposable element mutagenesis",
           "meta": {
             "basicPropertyValues": [
               {
@@ -90380,7 +90493,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000330",
-          "lbl": "minos transposase source for transposable element mutagenesis",
+          "lbl": "obsolete minos transposase source for transposable element mutagenesis",
           "meta": {
             "basicPropertyValues": [
               {
@@ -90394,7 +90507,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000331",
-          "lbl": "polyphasic",
+          "lbl": "obsolete polyphasic",
           "meta": {
             "basicPropertyValues": [
               {
@@ -90540,7 +90653,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000337",
-          "lbl": "P-element ammunition for transposable element mutagenesis",
+          "lbl": "obsolete P-element ammunition for transposable element mutagenesis",
           "meta": {
             "basicPropertyValues": [
               {
@@ -90554,7 +90667,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000338",
-          "lbl": "hobo ammunition for transposable element mutagenesis",
+          "lbl": "obsolete hobo ammunition for transposable element mutagenesis",
           "meta": {
             "basicPropertyValues": [
               {
@@ -90568,7 +90681,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000339",
-          "lbl": "fully",
+          "lbl": "obsolete fully",
           "meta": {
             "basicPropertyValues": [
               {
@@ -90611,7 +90724,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000341",
-          "lbl": "good",
+          "lbl": "obsolete good",
           "meta": {
             "basicPropertyValues": [
               {
@@ -93241,7 +93354,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000437",
-          "lbl": "dosage compensation defective",
+          "lbl": "obsolete dosage compensation defective",
           "meta": {
             "basicPropertyValues": [
               {
@@ -93417,7 +93530,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000445",
-          "lbl": "tumorigenic",
+          "lbl": "obsolete tumorigenic",
           "meta": {
             "basicPropertyValues": [
               {
@@ -93642,7 +93755,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000453",
-          "lbl": "piggyBac ammunition for transposable element mutagenesis",
+          "lbl": "obsolete piggyBac ammunition for transposable element mutagenesis",
           "meta": {
             "basicPropertyValues": [
               {
@@ -93656,7 +93769,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000454",
-          "lbl": "synthetic",
+          "lbl": "obsolete synthetic",
           "meta": {
             "basicPropertyValues": [
               {
@@ -93954,7 +94067,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000464",
-          "lbl": "in vitro construct - other",
+          "lbl": "obsolete in vitro construct - other",
           "meta": {
             "basicPropertyValues": [
               {
@@ -96142,7 +96255,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000537",
-          "lbl": "minos ammunition for transposable element mutagenesis",
+          "lbl": "obsolete minos ammunition for transposable element mutagenesis",
           "meta": {
             "basicPropertyValues": [
               {
@@ -96822,7 +96935,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000561",
-          "lbl": "unclassified chemical",
+          "lbl": "obsolete unclassified chemical",
           "meta": {
             "basicPropertyValues": [
               {
@@ -97986,7 +98099,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000598",
-          "lbl": "dominant temperature-sensitive lethal balancer",
+          "lbl": "obsolete dominant temperature-sensitive lethal balancer",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98222,7 +98335,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000606",
-          "lbl": "allele assay method",
+          "lbl": "obsolete allele assay method",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98249,7 +98362,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000607",
-          "lbl": "In transgenic Drosophila",
+          "lbl": "obsolete In transgenic Drosophila",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98270,7 +98383,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000608",
-          "lbl": "Whole-organism transient assay",
+          "lbl": "obsolete Whole-organism transient assay",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98291,7 +98404,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000609",
-          "lbl": "Drosophila cell culture",
+          "lbl": "obsolete Drosophila cell culture",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98317,7 +98430,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000610",
-          "lbl": "In transgenic Drosophila (allele of one drosophilid species in genome of another drosophilid)",
+          "lbl": "obsolete In transgenic Drosophila (allele of one drosophilid species in genome of another drosophilid)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98343,7 +98456,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000611",
-          "lbl": "Whole-organism transient assay (allele from one drosophilid species assayed in another drosophilid)",
+          "lbl": "obsolete Whole-organism transient assay (allele from one drosophilid species assayed in another drosophilid)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98369,7 +98482,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000612",
-          "lbl": "In transgenic Drosophila (allele of foreign species in genome of drosophilid)",
+          "lbl": "obsolete In transgenic Drosophila (allele of foreign species in genome of drosophilid)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98395,7 +98508,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000613",
-          "lbl": "Whole-organism transient assay (allele of foreign species assayed in drosophilid)",
+          "lbl": "obsolete Whole-organism transient assay (allele of foreign species assayed in drosophilid)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98421,7 +98534,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000614",
-          "lbl": "stock descriptor",
+          "lbl": "obsolete stock descriptor",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98438,7 +98551,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000615",
-          "lbl": "extracted wild-type chromosome",
+          "lbl": "obsolete extracted wild-type chromosome",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98452,7 +98565,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000616",
-          "lbl": "laboratory stock",
+          "lbl": "obsolete laboratory stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98469,7 +98582,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000617",
-          "lbl": "selected wild-type stock",
+          "lbl": "obsolete selected wild-type stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98483,7 +98596,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000618",
-          "lbl": "wild-type stock",
+          "lbl": "obsolete wild-type stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98500,7 +98613,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000619",
-          "lbl": "isogenic stock",
+          "lbl": "obsolete isogenic stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98731,7 +98844,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000629",
-          "lbl": "dominant temperature-sensitive lethal balancer for chromosome 2",
+          "lbl": "obsolete dominant temperature-sensitive lethal balancer for chromosome 2",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98745,7 +98858,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000630",
-          "lbl": "dominant temperature-sensitive lethal balancer for chromosome 3",
+          "lbl": "obsolete dominant temperature-sensitive lethal balancer for chromosome 3",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98759,7 +98872,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000631",
-          "lbl": "DrosDel Project deficiency core kit stock",
+          "lbl": "obsolete DrosDel Project deficiency core kit stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98773,7 +98886,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000632",
-          "lbl": "Bloomington Stock Center deficiency kit stock",
+          "lbl": "obsolete Bloomington Stock Center deficiency kit stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98790,7 +98903,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000633",
-          "lbl": "Exelixis deficiency kit stock",
+          "lbl": "obsolete Exelixis deficiency kit stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98804,7 +98917,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000634",
-          "lbl": "duplication kit stock",
+          "lbl": "obsolete duplication kit stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98818,7 +98931,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000635",
-          "lbl": "Cambridge 2 duplication kit stock",
+          "lbl": "obsolete Cambridge 2 duplication kit stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98835,7 +98948,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000636",
-          "lbl": "Bloomington duplication kit stock",
+          "lbl": "obsolete Bloomington duplication kit stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98852,7 +98965,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000637",
-          "lbl": "Gene Disruption Project stock",
+          "lbl": "obsolete Gene Disruption Project stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98866,7 +98979,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000638",
-          "lbl": "sequenced strain",
+          "lbl": "obsolete sequenced strain",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98883,7 +98996,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000639",
-          "lbl": "Golic gene replacement kit stock",
+          "lbl": "obsolete Golic gene replacement kit stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98900,7 +99013,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000640",
-          "lbl": "Golic laboratory gene replacement kit stock",
+          "lbl": "obsolete Golic laboratory gene replacement kit stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98914,7 +99027,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000641",
-          "lbl": "stock by cytotype",
+          "lbl": "obsolete stock by cytotype",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98928,7 +99041,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000642",
-          "lbl": "H cytotype stock",
+          "lbl": "obsolete H cytotype stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98942,7 +99055,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000643",
-          "lbl": "hobo family transposable element insertions present",
+          "lbl": "obsolete hobo family transposable element insertions present",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98956,7 +99069,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000644",
-          "lbl": "hobo family transposable element insertions absent",
+          "lbl": "obsolete hobo family transposable element insertions absent",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98970,7 +99083,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000645",
-          "lbl": "P cytotype stock",
+          "lbl": "obsolete P cytotype stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98984,7 +99097,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000646",
-          "lbl": "P-element family transposable element insertions absent",
+          "lbl": "obsolete P-element family transposable element insertions absent",
           "meta": {
             "basicPropertyValues": [
               {
@@ -98998,7 +99111,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000647",
-          "lbl": "P-element family transposable element insertions present",
+          "lbl": "obsolete P-element family transposable element insertions present",
           "meta": {
             "basicPropertyValues": [
               {
@@ -99012,7 +99125,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000648",
-          "lbl": "mapping stock",
+          "lbl": "obsolete mapping stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -99026,7 +99139,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000649",
-          "lbl": "visible allele recombination mapping stock",
+          "lbl": "obsolete visible allele recombination mapping stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -99064,7 +99177,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000651",
-          "lbl": "meeting report",
+          "lbl": "obsolete meeting report",
           "meta": {
             "basicPropertyValues": [
               {
@@ -99168,7 +99281,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000655",
-          "lbl": "Vienna Drosophila RNAi Center",
+          "lbl": "obsolete Vienna Drosophila RNAi Center",
           "meta": {
             "basicPropertyValues": [
               {
@@ -99197,7 +99310,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000656",
-          "lbl": "frozen specimen",
+          "lbl": "obsolete frozen specimen",
           "meta": {
             "basicPropertyValues": [
               {
@@ -99214,7 +99327,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000657",
-          "lbl": "mutant stock",
+          "lbl": "obsolete mutant stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -99228,7 +99341,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000658",
-          "lbl": "DrosDel Project deficiency stock",
+          "lbl": "obsolete DrosDel Project deficiency stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -99242,7 +99355,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000659",
-          "lbl": "deficiency stock",
+          "lbl": "obsolete deficiency stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -99256,7 +99369,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000660",
-          "lbl": "inbred line",
+          "lbl": "obsolete inbred line",
           "meta": {
             "basicPropertyValues": [
               {
@@ -99273,7 +99386,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000661",
-          "lbl": "isofemale line",
+          "lbl": "obsolete isofemale line",
           "meta": {
             "basicPropertyValues": [
               {
@@ -99290,7 +99403,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000662",
-          "lbl": "recently collected stock",
+          "lbl": "obsolete recently collected stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -99313,7 +99426,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000663",
-          "lbl": "transposable element-containing stock",
+          "lbl": "obsolete transposable element-containing stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -99327,7 +99440,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000664",
-          "lbl": "duplication stock",
+          "lbl": "obsolete duplication stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -99367,7 +99480,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000666",
-          "lbl": "conference proceedings",
+          "lbl": "obsolete conference proceedings",
           "meta": {
             "basicPropertyValues": [
               {
@@ -99569,7 +99682,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000673",
-          "lbl": "sequenced whole genome stock",
+          "lbl": "obsolete sequenced whole genome stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -99586,7 +99699,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000674",
-          "lbl": "phiC31 based integration system",
+          "lbl": "obsolete phiC31 based integration system",
           "meta": {
             "basicPropertyValues": [
               {
@@ -99600,7 +99713,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000675",
-          "lbl": "phiC31 docking site stock",
+          "lbl": "obsolete phiC31 docking site stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -99614,7 +99727,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000676",
-          "lbl": "multi-female collection",
+          "lbl": "obsolete multi-female collection",
           "meta": {
             "basicPropertyValues": [
               {
@@ -103006,7 +103119,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000799",
-          "lbl": "gene descriptor",
+          "lbl": "obsolete gene descriptor",
           "meta": {
             "basicPropertyValues": [
               {
@@ -103020,7 +103133,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000801",
-          "lbl": "polymorphism assay",
+          "lbl": "obsolete polymorphism assay",
           "meta": {
             "basicPropertyValues": [
               {
@@ -103034,7 +103147,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000803",
-          "lbl": "RFLP",
+          "lbl": "obsolete RFLP",
           "meta": {
             "basicPropertyValues": [
               {
@@ -103055,7 +103168,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0000805",
-          "lbl": "DNA sequence variant",
+          "lbl": "obsolete DNA sequence variant",
           "meta": {
             "basicPropertyValues": [
               {
@@ -103340,7 +103453,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0001324",
-          "lbl": "endocytosis defective",
+          "lbl": "obsolete endocytosis defective",
           "meta": {
             "basicPropertyValues": [
               {
@@ -103370,7 +103483,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0001325",
-          "lbl": "exocytosis defective",
+          "lbl": "obsolete exocytosis defective",
           "meta": {
             "basicPropertyValues": [
               {
@@ -104111,7 +104224,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0002032",
-          "lbl": "lethal - all die before end of embryonic stage",
+          "lbl": "obsolete lethal - all die before end of embryonic stage",
           "meta": {
             "basicPropertyValues": [
               {
@@ -113704,7 +113817,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0007000",
-          "lbl": "micropublication",
+          "lbl": "obsolete micropublication",
           "meta": {
             "basicPropertyValues": [
               {
@@ -116346,7 +116459,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0010000",
-          "lbl": "living stock",
+          "lbl": "obsolete living stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -116363,7 +116476,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0010001",
-          "lbl": "molecular extract",
+          "lbl": "obsolete molecular extract",
           "meta": {
             "basicPropertyValues": [
               {
@@ -116380,7 +116493,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0010002",
-          "lbl": "preserved specimen",
+          "lbl": "obsolete preserved specimen",
           "meta": {
             "basicPropertyValues": [
               {
@@ -116397,7 +116510,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0010003",
-          "lbl": "E cytotype stock",
+          "lbl": "obsolete E cytotype stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -116411,7 +116524,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0010004",
-          "lbl": "M cytotype stock",
+          "lbl": "obsolete M cytotype stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -116425,7 +116538,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0010005",
-          "lbl": "genomic DNA",
+          "lbl": "obsolete genomic DNA",
           "meta": {
             "basicPropertyValues": [
               {
@@ -116442,7 +116555,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0010006",
-          "lbl": "ethanol-preserved specimen",
+          "lbl": "obsolete ethanol-preserved specimen",
           "meta": {
             "basicPropertyValues": [
               {
@@ -116459,7 +116572,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0010007",
-          "lbl": "pinned specimen",
+          "lbl": "obsolete pinned specimen",
           "meta": {
             "basicPropertyValues": [
               {
@@ -116473,7 +116586,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0010009",
-          "lbl": "fluorescent balancer",
+          "lbl": "obsolete fluorescent balancer",
           "meta": {
             "basicPropertyValues": [
               {
@@ -116490,7 +116603,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0010010",
-          "lbl": "lacZ balancer",
+          "lbl": "obsolete lacZ balancer",
           "meta": {
             "basicPropertyValues": [
               {
@@ -116507,7 +116620,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0010011",
-          "lbl": "laboratory wild-type stock",
+          "lbl": "obsolete laboratory wild-type stock",
           "meta": {
             "basicPropertyValues": [
               {
@@ -116521,7 +116634,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0010012",
-          "lbl": "collection",
+          "lbl": "obsolete collection",
           "meta": {
             "basicPropertyValues": [
               {
@@ -116538,7 +116651,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0010013",
-          "lbl": "stock center collection",
+          "lbl": "obsolete stock center collection",
           "meta": {
             "basicPropertyValues": [
               {
@@ -116555,7 +116668,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0010014",
-          "lbl": "laboratory collection",
+          "lbl": "obsolete laboratory collection",
           "meta": {
             "basicPropertyValues": [
               {
@@ -116572,7 +116685,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0010015",
-          "lbl": "Saxton laboratory",
+          "lbl": "obsolete Saxton laboratory",
           "meta": {
             "basicPropertyValues": [
               {
@@ -116586,7 +116699,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0010016",
-          "lbl": "Garcia-Bellido laboratory",
+          "lbl": "obsolete Garcia-Bellido laboratory",
           "meta": {
             "basicPropertyValues": [
               {
@@ -116603,7 +116716,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0010017",
-          "lbl": "Nusslein-Volhard laboratory",
+          "lbl": "obsolete Nusslein-Volhard laboratory",
           "meta": {
             "basicPropertyValues": [
               {
@@ -116620,7 +116733,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0010018",
-          "lbl": "Carpenter laboratory",
+          "lbl": "obsolete Carpenter laboratory",
           "meta": {
             "basicPropertyValues": [
               {
@@ -116637,7 +116750,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0010019",
-          "lbl": "Artavanis laboratory",
+          "lbl": "obsolete Artavanis laboratory",
           "meta": {
             "basicPropertyValues": [
               {
@@ -116658,7 +116771,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0010020",
-          "lbl": "Exelixis Drosophila Stock Collection at Harvard Medical School",
+          "lbl": "obsolete Exelixis Drosophila Stock Collection at Harvard Medical School",
           "meta": {
             "basicPropertyValues": [
               {
@@ -116682,7 +116795,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0010021",
-          "lbl": "Bloomington Drosophila Stock Center",
+          "lbl": "obsolete Bloomington Drosophila Stock Center",
           "meta": {
             "basicPropertyValues": [
               {
@@ -116716,7 +116829,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0010022",
-          "lbl": "San Diego Drosophila Species Stock Center",
+          "lbl": "obsolete San Diego Drosophila Species Stock Center",
           "meta": {
             "basicPropertyValues": [
               {
@@ -116750,7 +116863,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0010023",
-          "lbl": "Szeged Drosophila Stock Centre",
+          "lbl": "obsolete Szeged Drosophila Stock Centre",
           "meta": {
             "basicPropertyValues": [
               {
@@ -116771,7 +116884,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/FBcv_0010024",
-          "lbl": "Drosophila Genetic Resource Center",
+          "lbl": "obsolete Drosophila Genetic Resource Center",
           "meta": {
             "basicPropertyValues": [
               {
