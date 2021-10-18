@@ -36,8 +36,6 @@ tmp/asserted-subclass-of-axioms.obo: $(SRC) tmp/fbcv_terms.txt
 		filter --term-file tmp/fbcv_terms.txt --axioms "logical" --preserve-structure false \
 		convert --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@
 
-#		
-
 tmp/source-merged.obo: $(SRC) tmp/asserted-subclass-of-axioms.obo
 	$(ROBOT) merge --input $(SRC) \
 		reason --reasoner ELK \
@@ -215,11 +213,6 @@ tmp/auto_generated_definitions_seed_sub.txt: $(SRC)
 	$(ROBOT) query --use-graphs false -f csv -i $(SRC) --query ../sparql/classes-with-placeholder-definitions.sparql $@.tmp &&\
 	cat $@.tmp | sort | uniq >  $@
 	rm -f $@.tmp
-
-mirror/chebi.owl: mirror/chebi.trigger
-	curl -L http://purl.obolibrary.org/obo/chebi.owl.gz --create-dirs -o mirror/chebi.owl.gz &&\
-	$(ROBOT) convert -i mirror/chebi.owl.gz -o $@.tmp.owl &&\
-	mv $@.tmp.owl $@
 
 tmp/merged-source-pre.owl: $(SRC) mirror/chebi.owl
 	$(ROBOT) merge -i $(SRC) -i mirror/chebi.owl --output $@
