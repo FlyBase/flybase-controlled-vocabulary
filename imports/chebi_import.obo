@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: fbcv/releases/2021-09-02/imports/chebi_import.owl
+data-version: fbcv/releases/2021-10-18/imports/chebi_import.owl
 subsetdef: 1_STAR ""
 subsetdef: 2_STAR ""
 subsetdef: 3_STAR ""
 ontology: fbcv/imports/chebi_import
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chebi/203/chebi.owl
-property_value: owl:versionInfo "2021-09-02" xsd:string
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chebi/204/chebi.owl
+property_value: owl:versionInfo "2021-10-18" xsd:string
 
 [Term]
 id: CHEBI:10432
@@ -2179,6 +2179,27 @@ property_value: http://purl.obolibrary.org/obo/chebi/inchikey "QIGBRXMKCJKVMJ-UH
 property_value: http://purl.obolibrary.org/obo/chebi/mass "110.11064" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "110.03678" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/smiles "Oc1ccc(O)cc1" xsd:string
+
+[Term]
+id: CHEBI:176497
+name: geroprotector
+namespace: chebi_ontology
+def: "Any compound that supports healthy aging, slows the biological aging process, or extends lifespan." []
+subset: 3_STAR
+synonym: "anti-aging agent" RELATED [ChEBI]
+synonym: "anti-aging agents" RELATED [ChEBI]
+synonym: "anti-aging drug" RELATED [ChEBI]
+synonym: "anti-aging drugs" RELATED [ChEBI]
+synonym: "geroprotective agent" RELATED [ChEBI]
+synonym: "geroprotective agents" RELATED [ChEBI]
+synonym: "geroprotectors" RELATED [ChEBI]
+xref: PMID:23372317 {source="Europe PMC"}
+xref: PMID:28580190 {source="Europe PMC"}
+xref: PMID:30885572 {source="Europe PMC"}
+xref: PMID:33144142 {source="Europe PMC"}
+xref: PMID:33973253 {source="Europe PMC"}
+xref: Wikipedia:Geroprotector
+is_a: CHEBI:50267 ! protective agent
 
 [Term]
 id: CHEBI:176842
@@ -6173,6 +6194,7 @@ xref: PMID:17957400 {source="Europe PMC"}
 xref: PMID:18068204 {source="Europe PMC"}
 xref: PMID:18258404 {source="Europe PMC"}
 xref: PMID:18421070 {source="Europe PMC"}
+xref: PMID:18513215 {source="Europe PMC"}
 xref: PMID:18625110 {source="Europe PMC"}
 xref: PMID:18647558 {source="Europe PMC"}
 xref: PMID:19007524 {source="Europe PMC"}
@@ -6183,7 +6205,10 @@ xref: PMID:19418355 {source="Europe PMC"}
 xref: PMID:19879252 {source="Europe PMC"}
 xref: PMID:20164568 {source="Europe PMC"}
 xref: PMID:20470411 {source="Europe PMC"}
+xref: PMID:22114686 {source="Europe PMC"}
 xref: PMID:22770225 {source="Europe PMC"}
+xref: PMID:23551936 {source="Europe PMC"}
+xref: PMID:24039592 {source="Europe PMC"}
 xref: PMID:7441110 {source="Europe PMC"}
 xref: PMID:7689104 {source="Europe PMC"}
 xref: PMID:8332255 {source="Europe PMC"}
@@ -6197,6 +6222,7 @@ xref: Reaxys:17705 {source="Reaxys"}
 xref: Wikipedia:Caffeine
 is_a: CHEBI:26385 ! purine alkaloid
 is_a: CHEBI:27134 ! trimethylxanthine
+relationship: has_role CHEBI:176497 ! geroprotector
 relationship: has_role CHEBI:25435 ! mutagen
 relationship: has_role CHEBI:35337 ! central nervous system stimulant
 relationship: has_role CHEBI:35471 ! psychotropic drug
@@ -10147,7 +10173,7 @@ namespace: chebi_ontology
 alt_id: CHEBI:13633
 alt_id: CHEBI:24024
 alt_id: CHEBI:4984
-def: "Any aliphatic monocarboxylic acid derived from or contained in esterified form in an animal or vegetable fat, oil or wax." []
+def: "Any aliphatic monocarboxylic acid derived from or contained in esterified form in an animal or vegetable fat, oil or wax. Natural fatty acids commonly have a chain of 4 to 28 carbons (usually unbranched and even-numbered), which may be saturated or unsaturated. By extension, the term is sometimes used to embrace all acyclic aliphatic carboxylic acids." []
 subset: 3_STAR
 synonym: "acide gras" RELATED [ChEBI]
 synonym: "acides gras" RELATED [ChemIDplus]

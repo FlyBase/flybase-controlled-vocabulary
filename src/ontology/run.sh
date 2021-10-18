@@ -12,4 +12,4 @@
 
 IMAGE=${IMAGE:-odkfull}
 
-docker run -v $PWD/../../:/work -w /work/src/ontology -e ROBOT_JAVA_ARGS='-Xmx8G' -e JAVA_OPTS='-Xmx8G' --rm -ti obolibrary/$IMAGE "$@"
+docker run -v $PWD/../../:/work -w /work/src/ontology -e ROBOT_JAVA_ARGS='-Xmx12G' -e JAVA_OPTS='-Xmx12G' --rm -ti obolibrary/$IMAGE "$@"
