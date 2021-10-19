@@ -214,8 +214,8 @@ tmp/auto_generated_definitions_seed_sub.txt: $(SRC)
 	cat $@.tmp | sort | uniq >  $@
 	rm -f $@.tmp
 
-tmp/merged-source-pre.owl: $(SRC) mirror/chebi.owl
-	$(ROBOT) merge -i $(SRC) -i mirror/chebi.owl --output $@
+tmp/merged-source-pre.owl: $(SRC) imports/chebi_import.owl
+	$(ROBOT) merge -i $(SRC) -i imports/chebi_import.owl --output $@
 
 tmp/auto_generated_definitions_dot.owl: tmp/merged-source-pre.owl tmp/auto_generated_definitions_seed_dot.txt
 	java -Xmx3G -jar ../scripts/eq-writer.jar $< tmp/auto_generated_definitions_seed_dot.txt flybase $@ NA add_dot_refs
