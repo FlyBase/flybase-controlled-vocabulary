@@ -214,7 +214,7 @@ tmp/auto_generated_definitions_seed_sub.txt: $(SRC)
 	cat $@.tmp | sort | uniq >  $@
 	rm -f $@.tmp
 
-tmp/merged-source-pre.owl: $(SRC) imports/chebi_import.owl
+tmp/merged-source-pre.owl: $(SRC) all_imports
 	$(ROBOT) merge -i $(SRC) -i imports/chebi_import.owl --output $@
 
 tmp/auto_generated_definitions_dot.owl: tmp/merged-source-pre.owl tmp/auto_generated_definitions_seed_dot.txt
