@@ -12,7 +12,7 @@ sh run.sh make PAT=false pre_release -B
 # 3. Now lets run the proper release. Note that here, we are overwriting the SRC variable to be the newly created dpo-edit-release.owl
 # This process generates everything from the simple and basic releases to the various flybase reports
 # All deviations from the standard OBO process can be found in the dpo.Makefile file
-sh run.sh make SRC=fbcv-edit-release.owl PAT=false prepare_release -B
+sh run.sh make SRC=fbcv-edit-release.owl IMP=FALSE PAT=false prepare_release -B
 
 # 4. Run some post release steps
 sh run.sh make PAT=false post_release -B

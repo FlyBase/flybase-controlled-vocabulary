@@ -1,35 +1,6 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	duplicate_definition	diethyl sulfate	definition	No description.
-ERROR	duplicate_definition	2-chloroethyl methanesulfonate	definition	No description.
-ERROR	duplicate_definition	2-fluoroethyl methanesulfonate	definition	No description.
-ERROR	duplicate_definition	carbamate	definition	No description.
-ERROR	duplicate_definition	vinyl carbamate	definition	No description.
-ERROR	duplicate_definition	mitomycin C	definition	No description.
-ERROR	duplicate_definition	quinacrine mustard	definition	No description.
-ERROR	duplicate_definition	ICR 170	definition	No description.
-ERROR	duplicate_definition	aminopterin	definition	No description.
-ERROR	duplicate_definition	H3BO3	definition	No description.
-ERROR	duplicate_definition	diepoxybutane	definition	No description.
-ERROR	duplicate_definition	diepoxyoctane	definition	No description.
-ERROR	duplicate_definition	1,2:5,6-dibenzanthracene	definition	No description.
-ERROR	duplicate_definition	1-amino-2-naphthol-4-sulfonic acid	definition	No description.
-ERROR	duplicate_definition	actinomycin D	definition	No description.
-ERROR	duplicate_definition	ethylenimine	definition	No description.
-ERROR	duplicate_definition	fagaronine	definition	No description.
-ERROR	duplicate_definition	hexamethylmelamine	definition	No description.
-ERROR	duplicate_definition	hexamethylphosphoramide	definition	No description.
-ERROR	duplicate_definition	Janus green B	definition	No description.
-ERROR	duplicate_definition	methoxy diethylnitrosamine	definition	No description.
-ERROR	duplicate_definition	N-nitrosodimethylamine	definition	No description.
-ERROR	duplicate_definition	p-N,N-di(2-chloroethyl)aminophenylvaleric acid	definition	No description.
-ERROR	duplicate_definition	p-N,N-di-(2-chloroethyl)amino-D-phenylalanine	definition	No description.
-ERROR	duplicate_definition	p-N,N-di-(2-chloroethyl)amino-L-phenylalanine	definition	No description.
-ERROR	duplicate_definition	p-N,N-di-(2-chloroethyl)aminophenylethylamine	definition	No description.
-ERROR	duplicate_definition	p-p'-N,N-di(2-chloroethyl)aminophenoxyphenylalanine	definition	No description.
-ERROR	duplicate_definition	quinhydrone	definition	No description.
-ERROR	duplicate_definition	S-2-chloroethylcysteine	definition	No description.
-ERROR	duplicate_definition	styryl quinoline	definition	No description.
-ERROR	duplicate_definition	triethylenemelamine	definition	No description.
+ERROR	duplicate_label	has role	label	has role
+ERROR	duplicate_label	has role	label	has role
 ERROR	missing_label	CHEBI:13941	label	
 ERROR	missing_label	CHEBI:16842	label	
 ERROR	missing_label	CHEBI:16991	label	
@@ -109,84 +80,57 @@ ERROR	missing_label	dc11:source	label
 ERROR	missing_label	oboInOwl:created_by	label	
 ERROR	missing_label	oboInOwl:creation_date	label	
 ERROR	missing_label	oboInOwl:id	label	
-ERROR	duplicate_label	has role	label	has role
-ERROR	duplicate_label	has role	label	has role
-WARN	annotation_whitespace	definition	IAO:0000116	<2012-04-05: Barry SmithThe official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions' is terrible.Can you fix to something like:A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.Alan RuttenbergYour proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. On the specifics of the proposed definition:We don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with. @en>
-WARN	equivalent_pair	CHEBI:13941	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000538>
-WARN	equivalent_pair	CHEBI:16842	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000584>
-WARN	equivalent_pair	CHEBI:16991	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000579>
-WARN	equivalent_pair	CHEBI:17967	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000539>
-WARN	equivalent_pair	CHEBI:19024	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000568>
-WARN	equivalent_pair	CHEBI:19032	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000547>
-WARN	equivalent_pair	CHEBI:19363	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000571>
-WARN	equivalent_pair	CHEBI:19508	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000528>
-WARN	equivalent_pair	CHEBI:19579	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000529>
-WARN	equivalent_pair	CHEBI:20552	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000549>
-WARN	equivalent_pair	CHEBI:20553	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000550>
-WARN	equivalent_pair	CHEBI:20787	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000572>
-WARN	equivalent_pair	CHEBI:21183	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000544>
-WARN	equivalent_pair	CHEBI:21184	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000589>
-WARN	equivalent_pair	CHEBI:21759	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000535>
-WARN	equivalent_pair	CHEBI:22025	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000602>
-WARN	equivalent_pair	CHEBI:22526	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000552>
-WARN	equivalent_pair	CHEBI:23359	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000577>
-WARN	equivalent_pair	CHEBI:23414	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000554>
-WARN	equivalent_pair	CHEBI:23704	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000559>
-WARN	equivalent_pair	CHEBI:23705	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000560>
-WARN	equivalent_pair	CHEBI:23994	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000530>
-WARN	equivalent_pair	CHEBI:23995	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000531>
-WARN	equivalent_pair	CHEBI:24431	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000525>
-WARN	equivalent_pair	CHEBI:24564	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000586>
-WARN	equivalent_pair	CHEBI:24565	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000587>
-WARN	equivalent_pair	CHEBI:24624	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000532>
-WARN	equivalent_pair	CHEBI:24835	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000553>
-WARN	equivalent_pair	CHEBI:24859	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000588>
-WARN	equivalent_pair	CHEBI:25234	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000590>
-WARN	equivalent_pair	CHEBI:25255	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000533>
-WARN	equivalent_pair	CHEBI:25434	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000534>
-WARN	equivalent_pair	CHEBI:25813	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000594>
-WARN	equivalent_pair	CHEBI:25814	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000595>
-WARN	equivalent_pair	CHEBI:25816	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000597>
-WARN	equivalent_pair	CHEBI:25818	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000599>
-WARN	equivalent_pair	CHEBI:25829	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000600>
-WARN	equivalent_pair	CHEBI:26491	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000601>
-WARN	equivalent_pair	CHEBI:26709	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000556>
-WARN	equivalent_pair	CHEBI:26800	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000603>
-WARN	equivalent_pair	CHEBI:27090	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000604>
-WARN	equivalent_pair	CHEBI:27292	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000540>
-WARN	equivalent_pair	CHEBI:27504	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000542>
-WARN	equivalent_pair	CHEBI:27561	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000582>
-WARN	equivalent_pair	CHEBI:27666	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000573>
-WARN	equivalent_pair	CHEBI:27732	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000575>
-WARN	equivalent_pair	CHEBI:27789	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000546>
-WARN	equivalent_pair	CHEBI:27899	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000576>
-WARN	equivalent_pair	CHEBI:27919	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000605>
-WARN	equivalent_pair	CHEBI:28262	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000578>
-WARN	equivalent_pair	CHEBI:28534	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000545>
-WARN	equivalent_pair	CHEBI:28741	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000557>
-WARN	equivalent_pair	CHEBI:28775	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000585>
-WARN	equivalent_pair	CHEBI:28830	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000815>
-WARN	equivalent_pair	CHEBI:28876	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000596>
-WARN	equivalent_pair	CHEBI:28901	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000814>
-WARN	equivalent_pair	CHEBI:28954	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000583>
-WARN	equivalent_pair	CHEBI:29238	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000511>
-WARN	equivalent_pair	CHEBI:29865	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000574>
-WARN	equivalent_pair	CHEBI:30969	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000581>
-WARN	equivalent_pair	CHEBI:33118	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000555>
-WARN	equivalent_pair	CHEBI:34699	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000527>
-WARN	equivalent_pair	CHEBI:34873	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000735>
-WARN	equivalent_pair	CHEBI:35299	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000562>
-WARN	equivalent_pair	CHEBI:35702	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000580>
-WARN	equivalent_pair	CHEBI:35807	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000593>
-WARN	equivalent_pair	CHEBI:37595	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000543>
-WARN	equivalent_pair	CHEBI:37598	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000813>
-WARN	equivalent_pair	CHEBI:37972	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000510>
-WARN	equivalent_pair	CHEBI:46790	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000570>
-WARN	equivalent_pair	CHEBI:50102	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000592>
-WARN	equivalent_pair	CHEBI:51052	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000569>
-WARN	equivalent_pair	CHEBI:53526	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000513>
-WARN	equivalent_pair	CHEBI:67107	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000563>
-WARN	equivalent_pair	CHEBI:67142	owl:equivalentClass	<http://purl.obolibrary.org/obo/FBcv_0000548>
+ERROR	duplicate_definition	2-chloroethyl methanesulfonate	definition	No description.
+ERROR	duplicate_definition	2-fluoroethyl methanesulfonate	definition	No description.
+ERROR	duplicate_definition	carbamate	definition	No description.
+ERROR	duplicate_definition	vinyl carbamate	definition	No description.
+ERROR	duplicate_definition	mitomycin C	definition	No description.
+ERROR	duplicate_definition	quinacrine mustard	definition	No description.
+ERROR	duplicate_definition	ICR 170	definition	No description.
+ERROR	duplicate_definition	aminopterin	definition	No description.
+ERROR	duplicate_definition	H3BO3	definition	No description.
+ERROR	duplicate_definition	diepoxybutane	definition	No description.
+ERROR	duplicate_definition	diepoxyoctane	definition	No description.
+ERROR	duplicate_definition	1,2:5,6-dibenzanthracene	definition	No description.
+ERROR	duplicate_definition	1-amino-2-naphthol-4-sulfonic acid	definition	No description.
+ERROR	duplicate_definition	actinomycin D	definition	No description.
+ERROR	duplicate_definition	ethylenimine	definition	No description.
+ERROR	duplicate_definition	fagaronine	definition	No description.
+ERROR	duplicate_definition	hexamethylmelamine	definition	No description.
+ERROR	duplicate_definition	hexamethylphosphoramide	definition	No description.
+ERROR	duplicate_definition	Janus green B	definition	No description.
+ERROR	duplicate_definition	methoxy diethylnitrosamine	definition	No description.
+ERROR	duplicate_definition	N-nitrosodimethylamine	definition	No description.
+ERROR	duplicate_definition	p-N,N-di(2-chloroethyl)aminophenylvaleric acid	definition	No description.
+ERROR	duplicate_definition	p-N,N-di-(2-chloroethyl)amino-D-phenylalanine	definition	No description.
+ERROR	duplicate_definition	p-N,N-di-(2-chloroethyl)amino-L-phenylalanine	definition	No description.
+ERROR	duplicate_definition	p-N,N-di-(2-chloroethyl)aminophenylethylamine	definition	No description.
+ERROR	duplicate_definition	p-p'-N,N-di(2-chloroethyl)aminophenoxyphenylalanine	definition	No description.
+ERROR	duplicate_definition	quinhydrone	definition	No description.
+ERROR	duplicate_definition	S-2-chloroethylcysteine	definition	No description.
+ERROR	duplicate_definition	styryl quinoline	definition	No description.
+ERROR	duplicate_definition	triethylenemelamine	definition	No description.
+WARN	annotation_whitespace	definition	IAO:0000116	"2012-04-05: 
+Barry Smith
+
+The official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.
+
+Can you fix to something like:
+
+A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
+
+Alan Ruttenberg
+
+Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. 
+
+On the specifics of the proposed definition:
+
+We don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
+
+Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
+
+We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  @en"
+WARN	duplicate_label_synonym	phenotypic class	has_exact_synonym	phenotypic class
 WARN	missing_definition	CHEBI:13941	definition	
 WARN	missing_definition	CHEBI:16842	definition	
 WARN	missing_definition	CHEBI:16991	definition	
@@ -304,74 +248,84 @@ WARN	missing_definition	has_scope	definition
 WARN	missing_definition	oboInOwl:id	definition	
 WARN	missing_definition	in_subset	definition	
 WARN	missing_definition	shorthand	definition	
-WARN	duplicate_scoped_synonym	part of	IAO:0000118	part_of
-WARN	duplicate_scoped_synonym	part of	has_exact_synonym	part_of
+WARN	equivalent_pair	CHEBI:13941	owl:equivalentClass	carbamate
+WARN	equivalent_pair	CHEBI:16842	owl:equivalentClass	formaldehyde
+WARN	equivalent_pair	CHEBI:16991	owl:equivalentClass	DNA
+WARN	equivalent_pair	CHEBI:17967	owl:equivalentClass	urethane
+WARN	equivalent_pair	CHEBI:19024	owl:equivalentClass	1-amino-2-naphthol-4-sulfonic acid
+WARN	equivalent_pair	CHEBI:19032	owl:equivalentClass	1-bromo-2-chloroethane
+WARN	equivalent_pair	CHEBI:19363	owl:equivalentClass	2,5-bis(ethyleneimino)-1,4-benzoquinone
+WARN	equivalent_pair	CHEBI:19508	owl:equivalentClass	2-chloroethyl methanesulfonate
+WARN	equivalent_pair	CHEBI:19579	owl:equivalentClass	2-fluoroethyl methanesulfonate
+WARN	equivalent_pair	CHEBI:20552	owl:equivalentClass	5-bromouracil
+WARN	equivalent_pair	CHEBI:20553	owl:equivalentClass	5-bromouridine
+WARN	equivalent_pair	CHEBI:20787	owl:equivalentClass	7-bromomethyl-12-methylbenz[a]anthracene
+WARN	equivalent_pair	CHEBI:21183	owl:equivalentClass	ICR 170
+WARN	equivalent_pair	CHEBI:21184	owl:equivalentClass	Janus green B
+WARN	equivalent_pair	CHEBI:21759	owl:equivalentClass	N-methyl-N'-nitro-N-nitrosoguanidine
+WARN	equivalent_pair	CHEBI:22025	owl:equivalentClass	S-2-chloroethylcysteine
+WARN	equivalent_pair	CHEBI:22526	owl:equivalentClass	aminopterin
+WARN	equivalent_pair	CHEBI:23359	owl:equivalentClass	colchicine
+WARN	equivalent_pair	CHEBI:23414	owl:equivalentClass	cupric sulfate
+WARN	equivalent_pair	CHEBI:23704	owl:equivalentClass	diepoxybutane
+WARN	equivalent_pair	CHEBI:23705	owl:equivalentClass	diepoxyoctane
+WARN	equivalent_pair	CHEBI:23994	owl:equivalentClass	ethyl methanesulfonate
+WARN	equivalent_pair	CHEBI:23995	owl:equivalentClass	ethyl nitrosourea
+WARN	equivalent_pair	CHEBI:24431	owl:equivalentClass	chemical
+WARN	equivalent_pair	CHEBI:24564	owl:equivalentClass	hexamethylmelamine
+WARN	equivalent_pair	CHEBI:24565	owl:equivalentClass	hexamethylphosphoramide
+WARN	equivalent_pair	CHEBI:24624	owl:equivalentClass	hycanthon methanesulfonate
+WARN	equivalent_pair	CHEBI:24835	owl:equivalentClass	inorganic compound
+WARN	equivalent_pair	CHEBI:24859	owl:equivalentClass	iodine
+WARN	equivalent_pair	CHEBI:25234	owl:equivalentClass	methoxy diethylnitrosamine
+WARN	equivalent_pair	CHEBI:25255	owl:equivalentClass	methyl methanesulfonate
+WARN	equivalent_pair	CHEBI:25434	owl:equivalentClass	bis(2-chloroethyl) sulfide
+WARN	equivalent_pair	CHEBI:25813	owl:equivalentClass	p-N,N-di(2-chloroethyl)aminophenylvaleric acid
+WARN	equivalent_pair	CHEBI:25814	owl:equivalentClass	p-N,N-di-(2-chloroethyl)amino-D-phenylalanine
+WARN	equivalent_pair	CHEBI:25816	owl:equivalentClass	p-N,N-di-(2-chloroethyl)amino-L-phenylalanine
+WARN	equivalent_pair	CHEBI:25818	owl:equivalentClass	p-N,N-di-(2-chloroethyl)aminophenylethylamine
+WARN	equivalent_pair	CHEBI:25829	owl:equivalentClass	p-p'-N,N-di(2-chloroethyl)aminophenoxyphenylalanine
+WARN	equivalent_pair	CHEBI:26491	owl:equivalentClass	quinhydrone
+WARN	equivalent_pair	CHEBI:26709	owl:equivalentClass	sodium bisulphite
+WARN	equivalent_pair	CHEBI:26800	owl:equivalentClass	styryl quinoline
+WARN	equivalent_pair	CHEBI:27090	owl:equivalentClass	triaziquone
+WARN	equivalent_pair	CHEBI:27292	owl:equivalentClass	vinyl carbamate
+WARN	equivalent_pair	CHEBI:27504	owl:equivalentClass	mitomycin C
+WARN	equivalent_pair	CHEBI:27561	owl:equivalentClass	ethylene oxide
+WARN	equivalent_pair	CHEBI:27666	owl:equivalentClass	actinomycin D
+WARN	equivalent_pair	CHEBI:27732	owl:equivalentClass	caffeine
+WARN	equivalent_pair	CHEBI:27789	owl:equivalentClass	1,2-dichloroethane
+WARN	equivalent_pair	CHEBI:27899	owl:equivalentClass	cisplatin
+WARN	equivalent_pair	CHEBI:27919	owl:equivalentClass	triethylenemelamine
+WARN	equivalent_pair	CHEBI:28262	owl:equivalentClass	dimethyl sulfoxide
+WARN	equivalent_pair	CHEBI:28534	owl:equivalentClass	1,2-dibromoethane
+WARN	equivalent_pair	CHEBI:28741	owl:equivalentClass	sodium fluoride
+WARN	equivalent_pair	CHEBI:28775	owl:equivalentClass	hesperidine
+WARN	equivalent_pair	CHEBI:28830	owl:equivalentClass	p-N,N-di-(2-chloroethyl)aminophenylbutyric acid
+WARN	equivalent_pair	CHEBI:28876	owl:equivalentClass	p-N,N-di-(2-chloroethyl)amino-DL-phenylalanine
+WARN	equivalent_pair	CHEBI:28901	owl:equivalentClass	1,4-dimethanesulfonoxybutane
+WARN	equivalent_pair	CHEBI:28954	owl:equivalentClass	fagaronine
+WARN	equivalent_pair	CHEBI:29238	owl:equivalentClass	3H
+WARN	equivalent_pair	CHEBI:29865	owl:equivalentClass	benzo(alpha)pyrene
+WARN	equivalent_pair	CHEBI:30969	owl:equivalentClass	ethylenimine
+WARN	equivalent_pair	CHEBI:33118	owl:equivalentClass	H3BO3
+WARN	equivalent_pair	CHEBI:34699	owl:equivalentClass	diethyl sulfate
+WARN	equivalent_pair	CHEBI:34873	owl:equivalentClass	N-nitrosodiethylamine
+WARN	equivalent_pair	CHEBI:35299	owl:equivalentClass	1,2:5,6-dibenzanthracene
+WARN	equivalent_pair	CHEBI:35702	owl:equivalentClass	ethyl ether
+WARN	equivalent_pair	CHEBI:35807	owl:equivalentClass	N-nitrosodimethylamine
+WARN	equivalent_pair	CHEBI:37595	owl:equivalentClass	quinacrine mustard
+WARN	equivalent_pair	CHEBI:37598	owl:equivalentClass	nitrogen mustard
+WARN	equivalent_pair	CHEBI:37972	owl:equivalentClass	32P
+WARN	equivalent_pair	CHEBI:46790	owl:equivalentClass	2-methoxyethanol
+WARN	equivalent_pair	CHEBI:50102	owl:equivalentClass	nitrosomethyl urea
+WARN	equivalent_pair	CHEBI:51052	owl:equivalentClass	lucanthone
+WARN	equivalent_pair	CHEBI:53526	owl:equivalentClass	3H-thymidine
+WARN	equivalent_pair	CHEBI:67107	owl:equivalentClass	1,4-dimethanesulfonoxy-1,4-dimethylbutane
+WARN	equivalent_pair	CHEBI:67142	owl:equivalentClass	base analog
 INFO	lowercase_definition	part of	definition	a core relation that holds between a part and its whole@en
 INFO	lowercase_definition	has part	definition	a core relation that holds between a whole and its part@en
-INFO	lowercase_definition	precedes	definition	<x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en>
-INFO	lowercase_definition	0-10% egg length	definition	0-10% of egg length from the posterior tip of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	0-20% egg length	definition	0-20% of egg length from the posterior tip of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	0-30% egg length	definition	0-30% of egg length from the posterior tip of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	0-40% egg length	definition	0-40% of egg length from the posterior tip of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	0-50% egg length	definition	0-50% of egg length from the posterior tip of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	0-60% egg length	definition	0-60% of egg length from the posterior tip of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	0-70% egg length	definition	0-70% of egg length from the posterior tip of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	0-80% egg length	definition	0-80% of egg length from the posterior tip of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	0-90% egg length	definition	0-90% of egg length from the posterior tip of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	10% egg length	definition	10% of egg length from the posterior tip of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	10-100% egg length	definition	10-100% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	10-20% egg length	definition	10-20% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	10-30% egg length	definition	10-30% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	10-40% egg length	definition	10-40% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	10-50% egg length	definition	10-50% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	10-60% egg length	definition	10-60% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	10-70% egg length	definition	10-70% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	10-80% egg length	definition	10-80% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	10-90% egg length	definition	10-90% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	20% egg length	definition	20% of egg length from the posterior tip of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	20-100% egg length	definition	20-100% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	20-30% egg length	definition	20-30% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	20-40% egg length	definition	20-40% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	20-50% egg length	definition	20-50% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	20-60% egg length	definition	20-60% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	20-70% egg length	definition	20-70% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	20-80% egg length	definition	20-80% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	20-90% egg length	definition	20-90% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	30% egg length	definition	30% of egg length from the posterior tip of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	30-100% egg length	definition	30-100% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	30-40% egg length	definition	30-40% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	30-50% egg length	definition	30-50% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	30-60% egg length	definition	30-60% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	30-70% egg length	definition	30-70% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	30-80% egg length	definition	30-80% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	30-90% egg length	definition	30-90% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	40% egg length	definition	40% of egg length from the posterior tip of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	40-100% egg length	definition	40-100% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	40-50% egg length	definition	40-50% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	40-60% egg length	definition	40-60% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	40-70% egg length	definition	40-70% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	40-80% egg length	definition	40-80% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	40-90% egg length	definition	40-90% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	50% egg length	definition	50% of egg length from the posterior tip of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	50-100% egg length	definition	50-100% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	50-60% egg length	definition	50-60% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	50-70% egg length	definition	50-70% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	50-80% egg length	definition	50-80% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	50-90% egg length	definition	50-90% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	60% egg length	definition	60% of egg length from the posterior tip of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	60-100% egg length	definition	60-100% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	60-80% egg length	definition	60-80% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	60-90% egg length	definition	60-90% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	70% egg length	definition	70% of egg length from the posterior tip of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	70-100% egg length	definition	70-100% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	70-80% egg length	definition	70-80% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	70-90% egg length	definition	70-90% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	80% egg length	definition	80% of egg length from the posterior tip of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	80-90% egg length	definition	80-90% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	90% egg length	definition	90% of egg length from the posterior tip of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	90-100% egg length	definition	90-100% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	60-70% egg length	definition	60-70% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
-INFO	lowercase_definition	80-100% egg length	definition	80-100% of egg length from the posterior tip (0%) of the egg or pre-gastrula embryo.
+INFO	lowercase_definition	precedes	definition	x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en
 INFO	lowercase_definition	characteristic of	definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
 INFO	lowercase_definition	characteristic of part of	definition	q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.
 INFO	lowercase_definition	has member	definition	has member is a mereological relation between a collection and an item.
