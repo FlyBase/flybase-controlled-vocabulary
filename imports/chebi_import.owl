@@ -14,9 +14,9 @@
      xmlns:chebi3="http://purl.obolibrary.org/obo/chebi#1"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/fbcv/imports/chebi_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2021-12-13/imports/chebi_import.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chebi/206/chebi.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-12-13</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2022-01-24/imports/chebi_import.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chebi/207/chebi.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-01-24</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -12462,6 +12462,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_22494">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22718"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/chebi#is_conjugate_base_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22495"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>aminobenzoates</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>CHEBI:22494</oboInOwl:id>
@@ -12472,6 +12478,44 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22494"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>aminobenzoates</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_22495 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_22495">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22723"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33856"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/chebi#is_conjugate_acid_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22494"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <chebi:charge>0</chebi:charge>
+        <chebi:formula>C7H7NO2</chebi:formula>
+        <chebi:mass>137.136</chebi:mass>
+        <chebi:monoisotopicmass>137.04768</chebi:monoisotopicmass>
+        <oboInOwl:hasExactSynonym>aminobenzoic acid</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>Aminobenzoesaeure</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>CHEBI:22495</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label>aminobenzoic acid</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22495"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>aminobenzoic acid</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IUPAC</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#IUPAC_NAME"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22495"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>Aminobenzoesaeure</owl:annotatedTarget>
         <oboInOwl:hasDbXref>ChEBI</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -12880,6 +12924,20 @@
         <owl:annotatedTarget>benzoate anion</owl:annotatedTarget>
         <oboInOwl:hasDbXref>ChEBI</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_22723 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_22723">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22712"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33859"/>
+        <obo:IAO_0000115>Any aromatic carboxylic acid that consists of benzene in which at least a single hydrogen has been substituted by a carboxy group.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:22723</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label>benzoic acids</rdfs:label>
+    </owl:Class>
     
 
 
@@ -35547,6 +35605,36 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33859 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33859">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33575"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33659"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/chebi#is_conjugate_acid_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_91007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any carboxylic acid in which the carboxy group is directly bonded to an aromatic ring.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>CHEBI:13817</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>CHEBI:13821</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>CHEBI:2830</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>aromatic carboxylic acids</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>CHEBI:33859</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label>aromatic carboxylic acid</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33859"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>aromatic carboxylic acids</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_33860 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33860">
@@ -56141,6 +56229,37 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>receptor modulators</owl:annotatedTarget>
         <oboInOwl:hasDbXref>ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_91007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_91007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_29067"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/chebi#is_conjugate_base_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33859"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A carboxylic acic anion obtained by deprotonation of the carboxy group of any aromatic carboxylic acid. Major species at pH 7.3.</obo:IAO_0000115>
+        <chebi:charge>-1</chebi:charge>
+        <chebi:formula>CO2R</chebi:formula>
+        <chebi:mass>44.010</chebi:mass>
+        <chebi:monoisotopicmass>43.98983</chebi:monoisotopicmass>
+        <chebi:smiles>*C([O-])=O</chebi:smiles>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>an aromatic carboxylate</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>CHEBI:91007</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:label>aromatic carboxylate</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_91007"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>an aromatic carboxylate</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>UniProt</oboInOwl:hasDbXref>
     </owl:Axiom>
 </rdf:RDF>
 
