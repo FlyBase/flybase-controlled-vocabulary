@@ -15,7 +15,7 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/fbcv/components/dpo-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2021-12-13/components/dpo-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2022-01-24/components/dpo-simple.owl"/>
         <ns:attributionURL>http://dx.doi.org/10.1186/2041-1480-4-30</ns:attributionURL>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000347"/>
         <dc:creator>http://orcid.org/0000-0002-1373-1705</dc:creator>
@@ -25,9 +25,9 @@
         <dc:description>An ontology for the description of Drosophila melanogaster phenotypes.</dc:description>
         <dc:title>Drosophila Phenotype Ontology (DPO)</dc:title>
         <terms:license>https://creativecommons.org/licenses/by/3.0/</terms:license>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10:12:2021 15:11</oboInOwl:date>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24:01:2022 12:23</oboInOwl:date>
         <oboInOwl:default-namespace>FlyBase miscellaneous CV</oboInOwl:default-namespace>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-12-10</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-01-24</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -945,15 +945,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000232>This relation is intended to be used in combination with PATO, to be able to refine PATO quality classes using modifiers such as &apos;abnormal&apos; and &apos;normal&apos;. It has yet to be formally aligned into an ontological framework; it&apos;s not clear what the ontological status of the &quot;modifiers&quot; are.</obo:IAO_0000232>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <rdfs:label>has modifier</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/fbcv#has_role -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fbcv#has_role">
-        <oboInOwl:id>has_role</oboInOwl:id>
-        <rdfs:label>has role</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2016,13 +2007,13 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000391"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A phenotype exhibited following mechanical shock and consisting of a brief period of intense, uncoordinated motor activity (legs and wings flailing, abdomen coiling) followed by a prolonged period of paralysis.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0022877</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0022877</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000391"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>easily shocked</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0022877</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0022877</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2440,7 +2431,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Phenotype that is any abnormality in response to heat (GO:0009408). &apos;response to heat&apos; is defined as: &apos;Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a heat stimulus, a temperature stimulus above the optimal temperature for that organism.&apos;</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:lr</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:lr</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3313,7 +3304,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedTarget>Phenotype that is any abnormality in cell adhesion (GO:0007155). &apos;cell adhesion&apos; is defined as: &apos;The attachment of a cell, either to another cell or to an underlying substrate such as the extracellular matrix, via cell adhesion molecules.&apos;</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GOC:hb</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:pf</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:pf</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3540,7 +3531,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Phenotype that is any abnormality in response to cold (GO:0009409). &apos;response to cold&apos; is defined as: &apos;Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a cold stimulus, a temperature stimulus below the optimal temperature for that organism.&apos;</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:lr</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:lr</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3834,7 +3825,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasDbXref>GOC:cjm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GOC:ems</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:pf</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:pf</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Wikipedia:Cell_migration</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -3913,7 +3904,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000720"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Phenotype that is any abnormality or in or absence of a jump response (GO:0007630). The jump response in Drosophila is a reflex escape response that can be triggered by a number of signals including odor and light. Standard assays are commonly used to test odor and light induced jump response.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0187887</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0187887</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FlyBase:FBrf0191819</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -4038,7 +4029,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000791"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A phenotype in which the aging process (GO:0007568) is slower than in wild-type.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOC</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOC</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4056,7 +4047,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000792"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A phenotype in which the aging process (GO:0007568) is accelerated compared to wild-type.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOC</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:DOC</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4885,7 +4876,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0004000"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Phenotype that is any abnormality in sensory perception of light stimulus (GO:0050953). &apos;sensory perception of light stimulus&apos; is defined as: &apos;The series of events required for an organism to receive a sensory light stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process.&apos;</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:MMC</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBC:MMC</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GOC:ai</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -5274,7 +5265,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedTarget>Phenotype that is an increase in the rate of cell adhesion (GO:0007155). &apos;cell adhesion&apos; is defined as: &apos;The attachment of a cell, either to another cell or to an underlying substrate such as the extracellular matrix, via cell adhesion molecules.&apos;</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:CP</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GOC:hb</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:pf</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:pf</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5296,7 +5287,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedTarget>Phenotype that is a decrease in the rate of cell adhesion (GO:0007155). &apos;cell adhesion&apos; is defined as: &apos;The attachment of a cell, either to another cell or to an underlying substrate such as the extracellular matrix, via cell adhesion molecules.&apos;</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:CP</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GOC:hb</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:pf</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:pf</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 

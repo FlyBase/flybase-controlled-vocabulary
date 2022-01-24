@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbcv/releases/2021-12-13
-date: 13:12:2021 15:03
+data-version: fbcv/releases/2022-01-24
+date: 24:01:2022 14:15
 subsetdef: 1_STAR ""
 subsetdef: 2_STAR ""
 subsetdef: 3_STAR ""
@@ -50,7 +50,7 @@ property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-00
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-5948-3092 xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-0027-0858 xsd:string
 property_value: IAO:0000700 FBcv:0000000
-property_value: owl:versionInfo "2021-12-13" xsd:string
+property_value: owl:versionInfo "2022-01-24" xsd:string
 
 [Term]
 id: BFO:0000002
@@ -3372,6 +3372,22 @@ namespace: chebi_ontology
 subset: 3_STAR
 synonym: "aminobenzoates" RELATED [ChEBI]
 is_a: CHEBI:22718 ! benzoates
+relationship: is_conjugate_base_of CHEBI:22495 ! aminobenzoic acid
+
+[Term]
+id: CHEBI:22495
+name: aminobenzoic acid
+namespace: chebi_ontology
+subset: 3_STAR
+synonym: "Aminobenzoesaeure" RELATED [ChEBI]
+synonym: "aminobenzoic acid" EXACT IUPAC_NAME [IUPAC]
+is_a: CHEBI:22723 ! benzoic acids
+is_a: CHEBI:33856 ! aromatic amino acid
+relationship: is_conjugate_acid_of CHEBI:22494 ! aminobenzoate
+property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/formula "C7H7NO2" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/mass "137.136" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "137.04768" xsd:string
 
 [Term]
 id: CHEBI:22526
@@ -3500,6 +3516,15 @@ def: "A monocarboxylic acid anion obtained by deprotonation of the carboxy group
 subset: 3_STAR
 synonym: "benzoate anion" RELATED [ChEBI]
 is_a: CHEBI:35757 ! monocarboxylic acid anion
+
+[Term]
+id: CHEBI:22723
+name: benzoic acids
+namespace: chebi_ontology
+def: "Any aromatic carboxylic acid that consists of benzene in which at least a single hydrogen has been substituted by a carboxy group." []
+subset: 3_STAR
+is_a: CHEBI:22712 ! benzenes
+is_a: CHEBI:33859 ! aromatic carboxylic acid
 
 [Term]
 id: CHEBI:22727
@@ -10167,6 +10192,20 @@ property_value: http://purl.obolibrary.org/obo/chebi/mass "88.085" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "74.02420" xsd:string
 
 [Term]
+id: CHEBI:33859
+name: aromatic carboxylic acid
+namespace: chebi_ontology
+alt_id: CHEBI:13817
+alt_id: CHEBI:13821
+alt_id: CHEBI:2830
+def: "Any carboxylic acid in which the carboxy group is directly bonded to an aromatic ring." []
+subset: 3_STAR
+synonym: "aromatic carboxylic acids" RELATED [ChEBI]
+is_a: CHEBI:33575 ! carboxylic acid
+is_a: CHEBI:33659 ! organic aromatic compound
+relationship: is_conjugate_acid_of CHEBI:91007 ! aromatic carboxylate
+
+[Term]
 id: CHEBI:33860
 name: aromatic amine
 namespace: chebi_ontology
@@ -16562,6 +16601,21 @@ def: "A drug that acts as an antagonist, agonist, reverse agonist, or in some ot
 subset: 3_STAR
 synonym: "receptor modulators" RELATED [ChEBI]
 is_a: CHEBI:23888 ! drug
+
+[Term]
+id: CHEBI:91007
+name: aromatic carboxylate
+namespace: chebi_ontology
+def: "A carboxylic acic anion obtained by deprotonation of the carboxy group of any aromatic carboxylic acid. Major species at pH 7.3." []
+subset: 3_STAR
+synonym: "an aromatic carboxylate" RELATED [UniProt]
+is_a: CHEBI:29067 ! carboxylic acid anion
+relationship: is_conjugate_base_of CHEBI:33859 ! aromatic carboxylic acid
+property_value: http://purl.obolibrary.org/obo/chebi/charge "-1" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/formula "CO2R" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/mass "44.010" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "43.98983" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/smiles "*C([O-])=O" xsd:string
 
 [Term]
 id: FBcv:0000000
@@ -27811,6 +27865,12 @@ id: GO:0016772
 name: transferase activity, transferring phosphorus-containing groups
 is_a: GO:0016740 ! transferase activity
 
+[Term]
+id: PATO:0000001
+name: quality
+is_a: BFO:0000020 ! specifically dependent continuant
+property_value: IAO:0000589 "quality (PATO)" xsd:string
+
 [Typedef]
 id: BFO:0000062
 name: preceded by
@@ -28977,11 +29037,38 @@ name: utilizes
 def: "X utilizes Y means X and Y are material entities, and X is capable of some process P that has input Y." []
 property_value: IAO:0000112 "A diagnostic testing device utilizes a specimen." xsd:string
 property_value: IAO:0000117 "Asiyah Lin" xsd:string
-property_value: IAO:0000117 "Bill Duncan (https://orcid.org/0000-0001-9625-1899)" xsd:string
+property_value: IAO:0000117 "https://orcid.org/0000-0001-9625-1899 Bill Duncan" xsd:string
 property_value: IAO:0000232 "A diagnostic testing device utilizes a specimen means that the diagnostic testing device is capable of an assay, and this assay a specimen as its input." xsd:string
 property_value: IAO:0000232 "See github ticket https://github.com/oborel/obo-relations/issues/497" xsd:string
 holds_over_chain: RO:0002215 RO:0002233
 creation_date: 2021-11-08
+
+[Typedef]
+id: RO:0019000
+name: regulates characteristic
+def: "A relationship that holds between a process and a characteristic in which process (P) regulates characteristic (C) iff: P results in the existence of C OR affects the intensity or magnitude of C." []
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-8688-6599
+domain: BFO:0000015 ! process
+range: PATO:0000001 ! quality
+holds_over_chain: RO:0002211 RO:0019000
+is_a: RO:0002410 ! causally related to
+
+[Typedef]
+id: RO:0019001
+name: positively regulates characteristic
+def: "A relationship that holds between a process and a characteristic in which process (P) positively regulates characteristic (C) iff: P results in an increase in the intensity or magnitude of C." []
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-8688-6599
+holds_over_chain: RO:0002213 RO:0019001
+is_a: RO:0019000 ! regulates characteristic
+
+[Typedef]
+id: RO:0019002
+name: negatively regulates characteristic
+def: "A relationship that holds between a process and a characteristic in which process (P) negatively regulates characteristic (C) iff: P results in a decrease in the intensity or magnitude of C." []
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-8688-6599
+holds_over_chain: RO:0002212 RO:0019001
+holds_over_chain: RO:0002213 RO:0019002
+is_a: RO:0019000 ! regulates characteristic
 
 [Typedef]
 id: characteristic_of

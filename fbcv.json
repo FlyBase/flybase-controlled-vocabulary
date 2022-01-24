@@ -209,6 +209,15 @@
         },
         {
           "domainClassIds": [
+            "http://purl.obolibrary.org/obo/BFO_0000015"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0019000",
+          "rangeClassIds": [
+            "http://purl.obolibrary.org/obo/PATO_0000001"
+          ]
+        },
+        {
+          "domainClassIds": [
             "http://purl.obolibrary.org/obo/BFO_0000020"
           ],
           "predicateId": "http://purl.obolibrary.org/obo/RO_0002573",
@@ -886,6 +895,11 @@
           "obj": "http://purl.obolibrary.org/obo/BFO_0000020",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/BFO_0000019"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000020",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/PATO_0000001"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000050",
@@ -2164,8 +2178,18 @@
         },
         {
           "obj": "http://purl.obolibrary.org/obo/CHEBI_22494",
+          "pred": "http://purl.obolibrary.org/obo/chebi#is_conjugate_acid_of",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_22495"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_22494",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/CHEBI_38796"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_22495",
+          "pred": "http://purl.obolibrary.org/obo/chebi#is_conjugate_base_of",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_22494"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/CHEBI_22526",
@@ -2280,6 +2304,11 @@
         {
           "obj": "http://purl.obolibrary.org/obo/CHEBI_22712",
           "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_22723"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_22712",
+          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/CHEBI_27024"
         },
         {
@@ -2296,6 +2325,11 @@
           "obj": "http://purl.obolibrary.org/obo/CHEBI_22718",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/CHEBI_22494"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_22723",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_22495"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/CHEBI_22727",
@@ -4863,6 +4897,11 @@
           "sub": "http://purl.obolibrary.org/obo/CHEBI_59876"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_29067",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_91007"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/CHEBI_29101",
           "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
           "sub": "http://purl.obolibrary.org/obo/CHEBI_26714"
@@ -6170,6 +6209,11 @@
         {
           "obj": "http://purl.obolibrary.org/obo/CHEBI_33575",
           "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33859"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33575",
+          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/CHEBI_35692"
         },
         {
@@ -6401,6 +6445,11 @@
           "obj": "http://purl.obolibrary.org/obo/CHEBI_33659",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/CHEBI_33856"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33659",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33859"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/CHEBI_33659",
@@ -6840,6 +6889,11 @@
         {
           "obj": "http://purl.obolibrary.org/obo/CHEBI_33856",
           "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_22495"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33856",
+          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/CHEBI_25813"
         },
         {
@@ -6851,6 +6905,16 @@
           "obj": "http://purl.obolibrary.org/obo/CHEBI_33856",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/FBcv_0000594"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33859",
+          "pred": "http://purl.obolibrary.org/obo/chebi#is_conjugate_base_of",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_91007"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_33859",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_22723"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/CHEBI_33860",
@@ -11966,6 +12030,11 @@
           "obj": "http://purl.obolibrary.org/obo/CHEBI_90710",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/CHEBI_51061"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CHEBI_91007",
+          "pred": "http://purl.obolibrary.org/obo/chebi#is_conjugate_acid_of",
+          "sub": "http://purl.obolibrary.org/obo/CHEBI_33859"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/FBcv_0000000",
@@ -19393,6 +19462,11 @@
           "sub": "http://purl.obolibrary.org/obo/RO_0002608"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/RO_0002410",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0019000"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/RO_0002411",
           "pred": "inverseOf",
           "sub": "http://purl.obolibrary.org/obo/RO_0002404"
@@ -19651,6 +19725,16 @@
           "obj": "http://purl.obolibrary.org/obo/RO_0011002",
           "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/RO_0002448"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/RO_0019000",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0019001"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/RO_0019000",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0019002"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/chebi#is_conjugate_base_of",
@@ -21764,7 +21848,7 @@
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#date",
-            "val": "13:12:2021 15:03"
+            "val": "24:01:2022 14:15"
           },
           {
             "pred": "http://www.geneontology.org/formats/oboInOwl#default-namespace",
@@ -21776,11 +21860,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-12-13"
+            "val": "2022-01-24"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/fbcv/releases/2021-12-13/fbcv.json",
+        "version": "http://purl.obolibrary.org/obo/fbcv/releases/2022-01-24/fbcv.json",
         "xrefs": []
       },
       "nodes": [
@@ -34421,6 +34505,55 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_22495",
+          "lbl": "aminobenzoic acid",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/chebi/charge",
+                "val": "0"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/chebi/formula",
+                "val": "C7H7NO2"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/chebi/mass",
+                "val": "137.136"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/chebi/monoisotopicmass",
+                "val": "137.04768"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "synonymType": "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+                "val": "aminobenzoic acid",
+                "xrefs": [
+                  "IUPAC"
+                ]
+              },
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "Aminobenzoesaeure",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/CHEBI_22526",
           "lbl": "4-aminofolic acid",
           "meta": {
@@ -34891,6 +35024,26 @@
                   "ChEBI"
                 ]
               }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_22723",
+          "lbl": "benzoic acids",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "Any aromatic carboxylic acid that consists of benzene in which at least a single hydrogen has been substituted by a carboxy group.",
+              "xrefs": []
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
             ]
           },
           "type": "CLASS"
@@ -59519,6 +59672,47 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_33859",
+          "lbl": "aromatic carboxylic acid",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+                "val": "CHEBI:13817"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+                "val": "CHEBI:13821"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+                "val": "CHEBI:2830"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "Any carboxylic acid in which the carboxy group is directly bonded to an aromatic ring.",
+              "xrefs": []
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "aromatic carboxylic acids",
+                "xrefs": [
+                  "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/CHEBI_33860",
           "lbl": "aromatic amine",
           "meta": {
@@ -83878,6 +84072,55 @@
                 "val": "receptor modulators",
                 "xrefs": [
                   "ChEBI"
+                ]
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/CHEBI_91007",
+          "lbl": "aromatic carboxylate",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/chebi/charge",
+                "val": "-1"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/chebi/formula",
+                "val": "CO2R"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/chebi/mass",
+                "val": "44.010"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/chebi/monoisotopicmass",
+                "val": "43.98983"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/chebi/smiles",
+                "val": "*C([O-])=O"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "chebi_ontology"
+              }
+            ],
+            "definition": {
+              "val": "A carboxylic acic anion obtained by deprotonation of the carboxy group of any aromatic carboxylic acid. Major species at pH 7.3.",
+              "xrefs": []
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/chebi#3_STAR"
+            ],
+            "synonyms": [
+              {
+                "pred": "hasRelatedSynonym",
+                "val": "an aromatic carboxylate",
+                "xrefs": [
+                  "UniProt"
                 ]
               }
             ]
@@ -117270,6 +117513,19 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/PATO_0000001",
+          "lbl": "quality",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000589",
+                "val": "quality (PATO)"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/RO_0000052",
           "lbl": "characteristic of",
           "meta": {
@@ -120209,6 +120465,94 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/RO_0017001",
+          "lbl": "utilizes",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "A diagnostic testing device utilizes a specimen."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Asiyah Lin"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "https://orcid.org/0000-0001-9625-1899 Bill Duncan"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
+                "val": "A diagnostic testing device utilizes a specimen means that the diagnostic testing device is capable of an assay, and this assay a specimen as its input."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
+                "val": "See github ticket https://github.com/oborel/obo-relations/issues/497"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-11-08"
+              }
+            ],
+            "definition": {
+              "val": "X utilizes Y means X and Y are material entities, and X is capable of some process P that has input Y.",
+              "xrefs": []
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0019000",
+          "lbl": "regulates characteristic",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "https://orcid.org/0000-0002-8688-6599"
+              }
+            ],
+            "definition": {
+              "val": "A relationship that holds between a process and a characteristic in which process (P) regulates characteristic (C) iff: P results in the existence of C OR affects the intensity or magnitude of C.",
+              "xrefs": []
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0019001",
+          "lbl": "positively regulates characteristic",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "https://orcid.org/0000-0002-8688-6599"
+              }
+            ],
+            "definition": {
+              "val": "A relationship that holds between a process and a characteristic in which process (P) positively regulates characteristic (C) iff: P results in an increase in the intensity or magnitude of C.",
+              "xrefs": []
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0019002",
+          "lbl": "negatively regulates characteristic",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "https://orcid.org/0000-0002-8688-6599"
+              }
+            ],
+            "definition": {
+              "val": "A relationship that holds between a process and a characteristic in which process (P) negatively regulates characteristic (C) iff: P results in a decrease in the intensity or magnitude of C.",
+              "xrefs": []
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/RO_0040042",
           "lbl": "is homeomorphic for",
           "meta": {
@@ -120406,43 +120750,6 @@
                 "val": "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"
               }
             ]
-          },
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/ro.owl/RO_0017001",
-          "lbl": "utilizes",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "A diagnostic testing device utilizes a specimen."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Asiyah Lin"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Bill Duncan (https://orcid.org/0000-0001-9625-1899)"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
-                "val": "A diagnostic testing device utilizes a specimen means that the diagnostic testing device is capable of an assay, and this assay a specimen as its input."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
-                "val": "See github ticket https://github.com/oborel/obo-relations/issues/497"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
-                "val": "2021-11-08"
-              }
-            ],
-            "definition": {
-              "val": "X utilizes Y means X and Y are material entities, and X is capable of some process P that has input Y.",
-              "xrefs": []
-            }
           },
           "type": "PROPERTY"
         },
@@ -120840,11 +121147,6 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/fbcv#has_role",
-          "lbl": "has role",
-          "type": "PROPERTY"
-        },
-        {
           "id": "http://www.geneontology.org/formats/oboInOwl#SubsetProperty",
           "lbl": "subset_property",
           "type": "PROPERTY"
@@ -121141,6 +121443,13 @@
         },
         {
           "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002211",
+            "http://purl.obolibrary.org/obo/RO_0019000"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0019000"
+        },
+        {
+          "chainPredicateIds": [
             "http://purl.obolibrary.org/obo/RO_0002212",
             "http://purl.obolibrary.org/obo/RO_0002212"
           ],
@@ -121169,6 +121478,13 @@
         },
         {
           "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002212",
+            "http://purl.obolibrary.org/obo/RO_0019001"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0019002"
+        },
+        {
+          "chainPredicateIds": [
             "http://purl.obolibrary.org/obo/RO_0002213",
             "http://purl.obolibrary.org/obo/RO_0002215"
           ],
@@ -121190,10 +121506,24 @@
         },
         {
           "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002213",
+            "http://purl.obolibrary.org/obo/RO_0019001"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0019001"
+        },
+        {
+          "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002213",
+            "http://purl.obolibrary.org/obo/RO_0019002"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0019002"
+        },
+        {
+          "chainPredicateIds": [
             "http://purl.obolibrary.org/obo/RO_0002215",
             "http://purl.obolibrary.org/obo/RO_0002233"
           ],
-          "predicateId": "http://purl.obolibrary.org/obo/ro.owl/RO_0017001"
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0017001"
         },
         {
           "chainPredicateIds": [
