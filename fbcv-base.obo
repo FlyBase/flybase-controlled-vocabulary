@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbcv/releases/2022-01-24/fbcv-base.owl
-date: 24:01:2022 14:15
+data-version: fbcv/releases/2022-02-24/fbcv-base.owl
+date: 24:02:2022 15:00
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -40,14 +40,14 @@ ontology: fbcv/fbcv-base
 property_value: attributionURL http://dx.doi.org/10.1186/2041-1480-4-30 xsd:string
 property_value: dc-description "A miscellaneous ontology of terms used for curation in FlyBase, including the DPO." xsd:string
 property_value: dc-title "FlyBase Controlled Vocabulary (FBcv)" xsd:string
-property_value: dcterms-license https://creativecommons.org/licenses/by/3.0/ xsd:string
+property_value: dcterms-license https://creativecommons.org/licenses/by/4.0/ xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-1373-1705 xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-7073-9172 xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0001-5948-3092 xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator https://orcid.org/0000-0002-0027-0858 xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: IAO:0000700 FBcv:0000000
-property_value: owl:versionInfo "2022-01-24" xsd:string
+property_value: owl:versionInfo "2022-02-24" xsd:string
 
 [Term]
 id: CHEBI:13941
@@ -8660,7 +8660,7 @@ id: FBcv:0003165
 name: gene perturbation
 namespace: biosample_attribute
 def: "A sample that has undergone a disruption to the activity of one of its genes." [FBC:GD]
-is_a: FBcv:0003164 ! biosample method
+is_a: FBcv:0009014 ! biosample treatment method
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -8669,7 +8669,7 @@ id: FBcv:0003166
 name: biotic treatment
 namespace: biosample_attribute
 def: "Treatment of an organism with a biological stimulus, such as an infectious or parasitic agent." [FBC:GD]
-is_a: FBcv:0003164 ! biosample method
+is_a: FBcv:0009014 ! biosample treatment method
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -8678,7 +8678,7 @@ id: FBcv:0003167
 name: chemical treatment
 namespace: biosample_attribute
 def: "A sample that has been exposed to one or more forms of chemical agent." [FBC:CT]
-is_a: FBcv:0003164 ! biosample method
+is_a: FBcv:0009014 ! biosample treatment method
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -8687,7 +8687,7 @@ id: FBcv:0003168
 name: physical treatment
 namespace: biosample_attribute
 def: "A sample that has been exposed to changes in the physical environment including temperature, pressure and radiation." [FBC:GD]
-is_a: FBcv:0003164 ! biosample method
+is_a: FBcv:0009014 ! biosample treatment method
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -8696,7 +8696,7 @@ id: FBcv:0003169
 name: tissue dissection
 namespace: biosample_attribute
 def: "A sample that has been dissected from the tissue of a more complete organism." [FBC:CT]
-is_a: FBcv:0003164 ! biosample method
+is_a: FBcv:0009015 ! biosample preparation method
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -8705,7 +8705,7 @@ id: FBcv:0003170
 name: cell isolation
 namespace: biosample_attribute
 def: "A single cell type that has been isolated by affinity purification or fluorescent cell sorting." [FBC:GD]
-is_a: FBcv:0003164 ! biosample method
+is_a: FBcv:0009015 ! biosample preparation method
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -8714,7 +8714,7 @@ id: FBcv:0003171
 name: subcellular fractionation
 namespace: biosample_attribute
 def: "A sample that has undergone fractionation in order to isolate specific subcellular components for study." [FBC:CT]
-is_a: FBcv:0003164 ! biosample method
+is_a: FBcv:0009015 ! biosample preparation method
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -8723,7 +8723,7 @@ id: FBcv:0003172
 name: cell ablation
 namespace: biosample_attribute
 def: "A sample in which specific cells within a tissue have been ablated by some method, such as targeted expression of a cell toxin, or laser ablation of fluorescently marked cells." [FBC:GD]
-is_a: FBcv:0003164 ! biosample method
+is_a: FBcv:0009014 ! biosample treatment method
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -8732,7 +8732,7 @@ id: FBcv:0003173
 name: targeted cell labeling
 namespace: biosample_attribute
 def: "A sample that has been labelled in a targeted, cell-specific manner." [FBC:CT]
-is_a: FBcv:0003164 ! biosample method
+is_a: FBcv:0009014 ! biosample treatment method
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -8741,7 +8741,7 @@ id: FBcv:0003174
 name: neuronal activity perturbation
 namespace: biosample_attribute
 def: "Neuronal activity that has been perturbed using genetically controlled agents to activate or depress membrane potential." [FBC:GD]
-is_a: FBcv:0003164 ! biosample method
+is_a: FBcv:0009014 ! biosample treatment method
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -11033,6 +11033,73 @@ created_by: http://orcid.org/0000-0002-6095-8718
 creation_date: 2021-07-26T13:45:06Z
 
 [Term]
+id: FBcv:0009009
+name: starvation
+namespace: biosample_attribute
+def: "A sample in which individuals have been deprived of food." [FBC:DPG]
+is_a: FBcv:0003146 ! growth condition
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2022-02-03T18:11:36Z
+
+[Term]
+id: FBcv:0009010
+name: cell dissociation
+namespace: biosample_attribute
+def: "A sample in which a biological specimen has been separated into individual cells." [EFO:0009091]
+xref: EFO:0009091
+is_a: FBcv:0009015 ! biosample preparation method
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2022-02-16T14:12:02Z
+
+[Term]
+id: FBcv:0009011
+name: mechanical cell dissociation
+namespace: biosample_attribute
+def: "A sample in which a biological specimen has been separated into individual cells by applying mechanical forces." [EFO:0009129]
+xref: EFO:0009129
+is_a: FBcv:0009010 ! cell dissociation
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2022-02-16T14:14:12Z
+
+[Term]
+id: FBcv:0009012
+name: enzymatic cell dissociation
+namespace: biosample_attribute
+def: "A sample in which a biological specimen has been separated into individual cells by using enzymes." [EFO:0009128]
+xref: EFO:0009128
+is_a: FBcv:0009010 ! cell dissociation
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2022-02-16T14:16:03Z
+
+[Term]
+id: FBcv:0009013
+name: chemical cell dissociation
+namespace: biosample_attribute
+def: "A sample in which a biological specimen has been separated into individual cells by using non-enzymatic chemicals." [EFO:0011026]
+xref: EFO:0011026
+is_a: FBcv:0009010 ! cell dissociation
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2022-02-16T14:19:01Z
+
+[Term]
+id: FBcv:0009014
+name: biosample treatment method
+namespace: biosample_attribute
+def: "Experimental treatment method that a biosample has been subjected to." [FBC:DPG]
+is_a: FBcv:0003164 ! biosample method
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2022-02-17T13:55:39Z
+
+[Term]
+id: FBcv:0009015
+name: biosample preparation method
+namespace: biosample_attribute
+def: "Method pertaining to the collection or isolation of a biosample." [FBC:DPG]
+is_a: FBcv:0003164 ! biosample method
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2022-02-17T14:12:00Z
+
+[Term]
 id: FBcv:0010000
 name: obsolete living stock
 comment: Consider - FBsv:0000002.
@@ -11303,7 +11370,6 @@ property_value: IAO:0000116 "Occurrents are not subject to change and so parthoo
 property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
 property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)\n\nA continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'." xsd:string
 property_value: IAO:0000118 "has_part" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/BFO
 property_value: RO:0001900 RO:0001901
 is_cyclic: false
 is_transitive: true
@@ -11337,7 +11403,6 @@ property_value: IAO:0000116 "Occurrents are not subject to change and so parthoo
 property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
 property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)\n\nA continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'." xsd:string
 property_value: IAO:0000118 "part_of" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/BFO
 property_value: RO:0001900 RO:0001901
 property_value: RO:0040042 BFO:0000002
 property_value: RO:0040042 BFO:0000003

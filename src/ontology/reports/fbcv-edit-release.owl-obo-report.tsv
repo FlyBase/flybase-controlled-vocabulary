@@ -183,6 +183,7 @@ WARN	equivalent_pair	CHEBI:51052	owl:equivalentClass	lucanthone
 WARN	equivalent_pair	CHEBI:53526	owl:equivalentClass	3H-thymidine
 WARN	equivalent_pair	CHEBI:67107	owl:equivalentClass	1,4-dimethanesulfonoxy-1,4-dimethylbutane
 WARN	equivalent_pair	CHEBI:67142	owl:equivalentClass	base analog
+WARN	duplicate_label_synonym	phenotypic class	has_exact_synonym	phenotypic class
 WARN	missing_definition	CHEBI:13941	definition	
 WARN	missing_definition	CHEBI:16842	definition	
 WARN	missing_definition	CHEBI:16991	definition	
@@ -319,7 +320,13 @@ We don't have definitions of 'meaning' or 'expression' or 'property'. For 'refer
 Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
 
 We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  @en"
-WARN	duplicate_label_synonym	phenotypic class	has_exact_synonym	phenotypic class
+INFO	lowercase_definition	part of	definition	a core relation that holds between a part and its whole@en
+INFO	lowercase_definition	has part	definition	a core relation that holds between a whole and its part@en
+INFO	lowercase_definition	precedes	definition	x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en
+INFO	lowercase_definition	characteristic of	definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
+INFO	lowercase_definition	characteristic of part of	definition	q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.
+INFO	lowercase_definition	has member	definition	has member is a mereological relation between a collection and an item.
+INFO	lowercase_definition	towards	definition	q towards e2 if and only if q is a relational quality such that q inheres-in some e, and e != e2 and q is dependent on e2
 INFO	missing_superclass	CHEBI:13941	rdfs:subClassOf	
 INFO	missing_superclass	CHEBI:16842	rdfs:subClassOf	
 INFO	missing_superclass	CHEBI:16991	rdfs:subClassOf	
@@ -453,10 +460,3 @@ INFO	missing_superclass	cold sensitive amorphic allele	rdfs:subClassOf
 INFO	missing_superclass	population of Drosophila	rdfs:subClassOf	
 INFO	missing_superclass	population of cells	rdfs:subClassOf	
 INFO	missing_superclass	somatic clone - tissue specific, Minute background	rdfs:subClassOf	
-INFO	lowercase_definition	part of	definition	a core relation that holds between a part and its whole@en
-INFO	lowercase_definition	has part	definition	a core relation that holds between a whole and its part@en
-INFO	lowercase_definition	precedes	definition	x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en
-INFO	lowercase_definition	characteristic of	definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
-INFO	lowercase_definition	characteristic of part of	definition	q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.
-INFO	lowercase_definition	has member	definition	has member is a mereological relation between a collection and an item.
-INFO	lowercase_definition	towards	definition	q towards e2 if and only if q is a relational quality such that q inheres-in some e, and e != e2 and q is dependent on e2

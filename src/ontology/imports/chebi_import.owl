@@ -14,9 +14,9 @@
      xmlns:chebi3="http://purl.obolibrary.org/obo/chebi#1"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/fbcv/imports/chebi_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2022-01-24/imports/chebi_import.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chebi/207/chebi.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-01-24</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2022-02-24/imports/chebi_import.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chebi/208/chebi.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-02-24</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -4871,6 +4871,7 @@
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>Kohlenhydrat</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Kohlenhydrate</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>a carbohydrate</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>carbohidrato</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>carbohidratos</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>glucide</oboInOwl:hasRelatedSynonym>
@@ -4910,6 +4911,12 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Kohlenhydrate</owl:annotatedTarget>
         <oboInOwl:hasDbXref>ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16646"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>a carbohydrate</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>UniProt</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16646"/>
@@ -8636,6 +8643,12 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17590"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Gmelin:82412</owl:annotatedTarget>
+        <oboInOwl:source>Gmelin</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17590"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>LIPID_MAPS_instance:LMFA11000002</owl:annotatedTarget>
         <oboInOwl:source>LIPID MAPS</oboInOwl:source>
     </owl:Axiom>
@@ -8735,12 +8748,6 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
         <owl:annotatedTarget>CAS:111-65-9</owl:annotatedTarget>
         <oboInOwl:source>NIST Chemistry WebBook</oboInOwl:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17590"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-        <owl:annotatedTarget>Gmelin:82412</owl:annotatedTarget>
-        <oboInOwl:source>Gmelin</oboInOwl:source>
     </owl:Axiom>
     
 
@@ -50554,11 +50561,18 @@
         <chebi:charge>0</chebi:charge>
         <chebi:formula>C2H4NO2R(C2H2NOR)n</chebi:formula>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>a peptide</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>peptide zwitterions</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>CHEBI:60466</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
         <rdfs:label>peptide zwitterion</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_60466"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>a peptide</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>UniProt</oboInOwl:hasDbXref>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_60466"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
