@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: 2022-01-24
-date: 24:01:2022 14:17
+data-version: 2022-02-24
+date: 24:02:2022 15:02
 subsetdef: camcur ""
 subsetdef: common_tool_use "Terms to summarize typical use of a gene from one organism that is introduced into another organism primarily for use an experimental tool, rather than to study the function of the gene"
 subsetdef: do_not_annotate "Term not to be used for direct annotation"
@@ -8318,7 +8318,7 @@ id: FBcv:0003165
 name: gene perturbation
 namespace: biosample_attribute
 def: "A sample that has undergone a disruption to the activity of one of its genes." [FBC:GD]
-is_a: FBcv:0003164 ! biosample method
+is_a: FBcv:0009014 ! biosample treatment method
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -8327,7 +8327,7 @@ id: FBcv:0003166
 name: biotic treatment
 namespace: biosample_attribute
 def: "Treatment of an organism with a biological stimulus, such as an infectious or parasitic agent." [FBC:GD]
-is_a: FBcv:0003164 ! biosample method
+is_a: FBcv:0009014 ! biosample treatment method
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -8336,7 +8336,7 @@ id: FBcv:0003167
 name: chemical treatment
 namespace: biosample_attribute
 def: "A sample that has been exposed to one or more forms of chemical agent." [FBC:CT]
-is_a: FBcv:0003164 ! biosample method
+is_a: FBcv:0009014 ! biosample treatment method
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -8345,7 +8345,7 @@ id: FBcv:0003168
 name: physical treatment
 namespace: biosample_attribute
 def: "A sample that has been exposed to changes in the physical environment including temperature, pressure and radiation." [FBC:GD]
-is_a: FBcv:0003164 ! biosample method
+is_a: FBcv:0009014 ! biosample treatment method
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -8354,7 +8354,7 @@ id: FBcv:0003169
 name: tissue dissection
 namespace: biosample_attribute
 def: "A sample that has been dissected from the tissue of a more complete organism." [FBC:CT]
-is_a: FBcv:0003164 ! biosample method
+is_a: FBcv:0009015 ! biosample preparation method
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -8363,7 +8363,7 @@ id: FBcv:0003170
 name: cell isolation
 namespace: biosample_attribute
 def: "A single cell type that has been isolated by affinity purification or fluorescent cell sorting." [FBC:GD]
-is_a: FBcv:0003164 ! biosample method
+is_a: FBcv:0009015 ! biosample preparation method
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -8372,7 +8372,7 @@ id: FBcv:0003171
 name: subcellular fractionation
 namespace: biosample_attribute
 def: "A sample that has undergone fractionation in order to isolate specific subcellular components for study." [FBC:CT]
-is_a: FBcv:0003164 ! biosample method
+is_a: FBcv:0009015 ! biosample preparation method
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -8381,7 +8381,7 @@ id: FBcv:0003172
 name: cell ablation
 namespace: biosample_attribute
 def: "A sample in which specific cells within a tissue have been ablated by some method, such as targeted expression of a cell toxin, or laser ablation of fluorescently marked cells." [FBC:GD]
-is_a: FBcv:0003164 ! biosample method
+is_a: FBcv:0009014 ! biosample treatment method
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -8390,7 +8390,7 @@ id: FBcv:0003173
 name: targeted cell labeling
 namespace: biosample_attribute
 def: "A sample that has been labelled in a targeted, cell-specific manner." [FBC:CT]
-is_a: FBcv:0003164 ! biosample method
+is_a: FBcv:0009014 ! biosample treatment method
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -8399,7 +8399,7 @@ id: FBcv:0003174
 name: neuronal activity perturbation
 namespace: biosample_attribute
 def: "Neuronal activity that has been perturbed using genetically controlled agents to activate or depress membrane potential." [FBC:GD]
-is_a: FBcv:0003164 ! biosample method
+is_a: FBcv:0009014 ! biosample treatment method
 created_by: mmc46
 creation_date: 2016-02-24T19:19:21Z
 
@@ -10689,6 +10689,73 @@ def: "A method that uses the Chromium platform from 10x Genomics to prepare and 
 is_a: FBcv:0009005 ! single-cell library sequencing
 created_by: http://orcid.org/0000-0002-6095-8718
 creation_date: 2021-07-26T13:45:06Z
+
+[Term]
+id: FBcv:0009009
+name: starvation
+namespace: biosample_attribute
+def: "A sample in which individuals have been deprived of food." [FBC:DPG]
+is_a: FBcv:0003146 ! growth condition
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2022-02-03T18:11:36Z
+
+[Term]
+id: FBcv:0009010
+name: cell dissociation
+namespace: biosample_attribute
+def: "A sample in which a biological specimen has been separated into individual cells." [EFO:0009091]
+xref: EFO:0009091
+is_a: FBcv:0009015 ! biosample preparation method
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2022-02-16T14:12:02Z
+
+[Term]
+id: FBcv:0009011
+name: mechanical cell dissociation
+namespace: biosample_attribute
+def: "A sample in which a biological specimen has been separated into individual cells by applying mechanical forces." [EFO:0009129]
+xref: EFO:0009129
+is_a: FBcv:0009010 ! cell dissociation
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2022-02-16T14:14:12Z
+
+[Term]
+id: FBcv:0009012
+name: enzymatic cell dissociation
+namespace: biosample_attribute
+def: "A sample in which a biological specimen has been separated into individual cells by using enzymes." [EFO:0009128]
+xref: EFO:0009128
+is_a: FBcv:0009010 ! cell dissociation
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2022-02-16T14:16:03Z
+
+[Term]
+id: FBcv:0009013
+name: chemical cell dissociation
+namespace: biosample_attribute
+def: "A sample in which a biological specimen has been separated into individual cells by using non-enzymatic chemicals." [EFO:0011026]
+xref: EFO:0011026
+is_a: FBcv:0009010 ! cell dissociation
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2022-02-16T14:19:01Z
+
+[Term]
+id: FBcv:0009014
+name: biosample treatment method
+namespace: biosample_attribute
+def: "Experimental treatment method that a biosample has been subjected to." [FBC:DPG]
+is_a: FBcv:0003164 ! biosample method
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2022-02-17T13:55:39Z
+
+[Term]
+id: FBcv:0009015
+name: biosample preparation method
+namespace: biosample_attribute
+def: "Method pertaining to the collection or isolation of a biosample." [FBC:DPG]
+is_a: FBcv:0003164 ! biosample method
+created_by: http://orcid.org/0000-0002-6095-8718
+creation_date: 2022-02-17T14:12:00Z
 
 [Term]
 id: FBcv:0010000
