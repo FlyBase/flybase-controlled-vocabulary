@@ -9,6 +9,18 @@
 DATE   ?= $(shell date +%Y-%m-%d)
 DATETIME ?= $(shell date +"%d:%m:%Y %H:%M")
 
+
+.SECONDEXPANSION:
+.PHONY: prepare_release
+prepare_release: $$(ASSETS) all_reports
+	rsync -R $(RELEASE_ASSETS) $(REPORT_FILES) $(FLYBASE_REPORTS) $(IMPORT_FILES) $(RELEASEDIR) &&\
+	rm -f $(CLEANFILES)
+	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
+
+MAIN_FILES := $(MAIN_FILES) flybase_controlled_vocabulary.obo
+CLEANFILES := $(CLEANFILES) $(patsubst %, $(IMPORTDIR)/%_terms_combined.txt, $(IMPORTS)) $(ONT)-edit-release.owl
+.INTERMEDIATE: $(CLEANFILES)
+
 ######################################################
 ### Download and integrate the DPO component       ###
 ######################################################
@@ -146,6 +158,7 @@ flybase_controlled_vocabulary.obo:
 	$(ROBOT) remove --input $(ONT)-simple.obo --term "http://purl.obolibrary.org/obo/FBcv_0008000" \
 		convert -o $@.tmp.obo
 	cat $@.tmp.obo | grep -v FlyBase_miscellaneous_CV | grep -v property_value: | sed '/^date[:]/c\date: $(OBODATE)' | sed '/^data-version[:]/c\data-version: $(DATE)' > $@
+	rm -f $@.tmp.obo
 
 
 #	owltools $(ONT)-simple --make-subset-by-properties part_of conditionality -o $@
@@ -154,7 +167,14 @@ flybase_controlled_vocabulary.obo:
 ### Code for generating additional FlyBase reports ###
 ######################################################
 
-REPORT_FILES := $(REPORT_FILES) reports/obo_track_new_simple.txt  reports/robot_simple_diff.txt reports/onto_metrics_calc.txt
+FLYBASE_REPORTS = reports/obo_qc_fbcv.obo.txt reports/obo_qc_fbcv.owl.txt reports/obo_track_new_simple.txt reports/robot_simple_diff.txt reports/onto_metrics_calc.txt reports/chado_load_check_simple.txt
+
+.PHONY: flybase_reports
+flybase_reports: $(FLYBASE_REPORTS)
+
+.PHONY: all_reports
+all_reports: custom_reports robot_reports flybase_reports
+
 
 SIMPLE_PURL =	http://purl.obolibrary.org/obo/fbcv/fbcv-simple.obo
 LAST_DEPLOYED_SIMPLE=tmp/$(ONT)-simple-last.obo
@@ -190,32 +210,36 @@ reports/onto_metrics_calc.txt: $(ONT)-simple.obo install_flybase_scripts
 reports/chado_load_check_simple.txt: install_flybase_scripts flybase_controlled_vocabulary.obo 
 	../scripts/chado_load_checks.pl flybase_controlled_vocabulary.obo > $@
 
-all_reports: all_reports_onestep $(REPORT_FILES)
-ASSETS := $(ASSETS) components/dpo-simple.owl
+reports/obo_qc_%.obo.txt: $*.obo
+	$(ROBOT) merge -i $*.obo -i components/qc_assertions.owl convert -f obo --check false -o obo_qc_$*.obo &&\
+	$(ROBOT) report -i obo_qc_$*.obo --profile qc-profile.txt --fail-on ERROR --print 5 -o $@
+	rm -f obo_qc_$*.obo
+	
+reports/obo_qc_%.owl.txt: $*.owl
+	$(ROBOT) merge -i $*.owl -i components/qc_assertions.owl -o obo_qc_$*.owl &&\
+	$(ROBOT) report -i obo_qc_$*.owl --profile qc-profile.txt --fail-on None --print 5 -o $@
+	rm -f obo_qc_$*.owl
 
-prepare_release: $(ASSETS) $(PATTERN_RELEASE_FILES)
-	rsync -R $(ASSETS) $(RELEASEDIR) &&\
-  echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on github"
 	
 #####################################################################################
 ### Regenerate placeholder definitions         (Pre-release) pipelines            ###
 #####################################################################################
-# There are two types of definitions that FBCV uses: "." (DOT-) definitions are those for which the formal 
-# definition is translated into a human readable definitions. "$sub_" (SUB-) definitions are those that have 
-# special placeholder string to substitute in definitions from external ontologies, mostly CHEBI
+# There are two types of definitions that FBCV uses:
+# "." (DOT-) definitions are those for which the formal definition is translated into a human readable definitions.
+# "$sub_" (SUB-) definitions are those that have special placeholder string to substitute in definitions from external ontologies, mostly CHEBI
 
-tmp/auto_generated_definitions_seed_dot.txt: $(SRC)
-	$(ROBOT) query --use-graphs false -f csv -i $(SRC) --query ../sparql/dot-definitions.sparql $@.tmp &&\
+tmp/merged-source-pre.owl: $(SRC) all_imports components/dpo-simple.owl
+	$(ROBOT) merge -i $(SRC) --output $@
+
+tmp/auto_generated_definitions_seed_dot.txt: tmp/merged-source-pre.owl
+	$(ROBOT) query --use-graphs false -f csv -i tmp/merged-source-pre.owl --query ../sparql/dot-definitions.sparql $@.tmp &&\
 	cat $@.tmp | sort | uniq >  $@
 	rm -f $@.tmp
 	
-tmp/auto_generated_definitions_seed_sub.txt: $(SRC)
-	$(ROBOT) query --use-graphs false -f csv -i $(SRC) --query ../sparql/classes-with-placeholder-definitions.sparql $@.tmp &&\
+tmp/auto_generated_definitions_seed_sub.txt: tmp/merged-source-pre.owl
+	$(ROBOT) query --use-graphs false -f csv -i tmp/merged-source-pre.owl --query ../sparql/classes-with-placeholder-definitions.sparql $@.tmp &&\
 	cat $@.tmp | sort | uniq >  $@
 	rm -f $@.tmp
-
-tmp/merged-source-pre.owl: $(SRC) all_imports
-	$(ROBOT) merge -i $(SRC) -i imports/chebi_import.owl --output $@
 
 tmp/auto_generated_definitions_dot.owl: tmp/merged-source-pre.owl tmp/auto_generated_definitions_seed_dot.txt
 	java -Xmx3G -jar ../scripts/eq-writer.jar $< tmp/auto_generated_definitions_seed_dot.txt flybase $@ NA add_dot_refs
@@ -226,40 +250,7 @@ tmp/auto_generated_definitions_sub.owl: tmp/merged-source-pre.owl tmp/auto_gener
 tmp/replaced_defs.txt:
 	cat tmp/auto_generated_definitions_seed_sub.txt tmp/auto_generated_definitions_seed_dot.txt | sort | uniq > $@
 
-pre_release: $(SRC) tmp/auto_generated_definitions_sub.owl components/dpo-simple.owl tmp/auto_generated_definitions_dot.owl
-	cat $(ONT)-edit.obo | grep -v 'def[:] \"[.]\"' | grep -v 'sub_' > tmp/$(ONT)-edit-release.obo
+pre_release: $(SRC) tmp/auto_generated_definitions_sub.owl tmp/auto_generated_definitions_dot.owl
+	cat $(SRC) | grep -v 'def[:] \"[.]\"' | grep -v 'sub_' > tmp/$(ONT)-edit-release.obo
 	$(ROBOT) merge -i tmp/$(ONT)-edit-release.obo -i tmp/auto_generated_definitions_sub.owl -i tmp/auto_generated_definitions_dot.owl --collapse-import-closure false -o $(ONT)-edit-release.ofn && mv $(ONT)-edit-release.ofn $(ONT)-edit-release.owl
 	echo "Preprocessing done. Make sure that NO CHANGES TO THE EDIT FILE ARE COMMITTED!"
-	
-post_release: flybase_controlled_vocabulary.obo reports/chado_load_check_simple.txt obo_qc
-	cp flybase_controlled_vocabulary.obo ../..
-	mv obo_qc_$(ONT).obo.txt reports/obo_qc_$(ONT).obo.txt
-	mv obo_qc_$(ONT).owl.txt reports/obo_qc_$(ONT).owl.txt
-	
-#test_remove: $(ONT)-edit.obo tmp/replaced_defs.txt
-#	$(ROBOT) remove -i $(ONT)-edit.obo remove --term-file tmp/replaced_defs.txt --axioms annotation --trim false \ merge -i tmp/auto_generated_definitions_dot.owl -i tmp/auto_generated_definitions_sub.owl --collapse-import-closure false -o $(ONT)-edit-release.ofn && mv $(ONT)-edit-release.ofn $(ONT)-edit-release2.owl
-#	diff $(ONT)-edit-release2.owl $(ONT)-edit-release.owl
-	
-########################
-##    TRAVIS       #####
-########################
-
-
-# The merge hack allows to add axioms to the ontology used for QC to allow it to pass some
-# QC rule that is deemed irrelevant
-
-obo_qc_%.obo:
-	$(ROBOT) merge -i $*.obo -i components/qc_assertions.owl convert -f obo --check false -o $@ &&\
-	$(ROBOT) report -i $@ --profile qc-profile.txt --fail-on ERROR --print 5 -o $@.txt
-
-obo_qc_%.owl:
-	$(ROBOT) merge -i $*.owl -i components/qc_assertions.owl -o $@ &&\
-	$(ROBOT) report -i $@ --profile qc-profile.txt --fail-on None --print 5 -o $@.txt
-
-obo_qc: obo_qc_$(ONT).obo obo_qc_$(ONT).owl
-
-flybase_qc.owl: odkversion obo_qc
-	$(ROBOT) merge -i $(ONT)-full.owl -i components/qc_assertions.owl -o $@
-
-flybase_qc: flybase_qc.owl
-	$(ROBOT) reason --input $< --reasoner ELK  --equivalent-classes-allowed asserted-only --output test.owl && rm test.owl && echo "Success"
