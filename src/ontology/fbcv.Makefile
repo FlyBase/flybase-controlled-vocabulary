@@ -210,12 +210,12 @@ reports/onto_metrics_calc.txt: $(ONT)-simple.obo install_flybase_scripts
 reports/chado_load_check_simple.txt: install_flybase_scripts flybase_controlled_vocabulary.obo 
 	../scripts/chado_load_checks.pl flybase_controlled_vocabulary.obo > $@
 
-reports/obo_qc_%.obo.txt:
+reports/obo_qc_%.obo.txt: $*.obo
 	$(ROBOT) merge -i $*.obo -i components/qc_assertions.owl convert -f obo --check false -o obo_qc_$*.obo &&\
 	$(ROBOT) report -i obo_qc_$*.obo --profile qc-profile.txt --fail-on ERROR --print 5 -o $@
 	rm -f obo_qc_$*.obo
 	
-reports/obo_qc_%.owl.txt:
+reports/obo_qc_%.owl.txt: $*.owl
 	$(ROBOT) merge -i $*.owl -i components/qc_assertions.owl -o obo_qc_$*.owl &&\
 	$(ROBOT) report -i obo_qc_$*.owl --profile qc-profile.txt --fail-on None --print 5 -o $@
 	rm -f obo_qc_$*.owl
