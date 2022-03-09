@@ -1,10 +1,10 @@
 # Welcome to the home of the FlyBase miscellaneous ontologies
  
-This repository is a home for the development and release of a number of controlled vocabularies and ontologies developed and used by FlyBase, including the Drosophila phenotype ontology.
+[![FBcv Build Status](https://app.travis-ci.com/FlyBase/flybase-controlled-vocabulary.svg?branch=master)](https://app.travis-ci.com/FlyBase/flybase-controlled-vocabulary)
 
-These ontologies and CVs have historically been released as a single file (the Flybase Controlled Vocabulary), found in this repository. Arguably the most important of the component ontologies is the Drosophila Phenotype Ontology (DPO) - which, as of April 2013 had been used to annotate over 160,000 phenotypes by FlyBase. The DPO can be accessed [here](https://github.com/FlyBase/drosophila-phenotype-ontology).
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
-These ontologies are freely available under a [CC-BY](http://creativecommons.org/licenses/by/3.0/) license.
+The FlyBase controlled vocabulary (FBcv) incorporates a number of controlled vocabularies and ontologies developed and used by FlyBase, including the Drosophila phenotype ontology (DPO). The DPO is arguably the most important of the component ontologies and was previously maintained in this repository, but has been officially released as a separate project since 25 July 2019. The DPO can be accessed [here](https://github.com/FlyBase/drosophila-phenotype-ontology).
 
 ## Downloads:
 
