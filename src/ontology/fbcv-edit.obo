@@ -271,7 +271,7 @@ id: CHEBI:28954 ! fagaronine
 equivalent_to: FBcv:0000583 ! fagaronine
 
 [Term]
-id: CHEBI:29238
+id: CHEBI:29238 ! tritium atom
 equivalent_to: FBcv:0000511 ! 3H
 
 [Term]
@@ -315,7 +315,7 @@ id: CHEBI:37598 ! nitrogen mustard
 equivalent_to: FBcv:0000813 ! nitrogen mustard
 
 [Term]
-id: CHEBI:37972
+id: CHEBI:37972 ! phosphorus-32 atom
 equivalent_to: FBcv:0000510 ! 32P
 
 [Term]
@@ -331,7 +331,7 @@ id: CHEBI:51052 ! lucanthone
 equivalent_to: FBcv:0000569 ! lucanthone
 
 [Term]
-id: CHEBI:53526
+id: CHEBI:53526 ! tritiated thymidine
 equivalent_to: FBcv:0000513 ! 3H-thymidine
 
 [Term]
@@ -3283,8 +3283,8 @@ def: "Mutation induced by exposure to 3H-deoxycytidine radiation." [FBC:MMC]
 synonym: "mutation induced by 3H-deoxycytidine irradiation" EXACT []
 synonym: "tritiated 2'-deoxycytidine" EXACT []
 synonym: "tritiated deoxycytidine" EXACT []
-is_a: CHEBI:139359
-is_a: CHEBI:19255
+is_a: CHEBI:139359 ! tritiated compound
+is_a: CHEBI:19255 ! pyrimidine 2'-deoxyribonucleoside
 is_a: FBcv:0000525 ! chemical
 
 [Term]
@@ -8922,6 +8922,15 @@ intersection_of: FBcv:0000722 ! somatic clone - Minute background
 intersection_of: FBcv:0007050 ! somatic clone - tissue specific
 created_by: http://orcid.org/0000-0002-1373-1705
 creation_date: 2021-08-26T10:04:31Z
+
+[Term]
+id: FBcv:0007052
+name: light-regulated nuclear export signal
+namespace: experimental_tool_descriptor
+def: "A peptide sequence used to target a tagged protein for export from the nucleus to the cytoplasm, where this property can be regulated by irradiation with a pulse of light." [FBC:GM, FlyBase:FBrf0253050, PMID:26853913]
+is_a: FBcv:0005035 ! nuclear export signal
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2022-04-26T11:49:16Z
 
 [Term]
 id: FBcv:0009000
