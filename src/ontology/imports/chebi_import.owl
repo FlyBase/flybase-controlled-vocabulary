@@ -10,13 +10,14 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
      xmlns:chebi1="http://purl.obolibrary.org/obo/chebi#2"
-     xmlns:chebi2="http://purl.obolibrary.org/obo/chebi#3"
-     xmlns:chebi3="http://purl.obolibrary.org/obo/chebi#1"
+     xmlns:chebi2="http://purl.obolibrary.org/obo/chebi#"
+     xmlns:chebi3="http://purl.obolibrary.org/obo/chebi#3"
+     xmlns:chebi4="http://purl.obolibrary.org/obo/chebi#1"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/fbcv/imports/chebi_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2022-06-09/imports/chebi_import.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chebi/210/chebi.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-06-09</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2022-08-11/imports/chebi_import.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chebi/211/chebi.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-08-11</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -49,6 +50,30 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0100001 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi#BRAND_NAME -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi#BRAND_NAME">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi#INN -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi#INN">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/chebi#IUPAC_NAME -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chebi#IUPAC_NAME">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    </owl:AnnotationProperty>
     
 
 
@@ -12924,6 +12949,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_22718">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35757"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_91007"/>
         <obo:IAO_0000115>A monocarboxylic acid anion obtained by deprotonation of the carboxy group of any benzoic acid.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>benzoate anion</oboInOwl:hasRelatedSynonym>
@@ -16575,7 +16601,7 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_24840 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24840">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24835"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24839"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35175"/>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>inorganic sulfate salts</oboInOwl:hasRelatedSynonym>

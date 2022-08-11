@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/fbcv/components/dpo-simple.owl#"
      xml:base="http://purl.obolibrary.org/obo/fbcv/components/dpo-simple.owl"
-     xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
@@ -16,7 +15,7 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/fbcv/components/dpo-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2022-06-09/components/dpo-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2022-08-11/components/dpo-simple.owl"/>
         <ns:attributionURL>http://dx.doi.org/10.1186/2041-1480-4-30</ns:attributionURL>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000347"/>
         <dc:creator>http://orcid.org/0000-0002-1373-1705</dc:creator>
@@ -26,9 +25,9 @@
         <dc:description>An ontology for the description of Drosophila melanogaster phenotypes.</dc:description>
         <dc:title>Drosophila Phenotype Ontology (DPO)</dc:title>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">09:06:2022 14:19</oboInOwl:date>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11:08:2022 12:43</oboInOwl:date>
         <oboInOwl:default-namespace>FlyBase miscellaneous CV</oboInOwl:default-namespace>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-06-09</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-08-11</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -140,6 +139,11 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000111 xml:lang="en">has ontology root term</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">Ontology annotation property. Relates an ontology to a term that is a designated root term of the ontology. Display tools like OLS can use terms annotated with this property as the starting point for rendering the ontology class hierarchy. There can be more than one root.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Nicolas Matentzoglu</obo:IAO_0000117>
+        <oboInOwl:hasDbXref>IAO:0000700</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>has_ontology_root_term</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>has_ontology_root_term</oboInOwl:shorthand>
         <rdfs:label>has ontology root term</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -489,6 +493,25 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor">
+        <oboInOwl:hasDbXref>http://purl.org/dc/terms/contributor</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>dc-contributor</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dc-contributor</oboInOwl:shorthand>
+        <rdfs:label>contributor</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
+    
+
+
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
@@ -529,18 +552,6 @@ We also have the outstanding issue of how to aim different definitions to differ
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#consider">
         <rdfs:label>consider</rdfs:label>
     </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.org/dc/terms/contributor -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/date -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
     
 
 
@@ -1093,8 +1104,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0000325">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0001347"/>
         <obo:IAO_0000115>A phenotype that is an expansion of the developing embryonic nervous system at the expense of developing ventral epidermis.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-09-13T02:42:10Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-09-13T02:42:10Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0000325</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/fbcv#fbcvsubset_mgiribbons"/>
@@ -2899,7 +2910,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Phenotype that is any abnormality in cytokinesis (GO:0000910). &apos;cytokinesis&apos; is defined as: &apos;The division of the cytoplasm and the plasma membrane of a cell and its partitioning into two daughter cells.&apos;</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mtg_cell_cycle</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:mtg_cell_cycle</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3166,7 +3177,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000447"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Phenotype characterized by closely associated necrosis and melanization.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0155704</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0155704</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3361,7 +3372,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedTarget>Phenotype that is any abnormality in cell cycle (GO:0007049). &apos;cell cycle&apos; is defined as: &apos;The progression of biochemical and morphological phases and events that occur in a cell during successive cell replication or nuclear replication events. Canonically, the cell cycle comprises the replication and segregation of genetic material followed by the division of the cell, but in endocycles or syncytial cells nuclear replication or nuclear division may not be followed by cell division.&apos;</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FBC:DOS</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GOC:go_curators</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mtg_cell_cycle</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:mtg_cell_cycle</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3395,8 +3406,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000387"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000394"/>
         <obo:IAO_0000115>Phenotype that is any abnormality in circadian behavior (GO:0048512). &apos;circadian behavior&apos; is defined as: &apos;The specific behavior of an organism that recurs with a regularity of approximately 24 hours.&apos;</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-11-30T11:06:35Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2009-11-30T11:06:35Z</terms:date>
         <oboInOwl:hasExactSynonym>circadian behavior defective</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0000679</oboInOwl:id>
@@ -3440,8 +3451,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0000681">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0001347"/>
         <obo:IAO_0000115>Phenotype that is any abnormality in sensory perception (GO:0007600). &apos;sensory perception&apos; is defined as: &apos;The series of events required for an organism to receive a sensory stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process.&apos;</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-02-23T12:28:26Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-02-23T12:28:26Z</terms:date>
         <oboInOwl:hasExactSynonym>sensory perception defective</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0000681</oboInOwl:id>
@@ -3484,8 +3495,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0000683">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0001347"/>
         <obo:IAO_0000115>Phenotype that is any abnormality in response to temperature stimulus (GO:0009266). &apos;response to temperature stimulus&apos; is defined as: &apos;Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a temperature stimulus.&apos;</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-02-23T12:51:02Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-02-23T12:51:02Z</terms:date>
         <oboInOwl:hasExactSynonym>temperature response defective</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0000683</oboInOwl:id>
@@ -3508,8 +3519,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000408"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000683"/>
         <obo:IAO_0000115>Phenotype that is any abnormality in response to cold (GO:0009409). &apos;response to cold&apos; is defined as: &apos;Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a cold stimulus, a temperature stimulus below the optimal temperature for that organism.&apos;</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-02-23T02:11:27Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-02-23T02:11:27Z</terms:date>
         <oboInOwl:hasExactSynonym>cold stress response defective</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0000684</oboInOwl:id>
@@ -3564,7 +3575,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000698"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A phenotype that is a disruption in the wild-type pattern of segments or parasegments of the embryo or larva.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0035438</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0035438</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3583,7 +3594,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000699"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Embryonic/larval segmentation phenotype that is the complete or partial loss of alternate segments or parasegments.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0035438</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0035438</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3602,7 +3613,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000700"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Embryonic/larval segmentation phenotype that is the complete or partial loss of even segments.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0035438</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0035438</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3621,7 +3632,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000701"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Embryonic/larval segmentation phenotype that is the complete or partial loss of odd segments.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0035438</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0035438</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3640,7 +3651,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000702"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Embryonic/larval segmentation phenotype in which some fraction of each segment (along the anterior-posterior axis) is deleted and replaced by a mirror image duplication of the remaining part of the segment.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0035438</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0035438</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3659,7 +3670,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000703"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Embryonic/larval segmentation phenotype that is the complete loss of a contiguous stretch of 2 or more segments.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FlyBase:FBrf0035438</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FlyBase:FBrf0035438</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3669,8 +3680,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0000705">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0001347"/>
         <obo:IAO_0000115>Phenotype that is any abnormality in sleep (GO:0030431). &apos;sleep&apos; is defined as: &apos;Any process in which an organism enters and maintains a periodic, readily reversible state of reduced awareness and metabolic activity. Usually accompanied by physical relaxation, the onset of sleep in humans and other mammals is marked by a change in the electrical activity of the brain.&apos;</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-20T12:06:13Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-20T12:06:13Z</terms:date>
         <oboInOwl:hasExactSynonym>sleep defective</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0000705</oboInOwl:id>
@@ -3692,8 +3703,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0000706">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0001347"/>
         <obo:IAO_0000115>Phenotype that is any abnormality in entry into diapause (GO:0055115). &apos;entry into diapause&apos; is defined as: &apos;The dormancy process that results in entry into diapause. Diapause is a neurohormonally mediated, dynamic state of low metabolic activity. Associated characteristics of this form of dormancy include reduced morphogenesis, increased resistance to environmental extremes, and altered or reduced behavioral activity. Full expression develops in a species-specific manner, usually in response to a number of environmental stimuli that precede unfavorable conditions. Once diapause has begun, metabolic activity is suppressed even if conditions favorable for development prevail. Once initiated, only certain stimuli are capable of releasing the organism from this state, and this characteristic is essential in distinguishing diapause from hibernation.&apos;</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-20T12:06:28Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-20T12:06:28Z</terms:date>
         <oboInOwl:hasExactSynonym>diapause defective</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0000706</oboInOwl:id>
@@ -3716,8 +3727,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0000707">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000706"/>
         <obo:IAO_0000115>Phenotype that is any abnormality in entry into reproductive diapause (GO:0055116). &apos;entry into reproductive diapause&apos; is defined as: &apos;The dormancy process that results in entry into reproductive diapause. Reproductive diapause is a form of diapause where the organism itself will remain fully active, including feeding and other routine activities, but the reproductive organs experience a tissue-specific reduction in metabolism, with characteristic triggering and releasing stimuli.&apos;</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-20T12:21:29Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-09-20T12:21:29Z</terms:date>
         <oboInOwl:hasExactSynonym>reproductive diapause defective</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0000707</oboInOwl:id>
@@ -3780,8 +3791,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0000713">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000415"/>
         <obo:IAO_0000115>Phenotype that is a inability to jump. This may be due to neurological or muscular defects.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-03-10T04:57:06Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-03-10T04:57:06Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0000713</oboInOwl:id>
         <rdfs:label>jumpless</rdfs:label>
@@ -3861,8 +3872,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0000719">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007508"/>
         <obo:IAO_0000115>Phenotype that is a decrease in size of an initially normally sized organ or tissue due to wasting away of cells.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-03-10T05:59:04Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-03-10T05:59:04Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0000719</oboInOwl:id>
         <rdfs:label>atrophy</rdfs:label>
@@ -3882,8 +3893,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000414"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000415"/>
         <obo:IAO_0000115>Phenotype that is any abnormality or in or absence of a jump response (GO:0007630). The jump response in Drosophila is a reflex escape response that can be triggered by a number of signals including odor and light. Standard assays are commonly used to test odor and light induced jump response.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-03-11T08:03:28Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-03-11T08:03:28Z</terms:date>
         <oboInOwl:hasExactSynonym>jump response defective</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0000720</oboInOwl:id>
@@ -3990,8 +4001,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0000734">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000698"/>
         <obo:IAO_0000115>Embryonic/larval segmentation phenotype that is the complete or partial loss of terminal regions of the embryo/larva: the acron, telson and immediately adjacent segments.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-09-13T02:31:53Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-7073-9172"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-09-13T02:31:53Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0000734</oboInOwl:id>
         <rdfs:label>terminal phenotype</rdfs:label>
@@ -5013,8 +5024,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0007500">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000398"/>
         <obo:IAO_0000115>Phenotype that is any abnormality in anesthesia-resistant memory (GO:0007615). &apos;anesthesia-resistant memory&apos; is defined as: &apos;The memory process that results in the formation of consolidated memory resistant to disruption of the patterned activity of the brain, without requiring protein synthesis.&apos;</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T14:46:41Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T14:46:41Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0007500</oboInOwl:id>
         <rdfs:label xml:lang="en">abnormal anesthesia-resistant memory</rdfs:label>
@@ -5034,8 +5045,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0007501">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000398"/>
         <obo:IAO_0000115>Phenotype that is any abnormality in short-term memory (GO:0007614). &apos;short-term memory&apos; is defined as: &apos;The memory process that deals with the storage, retrieval and modification of information received a short time (up to about 30 minutes) ago. This type of memory is typically dependent on direct, transient effects of second messenger activation.&apos;</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T14:50:19Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T14:50:19Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0007501</oboInOwl:id>
         <rdfs:label xml:lang="en">abnormal short-term memory</rdfs:label>
@@ -5055,8 +5066,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0007502">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000398"/>
         <obo:IAO_0000115>Phenotype that is any abnormality in medium-term memory (GO:0072375). &apos;medium-term memory&apos; is defined as: &apos;The memory process that deals with the storage, retrieval and modification of information received at a time ago that is intermediate between that of short and long term memory (30min - 7hrs in Drosophila melanogaster).&apos;</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T14:51:08Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T14:51:08Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0007502</oboInOwl:id>
         <rdfs:label xml:lang="en">abnormal medium-term memory</rdfs:label>
@@ -5077,8 +5088,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0007503">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000398"/>
         <obo:IAO_0000115>Phenotype that is any abnormality in long-term memory (GO:0007616). &apos;long-term memory&apos; is defined as: &apos;The memory process that deals with the storage, retrieval and modification of information a long time (typically weeks, months or years) after receiving that information. This type of memory is typically dependent on gene transcription regulated by second messenger activation.&apos;</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T14:51:45Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T14:51:45Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0007503</oboInOwl:id>
         <rdfs:label xml:lang="en">abnormal long-term memory</rdfs:label>
@@ -5098,8 +5109,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0007504">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0001347"/>
         <obo:IAO_0000115>Phenotype that is any abnormality in body weight compared to identically raised wild-type controls.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T15:47:07Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T15:47:07Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0007504</oboInOwl:id>
         <rdfs:label xml:lang="en">abnormal body weight</rdfs:label>
@@ -5118,8 +5129,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0007505">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007504"/>
         <obo:IAO_0000115>Phenotype that is an increase in body weight compared to identically raised wild-type controls.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T15:50:18Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T15:50:18Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0007505</oboInOwl:id>
         <rdfs:label xml:lang="en">increased body weight</rdfs:label>
@@ -5138,8 +5149,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0007506">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007504"/>
         <obo:IAO_0000115>Phenotype that is a decrease in body weight compared to identically raised wild-type controls.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T15:50:44Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T15:50:44Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0007506</oboInOwl:id>
         <rdfs:label xml:lang="en">decreased body weight</rdfs:label>
@@ -5158,8 +5169,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0007507">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000357"/>
         <obo:IAO_0000115>A phenotype that is an increase in the size of the whole body or some body part compared to wild-type.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T15:52:00Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T15:52:00Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0007507</oboInOwl:id>
         <rdfs:label xml:lang="en">increased size</rdfs:label>
@@ -5178,8 +5189,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0007508">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000357"/>
         <obo:IAO_0000115>A phenotype that is a decrease in the size of the whole body or some body part compared to wild-type.</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T15:52:59Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-15T15:52:59Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0007508</oboInOwl:id>
         <rdfs:label xml:lang="en">decreased size</rdfs:label>
@@ -5198,8 +5209,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0007509">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000413"/>
         <obo:IAO_0000115>Phenotype that is an increase in the rate of phototaxis (GO:0042331). &apos;phototaxis&apos; is defined as: &apos;The directed movement of a motile cell or organism in response to light.&apos;</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T09:10:39Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T09:10:39Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0007509</oboInOwl:id>
         <rdfs:label xml:lang="en">increased rate of phototaxis</rdfs:label>
@@ -5220,8 +5231,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0007510">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000413"/>
         <obo:IAO_0000115>Phenotype that is a decrease in the rate of phototaxis (GO:0042331). &apos;phototaxis&apos; is defined as: &apos;The directed movement of a motile cell or organism in response to light.&apos;</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T09:20:20Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T09:20:20Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0007510</oboInOwl:id>
         <rdfs:label xml:lang="en">decreased rate of phototaxis</rdfs:label>
@@ -5242,8 +5253,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0007511">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000668"/>
         <obo:IAO_0000115>Phenotype that is an increase in the rate of cell adhesion (GO:0007155). &apos;cell adhesion&apos; is defined as: &apos;The attachment of a cell, either to another cell or to an underlying substrate such as the extracellular matrix, via cell adhesion molecules.&apos;</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T09:21:22Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T09:21:22Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0007511</oboInOwl:id>
         <rdfs:label xml:lang="en">increased rate of cell adhesion</rdfs:label>
@@ -5264,8 +5275,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0007512">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000668"/>
         <obo:IAO_0000115>Phenotype that is a decrease in the rate of cell adhesion (GO:0007155). &apos;cell adhesion&apos; is defined as: &apos;The attachment of a cell, either to another cell or to an underlying substrate such as the extracellular matrix, via cell adhesion molecules.&apos;</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T09:22:22Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T09:22:22Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0007512</oboInOwl:id>
         <rdfs:label xml:lang="en">decreased rate of cell adhesion</rdfs:label>
@@ -5286,8 +5297,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0007513">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000705"/>
         <obo:IAO_0000115>Phenotype that is an increase in the total amount or frequency of sleep (GO:0030431) over a given time interval, compared to wild-type. &apos;sleep&apos; is defined as: &apos;Any process in which an organism enters and maintains a periodic, readily reversible state of reduced awareness and metabolic activity. Usually accompanied by physical relaxation, the onset of sleep in humans and other mammals is marked by a change in the electrical activity of the brain.&apos;</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T12:02:45Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T12:02:45Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0007513</oboInOwl:id>
         <rdfs:label xml:lang="en">increased sleep</rdfs:label>
@@ -5307,8 +5318,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0007514">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000705"/>
         <obo:IAO_0000115>Phenotype that is a decrease in the total amount or frequency of sleep (GO:0030431) over a given time interval, compared to wild-type. &apos;sleep&apos; is defined as: &apos;Any process in which an organism enters and maintains a periodic, readily reversible state of reduced awareness and metabolic activity. Usually accompanied by physical relaxation, the onset of sleep in humans and other mammals is marked by a change in the electrical activity of the brain.&apos;</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T12:12:40Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T12:12:40Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0007514</oboInOwl:id>
         <rdfs:label xml:lang="en">decreased sleep</rdfs:label>
@@ -5328,8 +5339,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0007515">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000419"/>
         <obo:IAO_0000115>Phenotype that is an increase in the total amount or frequency of feeding behavior (GO:0007631) over a given time interval, compared to wild-type. &apos;feeding behavior&apos; is defined as: &apos;Behavior associated with the intake of food.&apos;</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T12:14:26Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T12:14:26Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0007515</oboInOwl:id>
         <rdfs:label xml:lang="en">increased feeding behavior</rdfs:label>
@@ -5349,8 +5360,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0007516">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000419"/>
         <obo:IAO_0000115>Phenotype that is a decrease in the total amount or frequency of feeding behavior (GO:0007631) over a given time interval, compared to wild-type. &apos;feeding behavior&apos; is defined as: &apos;Behavior associated with the intake of food.&apos;</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T12:16:19Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-16T12:16:19Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0007516</oboInOwl:id>
         <rdfs:label xml:lang="en">decreased feeding behavior</rdfs:label>
@@ -5370,8 +5381,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0007517">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000398"/>
         <obo:IAO_0000115>Phenotype that is an increase in the efficacy of memory (GO:0007613) relative to controls. &apos;memory&apos; is defined as: &apos;The activities involved in the mental information processing system that receives (registers), modifies, stores, and retrieves informational stimuli. The main stages involved in the formation and retrieval of memory are encoding (processing of received information by acquisition), storage (building a permanent record of received information as a result of consolidation) and retrieval (calling back the stored information and use it in a suitable way to execute a given task).&apos;</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-08-06T11:45:09Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-08-06T11:45:09Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0007517</oboInOwl:id>
         <rdfs:comment>This will usually be measured as an increased magnitude/rate of a behavioral output associated with memory formation.</rdfs:comment>
@@ -5393,8 +5404,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0007518">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000398"/>
         <obo:IAO_0000115>Phenotype that is a decrease in the efficacy of memory (GO:0007613) relative to controls. &apos;memory&apos; is defined as: &apos;The activities involved in the mental information processing system that receives (registers), modifies, stores, and retrieves informational stimuli. The main stages involved in the formation and retrieval of memory are encoding (processing of received information by acquisition), storage (building a permanent record of received information as a result of consolidation) and retrieval (calling back the stored information and use it in a suitable way to execute a given task).&apos;</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-08-06T11:55:18Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-08-06T11:55:18Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0007518</oboInOwl:id>
         <rdfs:comment>This will usually be measured as a decreased magnitude/rate of a behavioral output associated with memory formation.</rdfs:comment>
@@ -5417,8 +5428,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007501"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007517"/>
         <obo:IAO_0000115>Phenotype that is an increase in the efficacy of short-term memory (GO:0007614) relative to controls. &apos;short-term memory&apos; is defined as: &apos;The memory process that deals with the storage, retrieval and modification of information received a short time (up to about 30 minutes) ago. This type of memory is typically dependent on direct, transient effects of second messenger activation.&apos;</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-08-06T11:56:41Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-08-06T11:56:41Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0007519</oboInOwl:id>
         <rdfs:comment>This will usually be measured as an increased magnitude/rate of a behavioral output associated with short-term memory formation.</rdfs:comment>
@@ -5441,8 +5452,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007501"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007518"/>
         <obo:IAO_0000115>Phenotype that is a decrease in the efficacy of short-term memory (GO:0007614) relative to controls. &apos;short-term memory&apos; is defined as: &apos;The memory process that deals with the storage, retrieval and modification of information received a short time (up to about 30 minutes) ago. This type of memory is typically dependent on direct, transient effects of second messenger activation.&apos;</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-08-06T11:57:17Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-08-06T11:57:17Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0007520</oboInOwl:id>
         <rdfs:comment>This will usually be measured as a decreased magnitude/rate of a behavioral output associated with short-term memory formation.</rdfs:comment>
@@ -5465,8 +5476,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007503"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007517"/>
         <obo:IAO_0000115>Phenotype that is an increase in the efficacy of long-term memory (GO:0007616) relative to controls. &apos;long-term memory&apos; is defined as: &apos;The memory process that deals with the storage, retrieval and modification of information a long time (typically weeks, months or years) after receiving that information. This type of memory is typically dependent on gene transcription regulated by second messenger activation.&apos;</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-08-06T12:02:59Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-08-06T12:02:59Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0007521</oboInOwl:id>
         <rdfs:comment>This will usually be measured as an increased magnitude/rate of a behavioral output associated with long-term memory formation.</rdfs:comment>
@@ -5489,8 +5500,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007503"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007518"/>
         <obo:IAO_0000115>Phenotype that is a decrease in the efficacy of long-term memory (GO:0007616) relative to controls. &apos;long-term memory&apos; is defined as: &apos;The memory process that deals with the storage, retrieval and modification of information a long time (typically weeks, months or years) after receiving that information. This type of memory is typically dependent on gene transcription regulated by second messenger activation.&apos;</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-08-06T12:04:30Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-08-06T12:04:30Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0007522</oboInOwl:id>
         <rdfs:comment>This will usually be measured as a decreased magnitude/rate of a behavioral output associated with long-term memory formation.</rdfs:comment>
@@ -5513,8 +5524,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007500"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007517"/>
         <obo:IAO_0000115>Phenotype that is an increase in the efficacy of anesthesia-resistant memory (GO:0007615) relative to controls. &apos;anesthesia-resistant memory&apos; is defined as: &apos;The memory process that results in the formation of consolidated memory resistant to disruption of the patterned activity of the brain, without requiring protein synthesis.&apos;</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-08-06T12:08:22Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-08-06T12:08:22Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0007523</oboInOwl:id>
         <rdfs:comment>This will usually be measured as an increased magnitude/rate of a behavioral output associated with anesthesia-resistant memory formation.</rdfs:comment>
@@ -5537,8 +5548,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007500"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007518"/>
         <obo:IAO_0000115>Phenotype that is a decrease in the efficacy of anesthesia-resistant memory (GO:0007615) relative to controls. &apos;anesthesia-resistant memory&apos; is defined as: &apos;The memory process that results in the formation of consolidated memory resistant to disruption of the patterned activity of the brain, without requiring protein synthesis.&apos;</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-08-06T12:10:03Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-08-06T12:10:03Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0007524</oboInOwl:id>
         <rdfs:comment>This will usually be measured as a decreased magnitude/rate of a behavioral output associated with anesthesia-resistant memory formation.</rdfs:comment>
@@ -5561,8 +5572,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007502"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007517"/>
         <obo:IAO_0000115>Phenotype that is an increase in the efficacy of medium-term memory (GO:0072375) relative to controls. &apos;medium-term memory&apos; is defined as: &apos;The memory process that deals with the storage, retrieval and modification of information received at a time ago that is intermediate between that of short and long term memory (30min - 7hrs in Drosophila melanogaster).&apos;</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-08-06T12:11:31Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-08-06T12:11:31Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0007525</oboInOwl:id>
         <rdfs:comment>This will usually be measured as an increased magnitude/rate of a behavioral output associated with medium-term memory formation.</rdfs:comment>
@@ -5586,8 +5597,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007502"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0007518"/>
         <obo:IAO_0000115>Phenotype that is a decrease in the efficacy of medium-term memory (GO:0072375) relative to controls. &apos;medium-term memory&apos; is defined as: &apos;The memory process that deals with the storage, retrieval and modification of information received at a time ago that is intermediate between that of short and long term memory (30min - 7hrs in Drosophila melanogaster).&apos;</obo:IAO_0000115>
-        <dcterms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
-        <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-08-06T12:12:48Z</dcterms:date>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0002-1373-1705"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-08-06T12:12:48Z</terms:date>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
         <oboInOwl:id>FBcv:0007526</oboInOwl:id>
         <rdfs:comment>This will usually be measured as a decreased magnitude/rate of a behavioral output associated with medium-term memory formation.</rdfs:comment>
