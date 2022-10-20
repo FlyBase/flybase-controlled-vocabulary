@@ -15,9 +15,9 @@
      xmlns:chebi4="http://purl.obolibrary.org/obo/chebi#1"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/fbcv/imports/chebi_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2022-08-11/imports/chebi_import.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chebi/211/chebi.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-08-11</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2022-10-20/imports/chebi_import.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chebi/214/chebi.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-20</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -44352,6 +44352,12 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38443"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/chebi#is_conjugate_acid_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_60038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Any member of the &apos;superclass&apos; flavonoids whose skeleton is based on 1-benzopyran with an aryl substituent at position 2. The term was originally restricted to natural products, but is now also used to describe semi-synthetic and fully synthetic compounds.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>CHEBI:13638</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>CHEBI:24044</oboInOwl:hasAlternativeId>
@@ -50483,6 +50489,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_60038">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25696"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/chebi#is_conjugate_base_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_47916"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Any anion arising from deprotonation of at least one OH group in a flavonoid compound.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>flavonoid oxoanions</oboInOwl:hasRelatedSynonym>
