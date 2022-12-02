@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbcv/releases/2022-10-20/fbcv-base.owl
-date: 20:10:2022 11:46
+data-version: fbcv/releases/2022-12-02/fbcv-base.owl
+date: 02:12:2022 13:39
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -47,7 +47,7 @@ property_value: dc-title "FlyBase Controlled Vocabulary (FBcv)" xsd:string
 property_value: dcterms-license https://creativecommons.org/licenses/by/4.0/ xsd:string
 property_value: has_ontology_root_term FBcv:0000000
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
-property_value: owl:versionInfo "2022-10-20" xsd:string
+property_value: owl:versionInfo "2022-12-02" xsd:string
 
 [Term]
 id: FBcv:0000000
@@ -3373,7 +3373,6 @@ namespace: phenotypic_class
 def: "Phenotype that is an increase in the number of cells in a tissue or organ, usually associated with an increase in size, where the affected tissue or organ maintains its normal form." [ISBN:9780198506737]
 synonym: "hyperplastic" EXACT []
 is_a: FBcv:0000362 ! increased cell number
-is_a: FBcv:0007507 ! increased size
 
 [Term]
 id: FBcv:0000445
@@ -5755,7 +5754,6 @@ namespace: phenotypic_class
 def: "Phenotype that is a reduction in size of an organ or tissue compared to wild-type due to reduced numbers of cells being produced during its development or growth." [FBC:DOS]
 comment: This term should not be used where an organ or tissue is reduced in size due to the wasting away of existing cells.
 is_a: FBcv:0000359 ! decreased cell number
-is_a: FBcv:0007508 ! decreased size
 
 [Term]
 id: FBcv:0000725
@@ -7558,6 +7556,7 @@ id: FBcv:0003068
 name: RNA-Seq
 namespace: assay_type
 def: "A quantitative method for mapping transcribed regions, in which complementary DNA fragments are subjected to high-throughput sequencing." [PMID:18451266]
+xref: EFO:0008896
 is_a: FBcv:0003050 ! assay type
 relationship: dc-contributor http://orcid.org/0000-0001-5948-3092
 property_value: dcterms-date 2016-02-24T19:19:21Z xsd:dateTime
@@ -7576,6 +7575,7 @@ id: FBcv:0003070
 name: short RNA-Seq
 namespace: assay_type
 def: "An assay characterizing of small RNA species 17-35 nt in size by high-throughput sequencing." [FBC:GD]
+xref: EFO:0008947
 is_a: FBcv:0003068 ! RNA-Seq
 relationship: dc-contributor http://orcid.org/0000-0001-5948-3092
 property_value: dcterms-date 2016-02-24T19:19:21Z xsd:dateTime
@@ -11113,6 +11113,7 @@ namespace: assay_type
 def: "A method for quantifying the transcriptome of individual cells, in which transcripts isolated from single cells are subjected to high-throughput sequencing and mapping to a reference genome." [PMID:28821273]
 synonym: "scRNA-Seq" EXACT [PMID:32405060]
 synonym: "single-cell RNA sequencing assay" EXACT []
+xref: EFO:0008913
 xref: OBI:0002631
 is_a: FBcv:0003068 ! RNA-Seq
 relationship: dc-contributor http://orcid.org/0000-0002-6095-8718
@@ -11125,6 +11126,7 @@ namespace: assay_type
 def: "A method for quantifying the transcriptome of individual cells, in which transcripts isolated from single nuclei are subjected to high-throughput sequencing and mapping to a reference genome." [PMID:28821273]
 synonym: "single-nucleus RNA sequencing assay" EXACT []
 synonym: "snRNA-Seq" EXACT [PMID:32405060]
+xref: EFO:0009809
 is_a: FBcv:0009000 ! single-cell RNA-Seq
 relationship: dc-contributor http://orcid.org/0000-0002-6095-8718
 property_value: dcterms-date 2021-07-26T12:19:45Z xsd:dateTime
