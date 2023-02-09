@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbcv/releases/2022-12-02/fbcv-base.owl
-date: 02:12:2022 13:39
+data-version: fbcv/releases/2023-02-09/fbcv-base.owl
+date: 09:02:2023 12:32
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -47,7 +47,7 @@ property_value: dc-title "FlyBase Controlled Vocabulary (FBcv)" xsd:string
 property_value: dcterms-license https://creativecommons.org/licenses/by/4.0/ xsd:string
 property_value: has_ontology_root_term FBcv:0000000
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
-property_value: owl:versionInfo "2022-12-02" xsd:string
+property_value: owl:versionInfo "2023-02-09" xsd:string
 
 [Term]
 id: FBcv:0000000
@@ -2630,6 +2630,7 @@ id: FBcv:0000358
 name: decreased body size
 namespace: phenotypic_class
 def: "Phenotype that is a decrease in body size compared to identically raised wild-type controls." [FBC:DOS]
+synonym: "reduced body size" EXACT []
 synonym: "small body" EXACT []
 is_a: FBcv:0000665 ! abnormal body size
 is_a: FBcv:0007508 ! decreased size
@@ -2897,6 +2898,7 @@ namespace: phenotypic_class
 def: "A phenotype consisting of an decrease in any kind of rate (e.g. speed, frequency) of `multicellular organismal movement` (GO:0050879) compared to wild-type." [FBC:DOS]
 subset: fbcvsubset_mgiribbons
 synonym: "hypoactive" EXACT []
+synonym: "reduced rate of movement" EXACT []
 is_a: FBcv:0001347 ! phenotype
 
 [Term]
@@ -3219,6 +3221,7 @@ namespace: phenotypic_class
 def: "Phenotype that is a decrease in the amount of cell death in a whole animal or in some specific organ tissue or clone of cells compared to wild-type." [FBC:DOS]
 synonym: "pcd decrease" NARROW []
 synonym: "programmed cell death decrease" NARROW []
+synonym: "reduced cell death" EXACT []
 is_a: FBcv:0000424 ! abnormal cell death
 
 [Term]
@@ -5695,6 +5698,7 @@ id: FBcv:0000718
 name: decreased cell growth rate
 namespace: phenotypic_class
 def: "Phenotype that is an decrease in any kind of rate (e.g. speed, frequency) of cell growth (GO:0016049) in a whole animal or in some specific organ tissue or clone of cells compared to wild-type." [FBC:DOS]
+synonym: "reduced cell growth rate" EXACT []
 is_a: FBcv:0000427 ! abnormal cell growth
 
 [Term]
@@ -6405,6 +6409,7 @@ name: decreased speed of aging
 namespace: phenotypic_class
 def: "A phenotype in which the aging process (GO:0007568) is slower than in wild-type." [FBC:DOC]
 synonym: "delayed aging" RELATED []
+synonym: "reduced speed of aging" EXACT []
 is_a: FBcv:0000384 ! abnormal aging
 
 [Term]
@@ -9736,7 +9741,7 @@ property_value: dcterms-date 2017-12-13T13:17:30Z xsd:dateTime
 id: FBcv:0005065
 name: binary expression system - small molecule-regulated driver
 namespace: experimental_tool_descriptor
-def: "Transactivator ('driver') that forms part of a binary expression system and whose activity is regulated by binding to a small molecule, such as an ion or ligand. A binary expression system requires a transactivator ('driver') that binds to a specific DNA sequence ('regulatory region' or 'effector'). A driver encoded by one transgenic locus or modified endogenous locus is used to drive expression of a downstream 'responder' or 'reporter' encoded by another transgenic locus or modified endogenous locus, by fusing the regulatory region sequence to which the driver binds upstream of the responder sequence. The temporal and spatial expression pattern of the responder thus depends on the regulatory elements used to drive expression of the driver. Use of a small molecule-regulated driver driver permits further refinement of this expression pattern." [FBC:GM]
+def: "Transactivator ('driver') that forms part of a binary expression system and whose activity is regulated by binding to a small molecule, such as an ion or ligand. A binary expression system requires a transactivator ('driver') that binds to a specific DNA sequence ('regulatory region' or 'effector'). A driver encoded by one transgenic locus or modified endogenous locus is used to drive expression of a downstream 'responder' or 'reporter' encoded by another transgenic locus or modified endogenous locus, by fusing the regulatory region sequence to which the driver binds upstream of the responder sequence. The temporal and spatial expression pattern of the responder thus depends on the regulatory elements used to drive expression of the driver. Use of a small molecule-regulated driver permits further refinement of this expression pattern." [FBC:GM]
 is_a: FBcv:0005064 ! binary expression system - conditional driver
 relationship: dc-contributor http://orcid.org/0000-0002-0027-0858
 property_value: dcterms-date 2017-12-13T13:17:30Z xsd:dateTime
@@ -9931,6 +9936,7 @@ id: FBcv:0006002
 name: decreased fecundity
 namespace: phenotypic_class
 def: "Phenotype that is a decrease in the number of gametes produced." [FBC:TEMJ]
+synonym: "reduced fecundity" EXACT []
 is_a: FBcv:0001347 ! phenotype
 
 [Term]
@@ -9960,6 +9966,7 @@ name: decreased occurrence of cell division
 namespace: phenotypic_class
 def: "A phenotype that is a decreased occurrence of cell division (GO:0051301). 'cell division' is defined as 'The process resulting in division and partitioning of components of a cell to form more cells; may or may not be accompanied by the physical separation of a cell into distinct, individually membrane-bounded daughter cells.'." [FBC:TEMJ, GOC:di, GOC:go_curators, GOC:pr]
 subset: fbcvsubset_mgiribbons
+synonym: "reduced occurrence of cell division" EXACT []
 is_a: FBcv:0001347 ! phenotype
 
 [Term]
@@ -10564,6 +10571,15 @@ relationship: dc-contributor http://orcid.org/0000-0002-1373-1705
 property_value: dcterms-date 2022-08-19T13:19:05Z xsd:dateTime
 
 [Term]
+id: FBcv:0007064
+name: binary expression system - light-regulated driver
+namespace: experimental_tool_descriptor
+def: "Transactivator ('driver') that forms part of a binary expression system and whose activity is regulated by irradiation with a pulse of light. A binary expression system requires a transactivator ('driver') that binds to a specific DNA sequence ('regulatory region' or 'effector'). A driver encoded by one transgenic locus or modified endogenous locus is used to drive expression of a downstream 'responder' or 'reporter' encoded by another transgenic locus or modified endogenous locus, by fusing the regulatory region sequence to which the driver binds upstream of the responder sequence. The temporal and spatial expression pattern of the responder thus depends on the regulatory elements used to drive expression of the driver. Use of a light-regulated driver permits further refinement of this expression pattern." [FBC:GM]
+is_a: FBcv:0005064 ! binary expression system - conditional driver
+relationship: dc-contributor http://orcid.org/0000-0002-1373-1705
+property_value: dcterms-date 2023-01-18T11:52:12Z xsd:dateTime
+
+[Term]
 id: FBcv:0007500
 name: abnormal anesthesia-resistant memory
 namespace: phenotypic_class
@@ -10622,6 +10638,7 @@ id: FBcv:0007506
 name: decreased body weight
 namespace: phenotypic_class
 def: "Phenotype that is a decrease in body weight compared to identically raised wild-type controls." [FBC:CP]
+synonym: "reduced body weight" EXACT []
 is_a: FBcv:0007504 ! abnormal body weight
 relationship: dc-contributor http://orcid.org/0000-0002-1373-1705
 property_value: dcterms-date 2020-12-15T15:50:44Z xsd:dateTime
@@ -10640,6 +10657,7 @@ id: FBcv:0007508
 name: decreased size
 namespace: phenotypic_class
 def: "A phenotype that is a decrease in the size of the whole body or some body part compared to wild-type." [FBC:CP]
+synonym: "reduced size" EXACT []
 is_a: FBcv:0000357 ! abnormal size
 relationship: dc-contributor http://orcid.org/0000-0002-1373-1705
 property_value: dcterms-date 2020-12-15T15:52:59Z xsd:dateTime
@@ -10658,6 +10676,7 @@ id: FBcv:0007510
 name: decreased rate of phototaxis
 namespace: phenotypic_class
 def: "Phenotype that is a decrease in any kind of rate (e.g. speed, frequency) of phototaxis (GO:0042331). 'phototaxis' is defined as: 'The directed movement of a motile cell or organism in response to light.'" [FBC:CP, GOC:jl, ISBN:0192800981]
+synonym: "reduced rate of phototaxis" EXACT []
 is_a: FBcv:0000413 ! abnormal phototaxis
 relationship: dc-contributor http://orcid.org/0000-0002-1373-1705
 property_value: dcterms-date 2020-12-16T09:20:20Z xsd:dateTime
@@ -10676,6 +10695,7 @@ id: FBcv:0007512
 name: decreased rate of cell adhesion
 namespace: phenotypic_class
 def: "Phenotype that is a decrease in any kind of rate (e.g. speed, frequency) of cell adhesion (GO:0007155). 'cell adhesion' is defined as: 'The attachment of a cell, either to another cell or to an underlying substrate such as the extracellular matrix, via cell adhesion molecules.'" [FBC:CP, GOC:hb, GOC:pf]
+synonym: "reduced rate of cell adhesion" EXACT []
 is_a: FBcv:0000668 ! abnormal cell adhesion
 relationship: dc-contributor http://orcid.org/0000-0002-1373-1705
 property_value: dcterms-date 2020-12-16T09:22:22Z xsd:dateTime
@@ -10694,6 +10714,7 @@ id: FBcv:0007514
 name: decreased sleep
 namespace: phenotypic_class
 def: "Phenotype that is a decrease in the total amount or frequency of sleep (GO:0030431) over a given time interval, compared to wild-type. 'sleep' is defined as: 'Any process in which an organism enters and maintains a periodic, readily reversible state of reduced awareness and metabolic activity. Usually accompanied by physical relaxation, the onset of sleep in humans and other mammals is marked by a change in the electrical activity of the brain.'" [FBC:CP, ISBN:0192800981]
+synonym: "reduced sleep" EXACT []
 is_a: FBcv:0000705 ! abnormal sleep
 relationship: dc-contributor http://orcid.org/0000-0002-1373-1705
 property_value: dcterms-date 2020-12-16T12:12:40Z xsd:dateTime
@@ -10712,6 +10733,7 @@ id: FBcv:0007516
 name: decreased rate of feeding behavior
 namespace: phenotypic_class
 def: "Phenotype that is a decrease in the total amount or frequency of feeding behavior (GO:0007631) over a given time interval, compared to wild-type. 'feeding behavior' is defined as: 'Behavior associated with the intake of food.'" [FBC:DOS, GOC:mah]
+synonym: "reduced rate of feeding behavior" EXACT []
 is_a: FBcv:0000419 ! abnormal feeding behavior
 relationship: dc-contributor http://orcid.org/0000-0002-1373-1705
 property_value: dcterms-date 2020-12-16T12:16:19Z xsd:dateTime
@@ -10756,6 +10778,7 @@ name: decreased efficacy of short-term memory
 namespace: phenotypic_class
 def: "Phenotype that is a decrease in the efficacy of short-term memory (GO:0007614) relative to controls. 'short-term memory' is defined as: 'The memory process that deals with the storage, retrieval and modification of information received a short time (up to about 30 minutes) ago. This type of memory is typically dependent on direct, transient effects of second messenger activation.'" [FBC:CP, http://hebb.mit.edu/courses/9.03/lecture4.html, ISBN:0582227089]
 comment: This will usually be measured as a decreased magnitude/rate of a behavioral output associated with short-term memory formation.
+synonym: "reduced efficacy of short-term memory" EXACT []
 is_a: FBcv:0007501 ! abnormal short-term memory
 is_a: FBcv:0007518 ! decreased efficacy of memory
 relationship: dc-contributor http://orcid.org/0000-0002-1373-1705
@@ -10778,6 +10801,7 @@ name: decreased efficacy of long-term memory
 namespace: phenotypic_class
 def: "Phenotype that is a decrease in the efficacy of long-term memory (GO:0007616) relative to controls. 'long-term memory' is defined as: 'The memory process that deals with the storage, retrieval and modification of information a long time (typically weeks, months or years) after receiving that information. This type of memory is typically dependent on gene transcription regulated by second messenger activation.'" [FBC:CP, http://hebb.mit.edu/courses/9.03/lecture4.html, ISBN:0582227089]
 comment: This will usually be measured as a decreased magnitude/rate of a behavioral output associated with long-term memory formation.
+synonym: "reduced efficacy of long-term memory" EXACT []
 is_a: FBcv:0007503 ! abnormal long-term memory
 is_a: FBcv:0007518 ! decreased efficacy of memory
 relationship: dc-contributor http://orcid.org/0000-0002-1373-1705
@@ -10800,6 +10824,7 @@ name: decreased efficacy of anesthesia-resistant memory
 namespace: phenotypic_class
 def: "Phenotype that is a decrease in the efficacy of anesthesia-resistant memory (GO:0007615) relative to controls. 'anesthesia-resistant memory' is defined as: 'The memory process that results in the formation of consolidated memory resistant to disruption of the patterned activity of the brain, without requiring protein synthesis.'" [FBC:CP, PMID:15143285, PMID:17088531]
 comment: This will usually be measured as a decreased magnitude/rate of a behavioral output associated with anesthesia-resistant memory formation.
+synonym: "reduced efficacy of anesthesia-resistant memory" EXACT []
 is_a: FBcv:0007500 ! abnormal anesthesia-resistant memory
 is_a: FBcv:0007518 ! decreased efficacy of memory
 relationship: dc-contributor http://orcid.org/0000-0002-1373-1705
@@ -10822,6 +10847,7 @@ name: decreased efficacy of medium-term memory
 namespace: phenotypic_class
 def: "Phenotype that is a decrease in the efficacy of medium-term memory (GO:0072375) relative to controls. 'medium-term memory' is defined as: 'The memory process that deals with the storage, retrieval and modification of information received at a time ago that is intermediate between that of short and long term memory (30min - 7hrs in Drosophila melanogaster).'" [FBC:CP, GOC:sart, PMID:14659098, PMID:7923375]
 comment: This will usually be measured as a decreased magnitude/rate of a behavioral output associated with medium-term memory formation.
+synonym: "reduced efficacy of medium-term memory" EXACT []
 is_a: FBcv:0007502 ! abnormal medium-term memory
 is_a: FBcv:0007518 ! decreased efficacy of memory
 relationship: dc-contributor http://orcid.org/0000-0002-1373-1705
@@ -10870,6 +10896,7 @@ name: decreased efficacy of learning
 namespace: phenotypic_class
 def: "Phenotype that is a decrease in the efficacy of learning (GO:0007612), relative to controls. 'learning' is defined as: 'Any process in an organism in which a relatively long-lasting adaptive behavioral change occurs as the result of experience.'" [ISBN:0582227089, ISBN:0721662544]
 synonym: "impaired learning" EXACT []
+synonym: "reduced efficacy of learning" EXACT []
 is_a: FBcv:0000397 ! abnormal learning
 relationship: dc-contributor http://orcid.org/0000-0002-1373-1705
 property_value: dcterms-date 2022-08-12T09:06:29Z xsd:dateTime
@@ -10996,6 +11023,7 @@ name: decreased rate of chemosensory behavior
 namespace: phenotypic_class
 def: "Phenotype that is a decrease in any kind of rate (e.g. speed, frequency) of chemosensory behavior (GO:0007635). 'chemosensory behavior' is defined as: 'Behavior that is dependent upon the sensation of chemicals.'." [GO:0007635, GOC:go_curators]
 synonym: "decreased rate of chemosensitive behavior" EXACT []
+synonym: "reduced rate of chemosensory behavior" EXACT []
 is_a: FBcv:0000403 ! abnormal chemosensory behavior
 relationship: dc-contributor http://orcid.org/0000-0002-1373-1705
 property_value: dcterms-date 2022-08-12T10:30:08Z xsd:dateTime
@@ -11005,6 +11033,7 @@ id: FBcv:0007545
 name: decreased rate of proboscis extension reflex
 namespace: phenotypic_class
 def: "Phenotype that is a decrease in any kind of rate (e.g. speed, frequency) of proboscis extension reflex (GO:0007637). 'proboscis extension reflex' is defined as: 'The extension, through direct muscle actions, of the proboscis (the trunk-like extension of the mouthparts on the adult external head) in response to a nutritional stimulus.'." [FB:FBrf0044924, GO:0007637, GOC:jid]
+synonym: "reduced rate of proboscis extension reflex" EXACT []
 is_a: FBcv:0000680 ! abnormal proboscis extension reflex
 is_a: FBcv:0007544 ! decreased rate of chemosensory behavior
 relationship: dc-contributor http://orcid.org/0000-0002-1373-1705
@@ -11015,6 +11044,7 @@ id: FBcv:0007546
 name: decreased rate of grooming behavior
 namespace: phenotypic_class
 def: "Phenotype that is a decrease in any kind of rate (e.g. speed, frequency) of grooming behavior (GO:0007625). 'grooming behavior' is defined as: 'The specific behavior of an organism relating to grooming, cleaning and brushing to remove dirt and parasites.'." [GO:0007625, GOC:jl, GOC:pr]
+synonym: "reduced rate of grooming behavior" EXACT []
 is_a: FBcv:0000420 ! abnormal grooming behavior
 relationship: dc-contributor http://orcid.org/0000-0002-1373-1705
 property_value: dcterms-date 2022-08-12T10:31:07Z xsd:dateTime
@@ -11024,6 +11054,7 @@ id: FBcv:0007547
 name: decreased rate of locomotory behavior
 namespace: phenotypic_class
 def: "Phenotype that is a decrease in any kind of rate (e.g. speed, frequency) of locomotory behavior (GO:0007626). 'locomotory behavior' is defined as: 'The specific movement from place to place of an organism in response to external or internal stimuli. Locomotion of a whole organism in a manner dependent upon some combination of that organism's internal state and external conditions.'." [GO:0007626, GOC:dph]
+synonym: "reduced rate of locomotory behavior" EXACT []
 is_a: FBcv:0000414 ! abnormal locomotor behavior
 relationship: dc-contributor http://orcid.org/0000-0002-1373-1705
 property_value: dcterms-date 2022-08-12T10:31:37Z xsd:dateTime
@@ -11033,6 +11064,7 @@ id: FBcv:0007548
 name: decreased rate of adult walking behavior
 namespace: phenotypic_class
 def: "Phenotype that is a decrease in any kind of rate (e.g. speed, frequency) of adult walking behavior (GO:0007628). 'adult walking behavior' is defined as: 'The behavior of an adult relating to the progression of that organism along the ground by the process of lifting and setting down each leg.'." [GO:0007628, GOC:jid, GOC:pr, ISBN:0198606907]
+synonym: "reduced rate of adult walking behavior" EXACT []
 is_a: FBcv:0007527 ! abnormal adult walking behavior
 is_a: FBcv:0007550 ! decreased rate of adult locomotory behavior
 relationship: dc-contributor http://orcid.org/0000-0002-1373-1705
@@ -11043,6 +11075,7 @@ id: FBcv:0007549
 name: decreased rate of larval locomotory behavior
 namespace: phenotypic_class
 def: "Phenotype that is a decrease in any kind of rate (e.g. speed, frequency) of larval locomotory behavior (GO:0008345). 'larval locomotory behavior' is defined as: 'Locomotory behavior in a larval (immature) organism.'." [GO:0008345, GOC:ai]
+synonym: "reduced rate of larval locomotory behavior" EXACT []
 is_a: FBcv:0007528 ! abnormal larval locomotory behavior
 is_a: FBcv:0007547 ! decreased rate of locomotory behavior
 relationship: dc-contributor http://orcid.org/0000-0002-1373-1705
@@ -11053,6 +11086,7 @@ id: FBcv:0007550
 name: decreased rate of adult locomotory behavior
 namespace: phenotypic_class
 def: "Phenotype that is a decrease in any kind of rate (e.g. speed, frequency) of adult locomotory behavior (GO:0008344). 'adult locomotory behavior' is defined as: 'Locomotory behavior in a fully developed and mature organism.'." [GO:0008344, GOC:ai]
+synonym: "reduced rate of adult locomotory behavior" EXACT []
 is_a: FBcv:0007529 ! abnormal adult locomotory behavior
 is_a: FBcv:0007547 ! decreased rate of locomotory behavior
 relationship: dc-contributor http://orcid.org/0000-0002-1373-1705
@@ -11063,6 +11097,7 @@ id: FBcv:0007551
 name: decreased rate of mating behavior
 namespace: phenotypic_class
 def: "Phenotype that is a decrease in any kind of rate (e.g. speed, frequency) of mating behavior (GO:0007617). 'mating behavior' is defined as: 'The behavioral interactions between organisms for the purpose of mating, or sexual reproduction resulting in the formation of zygotes.'." [GO:0007617, GOC:ai, GOC:dph]
+synonym: "reduced rate of mating behavior" EXACT []
 is_a: FBcv:0000721 ! abnormal mating behavior
 relationship: dc-contributor http://orcid.org/0000-0002-1373-1705
 property_value: dcterms-date 2022-08-12T10:32:56Z xsd:dateTime
@@ -11072,6 +11107,7 @@ id: FBcv:0007552
 name: decreased rate of courtship behavior
 namespace: phenotypic_class
 def: "Phenotype that is a decrease in any kind of rate (e.g. speed, frequency) of courtship behavior (GO:0007619). 'courtship behavior' is defined as: 'The behavior of an organism for the purpose of attracting sexual partners.'." [GO:0007619, GOC:ai, GOC:dph]
+synonym: "reduced rate of courtship behavior" EXACT []
 is_a: FBcv:0000399 ! abnormal courtship behavior
 is_a: FBcv:0007551 ! decreased rate of mating behavior
 relationship: dc-contributor http://orcid.org/0000-0002-1373-1705
@@ -11082,6 +11118,7 @@ id: FBcv:0007553
 name: decreased rate of flight behavior
 namespace: phenotypic_class
 def: "Phenotype that is a decrease in any kind of rate (e.g. speed, frequency) of flight behavior (GO:0007629). 'flight behavior' is defined as: 'The response to external or internal stimuli that results in the locomotory process of flight. Flight is the self-propelled movement of an organism through the air.'." [GO:0007629, GOC:jid, ISBN:0198606907]
+synonym: "reduced rate of flight behavior" EXACT []
 is_a: FBcv:0007550 ! decreased rate of adult locomotory behavior
 relationship: dc-contributor http://orcid.org/0000-0002-1373-1705
 property_value: dcterms-date 2022-08-12T10:33:37Z xsd:dateTime
@@ -11091,6 +11128,7 @@ id: FBcv:0007554
 name: decreased rate of jump response
 namespace: phenotypic_class
 def: "Phenotype that is a decrease in any kind of rate (e.g. speed, frequency) of jump response (GO:0007630). 'jump response' is defined as: 'The sudden, usually upward, movement off the ground or other surface through sudden muscular effort in the legs, following exposure to an external stimulus.'." [GO:0007630, GOC:jid, ISBN:0198606907]
+synonym: "reduced rate of jump response" EXACT []
 is_a: FBcv:0000720 ! abnormal jump response
 is_a: FBcv:0007550 ! decreased rate of adult locomotory behavior
 relationship: dc-contributor http://orcid.org/0000-0002-1373-1705
@@ -11101,6 +11139,7 @@ id: FBcv:0007555
 name: decreased rate of copulation
 namespace: phenotypic_class
 def: "Phenotype that is a decrease in any kind of rate (e.g. speed, frequency) of copulation (GO:0007620). 'copulation' is defined as: 'The act of sexual union between male and female, involving the transfer of sperm.'." [GO:0007620, ISBN:0721662544]
+synonym: "reduced rate of copulation" EXACT []
 is_a: FBcv:0006000 ! abnormal copulation
 is_a: FBcv:0007551 ! decreased rate of mating behavior
 relationship: dc-contributor http://orcid.org/0000-0002-1373-1705
