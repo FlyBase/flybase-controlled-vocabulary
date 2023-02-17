@@ -48,8 +48,8 @@ tmp/asserted-subclass-of-axioms.obo: $(SRC) tmp/fbcv_terms.txt
 		filter --term-file tmp/fbcv_terms.txt --axioms "logical" --preserve-structure false \
 		convert --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@
 
-tmp/source-merged.obo: $(SRC) tmp/asserted-subclass-of-axioms.obo
-	$(ROBOT) merge --input $(SRC) \
+tmp/source-merged.obo: $(EDIT_PREPROCESSED) tmp/asserted-subclass-of-axioms.obo
+	$(ROBOT) merge --input $< \
 		reason --reasoner ELK \
 		relax \
 		remove --axioms equivalent \
@@ -95,7 +95,7 @@ $(ONT)-simple.owl: oort tmp/fbcv_signature.txt
 
 # For some reason, using reduce just does not work on FBCV this is a workaround, but it needs some figuring out..
 
-$(ONT)-full.owl: $(SRC) $(OTHER_SRC)
+$(ONT)-full.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC)
 	$(ROBOT) merge --input $< \
 		reason --reasoner ELK --equivalent-classes-allowed asserted-only \
 		relax \
@@ -230,7 +230,7 @@ reports/obo_qc_%.owl.txt: $*.owl
 # "." (DOT-) definitions are those for which the formal definition is translated into a human readable definitions.
 # "$sub_" (SUB-) definitions are those that have special placeholder string to substitute in definitions from external ontologies, mostly CHEBI
 
-tmp/merged-source-pre.owl: $(SRC) all_imports components/dpo-simple.owl
+tmp/merged-source-pre.owl: $(SRC) components/dpo-simple.owl
 	$(ROBOT) merge -i $(SRC) --output $@
 
 tmp/auto_generated_definitions_seed_dot.txt: tmp/merged-source-pre.owl
@@ -252,7 +252,6 @@ tmp/auto_generated_definitions_sub.owl: tmp/merged-source-pre.owl tmp/auto_gener
 tmp/replaced_defs.txt:
 	cat tmp/auto_generated_definitions_seed_sub.txt tmp/auto_generated_definitions_seed_dot.txt | sort | uniq > $@
 
-pre_release: $(SRC) tmp/auto_generated_definitions_sub.owl tmp/auto_generated_definitions_dot.owl
+$(EDIT_PREPROCESSED): $(SRC) tmp/auto_generated_definitions_sub.owl tmp/auto_generated_definitions_dot.owl
 	cat $(SRC) | grep -v 'def[:] \"[.]\"' | grep -v 'sub_' > tmp/$(ONT)-edit-release.obo
-	$(ROBOT) merge -i tmp/$(ONT)-edit-release.obo -i tmp/auto_generated_definitions_sub.owl -i tmp/auto_generated_definitions_dot.owl --collapse-import-closure false -o $(ONT)-edit-release.ofn && mv $(ONT)-edit-release.ofn $(ONT)-edit-release.owl
-	echo "Preprocessing done. Make sure that NO CHANGES TO THE EDIT FILE ARE COMMITTED!"
+	$(ROBOT) merge -i tmp/$(ONT)-edit-release.obo -i tmp/auto_generated_definitions_sub.owl -i tmp/auto_generated_definitions_dot.owl --collapse-import-closure false -o $(EDIT_PREPROCESSED)
