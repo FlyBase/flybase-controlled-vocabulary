@@ -8983,6 +8983,51 @@ property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002
 property_value: http://purl.org/dc/terms/date "2023-02-23T14:00:00Z" xsd:dateTime
 
 [Term]
+id: FBcv:0009017
+name: cell type-specific gene expression profile
+namespace: result_type
+def: "A result that provides the expression values for all (or some subset of) genes in a given biological sample containing cells of a single cell type." [FBC:DPG]
+is_a: FBcv:0003088 ! gene expression profile
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
+property_value: http://purl.org/dc/terms/date "2023-02-24T19:07:31Z" xsd:dateTime
+
+[Term]
+id: FBcv:0009018
+name: cell type-specific RNA-sequencing analysis
+def: "An analysis that results from the sequencing of RNAs from multiple highly purified samples." [FBC:DPG]
+is_a: FBcv:0003108 ! analysis
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
+property_value: http://purl.org/dc/terms/date "2023-02-24T19:16:13Z" xsd:dateTime
+
+[Term]
+id: FBcv:0009019
+name: INTACT nuclei isolation
+namespace: biosample_attribute
+def: "Nuclei of a single cell type have been isolated with the INTACT (Isolation of Nuclei TAgged in a specific Cell Type) strategy (Henry et al., 2012)." [FlyBase:FBrf0219710]
+is_a: FBcv:0003170 ! cell isolation
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
+property_value: http://purl.org/dc/terms/date "2023-02-24T19:27:43Z" xsd:dateTime
+
+[Term]
+id: FBcv:0009020
+name: TAPIN nuclei isolation
+namespace: biosample_attribute
+def: "Nuclei of a single cell type have been isolated with the TAPIN (Tandem Affinity Purification of Intact Nuclei) strategy (Davis et al., 2020)." [FlyBase:FBrf0244935]
+synonym: "TAPIN-seq" BROAD [FlyBase:FBrf0244935]
+is_a: FBcv:0003170 ! cell isolation
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
+property_value: http://purl.org/dc/terms/date "2023-02-24T19:29:12Z" xsd:dateTime
+
+[Term]
+id: FBcv:0009021
+name: nuclear RNA isolation
+namespace: assay_attribute
+def: "Material that is derived from the isolation of RNA from nuclei." [FBC:DPG]
+is_a: FBcv:0003176 ! assay material
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
+property_value: http://purl.org/dc/terms/date "2023-02-24T19:33:34Z" xsd:dateTime
+
+[Term]
 id: FBcv:0010000
 name: obsolete living stock
 comment: Consider - FBsv:0000002.
