@@ -198,7 +198,6 @@ install_flybase_scripts:
 	wget -O ../scripts/chado_load_checks.pl $(chado_load_checks) && chmod +x ../scripts/chado_load_checks.pl
 	wget -O ../scripts/obo_track_new.pl $(obo_track_new) && chmod +x ../scripts/obo_track_new.pl
 	wget -O ../scripts/auto_def_sub.pl $(auto_def_sub) && chmod +x ../scripts/auto_def_sub.pl
-	echo "Warning: Chado load checks currently exclude ISBN wellformedness checks!"
 
 reports/obo_track_new_simple.txt: $(LAST_DEPLOYED_SIMPLE) install_flybase_scripts $(ONT)-simple.obo
 	echo "Comparing with: "$(SIMPLE_PURL) && ../scripts/obo_track_new.pl $(LAST_DEPLOYED_SIMPLE) $(ONT)-simple.obo > $@
@@ -210,6 +209,7 @@ reports/onto_metrics_calc.txt: $(ONT)-simple.obo install_flybase_scripts
 	../scripts/onto_metrics_calc.pl 'phenotypic_class' $(ONT)-simple.obo > $@
 
 reports/chado_load_check_simple.txt: install_flybase_scripts flybase_controlled_vocabulary.obo
+	apt-get install -y --no-install-recommends libbusiness-isbn-perl
 	../scripts/chado_load_checks.pl flybase_controlled_vocabulary.obo > $@
 
 reports/obo_qc_%.obo.txt: $*.obo
