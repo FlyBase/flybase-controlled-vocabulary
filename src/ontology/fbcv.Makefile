@@ -32,95 +32,48 @@ components/dpo-simple.owl: .FORCE
 	$(ROBOT) annotate -i tmp/dpo-simple.owl --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ -o $@
 	rm tmp/dpo-simple.owl
 
-#####################################################################################
-### Run ontology-release-runner instead of ROBOT as long as ROBOT is broken.      ###
-#####################################################################################
 
-# The reason command (and the reduce command) removed some of the very crucial asserted axioms at this point.
-# That is why we first need to extract all logical axioms (i.e. subsumptions) and merge them back in after
-# The reasoning step is completed. This will be a big problem when we switch to ROBOT completely..
+###################################################
+### Custom pipeline to generate fbcv-simple.owl ###
+###################################################
 
 tmp/fbcv_terms.txt: $(SRC)
 	$(ROBOT) query --use-graphs true -f csv -i $(SRC) --query ../sparql/fbcv_terms.sparql $@
 
-tmp/asserted-subclass-of-axioms.obo: $(SRC) tmp/fbcv_terms.txt
-	$(ROBOT) merge --input $(SRC) \
-		filter --term-file tmp/fbcv_terms.txt --axioms "logical" --preserve-structure false \
-		convert --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@
-
-tmp/source-merged.obo: $(EDIT_PREPROCESSED) tmp/asserted-subclass-of-axioms.obo
-	$(ROBOT) merge --input $< \
-		reason --reasoner ELK \
-		relax \
-		remove --axioms equivalent \
-		merge -i tmp/asserted-subclass-of-axioms.obo \
-		convert --check false -f obo $(OBO_FORMAT_OPTIONS) -o tmp/source-merged.owl.obo &&\
-		grep -v ^owl-axioms tmp/source-merged.owl.obo > tmp/source-stripped.obo &&\
-		cat tmp/source-stripped.obo | perl -0777 -e '$$_ = <>; s/name[:].*\nname[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/def[:].*\ndef[:]/def:/g; print' > $@ &&\
-		rm tmp/source-merged.owl.obo tmp/source-stripped.obo
-
-oort: tmp/source-merged.obo
-	ontology-release-runner --reasoner elk $< --no-subsets --skip-ontology-checks --allow-equivalent-pairs --simple --relaxed --asserted --allow-overwrite --outdir oort
-
-tmp/$(ONT)-stripped.owl: oort
-	$(ROBOT) filter --input oort/$(ONT)-simple.owl --term-file tmp/fbcv_terms.txt --trim false \
+tmp/$(ONT)-stripped.owl: $(ONT).owl tmp/fbcv_terms.txt
+	$(ROBOT) filter --input $< --term-file tmp/fbcv_terms.txt --trim false \
 		convert -o $@
 
 # fbcv_signature.txt should contain all FBCV terms and all properties (and subsets) used by the ontology.
 # It serves like a proper signature, but including annotation properties
 tmp/fbcv_signature.txt: tmp/$(ONT)-stripped.owl tmp/fbcv_terms.txt
 	$(ROBOT) query -f csv -i $< --query ../sparql/object-properties.sparql $@_prop.tmp &&\
-	cat tmp/fbcv_terms.txt $@_prop.tmp | sort | uniq > $@ &&\
+	cat tmp/fbcv_terms.txt $@_prop.tmp | grep -i fbcv |sort | uniq > $@ &&\
 	rm $@_prop.tmp
 
-# The standard simple artefacts keeps a bunch of irrelevant Typedefs which are a result of the merge. The following steps takes the result
-# of the oort simple version, and then removes them. A second problem is that oort does not deal well with cycles and removes some of the
-# asserted FBCV subsumptions. This can hopefully be solved once we can move all the way to ROBOT, but for now, it requires merging in
-# the asserted hierarchy and reducing again.
-
-
-# Note that right now, TypeDefs that are FBCV native (like has_age) are included in the release!
-
-$(ONT)-simple.owl: oort tmp/fbcv_signature.txt
-	$(ROBOT) merge --input oort/$(ONT)-simple.owl \
-		merge -i tmp/asserted-subclass-of-axioms.obo \
-		reason --reasoner ELK --equivalent-classes-allowed asserted-only \
+# We generate the -simple artifact almost exactly as the ODK would do,
+# the main difference being an extra step where we remove all terms
+# outside of the FBcv signature as generated above.
+$(ONT)-simple.owl: $(ONT).owl tmp/fbcv_signature.txt
+	$(ROBOT) reason --input $< --reasoner ELK --equivalent-classes-allowed asserted-only \
 		relax \
 		remove --axioms equivalent \
 		relax \
-		filter --term-file $(SIMPLESEED) --select "annotations ontology anonymous self" --trim true --signature true \
+		filter --term-file $(SIMPLESEED) --select "annotations ontology anonymous self" \
+		  --trim true --signature true \
 		remove --term-file tmp/fbcv_signature.txt --select complement --trim false \
 		reduce -r ELK \
-		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --annotation oboInOwl:date "$(OBODATE)" --output $@.tmp.owl && mv $@.tmp.owl $@
-
-# For some reason, using reduce just does not work on FBCV this is a workaround, but it needs some figuring out..
-
-$(ONT)-full.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC)
-	$(ROBOT) merge --input $< \
-		reason --reasoner ELK --equivalent-classes-allowed asserted-only \
-		relax \
-		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --annotation oboInOwl:date "$(OBODATE)" --output $@.tmp.owl && mv $@.tmp.owl $@
-
-ontsim:
-	$(ROBOT) merge --input oort/$(ONT)-simple.owl \
-		merge -i tmp/asserted-subclass-of-axioms.obo \
-		reason --reasoner ELK --equivalent-classes-allowed asserted-only \
-		relax \
-		filter --term-file $(SIMPLESEED) --select "annotations ontology anonymous self" --trim true --signature true \
-		remove --term-file tmp/fbcv_signature.txt --select complement --trim false \
-		reduce -r ELK \
-		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ --annotation oboInOwl:date "$(OBODATE)" --output $@.tmp.owl && mv $@.tmp.owl $@
+		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ \
+		  --annotation oboInOwl:date "$(OBODATE)" --output $@.tmp.owl && mv $@.tmp.owl $@
 
 
-#$(ONT)-simple.obo: oort
-#	$(ROBOT) merge --input oort/$(ONT)-simple.obo \
-#		merge -i tmp/asserted-subclass-of-axioms.obo \
-#		reduce \
-#		remove --term-file tmp/fbcv_signature.txt --select complement --trim false \
-#		convert -o $@
-#$(ONT)-simple.obo: oort
+##############################################
+### Custom rules to generate OBO artifacts ###
+##############################################
 
-# Overwriting all obo files to remove excess labels, defs, comments.
+# We override all the ODK standard OBO-generating rules to make sure to
+# remove excess labels, defs, and comments from OBO artifacts.
+
 $(ONT)-simple.obo: $(ONT)-simple.owl
 	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
 	cat $@.tmp.obo | grep -v ^owl-axioms > $@.tmp &&\
@@ -153,15 +106,12 @@ $(ONT)-full.obo: $(ONT)-full.owl
 	cat $@.tmp | perl -0777 -e '$$_ = <>; s/(?:name[:].*\n)+name[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/(?:comment[:].*\n)+comment[:]/comment:/g; print' | perl -0777 -e '$$_ = <>; s/(?:def[:].*\n)+def[:]/def:/g; print' > $@
 	rm -f $@.tmp.obo $@.tmp
 
-
-flybase_controlled_vocabulary.obo:
+flybase_controlled_vocabulary.obo: $(ONT)-simple.obo
 	$(ROBOT) remove --input $(ONT)-simple.obo --term "http://purl.obolibrary.org/obo/FBcv_0008000" \
 		convert -o $@.tmp.obo
 	cat $@.tmp.obo | grep -v FlyBase_miscellaneous_CV | grep -v property_value: | sed '/^date[:]/c\date: $(OBODATE)' | sed '/^data-version[:]/c\data-version: $(DATE)' > $@
 	rm -f $@.tmp.obo
 
-
-#	owltools $(ONT)-simple --make-subset-by-properties part_of conditionality -o $@
 
 ######################################################
 ### Code for generating additional FlyBase reports ###
