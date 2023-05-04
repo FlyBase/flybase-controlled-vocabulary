@@ -1,7 +1,7 @@
 format-version: 1.2
-data-version: 2023-02-09
-date: 09:02:2023 12:32
-subsetdef: camcur ""
+data-version: 2023-05-04
+date: 04:05:2023 09:26
+subsetdef: camcur "camcur"
 subsetdef: common_tool_use "Terms to summarize typical use of a gene from one organism that is introduced into another organism primarily for use an experimental tool, rather than to study the function of the gene"
 subsetdef: do_not_annotate "Term not to be used for direct annotation"
 subsetdef: do_not_manually_annotate "Term not to be used for direct manual annotation"
@@ -2796,7 +2796,7 @@ is_a: FBcv:0001347 ! phenotype
 id: FBcv:0000384
 name: abnormal aging
 namespace: phenotypic_class
-def: "Phenotype that is any abnormality in aging (GO:0007568). 'aging' is defined as: 'A developmental process that is a deterioration and loss of function over time. Aging includes loss of functions such as resistance to disease, homeostasis, and fertility, as well as wear and tear. Aging includes cellular senescence, but is more inclusive. May precede death and may succeed developmental maturation (GO:0021700).'" [GOC:PO_curators]
+def: "Phenotype that is any abnormality in aging." [GOC:PO_curators]
 subset: fbcvsubset_mgiribbons
 synonym: "aging defective" EXACT []
 is_a: FBcv:0001347 ! phenotype
@@ -3332,7 +3332,7 @@ is_a: FBcv:0000450 ! abnormal developmental rate
 id: FBcv:0000444
 name: hyperplasia
 namespace: phenotypic_class
-def: "Phenotype that is an increase in the number of cells in a tissue or organ, usually associated with an increase in size, where the affected tissue or organ maintains its normal form." [ISBN:9780198506737]
+def: "Phenotype that is an increase in the number of cells in a tissue or organ, usually associated with an increase in size, where the affected tissue or organ maintains its normal form." [ISBN:978-0-19-850673-7]
 synonym: "hyperplastic" EXACT []
 is_a: FBcv:0000362 ! increased cell number
 
@@ -5518,7 +5518,7 @@ is_a: FBcv:0000714 ! nutrition conditional
 id: FBcv:0000716
 name: abnormal cell migration
 namespace: phenotypic_class
-def: "Phenotype that is any abnormality in cell migration (GO:0016477). 'cell migration' is defined as: 'The controlled self-propelled movement of a cell from one site to a destination guided by molecular cues. Cell migration is a central process in the development and maintenance of multicellular organisms.'" [FBC:DOS, GOC:cjm, GOC:dph, GOC:ems, GOC:pf, Wikipedia:Cell_migration]
+def: "Phenotype that is any abnormality in cell migration (GO:0016477). 'cell migration' is defined as: 'The controlled self-propelled movement of a cell from one site to a destination guided by molecular cues.'" [FBC:DOS, GOC:cjm, GOC:dph, GOC:ems, GOC:pf, Wikipedia:Cell_migration]
 subset: fbcvsubset_mgiribbons
 synonym: "cell migration defective" EXACT []
 is_a: FBcv:0001347 ! phenotype
@@ -6121,7 +6121,7 @@ is_a: FBcv:0000189 ! publication class
 id: FBcv:0000791
 name: decreased speed of aging
 namespace: phenotypic_class
-def: "A phenotype in which the aging process (GO:0007568) is slower than in wild-type." [FBC:DOC]
+def: "A phenotype in which the aging process is slower than in wild-type." [FBC:DOC]
 synonym: "delayed aging" RELATED []
 synonym: "reduced speed of aging" EXACT []
 is_a: FBcv:0000384 ! abnormal aging
@@ -6130,7 +6130,7 @@ is_a: FBcv:0000384 ! abnormal aging
 id: FBcv:0000792
 name: increased speed of aging
 namespace: phenotypic_class
-def: "A phenotype in which the aging process (GO:0007568) is accelerated compared to wild-type." [FBC:DOC]
+def: "A phenotype in which the aging process is accelerated compared to wild-type." [FBC:DOC]
 synonym: "premature aging" RELATED []
 is_a: FBcv:0000384 ! abnormal aging
 
@@ -8668,7 +8668,7 @@ is_a: FBcv:0005039 ! light-regulated activity regulation tag
 id: FBcv:0005042
 name: gene product degradation tag
 namespace: experimental_tool_descriptor
-def: "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which results in the tagged gene product being targeted for degradation, where this property can be regulated by a specific process or entity." [FBC:GM]
+def: "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which results in the tagged gene product being targeted for degradation." [FBC:GM]
 is_a: FBcv:0005001 ! experimental tool descriptor
 
 [Term]
@@ -8676,7 +8676,7 @@ id: FBcv:0005043
 name: cell cycle-regulated gene product degradation tag
 namespace: experimental_tool_descriptor
 def: "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which results in the tagged gene product being targeted for degradation, where this property can be regulated by the cell cycle." [FBC:GM]
-is_a: FBcv:0005042 ! gene product degradation tag
+is_a: FBcv:0009016 ! conditional gene product degradation tag
 
 [Term]
 id: FBcv:0005044
@@ -8768,7 +8768,7 @@ id: FBcv:0005056
 name: gene product cleavage tag
 namespace: experimental_tool_descriptor
 def: "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which allows the tagged gene product to be cleaved (broken into smaller molecules by the rupture of a covalent bond) by a specific process." [FBC:GM]
-is_a: FBcv:0005001 ! experimental tool descriptor
+is_a: FBcv:0009022 ! gene product engineering tool
 
 [Term]
 id: FBcv:0005057
@@ -8972,7 +8972,7 @@ name: small molecule-regulated gene product degradation tag
 namespace: experimental_tool_descriptor
 def: "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which results in the tagged gene product being targeted for degradation, where this property can be regulated by a small molecule." [FBC:GM]
 synonym: "small molecule-dependent gene product degradation tag" EXACT []
-is_a: FBcv:0005042 ! gene product degradation tag
+is_a: FBcv:0009016 ! conditional gene product degradation tag
 
 [Term]
 id: FBcv:0006000
@@ -9005,7 +9005,7 @@ name: population of Drosophila
 id: FBcv:0006004
 name: abnormal oviposition
 namespace: phenotypic_class
-def: "Phenotype that is any abnormality in oviposition (GO:0018991) despite production of eggs. 'oviposition' is defined as: 'The deposition of eggs (either fertilized or not) upon a surface or into a medium such as water.'." [FBC:TEMJ, GOC:ems]
+def: "Phenotype that is any abnormality in oviposition (GO:0018991) despite production of eggs. 'oviposition' is defined as: 'A reproductive behavior that results in the deposition of eggs (either fertilized or not) upon a surface or into a medium such as water.'." [FBC:TEMJ, GOC:ems, PMID:18050396, PMID:31164023]
 comment: This term should only be used to report defects specifically in oviposition, as opposed to an overall loss of fertility. It is not possible to observe an oviposition abnormality if eggs are not being produced. If a difference in "oviposition rate" is measured by authors as a proxy for sterility/fertility, it would be better to use the terms "sterile", "semi-sterile", or "semi-fertile", as appropriate.
 synonym: "oviposition defective" EXACT []
 is_a: FBcv:0000387 ! abnormal behavior
@@ -9371,7 +9371,7 @@ name: RNA engineering tool
 namespace: experimental_tool_descriptor
 def: "Sequence that forms all or part of a transgenic locus or modified endogenous locus and which can be used to modify an RNA of interest in a defined manner. Examples of RNA engineering include the targeting of an individual transcript for knockdown, and targeted manipulation of RNA splicing or editing." [FBC:GM, PMID:30021724, PMID:30388409, PMID:31367845]
 subset: common_tool_use
-is_a: FBcv:0005001 ! experimental tool descriptor
+is_a: FBcv:0009022 ! gene product engineering tool
 
 [Term]
 id: FBcv:0007046
@@ -9386,7 +9386,7 @@ id: FBcv:0007047
 name: light-regulated gene product degradation tag
 namespace: experimental_tool_descriptor
 def: "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which results in the tagged gene product being targeted for degradation, where this property can be regulated by irradiation with a pulse of light." [FBC:GM]
-is_a: FBcv:0005042 ! gene product degradation tag
+is_a: FBcv:0009016 ! conditional gene product degradation tag
 
 [Term]
 id: FBcv:0007048
@@ -10085,6 +10085,77 @@ name: biosample preparation method
 namespace: biosample_attribute
 def: "Method pertaining to the collection or isolation of a biosample." [FBC:DPG]
 is_a: FBcv:0003164 ! biosample method
+
+[Term]
+id: FBcv:0009016
+name: conditional gene product degradation tag
+def: "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which results in the tagged gene product being targeted for degradation, where this property can be regulated in response to a particular stimulus." [FBC:GM]
+is_a: FBcv:0005042 ! gene product degradation tag
+
+[Term]
+id: FBcv:0009017
+name: cell type-specific gene expression profile
+namespace: result_type
+def: "A result that provides the expression values for all (or some subset of) genes in a given biological sample containing cells of a single cell type." [FBC:DPG]
+is_a: FBcv:0003088 ! gene expression profile
+
+[Term]
+id: FBcv:0009018
+name: cell type-specific RNA-sequencing analysis
+def: "An analysis that results from the sequencing of RNAs from multiple highly purified samples." [FBC:DPG]
+is_a: FBcv:0003108 ! analysis
+
+[Term]
+id: FBcv:0009019
+name: INTACT nuclei isolation
+namespace: biosample_attribute
+def: "Nuclei of a single cell type have been isolated with the INTACT (Isolation of Nuclei TAgged in a specific Cell Type) strategy (Henry et al., 2012)." [FlyBase:FBrf0219710]
+is_a: FBcv:0003170 ! cell isolation
+
+[Term]
+id: FBcv:0009020
+name: TAPIN nuclei isolation
+namespace: biosample_attribute
+def: "Nuclei of a single cell type have been isolated with the TAPIN (Tandem Affinity Purification of Intact Nuclei) strategy (Davis et al., 2020)." [FlyBase:FBrf0244935]
+synonym: "TAPIN-seq" BROAD [FlyBase:FBrf0244935]
+is_a: FBcv:0003170 ! cell isolation
+
+[Term]
+id: FBcv:0009021
+name: nuclear RNA isolation
+namespace: assay_attribute
+def: "Material that is derived from the isolation of RNA from nuclei." [FBC:DPG]
+is_a: FBcv:0003176 ! assay material
+
+[Term]
+id: FBcv:0009022
+name: gene product engineering tool
+namespace: experimental_tool_descriptor
+def: "Sequence that forms all or part of a transgenic locus or modified endogenous locus and which can be used to modify a gene product of interest in a defined manner." [FBC:GM]
+is_a: FBcv:0005001 ! experimental tool descriptor
+
+[Term]
+id: FBcv:0009023
+name: protease
+namespace: experimental_tool_descriptor
+def: "An enzyme that catalyzes hydrolysis of a peptide bond." [GO:0008233]
+subset: common_tool_use
+synonym: "peptidase" EXACT [FBC:GM]
+is_a: FBcv:0009022 ! gene product engineering tool
+
+[Term]
+id: FBcv:0009024
+name: protease target site
+namespace: experimental_tool_descriptor
+def: "A recognition site for a protease, an enzyme that catalyzes hydrolysis of a peptide bond." [FBC:GM]
+is_a: FBcv:0005057 ! protein cleavage tag
+
+[Term]
+id: FBcv:0009025
+name: driver-specific gene expression profile
+namespace: result_type
+def: "A result that provides the expression values for all (or some subset of) genes in a given biological sample obtained using a specific transcriptional driver (or combination of drivers), when that driver is not associated to a clearly identified cell type." [FBC:DPG]
+is_a: FBcv:0003088 ! gene expression profile
 
 [Term]
 id: FBcv:0010000
