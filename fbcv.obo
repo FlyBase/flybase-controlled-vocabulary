@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbcv/releases/2023-05-04
-date: 04:05:2023 09:26
+data-version: fbcv/releases/2023-07-06
+date: 06:07:2023 09:07
 subsetdef: 1_STAR ""
 subsetdef: 2_STAR ""
 subsetdef: 3_STAR ""
@@ -53,7 +53,7 @@ property_value: http://purl.org/dc/elements/1.1/description "A miscellaneous ont
 property_value: http://purl.org/dc/elements/1.1/title "FlyBase Controlled Vocabulary (FBcv)" xsd:string
 property_value: http://purl.org/dc/terms/license "https://creativecommons.org/licenses/by/4.0/" xsd:string
 property_value: IAO:0000700 FBcv:0000000
-property_value: owl:versionInfo "2023-05-04" xsd:string
+property_value: owl:versionInfo "2023-07-06" xsd:string
 
 [Term]
 id: BFO:0000002
@@ -71,7 +71,8 @@ relationship: BFO:0000050 BFO:0000003 {all_only="true"} ! part of occurrent
 [Term]
 id: BFO:0000004
 name: independent continuant
-def: "A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything." []
+def: "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])" []
+comment: A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.
 is_a: BFO:0000002 ! continuant
 disjoint_from: BFO:0000020 ! specifically dependent continuant
 disjoint_from: BFO:0000031 ! generically dependent continuant
@@ -80,7 +81,8 @@ relationship: BFO:0000050 BFO:0000004 {all_only="true"} ! part of independent co
 [Term]
 id: BFO:0000015
 name: process
-def: "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t." []
+def: "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])" []
+comment: An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.
 is_a: BFO:0000003 ! occurrent
 
 [Term]
@@ -106,7 +108,8 @@ relationship: BFO:0000050 BFO:0000019 {all_only="true"} ! part of quality
 [Term]
 id: BFO:0000020
 name: specifically dependent continuant
-def: "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same." []
+def: "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])" []
+comment: A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.
 is_a: BFO:0000002 ! continuant
 disjoint_from: BFO:0000031 ! generically dependent continuant
 relationship: BFO:0000050 BFO:0000020 {all_only="true"} ! part of specifically dependent continuant
@@ -120,7 +123,8 @@ is_a: BFO:0000017 ! realizable entity
 [Term]
 id: BFO:0000031
 name: generically dependent continuant
-def: "A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time." []
+def: "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])" []
+comment: A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.
 is_a: BFO:0000002 ! continuant
 relationship: BFO:0000050 BFO:0000031 {all_only="true"} ! part of generically dependent continuant
 
@@ -27787,6 +27791,7 @@ property_value: http://purl.org/dc/terms/date "2022-02-17T14:12:00Z" xsd:dateTim
 [Term]
 id: FBcv:0009016
 name: conditional gene product degradation tag
+namespace: experimental_tool_descriptor
 def: "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which results in the tagged gene product being targeted for degradation, where this property can be regulated in response to a particular stimulus." [FBC:GM]
 is_a: FBcv:0005042 ! gene product degradation tag
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
@@ -28051,6 +28056,7 @@ property_value: RO:0040042 BFO:0000031
 property_value: seeAlso http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections
 property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:PartOf
 property_value: seeAlso "http://www.obofoundry.org/ro/#OBO_REL:part_of" xsd:string
+property_value: seeAlso "https://wiki.geneontology.org/Part_of" xsd:anyURI
 is_transitive: true
 is_a: RO:0002131 ! overlaps
 inverse_of: BFO:0000051 ! has part
@@ -28245,7 +28251,7 @@ name: has regulatory component activity
 def: "A 'has regulatory component activity' B if A and B are GO molecular functions (GO_0003674), A has_component B and A is regulated by B." []
 is_a: RO:0002017 ! has component activity
 is_a: RO:0002334 ! regulated by
-created_by: dos
+created_by: https://orcid.org/0000-0002-7073-9172
 creation_date: 2017-05-24T09:30:46Z
 
 [Typedef]
@@ -28255,7 +28261,7 @@ def: "A relationship that holds between a GO molecular function and a component 
 comment: By convention GO molecular functions are classified by their effector function.  Internal regulatory functions are treated as components.  For example, NMDA glutmate receptor activity is a cation channel activity with positive regulatory component 'glutamate binding' and negative regulatory components including 'zinc binding' and 'magnesium binding'.
 is_a: RO:0002013 ! has regulatory component activity
 is_a: RO:0002335 ! negatively regulated by
-created_by: dos
+created_by: https://orcid.org/0000-0002-7073-9172
 creation_date: 2017-05-24T09:31:01Z
 
 [Typedef]
@@ -28265,7 +28271,7 @@ def: "A relationship that holds between a GO molecular function and a component 
 comment: By convention GO molecular functions are classified by their effector function and internal regulatory functions are treated as components.  So, for example calmodulin has a protein binding activity that has positive regulatory component activity calcium binding activity. Receptor tyrosine kinase activity is a tyrosine kinase activity that has positive regulatory component 'ligand binding'.
 is_a: RO:0002013 ! has regulatory component activity
 is_a: RO:0002336 ! positively regulated by
-created_by: dos
+created_by: https://orcid.org/0000-0002-7073-9172
 creation_date: 2017-05-24T09:31:17Z
 
 [Typedef]
@@ -28273,7 +28279,7 @@ id: RO:0002017
 name: has component activity
 comment: A 'has component activity' B if A is A and B are molecular functions (GO_0003674) and A has_component B.
 is_a: RO:0002018 ! has component process
-created_by: dos
+created_by: https://orcid.org/0000-0002-7073-9172
 creation_date: 2017-05-24T09:44:33Z
 
 [Typedef]
@@ -28283,44 +28289,44 @@ def: "w 'has process component' p if p and w are processes,  w 'has part' p and 
 domain: BFO:0000015 ! process
 range: BFO:0000015 ! process
 is_a: RO:0002180 ! has component
-created_by: dos
+created_by: https://orcid.org/0000-0002-7073-9172
 creation_date: 2017-05-24T09:49:21Z
 
 [Typedef]
 id: RO:0002022
 name: directly regulated by
-comment: Process(P2) is directly regulated by process(P1) iff: P1 regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  regulates the kinase activity (P2) of protein B then P1 directly regulates P2. {xref="GOC:dos"}
+comment: Process(P2) is directly regulated by process(P1) iff: P1 regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  regulates the kinase activity (P2) of protein B then P1 directly regulates P2. {xref="https://orcid.org/0000-0002-7073-9172"}
 is_a: RO:0002334 ! regulated by
 inverse_of: RO:0002578 ! directly regulates
-created_by: dos
+created_by: https://orcid.org/0000-0002-7073-9172
 creation_date: 2017-09-17T13:52:24Z
 
 [Typedef]
 id: RO:0002023
 name: directly negatively regulated by
-def: "Process(P2) is directly negatively regulated by process(P1) iff: P1 negatively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  negatively regulates the kinase activity (P2) of protein B then P2 directly negatively regulated by P1." [GOC:dos]
+def: "Process(P2) is directly negatively regulated by process(P1) iff: P1 negatively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  negatively regulates the kinase activity (P2) of protein B then P2 directly negatively regulated by P1." [https://orcid.org/0000-0002-7073-9172]
 is_a: RO:0002022 ! directly regulated by
 inverse_of: RO:0002630 ! directly negatively regulates
-created_by: dos
+created_by: https://orcid.org/0000-0002-7073-9172
 creation_date: 2017-09-17T13:52:38Z
 
 [Typedef]
 id: RO:0002024
 name: directly positively regulated by
-def: "Process(P2) is directly postively regulated by process(P1) iff: P1 positively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding positively regulates the kinase activity (P2) of protein B then P2 is directly postively regulated by P1." [GOC:dos]
+def: "Process(P2) is directly postively regulated by process(P1) iff: P1 positively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding positively regulates the kinase activity (P2) of protein B then P2 is directly postively regulated by P1." [https://orcid.org/0000-0002-7073-9172]
 is_a: RO:0002022 ! directly regulated by
 inverse_of: RO:0002629 ! directly positively regulates
-created_by: dos
+created_by: https://orcid.org/0000-0002-7073-9172
 creation_date: 2017-09-17T13:52:47Z
 
 [Typedef]
 id: RO:0002025
 name: has effector activity
-def: "A 'has effector activity' B if A and B are GO molecular functions (GO_0003674),  A 'has component activity' B and B is the effector (output function) of B.  Each compound function has only one effector activity." [GOC:dos]
+def: "A 'has effector activity' B if A and B are GO molecular functions (GO_0003674),  A 'has component activity' B and B is the effector (output function) of B.  Each compound function has only one effector activity." [https://orcid.org/0000-0002-7073-9172]
 comment: This relation is designed for constructing compound molecular functions, typically in combination with one or more regulatory component activity relations.
 is_functional: true
 is_a: RO:0002017 ! has component activity
-created_by: dos
+created_by: https://orcid.org/0000-0002-7073-9172
 creation_date: 2017-09-22T14:14:36Z
 
 [Typedef]
@@ -28536,6 +28542,7 @@ subset: ro-eco
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "consumes" xsd:string
+property_value: seeAlso "https://wiki.geneontology.org/Has_input" xsd:anyURI
 domain: BFO:0000015 ! process
 is_a: RO:0000057 ! has participant
 inverse_of: RO:0002352 ! input of
@@ -28547,6 +28554,8 @@ def: "x has developmental contribution from y iff x has some part z such that z 
 property_value: IAO:0000112 "Mammalian thymus has developmental contribution from some pharyngeal pouch 3; Mammalian thymus has developmental contribution from some pharyngeal pouch 4 [Kardong]" xsd:string
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+domain: UBERON:0001062
+range: UBERON:0001062
 holds_over_chain: BFO:0000051 RO:0002202
 is_a: RO:0002258 ! developmentally preceded by
 inverse_of: RO:0002255 ! developmentally contributes to
@@ -28593,7 +28602,7 @@ def: "c acts upstream of or within p if c is enables f, and f is causally upstre
 subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
 synonym: "affects" RELATED []
 property_value: IAO:0000112 "A gene product that has some activity, where that activity may be a part of a pathway or upstream of the pathway." xsd:string
-property_value: seeAlso http://wiki.geneontology.org/index.php/Acts_upstream_of_or_within
+property_value: seeAlso "https://wiki.geneontology.org/Acts_upstream_of_or_within" xsd:anyURI
 holds_over_chain: RO:0002327 RO:0002418
 is_a: RO:0002500 ! causal agent in process
 
@@ -28614,6 +28623,7 @@ subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_gocam
 property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-6601-2165
 property_value: RO:0004049 RO:0002411
+property_value: seeAlso https://wiki.geneontology.org/Causally_upstream_of,_positive_effect
 is_a: RO:0002411 ! causally upstream of
 is_a: RO:0004047 ! causally upstream of or within, positive effect
 
@@ -28625,6 +28635,7 @@ subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_gocam
 property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-6601-2165
 property_value: RO:0004050 RO:0002411
+property_value: seeAlso https://wiki.geneontology.org/Causally_upstream_of,_negative_effect
 is_a: RO:0002411 ! causally upstream of
 is_a: RO:0004046 ! causally upstream of or within, negative effect
 
@@ -28670,6 +28681,7 @@ property_value: IAO:0000118 "has" xsd:string
 property_value: IAO:0000118 "is catalyzing" xsd:string
 property_value: IAO:0000118 "is executing" xsd:string
 property_value: IAO:0000232 "This relation differs from the parent relation 'capable of' in that the parent is weaker and only expresses a capability that may not be actually realized, whereas this relation is always realized." xsd:string
+property_value: seeAlso "https://wiki.geneontology.org/Enables" xsd:anyURI
 is_a: RO:0002215 ! capable of
 inverse_of: RO:0002333 ! enabled by
 transitive_over: BFO:0000051 ! has part
@@ -28698,7 +28710,7 @@ def: "c involved_in p if and only if c enables some process p', and p' is part o
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "actively involved in" xsd:string
 property_value: IAO:0000118 "enables part of" xsd:string
-property_value: seeAlso Involved:in
+property_value: seeAlso "https://wiki.geneontology.org/Involved_in" xsd:anyURI
 holds_over_chain: RO:0002327 BFO:0000050
 is_a: RO:0000056 ! participates in
 is_a: RO:0002431 ! involved in or involved in regulation of
@@ -28710,6 +28722,7 @@ name: enabled by
 def: "inverse of enables" []
 subset: http://purl.obolibrary.org/obo/valid_for_gocam
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+property_value: seeAlso "https://wiki.geneontology.org/Enabled_by" xsd:anyURI
 is_a: RO:0000057 ! has participant
 is_a: RO:0002328 ! functionally related to
 
@@ -28777,6 +28790,8 @@ name: has developmental potential involving
 def: "x has developmental potential involving y iff x is capable of a developmental process with output y. y may be the successor of x, or may be a different structure in the vicinity (as for example in the case of developmental induction)." []
 property_value: IAO:0000114 IAO:0000428
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+domain: UBERON:0001062
+range: UBERON:0001062
 is_a: RO:0002324 ! developmentally related to
 
 [Typedef]
@@ -28829,6 +28844,7 @@ def: "p indirectly positively regulates q iff p is indirectly causally upstream 
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "indirectly activates" xsd:string
 property_value: RO:0002579 RO:0002213
+property_value: seeAlso "https://wiki.geneontology.org/Indirectly_positively_regulates" xsd:anyURI
 holds_over_chain: RO:0002409 RO:0002409
 holds_over_chain: RO:0002629 RO:0002407
 holds_over_chain: RO:0002629 RO:0002629
@@ -28844,6 +28860,7 @@ def: "p indirectly negatively regulates q iff p is indirectly causally upstream 
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "indirectly inhibits" xsd:string
 property_value: RO:0002579 RO:0002212
+property_value: seeAlso "https://wiki.geneontology.org/Indirectly_negatively_regulates" xsd:anyURI
 holds_over_chain: RO:0002630 RO:0002409
 holds_over_chain: RO:0002630 RO:0002630
 is_transitive: true
@@ -29152,6 +29169,12 @@ property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relati
 is_a: RO:0002410 ! causally related to
 
 [Typedef]
+id: RO:0002610
+name: correlated with
+def: "A relationship that holds between two entities, where the entities exhibit a statistical dependence relationship. The entities may be statistical variables, or they may be other kinds of entities such as diseases, chemical entities or processes." []
+property_value: IAO:0000232 "Groups both positive and negative correlation" xsd:string
+
+[Typedef]
 id: RO:0002629
 name: directly positively regulates
 def: "p directly positively regulates q iff p is immediately causally upstream of q, and p positively regulates q." []
@@ -29161,6 +29184,7 @@ subset: http://purl.obolibrary.org/obo/valid_for_gocam
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
 property_value: IAO:0000589 "directly positively regulates (process to process)" xsd:string
 property_value: RO:0004049 RO:0002578
+property_value: seeAlso "https://wiki.geneontology.org/Directly_positively_regulates" xsd:anyURI
 is_a: RO:0002213 ! positively regulates
 is_a: RO:0002578 ! directly regulates
 
@@ -29174,6 +29198,7 @@ subset: http://purl.obolibrary.org/obo/valid_for_gocam
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
 property_value: IAO:0000589 "directly negatively regulates (process to process)" xsd:string
 property_value: RO:0004050 RO:0002578
+property_value: seeAlso "https://wiki.geneontology.org/Directly_negatively_regulates" xsd:anyURI
 is_a: RO:0002212 ! negatively regulates
 is_a: RO:0002578 ! directly regulates
 
@@ -29191,7 +29216,7 @@ id: RO:0004032
 name: acts upstream of or within, positive effect
 subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
 property_value: RO:0004049 RO:0002264
-property_value: seeAlso http://wiki.geneontology.org/index.php/Acts_upstream_of_or_within,_positive_effect
+property_value: seeAlso "https://wiki.geneontology.org/Acts_upstream_of_or_within,_positive_effect" xsd:anyURI
 holds_over_chain: RO:0002327 RO:0004047
 is_a: RO:0002264 ! acts upstream of or within
 created_by: https://orcid.org/0000-0002-6601-2165
@@ -29202,6 +29227,7 @@ id: RO:0004033
 name: acts upstream of or within, negative effect
 subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
 property_value: RO:0004050 RO:0002264
+property_value: seeAlso "https://wiki.geneontology.org/Acts_upstream_of_or_within,_negative_effect" xsd:anyURI
 holds_over_chain: RO:0002327 RO:0004046
 is_a: RO:0002264 ! acts upstream of or within
 created_by: https://orcid.org/0000-0002-6601-2165
@@ -29213,7 +29239,7 @@ name: acts upstream of, positive effect
 def: "c 'acts upstream of, positive effect' p if c is enables f, and f is causally upstream of p, and the direction of f is positive" []
 subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
 property_value: RO:0004049 RO:0002263
-property_value: seeAlso http://wiki.geneontology.org/index.php/Acts_upstream_of,_positive_effect
+property_value: seeAlso "https://wiki.geneontology.org/Acts_upstream_of,_positive_effect" xsd:anyURI
 holds_over_chain: RO:0002327 RO:0002304
 is_a: RO:0002263 ! acts upstream of
 is_a: RO:0004032 ! acts upstream of or within, positive effect
@@ -29226,7 +29252,7 @@ name: acts upstream of, negative effect
 def: "c 'acts upstream of, negative effect' p if c is enables f, and f is causally upstream of p, and the direction of f is negative" []
 subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
 property_value: RO:0004050 RO:0002263
-property_value: seeAlso http://wiki.geneontology.org/index.php/Acts_upstream_of,_negative_effect
+property_value: seeAlso "https://wiki.geneontology.org/Acts_upstream_of,_negative_effect" xsd:anyURI
 holds_over_chain: RO:0002327 RO:0002305
 is_a: RO:0002263 ! acts upstream of
 is_a: RO:0004033 ! acts upstream of or within, negative effect
@@ -29237,6 +29263,7 @@ creation_date: 2018-01-26T23:53:22Z
 id: RO:0004046
 name: causally upstream of or within, negative effect
 property_value: RO:0004050 RO:0002418
+property_value: seeAlso "https://wiki.geneontology.org/Causally_upstream_of_or_within,_negative_effect" xsd:anyURI
 is_a: RO:0002418 ! causally upstream of or within
 created_by: https://orcid.org/0000-0002-6601-2165
 creation_date: 2018-03-13T23:55:05Z
@@ -29245,6 +29272,7 @@ creation_date: 2018-03-13T23:55:05Z
 id: RO:0004047
 name: causally upstream of or within, positive effect
 property_value: RO:0004049 RO:0002418
+property_value: seeAlso https://wiki.geneontology.org/Causally_upstream_of_or_within,_positive_effect
 is_a: RO:0002418 ! causally upstream of or within
 created_by: https://orcid.org/0000-0002-6601-2165
 creation_date: 2018-03-13T23:55:19Z
@@ -29263,7 +29291,7 @@ id: RO:0012011
 name: indirectly causally upstream of
 def: "p is indirectly causally upstream of q iff p is causally upstream of q and there exists some process r such that p is causally upstream of r and r is causally upstream of q." []
 is_a: RO:0002411 ! causally upstream of
-created_by: pg
+created_by: https://orcid.org/0000-0003-1813-6857
 creation_date: 2022-09-26T06:07:17Z
 
 [Typedef]
@@ -29272,7 +29300,7 @@ name: indirectly regulates
 def: "p indirectly regulates q iff p is indirectly causally upstream of q and p regulates q." []
 is_a: RO:0002211 ! regulates
 is_a: RO:0012011 ! indirectly causally upstream of
-created_by: pg
+created_by: https://orcid.org/0000-0003-1813-6857
 creation_date: 2022-09-26T06:08:01Z
 
 [Typedef]
@@ -29287,6 +29315,16 @@ property_value: IAO:0000232 "A diagnostic testing device utilizes a specimen mea
 property_value: IAO:0000232 "See github ticket https://github.com/oborel/obo-relations/issues/497" xsd:string
 holds_over_chain: RO:0002215 RO:0002233
 creation_date: 2021-11-08T12:00:00Z
+
+[Typedef]
+id: RO:0017003
+name: positively correlated with
+def: "A relation between entities in which one increases or decreases as the other does the same." []
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0003-1909-9269
+property_value: IAO:0000118 "directly correlated with" xsd:string
+is_reflexive: true
+is_symmetric: true
+is_a: RO:0002610 ! correlated with
 
 [Typedef]
 id: RO:0019000
@@ -29332,8 +29370,9 @@ is_a: RO:0000053 ! has characteristic
 
 [Typedef]
 id: substage_of
-name: substage_of
+name: substage of
 namespace: relationship
+def: "A relation between a developmental stage and another, larger developmental stage during which it happens." [FBC:DPG]
 comment: Creating this relation as a temporary fix, pending adding the axiom occurrent_part_of subproperty of happens_during to RO.
 xref: FBdv:00018001
 is_transitive: true
