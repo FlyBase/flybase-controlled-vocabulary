@@ -7930,8 +7930,8 @@ property_value: http://purl.org/dc/terms/date "2017-06-28T11:41:27Z" xsd:dateTim
 id: FBcv:0005054
 name: split driver - DNA-binding fragment
 namespace: experimental_tool_descriptor
-def: "Sequence encoding a site-specific DNA-binding domain fused to a heterodimerization domain. A functional transcription driver can be reconstituted if this split system component is brought together in vivo with a split system component that encodes a transcription activation domain fused to the complementary heterodimerization domain." [FBC:GM, FlyBase:FBrf0193617]
-is_a: FBcv:0005051 ! split system component
+def: "Non-functional fragment of a transcriptional activator ('driver') that includes a DNA-binding domain and which can be used to reconstitute a functional transcription driver when brought together in vivo with a complementary split driver fragment that encodes a transcription activation domain, for example by including a compatible physical interaction domain or split intein fragment in each of the complementary split driver fragments." [FBC:GM]
+is_a: FBcv:0009027 ! split driver fragment
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-0027-0858
 property_value: http://purl.org/dc/terms/date "2017-06-28T11:41:27Z" xsd:dateTime
 
@@ -7939,9 +7939,9 @@ property_value: http://purl.org/dc/terms/date "2017-06-28T11:41:27Z" xsd:dateTim
 id: FBcv:0005055
 name: split driver - transcription activation fragment
 namespace: experimental_tool_descriptor
-def: "Sequence encoding a transcription activation domain fused to a heterodimerization domain. A functional transcription driver can be reconstituted if this split system component is brought together in vivo with a split system component that encodes a DNA-binding domain fused to the complementary heterodimerization domain." [FBC:GM, FlyBase:FBrf0193617]
+def: "Non-functional fragment of a transcriptional activator ('driver') that includes a transcription activation domain and which can be used to reconstitute a functional transcription driver when brought together in vivo with a complementary split driver fragment that encodes a DNA-binding domain, for example by including a compatible physical interaction domain or split intein fragment in each of the complementary split driver fragments." [FBC:GM]
 subset: common_tool_use
-is_a: FBcv:0005051 ! split system component
+is_a: FBcv:0009027 ! split driver fragment
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-0027-0858
 property_value: http://purl.org/dc/terms/date "2017-06-28T11:41:27Z" xsd:dateTime
 
