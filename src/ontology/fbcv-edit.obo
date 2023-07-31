@@ -9075,6 +9075,42 @@ property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002
 property_value: http://purl.org/dc/terms/date "2023-07-24T11:13:29Z" xsd:dateTime
 
 [Term]
+id: FBcv:0009027
+name: split driver fragment
+namespace: experimental_tool_descriptor
+def: "Non-functional fragment of a transcriptional activator ('driver') that can be used to reconstitute a functional transcription driver when brought together in vivo with a complementary split driver fragment, for example by including a compatible physical interaction domain or split intein fragment in each of the complementary split driver fragments." [FBC:GM]
+is_a: FBcv:0005051 ! split system component
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
+property_value: http://purl.org/dc/terms/date "2023-07-31T17:10:54Z" xsd:dateTime
+
+[Term]
+id: FBcv:0009028
+name: conditional split driver fragment
+namespace: experimental_tool_descriptor
+def: "Non-functional fragment of a transcriptional activator ('driver') that can be used to reconstitute a functional transcription driver when brought together in vivo with a complementary split driver fragment, where the process that brings the complementary fragments together can be regulated in response to a particular stimulus." [FBC:GM]
+is_a: FBcv:0009027 ! split driver fragment
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
+property_value: http://purl.org/dc/terms/date "2023-07-31T17:13:57Z" xsd:dateTime
+
+[Term]
+id: FBcv:0009029
+name: light-regulated split driver fragment
+namespace: experimental_tool_descriptor
+def: "Non-functional fragment of a transcriptional activator ('driver') that can be used to reconstitute a functional transcription driver when brought together in vivo with a complementary split driver fragment, where the process that brings the complementary fragments together can be regulated by irradiation with a pulse of light." [FBC:GM]
+is_a: FBcv:0009028 ! conditional split driver fragment
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
+property_value: http://purl.org/dc/terms/date "2023-07-31T17:16:35Z" xsd:dateTime
+
+[Term]
+id: FBcv:0009030
+name: small-molecule regulated split driver fragment
+namespace: experimental_tool_descriptor
+def: "Non-functional fragment of a transcriptional activator ('driver') that can be used to reconstitute a functional transcription driver when brought together in vivo with a complementary split driver fragment, where the process that brings the complementary fragments together can be regulated by binding to a small molecule, such as an ion or ligand." [FBC:GM]
+is_a: FBcv:0009028 ! conditional split driver fragment
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
+property_value: http://purl.org/dc/terms/date "2023-07-31T17:18:43Z" xsd:dateTime
+
+[Term]
 id: FBcv:0010000
 name: obsolete living stock
 comment: Consider - FBsv:0000002.
