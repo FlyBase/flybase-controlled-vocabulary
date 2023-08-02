@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: 2023-07-06
-date: 06:07:2023 09:07
+data-version: 2023-08-02
+date: 02:08:2023 18:25
 subsetdef: camcur "camcur"
 subsetdef: common_tool_use "Terms to summarize typical use of a gene from one organism that is introduced into another organism primarily for use an experimental tool, rather than to study the function of the gene"
 subsetdef: do_not_annotate "Term not to be used for direct annotation"
@@ -8752,16 +8752,16 @@ is_a: FBcv:0005051 ! split system component
 id: FBcv:0005054
 name: split driver - DNA-binding fragment
 namespace: experimental_tool_descriptor
-def: "Sequence encoding a site-specific DNA-binding domain fused to a heterodimerization domain. A functional transcription driver can be reconstituted if this split system component is brought together in vivo with a split system component that encodes a transcription activation domain fused to the complementary heterodimerization domain." [FBC:GM, FlyBase:FBrf0193617]
-is_a: FBcv:0005051 ! split system component
+def: "Non-functional fragment of a transcriptional activator ('driver') that includes a DNA-binding domain and which can be used to reconstitute a functional transcription driver when brought together in vivo with a complementary split driver fragment that encodes a transcription activation domain, for example by including a compatible physical interaction domain or split intein fragment in each of the complementary split driver fragments." [FBC:GM]
+is_a: FBcv:0009027 ! split driver fragment
 
 [Term]
 id: FBcv:0005055
 name: split driver - transcription activation fragment
 namespace: experimental_tool_descriptor
-def: "Sequence encoding a transcription activation domain fused to a heterodimerization domain. A functional transcription driver can be reconstituted if this split system component is brought together in vivo with a split system component that encodes a DNA-binding domain fused to the complementary heterodimerization domain." [FBC:GM, FlyBase:FBrf0193617]
+def: "Non-functional fragment of a transcriptional activator ('driver') that includes a transcription activation domain and which can be used to reconstitute a functional transcription driver when brought together in vivo with a complementary split driver fragment that encodes a DNA-binding domain, for example by including a compatible physical interaction domain or split intein fragment in each of the complementary split driver fragments." [FBC:GM]
 subset: common_tool_use
-is_a: FBcv:0005051 ! split system component
+is_a: FBcv:0009027 ! split driver fragment
 
 [Term]
 id: FBcv:0005056
@@ -9427,45 +9427,45 @@ is_a: FBcv:0005035 ! nuclear export signal
 
 [Term]
 id: FBcv:0007053
-name: conditional split driver - transcription activation fragment
-namespace: experimental_tool_descriptor
-def: "Sequence encoding a transcription activation domain fused to a heterodimerization domain, where the process of heterodimerization mediated by this domain can be regulated by a particular stimulus. A functional transcription driver can be reconstituted in vivo if this split system component is brought together with a split system component that encodes a DNA-binding domain fused to the complementary heterodimerization domain and the appropriate stimulus is applied." [FBC:GM]
-is_a: FBcv:0005055 ! split driver - transcription activation fragment
+name: obsolete conditional split driver - transcription activation fragment
+is_obsolete: true
+consider: FBcv:0005055
+consider: FBcv:0009028
 
 [Term]
 id: FBcv:0007054
-name: light-regulated split driver - transcription activation fragment
-namespace: experimental_tool_descriptor
-def: "Sequence encoding a transcription activation domain fused to a heterodimerization domain, where the process of heterodimerization mediated by this domain can be regulated by irradiation with a pulse of light. A functional transcription driver can be reconstituted in vivo if this split system component is brought together with a split system component that encodes a DNA-binding domain fused to the complementary heterodimerization domain and the appropriate light stimulus is applied." [FBC:GM]
-is_a: FBcv:0007053 ! conditional split driver - transcription activation fragment
+name: obsolete light-regulated split driver - transcription activation fragment
+is_obsolete: true
+consider: FBcv:0005055
+consider: FBcv:0009029
 
 [Term]
 id: FBcv:0007055
-name: small molecule-regulated split driver - transcription activation fragment
-namespace: experimental_tool_descriptor
-def: "Sequence encoding a transcription activation domain fused to a heterodimerization domain, where the process of heterodimerization mediated by this domain can be regulated by binding to a small molecule, such as an ion or ligand. A functional transcription driver can be reconstituted in vivo if this split system component is brought together with a split system component that encodes a DNA-binding domain fused to the complementary heterodimerization domain and the appropriate small molecule stimulus is applied." [FBC:GM]
-is_a: FBcv:0007053 ! conditional split driver - transcription activation fragment
+name: obsolete small molecule-regulated split driver - transcription activation fragment
+is_obsolete: true
+consider: FBcv:0005055
+consider: FBcv:0009030
 
 [Term]
 id: FBcv:0007056
-name: conditional split driver - DNA-binding fragment
-namespace: experimental_tool_descriptor
-def: "Sequence encoding a site-specific DNA-binding domain fused to a heterodimerization domain, where the process of heterodimerization mediated by this domain can be regulated by a particular stimulus. A functional transcription driver can be reconstituted in vivo if this split system component is brought together with a split system component that encodes a transcription activation domain fused to the complementary heterodimerization domain and the appropriate stimulus is applied." [FBC:GM]
-is_a: FBcv:0005054 ! split driver - DNA-binding fragment
+name: obsolete conditional split driver - DNA-binding fragment
+is_obsolete: true
+consider: FBcv:0005054
+consider: FBcv:0009028
 
 [Term]
 id: FBcv:0007057
-name: light-regulated split driver - DNA-binding fragment
-namespace: experimental_tool_descriptor
-def: "Sequence encoding a site-specific DNA-binding domain fused to a heterodimerization domain, where the process of heterodimerization mediated by this domain can be regulated by irradiation with a pulse of light. A functional transcription driver can be reconstituted in vivo if this split system component is brought together with a split system component that encodes a transcription activation domain fused to the complementary heterodimerization domain and the appropriate light stimulus is applied." [FBC:GM]
-is_a: FBcv:0007056 ! conditional split driver - DNA-binding fragment
+name: obsolete light-regulated split driver - DNA-binding fragment
+is_obsolete: true
+consider: FBcv:0005054
+consider: FBcv:0009029
 
 [Term]
 id: FBcv:0007058
-name: small molecule-regulated split driver - DNA-binding fragment
-namespace: experimental_tool_descriptor
-def: "Sequence encoding a site-specific DNA-binding domain fused to a heterodimerization domain, where the process of heterodimerization mediated by this domain can be regulated by binding to a small molecule, such as an ion or ligand. A functional transcription driver can be reconstituted in vivo if this split system component is brought together with a split system component that encodes a transcription activation domain fused to the complementary heterodimerization domain and the appropriate small molecule stimulus is applied." [FBC:GM]
-is_a: FBcv:0007056 ! conditional split driver - DNA-binding fragment
+name: obsolete small molecule-regulated split driver - DNA-binding fragment
+is_obsolete: true
+consider: FBcv:0009030
+created_by: FBcv:0005054
 
 [Term]
 id: FBcv:0007059
@@ -10157,6 +10157,41 @@ name: driver-specific gene expression profile
 namespace: result_type
 def: "A result that provides the expression values for all (or some subset of) genes in a given biological sample obtained using a specific transcriptional driver (or combination of drivers), when that driver is not associated to a clearly identified cell type." [FBC:DPG]
 is_a: FBcv:0003088 ! gene expression profile
+
+[Term]
+id: FBcv:0009026
+name: split system combination
+namespace: experimental_tool_descriptor
+def: "A combination of two or more 'split system components' that together reconstitute a functional experimental tool." [FBC:GM]
+is_a: FBcv:0005001 ! experimental tool descriptor
+
+[Term]
+id: FBcv:0009027
+name: split driver fragment
+namespace: experimental_tool_descriptor
+def: "Non-functional fragment of a transcriptional activator ('driver') that can be used to reconstitute a functional transcription driver when brought together in vivo with a complementary split driver fragment, for example by including a compatible physical interaction domain or split intein fragment in each of the complementary split driver fragments." [FBC:GM]
+is_a: FBcv:0005051 ! split system component
+
+[Term]
+id: FBcv:0009028
+name: conditional split driver fragment
+namespace: experimental_tool_descriptor
+def: "Non-functional fragment of a transcriptional activator ('driver') that can be used to reconstitute a functional transcription driver when brought together in vivo with a complementary split driver fragment, where the process that brings the complementary fragments together can be regulated in response to a particular stimulus." [FBC:GM]
+is_a: FBcv:0009027 ! split driver fragment
+
+[Term]
+id: FBcv:0009029
+name: light-regulated split driver fragment
+namespace: experimental_tool_descriptor
+def: "Non-functional fragment of a transcriptional activator ('driver') that can be used to reconstitute a functional transcription driver when brought together in vivo with a complementary split driver fragment, where the process that brings the complementary fragments together can be regulated by irradiation with a pulse of light." [FBC:GM]
+is_a: FBcv:0009028 ! conditional split driver fragment
+
+[Term]
+id: FBcv:0009030
+name: small-molecule regulated split driver fragment
+namespace: experimental_tool_descriptor
+def: "Non-functional fragment of a transcriptional activator ('driver') that can be used to reconstitute a functional transcription driver when brought together in vivo with a complementary split driver fragment, where the process that brings the complementary fragments together can be regulated by binding to a small molecule, such as an ion or ligand." [FBC:GM]
+is_a: FBcv:0009028 ! conditional split driver fragment
 
 [Term]
 id: FBcv:0010000
