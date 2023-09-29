@@ -3101,7 +3101,7 @@ namespace: origin_of_mutation
 def: "." [CHEBI:22333]
 synonym: "mutation induced by alkylating agent exposure" EXACT []
 intersection_of: FBcv:0000525 ! chemical
-intersection_of: has_role CHEBI:22333 ! alkylating agent
+intersection_of: RO:0000087 CHEBI:22333 ! has role alkylating agent
 
 [Term]
 id: FBcv:0000527
@@ -3247,7 +3247,7 @@ namespace: origin_of_mutation
 def: "." [CHEBI:24853]
 synonym: "mutation induced by intercalating agent exposure" EXACT []
 intersection_of: FBcv:0000525 ! chemical
-intersection_of: has_role CHEBI:24853 ! intercalator
+intersection_of: RO:0000087 CHEBI:24853 ! has role intercalator
 
 [Term]
 id: FBcv:0000542
@@ -3345,7 +3345,7 @@ namespace: origin_of_mutation
 def: "." [CHEBI:23924]
 synonym: "mutation induced by enzyme inhibitor exposure" EXACT []
 intersection_of: FBcv:0000525 ! chemical
-intersection_of: has_role CHEBI:23924 ! enzyme inhibitor
+intersection_of: RO:0000087 CHEBI:23924 ! has role enzyme inhibitor
 
 [Term]
 id: FBcv:0000552
@@ -9251,9 +9251,4 @@ is_obsolete: true
 [Typedef]
 id: conditionality
 name: conditionality
-
-[Typedef]
-id: has_role
-name: has role
-xref: RO:0000087
 
