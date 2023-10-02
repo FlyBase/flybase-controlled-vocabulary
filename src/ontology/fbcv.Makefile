@@ -106,10 +106,14 @@ $(ONT)-full.obo: $(ONT)-full.owl
 	cat $@.tmp | perl -0777 -e '$$_ = <>; s/(?:name[:].*\n)+name[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/(?:comment[:].*\n)+comment[:]/comment:/g; print' | perl -0777 -e '$$_ = <>; s/(?:def[:].*\n)+def[:]/def:/g; print' > $@
 	rm -f $@.tmp.obo $@.tmp
 
-flybase_controlled_vocabulary.obo: $(ONT)-simple.obo
-	$(ROBOT) remove --input $(ONT)-simple.obo --term "http://purl.obolibrary.org/obo/FBcv_0008000" \
+flybase_additions.obo: $(ONT)-simple.obo
+	python3 $(SCRIPTSDIR)/FB_typedefs.py
+
+flybase_controlled_vocabulary.obo: $(ONT)-simple.obo flybase_additions.obo
+	$(ROBOT) merge --input $(ONT)-simple.obo --input flybase_additions.obo --collapse-import-closure false \
+		remove --term "http://purl.obolibrary.org/obo/FBcv_0008000" \
 		convert -o $@.tmp.obo
-	cat $@.tmp.obo | grep -v FlyBase_miscellaneous_CV | grep -v property_value: | sed '/^date[:]/c\date: $(OBODATE)' | sed '/^data-version[:]/c\data-version: $(DATE)' > $@
+	cat $@.tmp.obo | sed '/./{H;$!d;} ; x ; s/\(\[Typedef\]\nid:[ ]\)\([[:alpha:]_]*\n\)\(name:[ ]\)\([[:alpha:][:punct:] ]*\n\)/\1\2\3\2/' | grep -v FlyBase_miscellaneous_CV | grep -v property_value: | sed '/^date[:]/c\date: $(OBODATE)' | sed '/^data-version[:]/c\data-version: $(DATE)' > $@
 	rm -f $@.tmp.obo
 
 
