@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbcv/releases/2023-08-02
-date: 02:08:2023 18:24
+data-version: fbcv/releases/2023-10-19
+date: 19:10:2023 10:56
 subsetdef: 1_STAR ""
 subsetdef: 2_STAR ""
 subsetdef: 3_STAR ""
@@ -53,7 +53,7 @@ property_value: http://purl.org/dc/elements/1.1/description "A miscellaneous ont
 property_value: http://purl.org/dc/elements/1.1/title "FlyBase Controlled Vocabulary (FBcv)" xsd:string
 property_value: http://purl.org/dc/terms/license "https://creativecommons.org/licenses/by/4.0/" xsd:string
 property_value: IAO:0000700 FBcv:0000000
-property_value: owl:versionInfo "2023-08-02" xsd:string
+property_value: owl:versionInfo "2023-10-19" xsd:string
 
 [Term]
 id: BFO:0000002
@@ -199,12 +199,12 @@ xref: Reaxys:742134 {source="Reaxys"}
 xref: Wikipedia:2-Naphthol
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:35682 ! naphthol
-relationship: has_role CHEBI:35444 ! antinematodal drug
-relationship: has_role CHEBI:48578 ! radical scavenger
-relationship: has_role CHEBI:50902 ! genotoxin
-relationship: has_role CHEBI:75771 ! mouse metabolite
-relationship: has_role CHEBI:76967 ! human xenobiotic metabolite
-relationship: has_role CHEBI:84087 ! human urinary metabolite
+relationship: RO:0000087 CHEBI:35444 ! has role antinematodal drug
+relationship: RO:0000087 CHEBI:48578 ! has role radical scavenger
+relationship: RO:0000087 CHEBI:50902 ! has role genotoxin
+relationship: RO:0000087 CHEBI:75771 ! has role mouse metabolite
+relationship: RO:0000087 CHEBI:76967 ! has role human xenobiotic metabolite
+relationship: RO:0000087 CHEBI:84087 ! has role human urinary metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C10H8O" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C10H8O/c11-10-6-5-8-3-1-2-4-9(8)7-10/h1-7,11H" xsd:string
@@ -480,9 +480,9 @@ synonym: "hydrogen glutamate" EXACT IUPAC_NAME [IUPAC]
 xref: Gmelin:327908 {source="Gmelin"}
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:33558 ! alpha-amino-acid anion
-relationship: has_role CHEBI:78675 ! fundamental metabolite
 relationship: is_conjugate_acid_of CHEBI:29987 ! glutamate(2-)
 relationship: is_conjugate_base_of CHEBI:18237 ! glutamic acid
+relationship: RO:0000087 CHEBI:78675 ! has role fundamental metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "-1" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C5H8NO4" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C5H9NO4/c6-3(5(9)10)1-2-4(7)8/h3H,1-2,6H2,(H,7,8)(H,9,10)/p-1" xsd:string
@@ -520,7 +520,7 @@ is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:25810 ! oxopurine
 is_a: CHEBI:26386 ! purine nucleobase
 relationship: has_functional_parent CHEBI:16235 ! guanine
-relationship: has_role CHEBI:78675 ! fundamental metabolite
+relationship: RO:0000087 CHEBI:78675 ! has role fundamental metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C5H4N4O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/mass "152.111" xsd:string
@@ -581,10 +581,10 @@ is_a: CHEBI:26167 ! polar amino acid
 is_a: CHEBI:26834 ! sulfur-containing amino acid
 is_a: CHEBI:33704 ! alpha-amino acid
 relationship: BFO:0000051 CHEBI:50326 ! has part sulfanylmethyl group
-relationship: has_role CHEBI:78675 ! fundamental metabolite
 relationship: is_conjugate_acid_of CHEBI:32456 ! cysteinate(1-)
 relationship: is_conjugate_base_of CHEBI:32458 ! cysteinium
 relationship: is_tautomer_of CHEBI:35237 ! cysteine zwitterion
+relationship: RO:0000087 CHEBI:78675 ! has role fundamental metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C3H7NO2S" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C3H7NO2S/c4-2(1-7)3(5)6/h2,7H,1,4H2,(H,5,6)" xsd:string
@@ -693,9 +693,9 @@ xref: UM-BBD_compID:c0106 {source="UM-BBD"}
 xref: Wikipedia:Formate
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:35757 ! monocarboxylic acid anion
-relationship: has_role CHEBI:75772 ! Saccharomyces cerevisiae metabolite
-relationship: has_role CHEBI:77746 ! human metabolite
 relationship: is_conjugate_base_of CHEBI:30751 ! formic acid
+relationship: RO:0000087 CHEBI:75772 ! has role Saccharomyces cerevisiae metabolite
+relationship: RO:0000087 CHEBI:77746 ! has role human metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "-1" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "CHO2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/CH2O2/c2-1-3/h1H,(H,2,3)/p-1" xsd:string
@@ -754,10 +754,10 @@ xref: PDBeChem:DGL
 xref: Reaxys:1723800 {source="Reaxys"}
 is_a: CHEBI:16733 ! D-alpha-amino acid
 is_a: CHEBI:18237 ! glutamic acid
-relationship: has_role CHEBI:75771 ! mouse metabolite
-relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
 relationship: is_conjugate_acid_of CHEBI:29986 ! D-glutamate(1-)
 relationship: is_enantiomer_of CHEBI:16015 ! L-glutamic acid
+relationship: RO:0000087 CHEBI:75771 ! has role mouse metabolite
+relationship: RO:0000087 CHEBI:76971 ! has role Escherichia coli metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C5H9NO4" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C5H9NO4/c6-3(5(9)10)1-2-4(7)8/h3H,1-2,6H2,(H,7,8)(H,9,10)/t3-/m1/s1" xsd:string
@@ -835,14 +835,14 @@ xref: Reaxys:1723801 {source="Reaxys"}
 xref: Wikipedia:L-Glutamic_Acid
 is_a: CHEBI:18237 ! glutamic acid
 is_a: CHEBI:24318 ! glutamine family amino acid
-relationship: has_role CHEBI:173085 ! ferroptosis inducer
-relationship: has_role CHEBI:25512 ! neurotransmitter
-relationship: has_role CHEBI:27027 ! micronutrient
-relationship: has_role CHEBI:50733 ! nutraceutical
-relationship: has_role CHEBI:75771 ! mouse metabolite
-relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
 relationship: is_conjugate_acid_of CHEBI:29985 ! L-glutamate(1-)
 relationship: is_enantiomer_of CHEBI:15966 ! D-glutamic acid
+relationship: RO:0000087 CHEBI:173085 ! has role ferroptosis inducer
+relationship: RO:0000087 CHEBI:25512 ! has role neurotransmitter
+relationship: RO:0000087 CHEBI:27027 ! has role micronutrient
+relationship: RO:0000087 CHEBI:50733 ! has role nutraceutical
+relationship: RO:0000087 CHEBI:75771 ! has role mouse metabolite
+relationship: RO:0000087 CHEBI:76971 ! has role Escherichia coli metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C5H9NO4" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C5H9NO4/c6-3(5(9)10)1-2-4(7)8/h3H,1-2,6H2,(H,7,8)(H,9,10)/t3-/m0/s1" xsd:string
@@ -958,13 +958,13 @@ is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:138675 ! gas molecular entity
 is_a: CHEBI:35107 ! azane
 is_a: CHEBI:37176 ! mononuclear parent hydride
-relationship: has_role CHEBI:50910 ! neurotoxin
-relationship: has_role CHEBI:59740 ! nucleophilic reagent
-relationship: has_role CHEBI:75771 ! mouse metabolite
-relationship: has_role CHEBI:77941 ! EC 3.5.1.4 (amidase) inhibitor
-relationship: has_role CHEBI:78433 ! refrigerant
 relationship: is_conjugate_acid_of CHEBI:29337 ! azanide
 relationship: is_conjugate_base_of CHEBI:28938 ! ammonium
+relationship: RO:0000087 CHEBI:50910 ! has role neurotoxin
+relationship: RO:0000087 CHEBI:59740 ! has role nucleophilic reagent
+relationship: RO:0000087 CHEBI:75771 ! has role mouse metabolite
+relationship: RO:0000087 CHEBI:77941 ! has role EC 3.5.1.4 (amidase) inhibitor
+relationship: RO:0000087 CHEBI:78433 ! has role refrigerant
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "H3N" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/H3N/h1H3" xsd:string
@@ -1043,10 +1043,10 @@ is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:33482 ! sulfur oxoanion
 is_a: CHEBI:48154 ! sulfur oxide
 is_a: CHEBI:79388 ! divalent inorganic anion
-relationship: has_role CHEBI:23357 ! cofactor
-relationship: has_role CHEBI:75772 ! Saccharomyces cerevisiae metabolite
-relationship: has_role CHEBI:77746 ! human metabolite
 relationship: is_conjugate_base_of CHEBI:45696 ! hydrogensulfate
+relationship: RO:0000087 CHEBI:23357 ! has role cofactor
+relationship: RO:0000087 CHEBI:75772 ! has role Saccharomyces cerevisiae metabolite
+relationship: RO:0000087 CHEBI:77746 ! has role human metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "-2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "O4S" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)/p-2" xsd:string
@@ -1104,14 +1104,14 @@ is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:29347 ! monocarboxylic acid amide
 is_a: CHEBI:64708 ! one-carbon compound
 relationship: has_functional_parent CHEBI:28976 ! carbonic acid
-relationship: has_role CHEBI:33287 ! fertilizer
-relationship: has_role CHEBI:64577 ! flour treatment agent
-relationship: has_role CHEBI:75771 ! mouse metabolite
-relationship: has_role CHEBI:75772 ! Saccharomyces cerevisiae metabolite
-relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
-relationship: has_role CHEBI:77746 ! human metabolite
-relationship: has_role CHEBI:83056 ! Daphnia magna metabolite
 relationship: is_tautomer_of CHEBI:48376 ! carbamimidic acid
+relationship: RO:0000087 CHEBI:33287 ! has role fertilizer
+relationship: RO:0000087 CHEBI:64577 ! has role flour treatment agent
+relationship: RO:0000087 CHEBI:75771 ! has role mouse metabolite
+relationship: RO:0000087 CHEBI:75772 ! has role Saccharomyces cerevisiae metabolite
+relationship: RO:0000087 CHEBI:76971 ! has role Escherichia coli metabolite
+relationship: RO:0000087 CHEBI:77746 ! has role human metabolite
+relationship: RO:0000087 CHEBI:83056 ! has role Daphnia magna metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "CH4N2O" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/CH4N2O/c2-1(3)4/h(H4,2,3,4)" xsd:string
@@ -1159,11 +1159,11 @@ is_a: CHEBI:20702 ! 2-aminopurines
 is_a: CHEBI:25810 ! oxopurine
 is_a: CHEBI:26386 ! purine nucleobase
 relationship: has_parent_hydride CHEBI:35589 ! 9H-purine
-relationship: has_role CHEBI:75771 ! mouse metabolite
-relationship: has_role CHEBI:75772 ! Saccharomyces cerevisiae metabolite
-relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
-relationship: has_role CHEBI:77746 ! human metabolite
-relationship: has_role CHEBI:84735 ! algal metabolite
+relationship: RO:0000087 CHEBI:75771 ! has role mouse metabolite
+relationship: RO:0000087 CHEBI:75772 ! has role Saccharomyces cerevisiae metabolite
+relationship: RO:0000087 CHEBI:76971 ! has role Escherichia coli metabolite
+relationship: RO:0000087 CHEBI:77746 ! has role human metabolite
+relationship: RO:0000087 CHEBI:84735 ! has role algal metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C5H5N5O" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C5H5N5O/c6-5-9-3-2(4(11)10-5)7-1-8-3/h1H,(H4,6,7,8,9,10,11)" xsd:string
@@ -1239,10 +1239,10 @@ xref: UM-BBD_compID:c0333 {source="UM-BBD"}
 xref: Wikipedia:Naphthalene
 is_a: CHEBI:25477 ! naphthalenes
 is_a: CHEBI:35426 ! ortho-fused bicyclic arene
-relationship: has_role CHEBI:27311 ! volatile oil component
-relationship: has_role CHEBI:68494 ! apoptosis inhibitor
-relationship: has_role CHEBI:75771 ! mouse metabolite
-relationship: has_role CHEBI:78298 ! environmental contaminant
+relationship: RO:0000087 CHEBI:27311 ! has role volatile oil component
+relationship: RO:0000087 CHEBI:68494 ! has role apoptosis inhibitor
+relationship: RO:0000087 CHEBI:75771 ! has role mouse metabolite
+relationship: RO:0000087 CHEBI:78298 ! has role environmental contaminant
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C10H8" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C10H8/c1-2-6-10-8-4-3-7-9(10)5-1/h1-8H" xsd:string
@@ -1300,9 +1300,9 @@ xref: UM-BBD_compID:c0261 {source="UM-BBD"}
 xref: Wikipedia:1\,4-Benzoquinone
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:132124 ! 1,4-benzoquinones
-relationship: has_role CHEBI:23357 ! cofactor
-relationship: has_role CHEBI:75771 ! mouse metabolite
-relationship: has_role CHEBI:76967 ! human xenobiotic metabolite
+relationship: RO:0000087 CHEBI:23357 ! has role cofactor
+relationship: RO:0000087 CHEBI:75771 ! has role mouse metabolite
+relationship: RO:0000087 CHEBI:76967 ! has role human xenobiotic metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C6H4O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C6H4O2/c7-5-1-2-6(8)4-3-5/h1-4H" xsd:string
@@ -1422,9 +1422,9 @@ is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:134179 ! volatile organic compound
 is_a: CHEBI:22712 ! benzenes
 is_a: CHEBI:33842 ! aromatic annulene
-relationship: has_role CHEBI:48355 ! non-polar solvent
-relationship: has_role CHEBI:50903 ! carcinogenic agent
-relationship: has_role CHEBI:78298 ! environmental contaminant
+relationship: RO:0000087 CHEBI:48355 ! has role non-polar solvent
+relationship: RO:0000087 CHEBI:50903 ! has role carcinogenic agent
+relationship: RO:0000087 CHEBI:78298 ! has role environmental contaminant
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C6H6" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H" xsd:string
@@ -1517,14 +1517,14 @@ xref: Wikipedia:Formaldehyde
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:17478 ! aldehyde
 is_a: CHEBI:64708 ! one-carbon compound
-relationship: has_role CHEBI:48219 ! disinfectant
-relationship: has_role CHEBI:50903 ! carcinogenic agent
-relationship: has_role CHEBI:50904 ! allergen
-relationship: has_role CHEBI:75771 ! mouse metabolite
-relationship: has_role CHEBI:75772 ! Saccharomyces cerevisiae metabolite
-relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
-relationship: has_role CHEBI:77941 ! EC 3.5.1.4 (amidase) inhibitor
-relationship: has_role CHEBI:78298 ! environmental contaminant
+relationship: RO:0000087 CHEBI:48219 ! has role disinfectant
+relationship: RO:0000087 CHEBI:50903 ! has role carcinogenic agent
+relationship: RO:0000087 CHEBI:50904 ! has role allergen
+relationship: RO:0000087 CHEBI:75771 ! has role mouse metabolite
+relationship: RO:0000087 CHEBI:75772 ! has role Saccharomyces cerevisiae metabolite
+relationship: RO:0000087 CHEBI:76971 ! has role Escherichia coli metabolite
+relationship: RO:0000087 CHEBI:77941 ! has role EC 3.5.1.4 (amidase) inhibitor
+relationship: RO:0000087 CHEBI:78298 ! has role environmental contaminant
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "CH2O" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/CH2O/c1-2/h1H2" xsd:string
@@ -1565,8 +1565,8 @@ is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:33696 ! nucleic acid
 relationship: BFO:0000051 CHEBI:33793 ! has part canonical deoxyribonucleoside residue
 relationship: BFO:0000051 CHEBI:50298 ! has part canonical deoxyribonucleotide residue
-relationship: has_role CHEBI:75771 ! mouse metabolite
-relationship: has_role CHEBI:77746 ! human metabolite
+relationship: RO:0000087 CHEBI:75771 ! has role mouse metabolite
+relationship: RO:0000087 CHEBI:77746 ! has role human metabolite
 
 [Term]
 id: CHEBI:16998
@@ -1719,11 +1719,11 @@ xref: KEGG:C11481
 xref: PDBeChem:SO3
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:33482 ! sulfur oxoanion
-relationship: has_role CHEBI:75771 ! mouse metabolite
-relationship: has_role CHEBI:75772 ! Saccharomyces cerevisiae metabolite
-relationship: has_role CHEBI:77746 ! human metabolite
 relationship: is_conjugate_acid_of CHEBI:17359 ! sulfite
 relationship: is_conjugate_base_of CHEBI:48854 ! sulfurous acid
+relationship: RO:0000087 CHEBI:75771 ! has role mouse metabolite
+relationship: RO:0000087 CHEBI:75772 ! has role Saccharomyces cerevisiae metabolite
+relationship: RO:0000087 CHEBI:77746 ! has role human metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "-1" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "HO3S" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/H2O3S/c1-4(2)3/h(H2,1,2,3)/p-1" xsd:string
@@ -1748,7 +1748,7 @@ xref: Wikipedia:Glycol_ethers
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:46789 ! hydroxyether
 relationship: has_functional_parent CHEBI:13643 ! glycol
-relationship: has_role CHEBI:48356 ! protic solvent
+relationship: RO:0000087 CHEBI:48356 ! has role protic solvent
 
 [Term]
 id: CHEBI:17258
@@ -1833,19 +1833,19 @@ xref: Wikipedia:Phenylalanine
 xref: YMDB:YMDB00304
 is_a: CHEBI:28044 ! phenylalanine
 is_a: CHEBI:73690 ! erythrose 4-phosphate/phosphoenolpyruvate family amino acid
-relationship: has_role CHEBI:27027 ! micronutrient
-relationship: has_role CHEBI:50733 ! nutraceutical
-relationship: has_role CHEBI:63332 ! EC 3.1.3.1 (alkaline phosphatase) inhibitor
-relationship: has_role CHEBI:75771 ! mouse metabolite
-relationship: has_role CHEBI:75772 ! Saccharomyces cerevisiae metabolite
-relationship: has_role CHEBI:76924 ! plant metabolite
-relationship: has_role CHEBI:76967 ! human xenobiotic metabolite
-relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
-relationship: has_role CHEBI:84735 ! algal metabolite
 relationship: is_conjugate_acid_of CHEBI:32486 ! L-phenylalaninate
 relationship: is_conjugate_base_of CHEBI:32487 ! L-phenylalaninium
 relationship: is_enantiomer_of CHEBI:16998 ! D-phenylalanine
 relationship: is_tautomer_of CHEBI:58095 ! L-phenylalanine zwitterion
+relationship: RO:0000087 CHEBI:27027 ! has role micronutrient
+relationship: RO:0000087 CHEBI:50733 ! has role nutraceutical
+relationship: RO:0000087 CHEBI:63332 ! has role EC 3.1.3.1 (alkaline phosphatase) inhibitor
+relationship: RO:0000087 CHEBI:75771 ! has role mouse metabolite
+relationship: RO:0000087 CHEBI:75772 ! has role Saccharomyces cerevisiae metabolite
+relationship: RO:0000087 CHEBI:76924 ! has role plant metabolite
+relationship: RO:0000087 CHEBI:76967 ! has role human xenobiotic metabolite
+relationship: RO:0000087 CHEBI:76971 ! has role Escherichia coli metabolite
+relationship: RO:0000087 CHEBI:84735 ! has role algal metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C9H11NO2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C9H11NO2/c10-8(9(11)12)6-7-4-2-1-3-5-7/h1-5,8H,6,10H2,(H,11,12)/t8-/m0/s1" xsd:string
@@ -1949,8 +1949,8 @@ xref: Reaxys:969454 {source="Reaxys"}
 xref: Wikipedia:Valeric_acid
 is_a: CHEBI:26666 ! short-chain fatty acid
 is_a: CHEBI:39418 ! straight-chain saturated fatty acid
-relationship: has_role CHEBI:76924 ! plant metabolite
 relationship: is_conjugate_acid_of CHEBI:31011 ! valerate
+relationship: RO:0000087 CHEBI:76924 ! has role plant metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C5H10O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C5H10O2/c1-2-3-4-5(6)7/h2-4H2,1H3,(H,6,7)" xsd:string
@@ -2036,13 +2036,13 @@ xref: PMID:4208463 {source="Europe PMC"}
 xref: Wikipedia:Bicarbonate
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:35604 ! carbon oxoanion
-relationship: has_role CHEBI:23357 ! cofactor
-relationship: has_role CHEBI:75771 ! mouse metabolite
-relationship: has_role CHEBI:75772 ! Saccharomyces cerevisiae metabolite
-relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
-relationship: has_role CHEBI:77746 ! human metabolite
 relationship: is_conjugate_acid_of CHEBI:41609 ! carbonate
 relationship: is_conjugate_base_of CHEBI:28976 ! carbonic acid
+relationship: RO:0000087 CHEBI:23357 ! has role cofactor
+relationship: RO:0000087 CHEBI:75771 ! has role mouse metabolite
+relationship: RO:0000087 CHEBI:75772 ! has role Saccharomyces cerevisiae metabolite
+relationship: RO:0000087 CHEBI:76971 ! has role Escherichia coli metabolite
+relationship: RO:0000087 CHEBI:77746 ! has role human metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "-1" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "CHO3" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/CH2O3/c2-1(3)4/h(H2,2,3,4)/p-1" xsd:string
@@ -2108,14 +2108,14 @@ xref: Wikipedia:Uracil
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:26432 ! pyrimidine nucleobase
 is_a: CHEBI:38337 ! pyrimidone
-relationship: has_role CHEBI:50266 ! prodrug
-relationship: has_role CHEBI:50904 ! allergen
-relationship: has_role CHEBI:75771 ! mouse metabolite
-relationship: has_role CHEBI:75772 ! Saccharomyces cerevisiae metabolite
-relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
-relationship: has_role CHEBI:77746 ! human metabolite
-relationship: has_role CHEBI:83056 ! Daphnia magna metabolite
 relationship: is_tautomer_of CHEBI:43254 ! (4S)-4-hydroxy-3,4-dihydropyrimidin-2(1H)-one
+relationship: RO:0000087 CHEBI:50266 ! has role prodrug
+relationship: RO:0000087 CHEBI:50904 ! has role allergen
+relationship: RO:0000087 CHEBI:75771 ! has role mouse metabolite
+relationship: RO:0000087 CHEBI:75772 ! has role Saccharomyces cerevisiae metabolite
+relationship: RO:0000087 CHEBI:76971 ! has role Escherichia coli metabolite
+relationship: RO:0000087 CHEBI:77746 ! has role human metabolite
+relationship: RO:0000087 CHEBI:83056 ! has role Daphnia magna metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C4H4N2O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C4H4N2O2/c7-3-1-2-5-4(8)6-3/h1-2H,(H2,5,6,7,8)" xsd:string
@@ -2202,10 +2202,10 @@ is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:134179 ! volatile organic compound
 is_a: CHEBI:27024 ! toluenes
 is_a: CHEBI:38975 ! methylbenzene
-relationship: has_role CHEBI:48355 ! non-polar solvent
-relationship: has_role CHEBI:48873 ! cholinergic antagonist
-relationship: has_role CHEBI:50910 ! neurotoxin
-relationship: has_role CHEBI:62803 ! fuel additive
+relationship: RO:0000087 CHEBI:48355 ! has role non-polar solvent
+relationship: RO:0000087 CHEBI:48873 ! has role cholinergic antagonist
+relationship: RO:0000087 CHEBI:50910 ! has role neurotoxin
+relationship: RO:0000087 CHEBI:62803 ! has role fuel additive
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C7H8" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C7H8/c1-7-5-3-2-4-6-7/h2-6H,1H3" xsd:string
@@ -2251,7 +2251,7 @@ xref: UM-BBD_compID:c0044 {source="UM-BBD"}
 xref: Wikipedia:Octane
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:18310 ! alkane
-relationship: has_role CHEBI:35703 ! xenobiotic
+relationship: RO:0000087 CHEBI:35703 ! has role xenobiotic
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C8H18" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C8H18/c1-3-5-7-8-6-4-2/h3-8H2,1-2H3" xsd:string
@@ -2310,13 +2310,13 @@ xref: Wikipedia:Hydroquinone
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:17701 ! benzenediol
 is_a: CHEBI:24646 ! hydroquinones
-relationship: has_role CHEBI:22586 ! antioxidant
-relationship: has_role CHEBI:23357 ! cofactor
-relationship: has_role CHEBI:50903 ! carcinogenic agent
-relationship: has_role CHEBI:75771 ! mouse metabolite
-relationship: has_role CHEBI:76967 ! human xenobiotic metabolite
-relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
-relationship: has_role CHEBI:85046 ! skin lightening agent
+relationship: RO:0000087 CHEBI:22586 ! has role antioxidant
+relationship: RO:0000087 CHEBI:23357 ! has role cofactor
+relationship: RO:0000087 CHEBI:50903 ! has role carcinogenic agent
+relationship: RO:0000087 CHEBI:75771 ! has role mouse metabolite
+relationship: RO:0000087 CHEBI:76967 ! has role human xenobiotic metabolite
+relationship: RO:0000087 CHEBI:76971 ! has role Escherichia coli metabolite
+relationship: RO:0000087 CHEBI:85046 ! has role skin lightening agent
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C6H6O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C6H6O2/c7-5-1-2-6(8)4-3-5/h1-4,7-8H" xsd:string
@@ -2423,10 +2423,10 @@ xref: Wikipedia:Thymidine
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:19255 ! pyrimidine 2'-deoxyribonucleoside
 relationship: has_functional_parent CHEBI:17821 ! thymine
-relationship: has_role CHEBI:75771 ! mouse metabolite
-relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
-relationship: has_role CHEBI:77746 ! human metabolite
 relationship: is_enantiomer_of CHEBI:63624 ! telbivudine
+relationship: RO:0000087 CHEBI:75771 ! has role mouse metabolite
+relationship: RO:0000087 CHEBI:76971 ! has role Escherichia coli metabolite
+relationship: RO:0000087 CHEBI:77746 ! has role human metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C10H14N2O5" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C10H14N2O5/c1-5-3-12(10(16)11-9(5)15)8-2-6(14)7(4-13)17-8/h3,6-8,13-14H,2,4H2,1H3,(H,11,15,16)/t6-,7+,8+/m0/s1" xsd:string
@@ -2493,9 +2493,9 @@ xref: Wikipedia:Thymine
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:26432 ! pyrimidine nucleobase
 is_a: CHEBI:38337 ! pyrimidone
-relationship: has_role CHEBI:75771 ! mouse metabolite
-relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
-relationship: has_role CHEBI:77746 ! human metabolite
+relationship: RO:0000087 CHEBI:75771 ! has role mouse metabolite
+relationship: RO:0000087 CHEBI:76971 ! has role Escherichia coli metabolite
+relationship: RO:0000087 CHEBI:77746 ! has role human metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C5H6N2O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C5H6N2O2/c1-3-2-6-5(9)7-4(3)8/h2H,1H3,(H2,6,7,8,9)" xsd:string
@@ -2545,9 +2545,9 @@ is_a: CHEBI:138675 ! gas molecular entity
 is_a: CHEBI:18140 ! hydrogen halide
 is_a: CHEBI:23117 ! chlorine molecular entity
 is_a: CHEBI:37176 ! mononuclear parent hydride
-relationship: has_role CHEBI:75771 ! mouse metabolite
 relationship: is_conjugate_acid_of CHEBI:17996 ! chloride
 relationship: is_conjugate_base_of CHEBI:50315 ! chloronium
+relationship: RO:0000087 CHEBI:75771 ! has role mouse metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "ClH" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "HCl" xsd:string
@@ -2596,8 +2596,8 @@ xref: Reaxys:635810 {source="Reaxys"}
 xref: Wikipedia:Ethyl_carbamate
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:23003 ! carbamate ester
-relationship: has_role CHEBI:25435 ! mutagen
-relationship: has_role CHEBI:76946 ! fungal metabolite
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
+relationship: RO:0000087 CHEBI:76946 ! has role fungal metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C3H7NO2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C3H7NO2/c1-2-6-3(4)5/h2H2,1H3,(H2,4,5)" xsd:string
@@ -2639,10 +2639,10 @@ xref: UM-BBD_compID:c0884 {source="UM-BBD"}
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:16042 ! halide anion
 is_a: CHEBI:33432 ! monoatomic chlorine
-relationship: has_role CHEBI:23357 ! cofactor
-relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
-relationship: has_role CHEBI:77746 ! human metabolite
 relationship: is_conjugate_base_of CHEBI:17883 ! hydrogen chloride
+relationship: RO:0000087 CHEBI:23357 ! has role cofactor
+relationship: RO:0000087 CHEBI:76971 ! has role Escherichia coli metabolite
+relationship: RO:0000087 CHEBI:77746 ! has role human metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "-1" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "Cl" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/ClH/h1H/p-1" xsd:string
@@ -2678,7 +2678,7 @@ synonym: "hydrogen halide" EXACT [IUPAC]
 synonym: "hydrogen halides" EXACT IUPAC_NAME [IUPAC]
 synonym: "hydrogen halides" RELATED [ChEBI]
 is_a: CHEBI:33405 ! hydracid
-relationship: has_role CHEBI:138103 ! inorganic acid
+relationship: RO:0000087 CHEBI:138103 ! has role inorganic acid
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "HX" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/mass "1.008" xsd:string
@@ -2722,8 +2722,8 @@ xref: Wikipedia:Glutamic_acid
 is_a: CHEBI:26167 ! polar amino acid
 is_a: CHEBI:33704 ! alpha-amino acid
 relationship: BFO:0000051 CHEBI:50329 ! has part 2-carboxyethyl group
-relationship: has_role CHEBI:78675 ! fundamental metabolite
 relationship: is_conjugate_acid_of CHEBI:14321 ! glutamate(1-)
+relationship: RO:0000087 CHEBI:78675 ! has role fundamental metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C5H9NO4" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C5H9NO4/c6-3(5(9)10)1-2-4(7)8/h3H,1-2,6H2,(H,7,8)(H,9,10)" xsd:string
@@ -2879,7 +2879,7 @@ xref: Gmelin:241697 {source="Gmelin"}
 is_a: CHEBI:36336 ! naphthalenesulfonic acid
 is_a: CHEBI:38034 ! aminonaphthalene
 relationship: has_functional_parent CHEBI:10432 ! 2-naphthol
-relationship: has_role CHEBI:25435 ! mutagen
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C10H9NO4S" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C10H9NO4S/c11-10-7-4-2-1-3-6(7)9(5-8(10)12)16(13,14)15/h1-5,12H,11H2,(H,13,14,15)" xsd:string
@@ -2913,7 +2913,7 @@ is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:24469 ! haloalkane
 is_a: CHEBI:36683 ! organochlorine compound
 is_a: CHEBI:37141 ! organobromine compound
-relationship: has_role CHEBI:25435 ! mutagen
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C2H4BrCl" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C2H4BrCl/c3-1-2-4/h1-2H2" xsd:string
@@ -2970,7 +2970,7 @@ xref: Reaxys:169182 {source="Reaxys"}
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:132124 ! 1,4-benzoquinones
 is_a: CHEBI:22681 ! aziridines
-relationship: has_role CHEBI:22333 ! alkylating agent
+relationship: RO:0000087 CHEBI:22333 ! has role alkylating agent
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C10H10N2O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C10H10N2O2/c13-9-6-8(12-3-4-12)10(14)5-7(9)11-1-2-11/h5-6H,1-4H2" xsd:string
@@ -3004,7 +3004,7 @@ subset: 1_STAR
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:25223 ! methanesulfonate ester
 is_a: CHEBI:36683 ! organochlorine compound
-relationship: has_role CHEBI:22333 ! alkylating agent
+relationship: RO:0000087 CHEBI:22333 ! has role alkylating agent
 
 [Term]
 id: CHEBI:19579
@@ -3014,7 +3014,7 @@ subset: 1_STAR
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:25223 ! methanesulfonate ester
 is_a: CHEBI:37143 ! organofluorine compound
-relationship: has_role CHEBI:22333 ! alkylating agent
+relationship: RO:0000087 CHEBI:22333 ! has role alkylating agent
 
 [Term]
 id: CHEBI:20552
@@ -3040,7 +3040,7 @@ is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:39447 ! pyrimidines
 is_a: CHEBI:67142 ! nucleobase analogue
 relationship: has_functional_parent CHEBI:17568 ! uracil
-relationship: has_role CHEBI:25435 ! mutagen
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C4H3BrN2O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C4H3BrN2O2/c5-2-1-6-4(9)7-3(2)8/h1H,(H2,6,7,8,9)" xsd:string
@@ -3067,7 +3067,7 @@ xref: Gmelin:723432 {source="Gmelin"}
 xref: PMID:3950402 {source="Europe PMC"}
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:27242 ! uridines
-relationship: has_role CHEBI:25435 ! mutagen
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C9H11BrN2O6" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C9H11BrN2O6/c10-3-1-12(9(17)11-7(3)16)8-6(15)5(14)4(2-13)18-8/h1,4-6,8,13-15H,2H2,(H,11,16,17)/t4-,5-,6-,8-/m1/s1" xsd:string
@@ -3105,7 +3105,7 @@ is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:37141 ! organobromine compound
 is_a: CHEBI:51067 ! tetraphenes
 relationship: has_parent_hydride CHEBI:51348 ! tetraphene
-relationship: has_role CHEBI:25435 ! mutagen
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C20H15Br" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C20H15Br/c1-13-15-7-4-5-9-17(15)19(12-21)18-11-10-14-6-2-3-8-16(14)20(13)18/h2-11H,12H2,1H3" xsd:string
@@ -3127,7 +3127,7 @@ xref: CAS:146-59-8 {source="ChemIDplus"}
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:22213 ! acridines
 relationship: BFO:0000051 CHEBI:37594 ! has part N-(2-chloroethyl)-N'-(6-chloro-2-methoxyacridin-9-yl)-N-ethylpropane-1,3-diamine
-relationship: has_role CHEBI:24853 ! intercalator
+relationship: RO:0000087 CHEBI:24853 ! has role intercalator
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C21H27Cl4N3O" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C21H25Cl2N3O.2ClH/c1-3-26(12-9-22)11-4-10-24-21-17-7-5-15(23)13-20(17)25-19-8-6-16(27-2)14-18(19)21;;/h5-8,13-14H,3-4,9-12H2,1-2H3,(H,24,25);2*1H" xsd:string
@@ -3152,7 +3152,7 @@ xref: Patent:US2882209
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:36094 ! organic chloride salt
 relationship: BFO:0000051 CHEBI:51070 ! has part Janus Green B cation
-relationship: has_role CHEBI:37958 ! dye
+relationship: RO:0000087 CHEBI:37958 ! has role dye
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C30H31ClN6" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C30H31N6.ClH/c1-5-35(6-2)26-17-19-28-30(21-26)36(25-10-8-7-9-11-25)29-20-23(14-18-27(29)31-28)33-32-22-12-15-24(16-13-22)34(3)4;/h7-21H,5-6H2,1-4H3;1H/q+1;/p-1" xsd:string
@@ -3214,7 +3214,7 @@ xref: KEGG:C14592
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:35800 ! nitroso compound
 relationship: has_functional_parent CHEBI:39179 ! nitroguanidine
-relationship: has_role CHEBI:22333 ! alkylating agent
+relationship: RO:0000087 CHEBI:22333 ! has role alkylating agent
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C2H5N5O3" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C2H5N5O3/c1-6(5-8)2(3)4-7(9)10/h1H3,(H2,3,4)" xsd:string
@@ -3231,7 +3231,7 @@ subset: 1_STAR
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:23509 ! cysteine derivative
 is_a: CHEBI:36683 ! organochlorine compound
-relationship: has_role CHEBI:25435 ! mutagen
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
 
 [Term]
 id: CHEBI:22063
@@ -3304,7 +3304,7 @@ synonym: "alkaloids" EXACT IUPAC_NAME [IUPAC]
 xref: Wikipedia:Alkaloid
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:35352 ! organonitrogen compound
-relationship: has_role CHEBI:25212 ! metabolite
+relationship: RO:0000087 CHEBI:25212 ! has role metabolite
 
 [Term]
 id: CHEBI:22323
@@ -3378,8 +3378,8 @@ xref: Drug_Central:21 {source="DrugCentral"}
 xref: PMID:18789931 {source="Europe PMC"}
 is_a: CHEBI:35692 ! dicarboxylic acid
 relationship: has_functional_parent CHEBI:27470 ! folic acid
-relationship: has_role CHEBI:25435 ! mutagen
-relationship: has_role CHEBI:50683 ! EC 1.5.1.3 (dihydrofolate reductase) inhibitor
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
+relationship: RO:0000087 CHEBI:50683 ! has role EC 1.5.1.3 (dihydrofolate reductase) inhibitor
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C19H20N8O5" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C19H20N8O5/c20-15-14-16(27-19(21)26-15)23-8-11(24-14)7-22-10-3-1-9(2-4-10)17(30)25-12(18(31)32)5-6-13(28)29/h1-4,8,12,22H,5-7H2,(H,25,30)(H,28,29)(H,31,32)(H4,20,21,23,26,27)/t12-/m0/s1" xsd:string
@@ -3608,7 +3608,7 @@ synonym: "bromum" RELATED [ChEBI]
 xref: WebElements:Br
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:24473 ! halogen
-relationship: has_role CHEBI:27027 ! micronutrient
+relationship: RO:0000087 CHEBI:27027 ! has role micronutrient
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "Br" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/Br" xsd:string
@@ -3735,7 +3735,7 @@ synonym: "cloro" RELATED [ChEBI]
 xref: WebElements:Cl
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:24473 ! halogen
-relationship: has_role CHEBI:27027 ! micronutrient
+relationship: RO:0000087 CHEBI:27027 ! has role micronutrient
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "Cl" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/Cl" xsd:string
@@ -3805,8 +3805,8 @@ is_a: CHEBI:22160 ! acetamides
 is_a: CHEBI:22315 ! alkaloid
 is_a: CHEBI:35618 ! aromatic ether
 is_a: CHEBI:38032 ! carbotricyclic compound
-relationship: has_role CHEBI:61951 ! microtubule-destabilising agent
-relationship: has_role CHEBI:76924 ! plant metabolite
+relationship: RO:0000087 CHEBI:61951 ! has role microtubule-destabilising agent
+relationship: RO:0000087 CHEBI:76924 ! has role plant metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C22H25NO6" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C22H25NO6/c1-12(24)23-16-8-6-13-10-19(27-3)21(28-4)22(29-5)20(13)14-7-9-18(26-2)17(25)11-15(14)16/h7,9-11,16H,6,8H2,1-5H3,(H,23,24)" xsd:string
@@ -3851,7 +3851,7 @@ synonym: "Cu cation" RELATED [UniProt]
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:33515 ! transition element cation
 is_a: CHEBI:37404 ! elemental copper
-relationship: has_role CHEBI:23357 ! cofactor
+relationship: RO:0000087 CHEBI:23357 ! has role cofactor
 property_value: http://purl.obolibrary.org/obo/chebi/formula "Cu" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/mass "63.546" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "62.92960" xsd:string
@@ -3881,9 +3881,9 @@ xref: Wikipedia:Copper(II)_sulfate
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:51336 ! metal sulfate
 relationship: BFO:0000051 CHEBI:29036 ! has part copper(2+)
-relationship: has_role CHEBI:139492 ! sensitiser
-relationship: has_role CHEBI:149552 ! emetic
-relationship: has_role CHEBI:33287 ! fertilizer
+relationship: RO:0000087 CHEBI:139492 ! has role sensitiser
+relationship: RO:0000087 CHEBI:149552 ! has role emetic
+relationship: RO:0000087 CHEBI:33287 ! has role fertilizer
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "CuO4S" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/Cu.H2O4S/c;1-5(2,3)4/h;(H2,1,2,3,4)/q+2;/p-2" xsd:string
@@ -3935,7 +3935,7 @@ xref: CAS:1464-53-5 {source="NIST Chemistry WebBook"}
 xref: CAS:1464-53-5 {source="ChemIDplus"}
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:32955 ! epoxide
-relationship: has_role CHEBI:25435 ! mutagen
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C4H6O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C4H6O2/c1-3(5-1)4-2-6-4/h3-4H,1-2H2" xsd:string
@@ -3960,7 +3960,7 @@ xref: CAS:2426-07-5 {source="NIST Chemistry WebBook"}
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:32955 ! epoxide
 relationship: has_parent_hydride CHEBI:17590 ! octane
-relationship: has_role CHEBI:25435 ! mutagen
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C8H14O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C8H14O2/c1(3-7-5-9-7)2-4-8-6-10-8/h7-8H,1-6H2" xsd:string
@@ -4050,10 +4050,10 @@ xref: Reaxys:773969 {source="Reaxys"}
 xref: Wikipedia:Ethyl_methanesulfonate
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:25223 ! methanesulfonate ester
-relationship: has_role CHEBI:22333 ! alkylating agent
-relationship: has_role CHEBI:35610 ! antineoplastic agent
-relationship: has_role CHEBI:50903 ! carcinogenic agent
-relationship: has_role CHEBI:50905 ! teratogenic agent
+relationship: RO:0000087 CHEBI:22333 ! has role alkylating agent
+relationship: RO:0000087 CHEBI:35610 ! has role antineoplastic agent
+relationship: RO:0000087 CHEBI:50903 ! has role carcinogenic agent
+relationship: RO:0000087 CHEBI:50905 ! has role teratogenic agent
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C3H8O3S" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C3H8O3S/c1-3-6-7(2,4)5/h3H2,1-2H3" xsd:string
@@ -4097,8 +4097,8 @@ xref: Reaxys:1761174 {source="Reaxys"}
 xref: Wikipedia:ENU
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:76551 ! N-nitrosoureas
-relationship: has_role CHEBI:22333 ! alkylating agent
-relationship: has_role CHEBI:50903 ! carcinogenic agent
+relationship: RO:0000087 CHEBI:22333 ! has role alkylating agent
+relationship: RO:0000087 CHEBI:50903 ! has role carcinogenic agent
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C3H7N3O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C3H7N3O2/c1-2-6(5-8)3(4)7/h2H2,1H3,(H2,4,7)" xsd:string
@@ -4143,7 +4143,7 @@ xref: CAS:7782-41-4 {source="ChemIDplus"}
 xref: WebElements:F
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:24473 ! halogen
-relationship: has_role CHEBI:27027 ! micronutrient
+relationship: RO:0000087 CHEBI:27027 ! has role micronutrient
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "F" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/F" xsd:string
@@ -4381,8 +4381,8 @@ xref: Gmelin:3259 {source="Gmelin"}
 xref: KEGG:C19250
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:17102 ! phosphoramide
-relationship: has_role CHEBI:25435 ! mutagen
-relationship: has_role CHEBI:67105 ! insect sterilant
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
+relationship: RO:0000087 CHEBI:67105 ! has role insect sterilant
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C6H18N3OP" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C6H18N3OP/c1-7(2)11(10,8(3)4)9(5)6/h1-6H3" xsd:string
@@ -4422,8 +4422,8 @@ xref: Reaxys:4096157 {source="Reaxys"}
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:38037 ! methanesulfonate salt
 relationship: BFO:0000051 CHEBI:67141 ! has part hycanthone(1+)
-relationship: has_role CHEBI:22333 ! alkylating agent
-relationship: has_role CHEBI:38941 ! schistosomicide drug
+relationship: RO:0000087 CHEBI:22333 ! has role alkylating agent
+relationship: RO:0000087 CHEBI:38941 ! has role schistosomicide drug
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C21H28N2O5S2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C20H24N2O2S.CH4O3S/c1-3-22(4-2)12-11-21-16-10-9-14(13-23)20-18(16)19(24)15-7-5-6-8-17(15)25-20;1-5(2,3)4/h5-10,21,23H,3-4,11-13H2,1-2H3;1H3,(H,2,3,4)" xsd:string
@@ -4511,7 +4511,7 @@ synonym: "oxy-acids" RELATED [ChEBI]
 synonym: "oxyacids" RELATED [ChEBI]
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:24651 ! hydroxides
-relationship: has_role CHEBI:39141 ! Bronsted acid
+relationship: RO:0000087 CHEBI:39141 ! has role Bronsted acid
 
 [Term]
 id: CHEBI:24834
@@ -4606,8 +4606,8 @@ synonym: "yodo" RELATED [ChEBI]
 xref: WebElements:I
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:24473 ! halogen
-relationship: has_role CHEBI:27027 ! micronutrient
-relationship: has_role CHEBI:77746 ! human metabolite
+relationship: RO:0000087 CHEBI:27027 ! has role micronutrient
+relationship: RO:0000087 CHEBI:77746 ! has role human metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "I" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/I" xsd:string
@@ -4749,7 +4749,7 @@ xref: Beilstein:4368978 {source="ChemIDplus"}
 xref: CAS:61738-03-2 {source="ChemIDplus"}
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:35803 ! nitrosamine
-relationship: has_role CHEBI:25435 ! mutagen
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C5H12N2O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C5H12N2O2/c1-4-7(6-8)5(2)9-3/h5H,4H2,1-3H3" xsd:string
@@ -4798,9 +4798,9 @@ xref: Reaxys:1098586 {source="Reaxys"}
 xref: Wikipedia:Methyl_methanesulfonate
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:25223 ! methanesulfonate ester
-relationship: has_role CHEBI:22333 ! alkylating agent
-relationship: has_role CHEBI:50903 ! carcinogenic agent
-relationship: has_role CHEBI:68495 ! apoptosis inducer
+relationship: RO:0000087 CHEBI:22333 ! has role alkylating agent
+relationship: RO:0000087 CHEBI:50903 ! has role carcinogenic agent
+relationship: RO:0000087 CHEBI:68495 ! has role apoptosis inducer
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C2H6O3S" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C2H6O3S/c1-5-6(2,3)4/h1-2H3" xsd:string
@@ -4831,8 +4831,8 @@ is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:23003 ! carbamate ester
 is_a: CHEBI:25830 ! p-quinones
 is_a: CHEBI:38303 ! azirinopyrroloindole
-relationship: has_role CHEBI:24853 ! intercalator
-relationship: has_role CHEBI:76969 ! bacterial metabolite
+relationship: RO:0000087 CHEBI:24853 ! has role intercalator
+relationship: RO:0000087 CHEBI:76969 ! has role bacterial metabolite
 
 [Term]
 id: CHEBI:25367
@@ -4913,9 +4913,9 @@ xref: Wikipedia:Sulfur_mustard
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:23996 ! ethyl sulfide
 is_a: CHEBI:36683 ! organochlorine compound
-relationship: has_role CHEBI:22333 ! alkylating agent
-relationship: has_role CHEBI:50903 ! carcinogenic agent
-relationship: has_role CHEBI:78592 ! vesicant
+relationship: RO:0000087 CHEBI:22333 ! has role alkylating agent
+relationship: RO:0000087 CHEBI:50903 ! has role carcinogenic agent
+relationship: RO:0000087 CHEBI:78592 ! has role vesicant
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C4H8Cl2S" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C4H8Cl2S/c5-1-3-7-4-2-6/h1-4H2" xsd:string
@@ -4986,7 +4986,7 @@ xref: WebElements:N
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:25585 ! nonmetal atom
 is_a: CHEBI:33300 ! pnictogen
-relationship: has_role CHEBI:33937 ! macronutrient
+relationship: RO:0000087 CHEBI:33937 ! has role macronutrient
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "N" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/mass "14.007" xsd:string
@@ -5100,7 +5100,7 @@ xref: WebElements:O
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:25585 ! nonmetal atom
 is_a: CHEBI:33303 ! chalcogen
-relationship: has_role CHEBI:33937 ! macronutrient
+relationship: RO:0000087 CHEBI:33937 ! has role macronutrient
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "O" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/O" xsd:string
@@ -5135,7 +5135,7 @@ subset: 1_STAR
 is_a: CHEBI:33856 ! aromatic amino acid
 is_a: CHEBI:36683 ! organochlorine compound
 relationship: has_functional_parent CHEBI:17418 ! valeric acid
-relationship: has_role CHEBI:25435 ! mutagen
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
 
 [Term]
 id: CHEBI:25814
@@ -5145,7 +5145,7 @@ subset: 1_STAR
 is_a: CHEBI:16733 ! D-alpha-amino acid
 is_a: CHEBI:36683 ! organochlorine compound
 is_a: CHEBI:84143 ! D-phenylalanine derivative
-relationship: has_role CHEBI:25435 ! mutagen
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
 
 [Term]
 id: CHEBI:25816
@@ -5155,7 +5155,7 @@ subset: 1_STAR
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:36683 ! organochlorine compound
 is_a: CHEBI:84144 ! L-phenylalanine derivative
-relationship: has_role CHEBI:25435 ! mutagen
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
 
 [Term]
 id: CHEBI:25818
@@ -5185,7 +5185,7 @@ namespace: chebi_ontology
 subset: 1_STAR
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:36683 ! organochlorine compound
-relationship: has_role CHEBI:25435 ! mutagen
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
 
 [Term]
 id: CHEBI:25830
@@ -5207,7 +5207,7 @@ synonym: "peptide antibiotics" RELATED [ChEBI]
 xref: MetaCyc:Peptide-Antibiotics
 xref: PMID:33398258 {source="Europe PMC"}
 is_a: CHEBI:16670 ! peptide
-relationship: has_role CHEBI:33281 ! antimicrobial agent
+relationship: RO:0000087 CHEBI:33281 ! has role antimicrobial agent
 
 [Term]
 id: CHEBI:25944
@@ -5282,11 +5282,11 @@ xref: PMID:22401268 {source="Europe PMC"}
 xref: Reaxys:1921286 {source="Reaxys"}
 xref: Wikipedia:Phosphoric_Acid
 is_a: CHEBI:59698 ! phosphoric acids
-relationship: has_role CHEBI:33287 ! fertilizer
-relationship: has_role CHEBI:46787 ! solvent
-relationship: has_role CHEBI:77746 ! human metabolite
-relationship: has_role CHEBI:84735 ! algal metabolite
 relationship: is_conjugate_acid_of CHEBI:39745 ! dihydrogenphosphate
+relationship: RO:0000087 CHEBI:33287 ! has role fertilizer
+relationship: RO:0000087 CHEBI:46787 ! has role solvent
+relationship: RO:0000087 CHEBI:77746 ! has role human metabolite
+relationship: RO:0000087 CHEBI:84735 ! has role algal metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "H3O4P" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/H3O4P/c1-5(2,3)4/h(H3,1,2,3,4)" xsd:string
@@ -5547,8 +5547,8 @@ xref: KEGG:C01330
 xref: WebElements:Na
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:22314 ! alkali metal atom
-relationship: has_role CHEBI:33937 ! macronutrient
-relationship: has_role CHEBI:75772 ! Saccharomyces cerevisiae metabolite
+relationship: RO:0000087 CHEBI:33937 ! has role macronutrient
+relationship: RO:0000087 CHEBI:75772 ! has role Saccharomyces cerevisiae metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "Na" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/Na" xsd:string
@@ -5583,8 +5583,8 @@ is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:38702 ! inorganic sodium salt
 is_a: CHEBI:48857 ! sulfite salt
 relationship: BFO:0000051 CHEBI:17137 ! has part hydrogensulfite
-relationship: has_role CHEBI:25435 ! mutagen
-relationship: has_role CHEBI:50904 ! allergen
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
+relationship: RO:0000087 CHEBI:50904 ! has role allergen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "HNaO3S" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/Na.H2O3S/c;1-4(2)3/h;(H2,1,2,3)/q+1;/p-1" xsd:string
@@ -5699,7 +5699,7 @@ xref: WebElements:S
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:25585 ! nonmetal atom
 is_a: CHEBI:33303 ! chalcogen
-relationship: has_role CHEBI:33937 ! macronutrient
+relationship: RO:0000087 CHEBI:33937 ! has role macronutrient
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "S" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/S" xsd:string
@@ -5772,8 +5772,8 @@ xref: PPDB:606
 xref: Reaxys:2037554 {source="Reaxys"}
 xref: Wikipedia:Sulfuric_acid
 is_a: CHEBI:33402 ! sulfur oxoacid
-relationship: has_role CHEBI:35223 ! catalyst
 relationship: is_conjugate_acid_of CHEBI:45696 ! hydrogensulfate
+relationship: RO:0000087 CHEBI:35223 ! has role catalyst
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "H2O4S" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)" xsd:string
@@ -5890,8 +5890,8 @@ xref: Wikipedia:Triaziquone
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:132124 ! 1,4-benzoquinones
 is_a: CHEBI:22681 ! aziridines
-relationship: has_role CHEBI:22333 ! alkylating agent
-relationship: has_role CHEBI:35610 ! antineoplastic agent
+relationship: RO:0000087 CHEBI:22333 ! has role alkylating agent
+relationship: RO:0000087 CHEBI:35610 ! has role antineoplastic agent
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C12H13N3O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C12H13N3O2/c16-9-7-8(13-1-2-13)12(17)11(15-5-6-15)10(9)14-3-4-14/h7H,1-6H2" xsd:string
@@ -6020,8 +6020,8 @@ xref: Wikipedia:Methanesulfonic_acid
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:47901 ! alkanesulfonic acid
 is_a: CHEBI:64708 ! one-carbon compound
-relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
 relationship: is_conjugate_acid_of CHEBI:25224 ! methanesulfonate
+relationship: RO:0000087 CHEBI:76971 ! has role Escherichia coli metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "CH4O3S" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/CH4O3S/c1-5(2,3)4/h1H3,(H,2,3,4)" xsd:string
@@ -6122,9 +6122,9 @@ xref: Wikipedia:Folic_Acid
 is_a: CHEBI:37445 ! folic acids
 is_a: CHEBI:51569 ! N-acyl-amino acid
 relationship: has_functional_parent CHEBI:38794 ! pteroic acid
-relationship: has_role CHEBI:75771 ! mouse metabolite
-relationship: has_role CHEBI:77746 ! human metabolite
 relationship: is_conjugate_acid_of CHEBI:62501 ! folate(2-)
+relationship: RO:0000087 CHEBI:75771 ! has role mouse metabolite
+relationship: RO:0000087 CHEBI:77746 ! has role human metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C19H19N7O6" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C19H19N7O6/c20-19-25-15-14(17(30)26-19)23-11(8-22-15)7-21-10-3-1-9(2-4-10)16(29)24-12(18(31)32)5-6-13(27)28/h1-4,8,12,21H,5-7H2,(H,24,29)(H,27,28)(H,31,32)(H3,20,22,25,26,30)/t12-/m0/s1" xsd:string
@@ -6162,9 +6162,9 @@ xref: PMID:36453313 {source="Europe PMC"}
 xref: PMID:36473690 {source="Europe PMC"}
 xref: Wikipedia:Mitomycin
 is_a: CHEBI:25357 ! mitomycin
-relationship: has_role CHEBI:22333 ! alkylating agent
-relationship: has_role CHEBI:35610 ! antineoplastic agent
 relationship: is_conjugate_acid_of CHEBI:194095 ! mitomycin C(1-)
+relationship: RO:0000087 CHEBI:22333 ! has role alkylating agent
+relationship: RO:0000087 CHEBI:35610 ! has role antineoplastic agent
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C15H18N4O5" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C15H18N4O5/c1-5-9(16)12(21)8-6(4-24-14(17)22)15(23-2)13-7(18-13)3-19(15)10(8)11(5)20/h6-7,13,18H,3-4,16H2,1-2H3,(H2,17,22)/t6-,7+,13+,15-/m1/s1" xsd:string
@@ -6197,7 +6197,7 @@ is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:137980 ! metalloid atom
 is_a: CHEBI:25585 ! nonmetal atom
 is_a: CHEBI:33317 ! boron group element atom
-relationship: has_role CHEBI:27027 ! micronutrient
+relationship: RO:0000087 CHEBI:27027 ! has role micronutrient
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "B" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/B" xsd:string
@@ -6252,9 +6252,9 @@ is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:138675 ! gas molecular entity
 is_a: CHEBI:36389 ! saturated organic heteromonocyclic parent
 is_a: CHEBI:38104 ! oxacycle
-relationship: has_role CHEBI:25435 ! mutagen
-relationship: has_role CHEBI:50904 ! allergen
-relationship: has_role CHEBI:75771 ! mouse metabolite
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
+relationship: RO:0000087 CHEBI:50904 ! has role allergen
+relationship: RO:0000087 CHEBI:75771 ! has role mouse metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C2H4O" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C2H4O/c1-2-3-1/h1-2H2" xsd:string
@@ -6287,7 +6287,7 @@ xref: WebElements:C
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:25585 ! nonmetal atom
 is_a: CHEBI:33306 ! carbon group element atom
-relationship: has_role CHEBI:33937 ! macronutrient
+relationship: RO:0000087 CHEBI:33937 ! has role macronutrient
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C" xsd:string
@@ -6320,7 +6320,7 @@ xref: KEGG:D00214
 xref: LINCS:LSM-5783
 xref: Wikipedia:Dactinomycin
 is_a: CHEBI:15369 ! actinomycin
-relationship: has_role CHEBI:25435 ! mutagen
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C62H86N12O16" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C62H86N12O16/c1-27(2)42-59(84)73-23-17-19-36(73)57(82)69(13)25-38(75)71(15)48(29(5)6)61(86)88-33(11)44(55(80)65-42)67-53(78)35-22-21-31(9)51-46(35)64-47-40(41(63)50(77)32(10)52(47)90-51)54(79)68-45-34(12)89-62(87)49(30(7)8)72(16)39(76)26-70(14)58(83)37-20-18-24-74(37)60(85)43(28(3)4)66-56(45)81/h21-22,27-30,33-34,36-37,42-45,48-49H,17-20,23-26,63H2,1-16H3,(H,65,80)(H,66,81)(H,67,78)(H,68,79)/t33-,34-,36+,37+,42-,43-,44+,45+,48+,49+/m1/s1" xsd:string
@@ -6444,23 +6444,23 @@ xref: PMID:9218278 {source="Europe PMC"}
 xref: Reaxys:17705 {source="Reaxys"}
 xref: Wikipedia:Caffeine
 is_a: CHEBI:27134 ! trimethylxanthine
-relationship: has_role CHEBI:176497 ! geroprotector
-relationship: has_role CHEBI:25435 ! mutagen
-relationship: has_role CHEBI:35337 ! central nervous system stimulant
-relationship: has_role CHEBI:35471 ! psychotropic drug
-relationship: has_role CHEBI:35498 ! diuretic
-relationship: has_role CHEBI:35703 ! xenobiotic
-relationship: has_role CHEBI:50218 ! EC 3.1.4.* (phosphoric diester hydrolase) inhibitor
-relationship: has_role CHEBI:50925 ! EC 2.7.11.1 (non-specific serine/threonine protein kinase) inhibitor
-relationship: has_role CHEBI:53121 ! adenosine A2A receptor antagonist
-relationship: has_role CHEBI:60809 ! adjuvant
-relationship: has_role CHEBI:64047 ! food additive
-relationship: has_role CHEBI:67114 ! ryanodine receptor agonist
-relationship: has_role CHEBI:75771 ! mouse metabolite
-relationship: has_role CHEBI:76924 ! plant metabolite
-relationship: has_role CHEBI:76946 ! fungal metabolite
-relationship: has_role CHEBI:78298 ! environmental contaminant
-relationship: has_role CHEBI:85234 ! human blood serum metabolite
+relationship: RO:0000087 CHEBI:176497 ! has role geroprotector
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
+relationship: RO:0000087 CHEBI:35337 ! has role central nervous system stimulant
+relationship: RO:0000087 CHEBI:35471 ! has role psychotropic drug
+relationship: RO:0000087 CHEBI:35498 ! has role diuretic
+relationship: RO:0000087 CHEBI:35703 ! has role xenobiotic
+relationship: RO:0000087 CHEBI:50218 ! has role EC 3.1.4.* (phosphoric diester hydrolase) inhibitor
+relationship: RO:0000087 CHEBI:50925 ! has role EC 2.7.11.1 (non-specific serine/threonine protein kinase) inhibitor
+relationship: RO:0000087 CHEBI:53121 ! has role adenosine A2A receptor antagonist
+relationship: RO:0000087 CHEBI:60809 ! has role adjuvant
+relationship: RO:0000087 CHEBI:64047 ! has role food additive
+relationship: RO:0000087 CHEBI:67114 ! has role ryanodine receptor agonist
+relationship: RO:0000087 CHEBI:75771 ! has role mouse metabolite
+relationship: RO:0000087 CHEBI:76924 ! has role plant metabolite
+relationship: RO:0000087 CHEBI:76946 ! has role fungal metabolite
+relationship: RO:0000087 CHEBI:78298 ! has role environmental contaminant
+relationship: RO:0000087 CHEBI:85234 ! has role human blood serum metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C8H10N4O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3" xsd:string
@@ -6518,9 +6518,9 @@ xref: UM-BBD_compID:c0001 {source="UM-BBD"}
 xref: Wikipedia:1\,2-Dichloroethane
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:36016 ! chloroethanes
-relationship: has_role CHEBI:25435 ! mutagen
-relationship: has_role CHEBI:48355 ! non-polar solvent
-relationship: has_role CHEBI:50908 ! hepatotoxic agent
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
+relationship: RO:0000087 CHEBI:48355 ! has role non-polar solvent
+relationship: RO:0000087 CHEBI:50908 ! has role hepatotoxic agent
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C2H4Cl2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C2H4Cl2/c3-1-2-4/h1-2H2" xsd:string
@@ -6591,13 +6591,13 @@ xref: Reaxys:11324567 {source="Reaxys"}
 xref: Wikipedia:Cisplatin
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:51214 ! diamminedichloroplatinum
-relationship: has_role CHEBI:173085 ! ferroptosis inducer
-relationship: has_role CHEBI:25435 ! mutagen
-relationship: has_role CHEBI:35610 ! antineoplastic agent
-relationship: has_role CHEBI:47868 ! photosensitizing agent
-relationship: has_role CHEBI:50684 ! cross-linking reagent
-relationship: has_role CHEBI:61015 ! nephrotoxin
-relationship: has_role CHEBI:68495 ! apoptosis inducer
+relationship: RO:0000087 CHEBI:173085 ! has role ferroptosis inducer
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
+relationship: RO:0000087 CHEBI:35610 ! has role antineoplastic agent
+relationship: RO:0000087 CHEBI:47868 ! has role photosensitizing agent
+relationship: RO:0000087 CHEBI:50684 ! has role cross-linking reagent
+relationship: RO:0000087 CHEBI:61015 ! has role nephrotoxin
+relationship: RO:0000087 CHEBI:68495 ! has role apoptosis inducer
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "Cl2H6N2Pt" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "H6Cl2N2Pt" xsd:string
@@ -6632,8 +6632,8 @@ xref: KEGG:C07642
 xref: Reaxys:242245 {source="Reaxys"}
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:26588 ! 1,3,5-triazines
-relationship: has_role CHEBI:22333 ! alkylating agent
-relationship: has_role CHEBI:67105 ! insect sterilant
+relationship: RO:0000087 CHEBI:22333 ! has role alkylating agent
+relationship: RO:0000087 CHEBI:67105 ! has role insect sterilant
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C9H12N6" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C9H12N6/c1-2-13(1)7-10-8(14-3-4-14)12-9(11-7)15-5-6-15/h1-6H2" xsd:string
@@ -6672,9 +6672,9 @@ xref: Wikipedia:Phenylalanine
 is_a: CHEBI:33704 ! alpha-amino acid
 is_a: CHEBI:33856 ! aromatic amino acid
 relationship: BFO:0000051 CHEBI:22744 ! has part benzyl group
-relationship: has_role CHEBI:83056 ! Daphnia magna metabolite
 relationship: is_conjugate_acid_of CHEBI:32504 ! phenylalaninate
 relationship: is_conjugate_base_of CHEBI:32505 ! phenylalaninium
+relationship: RO:0000087 CHEBI:83056 ! has role Daphnia magna metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C9H11NO2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C9H11NO2/c10-8(9(11)12)6-7-4-2-1-3-5-7/h1-5,8H,6,10H2,(H,11,12)" xsd:string
@@ -6721,10 +6721,10 @@ is_a: CHEBI:140332 ! 4'-methoxyflavanones
 is_a: CHEBI:38738 ! monomethoxyflavanone
 is_a: CHEBI:38739 ! trihydroxyflavanone
 is_a: CHEBI:48024 ! 3'-hydroxyflavanones
-relationship: has_role CHEBI:22586 ! antioxidant
-relationship: has_role CHEBI:35610 ! antineoplastic agent
-relationship: has_role CHEBI:76924 ! plant metabolite
 relationship: is_conjugate_acid_of CHEBI:61249 ! hesperetin(1-)
+relationship: RO:0000087 CHEBI:22586 ! has role antioxidant
+relationship: RO:0000087 CHEBI:35610 ! has role antineoplastic agent
+relationship: RO:0000087 CHEBI:76924 ! has role plant metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C16H14O6" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C16H14O6/c1-21-13-3-2-8(4-10(13)18)14-7-12(20)16-11(19)5-9(17)6-15(16)22-14/h2-6,14,17-19H,7H2,1H3/t14-/m0/s1" xsd:string
@@ -6814,14 +6814,14 @@ xref: Wikipedia:Dimethyl_sulfoxide
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:134179 ! volatile organic compound
 is_a: CHEBI:22063 ! sulfoxide
-relationship: has_role CHEBI:176497 ! geroprotector
-relationship: has_role CHEBI:22333 ! alkylating agent
-relationship: has_role CHEBI:35481 ! non-narcotic analgesic
-relationship: has_role CHEBI:37335 ! MRI contrast agent
-relationship: has_role CHEBI:48358 ! polar aprotic solvent
-relationship: has_role CHEBI:48578 ! radical scavenger
-relationship: has_role CHEBI:50247 ! antidote
-relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
+relationship: RO:0000087 CHEBI:176497 ! has role geroprotector
+relationship: RO:0000087 CHEBI:22333 ! has role alkylating agent
+relationship: RO:0000087 CHEBI:35481 ! has role non-narcotic analgesic
+relationship: RO:0000087 CHEBI:37335 ! has role MRI contrast agent
+relationship: RO:0000087 CHEBI:48358 ! has role polar aprotic solvent
+relationship: RO:0000087 CHEBI:48578 ! has role radical scavenger
+relationship: RO:0000087 CHEBI:50247 ! has role antidote
+relationship: RO:0000087 CHEBI:76971 ! has role Escherichia coli metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C2H6OS" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C2H6OS/c1-4(2)3/h1-2H3" xsd:string
@@ -6864,12 +6864,12 @@ xref: Wikipedia:1\,2-Dibromoethane
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:22926 ! bromohydrocarbon
 is_a: CHEBI:22929 ! bromoalkane
-relationship: has_role CHEBI:25435 ! mutagen
-relationship: has_role CHEBI:39276 ! fumigant
-relationship: has_role CHEBI:50903 ! carcinogenic agent
-relationship: has_role CHEBI:75771 ! mouse metabolite
-relationship: has_role CHEBI:76507 ! marine metabolite
-relationship: has_role CHEBI:84735 ! algal metabolite
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
+relationship: RO:0000087 CHEBI:39276 ! has role fumigant
+relationship: RO:0000087 CHEBI:50903 ! has role carcinogenic agent
+relationship: RO:0000087 CHEBI:75771 ! has role mouse metabolite
+relationship: RO:0000087 CHEBI:76507 ! has role marine metabolite
+relationship: RO:0000087 CHEBI:84735 ! has role algal metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C2H4Br2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C2H4Br2/c3-1-2-4/h1-2H2" xsd:string
@@ -6906,8 +6906,8 @@ xref: Wikipedia:Carbamic_acid
 is_a: CHEBI:35352 ! organonitrogen compound
 is_a: CHEBI:35605 ! carbon oxoacid
 is_a: CHEBI:64708 ! one-carbon compound
-relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
 relationship: is_conjugate_acid_of CHEBI:13941 ! carbamate
+relationship: RO:0000087 CHEBI:76971 ! has role Escherichia coli metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "CH3NO2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/CH3NO2/c2-1(3)4/h2H2,(H,3,4)" xsd:string
@@ -6940,7 +6940,7 @@ xref: WebElements:P
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:25585 ! nonmetal atom
 is_a: CHEBI:33300 ! pnictogen
-relationship: has_role CHEBI:33937 ! macronutrient
+relationship: RO:0000087 CHEBI:33937 ! has role macronutrient
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "P" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/P" xsd:string
@@ -6973,8 +6973,8 @@ xref: KEGG:C00070
 xref: WebElements:Cu
 is_a: CHEBI:33366 ! copper group element atom
 is_a: CHEBI:88184 ! metal allergen
-relationship: has_role CHEBI:27027 ! micronutrient
-relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
+relationship: RO:0000087 CHEBI:27027 ! has role micronutrient
+relationship: RO:0000087 CHEBI:76971 ! has role Escherichia coli metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "Cu" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/Cu" xsd:string
@@ -7001,7 +7001,7 @@ xref: KEGG:D00943
 xref: Wikipedia:Sodium_Fluoride
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:24060 ! fluoride salt
-relationship: has_role CHEBI:25435 ! mutagen
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "FNa" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "Na.F" xsd:string
@@ -7048,7 +7048,7 @@ is_a: CHEBI:48024 ! 3'-hydroxyflavanones
 is_a: CHEBI:63353 ! disaccharide derivative
 is_a: CHEBI:72730 ! flavanone glycoside
 relationship: has_functional_parent CHEBI:28230 ! hesperetin
-relationship: has_role CHEBI:25435 ! mutagen
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C28H34O15" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C28H34O15/c1-10-21(32)23(34)25(36)27(40-10)39-9-19-22(33)24(35)26(37)28(43-19)41-12-6-14(30)20-15(31)8-17(42-18(20)7-12)11-3-4-16(38-2)13(29)5-11/h3-7,10,17,19,21-30,32-37H,8-9H2,1-2H3/t10-,17-,19+,21-,22+,23+,24-,25+,26+,27+,28+/m0/s1" xsd:string
@@ -7105,10 +7105,10 @@ is_a: CHEBI:33860 ! aromatic amine
 is_a: CHEBI:36683 ! organochlorine compound
 is_a: CHEBI:37598 ! nitrogen mustard
 is_a: CHEBI:50996 ! tertiary amino compound
-relationship: has_role CHEBI:35610 ! antineoplastic agent
-relationship: has_role CHEBI:35705 ! immunosuppressive agent
-relationship: has_role CHEBI:50903 ! carcinogenic agent
-relationship: has_role CHEBI:88188 ! drug allergen
+relationship: RO:0000087 CHEBI:35610 ! has role antineoplastic agent
+relationship: RO:0000087 CHEBI:35705 ! has role immunosuppressive agent
+relationship: RO:0000087 CHEBI:50903 ! has role carcinogenic agent
+relationship: RO:0000087 CHEBI:88188 ! has role drug allergen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C14H19Cl2NO2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C14H19Cl2NO2/c15-8-10-17(11-9-16)13-6-4-12(5-7-13)2-1-3-14(18)19/h4-7H,1-3,8-11H2,(H,18,19)" xsd:string
@@ -7220,10 +7220,10 @@ is_a: CHEBI:36683 ! organochlorine compound
 is_a: CHEBI:37598 ! nitrogen mustard
 is_a: CHEBI:83822 ! non-proteinogenic L-alpha-amino acid
 is_a: CHEBI:84144 ! L-phenylalanine derivative
-relationship: has_role CHEBI:35610 ! antineoplastic agent
-relationship: has_role CHEBI:35705 ! immunosuppressive agent
-relationship: has_role CHEBI:50903 ! carcinogenic agent
-relationship: has_role CHEBI:88188 ! drug allergen
+relationship: RO:0000087 CHEBI:35610 ! has role antineoplastic agent
+relationship: RO:0000087 CHEBI:35705 ! has role immunosuppressive agent
+relationship: RO:0000087 CHEBI:50903 ! has role carcinogenic agent
+relationship: RO:0000087 CHEBI:88188 ! has role drug allergen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C13H18Cl2N2O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C13H18Cl2N2O2/c14-5-7-17(8-6-15)11-3-1-10(2-4-11)9-12(16)13(18)19/h1-4,12H,5-9,16H2,(H,18,19)/t12-/m0/s1" xsd:string
@@ -7275,11 +7275,11 @@ xref: Wikipedia:Busulfan
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:25223 ! methanesulfonate ester
 relationship: has_functional_parent CHEBI:41189 ! butane-1,4-diol
-relationship: has_role CHEBI:22333 ! alkylating agent
-relationship: has_role CHEBI:35610 ! antineoplastic agent
-relationship: has_role CHEBI:50903 ! carcinogenic agent
-relationship: has_role CHEBI:50905 ! teratogenic agent
-relationship: has_role CHEBI:67105 ! insect sterilant
+relationship: RO:0000087 CHEBI:22333 ! has role alkylating agent
+relationship: RO:0000087 CHEBI:35610 ! has role antineoplastic agent
+relationship: RO:0000087 CHEBI:50903 ! has role carcinogenic agent
+relationship: RO:0000087 CHEBI:50905 ! has role teratogenic agent
+relationship: RO:0000087 CHEBI:67105 ! has role insect sterilant
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C6H14O6S2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C6H14O6S2/c1-13(7,8)11-5-3-4-6-12-14(2,9)10/h3-6H2,1-2H3" xsd:string
@@ -7338,11 +7338,11 @@ is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:35106 ! nitrogen hydride
 is_a: CHEBI:50313 ! onium cation
 is_a: CHEBI:60242 ! monovalent inorganic cation
-relationship: has_role CHEBI:23357 ! cofactor
-relationship: has_role CHEBI:75772 ! Saccharomyces cerevisiae metabolite
-relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
-relationship: has_role CHEBI:77746 ! human metabolite
 relationship: is_conjugate_acid_of CHEBI:16134 ! ammonia
+relationship: RO:0000087 CHEBI:23357 ! has role cofactor
+relationship: RO:0000087 CHEBI:75772 ! has role Saccharomyces cerevisiae metabolite
+relationship: RO:0000087 CHEBI:76971 ! has role Escherichia coli metabolite
+relationship: RO:0000087 CHEBI:77746 ! has role human metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "+1" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "H4N" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/H3N/h1H3/p+1" xsd:string
@@ -7364,7 +7364,7 @@ xref: CAS:52259-65-1 {source="KEGG COMPOUND"}
 xref: KEGG:C09438
 xref: KNApSAcK:C00001857
 is_a: CHEBI:38517 ! benzophenanthridine alkaloid
-relationship: has_role CHEBI:25435 ! mutagen
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "+1" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C21H20NO4" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C21H19NO4/c1-22-11-13-8-19(25-3)20(26-4)9-15(13)14-6-5-12-7-17(23)18(24-2)10-16(12)21(14)22/h5-11H,1-4H3/p+1" xsd:string
@@ -7420,8 +7420,8 @@ xref: KEGG:C01353
 xref: PDBeChem:CO3
 is_a: CHEBI:35605 ! carbon oxoacid
 is_a: CHEBI:36961 ! chalcocarbonic acid
-relationship: has_role CHEBI:75771 ! mouse metabolite
 relationship: is_conjugate_acid_of CHEBI:17544 ! hydrogencarbonate
+relationship: RO:0000087 CHEBI:75771 ! has role mouse metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "CH2O3" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/CH2O3/c2-1(3)4/h(H2,2,3,4)" xsd:string
@@ -7515,8 +7515,8 @@ is_a: CHEBI:25414 ! monoatomic monocation
 is_a: CHEBI:33504 ! alkali metal cation
 is_a: CHEBI:37246 ! elemental sodium
 is_a: CHEBI:60242 ! monovalent inorganic cation
-relationship: has_role CHEBI:23357 ! cofactor
-relationship: has_role CHEBI:77746 ! human metabolite
+relationship: RO:0000087 CHEBI:23357 ! has role cofactor
+relationship: RO:0000087 CHEBI:77746 ! has role human metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "+1" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "Na" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/Na/q+1" xsd:string
@@ -7799,7 +7799,7 @@ xref: PMID:7721048 {source="Europe PMC"}
 xref: Reaxys:1911333 {source="Reaxys"}
 xref: Wikipedia:Benzo(a)pyrene
 is_a: CHEBI:35300 ! ortho- and peri-fused polycyclic arene
-relationship: has_role CHEBI:75771 ! mouse metabolite
+relationship: RO:0000087 CHEBI:75771 ! has role mouse metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C20H12" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C20H12/c1-2-7-17-15(4-1)12-16-9-8-13-5-3-6-14-10-11-18(17)20(16)19(13)14/h1-12H" xsd:string
@@ -7847,12 +7847,12 @@ xref: Gmelin:936654 {source="Gmelin"}
 xref: MetaCyc:GLT
 is_a: CHEBI:14321 ! glutamate(1-)
 is_a: CHEBI:62031 ! polar amino acid zwitterion
-relationship: has_role CHEBI:24319 ! EC 6.3.1.2 (glutamate--ammonia ligase) inhibitor
-relationship: has_role CHEBI:75772 ! Saccharomyces cerevisiae metabolite
-relationship: has_role CHEBI:77746 ! human metabolite
 relationship: is_conjugate_acid_of CHEBI:29988 ! L-glutamate(2-)
 relationship: is_conjugate_base_of CHEBI:16015 ! L-glutamic acid
 relationship: is_enantiomer_of CHEBI:29986 ! D-glutamate(1-)
+relationship: RO:0000087 CHEBI:24319 ! has role EC 6.3.1.2 (glutamate--ammonia ligase) inhibitor
+relationship: RO:0000087 CHEBI:75772 ! has role Saccharomyces cerevisiae metabolite
+relationship: RO:0000087 CHEBI:77746 ! has role human metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "-1" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C5H8NO4" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C5H9NO4/c6-3(5(9)10)1-2-4(7)8/h3H,1-2,6H2,(H,7,8)(H,9,10)/p-1/t3-/m0/s1" xsd:string
@@ -7903,8 +7903,8 @@ xref: Gmelin:327903 {source="Gmelin"}
 xref: Reaxys:4134100 {source="Reaxys"}
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:28965 ! dicarboxylic acid dianion
-relationship: has_role CHEBI:78675 ! fundamental metabolite
 relationship: is_conjugate_base_of CHEBI:14321 ! glutamate(1-)
+relationship: RO:0000087 CHEBI:78675 ! has role fundamental metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "-2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C5H7NO4" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C5H9NO4/c6-3(5(9)10)1-2-4(7)8/h3H,1-2,6H2,(H,7,8)(H,9,10)/p-2" xsd:string
@@ -8059,11 +8059,11 @@ xref: PMID:7361809 {source="Europe PMC"}
 xref: Reaxys:1209246 {source="Reaxys"}
 xref: Wikipedia:Formic_acid
 is_a: CHEBI:25384 ! monocarboxylic acid
-relationship: has_role CHEBI:25212 ! metabolite
-relationship: has_role CHEBI:33282 ! antibacterial agent
-relationship: has_role CHEBI:48356 ! protic solvent
-relationship: has_role CHEBI:74783 ! astringent
 relationship: is_conjugate_acid_of CHEBI:15740 ! formate
+relationship: RO:0000087 CHEBI:25212 ! has role metabolite
+relationship: RO:0000087 CHEBI:33282 ! has role antibacterial agent
+relationship: RO:0000087 CHEBI:48356 ! has role protic solvent
+relationship: RO:0000087 CHEBI:74783 ! has role astringent
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "CH2O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/CH2O2/c2-1-3/h1H,(H,2,3)" xsd:string
@@ -8116,8 +8116,8 @@ is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:22681 ! aziridines
 is_a: CHEBI:36389 ! saturated organic heteromonocyclic parent
 is_a: CHEBI:37949 ! azacycloalkane
-relationship: has_role CHEBI:22333 ! alkylating agent
 relationship: is_conjugate_base_of CHEBI:50929 ! aziridinium
+relationship: RO:0000087 CHEBI:22333 ! has role alkylating agent
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C2H5N" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C2H5N/c1-2-3-1/h3H,1-2H2" xsd:string
@@ -8148,8 +8148,8 @@ xref: Reaxys:3903735 {source="Reaxys"}
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:58951 ! short-chain fatty acid anion
 is_a: CHEBI:58954 ! straight-chain saturated fatty acid anion
-relationship: has_role CHEBI:76924 ! plant metabolite
 relationship: is_conjugate_base_of CHEBI:17418 ! valeric acid
+relationship: RO:0000087 CHEBI:76924 ! has role plant metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "-1" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C5H9O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C5H10O2/c1-2-3-4-5(6)7/h2-4H2,1H3,(H,6,7)/p-1" xsd:string
@@ -8244,11 +8244,11 @@ xref: Reaxys:4136718 {source="Reaxys"}
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:32504 ! phenylalaninate
 is_a: CHEBI:59814 ! L-alpha-amino acid anion
-relationship: has_role CHEBI:75772 ! Saccharomyces cerevisiae metabolite
-relationship: has_role CHEBI:76924 ! plant metabolite
-relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
 relationship: is_conjugate_base_of CHEBI:17295 ! L-phenylalanine
 relationship: is_enantiomer_of CHEBI:32494 ! D-phenylalaninate
+relationship: RO:0000087 CHEBI:75772 ! has role Saccharomyces cerevisiae metabolite
+relationship: RO:0000087 CHEBI:76924 ! has role plant metabolite
+relationship: RO:0000087 CHEBI:76971 ! has role Escherichia coli metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "-1" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C9H10NO2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C9H11NO2/c10-8(9(11)12)6-7-4-2-1-3-5-7/h1-5,8H,6,10H2,(H,11,12)/p-1/t8-/m0/s1" xsd:string
@@ -8269,11 +8269,11 @@ synonym: "L-phenylalaninium" EXACT IUPAC_NAME [IUPAC]
 xref: PMID:21956539 {source="Europe PMC"}
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:32505 ! phenylalaninium
-relationship: has_role CHEBI:75772 ! Saccharomyces cerevisiae metabolite
-relationship: has_role CHEBI:76924 ! plant metabolite
-relationship: has_role CHEBI:76971 ! Escherichia coli metabolite
 relationship: is_conjugate_acid_of CHEBI:17295 ! L-phenylalanine
 relationship: is_enantiomer_of CHEBI:32495 ! D-phenylalaninium
+relationship: RO:0000087 CHEBI:75772 ! has role Saccharomyces cerevisiae metabolite
+relationship: RO:0000087 CHEBI:76924 ! has role plant metabolite
+relationship: RO:0000087 CHEBI:76971 ! has role Escherichia coli metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "+1" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C9H12NO2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C9H11NO2/c10-8(9(11)12)6-7-4-2-1-3-5-7/h1-5,8H,6,10H2,(H,11,12)/p+1/t8-/m0/s1" xsd:string
@@ -8433,8 +8433,8 @@ xref: MolBase:1644
 xref: PDBeChem:BO3
 xref: PPDB:2136
 is_a: CHEBI:59765 ! boric acids
-relationship: has_role CHEBI:74783 ! astringent
 relationship: is_conjugate_acid_of CHEBI:29254 ! dihydrogenborate
+relationship: RO:0000087 CHEBI:74783 ! has role astringent
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "BH3O3" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/BH3O3/c2-1(3)4/h2-4H" xsd:string
@@ -9026,7 +9026,7 @@ synonym: "hydracid" EXACT IUPAC_NAME [IUPAC]
 synonym: "hydracids" RELATED [ChEBI]
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:33608 ! hydrogen molecular entity
-relationship: has_role CHEBI:39141 ! Bronsted acid
+relationship: RO:0000087 CHEBI:39141 ! has role Bronsted acid
 
 [Term]
 id: CHEBI:33408
@@ -9036,7 +9036,7 @@ subset: 3_STAR
 synonym: "pnictogen oxoacids" RELATED [ChEBI]
 is_a: CHEBI:24833 ! oxoacid
 is_a: CHEBI:33302 ! pnictogen molecular entity
-relationship: has_role CHEBI:138103 ! inorganic acid
+relationship: RO:0000087 CHEBI:138103 ! has role inorganic acid
 
 [Term]
 id: CHEBI:33424
@@ -9164,7 +9164,7 @@ subset: 3_STAR
 synonym: "chalcogen oxoacid" EXACT [ChEBI]
 synonym: "chalcogen oxoacids" RELATED [ChEBI]
 is_a: CHEBI:24833 ! oxoacid
-relationship: has_role CHEBI:138103 ! inorganic acid
+relationship: RO:0000087 CHEBI:138103 ! has role inorganic acid
 
 [Term]
 id: CHEBI:33485
@@ -9985,8 +9985,8 @@ xref: Wikipedia:Polycyclic_aromatic_hydrocarbon
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:33658 ! arene
 is_a: CHEBI:33666 ! polycyclic hydrocarbon
-relationship: has_role CHEBI:138015 ! endocrine disruptor
-relationship: has_role CHEBI:50903 ! carcinogenic agent
+relationship: RO:0000087 CHEBI:138015 ! has role endocrine disruptor
+relationship: RO:0000087 CHEBI:50903 ! has role carcinogenic agent
 
 [Term]
 id: CHEBI:33853
@@ -10164,9 +10164,9 @@ xref: PMID:3312952 {source="Europe PMC"}
 xref: Wikipedia:Diethyl_sulfate
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:29281 ! alkyl sulfate
-relationship: has_role CHEBI:22333 ! alkylating agent
-relationship: has_role CHEBI:50903 ! carcinogenic agent
-relationship: has_role CHEBI:68495 ! apoptosis inducer
+relationship: RO:0000087 CHEBI:22333 ! has role alkylating agent
+relationship: RO:0000087 CHEBI:50903 ! has role carcinogenic agent
+relationship: RO:0000087 CHEBI:68495 ! has role apoptosis inducer
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C4H10O4S" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C4H10O4S/c1-3-7-9(5,6)8-4-2/h3-4H2,1-2H3" xsd:string
@@ -10201,9 +10201,9 @@ xref: PMID:24755254 {source="Europe PMC"}
 xref: Reaxys:1744991 {source="Reaxys"}
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:35803 ! nitrosamine
-relationship: has_role CHEBI:25435 ! mutagen
-relationship: has_role CHEBI:50903 ! carcinogenic agent
-relationship: has_role CHEBI:50908 ! hepatotoxic agent
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
+relationship: RO:0000087 CHEBI:50903 ! has role carcinogenic agent
+relationship: RO:0000087 CHEBI:50908 ! has role hepatotoxic agent
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C4H10N2O" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C4H10N2O/c1-3-6(4-2)5-7/h3-4H2,1-2H3" xsd:string
@@ -10387,7 +10387,7 @@ xref: CAS:53-70-3 {source="NIST Chemistry WebBook"}
 xref: CAS:53-70-3 {source="ChemIDplus"}
 xref: KEGG:C14325
 is_a: CHEBI:35296 ! ortho-fused polycyclic arene
-relationship: has_role CHEBI:25435 ! mutagen
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C22H14" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C22H14/c1-3-7-19-15(5-1)9-11-17-14-22-18(13-21(17)19)12-10-16-6-2-4-8-20(16)22/h1-14H" xsd:string
@@ -10706,7 +10706,7 @@ xref: PMID:24088627 {source="Europe PMC"}
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:26401 ! purines
 is_a: CHEBI:35570 ! mancude organic heterobicyclic parent
-relationship: has_role CHEBI:78675 ! fundamental metabolite
+relationship: RO:0000087 CHEBI:78675 ! has role fundamental metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C5H4N4" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/mass "120.112" xsd:string
@@ -10930,9 +10930,9 @@ xref: Wikipedia:Diethyl_ether
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:134179 ! volatile organic compound
 is_a: CHEBI:25698 ! ether
-relationship: has_role CHEBI:38870 ! inhalation anaesthetic
-relationship: has_role CHEBI:48355 ! non-polar solvent
-relationship: has_role CHEBI:78433 ! refrigerant
+relationship: RO:0000087 CHEBI:38870 ! has role inhalation anaesthetic
+relationship: RO:0000087 CHEBI:48355 ! has role non-polar solvent
+relationship: RO:0000087 CHEBI:78433 ! has role refrigerant
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C4H10O" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C4H10O/c1-3-5-4-2/h3-4H2,1-2H3" xsd:string
@@ -11012,8 +11012,8 @@ synonym: "phosphate ions" RELATED [ChEBI]
 synonym: "Pi" RELATED [ChEBI]
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:33461 ! phosphorus oxoanion
-relationship: has_role CHEBI:77746 ! human metabolite
 relationship: is_conjugate_base_of CHEBI:26078 ! phosphoric acid
+relationship: RO:0000087 CHEBI:77746 ! has role human metabolite
 
 [Term]
 id: CHEBI:35800
@@ -11094,8 +11094,8 @@ xref: PPDB:1645
 xref: Wikipedia:N-Nitrosodimethylamine
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:35803 ! nitrosamine
-relationship: has_role CHEBI:176497 ! geroprotector
-relationship: has_role CHEBI:25435 ! mutagen
+relationship: RO:0000087 CHEBI:176497 ! has role geroprotector
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C2H6N2O" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C2H6N2O/c1-4(2)3-5/h1-2H3" xsd:string
@@ -11380,7 +11380,7 @@ is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:22213 ! acridines
 is_a: CHEBI:36416 ! mancude organic heterotricyclic parent
 is_a: CHEBI:38180 ! polycyclic heteroarene
-relationship: has_role CHEBI:50902 ! genotoxin
+relationship: RO:0000087 CHEBI:50902 ! has role genotoxin
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C13H9N" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C13H9N/c1-3-7-12-10(5-1)9-11-6-2-4-8-13(11)14-12/h1-9H" xsd:string
@@ -11779,7 +11779,7 @@ synonym: "nitrogen mustards" RELATED [ChEBI]
 xref: Wikipedia:Nitrogen_mustard
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:35352 ! organonitrogen compound
-relationship: has_role CHEBI:22333 ! alkylating agent
+relationship: RO:0000087 CHEBI:22333 ! has role alkylating agent
 
 [Term]
 id: CHEBI:37622
@@ -11841,8 +11841,8 @@ xref: Wikipedia:Butane
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:138675 ! gas molecular entity
 is_a: CHEBI:18310 ! alkane
-relationship: has_role CHEBI:78017 ! food propellant
-relationship: has_role CHEBI:78433 ! refrigerant
+relationship: RO:0000087 CHEBI:78017 ! has role food propellant
+relationship: RO:0000087 CHEBI:78433 ! has role refrigerant
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C4H10" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C4H10/c1-3-4-2/h3-4H2,1-2H3" xsd:string
@@ -12396,7 +12396,7 @@ is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:38780 ! N-nitro compound
 relationship: has_functional_parent CHEBI:42820 ! guanidine
 relationship: has_functional_parent CHEBI:616459 ! carbamimidoylazanium
-relationship: has_role CHEBI:63490 ! explosive
+relationship: RO:0000087 CHEBI:63490 ! has role explosive
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "CH4N4O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/mass "104.068" xsd:string
@@ -12539,9 +12539,9 @@ xref: Wikipedia:1\,4-Butanediol
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:13643 ! glycol
 is_a: CHEBI:52684 ! butanediol
-relationship: has_role CHEBI:48356 ! protic solvent
-relationship: has_role CHEBI:50266 ! prodrug
-relationship: has_role CHEBI:50910 ! neurotoxin
+relationship: RO:0000087 CHEBI:48356 ! has role protic solvent
+relationship: RO:0000087 CHEBI:50266 ! has role prodrug
+relationship: RO:0000087 CHEBI:50910 ! has role neurotoxin
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C4H10O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C4H10O2/c5-3-1-2-4-6/h5-6H,1-4H2" xsd:string
@@ -12608,8 +12608,8 @@ xref: Wikipedia:Ethane
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:138675 ! gas molecular entity
 is_a: CHEBI:18310 ! alkane
-relationship: has_role CHEBI:76924 ! plant metabolite
-relationship: has_role CHEBI:78433 ! refrigerant
+relationship: RO:0000087 CHEBI:76924 ! has role plant metabolite
+relationship: RO:0000087 CHEBI:78433 ! has role refrigerant
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C2H6" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C2H6/c1-2/h1-2H3" xsd:string
@@ -12735,10 +12735,10 @@ xref: PDBeChem:PI
 xref: PDBeChem:PO4
 is_a: CHEBI:35780 ! phosphate ion
 is_a: CHEBI:79388 ! divalent inorganic anion
-relationship: has_role CHEBI:23357 ! cofactor
-relationship: has_role CHEBI:75772 ! Saccharomyces cerevisiae metabolite
 relationship: is_conjugate_acid_of CHEBI:18367 ! phosphate(3-)
 relationship: is_conjugate_base_of CHEBI:39745 ! dihydrogenphosphate
+relationship: RO:0000087 CHEBI:23357 ! has role cofactor
+relationship: RO:0000087 CHEBI:75772 ! has role Saccharomyces cerevisiae metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "-2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "HO4P" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/H3O4P/c1-5(2,3)4/h(H3,1,2,3,4)/p-2" xsd:string
@@ -13224,7 +13224,7 @@ is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:24835 ! inorganic molecular entity
 is_a: CHEBI:25585 ! nonmetal atom
 is_a: CHEBI:33559 ! s-block element atom
-relationship: has_role CHEBI:33937 ! macronutrient
+relationship: RO:0000087 CHEBI:33937 ! has role macronutrient
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "H" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/H" xsd:string
@@ -13243,7 +13243,7 @@ synonym: "organic amino compounds" RELATED [ChEBI]
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:35352 ! organonitrogen compound
 relationship: has_parent_hydride CHEBI:16134 ! ammonia
-relationship: has_role CHEBI:39142 ! Bronsted base
+relationship: RO:0000087 CHEBI:39142 ! has role Bronsted base
 
 [Term]
 id: CHEBI:50102
@@ -13289,9 +13289,9 @@ xref: PMID:8603364 {source="Europe PMC"}
 xref: Wikipedia:N-Methyl-N-nitrosourea
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:76551 ! N-nitrosoureas
-relationship: has_role CHEBI:22333 ! alkylating agent
-relationship: has_role CHEBI:50903 ! carcinogenic agent
-relationship: has_role CHEBI:50905 ! teratogenic agent
+relationship: RO:0000087 CHEBI:22333 ! has role alkylating agent
+relationship: RO:0000087 CHEBI:50903 ! has role carcinogenic agent
+relationship: RO:0000087 CHEBI:50905 ! has role teratogenic agent
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C2H5N3O2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C2H5N3O2/c1-5(4-7)2(3)6/h1H3,(H2,3,6)" xsd:string
@@ -14002,14 +14002,14 @@ xref: Reaxys:312369 {source="Reaxys"}
 xref: Wikipedia:Lucanthone
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:50930 ! thioxanthenes
-relationship: has_role CHEBI:25435 ! mutagen
-relationship: has_role CHEBI:35610 ! antineoplastic agent
-relationship: has_role CHEBI:38941 ! schistosomicide drug
-relationship: has_role CHEBI:47868 ! photosensitizing agent
-relationship: has_role CHEBI:50266 ! prodrug
-relationship: has_role CHEBI:50276 ! EC 5.99.1.2 (DNA topoisomerase) inhibitor
-relationship: has_role CHEBI:50750 ! EC 5.99.1.3 [DNA topoisomerase (ATP-hydrolysing)] inhibitor
-relationship: has_role CHEBI:60809 ! adjuvant
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
+relationship: RO:0000087 CHEBI:35610 ! has role antineoplastic agent
+relationship: RO:0000087 CHEBI:38941 ! has role schistosomicide drug
+relationship: RO:0000087 CHEBI:47868 ! has role photosensitizing agent
+relationship: RO:0000087 CHEBI:50266 ! has role prodrug
+relationship: RO:0000087 CHEBI:50276 ! has role EC 5.99.1.2 (DNA topoisomerase) inhibitor
+relationship: RO:0000087 CHEBI:50750 ! has role EC 5.99.1.3 [DNA topoisomerase (ATP-hydrolysing)] inhibitor
+relationship: RO:0000087 CHEBI:60809 ! has role adjuvant
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C20H24N2OS" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C20H24N2OS/c1-4-22(5-2)13-12-21-16-11-10-14(3)20-18(16)19(23)15-8-6-7-9-17(15)24-20/h6-11,21H,4-5,12-13H2,1-3H3" xsd:string
@@ -14339,9 +14339,9 @@ xref: Wikipedia:Hycanthone
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:50930 ! thioxanthenes
 relationship: has_functional_parent CHEBI:51052 ! lucanthone
-relationship: has_role CHEBI:25435 ! mutagen
-relationship: has_role CHEBI:38941 ! schistosomicide drug
 relationship: is_conjugate_base_of CHEBI:67141 ! hycanthone(1+)
+relationship: RO:0000087 CHEBI:25435 ! has role mutagen
+relationship: RO:0000087 CHEBI:38941 ! has role schistosomicide drug
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C20H24N2O2S" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C20H24N2O2S/c1-3-22(4-2)12-11-21-16-10-9-14(13-23)20-18(16)19(24)15-7-5-6-8-17(15)25-20/h5-10,21,23H,3-4,11-13H2,1-2H3" xsd:string
@@ -14533,7 +14533,7 @@ namespace: chebi_ontology
 def: "Hydroxy boron compounds of general formula BxOyHz." []
 subset: 3_STAR
 is_a: CHEBI:33145 ! boron oxoacid
-relationship: has_role CHEBI:138103 ! inorganic acid
+relationship: RO:0000087 CHEBI:138103 ! has role inorganic acid
 
 [Term]
 id: CHEBI:59814
@@ -14840,7 +14840,7 @@ xref: KEGG:C15521
 xref: MetaCyc:Alkanesulfonates
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:134249 ! alkanesulfonate oxoanion
-relationship: has_role CHEBI:35703 ! xenobiotic
+relationship: RO:0000087 CHEBI:35703 ! has role xenobiotic
 property_value: http://purl.obolibrary.org/obo/chebi/charge "-1" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "CH2O3SR" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/mass "94.09000" xsd:string
@@ -14864,8 +14864,8 @@ xref: PMCID:PMC8181341 {source="Europe PMC"}
 xref: PMID:34051149 {source="Europe PMC"}
 is_a: CHEBI:28965 ! dicarboxylic acid dianion
 is_a: CHEBI:67011 ! folates
-relationship: has_role CHEBI:75772 ! Saccharomyces cerevisiae metabolite
 relationship: is_conjugate_base_of CHEBI:27470 ! folic acid
+relationship: RO:0000087 CHEBI:75772 ! has role Saccharomyces cerevisiae metabolite
 property_value: http://purl.obolibrary.org/obo/chebi/charge "-2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C19H17N7O6" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C19H19N7O6/c20-19-25-15-14(17(30)26-19)23-11(8-22-15)7-21-10-3-1-9(2-4-10)16(29)24-12(18(31)32)5-6-13(27)28/h1-4,8,12,21H,5-7H2,(H,24,29)(H,27,28)(H,31,32)(H3,20,22,25,26,30)/p-2/t12-/m0/s1" xsd:string
@@ -15021,9 +15021,9 @@ xref: Wikipedia:Telbivudine
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:19255 ! pyrimidine 2'-deoxyribonucleoside
 relationship: has_functional_parent CHEBI:17821 ! thymine
-relationship: has_role CHEBI:36044 ! antiviral drug
-relationship: has_role CHEBI:59897 ! EC 2.7.7.49 (RNA-directed DNA polymerase) inhibitor
 relationship: is_enantiomer_of CHEBI:17748 ! thymidine
+relationship: RO:0000087 CHEBI:36044 ! has role antiviral drug
+relationship: RO:0000087 CHEBI:59897 ! has role EC 2.7.7.49 (RNA-directed DNA polymerase) inhibitor
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C10H14N2O5" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C10H14N2O5/c1-5-3-12(10(16)11-9(5)15)8-2-6(14)7(4-13)17-8/h3,6-8,13-14H,2,4H2,1H3,(H,11,15,16)/t6-,7+,8+/m1/s1" xsd:string
@@ -15199,7 +15199,7 @@ xref: PMID:3800321 {source="Europe PMC"}
 xref: Reaxys:1796040 {source="Reaxys"}
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:25223 ! methanesulfonate ester
-relationship: has_role CHEBI:22333 ! alkylating agent
+relationship: RO:0000087 CHEBI:22333 ! has role alkylating agent
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C8H18O6S2" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C8H18O6S2/c1-7(13-15(3,9)10)5-6-8(2)14-16(4,11)12/h7-8H,5-6H2,1-4H3" xsd:string
@@ -15514,8 +15514,8 @@ xref: Wikipedia:B_vitamin
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:35352 ! organonitrogen compound
 is_a: CHEBI:36963 ! organooxygen compound
-relationship: has_role CHEBI:27314 ! water-soluble vitamin (role)
-relationship: has_role CHEBI:50733 ! nutraceutical
+relationship: RO:0000087 CHEBI:27314 ! has role water-soluble vitamin (role)
+relationship: RO:0000087 CHEBI:50733 ! has role nutraceutical
 
 [Term]
 id: CHEBI:75771
@@ -16368,8 +16368,8 @@ is_a: CHEBI:35618 ! aromatic ether
 is_a: CHEBI:36683 ! organochlorine compound
 is_a: CHEBI:50996 ! tertiary amino compound
 relationship: has_parent_hydride CHEBI:36420 ! acridine
-relationship: has_role CHEBI:38068 ! antimalarial
-relationship: has_role CHEBI:77402 ! EC 1.8.1.12 (trypanothione-disulfide reductase) inhibitor
+relationship: RO:0000087 CHEBI:38068 ! has role antimalarial
+relationship: RO:0000087 CHEBI:77402 ! has role EC 1.8.1.12 (trypanothione-disulfide reductase) inhibitor
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "C23H30ClN3O" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/inchi "InChI=1S/C23H30ClN3O/c1-5-27(6-2)13-7-8-16(3)25-23-19-11-9-17(24)14-22(19)26-21-12-10-18(28-4)15-20(21)23/h9-12,14-16H,5-8,13H2,1-4H3,(H,25,26)" xsd:string
@@ -16389,7 +16389,7 @@ synonym: "allergenic metals" RELATED [ChEBI]
 synonym: "metal allergens" RELATED [ChEBI]
 is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:33521 ! metal atom
-relationship: has_role CHEBI:50904 ! allergen
+relationship: RO:0000087 CHEBI:50904 ! has role allergen
 
 [Term]
 id: CHEBI:88188
@@ -20456,8 +20456,8 @@ synonym: "mutation induced by alkylating agent exposure" EXACT []
 is_a: BFO:0000004 ! independent continuant
 is_a: FBcv:0000525 ! chemical
 intersection_of: FBcv:0000525 ! chemical
-intersection_of: has_role CHEBI:22333 ! alkylating agent
-relationship: has_role CHEBI:22333 ! alkylating agent
+intersection_of: RO:0000087 CHEBI:22333 ! has role alkylating agent
+relationship: RO:0000087 CHEBI:22333 ! has role alkylating agent
 
 [Term]
 id: FBcv:0000527
@@ -20605,8 +20605,8 @@ synonym: "mutation induced by intercalating agent exposure" EXACT []
 is_a: BFO:0000004 ! independent continuant
 is_a: FBcv:0000525 ! chemical
 intersection_of: FBcv:0000525 ! chemical
-intersection_of: has_role CHEBI:24853 ! intercalator
-relationship: has_role CHEBI:24853 ! intercalator
+intersection_of: RO:0000087 CHEBI:24853 ! has role intercalator
+relationship: RO:0000087 CHEBI:24853 ! has role intercalator
 
 [Term]
 id: FBcv:0000542
@@ -20707,8 +20707,8 @@ synonym: "mutation induced by enzyme inhibitor exposure" EXACT []
 is_a: BFO:0000004 ! independent continuant
 is_a: FBcv:0000525 ! chemical
 intersection_of: FBcv:0000525 ! chemical
-intersection_of: has_role CHEBI:23924 ! enzyme inhibitor
-relationship: has_role CHEBI:23924 ! enzyme inhibitor
+intersection_of: RO:0000087 CHEBI:23924 ! has role enzyme inhibitor
+relationship: RO:0000087 CHEBI:23924 ! has role enzyme inhibitor
 
 [Term]
 id: FBcv:0000552
@@ -27906,9 +27906,10 @@ property_value: http://purl.org/dc/terms/date "2023-07-31T17:16:35Z" xsd:dateTim
 
 [Term]
 id: FBcv:0009030
-name: small-molecule regulated split driver fragment
+name: small molecule-regulated split driver fragment
 namespace: experimental_tool_descriptor
 def: "Non-functional fragment of a transcriptional activator ('driver') that can be used to reconstitute a functional transcription driver when brought together in vivo with a complementary split driver fragment, where the process that brings the complementary fragments together can be regulated by binding to a small molecule, such as an ion or ligand." [FBC:GM]
+synonym: "small-molecule regulated split driver fragment" EXACT []
 is_a: FBcv:0009028 ! conditional split driver fragment
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
 property_value: http://purl.org/dc/terms/date "2023-07-31T17:18:43Z" xsd:dateTime
@@ -28118,7 +28119,7 @@ id: BFO:0000062
 name: preceded by
 def: "x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point." []
 subset: ro-eco
-property_value: http://purl.org/dc/elements/1.1/source "http://www.obofoundry.org/ro/#OBO_REL:preceded_by" xsd:string
+property_value: http://purl.org/dc/terms/source "http://www.obofoundry.org/ro/#OBO_REL:preceded_by" xsd:string
 property_value: IAO:0000111 "preceded by" xsd:string
 property_value: IAO:0000116 "An example is: translation preceded_by transcription; aging preceded_by development (not however death preceded_by aging). Where derives_from links classes of continuants, preceded_by links classes of processes. Clearly, however, these two relations are not independent of each other. Thus if cells of type C1 derive_from cells of type C, then any cell division involving an instance of C1 in a given lineage is preceded_by cellular processes involving an instance of C.    The assertion P preceded_by P1 tells us something about Ps in general: that is, it tells us something about what happened earlier, given what we know about what happened later. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be succeeded by some instance of P. Note that an assertion to the effect that P preceded_by P1 is rather weak; it tells us little about the relations between the underlying instances in virtue of which the preceded_by relation obtains. Typically we will be interested in stronger relations, for example in the relation immediately_preceded_by, or in relations which combine preceded_by with a condition to the effect that the corresponding instances of P and P1 share participants, or that their participants are connected by relations of derivation, or (as a first step along the road to a treatment of causality) that the one process in some way affects (for example, initiates or regulates) the other." xsd:string
 property_value: IAO:0000118 "is preceded by" xsd:string
@@ -28146,6 +28147,15 @@ is_a: RO:0002222 ! temporally related to
 id: FBcv:0008000
 name: has_age
 is_functional: true
+
+[Typedef]
+id: FBdv:00018001
+name: substage of
+namespace: relationship
+def: "A relation between a developmental stage and another, larger developmental stage during which it happens." [FBC:DPG]
+comment: Creating this relation as a temporary fix, pending adding the axiom occurrent_part_of subproperty of happens_during to RO.
+is_transitive: true
+is_a: BFO:0000050 ! part of
 
 [Typedef]
 id: RO:0000052
@@ -28192,7 +28202,7 @@ inverse_of: RO:0000057 ! has participant
 id: RO:0000057
 name: has participant
 def: "a relation between a process and a continuant, in which the continuant is somehow involved in the process" []
-property_value: http://purl.org/dc/elements/1.1/source "http://www.obofoundry.org/ro/#OBO_REL:has_participant" xsd:string
+property_value: http://purl.org/dc/terms/source "http://www.obofoundry.org/ro/#OBO_REL:has_participant" xsd:string
 property_value: IAO:0000111 "has participant" xsd:string
 property_value: IAO:0000112 "this blood coagulation has participant this blood clot" xsd:string
 property_value: IAO:0000112 "this investigation has participant this investigator" xsd:string
@@ -28238,7 +28248,7 @@ property_value: IAO:0000116 "A role inheres in its bearer at all times for which
 property_value: IAO:0000118 "is role of" xsd:string
 property_value: IAO:0000118 "role_of" xsd:string
 is_a: RO:0000052 ! characteristic of
-inverse_of: has_role ! has role
+inverse_of: RO:0000087 ! has role
 
 [Typedef]
 id: RO:0000085
@@ -28259,6 +28269,17 @@ property_value: IAO:0000112 "this apple has quality this red color" xsd:string
 property_value: IAO:0000116 "A bearer can have many qualities, and its qualities can exist for different periods of time, but none of its qualities can exist when the bearer does not exist." xsd:string
 property_value: IAO:0000118 "has_quality" xsd:string
 range: BFO:0000019 ! quality
+is_a: RO:0000053 ! has characteristic
+
+[Typedef]
+id: RO:0000087
+name: has role
+def: "a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence" []
+property_value: IAO:0000112 "this person has role this investigator role (more colloquially: this person has this role of investigator)" xsd:string
+property_value: IAO:0000116 "A bearer can have many roles, and its roles can exist for different periods of time, but none of its roles can exist when the bearer does not exist. A role need not be realized at all the times that the role exists." xsd:string
+property_value: IAO:0000118 "has_role" xsd:string
+domain: BFO:0000004 ! independent continuant
+range: BFO:0000023 ! role
 is_a: RO:0000053 ! has characteristic
 
 [Typedef]
@@ -28420,7 +28441,7 @@ subset: ro-eco
 property_value: IAO:0000114 IAO:0000125
 property_value: RO:0001900 RO:0001901
 holds_over_chain: BFO:0000050 BFO:0000050
-holds_over_chain: BFO:0000051 BFO:0000050 {http://purl.obolibrary.org/obo/RO_0002582="true"}
+holds_over_chain: BFO:0000051 BFO:0000050 {RO:0002582="true"}
 holds_over_chain: BFO:0000051 RO:0002131
 is_symmetric: true
 is_a: RO:0002323 ! mereotopologically related to
@@ -28547,7 +28568,7 @@ def: "c stands in this relationship to p if and only if there exists some p' suc
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "has function in" xsd:string
 property_value: seeAlso http://purl.obolibrary.org/obo/ro/docs/reflexivity/
-holds_over_chain: RO:0002215 BFO:0000050 {http://purl.obolibrary.org/obo/RO_0002582="true"}
+holds_over_chain: RO:0002215 BFO:0000050 {RO:0002582="true"}
 is_a: RO:0002328 ! functionally related to
 is_a: RO:0002500 ! causal agent in process
 
@@ -28682,7 +28703,7 @@ property_value: IAO:0000118 "inheres in part of" xsd:string
 property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/20064205
 property_value: RO:0001900 RO:0001901
 property_value: seeAlso http://purl.obolibrary.org/obo/ro/docs/reflexivity/
-holds_over_chain: RO:0000052 BFO:0000050 {http://purl.obolibrary.org/obo/RO_0002582="true"}
+holds_over_chain: RO:0000052 BFO:0000050 {RO:0002582="true"}
 is_a: RO:0002502 ! depends on
 transitive_over: BFO:0000050 ! part of
 
@@ -28733,7 +28754,7 @@ name: part of structure that is capable of
 def: "this relation holds between c and p when c is part of some c', and c' is capable of p." []
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "false" xsd:boolean
-holds_over_chain: BFO:0000050 RO:0002215 {http://purl.obolibrary.org/obo/RO_0002581="true"}
+holds_over_chain: BFO:0000050 RO:0002215 {RO:0002581="true"}
 is_a: RO:0002328 ! functionally related to
 
 [Typedef]
@@ -29202,12 +29223,6 @@ property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relati
 is_a: RO:0002410 ! causally related to
 
 [Typedef]
-id: RO:0002610
-name: correlated with
-def: "A relationship that holds between two entities, where the entities exhibit a statistical dependence relationship. The entities may be statistical variables, or they may be other kinds of entities such as diseases, chemical entities or processes." []
-property_value: IAO:0000232 "Groups both positive and negative correlation" xsd:string
-
-[Typedef]
 id: RO:0002629
 name: directly positively regulates
 def: "p directly positively regulates q iff p is immediately causally upstream of q, and p positively regulates q." []
@@ -29350,16 +29365,6 @@ holds_over_chain: RO:0002215 RO:0002233
 creation_date: 2021-11-08T12:00:00Z
 
 [Typedef]
-id: RO:0017003
-name: positively correlated with
-def: "A relation between entities in which one increases or decreases as the other does the same." []
-property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0003-1909-9269
-property_value: IAO:0000118 "directly correlated with" xsd:string
-is_reflexive: true
-is_symmetric: true
-is_a: RO:0002610 ! correlated with
-
-[Typedef]
 id: RO:0019000
 name: regulates characteristic
 def: "A relationship that holds between a process and a characteristic in which process (P) regulates characteristic (C) iff: P results in the existence of C OR affects the intensity or magnitude of C." []
@@ -29388,26 +29393,4 @@ is_a: RO:0019000 ! regulates characteristic
 [Typedef]
 id: conditionality
 name: conditionality
-
-[Typedef]
-id: has_role
-name: has role
-def: "a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence" []
-xref: RO:0000087
-property_value: IAO:0000112 "this person has role this investigator role (more colloquially: this person has this role of investigator)" xsd:string
-property_value: IAO:0000116 "A bearer can have many roles, and its roles can exist for different periods of time, but none of its roles can exist when the bearer does not exist. A role need not be realized at all the times that the role exists." xsd:string
-property_value: IAO:0000118 "has_role" xsd:string
-domain: BFO:0000004 ! independent continuant
-range: BFO:0000023 ! role
-is_a: RO:0000053 ! has characteristic
-
-[Typedef]
-id: substage_of
-name: substage of
-namespace: relationship
-def: "A relation between a developmental stage and another, larger developmental stage during which it happens." [FBC:DPG]
-comment: Creating this relation as a temporary fix, pending adding the axiom occurrent_part_of subproperty of happens_during to RO.
-xref: FBdv:00018001
-is_transitive: true
-is_a: BFO:0000050 ! part of
 
