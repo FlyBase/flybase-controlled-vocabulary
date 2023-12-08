@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/fbcv/imports/merged_import.owl>
-<http://purl.obolibrary.org/obo/fbcv/releases/2023-10-19/imports/merged_import.owl>
-Annotation(owl:versionInfo "2023-10-19")
+<http://purl.obolibrary.org/obo/fbcv/releases/2023-12-08/imports/merged_import.owl>
+Annotation(owl:versionInfo "2023-12-08")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
@@ -39,9 +39,11 @@ Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_139358>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_139359>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_13941>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_139492>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_139520>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_140332>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_14321>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_149552>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_15022>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_15318>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_15339>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CHEBI_15356>))
@@ -2983,6 +2985,25 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_139492> "sensitiser")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_139492> <http://purl.obolibrary.org/obo/CHEBI_52209>)
 
+# Class: <http://purl.obolibrary.org/obo/CHEBI_139520> (phenolic donor)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_139520> "Any phenol that acts as an electron donor.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/chebi/charge> <http://purl.obolibrary.org/obo/CHEBI_139520> "0")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/chebi/formula> <http://purl.obolibrary.org/obo/CHEBI_139520> "C6H5OR")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/chebi/mass> <http://purl.obolibrary.org/obo/CHEBI_139520> "93.104")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/chebi/monoisotopicmass> <http://purl.obolibrary.org/obo/CHEBI_139520> "93.03404")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/chebi/smiles> <http://purl.obolibrary.org/obo/CHEBI_139520> "OC1=CC=C([*])C=C1")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CHEBI_139520> "MetaCyc:Phenolic-Donors")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#source> "Europe PMC") <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/CHEBI_139520> "PMID:16098794")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/CHEBI_139520> "chebi_ontology")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "UniProt") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/CHEBI_139520> "a phenolic donor")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ChEBI") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/CHEBI_139520> "phenolic donors")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHEBI_139520> "CHEBI:139520")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CHEBI_139520> <http://purl.obolibrary.org/obo/chebi#3_STAR>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_139520> "phenolic donor")
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_139520> <http://purl.obolibrary.org/obo/CHEBI_33853>)
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_139520> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000087> <http://purl.obolibrary.org/obo/CHEBI_15022>))
+
 # Class: <http://purl.obolibrary.org/obo/CHEBI_140332> (4'-methoxyflavanones)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_140332> "Any methoxyflavanone having a methoxy substituent located at position 4'.")
@@ -3034,6 +3055,18 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://pu
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CHEBI_149552> <http://purl.obolibrary.org/obo/chebi#3_STAR>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_149552> "emetic")
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_149552> <http://purl.obolibrary.org/obo/CHEBI_23888>)
+
+# Class: <http://purl.obolibrary.org/obo/CHEBI_15022> (electron donor)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CHEBI_15022> "A molecular entity that can transfer an electron to another molecular entity.")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "IUPAC") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasSynonymType> <http://purl.obolibrary.org/obo/chebi#IUPAC_NAME>) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CHEBI_15022> "electron donor")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/CHEBI_15022> "chebi_ontology")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ChEBI") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/CHEBI_15022> "Elektronendonator")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "IUPAC") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/CHEBI_15022> "donneur d'electron")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHEBI_15022> "CHEBI:15022")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CHEBI_15022> <http://purl.obolibrary.org/obo/chebi#3_STAR>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_15022> "electron donor")
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_15022> <http://purl.obolibrary.org/obo/CHEBI_17891>)
 
 # Class: <http://purl.obolibrary.org/obo/CHEBI_15318> (xanthine)
 
@@ -13847,6 +13880,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/CHEBI_35682> "CHEBI:35682")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/CHEBI_35682> <http://purl.obolibrary.org/obo/chebi#3_STAR>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CHEBI_35682> "naphthol")
+SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_35682> <http://purl.obolibrary.org/obo/CHEBI_139520>)
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_35682> <http://purl.obolibrary.org/obo/CHEBI_25392>)
 SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_35682> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/chebi#has_parent_hydride> <http://purl.obolibrary.org/obo/CHEBI_16482>))
 
