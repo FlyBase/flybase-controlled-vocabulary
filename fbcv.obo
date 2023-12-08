@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbcv/releases/2023-10-19
-date: 19:10:2023 10:56
+data-version: fbcv/releases/2023-12-08
+date: 08:12:2023 09:27
 subsetdef: 1_STAR ""
 subsetdef: 2_STAR ""
 subsetdef: 3_STAR ""
@@ -53,7 +53,7 @@ property_value: http://purl.org/dc/elements/1.1/description "A miscellaneous ont
 property_value: http://purl.org/dc/elements/1.1/title "FlyBase Controlled Vocabulary (FBcv)" xsd:string
 property_value: http://purl.org/dc/terms/license "https://creativecommons.org/licenses/by/4.0/" xsd:string
 property_value: IAO:0000700 FBcv:0000000
-property_value: owl:versionInfo "2023-10-19" xsd:string
+property_value: owl:versionInfo "2023-12-08" xsd:string
 
 [Term]
 id: BFO:0000002
@@ -197,7 +197,6 @@ xref: PMID:33862438 {source="Europe PMC"}
 xref: PMID:34033865 {source="Europe PMC"}
 xref: Reaxys:742134 {source="Reaxys"}
 xref: Wikipedia:2-Naphthol
-is_a: BFO:0000004 ! independent continuant
 is_a: CHEBI:35682 ! naphthol
 relationship: RO:0000087 CHEBI:35444 ! has role antinematodal drug
 relationship: RO:0000087 CHEBI:48578 ! has role radical scavenger
@@ -451,6 +450,25 @@ synonym: "sensitizers" RELATED [ChEBI]
 is_a: CHEBI:52209 ! aetiopathogenetic role
 
 [Term]
+id: CHEBI:139520
+name: phenolic donor
+namespace: chebi_ontology
+def: "Any phenol that acts as an electron donor." []
+subset: 3_STAR
+synonym: "a phenolic donor" RELATED [UniProt]
+synonym: "phenolic donors" RELATED [ChEBI]
+xref: MetaCyc:Phenolic-Donors
+xref: PMID:16098794 {source="Europe PMC"}
+is_a: BFO:0000004 ! independent continuant
+is_a: CHEBI:33853 ! phenols
+relationship: RO:0000087 CHEBI:15022 ! has role electron donor
+property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/formula "C6H5OR" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/mass "93.104" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "93.03404" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/smiles "OC1=CC=C([*])C=C1" xsd:string
+
+[Term]
 id: CHEBI:140332
 name: 4'-methoxyflavanones
 namespace: chebi_ontology
@@ -499,6 +517,17 @@ def: "Any agent that induces nausea and vomiting." []
 subset: 3_STAR
 synonym: "emetics" RELATED [ChEBI]
 is_a: CHEBI:23888 ! drug
+
+[Term]
+id: CHEBI:15022
+name: electron donor
+namespace: chebi_ontology
+def: "A molecular entity that can transfer an electron to another molecular entity." []
+subset: 3_STAR
+synonym: "donneur d'electron" RELATED [IUPAC]
+synonym: "electron donor" EXACT IUPAC_NAME [IUPAC]
+synonym: "Elektronendonator" RELATED [ChEBI]
+is_a: CHEBI:17891 ! donor
 
 [Term]
 id: CHEBI:15318
@@ -10835,6 +10864,7 @@ synonym: "hydroxynaphthalene" RELATED [ChEBI]
 synonym: "naphthalenol" EXACT IUPAC_NAME [IUPAC]
 synonym: "naphthol" EXACT [IUPAC]
 xref: CAS:1321-67-1 {source="ChemIDplus"}
+is_a: CHEBI:139520 ! phenolic donor
 is_a: CHEBI:25392 ! naphthols
 relationship: has_parent_hydride CHEBI:16482 ! naphthalene
 property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
