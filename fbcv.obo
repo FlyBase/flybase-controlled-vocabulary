@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbcv/releases/2023-12-08
-date: 08:12:2023 09:27
+data-version: fbcv/releases/2024-02-23
+date: 23:02:2024 09:19
 subsetdef: 1_STAR ""
 subsetdef: 2_STAR ""
 subsetdef: 3_STAR ""
@@ -53,7 +53,7 @@ property_value: http://purl.org/dc/elements/1.1/description "A miscellaneous ont
 property_value: http://purl.org/dc/elements/1.1/title "FlyBase Controlled Vocabulary (FBcv)" xsd:string
 property_value: http://purl.org/dc/terms/license "https://creativecommons.org/licenses/by/4.0/" xsd:string
 property_value: IAO:0000700 FBcv:0000000
-property_value: owl:versionInfo "2023-12-08" xsd:string
+property_value: owl:versionInfo "2024-02-23" xsd:string
 
 [Term]
 id: BFO:0000002
@@ -2702,7 +2702,6 @@ alt_id: CHEBI:13368
 alt_id: CHEBI:37140
 alt_id: CHEBI:5599
 subset: 3_STAR
-synonym: "HX" RELATED [UniProt]
 synonym: "hydrogen halide" EXACT [IUPAC]
 synonym: "hydrogen halides" EXACT IUPAC_NAME [IUPAC]
 synonym: "hydrogen halides" RELATED [ChEBI]
@@ -2712,7 +2711,7 @@ property_value: http://purl.obolibrary.org/obo/chebi/charge "0" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/formula "HX" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/mass "1.008" xsd:string
 property_value: http://purl.obolibrary.org/obo/chebi/monoisotopicmass "1.00783" xsd:string
-property_value: http://purl.obolibrary.org/obo/chebi/smiles "[F,Cl,Br,I]" xsd:string
+property_value: http://purl.obolibrary.org/obo/chebi/smiles "*[H]" xsd:string
 
 [Term]
 id: CHEBI:18237
@@ -16221,8 +16220,7 @@ synonym: "canonical amino acid" RELATED [ChEBI]
 synonym: "canonical amino acids" RELATED [ChEBI]
 synonym: "proteinogenic amino acids" RELATED [ChEBI]
 xref: Wikipedia:Proteinogenic_amino_acid
-is_a: CHEBI:33575 ! carboxylic acid
-is_a: CHEBI:35352 ! organonitrogen compound
+is_a: CHEBI:33709 ! amino acid
 
 [Term]
 id: CHEBI:83820
@@ -16435,9 +16433,11 @@ is_a: CHEBI:50904 ! allergen
 id: CHEBI:90710
 name: receptor modulator
 namespace: chebi_ontology
+alt_id: CHEBI:189678
 def: "A drug that acts as an antagonist, agonist, reverse agonist, or in some other fashion when interacting with cellular receptors." []
 subset: 3_STAR
 synonym: "receptor modulators" RELATED [ChEBI]
+xref: Wikipedia:Receptor_modulator
 is_a: CHEBI:23888 ! drug
 
 [Term]
@@ -20340,7 +20340,7 @@ is_a: FBcv:0000505 ! alpha ray
 id: FBcv:0000510
 name: 32P
 namespace: origin_of_mutation
-def: "The radioactive isotope of phosphorus with relative atomic mass 31.973907 and half-life of 14.26 days." [CHEBI:37972]
+def: "The radioactive isotope of phosphorus with relative atomic mass 31.973907 and half-life of 14.26 days (from CHEBI)." [CHEBI:37972]
 synonym: "32-phosphorous" EXACT []
 synonym: "mutation induced by 32-P irradiation" EXACT []
 synonym: "phosphorus-32 atom" EXACT []
@@ -20351,7 +20351,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000511
 name: 3H
 namespace: origin_of_mutation
-def: "The radioactive isotope of hydrogen with relative atomic mass 3.016049 and half-life of 12.33 years (from Greek taurhoiotatauomicronsigma, third)." [CHEBI:29238]
+def: "The radioactive isotope of hydrogen with relative atomic mass 3.016049 and half-life of 12.33 years (from Greek taurhoiotatauomicronsigma, third) (from CHEBI)." [CHEBI:29238]
 synonym: "hydrogen-3" EXACT []
 synonym: "mutation induced by 3H irradiation" EXACT []
 synonym: "tritium atom" EXACT []
@@ -20374,7 +20374,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000513
 name: 3H-thymidine
 namespace: origin_of_mutation
-def: "Thymidine linked to the radioisotope tritium. Used to label DNA in the study of cellular and viral DNA synthesis." [CHEBI:53526]
+def: "Thymidine linked to the radioisotope tritium. Used to label DNA in the study of cellular and viral DNA synthesis (from CHEBI)." [CHEBI:53526]
 synonym: "mutation induced by 3H-thymidine irradiation" EXACT []
 synonym: "tritiated thymidine" EXACT []
 is_a: CHEBI:53526 ! tritiated thymidine
@@ -20472,7 +20472,7 @@ is_a: FBcv:0000519 ! non-ionizing radiation
 id: FBcv:0000525
 name: chemical
 namespace: origin_of_mutation
-def: "A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances." [CHEBI:24431]
+def: "A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances (from CHEBI)." [CHEBI:24431]
 synonym: "mutation induced by chemical exposure" EXACT []
 is_a: CHEBI:24431 ! chemical entity
 is_a: FBcv:0000452 ! origin of mutation
@@ -20493,7 +20493,7 @@ relationship: RO:0000087 CHEBI:22333 ! has role alkylating agent
 id: FBcv:0000527
 name: diethyl sulfate
 namespace: origin_of_mutation
-def: "The diethyl ester of sulfuric acid." [CHEBI:34699]
+def: "The diethyl ester of sulfuric acid (from CHEBI)." [CHEBI:34699]
 synonym: "DES" RELATED []
 synonym: "mutation induced by diethyl sulfate exposure" EXACT []
 is_a: CHEBI:34699 ! diethyl sulfate
@@ -20503,7 +20503,7 @@ is_a: FBcv:0000526 ! alkylating agent
 id: FBcv:0000528
 name: 2-chloroethyl methanesulfonate
 namespace: origin_of_mutation
-def: "No description." [CHEBI:19508]
+def: "No definition for CHEBI:19508." [CHEBI:19508]
 synonym: "CB1506" RELATED []
 synonym: "mutation induced by 2-chloroethyl methanesulfonate exposure" EXACT []
 is_a: CHEBI:19508 ! 2-chloroethyl methanesulfonate
@@ -20513,7 +20513,7 @@ is_a: FBcv:0000526 ! alkylating agent
 id: FBcv:0000529
 name: 2-fluoroethyl methanesulfonate
 namespace: origin_of_mutation
-def: "No description." [CHEBI:19579]
+def: "No definition for CHEBI:19579." [CHEBI:19579]
 synonym: "CB1522" RELATED []
 synonym: "mutation induced by 2-fluoroethyl methanesulfonate exposure" EXACT []
 is_a: CHEBI:19579 ! 2-fluoroethyl methanesulfonate
@@ -20523,7 +20523,7 @@ is_a: FBcv:0000526 ! alkylating agent
 id: FBcv:0000530
 name: ethyl methanesulfonate
 namespace: origin_of_mutation
-def: "A methanesulfonate ester resulting from the formal condensation of methanesulfonic acid with ethanol." [CHEBI:23994]
+def: "A methanesulfonate ester resulting from the formal condensation of methanesulfonic acid with ethanol (from CHEBI)." [CHEBI:23994]
 synonym: "CB1528" RELATED []
 synonym: "EMS" RELATED []
 synonym: "mutation induced by EMS exposure" EXACT []
@@ -20535,7 +20535,7 @@ is_a: FBcv:0000526 ! alkylating agent
 id: FBcv:0000531
 name: ethyl nitrosourea
 namespace: origin_of_mutation
-def: "A member of the class of N-nitrosoureas that is urea in which one of the nitrogens is substituted by ethyl and nitroso groups." [CHEBI:23995]
+def: "A member of the class of N-nitrosoureas that is urea in which one of the nitrogens is substituted by ethyl and nitroso groups (from CHEBI)." [CHEBI:23995]
 synonym: "ENU" RELATED []
 synonym: "mutation induced by ENU exposure" EXACT []
 synonym: "mutation induced by ethyl nitrosourea exposure" EXACT []
@@ -20547,7 +20547,7 @@ is_a: FBcv:0000526 ! alkylating agent
 id: FBcv:0000532
 name: hycanthon methanesulfonate
 namespace: origin_of_mutation
-def: "A methanesulfonate salt resulting from the reaction of equimolar amounts of hycanthone and methanesulfonic acid. It was formerly used as a schistosomicide for individual or mass treatement of infection with Schistosoma haematobium and S. mansoni, but due to its toxicity and concern about possible carcinogenicity, it has been replaced by other drugs such as praziquantel." [CHEBI:24624]
+def: "A methanesulfonate salt resulting from the reaction of equimolar amounts of hycanthone and methanesulfonic acid. It was formerly used as a schistosomicide for individual or mass treatement of infection with Schistosoma haematobium and S. mansoni, but due to its toxicity and concern about possible carcinogenicity, it has been replaced by other drugs such as praziquantel (from CHEBI)." [CHEBI:24624]
 synonym: "HMS" RELATED []
 synonym: "hycanthone mesylate" RELATED [CHEBI:24624]
 synonym: "mutation induced by HMS exposure" EXACT []
@@ -20559,7 +20559,7 @@ is_a: FBcv:0000526 ! alkylating agent
 id: FBcv:0000533
 name: methyl methanesulfonate
 namespace: origin_of_mutation
-def: "A methanesulfonate ester resulting from the formal condensation of methanesulfonic acid with methanol." [CHEBI:25255]
+def: "A methanesulfonate ester resulting from the formal condensation of methanesulfonic acid with methanol (from CHEBI)." [CHEBI:25255]
 synonym: "CB1540" RELATED []
 synonym: "MMS" RELATED []
 synonym: "mutation induced by methyl methanesulfonate exposure" EXACT []
@@ -20572,7 +20572,7 @@ id: FBcv:0000534
 name: bis(2-chloroethyl) sulfide
 namespace: origin_of_mutation
 alt_id: FBcv:0000536
-def: "An ethyl sulfide that is diethyl sulfide in which a hydrogen from each of the terminal methyl groups is replaced by a chlorine. It is a powerful vesicant regulated under the Chemical Weapons Convention." [CHEBI:25434]
+def: "An ethyl sulfide that is diethyl sulfide in which a hydrogen from each of the terminal methyl groups is replaced by a chlorine. It is a powerful vesicant regulated under the Chemical Weapons Convention (from CHEBI)." [CHEBI:25434]
 synonym: "1,1'-thiobis(2-chloroethane)" RELATED [CHEBI:25434]
 synonym: "CB1735" RELATED []
 synonym: "mustard gas" RELATED [CHEBI:25434]
@@ -20587,7 +20587,7 @@ is_a: FBcv:0000526 ! alkylating agent
 id: FBcv:0000535
 name: N-methyl-N'-nitro-N-nitrosoguanidine
 namespace: origin_of_mutation
-def: "An N-nitroguanidine compound having nitroso and methyl substituents at the N'-position." [CHEBI:21759]
+def: "An N-nitroguanidine compound having nitroso and methyl substituents at the N'-position (from CHEBI)." [CHEBI:21759]
 synonym: "MNNG" RELATED []
 synonym: "mutation induced by N-methyl-N'-nitro-N-nitrosoguanidine exposure" EXACT []
 synonym: "NNG" RELATED []
@@ -20603,7 +20603,7 @@ is_obsolete: true
 id: FBcv:0000538
 name: carbamate
 namespace: origin_of_mutation
-def: "No description." [CHEBI:13941]
+def: "No definition for CHEBI:13941." [CHEBI:13941]
 synonym: "mutation induced by carbamate exposure" EXACT []
 is_a: CHEBI:13941 ! carbamate
 is_a: FBcv:0000525 ! chemical
@@ -20612,7 +20612,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000539
 name: urethane
 namespace: origin_of_mutation
-def: "A carbamate ester obtained by the formal condensation of ethanol with carbamic acid. It has been found in alcoholic beverages." [CHEBI:17967]
+def: "A carbamate ester obtained by the formal condensation of ethanol with carbamic acid. It has been found in alcoholic beverages (from CHEBI)." [CHEBI:17967]
 synonym: "mutation induced by urethane exposure" EXACT []
 is_a: CHEBI:17967 ! urethane
 is_a: FBcv:0000538 ! carbamate
@@ -20621,7 +20621,7 @@ is_a: FBcv:0000538 ! carbamate
 id: FBcv:0000540
 name: vinyl carbamate
 namespace: origin_of_mutation
-def: "No description." [CHEBI:27292]
+def: "No definition for CHEBI:27292." [CHEBI:27292]
 synonym: "mutation induced by vinyl carbamate exposure" EXACT []
 is_a: CHEBI:27292 ! vinyl carbamate
 is_a: FBcv:0000538 ! carbamate
@@ -20642,7 +20642,7 @@ relationship: RO:0000087 CHEBI:24853 ! has role intercalator
 id: FBcv:0000542
 name: mitomycin C
 namespace: origin_of_mutation
-def: "No description." [CHEBI:27504]
+def: "No definition for CHEBI:27504." [CHEBI:27504]
 synonym: "mutation induced by mitomycin C exposure" EXACT []
 is_a: CHEBI:27504 ! mitomycin C
 is_a: FBcv:0000526 ! alkylating agent
@@ -20652,7 +20652,7 @@ is_a: FBcv:0000541 ! intercalating agent
 id: FBcv:0000543
 name: quinacrine mustard
 namespace: origin_of_mutation
-def: "No description." [CHEBI:37595]
+def: "No definition for CHEBI:37595." [CHEBI:37595]
 comment: Mapped to CHEBI on basis of synonym - quinacrine mustard. Originally primary name, ICR 100 is now relegated to a synonym.
 synonym: "2-methoxy-6-[3-(ethyl-2-chloroethyl)aminopropylamino]acridine" RELATED []
 synonym: "ICR 100" RELATED [CHEBI:37595]
@@ -20665,7 +20665,7 @@ is_a: FBcv:0000813 ! nitrogen mustard
 id: FBcv:0000544
 name: ICR 170
 namespace: origin_of_mutation
-def: "No description." [CHEBI:21183]
+def: "No definition for CHEBI:21183." [CHEBI:21183]
 synonym: "2-methoxy-6-dichloro-9-(3-ethyl-2-chloroethyl-aminopropylamino)acridine-dihydrochloride" RELATED []
 synonym: "mutation induced by ICR 170 exposure" EXACT []
 is_a: CHEBI:21183 ! ICR-170
@@ -20675,7 +20675,7 @@ is_a: FBcv:0000541 ! intercalating agent
 id: FBcv:0000545
 name: 1,2-dibromoethane
 namespace: origin_of_mutation
-def: "A bromoalkane that is ethane carrying bromo substituents at positions 1 and 2. It is produced by marine algae." [CHEBI:28534]
+def: "A bromoalkane that is ethane carrying bromo substituents at positions 1 and 2. It is produced by marine algae (from CHEBI)." [CHEBI:28534]
 synonym: "DBE" RELATED []
 synonym: "mutation induced by 1,2-dibromoethane exposure" EXACT []
 is_a: CHEBI:28534 ! 1,2-dibromoethane
@@ -20685,7 +20685,7 @@ is_a: FBcv:0000541 ! intercalating agent
 id: FBcv:0000546
 name: 1,2-dichloroethane
 namespace: origin_of_mutation
-def: "A member of the class of chloroethanes substituted by two chloro groups at positions 1 and 2." [CHEBI:27789]
+def: "A member of the class of chloroethanes substituted by two chloro groups at positions 1 and 2 (from CHEBI)." [CHEBI:27789]
 synonym: "DCE" RELATED []
 synonym: "mutation induced by 1,2-dichloroethane exposure" EXACT []
 is_a: CHEBI:27789 ! 1,2-dichloroethane
@@ -20695,7 +20695,7 @@ is_a: FBcv:0000541 ! intercalating agent
 id: FBcv:0000547
 name: 1-bromo-2-chloroethane
 namespace: origin_of_mutation
-def: "A haloalkane that is bromoethane substituted by chlorine at position 2." [CHEBI:19032]
+def: "A haloalkane that is bromoethane substituted by chlorine at position 2 (from CHEBI)." [CHEBI:19032]
 synonym: "BCE" RELATED []
 synonym: "mutation induced by 1-bromo-2-chloroethane exposure" EXACT []
 is_a: CHEBI:19032 ! 1-bromo-2-chloroethane
@@ -20705,7 +20705,7 @@ is_a: FBcv:0000541 ! intercalating agent
 id: FBcv:0000548
 name: base analog
 namespace: origin_of_mutation
-def: "A molecule that can substitute for a normal nucleobase in nucleic acids." [CHEBI:67142]
+def: "A molecule that can substitute for a normal nucleobase in nucleic acids (from CHEBI)." [CHEBI:67142]
 synonym: "nucleobase analogue" RELATED [CHEBI:67142]
 is_a: CHEBI:67142 ! nucleobase analogue
 is_a: FBcv:0000525 ! chemical
@@ -20714,7 +20714,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000549
 name: 5-bromouracil
 namespace: origin_of_mutation
-def: "A pyrimidine having keto groups at the 2- and 4-positions and a bromo group at the 5-position. Used mainly as an experimental mutagen." [CHEBI:20552]
+def: "A pyrimidine having keto groups at the 2- and 4-positions and a bromo group at the 5-position. Used mainly as an experimental mutagen (from CHEBI)." [CHEBI:20552]
 synonym: "mutation induced by 5-bromouracil exposure" EXACT []
 is_a: CHEBI:20552 ! 5-bromouracil
 is_a: FBcv:0000548 ! base analog
@@ -20723,7 +20723,7 @@ is_a: FBcv:0000548 ! base analog
 id: FBcv:0000550
 name: 5-bromouridine
 namespace: origin_of_mutation
-def: "A uridine having a bromo substituent at the 5-position." [CHEBI:20553]
+def: "A uridine having a bromo substituent at the 5-position (from CHEBI)." [CHEBI:20553]
 synonym: "mutation induced by 5-bromouridine exposure" EXACT []
 is_a: CHEBI:20553 ! 5-bromouridine
 is_a: FBcv:0000548 ! base analog
@@ -20744,7 +20744,7 @@ relationship: RO:0000087 CHEBI:23924 ! has role enzyme inhibitor
 id: FBcv:0000552
 name: aminopterin
 namespace: origin_of_mutation
-def: "No description." [CHEBI:22526]
+def: "No definition for CHEBI:22526." [CHEBI:22526]
 synonym: "mutation induced by aminopterin exposure" EXACT []
 is_a: CHEBI:22526 ! 4-aminofolic acid
 is_a: FBcv:0000551 ! enzyme inhibitor
@@ -20753,7 +20753,7 @@ is_a: FBcv:0000551 ! enzyme inhibitor
 id: FBcv:0000553
 name: inorganic compound
 namespace: origin_of_mutation
-def: "A molecular entity that contains no carbon." [CHEBI:24835]
+def: "A molecular entity that contains no carbon (from CHEBI)." [CHEBI:24835]
 synonym: "inorganic molecular entity" EXACT [CHEBI:24835]
 synonym: "mutation induced by inorganic compound exposure" EXACT []
 is_a: CHEBI:24835 ! inorganic molecular entity
@@ -20763,7 +20763,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000554
 name: cupric sulfate
 namespace: origin_of_mutation
-def: "A metal sulfate compound having copper(2+) as the metal ion." [CHEBI:23414]
+def: "A metal sulfate compound having copper(2+) as the metal ion (from CHEBI)." [CHEBI:23414]
 synonym: "copper(2+) sulfate" RELATED [CHEBI:23414]
 synonym: "mutation induced by cupric sulfate" EXACT []
 is_a: CHEBI:23414 ! copper(II) sulfate
@@ -20773,7 +20773,7 @@ is_a: FBcv:0000553 ! inorganic compound
 id: FBcv:0000555
 name: H3BO3
 namespace: origin_of_mutation
-def: "No description." [CHEBI:33118]
+def: "No definition for CHEBI:33118." [CHEBI:33118]
 synonym: "mutation induced by H3BO3 exposure" EXACT []
 is_a: CHEBI:33118 ! boric acid
 is_a: FBcv:0000553 ! inorganic compound
@@ -20782,7 +20782,7 @@ is_a: FBcv:0000553 ! inorganic compound
 id: FBcv:0000556
 name: sodium bisulphite
 namespace: origin_of_mutation
-def: "An inorganic sodium salt having hydrogensulfite as the counterion." [CHEBI:26709]
+def: "An inorganic sodium salt having hydrogensulfite as the counterion (from CHEBI)." [CHEBI:26709]
 synonym: "mutation induced by sodium bisulphite exposure" EXACT []
 is_a: CHEBI:26709 ! sodium hydrogensulfite
 is_a: FBcv:0000553 ! inorganic compound
@@ -20791,7 +20791,7 @@ is_a: FBcv:0000553 ! inorganic compound
 id: FBcv:0000557
 name: sodium fluoride
 namespace: origin_of_mutation
-def: "A metal fluoride salt with a Na(+) counterion." [CHEBI:28741]
+def: "A metal fluoride salt with a Na(+) counterion (from CHEBI)." [CHEBI:28741]
 synonym: "mutation induced by sodium fluoride exposure" EXACT []
 is_a: CHEBI:28741 ! sodium fluoride
 is_a: FBcv:0000553 ! inorganic compound
@@ -20808,7 +20808,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000559
 name: diepoxybutane
 namespace: origin_of_mutation
-def: "No description." [CHEBI:23704]
+def: "No definition for CHEBI:23704." [CHEBI:23704]
 synonym: "DEB" RELATED []
 synonym: "erythritol anhydride" RELATED []
 synonym: "mutation induced by diepoxybutane exposure" EXACT []
@@ -20819,7 +20819,7 @@ is_a: FBcv:0000558 ! epoxy hydrocarbon
 id: FBcv:0000560
 name: diepoxyoctane
 namespace: origin_of_mutation
-def: "No description." [CHEBI:23705]
+def: "No definition for CHEBI:23705." [CHEBI:23705]
 synonym: "1,2:7,8-diepoxyoctane" RELATED [CHEBI:23705]
 synonym: "mutation induced by diepoxyoctane exposure" EXACT []
 is_a: CHEBI:23705 ! 1,2:7,8-diepoxyoctane
@@ -20836,7 +20836,7 @@ consider: FBcv:0000525
 id: FBcv:0000562
 name: 1,2:5,6-dibenzanthracene
 namespace: origin_of_mutation
-def: "No description." [CHEBI:35299]
+def: "No definition for CHEBI:35299." [CHEBI:35299]
 synonym: "mutation induced by 1,2:5,6-dibenzanthracene exposure" EXACT []
 is_a: CHEBI:35299 ! dibenz[a,h]anthracene
 is_a: FBcv:0000525 ! chemical
@@ -20845,7 +20845,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000563
 name: 1,4-dimethanesulfonoxy-1,4-dimethylbutane
 namespace: origin_of_mutation
-def: "A methanesulfonate ester that is hexane-2,5-diol in which the hydrogens of the hydroxy groups are replaced by methanesulfonyl groups." [CHEBI:67107]
+def: "A methanesulfonate ester that is hexane-2,5-diol in which the hydrogens of the hydroxy groups are replaced by methanesulfonyl groups (from CHEBI)." [CHEBI:67107]
 synonym: "1,4-dimethanesulfonoxy-1:4-dimethylbutane" RELATED []
 synonym: "CB2348" RELATED []
 synonym: "dimethylmyleran" RELATED [CHEBI:67107]
@@ -20891,7 +20891,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000568
 name: 1-amino-2-naphthol-4-sulfonic acid
 namespace: origin_of_mutation
-def: "No description." [CHEBI:19024]
+def: "No definition for CHEBI:19024." [CHEBI:19024]
 synonym: "mutation induced by 1-amino-2-naphthol-4-sulfonic acid exposure" EXACT []
 is_a: CHEBI:19024 ! 4-amino-3-hydroxynaphthalene-1-sulfonic acid
 is_a: FBcv:0000525 ! chemical
@@ -20900,7 +20900,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000569
 name: lucanthone
 namespace: origin_of_mutation
-def: "A thioxanthen-9-one compound having a methyl substituent at the 1-position and a 2-[(diethylamino)ethyl]amino substituent at the 4-position. Formerly used for the treatment of schistosomiasis. It is a prodrug, being metabolised to hycanthone." [CHEBI:51052]
+def: "A thioxanthen-9-one compound having a methyl substituent at the 1-position and a 2-[(diethylamino)ethyl]amino substituent at the 4-position. Formerly used for the treatment of schistosomiasis. It is a prodrug, being metabolised to hycanthone (from CHEBI)." [CHEBI:51052]
 synonym: "1-diethylaminoethylethylamino-4-methyl-thioxanthenone" RELATED []
 synonym: "1-{[2-(diethylamino)ethyl]amino}-4-methyl-9H-thioxanthen-9-one" RELATED [CHEBI:51052]
 synonym: "lucanthone" RELATED [CHEBI:51052]
@@ -20912,7 +20912,7 @@ is_a: FBcv:0000551 ! enzyme inhibitor
 id: FBcv:0000570
 name: 2-methoxyethanol
 namespace: origin_of_mutation
-def: "A hydroxyether that is ethanol substituted by a methoxy group at position 2." [CHEBI:46790]
+def: "A hydroxyether that is ethanol substituted by a methoxy group at position 2 (from CHEBI)." [CHEBI:46790]
 synonym: "mutation induced by 2-methoxyethanol exposure" EXACT []
 is_a: CHEBI:46790 ! 2-methoxyethanol
 is_a: FBcv:0000525 ! chemical
@@ -20921,7 +20921,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000571
 name: 2,5-bis(ethyleneimino)-1,4-benzoquinone
 namespace: origin_of_mutation
-def: "A member of the class of 1,4-benzoquinones that is p-benzoquinone in which the hydrogens at positions 2 and 5 are replaced by aziridin-1-yl groups." [CHEBI:19363]
+def: "A member of the class of 1,4-benzoquinones that is p-benzoquinone in which the hydrogens at positions 2 and 5 are replaced by aziridin-1-yl groups (from CHEBI)." [CHEBI:19363]
 synonym: "2,5,-bisethylene-imine-1,4-benzoquinone" RELATED []
 synonym: "mutation induced by 2,5-bis(ethyleneimino)-1,4-benzoquinone exposure" EXACT []
 is_a: CHEBI:19363 ! 2,5-bis(aziridin-1-yl)-1,4-benzoquinone
@@ -20931,7 +20931,7 @@ is_a: FBcv:0000526 ! alkylating agent
 id: FBcv:0000572
 name: 7-bromomethyl-12-methylbenz[a]anthracene
 namespace: origin_of_mutation
-def: "A member of the class of tetraphenes that is tetraphene in which the hydrogens at positions 7 and 12 are replaced by bromomethyl and methyl groups, respectively." [CHEBI:20787]
+def: "A member of the class of tetraphenes that is tetraphene in which the hydrogens at positions 7 and 12 are replaced by bromomethyl and methyl groups, respectively (from CHEBI)." [CHEBI:20787]
 synonym: "7-bromomethyl 12 methyl benzalpha anthracine" RELATED []
 synonym: "7-bromomethyl-12-methyltetraphene" RELATED [CHEBI:20787]
 synonym: "mutation induced by 7-bromomethyl-12-methylbenz[a]anthracene exposure" EXACT []
@@ -20942,7 +20942,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000573
 name: actinomycin D
 namespace: origin_of_mutation
-def: "No description." [CHEBI:27666]
+def: "No definition for CHEBI:27666." [CHEBI:27666]
 synonym: "mutation induced by actinomycin D exposure" EXACT []
 is_a: CHEBI:27666 ! actinomycin D
 is_a: FBcv:0000525 ! chemical
@@ -20951,7 +20951,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000574
 name: benzo(alpha)pyrene
 namespace: origin_of_mutation
-def: "An ortho- and peri-fused polycyclic arene consisting of five fused benzene rings." [CHEBI:29865]
+def: "An ortho- and peri-fused polycyclic arene consisting of five fused benzene rings (from CHEBI)." [CHEBI:29865]
 synonym: "benzo[a]pyrene" RELATED [CHEBI:29865]
 synonym: "mutation induced by benzo(alpha)pyrene exposure" EXACT []
 is_a: CHEBI:29865 ! benzo[a]pyrene
@@ -20961,7 +20961,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000575
 name: caffeine
 namespace: origin_of_mutation
-def: "A trimethylxanthine in which the three methyl groups are located at positions 1, 3, and 7. A purine alkaloid that occurs naturally in tea and coffee." [CHEBI:27732]
+def: "A trimethylxanthine in which the three methyl groups are located at positions 1, 3, and 7. A purine alkaloid that occurs naturally in tea and coffee (from CHEBI)." [CHEBI:27732]
 synonym: "mutation induced by caffeine exposure" EXACT []
 is_a: CHEBI:27732 ! caffeine
 is_a: FBcv:0000551 ! enzyme inhibitor
@@ -20970,7 +20970,7 @@ is_a: FBcv:0000551 ! enzyme inhibitor
 id: FBcv:0000576
 name: cisplatin
 namespace: origin_of_mutation
-def: "A diamminedichloroplatinum compound in which the two ammine ligands and two chloro ligands are oriented in a cis planar configuration around the central platinum ion. An anticancer drug that interacts with, and forms cross-links between, DNA and proteins, it is used as a neoplasm inhibitor to treat solid tumours, primarily of the testis and ovary. Commonly but incorrectly described as an alkylating agent due to its mechanism of action (but it lacks alkyl groups)." [CHEBI:27899]
+def: "A diamminedichloroplatinum compound in which the two ammine ligands and two chloro ligands are oriented in a cis planar configuration around the central platinum ion. An anticancer drug that interacts with, and forms cross-links between, DNA and proteins, it is used as a neoplasm inhibitor to treat solid tumours, primarily of the testis and ovary. Commonly but incorrectly described as an alkylating agent due to its mechanism of action (but it lacks alkyl groups) (from CHEBI)." [CHEBI:27899]
 synonym: "cis-dichlorodiammineplatinum(II)" RELATED []
 synonym: "mutation induced by cisplatin exposure" EXACT []
 is_a: CHEBI:27899 ! cisplatin
@@ -20980,7 +20980,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000577
 name: colchicine
 namespace: origin_of_mutation
-def: "An  alkaloid that is a carbotricyclic compound comprising 5,6,7,9-tetrahydrobenzo[a]heptalene having four methoxy substituents at the 1-, 2-, 3- and 10-positions as well as an oxo group at the 9-position and an acetamido group at the 7-position. It has been isolated from the plants belonging to genus Colchicum." [CHEBI:23359]
+def: "An  alkaloid that is a carbotricyclic compound comprising 5,6,7,9-tetrahydrobenzo[a]heptalene having four methoxy substituents at the 1-, 2-, 3- and 10-positions as well as an oxo group at the 9-position and an acetamido group at the 7-position. It has been isolated from the plants belonging to genus Colchicum (from CHEBI)." [CHEBI:23359]
 synonym: "mutation induced by colchicine exposure" EXACT []
 is_a: CHEBI:23359 ! colchicine
 is_a: FBcv:0000525 ! chemical
@@ -20989,7 +20989,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000578
 name: dimethyl sulfoxide
 namespace: origin_of_mutation
-def: "A 2-carbon sulfoxide in which the sulfur atom has two methyl substituents." [CHEBI:28262]
+def: "A 2-carbon sulfoxide in which the sulfur atom has two methyl substituents (from CHEBI)." [CHEBI:28262]
 synonym: "mutation induced by dimethyl sulfoxide exposure" EXACT []
 is_a: CHEBI:28262 ! dimethyl sulfoxide
 is_a: FBcv:0000526 ! alkylating agent
@@ -20998,7 +20998,7 @@ is_a: FBcv:0000526 ! alkylating agent
 id: FBcv:0000579
 name: DNA
 namespace: origin_of_mutation
-def: "High molecular weight, linear polymers, composed of nucleotides containing deoxyribose and linked by phosphodiester bonds; DNA contain the genetic information of organisms." [CHEBI:16991]
+def: "High molecular weight, linear polymers, composed of nucleotides containing deoxyribose and linked by phosphodiester bonds; DNA contain the genetic information of organisms (from CHEBI)." [CHEBI:16991]
 synonym: "mutation induced by DNA treatment" EXACT []
 is_a: CHEBI:16991 ! deoxyribonucleic acid
 is_a: FBcv:0000525 ! chemical
@@ -21007,7 +21007,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000580
 name: ethyl ether
 namespace: origin_of_mutation
-def: "An ether in which the oxygen atom is linked to two ethyl groups." [CHEBI:35702]
+def: "An ether in which the oxygen atom is linked to two ethyl groups (from CHEBI)." [CHEBI:35702]
 synonym: "mutation induced by ethyl ether exposure" EXACT []
 is_a: CHEBI:35702 ! diethyl ether
 is_a: FBcv:0000525 ! chemical
@@ -21016,7 +21016,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000581
 name: ethylenimine
 namespace: origin_of_mutation
-def: "No description." [CHEBI:30969]
+def: "No definition for CHEBI:30969." [CHEBI:30969]
 synonym: "EI" RELATED []
 synonym: "mutation induced by ethylenimine exposure" EXACT []
 is_a: CHEBI:30969 ! aziridine
@@ -21026,7 +21026,7 @@ is_a: FBcv:0000526 ! alkylating agent
 id: FBcv:0000582
 name: ethylene oxide
 namespace: origin_of_mutation
-def: "A  saturated organic heteromonocyclic parent that is a three-membered heterocycle of two carbon atoms and one oxygen atom." [CHEBI:27561]
+def: "A  saturated organic heteromonocyclic parent that is a three-membered heterocycle of two carbon atoms and one oxygen atom (from CHEBI)." [CHEBI:27561]
 synonym: "ethylene oxide" RELATED [CHEBI:27561]
 synonym: "mutation induced by ethylene oxide exposure" EXACT []
 synonym: "oxirane" RELATED [CHEBI:27561]
@@ -21037,7 +21037,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000583
 name: fagaronine
 namespace: origin_of_mutation
-def: "No description." [CHEBI:28954]
+def: "No definition for CHEBI:28954." [CHEBI:28954]
 synonym: "mutation induced by fagaronine exposure" EXACT []
 is_a: CHEBI:28954 ! fagaronine
 is_a: FBcv:0000525 ! chemical
@@ -21046,7 +21046,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000584
 name: formaldehyde
 namespace: origin_of_mutation
-def: "An aldehyde resulting from the formal oxidation of methanol." [CHEBI:16842]
+def: "An aldehyde resulting from the formal oxidation of methanol (from CHEBI)." [CHEBI:16842]
 synonym: "mutation induced by formaldehyde exposure" EXACT []
 is_a: CHEBI:16842 ! formaldehyde
 is_a: FBcv:0000551 ! enzyme inhibitor
@@ -21055,7 +21055,7 @@ is_a: FBcv:0000551 ! enzyme inhibitor
 id: FBcv:0000585
 name: hesperidine
 namespace: origin_of_mutation
-def: "A disaccharide derivative that consists of hesperetin substituted by a 6-O-(alpha-L-rhamnopyranosyl)-beta-D-glucopyranosyl moiety at position 7 via a glycosidic linkage." [CHEBI:28775]
+def: "A disaccharide derivative that consists of hesperetin substituted by a 6-O-(alpha-L-rhamnopyranosyl)-beta-D-glucopyranosyl moiety at position 7 via a glycosidic linkage (from CHEBI)." [CHEBI:28775]
 synonym: "hesperidin" RELATED [CHEBI:28775]
 synonym: "mutation induced by hesperidine exposure" EXACT []
 is_a: CHEBI:28775 ! hesperidin
@@ -21065,7 +21065,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000586
 name: hexamethylmelamine
 namespace: origin_of_mutation
-def: "No description." [CHEBI:24564]
+def: "No definition for CHEBI:24564." [CHEBI:24564]
 synonym: "altretamine" RELATED []
 synonym: "HMM" RELATED []
 synonym: "mutation induced by hexamethylmelamine exposure" EXACT []
@@ -21077,7 +21077,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000587
 name: hexamethylphosphoramide
 namespace: origin_of_mutation
-def: "No description." [CHEBI:24565]
+def: "No definition for CHEBI:24565." [CHEBI:24565]
 synonym: "HMPA" RELATED []
 synonym: "mutation induced by hexamethylphosphoramide exposure" EXACT []
 synonym: "mutation induced by HMPA exposure" EXACT []
@@ -21088,7 +21088,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000588
 name: iodine
 namespace: origin_of_mutation
-def: "Chemical element with atomic number 53." [CHEBI:24859]
+def: "Chemical element with atomic number 53 (from CHEBI)." [CHEBI:24859]
 synonym: "mutation induced by iodine exposure" EXACT []
 is_a: CHEBI:24859 ! iodine atom
 is_a: FBcv:0000553 ! inorganic compound
@@ -21097,7 +21097,7 @@ is_a: FBcv:0000553 ! inorganic compound
 id: FBcv:0000589
 name: Janus green B
 namespace: origin_of_mutation
-def: "No description." [CHEBI:21184]
+def: "No definition for CHEBI:21184." [CHEBI:21184]
 synonym: "Janus green B chloride" RELATED [CHEBI:21184]
 synonym: "mutation induced by Janus green B exposure" EXACT []
 is_a: CHEBI:21184 ! Janus Green B chloride
@@ -21107,7 +21107,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000590
 name: methoxy diethylnitrosamine
 namespace: origin_of_mutation
-def: "No description." [CHEBI:25234]
+def: "No definition for CHEBI:25234." [CHEBI:25234]
 comment: Mapped to CHEBI:25234 (1-methoxy-N-nitrosodiethylamine) based on synonym of nitrosodiethylamine being diethylnitrosamine and CHEBI:25234 being classified as a mutagen.
 synonym: "1-methoxy-N-nitrosodiethylamine" RELATED [CHEBI:25234]
 synonym: "mutation induced by methoxy diethylnitrosamine exposure" EXACT []
@@ -21126,7 +21126,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000592
 name: nitrosomethyl urea
 namespace: origin_of_mutation
-def: "A member of the class of N-nitrosoureas that is urea in which one of the nitrogens is substituted by methyl and nitroso groups." [CHEBI:50102]
+def: "A member of the class of N-nitrosoureas that is urea in which one of the nitrogens is substituted by methyl and nitroso groups (from CHEBI)." [CHEBI:50102]
 synonym: "MNU" RELATED []
 synonym: "mutation induced by MNU exposure" EXACT []
 synonym: "mutation induced by nitrosomethyl urea exposure" EXACT []
@@ -21138,7 +21138,7 @@ is_a: FBcv:0000526 ! alkylating agent
 id: FBcv:0000593
 name: N-nitrosodimethylamine
 namespace: origin_of_mutation
-def: "No description." [CHEBI:35807]
+def: "No definition for CHEBI:35807." [CHEBI:35807]
 synonym: "DMN" RELATED []
 synonym: "mutation induced by DMN exposure" EXACT []
 synonym: "mutation induced by N-nitrosodimethylamine exposure" EXACT []
@@ -21149,7 +21149,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000594
 name: p-N,N-di(2-chloroethyl)aminophenylvaleric acid
 namespace: origin_of_mutation
-def: "No description." [CHEBI:25813]
+def: "No definition for CHEBI:25813." [CHEBI:25813]
 synonym: "CB1356" RELATED []
 synonym: "mutation induced by p-N,N-di(2-chloroethyl)aminophenylvaleric acid exposure" EXACT []
 is_a: CHEBI:25813 ! p-N,N-bis(2-chloroethyl)aminophenylvaleric acid
@@ -21159,7 +21159,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000595
 name: p-N,N-di-(2-chloroethyl)amino-D-phenylalanine
 namespace: origin_of_mutation
-def: "No description." [CHEBI:25814]
+def: "No definition for CHEBI:25814." [CHEBI:25814]
 synonym: "CB3026" RELATED []
 synonym: "mutation induced by p-N,N-di-(2-chloroethyl)amino-D-phenylalanine exposure" EXACT []
 is_a: CHEBI:25814 ! p-N,N-bis(2-chloroethyl)amino-D-phenylalanine
@@ -21169,7 +21169,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000596
 name: p-N,N-di-(2-chloroethyl)amino-DL-phenylalanine
 namespace: origin_of_mutation
-def: "A phenylalanine derivative comprising L-phenylalanine having [bis(2-chloroethyl)amino group at the 4-position on the phenyl ring." [CHEBI:28876]
+def: "A phenylalanine derivative comprising L-phenylalanine having [bis(2-chloroethyl)amino group at the 4-position on the phenyl ring (from CHEBI)." [CHEBI:28876]
 synonym: "CB3007" RELATED []
 synonym: "melphalan" RELATED [CHEBI:28876]
 synonym: "mutation induced by melphalan exposure" EXACT []
@@ -21181,7 +21181,7 @@ is_a: FBcv:0000813 ! nitrogen mustard
 id: FBcv:0000597
 name: p-N,N-di-(2-chloroethyl)amino-L-phenylalanine
 namespace: origin_of_mutation
-def: "No description." [CHEBI:25816]
+def: "No definition for CHEBI:25816." [CHEBI:25816]
 synonym: "CB3025" RELATED []
 synonym: "mutation induced by p-N,N-di-(2-chloroethyl)amino-L-phenylalanine exposure" EXACT []
 is_a: CHEBI:25816 ! p-N,N-bis(2-chloroethyl)amino-L-phenylalanine
@@ -21197,7 +21197,7 @@ is_obsolete: true
 id: FBcv:0000599
 name: p-N,N-di-(2-chloroethyl)aminophenylethylamine
 namespace: origin_of_mutation
-def: "No description." [CHEBI:25818]
+def: "No definition for CHEBI:25818." [CHEBI:25818]
 synonym: "CB3034" RELATED []
 synonym: "mutation induced by p-N,N-di-(2-chloroethyl)aminophenylethylamine exposure" EXACT []
 is_a: CHEBI:25818 ! 4-(2-aminoethyl)-N,N-bis(2-chloroethyl)aniline
@@ -21207,7 +21207,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000600
 name: p-p'-N,N-di(2-chloroethyl)aminophenoxyphenylalanine
 namespace: origin_of_mutation
-def: "No description." [CHEBI:25829]
+def: "No definition for CHEBI:25829." [CHEBI:25829]
 synonym: "CB305" RELATED []
 synonym: "mutation induced by p-p'-N,N-di(2-chloroethyl)aminophenoxyphenylalanine exposure" EXACT []
 is_a: CHEBI:25829 ! p-p'-N,N-di(2-chloroethyl)aminophenoxyphenylalanine
@@ -21217,7 +21217,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000601
 name: quinhydrone
 namespace: origin_of_mutation
-def: "No description." [CHEBI:26491]
+def: "No definition for CHEBI:26491." [CHEBI:26491]
 synonym: "mutation induced by quinhydrone exposure" EXACT []
 is_a: CHEBI:26491 ! quinhydrone
 is_a: FBcv:0000525 ! chemical
@@ -21226,7 +21226,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000602
 name: S-2-chloroethylcysteine
 namespace: origin_of_mutation
-def: "No description." [CHEBI:22025]
+def: "No definition for CHEBI:22025." [CHEBI:22025]
 synonym: "CB1592" RELATED []
 synonym: "mutation induced by S-2-chloroethylcysteine exposure" EXACT []
 is_a: CHEBI:22025 ! S-2-chloroethylcysteine
@@ -21236,7 +21236,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000603
 name: styryl quinoline
 namespace: origin_of_mutation
-def: "No description." [CHEBI:26800]
+def: "No definition for CHEBI:26800." [CHEBI:26800]
 synonym: "CB3086" RELATED []
 synonym: "mutation induced by styryl quinoline exposure" EXACT []
 is_a: CHEBI:26800 ! styrylquinoline
@@ -21246,7 +21246,7 @@ is_a: FBcv:0000525 ! chemical
 id: FBcv:0000604
 name: triaziquone
 namespace: origin_of_mutation
-def: "A member of the class of 1,4-benzoquinones that is 1,4-benzoquinone in which three of the ring hydrogens are replaced by aziridin-1-yl groups." [CHEBI:27090]
+def: "A member of the class of 1,4-benzoquinones that is 1,4-benzoquinone in which three of the ring hydrogens are replaced by aziridin-1-yl groups (from CHEBI)." [CHEBI:27090]
 synonym: "mutation induced by triaziquone exposure" EXACT []
 is_a: CHEBI:27090 ! triaziquone
 is_a: FBcv:0000526 ! alkylating agent
@@ -21255,7 +21255,7 @@ is_a: FBcv:0000526 ! alkylating agent
 id: FBcv:0000605
 name: triethylenemelamine
 namespace: origin_of_mutation
-def: "No description." [CHEBI:27919]
+def: "No definition for CHEBI:27919." [CHEBI:27919]
 synonym: "CB1246" RELATED []
 synonym: "mutation induced by triethylenemelamine exposure" EXACT []
 synonym: "TEM" RELATED []
@@ -22275,7 +22275,7 @@ property_value: http://purl.org/dc/terms/date "2011-09-13T02:31:53Z" xsd:dateTim
 id: FBcv:0000735
 name: N-nitrosodiethylamine
 namespace: origin_of_mutation
-def: "A nitrosamine that is N-ethylethanamine substituted by a nitroso group at the N-atom." [CHEBI:34873]
+def: "A nitrosamine that is N-ethylethanamine substituted by a nitroso group at the N-atom (from CHEBI)." [CHEBI:34873]
 synonym: "mutation induced by N-nitrosodiethylamine exposure" EXACT []
 synonym: "NDEA" RELATED [FlyBase:FBrf0139766]
 is_a: CHEBI:34873 ! N-nitrosodiethylamine
@@ -23006,7 +23006,7 @@ is_a: FBcv:0000809 ! phenotype qualifier
 id: FBcv:0000813
 name: nitrogen mustard
 namespace: origin_of_mutation
-def: "Compounds having two beta-haloalkyl groups bound to a nitrogen atom, as in (X-CH2-CH2)2NR." [CHEBI:37598]
+def: "Compounds having two beta-haloalkyl groups bound to a nitrogen atom, as in (X-CH2-CH2)2NR (from CHEBI)." [CHEBI:37598]
 synonym: "2-chloro-N-(2-chloroethyl)-N-methylethanamine" RELATED []
 synonym: "CB1414" RELATED []
 synonym: "HN2" RELATED []
@@ -23019,7 +23019,7 @@ is_a: FBcv:0000526 ! alkylating agent
 id: FBcv:0000814
 name: 1,4-dimethanesulfonoxybutane
 namespace: origin_of_mutation
-def: "A methanesulfonate ester that is butane-1,4-diol in which the hydrogens of the hydroxy groups are replaced by methanesulfonyl groups. An alkylating antineoplastic agent, it is used for the treatment of chronic myeloid leukemia (although it has been largely replaced by newer drugs). It is also used as an insect sterilant." [CHEBI:28901]
+def: "A methanesulfonate ester that is butane-1,4-diol in which the hydrogens of the hydroxy groups are replaced by methanesulfonyl groups. An alkylating antineoplastic agent, it is used for the treatment of chronic myeloid leukemia (although it has been largely replaced by newer drugs). It is also used as an insect sterilant (from CHEBI)." [CHEBI:28901]
 synonym: "busulfan" RELATED [CHEBI:28901]
 synonym: "CB2041" RELATED []
 synonym: "mutation induced by 1,4-dimethanesulfonoxybutane exposure" EXACT []
@@ -23031,7 +23031,7 @@ is_a: FBcv:0000526 ! alkylating agent
 id: FBcv:0000815
 name: p-N,N-di-(2-chloroethyl)aminophenylbutyric acid
 namespace: origin_of_mutation
-def: "A monocarboxylic acid that is butanoic acid substituted at position 4 by a 4-[bis(2-chloroethyl)amino]phenyl group. A chemotherapy drug that can be used in combination with the antibody obinutuzumab for the treatment of chronic lymphocytic leukemia." [CHEBI:28830]
+def: "A monocarboxylic acid that is butanoic acid substituted at position 4 by a 4-[bis(2-chloroethyl)amino]phenyl group. A chemotherapy drug that can be used in combination with the antibody obinutuzumab for the treatment of chronic lymphocytic leukemia (from CHEBI)." [CHEBI:28830]
 synonym: "CB1348" RELATED []
 synonym: "chlorambucil" EXACT [CHEBI:28830]
 synonym: "mutation induced by chlorambucil exposure" EXACT []
@@ -26992,6 +26992,10 @@ property_value: http://purl.org/dc/terms/date "2022-04-26T11:49:16Z" xsd:dateTim
 [Term]
 id: FBcv:0007053
 name: obsolete conditional split driver - transcription activation fragment
+def: "Sequence encoding a transcription activation domain fused to a heterodimerization domain, where the process of heterodimerization mediated by this domain can be regulated by a particular stimulus. A functional transcription driver can be reconstituted in vivo if this split system component is brought together with a split system component that encodes a DNA-binding domain fused to the complementary heterodimerization domain and the appropriate stimulus is applied." [FBC:GM]
+comment: Obsoleted in favor of terms that do not conflate the type of the fragment with the type of conditional regulation.
+property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-1373-1705
+property_value: http://purl.org/dc/terms/date "2022-05-04T14:32:02Z" xsd:dateTime
 is_obsolete: true
 consider: FBcv:0005055
 consider: FBcv:0009028
@@ -26999,6 +27003,10 @@ consider: FBcv:0009028
 [Term]
 id: FBcv:0007054
 name: obsolete light-regulated split driver - transcription activation fragment
+def: "Sequence encoding a transcription activation domain fused to a heterodimerization domain, where the process of heterodimerization mediated by this domain can be regulated by irradiation with a pulse of light. A functional transcription driver can be reconstituted in vivo if this split system component is brought together with a split system component that encodes a DNA-binding domain fused to the complementary heterodimerization domain and the appropriate light stimulus is applied." [FBC:GM]
+comment: Obsoleted in favor of terms that do not conflate the type of the fragment with the type of conditional regulation.
+property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-1373-1705
+property_value: http://purl.org/dc/terms/date "2022-05-04T14:33:41Z" xsd:dateTime
 is_obsolete: true
 consider: FBcv:0005055
 consider: FBcv:0009029
@@ -27006,6 +27014,10 @@ consider: FBcv:0009029
 [Term]
 id: FBcv:0007055
 name: obsolete small molecule-regulated split driver - transcription activation fragment
+def: "Sequence encoding a transcription activation domain fused to a heterodimerization domain, where the process of heterodimerization mediated by this domain can be regulated by binding to a small molecule, such as an ion or ligand. A functional transcription driver can be reconstituted in vivo if this split system component is brought together with a split system component that encodes a DNA-binding domain fused to the complementary heterodimerization domain and the appropriate small molecule stimulus is applied." [FBC:GM]
+comment: Obsoleted in favor of terms that do not conflate the type of the fragment with the type of conditional regulation.
+property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-1373-1705
+property_value: http://purl.org/dc/terms/date "2022-05-04T14:34:38Z" xsd:dateTime
 is_obsolete: true
 consider: FBcv:0005055
 consider: FBcv:0009030
@@ -27013,6 +27025,10 @@ consider: FBcv:0009030
 [Term]
 id: FBcv:0007056
 name: obsolete conditional split driver - DNA-binding fragment
+def: "Sequence encoding a site-specific DNA-binding domain fused to a heterodimerization domain, where the process of heterodimerization mediated by this domain can be regulated by a particular stimulus. A functional transcription driver can be reconstituted in vivo if this split system component is brought together with a split system component that encodes a transcription activation domain fused to the complementary heterodimerization domain and the appropriate stimulus is applied." [FBC:GM]
+comment: Obsoleted in favor of terms that do not conflate the type of the fragment with the type of conditional regulation.
+property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-1373-1705
+property_value: http://purl.org/dc/terms/date "2022-05-04T14:35:30Z" xsd:dateTime
 is_obsolete: true
 consider: FBcv:0005054
 consider: FBcv:0009028
@@ -27020,6 +27036,10 @@ consider: FBcv:0009028
 [Term]
 id: FBcv:0007057
 name: obsolete light-regulated split driver - DNA-binding fragment
+def: "Sequence encoding a site-specific DNA-binding domain fused to a heterodimerization domain, where the process of heterodimerization mediated by this domain can be regulated by irradiation with a pulse of light. A functional transcription driver can be reconstituted in vivo if this split system component is brought together with a split system component that encodes a transcription activation domain fused to the complementary heterodimerization domain and the appropriate light stimulus is applied." [FBC:GM]
+comment: Obsoleted in favor of terms that do not conflate the type of the fragment with the type of conditional regulation.
+property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-1373-1705
+property_value: http://purl.org/dc/terms/date "2022-05-04T14:37:56Z" xsd:dateTime
 is_obsolete: true
 consider: FBcv:0005054
 consider: FBcv:0009029
@@ -27027,9 +27047,13 @@ consider: FBcv:0009029
 [Term]
 id: FBcv:0007058
 name: obsolete small molecule-regulated split driver - DNA-binding fragment
+def: "Sequence encoding a site-specific DNA-binding domain fused to a heterodimerization domain, where the process of heterodimerization mediated by this domain can be regulated by binding to a small molecule, such as an ion or ligand. A functional transcription driver can be reconstituted in vivo if this split system component is brought together with a split system component that encodes a transcription activation domain fused to the complementary heterodimerization domain and the appropriate small molecule stimulus is applied." [FBC:GM]
+comment: Obsoleted in favor of terms that do not conflate the type of the fragment with the type of conditional regulation.
+property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-1373-1705
+property_value: http://purl.org/dc/terms/date "2022-05-04T14:38:38Z" xsd:dateTime
 is_obsolete: true
+consider: FBcv:0005054
 consider: FBcv:0009030
-created_by: FBcv:0005054
 
 [Term]
 id: FBcv:0007059
@@ -27827,6 +27851,7 @@ property_value: http://purl.org/dc/terms/date "2023-02-24T19:07:31Z" xsd:dateTim
 [Term]
 id: FBcv:0009018
 name: cell type-specific RNA-sequencing analysis
+namespace: result_type
 def: "An analysis that results from the sequencing of RNAs from multiple highly purified samples." [FBC:DPG]
 is_a: FBcv:0003108 ! analysis
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
@@ -28503,6 +28528,7 @@ property_value: IAO:0000117 https://orcid.org/0000-0003-1980-3228
 domain: BFO:0000004 ! independent continuant
 range: BFO:0000004 ! independent continuant
 is_transitive: true
+is_a: RO:0002254 ! has developmental contribution from
 is_a: RO:0002258 ! developmentally preceded by
 inverse_of: RO:0002203 ! develops into
 
