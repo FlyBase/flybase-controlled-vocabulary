@@ -5,6 +5,10 @@ repo: flybase-controlled-vocabulary
 use_env_file_docker: True
 report_fail_on: none
 use_dosdps: FALSE
+robot_plugins:
+  plugins:
+    - name: flybase
+      mirror_from: https://github.com/FlyBase/flybase-robot-plugin/releases/download/flybase-robot-plugin-0.1.1/flybase.jar
 namespaces:
   - http://purl.obolibrary.org/obo/FBcv_
   - http://purl.obolibrary.org/obo/fbcv_
