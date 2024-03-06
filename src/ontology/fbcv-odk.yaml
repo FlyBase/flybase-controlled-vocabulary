@@ -2,9 +2,14 @@ id: fbcv
 title: "FlyBase Controlled Vocabulary"
 github_org: FlyBase
 repo: flybase-controlled-vocabulary
+git_main_branch: master
 use_env_file_docker: True
 report_fail_on: none
 use_dosdps: FALSE
+robot_plugins:
+  plugins:
+    - name: flybase
+      mirror_from: https://github.com/FlyBase/flybase-robot-plugin/releases/download/flybase-robot-plugin-0.1.1/flybase.jar
 namespaces:
   - http://purl.obolibrary.org/obo/FBcv_
   - http://purl.obolibrary.org/obo/fbcv_
@@ -24,6 +29,10 @@ import_group:
     - <http://purl.obolibrary.org/obo/PATO_*>
     - <http://purl.obolibrary.org/obo/GO_*>
     - <http://purl.obolibrary.org/obo/CARO_*>
+  annotation_properties:
+    - RO:0002582
+    - rdfs:label
+    - IAO:0000115
   products:
     - id: ro
       use_base: TRUE
