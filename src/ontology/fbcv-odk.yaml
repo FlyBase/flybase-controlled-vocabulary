@@ -2,6 +2,7 @@ id: fbcv
 title: "FlyBase Controlled Vocabulary"
 github_org: FlyBase
 repo: flybase-controlled-vocabulary
+git_main_branch: master
 use_env_file_docker: True
 report_fail_on: none
 use_dosdps: FALSE
@@ -28,6 +29,10 @@ import_group:
     - <http://purl.obolibrary.org/obo/PATO_*>
     - <http://purl.obolibrary.org/obo/GO_*>
     - <http://purl.obolibrary.org/obo/CARO_*>
+  annotation_properties:
+    - RO:0002582
+    - rdfs:label
+    - IAO:0000115
   products:
     - id: ro
       use_base: TRUE
