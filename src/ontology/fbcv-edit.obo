@@ -7834,19 +7834,21 @@ property_value: http://purl.org/dc/terms/date "2017-06-28T11:41:27Z" xsd:dateTim
 
 [Term]
 id: FBcv:0005042
-name: gene product degradation tag
+name: degradation tag
 namespace: experimental_tool_descriptor
 def: "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which results in the tagged gene product being targeted for degradation." [FBC:GM]
-is_a: FBcv:0005001 ! experimental tool descriptor
+synonym: "gene product degradation tag" EXACT []
+is_a: FBcv:0007068 ! gene product degradation tool
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-0027-0858
 property_value: http://purl.org/dc/terms/date "2017-06-28T11:41:27Z" xsd:dateTime
 
 [Term]
 id: FBcv:0005043
-name: cell cycle-regulated gene product degradation tag
+name: cell cycle-regulated degradation tag
 namespace: experimental_tool_descriptor
 def: "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which results in the tagged gene product being targeted for degradation, where this property can be regulated by the cell cycle." [FBC:GM]
-is_a: FBcv:0009016 ! conditional gene product degradation tag
+synonym: "cell cycle-regulated gene product degradation tag" EXACT []
+is_a: FBcv:0009016 ! conditional degradation tag
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-0027-0858
 property_value: http://purl.org/dc/terms/date "2017-06-28T11:41:27Z" xsd:dateTime
 
@@ -8218,11 +8220,12 @@ property_value: http://purl.org/dc/terms/date "2017-12-13T13:17:30Z" xsd:dateTim
 
 [Term]
 id: FBcv:0005083
-name: small molecule-regulated gene product degradation tag
+name: small molecule-regulated degradation tag
 namespace: experimental_tool_descriptor
 def: "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which results in the tagged gene product being targeted for degradation, where this property can be regulated by a small molecule." [FBC:GM]
 synonym: "small molecule-dependent gene product degradation tag" EXACT []
-is_a: FBcv:0009016 ! conditional gene product degradation tag
+synonym: "small molecule-regulated gene product degradation tag" EXACT []
+is_a: FBcv:0009016 ! conditional degradation tag
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-0027-0858
 property_value: http://purl.org/dc/terms/date "2017-12-22T13:09:10Z" xsd:dateTime
 
@@ -8679,10 +8682,11 @@ property_value: http://purl.org/dc/terms/date "2020-02-04T09:12:14Z" xsd:dateTim
 
 [Term]
 id: FBcv:0007047
-name: light-regulated gene product degradation tag
+name: light-regulated degradation tag
 namespace: experimental_tool_descriptor
 def: "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which results in the tagged gene product being targeted for degradation, where this property can be regulated by irradiation with a pulse of light." [FBC:GM]
-is_a: FBcv:0009016 ! conditional gene product degradation tag
+synonym: "light-regulated gene product degradation tag" EXACT []
+is_a: FBcv:0009016 ! conditional degradation tag
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-1373-1705
 property_value: http://purl.org/dc/terms/date "2020-12-10T13:05:28Z" xsd:dateTime
 
@@ -8882,6 +8886,16 @@ property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002
 property_value: http://purl.org/dc/terms/date "2024-04-12T10:18:38Z" xsd:dateTime
 
 [Term]
+id: FBcv:0007068
+name: gene product degradation tool
+namespace: experimental_tool_descriptor
+def: "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and which can be used to target a gene product for degradation in a defined manner." [FBC:GM]
+comment: Degradation tool may or may not be fused directly to the degredation target.
+is_a: FBcv:0005001 ! experimental tool descriptor
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-1373-1705
+property_value: http://purl.org/dc/terms/date "2024-04-16T15:24:59Z" xsd:dateTime
+
+[Term]
 id: FBcv:0009000
 name: single-cell RNA-Seq
 namespace: assay_type
@@ -9038,10 +9052,11 @@ property_value: http://purl.org/dc/terms/date "2022-02-17T14:12:00Z" xsd:dateTim
 
 [Term]
 id: FBcv:0009016
-name: conditional gene product degradation tag
+name: conditional degradation tag
 namespace: experimental_tool_descriptor
 def: "Sequence that forms part of the gene product encoded by a transgenic locus or modified endogenous locus and which results in the tagged gene product being targeted for degradation, where this property can be regulated in response to a particular stimulus." [FBC:GM]
-is_a: FBcv:0005042 ! gene product degradation tag
+synonym: "conditional gene product degradation tag" EXACT []
+is_a: FBcv:0005042 ! degradation tag
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
 property_value: http://purl.org/dc/terms/date "2023-02-23T14:00:00Z" xsd:dateTime
 
