@@ -1,7 +1,7 @@
 
 format-version: 1.2
-data-version: 2024-04-25
-date: 25:04:2024 15:03
+data-version: 2024-06-13
+date: 13:06:2024 13:39
 subsetdef: camcur "camcur"
 subsetdef: common_tool_use "Terms to summarize typical use of a gene from one organism that is introduced into another organism primarily for use an experimental tool, rather than to study the function of the gene"
 subsetdef: do_not_annotate "Term not to be used for direct annotation"
@@ -9,6 +9,9 @@ subsetdef: do_not_manually_annotate "Term not to be used for direct manual annot
 subsetdef: fbcvsubset_mgiribbons "MGI ribbon terms"
 subsetdef: lethal_phase "lethal phase terms"
 default-namespace: FlyBase miscellaneous CV
+idspace: dc http://purl.org/dc/elements/1.1/ 
+idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
+idspace: terms http://purl.org/dc/terms/ 
 ontology: fbcv/fbcv-simple
 
 [Term]
@@ -10263,6 +10266,55 @@ namespace: experimental_tool_descriptor
 def: "Non-functional fragment of a transcriptional activator ('driver') that can be used to reconstitute a functional transcription driver when brought together in vivo with a complementary split driver fragment, where the process that brings the complementary fragments together can be regulated by binding to a small molecule, such as an ion or ligand." [FBC:GM]
 synonym: "small-molecule regulated split driver fragment" EXACT []
 is_a: FBcv:0009028 ! conditional split driver fragment
+
+[Term]
+id: FBcv:0009031
+name: split protease
+namespace: experimental_tool_descriptor
+def: "Catalytically inactive fragment of a protease. A functional protease can be reconstituted when complementary split protease fragments are brought together in vivo, for example by fusing the fragments to peptides that physically interact." [FBC:GM]
+is_a: FBcv:0005051 ! split system component
+
+[Term]
+id: FBcv:0009032
+name: split bioluminescence reporter
+namespace: experimental_tool_descriptor
+def: "Catalytically inactive fragment of a bioluminescence reporter. A functional bioluminescence reporter can be reconstituted when complementary split bioluminescence reporter fragments are brought together in vivo, for example by fusing the fragments to peptides that physically interact." [FBC:GM]
+is_a: FBcv:0005053 ! split reporter enzyme
+
+[Term]
+id: FBcv:0009033
+name: conditional split protease
+namespace: experimental_tool_descriptor
+def: "Catalytically inactive fragment of a protease that can be used to reconstitute a functional protease when brought together in vivo with a complementary split protease fragment, where the process that brings the complementary fragments together can be regulated in response to a particular stimulus." [FBC:GM]
+is_a: FBcv:0009031 ! split protease
+
+[Term]
+id: FBcv:0009034
+name: light-regulated split protease
+namespace: experimental_tool_descriptor
+def: "Catalytically inactive fragment of a protease that can be used to reconstitute a functional protease when brought together in vivo with a complementary split protease fragment, where the process that brings the complementary fragments together can be regulated by irradiation with a pulse of light." [FBC:GM]
+is_a: FBcv:0009033 ! conditional split protease
+
+[Term]
+id: FBcv:0009035
+name: split cell ablation tool
+namespace: experimental_tool_descriptor
+def: "Non-functional fragment of a cell ablation tool. A functional cell ablation tool can be reconstituted when complementary split cell ablation tool fragments are brought together in vivo, for example by fusing the fragments to peptides that physically interact." [FBC:GM]
+is_a: FBcv:0005051 ! split system component
+
+[Term]
+id: FBcv:0009036
+name: conditional protease target site
+namespace: experimental_tool_descriptor
+def: "A peptide sequence that can act as a recognition site for a protease (an enzyme that catalyzes hydrolysis of a peptide bond), where this property can be regulated in response to a particular stimulus." [FBC:GM]
+is_a: FBcv:0009024 ! protease target site
+
+[Term]
+id: FBcv:0009037
+name: light-regulated protease target site
+namespace: experimental_tool_descriptor
+def: "A peptide sequence that can act as a recognition site for a protease (an enzyme that catalyzes hydrolysis of a peptide bond), where this property can be regulated by irradiation with a pulse of light." [FBC:GM]
+is_a: FBcv:0009036 ! conditional protease target site
 
 [Term]
 id: FBcv:0010000
