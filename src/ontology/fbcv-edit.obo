@@ -8362,7 +8362,7 @@ name: cell ablation tool
 namespace: experimental_tool_descriptor
 def: "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property used to ablate a specific cell or anatomical structure." [FBC:GM]
 subset: common_tool_use
-is_a: FBcv:0005001 ! experimental tool descriptor
+is_a: FBcv:0009043 ! cell viability regulation tool
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-1373-1705
 property_value: http://purl.org/dc/terms/date "2019-06-25T10:53:21Z" xsd:dateTime
 
@@ -9297,6 +9297,24 @@ def: "Sequence that forms part of the protein product encoded by a transgenic lo
 is_a: FBcv:0009041 ! conditional protein splicing tag
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
 property_value: http://purl.org/dc/terms/date "2024-06-24T10:49:38Z" xsd:dateTime
+
+[Term]
+id: FBcv:0009043
+name: cell viability regulation tool
+namespace: experimental_tool_descriptor
+def: "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property used to regulate the viability of a specific cell or anatomical structure." [FBC:GM]
+is_a: FBcv:0005001 ! experimental tool descriptor
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
+property_value: http://purl.org/dc/terms/date "2024-06-24T11:04:56Z" xsd:dateTime
+
+[Term]
+id: FBcv:0009044
+name: cell death inhibition tool
+namespace: experimental_tool_descriptor
+def: "Sequence that forms all or part of the gene product encoded by a transgenic locus or modified endogenous locus and that confers a specific property used to inhibit cell death in a specific cell or anatomical structure." [FBC:GM]
+is_a: FBcv:0009043 ! cell viability regulation tool
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
+property_value: http://purl.org/dc/terms/date "2024-06-24T11:06:20Z" xsd:dateTime
 
 [Term]
 id: FBcv:0010000
