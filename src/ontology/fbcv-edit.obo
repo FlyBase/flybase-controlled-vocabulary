@@ -7919,7 +7919,7 @@ property_value: http://purl.org/dc/terms/date "2017-06-28T11:41:27Z" xsd:dateTim
 id: FBcv:0005051
 name: split system component
 namespace: experimental_tool_descriptor
-def: "Component that forms part of a 'split system'. A split system component corresponds to a non-functional fragment of a functional experimental tool that would normally be encoded by a single gene product. When combined with another appropriate split system component in vivo, a functional experimental tool is produced. The fragments of a split system can be brought together in vivo in a number of different ways; for example, by fusing fragments to peptides that physically interact in vivo." [FBC:GM]
+def: "Component that forms part of a 'split system'. A split system component corresponds to a non-functional fragment of a functional experimental tool. When combined with another appropriate split system component in vivo, a functional experimental tool is produced. The fragments of a split system can be brought together in vivo in a number of different ways; for example, by fusing fragments to peptides that physically interact in vivo." [FBC:GM]
 is_a: FBcv:0005001 ! experimental tool descriptor
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0002-0027-0858
 property_value: http://purl.org/dc/terms/date "2017-06-28T11:41:27Z" xsd:dateTime
@@ -9396,6 +9396,15 @@ def: "Non-functional fragment of an RNA-guided nuclease that can be used to reco
 is_a: FBcv:0009052 ! conditional split RNA-guided nuclease
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
 property_value: http://purl.org/dc/terms/date "2024-06-24T11:35:10Z" xsd:dateTime
+
+[Term]
+id: FBcv:0009054
+name: split protein splicing tag
+namespace: experimental_tool_descriptor
+def: "Sequence that forms part of the protein product encoded by a transgenic locus or modified endogenous locus and that can catalyze protein splicing when brought together with a complementary split protein splicing tag in vivo. Typically used to join two separate protein sequences by trans-splicing; in this case the two separate protein sequences are each initially tagged with one half of a pair of complementary split protein splicing tags. Alternatively, if both halves of a pair of complementary split protein splicing tags are used to tag each end of a single protein sequence, they can be used to generate a cyclized protein molecule." [FBC:GM]
+is_a: FBcv:0009046 ! split gene product engineering tool
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
+property_value: http://purl.org/dc/terms/date "2024-06-24T11:44:00Z" xsd:dateTime
 
 [Term]
 id: FBcv:0010000
