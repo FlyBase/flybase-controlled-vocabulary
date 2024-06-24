@@ -9272,6 +9272,33 @@ property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002
 property_value: http://purl.org/dc/terms/date "2024-06-24T10:44:12Z" xsd:dateTime
 
 [Term]
+id: FBcv:0009040
+name: protein splicing tag
+namespace: experimental_tool_descriptor
+def: "Sequence that forms part of the protein product encoded by a transgenic locus or modified endogenous locus and which results in the tagged gene product undergoing protein splicing." [FBC:GM]
+is_a: FBcv:0009022 ! gene product engineering tool
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
+property_value: http://purl.org/dc/terms/date "2024-06-24T10:47:32Z" xsd:dateTime
+
+[Term]
+id: FBcv:0009041
+name: conditional protein splicing tag
+namespace: experimental_tool_descriptor
+def: "Sequence that forms part of the protein product encoded by a transgenic locus or modified endogenous locus and which results in the tagged gene product undergoing protein splicing, where this process can be regulated in response to a particular stimulus." [FBC:GM]
+is_a: FBcv:0009040 ! protein splicing tag
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
+property_value: http://purl.org/dc/terms/date "2024-06-24T10:48:27Z" xsd:dateTime
+
+[Term]
+id: FBcv:0009042
+name: small molecule-regulated protein splicing tag
+namespace: experimental_tool_descriptor
+def: "Sequence that forms part of the protein product encoded by a transgenic locus or modified endogenous locus and which results in the tagged gene product undergoing protein splicing, where this process can be regulated by binding to a small molecule, such as an ion or ligand." [FBC:GM]
+is_a: FBcv:0009041 ! conditional protein splicing tag
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
+property_value: http://purl.org/dc/terms/date "2024-06-24T10:49:38Z" xsd:dateTime
+
+[Term]
 id: FBcv:0010000
 name: obsolete living stock
 comment: Consider - FBsv:0000002.
