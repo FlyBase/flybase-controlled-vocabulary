@@ -9362,6 +9362,42 @@ property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002
 property_value: http://purl.org/dc/terms/date "2024-06-24T11:16:29Z" xsd:dateTime
 
 [Term]
+id: FBcv:0009050
+name: split nuclease
+namespace: experimental_tool_descriptor
+def: "Non-functional fragment of a nuclease. A functional nuclease can be reconstituted when complementary split nuclease fragments are brought together in vivo, for example by fusing the fragments to peptides that physically interact." [FBC:GM]
+is_a: FBcv:0009045 ! split genome engineering tool
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
+property_value: http://purl.org/dc/terms/date "2024-06-24T11:30:43Z" xsd:dateTime
+
+[Term]
+id: FBcv:0009051
+name: split RNA-guided nuclease
+namespace: experimental_tool_descriptor
+def: "Non-functional fragment of an RNA-guided nuclease. A functional RNA-guided nuclease can be reconstituted when complementary split RNA-guided nuclease fragments are brought together in vivo, for example by fusing the fragments to peptides that physically interact." [FBC:GM]
+is_a: FBcv:0009050 ! split nuclease
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
+property_value: http://purl.org/dc/terms/date "2024-06-24T11:31:36Z" xsd:dateTime
+
+[Term]
+id: FBcv:0009052
+name: conditional split RNA-guided nuclease
+namespace: experimental_tool_descriptor
+def: "Non-functional fragment of an RNA-guided nuclease that can be used to reconstitute a functional RNA-guided nuclease when brought together in vivo with a complementary split RNA-guided nuclease fragment, where the process that brings the complementary fragments together can be regulated in response to a particular stimulus." [FBC:GM]
+is_a: FBcv:0009051 ! split RNA-guided nuclease
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
+property_value: http://purl.org/dc/terms/date "2024-06-24T11:33:51Z" xsd:dateTime
+
+[Term]
+id: FBcv:0009053
+name: small molecule-regulated split RNA-guided nuclease
+namespace: experimental_tool_descriptor
+def: "Non-functional fragment of an RNA-guided nuclease that can be used to reconstitute a functional RNA-guided nuclease when brought together in vivo with a complementary split RNA-guided nuclease fragment, where the process that brings the complementary fragments together can be regulated by binding to a small molecule, such as an ion or ligand." [FBC:GM]
+is_a: FBcv:0009052 ! conditional split RNA-guided nuclease
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
+property_value: http://purl.org/dc/terms/date "2024-06-24T11:35:10Z" xsd:dateTime
+
+[Term]
 id: FBcv:0010000
 name: obsolete living stock
 comment: Consider - FBsv:0000002.
