@@ -9254,6 +9254,24 @@ property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002
 property_value: http://purl.org/dc/terms/date "2024-05-29T10:13:50Z" xsd:dateTime
 
 [Term]
+id: FBcv:0009038
+name: conditional RNA-guided nuclease
+namespace: experimental_tool_descriptor
+def: "An enzyme that catalyzes hydrolysis of DNA in a site-specific manner, where the specificity is determined by a guide RNA that contains sequence complementary to the DNA sequence of interest (rather than being an inherent property of the nuclease itself) and where the nuclease activity can be regulated in response to a particular stimulus." [FBC:GM]
+is_a: FBcv:0005078 ! RNA-guided nuclease
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
+property_value: http://purl.org/dc/terms/date "2024-06-24T10:42:33Z" xsd:dateTime
+
+[Term]
+id: FBcv:0009039
+name: small molecule-regulated RNA-guided nuclease
+namespace: experimental_tool_descriptor
+def: "An enzyme that catalyzes hydrolysis of DNA in a site-specific manner, where the specificity is determined by a guide RNA that contains sequence complementary to the DNA sequence of interest (rather than being an inherent property of the nuclease itself) and where the nuclease activity can be regulated by binding to a small molecule, such as an ion or ligand." [FBC:GM]
+is_a: FBcv:0009038 ! conditional RNA-guided nuclease
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
+property_value: http://purl.org/dc/terms/date "2024-06-24T10:44:12Z" xsd:dateTime
+
+[Term]
 id: FBcv:0010000
 name: obsolete living stock
 comment: Consider - FBsv:0000002.
