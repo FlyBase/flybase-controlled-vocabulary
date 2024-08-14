@@ -113,7 +113,7 @@ flybase_controlled_vocabulary.obo: $(ONT)-simple.obo flybase_additions.obo
 	$(ROBOT) merge --input $(ONT)-simple.obo --input flybase_additions.obo --collapse-import-closure false \
 		remove --term "http://purl.obolibrary.org/obo/FBcv_0008000" \
 		convert -o $@.tmp.obo
-	cat $@.tmp.obo | sed '/./{H;$!d;} ; x ; s/\(\[Typedef\]\nid:[ ]\)\([[:alpha:]_]*\n\)\(name:[ ]\)\([[:alpha:][:punct:] ]*\n\)/\1\2\3\2/' | grep -v FlyBase_miscellaneous_CV | grep -v property_value: | sed '/^date[:]/c\date: $(OBODATE)' | sed '/^data-version[:]/c\data-version: $(DATE)' > $@
+	cat $@.tmp.obo | sed '/./{H;$!d;} ; x ; s/\(\[Typedef\]\nid:[ ]\)\([[:alpha:]_]*\n\)\(name:[ ]\)\([[:alpha:][:punct:] ]*\n\)/\1\2\3\2/' | grep -v FlyBase_miscellaneous_CV | grep -v property_value: | sed '/^date[:]/c\date: $(OBODATE)' | sed '/^data-version[:]/c\data-version: $(DATE)' | sed 1d > $@
 	rm -f $@.tmp.obo
 
 
