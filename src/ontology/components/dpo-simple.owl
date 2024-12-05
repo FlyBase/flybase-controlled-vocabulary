@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/fbcv/components/dpo-simple.owl#"
      xml:base="http://purl.obolibrary.org/obo/fbcv/components/dpo-simple.owl"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -15,19 +14,19 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/fbcv/components/dpo-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2024-10-17/components/dpo-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2024-12-05/components/dpo-simple.owl"/>
         <ns:attributionURL>http://dx.doi.org/10.1186/2041-1480-4-30</ns:attributionURL>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000347"/>
-        <dc:creator>http://orcid.org/0000-0002-1373-1705</dc:creator>
-        <dc:creator>http://orcid.org/0000-0002-7073-9172</dc:creator>
-        <dc:creator>https://orcid.org/0000-0001-5948-3092</dc:creator>
-        <dc:creator>https://orcid.org/0000-0002-0027-0858</dc:creator>
-        <dc:description>An ontology for the description of Drosophila melanogaster phenotypes.</dc:description>
-        <dc:title>Drosophila Phenotype Ontology (DPO)</dc:title>
+        <terms:creator>http://orcid.org/0000-0002-1373-1705</terms:creator>
+        <terms:creator>http://orcid.org/0000-0002-7073-9172</terms:creator>
+        <terms:creator>https://orcid.org/0000-0001-5948-3092</terms:creator>
+        <terms:creator>https://orcid.org/0000-0002-0027-0858</terms:creator>
+        <terms:description>An ontology for the description of Drosophila melanogaster phenotypes.</terms:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
-        <oboInOwl:date>17:10:2024 14:33</oboInOwl:date>
+        <terms:title>Drosophila Phenotype Ontology (DPO)</terms:title>
+        <oboInOwl:date>05:12:2024 12:49</oboInOwl:date>
         <oboInOwl:default-namespace>FlyBase miscellaneous CV</oboInOwl:default-namespace>
-        <owl:versionInfo>2024-10-17</owl:versionInfo>
+        <owl:versionInfo>2024-12-05</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -353,33 +352,15 @@
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/creator -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/description -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/source -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/title -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
-    
-
-
     <!-- http://purl.org/dc/terms/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
     
 
 
@@ -389,9 +370,27 @@
     
 
 
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
