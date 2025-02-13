@@ -14,7 +14,7 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/fbcv/components/dpo-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2024-12-05/components/dpo-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2025-02-13/components/dpo-simple.owl"/>
         <ns:attributionURL>http://dx.doi.org/10.1186/2041-1480-4-30</ns:attributionURL>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000347"/>
         <terms:creator>http://orcid.org/0000-0002-1373-1705</terms:creator>
@@ -24,9 +24,9 @@
         <terms:description>An ontology for the description of Drosophila melanogaster phenotypes.</terms:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <terms:title>Drosophila Phenotype Ontology (DPO)</terms:title>
-        <oboInOwl:date>05:12:2024 12:49</oboInOwl:date>
+        <oboInOwl:date>13:02:2025 11:13</oboInOwl:date>
         <oboInOwl:default-namespace>FlyBase miscellaneous CV</oboInOwl:default-namespace>
-        <owl:versionInfo>2024-12-05</owl:versionInfo>
+        <owl:versionInfo>2025-02-13</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -2899,18 +2899,45 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBcv_0000446">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBcv_0001347"/>
-        <obo:IAO_0000115>Phenotype characterized by the formation of lumps of melanotic tissue inside the body in the absence of foreign bodies.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>melanotic &apos;tumor&apos;</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>Phenotype characterized by the formation of lumps of melanotic tissue inside the body in the absence of foreign bodies or wounding.</obo:IAO_0000115>
+        <oboInOwl:hasNarrowSynonym>melanization</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>melanotic nodule</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace>phenotypic_class</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>melanotic tumor</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>pseudotumor</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>FBcv:0000446</oboInOwl:id>
-        <rdfs:comment>Melanotic capsules are formed around foreign bodies in wild-type animals as part of the immune response, for example as a protection against parasitoid wasps. Some, but not all melanotic mass phenotypes involve ectopic activation of this immune response. While melanotic masses are commonly referred to as melanotic tumors in the historical literature, this is a misnomer as they are rarely neoplastic.</rdfs:comment>
+        <rdfs:comment>Melanotic capsules are formed around wounds and foreign bodies in wild-type animals as part of the immune response, for example as a protection against parasitoid wasps. For the wild-type structure, consider FBbt:00005064. Some, but not all melanotic mass phenotypes involve ectopic activation of the same immune response. Melanotic masses caused by genetic manipulations are sometimes referred to as &apos;melanotic tumors&apos; or &apos;pseudotumors&apos;, but this is a misnomer as they are rarely neoplastic (Minakhina and Steward, 2006).</rdfs:comment>
         <rdfs:label>melanotic mass phenotype</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000446"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Phenotype characterized by the formation of lumps of melanotic tissue inside the body in the absence of foreign bodies.</owl:annotatedTarget>
+        <owl:annotatedTarget>Phenotype characterized by the formation of lumps of melanotic tissue inside the body in the absence of foreign bodies or wounding.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0094387</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0194475</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000446"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>melanization</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0194475</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000446"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>melanotic nodule</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0194475</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000446"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>melanotic tumor</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FlyBase:FBrf0194475</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000446"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>pseudotumor</owl:annotatedTarget>
         <oboInOwl:hasDbXref>FlyBase:FBrf0194475</oboInOwl:hasDbXref>
     </owl:Axiom>
     
