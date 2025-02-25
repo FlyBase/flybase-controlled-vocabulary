@@ -9427,6 +9427,24 @@ property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002
 property_value: http://purl.org/dc/terms/date "2025-01-27T11:13:39Z" xsd:dateTime
 
 [Term]
+id: FBcv:0009057
+name: single-cell RNA-sequencing analysis method
+namespace: result_attribute
+def: "A method, or a set of methods, used to analyze single-cell RNA-sequencing data and produce a cell-by-gene expression matrix." [FBC:DPG]
+is_a: FBcv:0003222 ! result attribute
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
+property_value: http://purl.org/dc/terms/date "2025-02-25T11:24:12Z" xsd:dateTime
+
+[Term]
+id: FBcv:0009058
+name: EMBL-EBI SCEA standard analysis method
+namespace: result_attribute
+def: "The single-cell RNA-sequencing analysis method used by the EMBL-EBI's Single-Cell Expression Atlas." [PMID:37992296]
+is_a: FBcv:0009057 ! single-cell RNA-sequencing analysis method
+property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6095-8718
+property_value: http://purl.org/dc/terms/date "2025-02-25T11:42:22Z" xsd:dateTime
+
+[Term]
 id: FBcv:0010000
 name: obsolete living stock
 comment: Consider - FBsv:0000002.
