@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: 2025-02-13
-date: 13:02:2025 11:54
+data-version: 2025-03-27
+date: 27:03:2025 12:08
 subsetdef: camcur "camcur"
 subsetdef: common_tool_use "Terms to summarize typical use of a gene from one organism that is introduced into another organism primarily for use an experimental tool, rather than to study the function of the gene"
 subsetdef: do_not_annotate "Term not to be used for direct annotation"
@@ -10451,6 +10451,20 @@ def: "A method that uses split-pool barcoding to unique label the mRNAs from a l
 synonym: "sci-RNA-seq" EXACT []
 synonym: "sci-RNA-seq3" NARROW []
 is_a: FBcv:0009005 ! single-cell library sequencing
+
+[Term]
+id: FBcv:0009057
+name: single-cell RNA-sequencing analysis method
+namespace: result_attribute
+def: "A method, or a set of methods, used to analyze single-cell RNA-sequencing data and produce a cell-by-gene expression matrix." [FBC:DPG]
+is_a: FBcv:0003222 ! result attribute
+
+[Term]
+id: FBcv:0009058
+name: EMBL-EBI SCEA standard analysis method
+namespace: result_attribute
+def: "The single-cell RNA-sequencing analysis method used by the EMBL-EBI's Single-Cell Expression Atlas." [PMID:37992296]
+is_a: FBcv:0009057 ! single-cell RNA-sequencing analysis method
 
 [Term]
 id: FBcv:0010000

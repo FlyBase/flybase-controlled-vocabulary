@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: fbcv/releases/2025-02-13
-date: 13:02:2025 11:54
+data-version: fbcv/releases/2025-03-27
+date: 27:03:2025 12:07
 subsetdef: 1_STAR ""
 subsetdef: 2_STAR ""
 subsetdef: 3_STAR ""
@@ -48,7 +48,7 @@ idspace: terms http://purl.org/dc/terms/
 ontology: fbcv.obo
 property_value: attributionURL "http://dx.doi.org/10.1186/2041-1480-4-30" xsd:string
 property_value: IAO:0000700 FBcv:0000000
-property_value: owl:versionInfo "2025-02-13" xsd:string
+property_value: owl:versionInfo "2025-03-27" xsd:string
 property_value: terms:creator "http://orcid.org/0000-0002-1373-1705" xsd:string
 property_value: terms:creator "http://orcid.org/0000-0002-7073-9172" xsd:string
 property_value: terms:creator "https://orcid.org/0000-0001-5948-3092" xsd:string
@@ -2018,8 +2018,8 @@ def: "A uridine having a bromo substituent at the 5-position." []
 subset: 3_STAR
 synonym: "1-beta-ribofuranosyl-5-bromo-uracil" RELATED [ChemIDplus]
 synonym: "5-bromo-1-beta-D-ribofuranosylpyrimidine-2,4(1H,3H)-dione" RELATED [ChEBI]
-synonym: "5-bromouridine" EXACT [UniProt]
 synonym: "5-bromouridine" EXACT [ChEBI]
+synonym: "5-bromouridine" EXACT [UniProt]
 synonym: "BrU" RELATED [ChEBI]
 is_a: BFO:0000004
 is_a: CHEBI:27242 ! uridines
@@ -2552,8 +2552,8 @@ name: carbonyl group
 namespace: chebi_ontology
 subset: 3_STAR
 synonym: ">C=O" RELATED [IUPAC]
-synonym: "carbonyl group" EXACT [UniProt]
 synonym: "carbonyl group" EXACT [ChEBI]
+synonym: "carbonyl group" EXACT [UniProt]
 is_a: CHEBI:51422 ! organodiyl group
 
 [Term]
@@ -24755,6 +24755,24 @@ property_value: terms:contributor https://orcid.org/0000-0002-6095-8718
 property_value: terms:date "2025-01-27T11:13:39Z" xsd:dateTime
 
 [Term]
+id: FBcv:0009057
+name: single-cell RNA-sequencing analysis method
+namespace: result_attribute
+def: "A method, or a set of methods, used to analyze single-cell RNA-sequencing data and produce a cell-by-gene expression matrix." [FBC:DPG]
+is_a: FBcv:0003222 ! result attribute
+property_value: terms:contributor https://orcid.org/0000-0002-6095-8718
+property_value: terms:date "2025-02-25T11:24:12Z" xsd:dateTime
+
+[Term]
+id: FBcv:0009058
+name: EMBL-EBI SCEA standard analysis method
+namespace: result_attribute
+def: "The single-cell RNA-sequencing analysis method used by the EMBL-EBI's Single-Cell Expression Atlas." [PMID:37992296]
+is_a: FBcv:0009057 ! single-cell RNA-sequencing analysis method
+property_value: terms:contributor https://orcid.org/0000-0002-6095-8718
+property_value: terms:date "2025-02-25T11:42:22Z" xsd:dateTime
+
+[Term]
 id: FBcv:0010000
 name: obsolete living stock
 comment: Consider - FBsv:0000002.
@@ -25067,7 +25085,7 @@ name: has developmental contribution from
 def: "x has developmental contribution from y iff x has some part z such that z develops from y" []
 domain: UBERON:0001062
 range: UBERON:0001062
-holds_over_chain: BFO:0000051 RO:0002202
+holds_over_chain: BFO:0000051 RO:0002254
 is_a: RO:0002258 ! developmentally preceded by
 inverse_of: RO:0002255 ! developmentally contributes to
 
@@ -25145,6 +25163,7 @@ is_a: RO:0002384 ! has developmental potential involving
 id: RO:0002387
 name: has potential to develop into
 def: "x has the potential to develop into y iff x develops into y or if x is capable of developing into y" []
+comment: This relation has a stronger meaning than merely indicating that X may develop into Y, in that the capability of developing into Y is always present, even if X does not always actually develop into Y. In particular, this means that if Y is restricted to a given taxon T, X is necessarily likewise restricted.
 is_a: RO:0002384 ! has developmental potential involving
 
 [Typedef]
