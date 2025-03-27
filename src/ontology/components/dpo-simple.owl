@@ -14,7 +14,7 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/fbcv/components/dpo-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2025-02-13/components/dpo-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/fbcv/releases/2025-03-27/components/dpo-simple.owl"/>
         <ns:attributionURL>http://dx.doi.org/10.1186/2041-1480-4-30</ns:attributionURL>
         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/FBcv_0000347"/>
         <terms:creator>http://orcid.org/0000-0002-1373-1705</terms:creator>
@@ -24,9 +24,9 @@
         <terms:description>An ontology for the description of Drosophila melanogaster phenotypes.</terms:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <terms:title>Drosophila Phenotype Ontology (DPO)</terms:title>
-        <oboInOwl:date>13:02:2025 11:13</oboInOwl:date>
+        <oboInOwl:date>27:03:2025 11:41</oboInOwl:date>
         <oboInOwl:default-namespace>FlyBase miscellaneous CV</oboInOwl:default-namespace>
-        <owl:versionInfo>2025-02-13</owl:versionInfo>
+        <owl:versionInfo>2025-03-27</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -671,6 +671,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002351">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <obo:IAO_0000115>has member is a mereological relation between a collection and an item.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">has member</rdfs:label>
     </owl:ObjectProperty>
