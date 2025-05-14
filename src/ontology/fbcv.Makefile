@@ -81,7 +81,7 @@ $(ONT)-simple.obo: $(ONT)-simple.owl
 	rm -f $@.tmp.obo $@.tmp
 
 # We want the OBO release to be based on the simple release. It needs to be annotated however in the way map releases (fbbt.owl) are annotated.
-$(ONT).obo: $(ONT).owl
+$(ONT).obo: $(ONT)-simple.owl
 	$(ROBOT)  annotate --input $< --ontology-iri $(URIBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY) \
 	convert --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
 	cat $@.tmp.obo | grep -v ^owl-axioms > $@.tmp &&\
