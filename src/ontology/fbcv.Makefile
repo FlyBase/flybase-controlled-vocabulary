@@ -3,24 +3,6 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
-# These date variables can be overwritten by the script calling this makefile, for example
-# sh run.sh make DATE="2019-01-01" somegoal
-
-DATE   ?= $(shell date +%Y-%m-%d)
-DATETIME ?= $(shell date +"%d:%m:%Y %H:%M")
-
-
-.SECONDEXPANSION:
-.PHONY: prepare_release
-prepare_release: $$(ASSETS) release_reports
-	rsync -R $(RELEASE_ASSETS) $(REPORT_FILES) $(FLYBASE_REPORTS) $(IMPORT_FILES) $(RELEASEDIR) &&\
-	rm -f $(CLEANFILES)
-	echo "Release files are now in $(RELEASEDIR) - now you should commit, push and make a release on your git hosting site such as GitHub or GitLab"
-
-MAIN_FILES := $(MAIN_FILES) flybase_controlled_vocabulary.obo
-CLEANFILES := $(CLEANFILES) $(patsubst %, $(IMPORTDIR)/%_terms_combined.txt, $(IMPORTS)) $(ONT)-edit-release.owl
-.INTERMEDIATE: $(CLEANFILES)
-
 ######################################################
 ### Download and integrate the DPO component       ###
 ######################################################
@@ -71,40 +53,12 @@ $(ONT)-simple.owl: $(ONT).owl tmp/fbcv_signature.txt
 ### Custom rules to generate OBO artifacts ###
 ##############################################
 
-# We override all the ODK standard OBO-generating rules to make sure to
-# remove excess labels, defs, and comments from OBO artifacts.
-
-$(ONT)-simple.obo: $(ONT)-simple.owl
-	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
-	cat $@.tmp.obo | grep -v ^owl-axioms > $@.tmp &&\
-	cat $@.tmp | perl -0777 -e '$$_ = <>; s/(?:name[:].*\n)+name[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/(?:comment[:].*\n)+comment[:]/comment:/g; print' | perl -0777 -e '$$_ = <>; s/(?:def[:].*\n)+def[:]/def:/g; print' > $@
-	rm -f $@.tmp.obo $@.tmp
-
 # We want the OBO release to be based on the simple release. It needs to be annotated however in the way map releases (fbbt.owl) are annotated.
 $(ONT).obo: $(ONT)-simple.owl
-	$(ROBOT)  annotate --input $< --ontology-iri $(URIBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY) \
-	convert --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
-	cat $@.tmp.obo | grep -v ^owl-axioms > $@.tmp &&\
-	cat $@.tmp | perl -0777 -e '$$_ = <>; s/(?:name[:].*\n)+name[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/(?:comment[:].*\n)+comment[:]/comment:/g; print' | perl -0777 -e '$$_ = <>; s/(?:def[:].*\n)+def[:]/def:/g; print' > $@
-	rm -f $@.tmp.obo $@.tmp
-
-$(ONT)-base.obo: $(ONT)-base.owl
-	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
-	cat $@.tmp.obo | grep -v ^owl-axioms > $@.tmp &&\
-	cat $@.tmp | perl -0777 -e '$$_ = <>; s/(?:name[:].*\n)+name[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/(?:comment[:].*\n)+comment[:]/comment:/g; print' | perl -0777 -e '$$_ = <>; s/(?:def[:].*\n)+def[:]/def:/g; print' > $@
-	rm -f $@.tmp.obo $@.tmp
-
-$(ONT)-non-classified.obo: $(ONT)-non-classified.owl
-	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
-	cat $@.tmp.obo | grep -v ^owl-axioms > $@.tmp &&\
-	cat $@.tmp | perl -0777 -e '$$_ = <>; s/(?:name[:].*\n)+name[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/(?:comment[:].*\n)+comment[:]/comment:/g; print' | perl -0777 -e '$$_ = <>; s/(?:def[:].*\n)+def[:]/def:/g; print' > $@
-	rm -f $@.tmp.obo $@.tmp
-
-$(ONT)-full.obo: $(ONT)-full.owl
-	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo &&\
-	cat $@.tmp.obo | grep -v ^owl-axioms > $@.tmp &&\
-	cat $@.tmp | perl -0777 -e '$$_ = <>; s/(?:name[:].*\n)+name[:]/name:/g; print' | perl -0777 -e '$$_ = <>; s/(?:comment[:].*\n)+comment[:]/comment:/g; print' | perl -0777 -e '$$_ = <>; s/(?:def[:].*\n)+def[:]/def:/g; print' > $@
-	rm -f $@.tmp.obo $@.tmp
+	$(ROBOT) annotate --input $< \
+		          --ontology-iri $(URIBASE)/$@ \
+		          --version-iri $(ONTBASE)/releases/$(TODAY) \
+		 convert --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@
 
 flybase_additions.obo: $(ONT)-simple.obo
 	python3 $(SCRIPTSDIR)/FB_typedefs.py
@@ -113,8 +67,13 @@ flybase_controlled_vocabulary.obo: $(ONT)-simple.obo flybase_additions.obo
 	$(ROBOT) merge --input $(ONT)-simple.obo --input flybase_additions.obo --collapse-import-closure false \
 		remove --term "http://purl.obolibrary.org/obo/FBcv_0008000" \
 		convert -o $@.tmp.obo
-	cat $@.tmp.obo | sed '/./{H;$!d;} ; x ; s/\(\[Typedef\]\nid:[ ]\)\([[:alpha:]_]*\n\)\(name:[ ]\)\([[:alpha:][:punct:] ]*\n\)/\1\2\3\2/' | grep -v FlyBase_miscellaneous_CV | grep -v property_value: | sed '/^date[:]/c\date: $(OBODATE)' | sed '/^data-version[:]/c\data-version: $(DATE)' | sed 1d > $@
+	cat $@.tmp.obo | sed '/./{H;$!d;} ; x ; s/\(\[Typedef\]\nid:[ ]\)\([[:alpha:]_]*\n\)\(name:[ ]\)\([[:alpha:][:punct:] ]*\n\)/\1\2\3\2/' | grep -v FlyBase_miscellaneous_CV | grep -v property_value: | sed '/^date[:]/c\date: $(OBODATE)' | sed '/^data-version[:]/c\data-version: $(TODAY)' | sed 1d > $@
 	rm -f $@.tmp.obo
+
+# Make sure the flybase version is included in $(ASSETS)
+# and generated as needed
+MAIN_FILES += flybase_controlled_vocabulary.obo
+all_assets: flybase_controlled_vocabulary.obo
 
 
 ######################################################
