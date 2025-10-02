@@ -48,3 +48,19 @@ release_date: TRUE
 components:
   products:
     - filename: dpo-simple.owl
+use_mappings: true
+sssom_mappingset_group:
+  products:
+    - id: agr
+      maintenance: manual
+    - id: agr-vocabs
+      maintenance: manual
+    - id: common
+      maintenance: manual
+    - id: fbcv
+      maintenance: merged
+      source_mappings:
+        - common
+        - agr
+        - agr-vocabs
+      release_mappings: true
