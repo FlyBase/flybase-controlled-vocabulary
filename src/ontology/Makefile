@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                e8f37b5150af876d5eb7dc695969a933dbcb0c2fae0c59f7be440e67efbcc410
+CONFIG_HASH=                615898f6bc894bac8c75d184cd2460494f7ca7ec3abb6bbed8243ed1b05dc1e3
 
 
 # ----------------------------------------
@@ -60,6 +60,12 @@ ANNOTATE_CONVERT_FILE =     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONT
 OTHER_SRC =                 $(COMPONENTSDIR)/dpo-simple.owl 
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 EDIT_PREPROCESSED =         $(TMPDIR)/$(ONT)-preprocess.owl
+
+MAPPINGDIR=                 ../mappings
+MAPPING_TESTER=             sssom validate
+SSSOMPY=                    sssom
+MAPPINGS=                   agr agr-vocabs common fbcv 
+MAPPING_RELEASE_FILES=      $(foreach n,$(MAPPINGS), $(MAPPINGDIR)/$(n).sssom.tsv)
 
 
 FORMATS = $(sort  owl obo json owl)
@@ -218,8 +224,9 @@ all_subsets: $(SUBSET_FILES)
 # ----------------------------------------
 
 
-MAPPINGS = 
+MAPPINGS =  agr agr-vocabs common fbcv
 
+RELEASED_MAPPINGS =  fbcv
 
 MAPPING_FILES = $(foreach p, $(MAPPINGS), $(MAPPINGDIR)/$(p).sssom.tsv)
 RELEASED_MAPPING_FILES = $(foreach p, $(RELEASED_MAPPINGS), $(MAPPINGDIR)/$(p).sssom.tsv)
@@ -339,9 +346,12 @@ prepare_release_fast:
 .PHONY: copy_release_files
 copy_release_files:
 	rsync -R $(RELEASE_ASSETS) $(RELEASEDIR)
+	mkdir -p $(RELEASEDIR)/mappings
+	cp -rf $(RELEASED_MAPPING_FILES) $(RELEASEDIR)/mappings
 
 # All released assets, in their final location within the release
-RELEASE_ASSETS_AFTER_RELEASE=$(foreach n,$(RELEASE_ASSETS), $(RELEASEDIR)/$(n))
+RELEASE_ASSETS_AFTER_RELEASE=$(foreach n,$(RELEASE_ASSETS), $(RELEASEDIR)/$(n)) \
+			     $(foreach n,$(RELEASED_MAPPINGS), $(RELEASEDIR)/mappings/$(n).sssom.tsv)
 
 .PHONY: show_release_assets
 show_release_assets:
@@ -558,6 +568,38 @@ custom_reports: $(EDIT_PREPROCESSED) | $(REPORTDIR)
 ifneq ($(SPARQL_EXPORTS_ARGS),)
 	$(ROBOT) query -f tsv --use-graphs true -i $< $(SPARQL_EXPORTS_ARGS)
 endif
+
+# ----------------------------------------
+# SSSOM Mapping Files
+# ----------------------------------------
+
+validate-sssom-%:
+	tsvalid $(MAPPINGDIR)/$*.sssom.tsv --comment "#"
+	sssom validate $(MAPPINGDIR)/$*.sssom.tsv
+
+validate_mappings:
+	$(MAKE_FAST) $(foreach n,$(MAPPINGS),validate-sssom-$(n))
+
+normalize-sssom-%:
+	sssom-cli --output $(MAPPINGDIR)/$*.sssom.tsv $(MAPPINGDIR)/$*.sssom.tsv
+
+normalize_mappings:
+	$(MAKE_FAST) $(foreach n,$(MAPPINGS),normalize-sssom-$(n))
+
+# This mappingset is manually curated, so we only check that the file actually exists.
+$(MAPPINGDIR)/agr.sssom.tsv:
+	test -f $@
+
+# This mappingset is manually curated, so we only check that the file actually exists.
+$(MAPPINGDIR)/agr-vocabs.sssom.tsv:
+	test -f $@
+
+# This mappingset is manually curated, so we only check that the file actually exists.
+$(MAPPINGDIR)/common.sssom.tsv:
+	test -f $@
+
+$(MAPPINGDIR)/fbcv.sssom.tsv: $(MAPPINGDIR)/common.sssom.tsv $(MAPPINGDIR)/agr.sssom.tsv $(MAPPINGDIR)/agr-vocabs.sssom.tsv
+	sssom-cli --output $@ $^
 
 # ----------------------------------------
 # Release artefacts: export formats

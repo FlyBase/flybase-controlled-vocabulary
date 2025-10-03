@@ -1,0 +1,27 @@
+#curie_map:
+#  FBcv: http://purl.obolibrary.org/obo/FBcv_
+#  ORCID: https://orcid.org/
+#  obo: http://purl.obolibrary.org/obo/
+#mapping_set_id: http://purl.obolibrary.org/obo/fbcv/agr-vocabs.sssom.tsv
+#mapping_set_description: Mappings between the FlyBase Controlled Vocabulary (FBcv) and vocabulary terms from the Alliance of Genome Resources.
+#creator_id:
+#  - ORCID:0000-0002-6095-8718
+#license: https://creativecommons.org/licenses/by/4.0/
+#subject_source: obo:fbcv.owl
+#object_type: rdfs literal
+#mapping_date: 2025-10-02
+subject_id	subject_label	predicate_id	object_label	object_category	mapping_justification	comment
+FBcv:0000222	male	skos:exactMatch	male	Genetic Sex	semapv:ManualMappingCuration	
+FBcv:0000334	female	skos:exactMatch	female	Genetic Sex	semapv:ManualMappingCuration	
+FBcv:0003124	species study	skos:exactMatch	species	Data Set Category Tags	semapv:ManualMappingCuration	
+FBcv:0003125	strain study	skos:exactMatch	genome variation	Data Set Category Tags	semapv:ManualMappingCuration	
+FBcv:0003127	developmental stage study	skos:exactMatch	developmental stage	Data Set Category Tags	semapv:ManualMappingCuration	
+FBcv:0003128	circadian rhythm study	skos:narrowMatch	time of day	Data Set Category Tags	semapv:ManualMappingCuration	The Alliance term is specifically about a study that compares samples collected at specified times of the day, while the FBcv term is more broadly about any study of the circadian rhythm (which would likely involve collecting samples at specified times of the day but not necessarily).
+FBcv:0003129	cell cycle study	skos:exactMatch	cell cycle	Data Set Category Tags	semapv:ManualMappingCuration	
+FBcv:0003130	tissue type study	skos:narrowMatch	anatomical structure	Data Set Category Tags	semapv:ManualMappingCuration	The Alliance term is specifically about studying gene expression in tissues, while the FBcv term is more broadly about studying the form or function of tissues (including but not limited to gene expression).
+FBcv:0003131	cell type study	skos:exactMatch	cell type	Data Set Category Tags	semapv:ManualMappingCuration	
+FBcv:0003132	subcellular component study	skos:exactMatch	subcellular component	Data Set Category Tags	semapv:ManualMappingCuration	
+FBcv:0003133	gene study	skos:narrowMatch	gene	Data Set Category Tags	semapv:ManualMappingCuration	The Alliance term is specifically about studying the effects of gene perturbation, while the FBcv term is more broadly about studying the properties of a gene, whether in perturbed conditions or not.
+FBcv:0003134	biotic stimulus study	skos:exactMatch	biotic stimulus	Data Set Category Tags	semapv:ManualMappingCuration	
+FBcv:0003135	chemical stimulus study	skos:exactMatch	chemical stimulus	Data Set Category Tags	semapv:ManualMappingCuration	
+FBcv:0003136	physical stimulus study	skos:exactMatch	physical stimulus	Data Set Category Tags	semapv:ManualMappingCuration	
