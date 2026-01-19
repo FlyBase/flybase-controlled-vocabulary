@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                615898f6bc894bac8c75d184cd2460494f7ca7ec3abb6bbed8243ed1b05dc1e3
+CONFIG_HASH=                5eb2ba0ae482ec4db86f0e9923968ae3ea881e4626dbf074e593fffd220c7c5b
 
 
 # ----------------------------------------
@@ -514,7 +514,7 @@ mirror-ro: | $(TMPDIR)
 .PHONY: mirror-chebi
 .PRECIOUS: $(MIRRORDIR)/chebi.owl
 mirror-chebi: | $(TMPDIR)
-	$(ROBOT) remove -I https://raw.githubusercontent.com/obophenotype/chebi_obo_slim/main/chebi_slim.owl --base-iri http://purl.obolibrary.org/obo/CHEBI  --axioms external --preserve-structure false --trim false -o $(TMPDIR)/$@.owl
+	$(ROBOT) remove -I http://purl.obolibrary.org/obo/upheno/chebi_slim.owl --base-iri http://purl.obolibrary.org/obo/CHEBI  --axioms external --preserve-structure false --trim false -o $(TMPDIR)/$@.owl
 
 ALL_MIRRORS = $(patsubst %, $(MIRRORDIR)/%.owl, $(IMPORTS))
 MERGE_MIRRORS = true
