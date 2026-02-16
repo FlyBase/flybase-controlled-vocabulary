@@ -5372,28 +5372,32 @@ property_value: http://purl.org/dc/terms/date "2014-03-28T15:23:42Z" xsd:dateTim
 
 [Term]
 id: FBcv:0003012
-name: gene or gene product group
+name: obsolete gene or gene product group
 namespace: group_descriptor
 def: "Genes or gene products that are acknowledged to form a natural biological group." [FBC:SM]
-is_a: FBcv:0003011 ! group descriptor
+comment: Obsoleted as there is no clear distinction from 'group descriptor'.
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0001-5948-3092
 property_value: http://purl.org/dc/terms/date "2014-03-28T15:23:42Z" xsd:dateTime
+is_obsolete: true
+replaced_by: FBcv:0003011
 
 [Term]
 id: FBcv:0003013
-name: gene array group
+name: obsolete gene array group
 namespace: group_descriptor
 def: "Two or more genes contiguously arranged where the individual genes are either identical in sequence, or essentially so (SO:0005851)." [FBC:SM, SO:ma]
-is_a: FBcv:0003012 ! gene or gene product group
+comment: Obsoleted as this term has never been used in FlyBase and is not needed.
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0001-5948-3092
 property_value: http://purl.org/dc/terms/date "2014-03-28T15:23:42Z" xsd:dateTime
+is_obsolete: true
+consider: FBcv:0003012
 
 [Term]
 id: FBcv:0003014
 name: functional group
 namespace: group_descriptor
 def: "Genes whose products share a common biological and/or molecular function." [FBC:SM]
-is_a: FBcv:0003012 ! gene or gene product group
+is_a: FBcv:0003011 ! group descriptor
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0001-5948-3092
 property_value: http://purl.org/dc/terms/date "2014-03-28T15:23:42Z" xsd:dateTime
 
@@ -5411,7 +5415,7 @@ id: FBcv:0003016
 name: protein complex group
 namespace: group_descriptor
 def: "Genes whose protein products form a macromolecular complex (GO:0043234)." [FBC:SM, GOC:go_curators]
-is_a: FBcv:0003014 ! functional group
+is_a: FBcv:0003011 ! group descriptor
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0001-5948-3092
 property_value: http://purl.org/dc/terms/date "2014-03-28T15:23:42Z" xsd:dateTime
 
@@ -5420,18 +5424,20 @@ id: FBcv:0003017
 name: pathway group
 namespace: group_descriptor
 def: "Genes whose products act in a specified signal transduction or metabolic pathway." [FBC:SM]
-is_a: FBcv:0003014 ! functional group
+is_a: FBcv:0003011 ! group descriptor
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0001-5948-3092
 property_value: http://purl.org/dc/terms/date "2014-03-28T15:23:42Z" xsd:dateTime
 
 [Term]
 id: FBcv:0003018
-name: process group
+name: obsolete process group
 namespace: group_descriptor
 def: "Genes whose products act in a specified biological process." [FBC:SM]
-is_a: FBcv:0003014 ! functional group
+comment: Obsoleted as this term has never been used in FlyBase and is not needed.
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0001-5948-3092
 property_value: http://purl.org/dc/terms/date "2014-03-28T15:23:42Z" xsd:dateTime
+is_obsolete: true
+consider: FBcv:0003014
 
 [Term]
 id: FBcv:0003019
