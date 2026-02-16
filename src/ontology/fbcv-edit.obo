@@ -5372,12 +5372,14 @@ property_value: http://purl.org/dc/terms/date "2014-03-28T15:23:42Z" xsd:dateTim
 
 [Term]
 id: FBcv:0003012
-name: gene or gene product group
+name: obsolete gene or gene product group
 namespace: group_descriptor
 def: "Genes or gene products that are acknowledged to form a natural biological group." [FBC:SM]
-is_a: FBcv:0003011 ! group descriptor
+comment: Obsoleted as there is no clear distinction from 'group descriptor'.
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0001-5948-3092
 property_value: http://purl.org/dc/terms/date "2014-03-28T15:23:42Z" xsd:dateTime
+is_obsolete: true
+replaced_by: FBcv:0003011
 
 [Term]
 id: FBcv:0003013
@@ -5395,7 +5397,7 @@ id: FBcv:0003014
 name: functional group
 namespace: group_descriptor
 def: "Genes whose products share a common biological and/or molecular function." [FBC:SM]
-is_a: FBcv:0003012 ! gene or gene product group
+is_a: FBcv:0003011 ! group descriptor
 property_value: http://purl.org/dc/terms/contributor http://orcid.org/0000-0001-5948-3092
 property_value: http://purl.org/dc/terms/date "2014-03-28T15:23:42Z" xsd:dateTime
 
