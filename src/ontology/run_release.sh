@@ -4,7 +4,7 @@ set -e
 
 # 1. Imports need to be updated separately for the preprocessing
 # step to run normally
-sh run.sh make all_imports
+sh run.sh make clean all_imports
 
 # 2. Now we can run the normal release pipeline
 sh run.sh make IMP=false prepare_release

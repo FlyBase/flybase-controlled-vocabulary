@@ -1,6 +1,7 @@
 format-version: 1.2
-data-version: fbcv/releases/2026-04-03
-date: 03:04:2026 11:07
+data-version: fbcv/releases/2026-07-10
+date: 10:07:2026 07:22
+date: 10:07:2026 07:23
 subsetdef: camcur "camcur"
 subsetdef: common_tool_use "Terms to summarize typical use of a gene from one organism that is introduced into another organism primarily for use an experimental tool, rather than to study the function of the gene"
 subsetdef: do_not_annotate "Term not to be used for direct annotation"
@@ -13,7 +14,7 @@ idspace: terms http://purl.org/dc/terms/
 ontology: fbcv.obo
 property_value: attributionURL "http://dx.doi.org/10.1186/2041-1480-4-30" xsd:string
 property_value: IAO:0000700 FBcv:0000000
-property_value: owl:versionInfo "2026-04-03" xsd:string
+property_value: owl:versionInfo "2026-07-10" xsd:string
 property_value: terms:creator "http://orcid.org/0000-0002-1373-1705" xsd:string
 property_value: terms:creator "http://orcid.org/0000-0002-7073-9172" xsd:string
 property_value: terms:creator "https://orcid.org/0000-0001-5948-3092" xsd:string
@@ -2340,7 +2341,7 @@ is_a: FBcv:0000654 ! embryonic pattern qualifier
 id: FBcv:0000324
 name: abnormal dorsal/ventral axis specification
 namespace: phenotypic_class
-def: "Phenotype that is any abnormality in dorsal/ventral axis specification (GO:0009950). 'dorsal/ventral axis specification' is defined as: 'The establishment, maintenance and elaboration of the dorsal/ventral axis. The dorsal/ventral axis is defined by a line that runs orthogonal to both the anterior/posterior and left/right axes. The dorsal end is defined by the upper or back side of an organism. The ventral end is defined by the lower or front side of an organism.'" [FBC:DOS, GOC:dph, GOC:go_curators, GOC:tb]
+def: "Phenotype that is any abnormality in dorsal/ventral axis specification (GO:0009950). 'dorsal/ventral axis specification' is defined as: 'The establishment, maintenance and elaboration of the dorsal/ventral axis. The dorsal/ventral axis is defined by a line that runs orthogonal to both the anterior/posterior and left/right axes. The dorsal end is defined by the upper or back side of an organism. The ventral end is defined by the lower or front side of an organism.'" [FBC:DOS, GOC:curators, GOC:dph, GOC:tb]
 synonym: "dorsal-ventral polarity" RELATED [FBC:DOS]
 synonym: "dorsal/ventral axis specification defective" EXACT []
 is_a: FBcv:0000686 ! abnormal axis specification
@@ -2903,7 +2904,7 @@ is_a: FBcv:0000408 ! abnormal stress response
 id: FBcv:0000394
 name: abnormal circadian rhythm
 namespace: phenotypic_class
-def: "Phenotype that is any abnormality in circadian rhythm (GO:0007623). 'circadian rhythm' is defined as: 'Any biological process in an organism that recurs with a regularity of approximately 24 hours.'" [FBC:DOS, GOC:bf, GOC:go_curators]
+def: "Phenotype that is any abnormality in circadian rhythm (GO:0007623). 'circadian rhythm' is defined as: 'Any biological process in an organism that recurs with a regularity of approximately 24 hours.'" [FBC:DOS, GOC:bf, GOC:curators]
 subset: fbcvsubset_mgiribbons
 synonym: "circadian rhythm defective" EXACT []
 is_a: FBcv:0001347 ! phenotype
@@ -2912,7 +2913,7 @@ is_a: FBcv:0001347 ! phenotype
 id: FBcv:0000395
 name: abnormal locomotor rhythm
 namespace: phenotypic_class
-def: "Phenotype that is any abnormality in locomotor rhythm (GO:0045475). 'locomotor rhythm' is defined as: 'The rhythm of the locomotor activity of an organism during its 24 hour activity cycle.'" [FBC:DOS, GOC:go_curators]
+def: "Phenotype that is any abnormality in locomotor rhythm (GO:0045475). 'locomotor rhythm' is defined as: 'The rhythm of the locomotor activity of an organism during its 24 hour activity cycle.'" [FBC:DOS, GOC:curators]
 synonym: "locomotor rhythm defective" EXACT []
 is_a: FBcv:0000414 ! abnormal locomotor behavior
 is_a: FBcv:0000679 ! abnormal circadian behavior
@@ -2982,7 +2983,7 @@ is_a: FBcv:0000399 ! abnormal courtship behavior
 id: FBcv:0000403
 name: abnormal chemosensory behavior
 namespace: phenotypic_class
-def: "Phenotype that is any abnormality in chemosensory behavior (GO:0007635). 'chemosensory behavior' is defined as: 'Behavior that is dependent upon the sensation of chemicals.'." [FBC:DOS, GOC:go_curators]
+def: "Phenotype that is any abnormality in chemosensory behavior (GO:0007635). 'chemosensory behavior' is defined as: 'Behavior that is dependent upon the sensation of chemicals.'." [FBC:DOS, GOC:curators]
 synonym: "abnormal chemosensitive behavior" EXACT []
 synonym: "chemosensitive behavior defective" EXACT []
 synonym: "chemosensitive behaviour defective" EXACT []
@@ -5197,7 +5198,7 @@ is_a: FBcv:0001347 ! phenotype
 id: FBcv:0000671
 name: abnormal cell cycle
 namespace: phenotypic_class
-def: "Phenotype that is any abnormality in cell cycle (GO:0007049). 'cell cycle' is defined as: 'The progression of biochemical and morphological phases and events that occur in a cell during successive cell replication or nuclear replication events. Canonically, the cell cycle comprises the replication and segregation of genetic material followed by the division of the cell, but in endocycles or syncytial cells nuclear replication or nuclear division may not be followed by cell division.'" [FBC:DOS, GOC:go_curators, GOC:mtg_cell_cycle]
+def: "Phenotype that is any abnormality in cell cycle (GO:0007049). 'cell cycle' is defined as: 'The progression of biochemical and morphological phases and events that occur in a cell during successive cell replication or nuclear replication events. Canonically, the cell cycle comprises the replication and segregation of genetic material followed by the division of the cell, but in endocycles or syncytial cells nuclear replication or nuclear division may not be followed by cell division.'" [FBC:DOS, GOC:curators, GOC:mtg_cell_cycle]
 subset: fbcvsubset_mgiribbons
 synonym: "cell cycle defective" EXACT []
 is_a: FBcv:0001347 ! phenotype
@@ -5255,7 +5256,7 @@ property_value: terms:date "2009-05-28T03:55:30Z" xsd:dateTime
 id: FBcv:0000679
 name: abnormal circadian behavior
 namespace: phenotypic_class
-def: "Phenotype that is any abnormality in circadian behavior (GO:0048512). 'circadian behavior' is defined as: 'The specific behavior of an organism that recurs with a regularity of approximately 24 hours.'" [FBC:DOS, GOC:bf, GOC:go_curators, GOC:pr]
+def: "Phenotype that is any abnormality in circadian behavior (GO:0048512). 'circadian behavior' is defined as: 'The specific behavior of an organism that recurs with a regularity of approximately 24 hours.'" [FBC:DOS, GOC:bf, GOC:curators, GOC:pr]
 synonym: "circadian behavior defective" EXACT []
 is_a: FBcv:0000387 ! abnormal behavior
 is_a: FBcv:0000394 ! abnormal circadian rhythm
@@ -5322,7 +5323,7 @@ is_a: FBcv:0000809 ! phenotype qualifier
 id: FBcv:0000686
 name: abnormal axis specification
 namespace: phenotypic_class
-def: "Phenotype that is any abnormality in axis specification (GO:0009798). 'axis specification' is defined as: 'The establishment, maintenance and elaboration of a pattern along a line or around a point.'" [FBC:DOS, GOC:dph, GOC:go_curators, GOC:isa_complete]
+def: "Phenotype that is any abnormality in axis specification (GO:0009798). 'axis specification' is defined as: 'The establishment, maintenance and elaboration of a pattern along a line or around a point.'" [FBC:DOS, GOC:curators, GOC:dph, GOC:isa_complete]
 comment: This phenotypic class does not encompass planar polarity.
 subset: fbcvsubset_mgiribbons
 synonym: "axis specification defective" EXACT []
@@ -5526,7 +5527,7 @@ property_value: terms:date "2010-09-20T12:21:29Z" xsd:dateTime
 id: FBcv:0000708
 name: abnormal starvation stress response
 namespace: phenotypic_class
-def: "Phenotype that is any abnormality in response to starvation (GO:0042594). 'response to starvation' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a starvation stimulus, deprivation of nourishment.'" [FBC:DOS, GOC:go_curators]
+def: "Phenotype that is any abnormality in response to starvation (GO:0042594). 'response to starvation' is defined as: 'Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a starvation stimulus, deprivation of nourishment.'" [FBC:DOS, GOC:curators]
 synonym: "starvation stress response defective" EXACT []
 is_a: FBcv:0000408 ! abnormal stress response
 
@@ -9874,7 +9875,7 @@ is_a: FBcv:0000387 ! abnormal behavior
 id: FBcv:0006005
 name: increased occurrence of cell division
 namespace: phenotypic_class
-def: "A phenotype that is an increased occurrence of cell division (GO:0051301). 'cell division' is defined as 'The process resulting in division and partitioning of components of a cell to form more cells; may or may not be accompanied by the physical separation of a cell into distinct, individually membrane-bounded daughter cells.'." [FBC:TEMJ, GOC:di, GOC:go_curators, GOC:pr]
+def: "A phenotype that is an increased occurrence of cell division (GO:0051301). 'cell division' is defined as 'The process resulting in division and partitioning of components of a cell to form more cells; may or may not be accompanied by the physical separation of a cell into distinct, individually membrane-bounded daughter cells.'." [FBC:TEMJ, GOC:curators, GOC:di, GOC:pr]
 subset: fbcvsubset_mgiribbons
 is_a: FBcv:0001347 ! phenotype
 
@@ -9882,7 +9883,7 @@ is_a: FBcv:0001347 ! phenotype
 id: FBcv:0006006
 name: decreased occurrence of cell division
 namespace: phenotypic_class
-def: "A phenotype that is a decreased occurrence of cell division (GO:0051301). 'cell division' is defined as 'The process resulting in division and partitioning of components of a cell to form more cells; may or may not be accompanied by the physical separation of a cell into distinct, individually membrane-bounded daughter cells.'." [FBC:TEMJ, GOC:di, GOC:go_curators, GOC:pr]
+def: "A phenotype that is a decreased occurrence of cell division (GO:0051301). 'cell division' is defined as 'The process resulting in division and partitioning of components of a cell to form more cells; may or may not be accompanied by the physical separation of a cell into distinct, individually membrane-bounded daughter cells.'." [FBC:TEMJ, GOC:curators, GOC:di, GOC:pr]
 subset: fbcvsubset_mgiribbons
 synonym: "reduced occurrence of cell division" EXACT []
 is_a: FBcv:0001347 ! phenotype
@@ -10883,7 +10884,7 @@ property_value: terms:date "2022-08-12T09:06:29Z" xsd:dateTime
 id: FBcv:0007532
 name: increased rate of chemosensory behavior
 namespace: phenotypic_class
-def: "Phenotype that is an increase in any kind of rate (e.g. speed, frequency) of chemosensory behavior (GO:0007635). 'chemosensory behavior' is defined as: 'Behavior that is dependent upon the sensation of chemicals.'." [GO:0007635, GOC:go_curators]
+def: "Phenotype that is an increase in any kind of rate (e.g. speed, frequency) of chemosensory behavior (GO:0007635). 'chemosensory behavior' is defined as: 'Behavior that is dependent upon the sensation of chemicals.'." [GO:0007635, GOC:curators]
 synonym: "increased rate of chemosensitive behavior" EXACT []
 is_a: FBcv:0000403 ! abnormal chemosensory behavior
 property_value: terms:contributor http://orcid.org/0000-0002-1373-1705
@@ -10999,7 +11000,7 @@ property_value: terms:date "2022-08-12T10:26:28Z" xsd:dateTime
 id: FBcv:0007544
 name: decreased rate of chemosensory behavior
 namespace: phenotypic_class
-def: "Phenotype that is a decrease in any kind of rate (e.g. speed, frequency) of chemosensory behavior (GO:0007635). 'chemosensory behavior' is defined as: 'Behavior that is dependent upon the sensation of chemicals.'." [GO:0007635, GOC:go_curators]
+def: "Phenotype that is a decrease in any kind of rate (e.g. speed, frequency) of chemosensory behavior (GO:0007635). 'chemosensory behavior' is defined as: 'Behavior that is dependent upon the sensation of chemicals.'." [GO:0007635, GOC:curators]
 synonym: "decreased rate of chemosensitive behavior" EXACT []
 synonym: "reduced rate of chemosensory behavior" EXACT []
 is_a: FBcv:0000403 ! abnormal chemosensory behavior
